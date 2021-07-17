@@ -458,6 +458,17 @@ startSubroutine: s32'RoundInit'
     Unknown1560: 
     Unknown1538: 125
     endMove: 
+  addMove: s32'FakeNmlAtk5CFar'
+    moveType: (NORMAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_S)
+    moveInput: (INPUT_DISALLOW_UP)
+    isFollowupMove: 1
+    Unknown1421: s32'NmlAtk5CFar'
+    Unknown1525: -446, -252, 344, 120
+    Unknown1560: 
+    Unknown1538: 125
+    endMove: 
   addMove: s32'NmlAtk2C'
     moveType: (NORMAL)
     characterState: (CROUCHING)
@@ -755,6 +766,7 @@ startSubroutine: s32'RoundInit'
   registerMove: s32'NmlAtk2D'
   registerMove: s32'NmlAtk5CNear'
   registerMove: s32'NmlAtk5CFar'
+  registerMove: s32'FakeNmlAtk5CFar'
   registerMove: s32'NmlAtk2C'
   registerMove: s32'NmlAtk5B'
   registerMove: s32'NmlAtk6B'
@@ -971,6 +983,7 @@ startSubroutine: s32'RoundInit'
   Unknown2594: 89, s32'ByakueRenshouObj'
   Unknown2594: 90, s32'OneVision'
   Unknown2594: 91, s32'OneVision_Add'
+  Unknown2594: 92, s32'FakeNmlAtk5CFar'
   endSubroutine: 
 
 startSubroutine: s32'OnFrameStep'
@@ -3468,7 +3481,7 @@ beginState: s32'NmlAtk2A'
     Unknown783: 0, 100, 0, 10, 0, 35
     addGatlingOption: s32'NmlAtk6A'
     addGatlingOption: s32'NmlAtk6B'
-    addGatlingOption: s32'NmlAtk5CFar'
+    addGatlingOption: s32'FakeNmlAtk5CFar'
     addGatlingOption: s32'NmlAtk6D'
     upon: (HIT_OR_GUARD)
       pushbackX: 70000
