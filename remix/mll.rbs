@@ -5044,7 +5044,6 @@ beginState: s32'NmlAtkAir5D'
     Unknown1005: 70
     Unknown1004: 70
     enableJumpCancel: 1
-    addGatlingOption: s32'NmlAtkAir5E'
     Unknown1685: 1
     callSubroutine: s32'cmn_Dust_HomingJump_Attack'
     Unknown1702: s32'weapon_Mstar', 1

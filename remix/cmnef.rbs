@@ -47,7 +47,7 @@ beginState: s32'cmn_MissionCtrl'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             endIf: 
           endIf: 
@@ -85,7 +85,7 @@ beginState: s32'cmn_MissionCMN_000'
       Unknown51: 4
       if: (VARIABLE), 0
         if: (VARIABLE), 223
-          Unknown54: 0, 2, 222, 0, 1
+          modifyVar: (ADD), (VARIABLE), 222, (STATIC), 1
           Unknown1825: s32'time', 2, 222
           endIf: 
         endIf: 
@@ -93,7 +93,7 @@ beginState: s32'cmn_MissionCMN_000'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2386: 1
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 150
             Unknown2399: 
             endIf: 
@@ -141,7 +141,7 @@ beginState: s32'cmn_MissionCMN_001'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2386: 1
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 130
             Unknown2399: 
             endIf: 
@@ -221,7 +221,7 @@ beginState: s32'cmn_MissionCMN_002'
         if: (VARIABLE), 218
           Unknown2386: 0
           Unknown2384: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 160
             Unknown2399: 
             endIf: 
@@ -270,7 +270,7 @@ beginState: s32'cmn_MissionCMN_003'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 120
             Unknown2399: 
             endIf: 
@@ -325,7 +325,7 @@ beginState: s32'cmn_MissionCMN_004'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 600
             Unknown2399: 
             endIf: 
@@ -363,7 +363,7 @@ beginState: s32'cmn_MissionCMN_005'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 600
             Unknown2399: 
             endIf: 
@@ -401,7 +401,7 @@ beginState: s32'cmn_MissionCMN_006'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 600
             Unknown2399: 
             endIf: 
@@ -446,7 +446,7 @@ beginState: s32'cmn_MissionCMN_007'
             Unknown2357: -1
             storeValue: (VARIABLE), 222, (STATIC), 1
             endIf: 
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 260
             Unknown2352: s32'Kurauna'
             endIf: 
@@ -486,7 +486,7 @@ beginState: s32'cmn_MissionCMN_008'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2399: 
             endIf: 
@@ -527,7 +527,7 @@ beginState: s32'cmn_MissionCMN_009'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown2399: 
             endIf: 
@@ -569,7 +569,7 @@ beginState: s32'cmn_MissionCMN_010'
           Unknown2382: 0
           Unknown2391: 0
           Unknown2386: 1
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 600
             Unknown2399: 
             endIf: 
@@ -638,7 +638,7 @@ beginState: s32'cmn_MissionCMN_011'
           Unknown2382: 0
           Unknown2391: 0
           Unknown2386: 1
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 150
             Unknown2399: 
             endIf: 
@@ -677,7 +677,7 @@ beginState: s32'cmn_MissionCMN_012'
           Unknown2382: 0
           Unknown2391: 0
           Unknown2386: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 900
             Unknown2399: 
             endIf: 
@@ -722,7 +722,7 @@ beginState: s32'cmn_MissionCMN_013'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 120
             Unknown2399: 
             endIf: 
@@ -789,7 +789,7 @@ beginState: s32'cmn_MissionCMN_014'
           Unknown2382: 0
           Unknown2386: 0
           Unknown2400: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2399: 
             endIf: 
@@ -829,12 +829,12 @@ beginState: s32'cmn_MissionCMN_015'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 480
             Unknown2399: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 222, (STATIC), 1
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 223, (STATIC), 38
               Unknown2033: 3, s32'CmnActJump'
               if: (VARIABLE), 0
@@ -849,7 +849,7 @@ beginState: s32'cmn_MissionCMN_015'
               endElse: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 222, (STATIC), 2
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 223, (STATIC), 35
               Unknown49: 2
               if: (VARIABLE), 0
@@ -917,7 +917,7 @@ beginState: s32'cmn_MissionCMN_016'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 480
             Unknown2399: 
             endIf: 
@@ -958,12 +958,12 @@ beginState: s32'cmn_MissionCMN_017'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2399: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 222, (STATIC), 1
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 223, (STATIC), 3
               Unknown2033: 22, s32'CmnActLockWait'
               if: (VARIABLE), 0
@@ -1023,12 +1023,12 @@ beginState: s32'cmn_MissionCMN_018'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2399: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 222, (STATIC), 1
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 223, (STATIC), 3
               Unknown2033: 22, s32'CmnActLockWait'
               if: (VARIABLE), 0
@@ -1085,7 +1085,7 @@ beginState: s32'cmn_MissionCMN_019'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2399: 
             endIf: 
@@ -1124,7 +1124,7 @@ beginState: s32'cmn_MissionCMN_020'
           Unknown2382: 0
           Unknown2391: 0
           Unknown2386: 1
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown2399: 
             endIf: 
@@ -1176,13 +1176,13 @@ beginState: s32'cmn_MissionCMN_021'
           Unknown2382: 0
           Unknown2391: 0
           Unknown2386: 1
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 100
             Unknown2399: 
             endIf: 
           Unknown2033: 22, s32'NmlAtk5D'
           if: (VARIABLE), 0
-            Unknown54: 0, 2, 222, 0, 1
+            modifyVar: (ADD), (VARIABLE), 222, (STATIC), 1
             endIf: 
           endIf: 
         endElse: 
@@ -1237,7 +1237,7 @@ beginState: s32'cmn_MissionCMN_022'
       else: 
         if: (VARIABLE), 218
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 80
             Unknown2399: 
             endIf: 
@@ -1283,7 +1283,7 @@ beginState: s32'cmn_MissionCMN_023'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 480
             Unknown2399: 
             endIf: 
@@ -1335,7 +1335,7 @@ beginState: s32'cmn_MissionCMN_024'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 240
             Unknown2399: 
             endIf: 
@@ -1380,7 +1380,7 @@ beginState: s32'cmn_MissionCMN_025'
       else: 
         if: (VARIABLE), 218
           Unknown2384: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 120
             Unknown2352: s32'Karaburi'
             endIf: 
@@ -1427,7 +1427,7 @@ beginState: s32'cmn_MissionCMN_026'
         if: (VARIABLE), 218
           Unknown2391: 0
           Unknown2384: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 100
             Unknown2399: 
             endIf: 
@@ -1484,7 +1484,7 @@ beginState: s32'cmn_MissionCMN_027'
         if: (VARIABLE), 218
           Unknown2391: 0
           Unknown2382: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 100
             Unknown2399: 
             endIf: 
@@ -1546,7 +1546,7 @@ beginState: s32'cmn_MissionCMN_028'
         if: (VARIABLE), 218
           Unknown2384: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 160
             Unknown2399: 
             endIf: 
@@ -1615,7 +1615,7 @@ beginState: s32'cmn_MissionCMN_029'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 480
             Unknown2399: 
             endIf: 
@@ -1660,7 +1660,7 @@ beginState: s32'cmn_MissionCMN_030'
             Unknown2357: -1
             storeValue: (VARIABLE), 222, (STATIC), 1
             endIf: 
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2399: 
             endIf: 
@@ -1717,7 +1717,7 @@ beginState: s32'cmn_MissionCMN_031'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 480
             Unknown2399: 
             endIf: 
@@ -1755,7 +1755,7 @@ beginState: s32'cmn_MissionCMN_032'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown2399: 
             endIf: 
@@ -1809,7 +1809,7 @@ beginState: s32'cmn_MissionCMN_033'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 80
             Unknown2399: 
             endIf: 
@@ -1880,7 +1880,7 @@ beginState: s32'cmn_MissionCMN_034'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 480
             Unknown2399: 
             endIf: 
@@ -1928,7 +1928,7 @@ beginState: s32'cmn_MissionCMN_035'
       else: 
         if: (VARIABLE), 218
           Unknown2384: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 200
             Unknown2399: 
             endIf: 
@@ -1991,7 +1991,7 @@ beginState: s32'cmn_MissionCMN_036'
               endIf: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 223, (STATIC), 1
-            Unknown54: 0, 2, 45, 0, 1
+            modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
               ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 218, (STATIC), 3
                 Unknown2352: s32'Kurauna'
@@ -2002,7 +2002,7 @@ beginState: s32'cmn_MissionCMN_036'
               endIf: 
             endIf: 
           else: 
-            Unknown54: 0, 2, 224, 0, 1
+            modifyVar: (ADD), (VARIABLE), 224, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 224, (STATIC), 300
               Unknown2399: 
               endIf: 
@@ -2056,12 +2056,12 @@ beginState: s32'cmn_MissionCMN_037'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2399: 
             endIf: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 218, (STATIC), 2
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 223, (STATIC), 60
               Unknown2033: 3, s32'NmlAtk2B'
               ifNot: (VARIABLE), 0
@@ -2109,7 +2109,7 @@ beginState: s32'cmn_MissionCMN_038'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2399: 
             endIf: 
@@ -2330,12 +2330,12 @@ beginState: s32'cmn_MissionCMN_041'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 480
             Unknown2399: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 225, (STATIC), 1
-            Unknown54: 0, 2, 224, 0, 1
+            modifyVar: (ADD), (VARIABLE), 224, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 224, (STATIC), 90
               Unknown2399: 
               endIf: 
@@ -2404,7 +2404,7 @@ beginState: s32'cmn_MissionCMN_042'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 480
             Unknown2399: 
             endIf: 
@@ -2463,7 +2463,7 @@ beginState: s32'cmn_MissionCMN_043'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown2399: 
             endIf: 
@@ -2522,7 +2522,7 @@ beginState: s32'cmn_MissionCMN_044'
       else: 
         if: (VARIABLE), 218
           Unknown2384: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2399: 
             endIf: 
@@ -2574,7 +2574,7 @@ beginState: s32'cmn_MissionCMN_045'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 900
             Unknown2399: 
             endIf: 
@@ -2633,7 +2633,7 @@ beginState: s32'cmn_MissionCMN_046'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 480
             Unknown2399: 
             endIf: 
@@ -2701,7 +2701,7 @@ beginState: s32'cmn_MissionCMN_047'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 90
             Unknown2399: 
             endIf: 
@@ -2754,7 +2754,7 @@ beginState: s32'cmn_MissionCMN_048'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 480
             Unknown2399: 
             endIf: 
@@ -2801,7 +2801,7 @@ beginState: s32'cmn_MissionCMN_049'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 900
             Unknown2399: 
             endIf: 
@@ -2853,7 +2853,7 @@ beginState: s32'cmn_MissionCMN_050'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2399: 
             endIf: 
@@ -2894,7 +2894,7 @@ beginState: s32'cmn_MissionCMN_051'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown2399: 
             endIf: 
@@ -2989,7 +2989,7 @@ beginState: s32'cmn_MissionCMN_052'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 420
             Unknown2399: 
             endIf: 
@@ -3037,7 +3037,7 @@ beginState: s32'cmn_MissionCMN_053'
           Unknown2382: 0
           Unknown2391: 0
           Unknown2400: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 420
             Unknown2399: 
             endIf: 
@@ -3399,7 +3399,7 @@ beginState: s32'cmn_MissionCMN_054'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 420
             Unknown2399: 
             endIf: 
@@ -3475,7 +3475,7 @@ beginState: s32'cmn_MissionCMN_055'
             Unknown2357: -1
             storeValue: (VARIABLE), 222, (STATIC), 1
             endIf: 
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 160
             Unknown2399: 
             endIf: 
@@ -3519,7 +3519,7 @@ beginState: s32'cmn_MissionCMN_056'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 240
             Unknown2399: 
             endIf: 
@@ -3532,7 +3532,7 @@ beginState: s32'cmn_MissionCMN_056'
             storeValue: (VARIABLE), 222, (STATIC), 1
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 222, (STATIC), 1
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 223, (STATIC), 15
               Unknown2399: 
               endIf: 
@@ -3590,7 +3590,7 @@ beginState: s32'cmn_MissionCMN_057'
           ifOperation: (IS_EQUAL), (VARIABLE), 222, (STATIC), 0
             storeValue: (VARIABLE), 222, (STATIC), 1
             endIf: 
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 80
             Unknown2399: 
             endIf: 
@@ -3638,7 +3638,7 @@ beginState: s32'cmn_MissionCMN_058'
       else: 
         if: (VARIABLE), 218
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 80
             Unknown2399: 
             endIf: 
@@ -3689,7 +3689,7 @@ beginState: s32'cmn_MissionCMN_059'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 420
             ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 218, (STATIC), 2
               Unknown2399: 
@@ -3709,7 +3709,7 @@ beginState: s32'cmn_MissionCMN_059'
               Unknown2033: 3, s32'NmlAtkAir5C'
               if: (VARIABLE), 0
                 Unknown1825: s32'VAR_TrialExVal3', 2, 225
-                Unknown54: 0, 2, 225, 0, 1
+                modifyVar: (ADD), (VARIABLE), 225, (STATIC), 1
                 ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 225, (STATIC), 10
                   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 225, (STATIC), 12
                     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 222, (STATIC), 300000
@@ -3789,7 +3789,7 @@ beginState: s32'cmn_MissionCMN_060'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 600
             Unknown2399: 
             endIf: 
@@ -3849,7 +3849,7 @@ beginState: s32'cmn_MissionCMN_061'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 600
             Unknown2399: 
             endIf: 
@@ -3899,7 +3899,7 @@ beginState: s32'cmn_MissionCMN_062'
           Unknown2382: 0
           Unknown2391: 0
           Unknown2400: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 900
             Unknown2399: 
             endIf: 
@@ -3976,7 +3976,7 @@ beginState: s32'cmn_MissionCMN_063'
       else: 
         if: (VARIABLE), 218
           Unknown2382: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2399: 
             endIf: 
@@ -4039,7 +4039,7 @@ beginState: s32'cmn_MissionCMN_064'
       else: 
         if: (VARIABLE), 218
           Unknown2384: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 120
             Unknown2352: s32'Kurauna'
             endIf: 
@@ -4083,14 +4083,14 @@ beginState: s32'cmn_MissionCMN_065'
       else: 
         if: (VARIABLE), 218
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 480
             Unknown2399: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 222, (STATIC), 1
             Unknown2033: 22, s32'CmnActGuardLanding'
             if: (VARIABLE), 0
-              Unknown54: 0, 2, 223, 0, 1
+              modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
               ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 223, (STATIC), 13
                 Unknown2357: -1
                 storeValue: (VARIABLE), 222, (STATIC), 2
@@ -4099,7 +4099,7 @@ beginState: s32'cmn_MissionCMN_065'
             endIf: 
           Unknown2033: 22, s32'HMC'
           if: (VARIABLE), 0
-            Unknown54: 0, 2, 225, 0, 1
+            modifyVar: (ADD), (VARIABLE), 225, (STATIC), 1
             ifOperation: (IS_EQUAL), (VARIABLE), 225, (STATIC), 30
               Unknown2399: 
               endIf: 
@@ -4183,7 +4183,7 @@ beginState: s32'cmn_MissionCMN_066'
             storeValue: (VARIABLE), 225, (STATIC), 1
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 222, (STATIC), 1
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 223, (STATIC), 60
               Unknown2391: 1
               storeValue: (VARIABLE), 222, (STATIC), 0
@@ -4288,12 +4288,12 @@ beginState: s32'cmn_MissionCMN_067'
         if: (VARIABLE), 218
           Unknown2391: 0
           Unknown2384: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown2399: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 1
-            Unknown54: 0, 2, 222, 0, 1
+            modifyVar: (ADD), (VARIABLE), 222, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 222, (STATIC), 100
               Unknown2399: 
               endIf: 
@@ -4351,7 +4351,7 @@ beginState: s32'cmn_MissionCMN_068'
       else: 
         if: (VARIABLE), 218
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 80
             Unknown2399: 
             endIf: 
@@ -4399,7 +4399,7 @@ beginState: s32'cmn_MissionCMN_069'
       else: 
         if: (VARIABLE), 218
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 420
             Unknown2399: 
             endIf: 
@@ -4451,7 +4451,7 @@ beginState: s32'cmn_MissionCMN_070'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 420
             Unknown2399: 
             endIf: 
@@ -4546,7 +4546,7 @@ beginState: s32'cmn_MissionCMN_072'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             endIf: 
           endIf: 
@@ -4586,7 +4586,7 @@ beginState: s32'cmn_MissionCMN_073'
       else: 
         if: (VARIABLE), 218
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 480
             Unknown2399: 
             endIf: 
@@ -4599,7 +4599,7 @@ beginState: s32'cmn_MissionCMN_073'
             storeValue: (VARIABLE), 222, (STATIC), 1
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 222, (STATIC), 1
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 223, (STATIC), 10
               Unknown2033: 3, s32'NmlAtk6B'
               if: (VARIABLE), 0
@@ -4615,7 +4615,7 @@ beginState: s32'cmn_MissionCMN_073'
               endElse: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 224, (STATIC), 1
-            Unknown54: 0, 2, 225, 0, 1
+            modifyVar: (ADD), (VARIABLE), 225, (STATIC), 1
             ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 225, (STATIC), 3
               Unknown2033: 3, s32'PotemkinBuster'
               if: (VARIABLE), 0
@@ -4666,7 +4666,7 @@ beginState: s32'cmn_MissionCMN_074'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             endIf: 
           endIf: 
@@ -4705,7 +4705,7 @@ beginState: s32'cmn_MissionCMN_075'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 480
             Unknown2399: 
             endIf: 
@@ -4768,7 +4768,7 @@ beginState: s32'cmn_MissionCMN_076'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown2399: 
             endIf: 
@@ -4822,7 +4822,7 @@ beginState: s32'cmn_MissionCMN_077'
       else: 
         if: (VARIABLE), 218
           Unknown2384: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 150
             Unknown2399: 
             endIf: 
@@ -4868,12 +4868,12 @@ beginState: s32'cmn_MissionCMN_078'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 420
             Unknown2399: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 3
-            Unknown54: 0, 2, 222, 0, 1
+            modifyVar: (ADD), (VARIABLE), 222, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 222, (STATIC), 80
               Unknown2399: 
               endIf: 
@@ -4941,7 +4941,7 @@ beginState: s32'cmn_MissionCMN_079'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 420
             Unknown2399: 
             endIf: 
@@ -4957,7 +4957,7 @@ beginState: s32'cmn_MissionCMN_079'
             storeValue: (VARIABLE), 222, (STATIC), 1
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 222, (STATIC), 1
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 223, (STATIC), 55
               Unknown2399: 
               endIf: 
@@ -5025,7 +5025,7 @@ beginState: s32'cmn_MissionCMN_080'
             Unknown2357: -1
             storeValue: (VARIABLE), 222, (STATIC), 1
             endIf: 
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 220
             Unknown2352: s32'Kurauna'
             endIf: 
@@ -5105,12 +5105,12 @@ beginState: s32'cmn_MissionCMN_081'
             Unknown2357: -1
             storeValue: (VARIABLE), 224, (STATIC), 1
             endIf: 
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 250
             Unknown2352: s32'Kurauna'
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 222, (STATIC), 1
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 223, (STATIC), 60
               Unknown2386: 0
               endIf: 
@@ -5161,12 +5161,12 @@ beginState: s32'cmn_MissionCMN_082'
           Unknown2382: 0
           Unknown2391: 0
           Unknown2386: 1
-          Unknown54: 0, 2, 222, 0, 1
+          modifyVar: (ADD), (VARIABLE), 222, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 222, (STATIC), 300
             Unknown2399: 
             endIf: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 218, (STATIC), 2
-            Unknown54: 0, 2, 45, 0, 1
+            modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
               Unknown2399: 
               endIf: 
@@ -5219,7 +5219,7 @@ beginState: s32'cmn_MissionCMN_083'
       else: 
         if: (VARIABLE), 218
           Unknown2384: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 120
             Unknown2399: 
             endIf: 
@@ -5287,7 +5287,7 @@ beginState: s32'cmn_MissionCMN_084'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 420
             Unknown2399: 
             endIf: 
@@ -5336,18 +5336,18 @@ beginState: s32'cmn_MissionCMN_085'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 480
             Unknown2399: 
             endIf: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 218, (STATIC), 2
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 223, (STATIC), 180
               Unknown2399: 
               endIf: 
             endIf: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 224, (STATIC), 1
-            Unknown54: 0, 2, 224, 0, 1
+            modifyVar: (ADD), (VARIABLE), 224, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 224, (STATIC), 10
               Unknown2399: 
               endIf: 
@@ -5442,7 +5442,7 @@ beginState: s32'cmn_MissionCMN_086'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 100
             Unknown41: 22
             storeValue: (VARIABLE), 222, (VARIABLE), 36
@@ -5506,7 +5506,7 @@ beginState: s32'cmn_MissionCMN_087'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 90
             Unknown41: 22
             storeValue: (VARIABLE), 222, (VARIABLE), 36
@@ -5516,7 +5516,7 @@ beginState: s32'cmn_MissionCMN_087'
               endIf: 
             endIf: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 223, (STATIC), 1
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 223, (STATIC), 4
               Unknown2352: s32'NightRaidHangeki'
               endIf: 
@@ -5576,7 +5576,7 @@ beginState: s32'cmn_MissionCMN_088'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 120
             Unknown41: 22
             storeValue: (VARIABLE), 222, (VARIABLE), 36
@@ -5586,7 +5586,7 @@ beginState: s32'cmn_MissionCMN_088'
               endIf: 
             endIf: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 223, (STATIC), 1
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 223, (STATIC), 4
               Unknown2352: s32'FadulHangeki'
               endIf: 
@@ -5660,12 +5660,12 @@ beginState: s32'cmn_MissionCMN_089'
               Unknown2382: 1
               Unknown2391: 1
               endIf: 
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 223, (STATIC), 40
               Unknown2399: 
               endIf: 
             endIf: 
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 600
             Unknown2399: 
             endIf: 
@@ -5712,7 +5712,7 @@ beginState: s32'cmn_MissionCMN_090'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 80
             Unknown41: 22
             storeValue: (VARIABLE), 222, (VARIABLE), 36
@@ -5777,7 +5777,7 @@ beginState: s32'cmn_MissionCMN_091'
       else: 
         if: (VARIABLE), 218
           Unknown2384: 0
-          Unknown54: 0, 2, 223, 0, 1
+          modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
           Unknown1825: s32'VAR_TrialExVal1', 2, 223
           ifOperation: (IS_EQUAL), (VARIABLE), 223, (STATIC), 20
             Unknown2382: 0
@@ -5788,7 +5788,7 @@ beginState: s32'cmn_MissionCMN_091'
               Unknown2352: s32'SukiNandemo'
               endIf: 
             endIf: 
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 115
             Unknown41: 22
             storeValue: (VARIABLE), 222, (VARIABLE), 36
@@ -5843,7 +5843,7 @@ beginState: s32'cmn_MissionCMN_092'
       else: 
         if: (VARIABLE), 218
           Unknown2384: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown2399: 
             endIf: 
@@ -5851,7 +5851,7 @@ beginState: s32'cmn_MissionCMN_092'
             Unknown2033: 22, s32'Niwatazumi'
             if: (VARIABLE), 0
               storeValue: (VARIABLE), 222, (STATIC), 1
-              Unknown54: 0, 2, 225, 0, 1
+              modifyVar: (ADD), (VARIABLE), 225, (STATIC), 1
               ifOperation: (IS_EQUAL), (VARIABLE), 224, (STATIC), 1
                 Unknown2033: 3, s32'CmnActJump'
                 if: (VARIABLE), 0
@@ -5993,7 +5993,7 @@ beginState: s32'cmn_MissionCMN_093'
             Unknown2357: -1
             storeValue: (VARIABLE), 222, (STATIC), 1
             endIf: 
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 260
             Unknown2352: s32'Kurauna'
             endIf: 
@@ -6041,7 +6041,7 @@ beginState: s32'cmn_MissionCMN_094'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 160
             Unknown41: 22
             storeValue: (VARIABLE), 222, (VARIABLE), 36
@@ -6108,7 +6108,7 @@ beginState: s32'cmn_MissionCMN_095'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown41: 22
             storeValue: (VARIABLE), 222, (VARIABLE), 36
@@ -6189,7 +6189,7 @@ beginState: s32'cmn_MissionCMN_096'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
             Unknown41: 22
             storeValue: (VARIABLE), 222, (VARIABLE), 36
@@ -6252,7 +6252,7 @@ beginState: s32'cmn_MissionCMN_097'
       else: 
         if: (VARIABLE), 218
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 120
             Unknown2399: 
             endIf: 
@@ -6296,7 +6296,7 @@ beginState: s32'cmn_MissionCMN_098'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 150
             Unknown41: 22
             storeValue: (VARIABLE), 222, (VARIABLE), 36
@@ -6359,7 +6359,7 @@ beginState: s32'cmn_MissionCMN_099'
             Unknown2357: -1
             storeValue: (VARIABLE), 222, (STATIC), 1
             endIf: 
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2352: s32'Kurauna'
             endIf: 
@@ -6399,7 +6399,7 @@ beginState: s32'cmn_MissionCMN_100'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
             Unknown2399: 
             endIf: 
@@ -6450,7 +6450,7 @@ beginState: s32'cmn_MissionCMN_101'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 140
             Unknown41: 22
             storeValue: (VARIABLE), 222, (VARIABLE), 36
@@ -6460,7 +6460,7 @@ beginState: s32'cmn_MissionCMN_101'
               endIf: 
             endIf: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 223, (STATIC), 1
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_EQUAL), (VARIABLE), 223, (STATIC), 5
               Unknown2033: 22, s32'CmnActHajikareStand'
               if: (VARIABLE), 0
@@ -6524,12 +6524,12 @@ beginState: s32'cmn_MissionCMN_102'
           ifOperation: (IS_EQUAL), (VARIABLE), 222, (STATIC), 1
             Unknown2352: s32'Tsutsuku2danWarikomi'
             endIf: 
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 100
             Unknown2399: 
             endIf: 
           if: (VARIABLE), 223
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 223, (STATIC), 5
               Unknown2399: 
               endIf: 
@@ -6578,7 +6578,7 @@ beginState: s32'cmn_MissionCMN_103'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown2352: s32'HariauGuard'
             endIf: 
@@ -6626,7 +6626,7 @@ beginState: s32'cmn_MissionCMN_104'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 280
             Unknown2399: 
             endIf: 
@@ -6679,7 +6679,7 @@ beginState: s32'cmn_MissionCMN_105'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           Unknown1825: s32'VAR_ActReg0', 2, 45
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 151
             ifOperation: (IS_EQUAL), (VARIABLE), 222, (STATIC), 0
@@ -6687,7 +6687,7 @@ beginState: s32'cmn_MissionCMN_105'
               endIf: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 222, (STATIC), 1
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 223, (STATIC), 3
               Unknown2352: s32'CalvadosHangeki'
               endIf: 
@@ -6735,7 +6735,7 @@ beginState: s32'cmn_MissionCMN_106'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 150
             Unknown41: 22
             storeValue: (VARIABLE), 222, (VARIABLE), 36
@@ -6797,7 +6797,7 @@ beginState: s32'cmn_MissionCMN_107'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 150
             Unknown2399: 
             endIf: 
@@ -6864,7 +6864,7 @@ beginState: s32'cmn_MissionCMN_108'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 150
             Unknown41: 22
             storeValue: (VARIABLE), 222, (VARIABLE), 36
@@ -6924,7 +6924,7 @@ beginState: s32'cmn_MissionCMN_109'
       else: 
         if: (VARIABLE), 218
           Unknown2384: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 220
             Unknown2399: 
             endIf: 
@@ -6997,12 +6997,12 @@ beginState: s32'cmn_MissionCMN_110'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 90
             Unknown2399: 
             endIf: 
           if: (VARIABLE), 223
-            Unknown54: 0, 2, 224, 0, 1
+            modifyVar: (ADD), (VARIABLE), 224, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 224, (STATIC), 10
               Unknown2352: s32'SukiAirNandemo'
               endIf: 
@@ -7064,12 +7064,12 @@ beginState: s32'cmn_MissionCMN_111'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 160
             Unknown2399: 
             endIf: 
           if: (VARIABLE), 222
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             Unknown1825: s32'VAR_TrialExVal1', 2, 223
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 223, (STATIC), 5
               Unknown2352: s32'PoenteHangeki'
@@ -7138,7 +7138,7 @@ beginState: s32'cmn_MissionCMN_112'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 240
             Unknown2399: 
             endIf: 
@@ -7155,7 +7155,7 @@ beginState: s32'cmn_MissionCMN_112'
             storeValue: (VARIABLE), 224, (VARIABLE), 36
             Unknown40: 
             ifNot: (VARIABLE), 224
-              Unknown54: 0, 2, 225, 0, 1
+              modifyVar: (ADD), (VARIABLE), 225, (STATIC), 1
               ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 225, (STATIC), 50
                 Unknown2399: 
                 endIf: 
@@ -7211,12 +7211,12 @@ beginState: s32'cmn_MissionCMN_113'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 480
             Unknown2399: 
             endIf: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 218, (STATIC), 2
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 223, (STATIC), 240
               Unknown2399: 
               endIf: 
@@ -7245,7 +7245,7 @@ beginState: s32'cmn_MissionCMN_113'
               endIf: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 224, (STATIC), 1
-            Unknown54: 0, 2, 225, 0, 1
+            modifyVar: (ADD), (VARIABLE), 225, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 225, (STATIC), 50
               Unknown2399: 
               endIf: 
@@ -7309,12 +7309,12 @@ beginState: s32'cmn_MissionCMN_114'
         endIf: 
       else: 
         if: (VARIABLE), 218
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 120
             Unknown2399: 
             endIf: 
           if: (VARIABLE), 222
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 223, (STATIC), 10
               Unknown2352: s32'WarikomeJumpAtk'
               endIf: 
@@ -7377,12 +7377,12 @@ beginState: s32'cmn_MissionCMN_115'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 480
             Unknown2399: 
             endIf: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 218, (STATIC), 2
-            Unknown54: 0, 2, 223, 0, 1
+            modifyVar: (ADD), (VARIABLE), 223, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 223, (STATIC), 240
               Unknown2399: 
               endIf: 
@@ -7405,7 +7405,7 @@ beginState: s32'cmn_MissionCMN_115'
               endIf: 
             endIf: 
           if: (VARIABLE), 224
-            Unknown54: 0, 2, 224, 0, 1
+            modifyVar: (ADD), (VARIABLE), 224, (STATIC), 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 224, (STATIC), 10
               Unknown2352: s32'WarikomeGenkai'
               endIf: 
@@ -7476,7 +7476,7 @@ beginState: s32'cmn_MissionCMN_116'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2386: 1
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 150
             Unknown2399: 
             endIf: 
@@ -7516,7 +7516,7 @@ beginState: s32'cmn_MissionCMN_117'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2386: 1
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 150
             Unknown2399: 
             endIf: 
@@ -7555,7 +7555,7 @@ beginState: s32'cmn_MissionLSN_000'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             endIf: 
           endIf: 
@@ -7596,7 +7596,7 @@ beginState: s32'cmn_MissionLSN_001'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown2399: 
             endIf: 
@@ -7638,7 +7638,7 @@ beginState: s32'cmn_MissionLSN_002'
         if: (VARIABLE), 218
           Unknown2382: 0
           Unknown2391: 0
-          Unknown54: 0, 2, 45, 0, 1
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown2399: 
             endIf: 
@@ -7671,7 +7671,7 @@ beginState: s32'cmn_MissionComboCtrl_1'
       if: (VARIABLE), 0
         endIf: 
       else: 
-        Unknown54: 0, 2, 45, 0, 1
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 1800
           Unknown2399: 
           endIf: 
@@ -7694,7 +7694,7 @@ beginState: s32'cmn_MissionComboCtrl_2'
       if: (VARIABLE), 0
         endIf: 
       else: 
-        Unknown54: 0, 2, 45, 0, 1
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 1800
           Unknown2399: 
           endIf: 
@@ -7830,7 +7830,7 @@ startSubroutine: s32'cmnGuardInit'
   endSubroutine: 
 
 startSubroutine: s32'cmnRoundInit'
-  health: 420
+  health: 500
   Unknown1261: '0x090000000900000009000000090000000900000009000000'
   Unknown1228: 1750
   Unknown1229: 5250
@@ -8540,7 +8540,7 @@ startSubroutine: s32'cmnOnFrameStep'
           endElse: 
         endIf: 
       endIf: 
-    checkInput: 222
+    checkInput: (INPUT_22)
     if: (VARIABLE), 0
       checkInput: 71
       if: (VARIABLE), 0
@@ -8604,11 +8604,11 @@ startSubroutine: s32'cmnOnFrameStep'
       endIf: 
     if: (VARIABLE), 335
       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 335, (STATIC), 100
-        Unknown54: 2, 2, 335, 0, 100
-        Unknown54: 0, 2, 335, 0, 10
+        modifyVar: (MUL), (VARIABLE), 335, (STATIC), 100
+        modifyVar: (ADD), (VARIABLE), 335, (STATIC), 10
         endIf: 
       ifNot: (VARIABLE), 81
-        Unknown54: 0, 2, 335, 0, -1
+        modifyVar: (ADD), (VARIABLE), 335, (STATIC), -1
         ifOperation: 16, (VARIABLE), 335, (STATIC), 200
           storeValue: (VARIABLE), 335, (STATIC), 0
           storeValue: (VARIABLE), 337, (STATIC), 0
@@ -8643,7 +8643,7 @@ beginState: s32'cmnWSBDummy'
     Unknown38: s32'cmnWSBDummy'
     upon: 39
       Unknown2498: 3, 2, 315
-      Unknown54: 0, 2, 45, 0, 1
+      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
       endIf: 
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 45, (STATIC), 15
       Unknown53: 23, 2, 32, 3, 2, 32
@@ -8678,7 +8678,7 @@ startSubroutine: s32'cmn_wall_dir'
       Unknown2188: 1
       Unknown40: 
       upon: 12
-        Unknown54: 0, 2, 45, 0, 1
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 2
           ifOperation: (IS_NOT_EQUAL), (VARIABLE), 81, (STATIC), 3
             Unknown23: 12
@@ -9374,7 +9374,7 @@ startSubroutine: s32'cmn_hosei'
     Unknown1825: s32'VAR_CmnCharaReg12', 2, 339
     Unknown1825: s32'VAR_CmnCharaReg13', 2, 340
     endIf: 
-  Unknown54: 0, 2, 338, 0, 1000000000
+  modifyVar: (ADD), (VARIABLE), 338, (STATIC), 1000000000
   ifNot: (VARIABLE), 339
     ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 0
       ifOperation: (IS_EQUAL), (VARIABLE), 338, (STATIC), 1000000000
@@ -10021,7 +10021,7 @@ endSubroutine:
 beginState: s32'cmnCounterCamera'
   upon: (IMMEDIATE)
     upon: 39
-      Unknown54: 0, 2, 52, 0, 1
+      modifyVar: (ADD), (VARIABLE), 52, (STATIC), 1
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 52, (STATIC), 2
         Unknown23: 39
         storeValue: (VARIABLE), 54, (STATIC), 1
@@ -10088,7 +10088,7 @@ beginState: s32'cmnCounterCamera_Target'
 beginState: s32'cmnHiCounterCamera'
   upon: (IMMEDIATE)
     upon: 39
-      Unknown54: 0, 2, 52, 0, 1
+      modifyVar: (ADD), (VARIABLE), 52, (STATIC), 1
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 52, (STATIC), 2
         Unknown23: 39
         storeValue: (VARIABLE), 53, (STATIC), 1
@@ -10220,7 +10220,7 @@ endLabel:
 beginLabel: s32'extratime'
 sprite: s32'null', 1
 ifOperation: (IS_GREATER), (VARIABLE), 53, (STATIC), 0
-  Unknown54: 1, 2, 53, 0, 1
+  modifyVar: (SUB), (VARIABLE), 53, (STATIC), 1
   Unknown14: s32'extratime'
   endIf: 
 
@@ -10265,13 +10265,13 @@ startSubroutine: s32'cmnCamCounterTrack'
   callSubroutine: s32'cmnThrowPosition_Limit'
   Unknown52: 3, 2, 14, 0, 16, 2, 55
   Unknown52: 3, 2, 15, 0, 9, 2, 56
-  Unknown54: 2, 2, 55, 0, 30
-  Unknown54: 2, 2, 56, 0, 20
+  modifyVar: (MUL), (VARIABLE), 55, (STATIC), 30
+  modifyVar: (MUL), (VARIABLE), 56, (STATIC), 20
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 55, (STATIC), 0
-    Unknown54: 2, 2, 55, 0, -1
+    modifyVar: (MUL), (VARIABLE), 55, (STATIC), -1
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 56, (STATIC), 0
-    Unknown54: 2, 2, 56, 0, -1
+    modifyVar: (MUL), (VARIABLE), 56, (STATIC), -1
     endIf: 
   ifOperation: (IS_GREATER), (VARIABLE), 55, (VARIABLE), 56
     storeValue: (VARIABLE), 56, (VARIABLE), 55
@@ -10302,27 +10302,27 @@ storeValue: (VARIABLE), 58, (STATIC), 125000
 endIf: 
 storeValue: (VARIABLE), 55, (VARIABLE), 56
 Unknown52: 1, 0, 460000, 2, 55, 2, 55
-Unknown54: 2, 2, 55, 0, 7
-Unknown54: 3, 2, 55, 0, -30
-Unknown54: 0, 2, 57, 2, 55
-Unknown54: 0, 2, 58, 2, 55
+modifyVar: (MUL), (VARIABLE), 55, (STATIC), 7
+modifyVar: (DIV), (VARIABLE), 55, (STATIC), -30
+modifyVar: (ADD), (VARIABLE), 57, (VARIABLE), 55
+modifyVar: (ADD), (VARIABLE), 58, (VARIABLE), 55
 Unknown2500: 9, 3, 2, 30, 0, 1
 Unknown2500: 9, 22, 2, 30, 0, 1
 Unknown53: 23, 2, 59, 22, 2, 8
 ifOperation: (IS_LESSER), (VARIABLE), 59, (STATIC), 0
   Unknown52: 2, 2, 59, 0, -4, 2, 60
-  Unknown54: 0, 2, 57, 2, 60
+  modifyVar: (ADD), (VARIABLE), 57, (VARIABLE), 60
   Unknown52: 2, 2, 59, 0, 1, 2, 60
-  Unknown54: 3, 2, 60, 0, 6
-  Unknown54: 0, 2, 58, 2, 60
+  modifyVar: (DIV), (VARIABLE), 60, (STATIC), 6
+  modifyVar: (ADD), (VARIABLE), 58, (VARIABLE), 60
   endIf: 
 
 else: 
   Unknown52: 2, 2, 59, 0, -16, 2, 60
-  Unknown54: 0, 2, 57, 2, 60
+  modifyVar: (ADD), (VARIABLE), 57, (VARIABLE), 60
   Unknown52: 2, 2, 59, 0, 1, 2, 60
-  Unknown54: 3, 2, 60, 0, 1
-  Unknown54: 0, 2, 58, 2, 60
+  modifyVar: (DIV), (VARIABLE), 60, (STATIC), 1
+  modifyVar: (ADD), (VARIABLE), 58, (VARIABLE), 60
   storeValue: (VARIABLE), 57, (STATIC), 5000
   endElse: 
 
@@ -10330,20 +10330,20 @@ endIf:
 else: 
   Unknown53: 23, 2, 59, 22, 2, 325
   ifOperation: (IS_LESSER), (VARIABLE), 59, (STATIC), 0
-    Unknown54: 2, 2, 59, 0, 5000
-    Unknown54: 3, 2, 59, 0, 90
+    modifyVar: (MUL), (VARIABLE), 59, (STATIC), 5000
+    modifyVar: (DIV), (VARIABLE), 59, (STATIC), 90
     Unknown52: 2, 2, 59, 0, 70, 2, 60
-    Unknown54: 1, 2, 57, 2, 60
+    modifyVar: (SUB), (VARIABLE), 57, (VARIABLE), 60
     Unknown52: 2, 2, 59, 0, 3, 2, 60
-    Unknown54: 0, 2, 58, 2, 60
+    modifyVar: (ADD), (VARIABLE), 58, (VARIABLE), 60
     endIf: 
   else: 
-    Unknown54: 2, 2, 59, 0, 5000
-    Unknown54: 3, 2, 59, 0, 90
+    modifyVar: (MUL), (VARIABLE), 59, (STATIC), 5000
+    modifyVar: (DIV), (VARIABLE), 59, (STATIC), 90
     Unknown52: 2, 2, 59, 0, 3, 2, 60
-    Unknown54: 1, 2, 57, 2, 60
+    modifyVar: (SUB), (VARIABLE), 57, (VARIABLE), 60
     Unknown52: 2, 2, 59, 0, 3, 2, 60
-    Unknown54: 0, 2, 58, 2, 60
+    modifyVar: (ADD), (VARIABLE), 58, (VARIABLE), 60
     endElse: 
   endElse: 
 
@@ -10352,39 +10352,39 @@ else:
   Unknown53: 23, 2, 59, 22, 2, 325
   Unknown2500: 9, 22, 2, 31, 0, 1
   ifOperation: (IS_LESSER), (VARIABLE), 59, (STATIC), 0
-    Unknown54: 2, 2, 59, 0, 5000
-    Unknown54: 3, 2, 59, 0, 90
+    modifyVar: (MUL), (VARIABLE), 59, (STATIC), 5000
+    modifyVar: (DIV), (VARIABLE), 59, (STATIC), 90
     Unknown52: 2, 2, 59, 0, 40, 2, 60
-    Unknown54: 1, 2, 57, 2, 60
+    modifyVar: (SUB), (VARIABLE), 57, (VARIABLE), 60
     Unknown52: 2, 2, 59, 0, 2, 2, 60
-    Unknown54: 0, 2, 58, 2, 60
+    modifyVar: (ADD), (VARIABLE), 58, (VARIABLE), 60
     endIf: 
   else: 
-    Unknown54: 2, 2, 59, 0, 5000
-    Unknown54: 3, 2, 59, 0, 90
+    modifyVar: (MUL), (VARIABLE), 59, (STATIC), 5000
+    modifyVar: (DIV), (VARIABLE), 59, (STATIC), 90
     Unknown52: 2, 2, 59, 0, 3, 2, 60
-    Unknown54: 1, 2, 57, 2, 60
+    modifyVar: (SUB), (VARIABLE), 57, (VARIABLE), 60
     Unknown52: 2, 2, 59, 0, 3, 2, 60
-    Unknown54: 0, 2, 58, 2, 60
+    modifyVar: (ADD), (VARIABLE), 58, (VARIABLE), 60
     endElse: 
   endIf: 
 
 else: 
   ifOperation: (IS_LESSER), (VARIABLE), 59, (STATIC), 0
-    Unknown54: 2, 2, 59, 0, 5000
-    Unknown54: 3, 2, 59, 0, 90
+    modifyVar: (MUL), (VARIABLE), 59, (STATIC), 5000
+    modifyVar: (DIV), (VARIABLE), 59, (STATIC), 90
     Unknown52: 2, 2, 59, 0, 12, 2, 60
-    Unknown54: 1, 2, 57, 2, 60
+    modifyVar: (SUB), (VARIABLE), 57, (VARIABLE), 60
     Unknown52: 2, 2, 59, 0, 2, 2, 60
-    Unknown54: 0, 2, 58, 2, 60
+    modifyVar: (ADD), (VARIABLE), 58, (VARIABLE), 60
     endIf: 
   else: 
-    Unknown54: 2, 2, 59, 0, 5000
-    Unknown54: 3, 2, 59, 0, 90
+    modifyVar: (MUL), (VARIABLE), 59, (STATIC), 5000
+    modifyVar: (DIV), (VARIABLE), 59, (STATIC), 90
     Unknown52: 2, 2, 59, 0, 3, 2, 60
-    Unknown54: 1, 2, 57, 2, 60
+    modifyVar: (SUB), (VARIABLE), 57, (VARIABLE), 60
     Unknown52: 2, 2, 59, 0, 3, 2, 60
-    Unknown54: 0, 2, 58, 2, 60
+    modifyVar: (ADD), (VARIABLE), 58, (VARIABLE), 60
     endElse: 
   endElse: 
 
@@ -10403,13 +10403,13 @@ ifOperation: (IS_LESSER), (VARIABLE), 59, (STATIC), -32000
   endIf: 
 
 Unknown52: 2, 2, 59, 0, -2, 2, 60
-Unknown54: 3, 2, 60, 0, 1
-Unknown54: 2, 2, 59, 0, 0
-Unknown54: 3, 2, 59, 0, 1
+modifyVar: (DIV), (VARIABLE), 60, (STATIC), 1
+modifyVar: (MUL), (VARIABLE), 59, (STATIC), 0
+modifyVar: (DIV), (VARIABLE), 59, (STATIC), 1
 Unknown2563: 4, 30, s32'brake'
 Unknown2551: 2, 59, 2, 56, 2, 57, 0, 8, 0, 400, 0, 0, s32'linear', s32'linear'
-Unknown54: 2, 2, 56, 0, 30
-Unknown54: 3, 2, 56, 0, 100
+modifyVar: (MUL), (VARIABLE), 56, (STATIC), 30
+modifyVar: (DIV), (VARIABLE), 56, (STATIC), 100
 Unknown2552: 2, 60, 2, 56, 2, 58, 0, 8, 0, 400, 0, 0, s32'linear', s32'linear'
 endSubroutine: 
 startSubroutine: s32'cmnHighGuard'
@@ -10485,7 +10485,7 @@ startSubroutine: s32'cmnGuardBreak'
   endSubroutine: 
 
 startSubroutine: s32'cmnJumpPre'
-  setCarriedMomentumPercentage: 60
+  setCarriedMomentumPercentage: 70
   upon: (BEFORE_EXIT)
     Unknown1662: s32'CmnFAirDash', 5
     Unknown1662: s32'CmnBAirDash', 5
@@ -10637,7 +10637,7 @@ beginState: s32'cmn_Step_mahojin'
   endState: 
 
 startSubroutine: s32'cmnDamageCellDiffLand'
-  Unknown54: 0, 2, 313, 0, 1
+  modifyVar: (ADD), (VARIABLE), 313, (STATIC), 1
   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 313, (STATIC), 4
     storeValue: (VARIABLE), 313, (STATIC), 0
     endIf: 
@@ -10827,11 +10827,11 @@ startSubroutine: s32'cmnThrowPosition_F_Wall'
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 83, (VARIABLE), 45
         Unknown52: 1, 2, 83, 2, 45, 2, 48
         upon: (FRAME_STEP)
-          Unknown54: 0, 2, 47, 0, -1
+          modifyVar: (ADD), (VARIABLE), 47, (STATIC), -1
           if: (VARIABLE), 47
             Unknown52: 3, 2, 48, 2, 46, 2, 49
-            Unknown54: 1, 2, 83, 2, 49
-            Unknown54: 1, 2, 48, 2, 49
+            modifyVar: (SUB), (VARIABLE), 83, (VARIABLE), 49
+            modifyVar: (SUB), (VARIABLE), 48, (VARIABLE), 49
             endIf: 
           else: 
             Unknown23: 3
@@ -10841,15 +10841,15 @@ startSubroutine: s32'cmnThrowPosition_F_Wall'
         endIf: 
       endIf: 
     else: 
-      Unknown54: 2, 2, 45, 0, -1
+      modifyVar: (MUL), (VARIABLE), 45, (STATIC), -1
       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 83, (VARIABLE), 45
         Unknown52: 1, 2, 83, 2, 45, 2, 48
         upon: (FRAME_STEP)
-          Unknown54: 0, 2, 47, 0, -1
+          modifyVar: (ADD), (VARIABLE), 47, (STATIC), -1
           if: (VARIABLE), 47
             Unknown52: 3, 2, 48, 2, 46, 2, 49
-            Unknown54: 1, 2, 83, 2, 49
-            Unknown54: 1, 2, 48, 2, 49
+            modifyVar: (SUB), (VARIABLE), 83, (VARIABLE), 49
+            modifyVar: (SUB), (VARIABLE), 48, (VARIABLE), 49
             endIf: 
           else: 
             Unknown23: 3
@@ -10867,11 +10867,11 @@ startSubroutine: s32'cmnThrowPosition_B_Wall'
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 83, (VARIABLE), 45
         Unknown52: 1, 2, 83, 2, 45, 2, 48
         upon: (FRAME_STEP)
-          Unknown54: 0, 2, 47, 0, -1
+          modifyVar: (ADD), (VARIABLE), 47, (STATIC), -1
           if: (VARIABLE), 47
             Unknown52: 3, 2, 48, 2, 46, 2, 49
-            Unknown54: 1, 2, 83, 2, 49
-            Unknown54: 1, 2, 48, 2, 49
+            modifyVar: (SUB), (VARIABLE), 83, (VARIABLE), 49
+            modifyVar: (SUB), (VARIABLE), 48, (VARIABLE), 49
             endIf: 
           else: 
             Unknown23: 3
@@ -10881,15 +10881,15 @@ startSubroutine: s32'cmnThrowPosition_B_Wall'
         endIf: 
       endIf: 
     else: 
-      Unknown54: 2, 2, 45, 0, -1
+      modifyVar: (MUL), (VARIABLE), 45, (STATIC), -1
       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 83, (VARIABLE), 45
         Unknown52: 1, 2, 83, 2, 45, 2, 48
         upon: (FRAME_STEP)
-          Unknown54: 0, 2, 47, 0, -1
+          modifyVar: (ADD), (VARIABLE), 47, (STATIC), -1
           if: (VARIABLE), 47
             Unknown52: 3, 2, 48, 2, 46, 2, 49
-            Unknown54: 1, 2, 83, 2, 49
-            Unknown54: 1, 2, 48, 2, 49
+            modifyVar: (SUB), (VARIABLE), 83, (VARIABLE), 49
+            modifyVar: (SUB), (VARIABLE), 48, (VARIABLE), 49
             endIf: 
           else: 
             Unknown23: 3
@@ -10904,8 +10904,8 @@ startSubroutine: s32'cmnThrowPosition_B_Wall'
 startSubroutine: s32'cmnThrowPosition_Limit'
   ifNot: (VARIABLE), 317
     if: (VARIABLE), 32
-      Unknown54: 2, 2, 51, 0, -1
-      Unknown54: 2, 2, 50, 0, -1
+      modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
+      modifyVar: (MUL), (VARIABLE), 50, (STATIC), -1
       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 83, (VARIABLE), 51
         storeValue: (VARIABLE), 83, (VARIABLE), 51
         endIf: 
@@ -10932,8 +10932,8 @@ startSubroutine: s32'cmnInitializeThrowBaseAndTarget'
     storeValue: (VARIABLE), 50, (VARIABLE), 330
     storeValue: (VARIABLE), 51, (VARIABLE), 331
     if: (VARIABLE), 32
-      Unknown54: 2, 2, 51, 0, -1
-      Unknown54: 2, 2, 50, 0, -1
+      modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
+      modifyVar: (MUL), (VARIABLE), 50, (STATIC), -1
       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 83, (VARIABLE), 51
         storeValue: (VARIABLE), 83, (VARIABLE), 51
         endIf: 
@@ -10952,8 +10952,8 @@ startSubroutine: s32'cmnInitializeThrowBaseAndTarget'
     storeValue: (VARIABLE), 50, (VARIABLE), 332
     storeValue: (VARIABLE), 51, (VARIABLE), 333
     Unknown2498: 4, 2, 32
-    Unknown54: 2, 2, 51, 0, -1
-    Unknown54: 2, 2, 50, 0, -1
+    modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
+    modifyVar: (MUL), (VARIABLE), 50, (STATIC), -1
     Unknown53: 4, 2, 50, 23, 2, 50
     Unknown53: 4, 2, 51, 23, 2, 51
     Unknown2500: 13, 4, 2, 83, 2, 51
@@ -11763,7 +11763,7 @@ startSubroutine: s32'cmn_Dust_Kirimomi_Blend'
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 1000
         storeValue: (VARIABLE), 45, (STATIC), 0
         endIf: 
-      Unknown54: 0, 2, 45, 0, 200
+      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 200
       Unknown1694: 2, 45, 0, 0, 0, 1, 0, 0
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 2
         Unknown612: s32'SE_BTL_CMN_Blow_Spin'
@@ -11797,8 +11797,8 @@ startSubroutine: s32'cmn_Dust_Kirimomi_Blend'
             storeValue: (VARIABLE), 46, (STATIC), -1750
             storeValue: (VARIABLE), 47, (STATIC), 2500
             endElse: 
-          Unknown54: 2, 2, 46, 2, 13
-          Unknown54: 2, 2, 47, 2, 13
+          modifyVar: (MUL), (VARIABLE), 46, (VARIABLE), 13
+          modifyVar: (MUL), (VARIABLE), 47, (VARIABLE), 13
           Unknown94: 2, 46
           Unknown99: 2, 47
           endIf: 
@@ -11821,7 +11821,7 @@ startSubroutine: s32'cmn_Dust_Kirimomi_Blend'
             setGravity: 3000
             endElse: 
           endElse: 
-        Unknown54: 0, 2, 48, 0, 1
+        modifyVar: (ADD), (VARIABLE), 48, (STATIC), 1
         endIf: 
       endIf: 
     else: 
@@ -11939,12 +11939,12 @@ beginState: s32'cmn_Chase_Camera'
   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 6000000
     storeValue: (VARIABLE), 45, (STATIC), 6000000
     endIf: 
-  Unknown54: 1, 2, 45, 0, 30576
-  Unknown54: 1, 2, 45, 2, 18
+  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 30576
+  modifyVar: (SUB), (VARIABLE), 45, (VARIABLE), 18
   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 0
     Unknown52: 2, 0, 60, 0, 2184, 2, 46
-    Unknown54: 2, 2, 45, 0, 1550
-    Unknown54: 3, 2, 45, 2, 46
+    modifyVar: (MUL), (VARIABLE), 45, (STATIC), 1550
+    modifyVar: (DIV), (VARIABLE), 45, (VARIABLE), 46
     ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 5000
       storeValue: (VARIABLE), 45, (STATIC), 5000
       endIf: 
@@ -11954,12 +11954,12 @@ beginState: s32'cmn_Chase_Camera'
     endElse: 
   Unknown2534: 2, 45, 0, 10, 0, 0, 0, 0, s32'linear', s32'linear'
   Unknown53: 23, 2, 47, 3, 2, 17
-  Unknown54: 1, 2, 47, 2, 17
+  modifyVar: (SUB), (VARIABLE), 47, (VARIABLE), 17
   Unknown52: 2, 0, 60, 0, 2184, 2, 48
-  Unknown54: 2, 2, 47, 0, 1550
-  Unknown54: 3, 2, 47, 2, 48
+  modifyVar: (MUL), (VARIABLE), 47, (STATIC), 1550
+  modifyVar: (DIV), (VARIABLE), 47, (VARIABLE), 48
   if: (VARIABLE), 32
-    Unknown54: 2, 2, 47, 0, -1
+    modifyVar: (MUL), (VARIABLE), 47, (STATIC), -1
     endIf: 
   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 47, (STATIC), 2500
     storeValue: (VARIABLE), 47, (STATIC), 2500
@@ -11994,11 +11994,11 @@ ifNot: (VARIABLE), 52
     endIf: 
   Unknown53: 23, 2, 51, 22, 2, 17
   ifNot: (VARIABLE), 32
-    Unknown54: 1, 2, 51, 2, 17
+    modifyVar: (SUB), (VARIABLE), 51, (VARIABLE), 17
     endIf: 
   else: 
-    Unknown54: 1, 2, 51, 2, 17
-    Unknown54: 2, 2, 51, 0, -1
+    modifyVar: (SUB), (VARIABLE), 51, (VARIABLE), 17
+    modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
     endElse: 
   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 49, (STATIC), 1300000
     storeValue: (VARIABLE), 52, (STATIC), 1
@@ -12091,11 +12091,11 @@ ifNot: (VARIABLE), 50
     endIf: 
   Unknown53: 23, 2, 49, 3, 2, 17
   ifNot: (VARIABLE), 32
-    Unknown54: 1, 2, 49, 2, 17
+    modifyVar: (SUB), (VARIABLE), 49, (VARIABLE), 17
     endIf: 
   else: 
-    Unknown54: 1, 2, 49, 2, 17
-    Unknown54: 2, 2, 49, 0, -1
+    modifyVar: (SUB), (VARIABLE), 49, (VARIABLE), 17
+    modifyVar: (MUL), (VARIABLE), 49, (STATIC), -1
     endElse: 
   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 49, (STATIC), 1100000
     storeValue: (VARIABLE), 50, (STATIC), 1
@@ -12371,7 +12371,7 @@ startSubroutine: s32'cmn_Dust_Finish'
             Unknown271: '0x00000000770000000100000001000000'
             endIf: 
           endIf: 
-        Unknown54: 0, 2, 45, 0, 1
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
         if: (VARIABLE), 16
           Unknown41: 22
           Unknown94: 0, -500
@@ -12389,16 +12389,16 @@ startSubroutine: s32'cmn_Dust_Finish'
         ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 2
           Unknown1947: 
           Unknown53: 3, 2, 46, 22, 2, 17
-          Unknown54: 2, 2, 46, 0, -1
+          modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
           ifNot: (VARIABLE), 32
-            Unknown54: 0, 2, 46, 0, -2500000
+            modifyVar: (ADD), (VARIABLE), 46, (STATIC), -2500000
             endIf: 
           else: 
-            Unknown54: 0, 2, 46, 0, 2500000
+            modifyVar: (ADD), (VARIABLE), 46, (STATIC), 2500000
             endElse: 
           Unknown53: 3, 2, 47, 22, 2, 18
-          Unknown54: 2, 2, 47, 0, -1
-          Unknown54: 0, 2, 47, 0, 4000000
+          modifyVar: (MUL), (VARIABLE), 47, (STATIC), -1
+          modifyVar: (ADD), (VARIABLE), 47, (STATIC), 4000000
           Unknown1948: '0x020000002E000000020000002F0000000000000000000000'
           Unknown1949: '0x020000002E000000020000002F0000000000000000000000'
           Unknown446: s32'cmn_Dust_Finish_Camera', 100
@@ -12452,7 +12452,7 @@ ifOperation: (IS_EQUAL), (VARIABLE), 134, (STATIC), 48
         endIf: 
       endIf: 
     else: 
-      Unknown54: 0, 2, 52, 0, -1
+      modifyVar: (ADD), (VARIABLE), 52, (STATIC), -1
       ifOperation: (IS_EQUAL), (VARIABLE), 52, (STATIC), 0
         Unknown233: 
         Unknown1018: 1
@@ -12482,7 +12482,7 @@ beginState: s32'cmn_Dust_Finish_Camera'
     Unknown2545: 0, 50, 0, 0, 0, 100, 0, 0, s32'accel', s32'linear'
     Unknown1801: 1
     upon: 12
-      Unknown54: 0, 2, 45, 0, 1
+      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 3
         Unknown2549: 0, -75000, 0, 320000, 0, 192500, 0, 8, 0, 20, 0, 0, s32'brake', s32'linear'
         Unknown2550: 0, -3400, 0, 4500, 0, 0, 0, 8, 0, 20, 0, 0, s32'brake', s32'linear'
@@ -12644,7 +12644,7 @@ startSubroutine: s32'cmn_Dust_End_Master'
     Unknown40: 
     endUpon: 
   upon: 77
-    Unknown54: 0, 2, 45, 0, 1
+    modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
     ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
       Unknown271: '0x00000000770000000100000001000000'
       Unknown2560: 0
@@ -12675,16 +12675,16 @@ startSubroutine: s32'cmn_Dust_End_Master'
       Unknown2097: 
       Unknown1947: 
       storeValue: (VARIABLE), 46, (VARIABLE), 17
-      Unknown54: 2, 2, 46, 0, -1
+      modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
       ifOperation: (IS_GREATER), (VARIABLE), 316, (STATIC), 0
-        Unknown54: 0, 2, 46, 0, -2000000
+        modifyVar: (ADD), (VARIABLE), 46, (STATIC), -2000000
         endIf: 
       ifOperation: (IS_LESSER), (VARIABLE), 316, (STATIC), 0
-        Unknown54: 0, 2, 46, 0, 2000000
+        modifyVar: (ADD), (VARIABLE), 46, (STATIC), 2000000
         endIf: 
       storeValue: (VARIABLE), 47, (VARIABLE), 18
-      Unknown54: 2, 2, 47, 0, -1
-      Unknown54: 0, 2, 47, 0, 1500000
+      modifyVar: (MUL), (VARIABLE), 47, (STATIC), -1
+      modifyVar: (ADD), (VARIABLE), 47, (STATIC), 1500000
       Unknown1948: '0x020000002E000000020000002F0000000000000000000000'
       Unknown1949: '0x020000002E000000020000002F0000000000000000000000'
       Unknown32: s32'cmn_Chase_Camera'
@@ -12941,9 +12941,9 @@ beginState: s32'cmn_Dust_Camera_POV'
         endIf: 
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 65
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 65
-          Unknown54: 3, 2, 47, 0, -10
-          Unknown54: 3, 2, 48, 0, -10
-          Unknown54: 3, 2, 49, 0, -10
+          modifyVar: (DIV), (VARIABLE), 47, (STATIC), -10
+          modifyVar: (DIV), (VARIABLE), 48, (STATIC), -10
+          modifyVar: (DIV), (VARIABLE), 49, (STATIC), -10
           endIf: 
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 70
           Unknown94: 2, 47
@@ -12967,8 +12967,8 @@ beginState: s32'cmn_Dust_Camera_POG'
     upon: (FRAME_STEP)
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 70
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 70
-          Unknown54: 3, 2, 50, 0, -10
-          Unknown54: 3, 2, 51, 0, -10
+          modifyVar: (DIV), (VARIABLE), 50, (STATIC), -10
+          modifyVar: (DIV), (VARIABLE), 51, (STATIC), -10
           endIf: 
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 75
           Unknown94: 2, 50
@@ -13114,8 +13114,8 @@ beginState: s32'cmn_nagenuke'
     endUpon: 
   sprite: s32'mom_sphere', 2
   Unknown53: 23, 2, 0, 22, 2, 83
-  Unknown54: 0, 2, 83, 2, 0
-  Unknown54: 3, 2, 83, 0, 2
+  modifyVar: (ADD), (VARIABLE), 83, (VARIABLE), 0
+  modifyVar: (DIV), (VARIABLE), 83, (STATIC), 2
   hit: 
   Unknown2193: 100, 0, 300000
   Unknown448: s32'cmn_nagenuke', 130
@@ -13266,7 +13266,7 @@ startSubroutine: s32'cmnNohosei_kakusei'
 
 startSubroutine: s32'cmnNageWSBPoint'
   Unknown41: 22
-  Unknown54: 0, 2, 306, 0, 1000
+  modifyVar: (ADD), (VARIABLE), 306, (STATIC), 1000
   Unknown40: 
   endSubroutine: 
 
@@ -13615,7 +13615,7 @@ startSubroutine: s32'cmn_FloatDamage'
       storeValue: (VARIABLE), 166, (STATIC), 14
       storeValue: (VARIABLE), 45, (STATIC), 0
       upon: (FRAME_STEP)
-        Unknown54: 0, 2, 45, 0, 1
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 8
           Unknown23: 3
           Unknown1352: 1
@@ -13628,7 +13628,7 @@ startSubroutine: s32'cmn_FloatDamage'
       storeValue: (VARIABLE), 166, (STATIC), 17
       storeValue: (VARIABLE), 45, (STATIC), 0
       upon: (FRAME_STEP)
-        Unknown54: 0, 2, 45, 0, 1
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 7
           Unknown23: 3
           Unknown1352: 1
@@ -13663,11 +13663,11 @@ startSubroutine: s32'cmn_AtkTemplNmlAtkAir'
   ifNot: (VARIABLE), 317
     ifOperation: (IS_GREATER), (VARIABLE), 7, (STATIC), 0
       Unknown52: 3, 2, 7, 0, 4, 2, 348
-      Unknown54: 0, 2, 346, 2, 348
+      modifyVar: (ADD), (VARIABLE), 346, (VARIABLE), 348
       endIf: 
     ifOperation: (IS_GREATER), (VARIABLE), 8, (STATIC), 0
       Unknown52: 3, 2, 8, 0, 2, 2, 348
-      Unknown54: 0, 2, 347, 2, 348
+      modifyVar: (ADD), (VARIABLE), 347, (VARIABLE), 348
       endIf: 
     hitAirPushBackX: 2, 346
     hitAirPushbackY: 2, 347
@@ -13727,7 +13727,7 @@ startSubroutine: s32'cmn_Korogari_ToDown_Time'
 startSubroutine: s32'cmn_Korogari_ToDown_Brake'
   upon: 12
     ifNot: (VARIABLE), 81
-      Unknown54: 0, 2, 46, 0, 1
+      modifyVar: (ADD), (VARIABLE), 46, (STATIC), 1
       ifOperation: (IS_EQUAL), (VARIABLE), 46, (STATIC), 20
         Unknown23: 12
         Unknown2229: 80
@@ -13755,7 +13755,7 @@ startSubroutine: s32'cmn_GorogoroBGParticle'
   upon: 13
     Unknown448: s32'cmn_landcrack', 100
     upon: (FRAME_STEP)
-      Unknown54: 0, 2, 45, 0, 1
+      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 16
         Unknown448: s32'cmn_landcrack', 100
         storeValue: (VARIABLE), 45, (STATIC), 0
@@ -13782,7 +13782,7 @@ startSubroutine: s32'cmn_Jitabata'
           storeValue: (VARIABLE), 49, (STATIC), 23
           endIf: 
         endIf: 
-      Unknown54: 0, 2, 47, 0, 1
+      modifyVar: (ADD), (VARIABLE), 47, (STATIC), 1
       ifOperation: (IS_EQUAL), (VARIABLE), 47, (VARIABLE), 48
         Unknown1352: 1
         Unknown1688: 1
@@ -13896,7 +13896,7 @@ startSubroutine: s32'cmnWSBWallBreak'
   groundHitEffect: 34
   airHitEffect: 34
   hitEffectFire: 0
-  Unknown727: 0
+  hitEffectElectric: 0
   Unknown728: 0
   Unknown1160: 1
   Unknown1064: s32'CmnNeutral'
@@ -13992,25 +13992,25 @@ else:
 
 ifOperation: (IS_EQUAL), (VARIABLE), 322, (STATIC), 3
   Unknown41: 3
-  Unknown54: 3, 2, 343, 0, 2
+  modifyVar: (DIV), (VARIABLE), 343, (STATIC), 2
   Unknown52: 2, 2, 343, 0, 17, 2, 345
-  Unknown54: 3, 2, 345, 0, 10
+  modifyVar: (DIV), (VARIABLE), 345, (STATIC), 10
   Unknown40: 
   endIf: 
 
 ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 309, (STATIC), 1
-  Unknown54: 2, 2, 343, 0, 1
+  modifyVar: (MUL), (VARIABLE), 343, (STATIC), 1
   endIf: 
 
 ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 309, (STATIC), -1
-  Unknown54: 2, 2, 343, 0, -1
+  modifyVar: (MUL), (VARIABLE), 343, (STATIC), -1
   endIf: 
 
 Unknown41: 3
-Unknown54: 0, 2, 83, 2, 343
-Unknown54: 0, 2, 18, 2, 344
-Unknown54: 0, 2, 281, 2, 345
-Unknown54: 0, 2, 355, 2, 350
+modifyVar: (ADD), (VARIABLE), 83, (VARIABLE), 343
+modifyVar: (ADD), (VARIABLE), 18, (VARIABLE), 344
+modifyVar: (ADD), (VARIABLE), 281, (VARIABLE), 345
+modifyVar: (ADD), (VARIABLE), 355, (VARIABLE), 350
 Unknown40: 
 Unknown41: 3
 Unknown1357: 0
@@ -14278,14 +14278,14 @@ startSubroutine: s32'cmnWorldSideBreak_PosX'
     endIf: 
   ifOperation: (IS_GREATER), (VARIABLE), 309, (STATIC), 0
     ifOperation: (IS_LESSER), (VARIABLE), 52, (STATIC), 1515000
-      Unknown54: 0, 2, 52, 0, -1500000
-      Unknown54: 1, 2, 53, 2, 52
+      modifyVar: (ADD), (VARIABLE), 52, (STATIC), -1500000
+      modifyVar: (SUB), (VARIABLE), 53, (VARIABLE), 52
       endIf: 
     endIf: 
   ifOperation: (IS_LESSER), (VARIABLE), 309, (STATIC), 0
     ifOperation: (IS_GREATER), (VARIABLE), 52, (STATIC), -1515000
-      Unknown54: 0, 2, 52, 0, 1500000
-      Unknown54: 1, 2, 53, 2, 52
+      modifyVar: (ADD), (VARIABLE), 52, (STATIC), 1500000
+      modifyVar: (SUB), (VARIABLE), 53, (VARIABLE), 52
       endIf: 
     endIf: 
   endSubroutine: 
@@ -14453,8 +14453,8 @@ startSubroutine: s32'cmnWorldSideBreak_PosY'
     endElse: 
   Unknown53: 23, 2, 51, 22, 2, 18
   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 51, (STATIC), 3000000
-    Unknown54: 1, 2, 51, 0, 3000000
-    Unknown54: 1, 2, 54, 2, 51
+    modifyVar: (SUB), (VARIABLE), 51, (STATIC), 3000000
+    modifyVar: (SUB), (VARIABLE), 54, (VARIABLE), 51
     endIf: 
   endSubroutine: 
 
@@ -15203,7 +15203,7 @@ startSubroutine: s32'cmnWorldSideBreak_Base'
     Unknown2248: 
     Unknown40: 
     endIf: 
-  Unknown54: 0, 2, 45, 0, 1
+  modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
   ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
     ifOperation: (IS_GREATER), (VARIABLE), 309, (STATIC), 0
       Unknown242: 
@@ -16753,7 +16753,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_6'
   storeValue: (VARIABLE), 48, (STATIC), 2184000
   storeValue: (VARIABLE), 49, (STATIC), 500000
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 0
-    Unknown54: 2, 2, 46, 0, -1
+    modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 47
     storeValue: (VARIABLE), 46, (VARIABLE), 47
@@ -16764,23 +16764,23 @@ startSubroutine: s32'cmnWSB_Slave_Slide_6'
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
   Unknown52: 2, 2, 8, 2, 45, 2, 50
   Unknown52: 0, 2, 45, 0, -1, 2, 51
-  Unknown54: 2, 2, 51, 2, 45
+  modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
-  Unknown54: 2, 2, 311, 0, 2
+  modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: 4
     Unknown23: 4
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
-    Unknown54: 2, 2, 51, 2, 52
+    modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
     Unknown52: 3, 2, 18, 2, 51, 2, 311
-    Unknown54: 2, 2, 311, 0, 2
+    modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 20
         Unknown52: 1, 2, 45, 2, 13, 2, 51
         Unknown52: 0, 2, 51, 0, -1, 2, 52
-        Unknown54: 2, 2, 51, 2, 52
+        modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
         Unknown52: 3, 2, 18, 2, 51, 2, 311
-        Unknown54: 2, 2, 311, 0, 2
+        modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
     Unknown1914: 0
@@ -16912,7 +16912,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_6'
   storeValue: (VARIABLE), 48, (STATIC), 21840000
   storeValue: (VARIABLE), 49, (STATIC), 500000
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 0
-    Unknown54: 2, 2, 46, 0, -1
+    modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 47
     storeValue: (VARIABLE), 46, (VARIABLE), 47
@@ -16923,23 +16923,23 @@ startSubroutine: s32'cmnWSB_Slave_Up_6'
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
   Unknown52: 2, 2, 8, 2, 45, 2, 50
   Unknown52: 0, 2, 45, 0, -1, 2, 51
-  Unknown54: 2, 2, 51, 2, 45
+  modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
-  Unknown54: 2, 2, 311, 0, 2
+  modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: 4
     Unknown23: 4
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
-    Unknown54: 2, 2, 51, 2, 52
+    modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
     Unknown52: 3, 2, 18, 2, 51, 2, 311
-    Unknown54: 2, 2, 311, 0, 2
+    modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 50
         Unknown52: 1, 2, 45, 2, 13, 2, 51
         Unknown52: 0, 2, 51, 0, -1, 2, 52
-        Unknown54: 2, 2, 51, 2, 52
+        modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
         Unknown52: 3, 2, 18, 2, 51, 2, 311
-        Unknown54: 2, 2, 311, 0, 2
+        modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
     Unknown1914: 0
@@ -17081,7 +17081,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_6'
   storeValue: (VARIABLE), 48, (STATIC), 8736000
   storeValue: (VARIABLE), 49, (STATIC), 250000
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 0
-    Unknown54: 2, 2, 46, 0, -1
+    modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 47
     storeValue: (VARIABLE), 46, (VARIABLE), 47
@@ -17092,23 +17092,23 @@ startSubroutine: s32'cmnWSB_Slave_Down_6'
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
   Unknown52: 2, 2, 8, 2, 45, 2, 50
   Unknown52: 0, 2, 45, 0, -1, 2, 51
-  Unknown54: 2, 2, 51, 2, 45
+  modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
-  Unknown54: 2, 2, 311, 0, 2
+  modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: 4
     Unknown23: 4
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
-    Unknown54: 2, 2, 51, 2, 52
+    modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
     Unknown52: 3, 2, 18, 2, 51, 2, 311
-    Unknown54: 2, 2, 311, 0, 2
+    modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 50
         Unknown52: 1, 2, 45, 2, 13, 2, 51
         Unknown52: 0, 2, 51, 0, -1, 2, 52
-        Unknown54: 2, 2, 51, 2, 52
+        modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
         Unknown52: 3, 2, 18, 2, 51, 2, 311
-        Unknown54: 2, 2, 311, 0, 2
+        modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
     Unknown1914: 0
@@ -17250,7 +17250,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6'
   storeValue: (VARIABLE), 48, (STATIC), 2184000
   storeValue: (VARIABLE), 49, (STATIC), 3600000
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 0
-    Unknown54: 2, 2, 46, 0, -1
+    modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 47
     storeValue: (VARIABLE), 46, (VARIABLE), 47
@@ -17261,9 +17261,9 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6'
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
   Unknown52: 2, 2, 8, 2, 45, 2, 50
   Unknown52: 0, 2, 45, 0, -1, 2, 51
-  Unknown54: 2, 2, 51, 2, 45
+  modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
-  Unknown54: 2, 2, 311, 0, 2
+  modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: 4
     Unknown23: 4
     storeValue: (VARIABLE), 45, (STATIC), 65
@@ -17276,16 +17276,16 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6'
     storeValue: (VARIABLE), 52, (STATIC), 0
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
-    Unknown54: 2, 2, 51, 2, 52
+    modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
     Unknown52: 3, 2, 18, 2, 51, 2, 311
-    Unknown54: 2, 2, 311, 0, 2
+    modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 3
         Unknown52: 1, 2, 45, 2, 13, 2, 51
         Unknown52: 0, 2, 51, 0, -1, 2, 52
-        Unknown54: 2, 2, 51, 2, 52
+        modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
         Unknown52: 3, 2, 18, 2, 51, 2, 311
-        Unknown54: 2, 2, 311, 0, 2
+        modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
     upon: 2
@@ -17302,7 +17302,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6'
       storeValue: (VARIABLE), 51, (STATIC), 0
       storeValue: (VARIABLE), 52, (STATIC), 0
       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 0
-        Unknown54: 2, 2, 46, 0, -1
+        modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
         endIf: 
       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 47
         storeValue: (VARIABLE), 46, (VARIABLE), 47
@@ -17313,23 +17313,23 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6'
       Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
       Unknown52: 2, 2, 8, 2, 45, 2, 50
       Unknown52: 0, 2, 45, 0, -1, 2, 51
-      Unknown54: 2, 2, 51, 2, 45
+      modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
       Unknown52: 3, 2, 50, 2, 51, 2, 311
-      Unknown54: 2, 2, 311, 0, 2
+      modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
       upon: 4
         Unknown23: 4
         Unknown52: 1, 2, 45, 2, 13, 2, 51
         Unknown52: 0, 2, 51, 0, -1, 2, 52
-        Unknown54: 2, 2, 51, 2, 52
+        modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
         Unknown52: 3, 2, 18, 2, 51, 2, 311
-        Unknown54: 2, 2, 311, 0, 2
+        modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         upon: (FRAME_STEP)
           ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 55
             Unknown52: 1, 2, 45, 2, 13, 2, 51
             Unknown52: 0, 2, 51, 0, -1, 2, 52
-            Unknown54: 2, 2, 51, 2, 52
+            modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
             Unknown52: 3, 2, 18, 2, 51, 2, 311
-            Unknown54: 2, 2, 311, 0, 2
+            modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
             endIf: 
           endUpon: 
         Unknown1914: 0
@@ -17477,7 +17477,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_6_4500'
   storeValue: (VARIABLE), 48, (STATIC), 43680000
   storeValue: (VARIABLE), 49, (STATIC), 500000
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 0
-    Unknown54: 2, 2, 46, 0, -1
+    modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 47
     storeValue: (VARIABLE), 46, (VARIABLE), 47
@@ -17488,23 +17488,23 @@ startSubroutine: s32'cmnWSB_Slave_Slide_6_4500'
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
   Unknown52: 2, 2, 8, 2, 45, 2, 50
   Unknown52: 0, 2, 45, 0, -1, 2, 51
-  Unknown54: 2, 2, 51, 2, 45
+  modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
-  Unknown54: 2, 2, 311, 0, 2
+  modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: 4
     Unknown23: 4
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
-    Unknown54: 2, 2, 51, 2, 52
+    modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
     Unknown52: 3, 2, 18, 2, 51, 2, 311
-    Unknown54: 2, 2, 311, 0, 2
+    modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
         Unknown52: 1, 2, 45, 2, 13, 2, 51
         Unknown52: 0, 2, 51, 0, -1, 2, 52
-        Unknown54: 2, 2, 51, 2, 52
+        modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
         Unknown52: 3, 2, 18, 2, 51, 2, 311
-        Unknown54: 2, 2, 311, 0, 2
+        modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
     Unknown1914: 0
@@ -17649,7 +17649,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_6_4500'
   storeValue: (VARIABLE), 48, (STATIC), 87360000
   storeValue: (VARIABLE), 49, (STATIC), 500000
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 0
-    Unknown54: 2, 2, 46, 0, -1
+    modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 47
     storeValue: (VARIABLE), 46, (VARIABLE), 47
@@ -17660,23 +17660,23 @@ startSubroutine: s32'cmnWSB_Slave_Up_6_4500'
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
   Unknown52: 2, 2, 8, 2, 45, 2, 50
   Unknown52: 0, 2, 45, 0, -1, 2, 51
-  Unknown54: 2, 2, 51, 2, 45
+  modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
-  Unknown54: 2, 2, 311, 0, 2
+  modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: 4
     Unknown23: 4
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
-    Unknown54: 2, 2, 51, 2, 52
+    modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
     Unknown52: 3, 2, 18, 2, 51, 2, 311
-    Unknown54: 2, 2, 311, 0, 2
+    modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
         Unknown52: 1, 2, 45, 2, 13, 2, 51
         Unknown52: 0, 2, 51, 0, -1, 2, 52
-        Unknown54: 2, 2, 51, 2, 52
+        modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
         Unknown52: 3, 2, 18, 2, 51, 2, 311
-        Unknown54: 2, 2, 311, 0, 2
+        modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
     Unknown1914: 0
@@ -17821,7 +17821,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_6_4500'
   storeValue: (VARIABLE), 48, (STATIC), 43680000
   storeValue: (VARIABLE), 49, (STATIC), 500000
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 0
-    Unknown54: 2, 2, 46, 0, -1
+    modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 47
     storeValue: (VARIABLE), 46, (VARIABLE), 47
@@ -17832,23 +17832,23 @@ startSubroutine: s32'cmnWSB_Slave_Down_6_4500'
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
   Unknown52: 2, 2, 8, 2, 45, 2, 50
   Unknown52: 0, 2, 45, 0, -1, 2, 51
-  Unknown54: 2, 2, 51, 2, 45
+  modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
-  Unknown54: 2, 2, 311, 0, 2
+  modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: 4
     Unknown23: 4
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
-    Unknown54: 2, 2, 51, 2, 52
+    modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
     Unknown52: 3, 2, 18, 2, 51, 2, 311
-    Unknown54: 2, 2, 311, 0, 2
+    modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
         Unknown52: 1, 2, 45, 2, 13, 2, 51
         Unknown52: 0, 2, 51, 0, -1, 2, 52
-        Unknown54: 2, 2, 51, 2, 52
+        modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
         Unknown52: 3, 2, 18, 2, 51, 2, 311
-        Unknown54: 2, 2, 311, 0, 2
+        modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
     Unknown1914: 0
@@ -17993,7 +17993,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6_4500'
   storeValue: (VARIABLE), 48, (STATIC), 43680000
   storeValue: (VARIABLE), 49, (STATIC), 500000
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 0
-    Unknown54: 2, 2, 46, 0, -1
+    modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 47
     storeValue: (VARIABLE), 46, (VARIABLE), 47
@@ -18004,23 +18004,23 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6_4500'
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
   Unknown52: 2, 2, 8, 2, 45, 2, 50
   Unknown52: 0, 2, 45, 0, -1, 2, 51
-  Unknown54: 2, 2, 51, 2, 45
+  modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
-  Unknown54: 2, 2, 311, 0, 2
+  modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: 4
     Unknown23: 4
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
-    Unknown54: 2, 2, 51, 2, 52
+    modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
     Unknown52: 3, 2, 18, 2, 51, 2, 311
-    Unknown54: 2, 2, 311, 0, 2
+    modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
         Unknown52: 1, 2, 45, 2, 13, 2, 51
         Unknown52: 0, 2, 51, 0, -1, 2, 52
-        Unknown54: 2, 2, 51, 2, 52
+        modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
         Unknown52: 3, 2, 18, 2, 51, 2, 311
-        Unknown54: 2, 2, 311, 0, 2
+        modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
     Unknown1914: 0
@@ -18164,7 +18164,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_3_4500'
   storeValue: (VARIABLE), 48, (STATIC), 87360000
   storeValue: (VARIABLE), 49, (STATIC), 500000
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 0
-    Unknown54: 2, 2, 46, 0, -1
+    modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 47
     storeValue: (VARIABLE), 46, (VARIABLE), 47
@@ -18175,23 +18175,23 @@ startSubroutine: s32'cmnWSB_Slave_Slide_3_4500'
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
   Unknown52: 2, 2, 8, 2, 45, 2, 50
   Unknown52: 0, 2, 45, 0, -1, 2, 51
-  Unknown54: 2, 2, 51, 2, 45
+  modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
-  Unknown54: 2, 2, 311, 0, 2
+  modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: 4
     Unknown23: 4
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
-    Unknown54: 2, 2, 51, 2, 52
+    modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
     Unknown52: 3, 2, 18, 2, 51, 2, 311
-    Unknown54: 2, 2, 311, 0, 2
+    modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
         Unknown52: 1, 2, 45, 2, 13, 2, 51
         Unknown52: 0, 2, 51, 0, -1, 2, 52
-        Unknown54: 2, 2, 51, 2, 52
+        modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
         Unknown52: 3, 2, 18, 2, 51, 2, 311
-        Unknown54: 2, 2, 311, 0, 2
+        modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
     Unknown1914: 0
@@ -18336,7 +18336,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_3_4500'
   storeValue: (VARIABLE), 48, (STATIC), 109200000
   storeValue: (VARIABLE), 49, (STATIC), 500000
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 0
-    Unknown54: 2, 2, 46, 0, -1
+    modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 47
     storeValue: (VARIABLE), 46, (VARIABLE), 47
@@ -18347,23 +18347,23 @@ startSubroutine: s32'cmnWSB_Slave_Up_3_4500'
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
   Unknown52: 2, 2, 8, 2, 45, 2, 50
   Unknown52: 0, 2, 45, 0, -1, 2, 51
-  Unknown54: 2, 2, 51, 2, 45
+  modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
-  Unknown54: 2, 2, 311, 0, 2
+  modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: 4
     Unknown23: 4
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
-    Unknown54: 2, 2, 51, 2, 52
+    modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
     Unknown52: 3, 2, 18, 2, 51, 2, 311
-    Unknown54: 2, 2, 311, 0, 2
+    modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
         Unknown52: 1, 2, 45, 2, 13, 2, 51
         Unknown52: 0, 2, 51, 0, -1, 2, 52
-        Unknown54: 2, 2, 51, 2, 52
+        modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
         Unknown52: 3, 2, 18, 2, 51, 2, 311
-        Unknown54: 2, 2, 311, 0, 2
+        modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
     Unknown1914: 0
@@ -18508,7 +18508,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_3_4500'
   storeValue: (VARIABLE), 48, (STATIC), 43680000
   storeValue: (VARIABLE), 49, (STATIC), 500000
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 0
-    Unknown54: 2, 2, 46, 0, -1
+    modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 47
     storeValue: (VARIABLE), 46, (VARIABLE), 47
@@ -18519,23 +18519,23 @@ startSubroutine: s32'cmnWSB_Slave_Down_3_4500'
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
   Unknown52: 2, 2, 8, 2, 45, 2, 50
   Unknown52: 0, 2, 45, 0, -1, 2, 51
-  Unknown54: 2, 2, 51, 2, 45
+  modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
-  Unknown54: 2, 2, 311, 0, 2
+  modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: 4
     Unknown23: 4
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
-    Unknown54: 2, 2, 51, 2, 52
+    modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
     Unknown52: 3, 2, 18, 2, 51, 2, 311
-    Unknown54: 2, 2, 311, 0, 2
+    modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
         Unknown52: 1, 2, 45, 2, 13, 2, 51
         Unknown52: 0, 2, 51, 0, -1, 2, 52
-        Unknown54: 2, 2, 51, 2, 52
+        modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
         Unknown52: 3, 2, 18, 2, 51, 2, 311
-        Unknown54: 2, 2, 311, 0, 2
+        modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
     Unknown1914: 0
@@ -18680,7 +18680,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_3_4500'
   storeValue: (VARIABLE), 48, (STATIC), 87360000
   storeValue: (VARIABLE), 49, (STATIC), 500000
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 0
-    Unknown54: 2, 2, 46, 0, -1
+    modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 47
     storeValue: (VARIABLE), 46, (VARIABLE), 47
@@ -18691,23 +18691,23 @@ startSubroutine: s32'cmnWSB_Slave_Bound_3_4500'
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
   Unknown52: 2, 2, 8, 2, 45, 2, 50
   Unknown52: 0, 2, 45, 0, -1, 2, 51
-  Unknown54: 2, 2, 51, 2, 45
+  modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
-  Unknown54: 2, 2, 311, 0, 2
+  modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: 4
     Unknown23: 4
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
-    Unknown54: 2, 2, 51, 2, 52
+    modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
     Unknown52: 3, 2, 18, 2, 51, 2, 311
-    Unknown54: 2, 2, 311, 0, 2
+    modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
         Unknown52: 1, 2, 45, 2, 13, 2, 51
         Unknown52: 0, 2, 51, 0, -1, 2, 52
-        Unknown54: 2, 2, 51, 2, 52
+        modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
         Unknown52: 3, 2, 18, 2, 51, 2, 311
-        Unknown54: 2, 2, 311, 0, 2
+        modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
     Unknown1914: 0
@@ -18851,7 +18851,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_3_21000'
   storeValue: (VARIABLE), 48, (STATIC), 131040000
   storeValue: (VARIABLE), 49, (STATIC), 1500000
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 0
-    Unknown54: 2, 2, 46, 0, -1
+    modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 47
     storeValue: (VARIABLE), 46, (VARIABLE), 47
@@ -18862,28 +18862,28 @@ startSubroutine: s32'cmnWSB_Slave_Slide_3_21000'
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
   Unknown52: 2, 2, 8, 2, 45, 2, 50
   Unknown52: 0, 2, 45, 0, -1, 2, 51
-  Unknown54: 2, 2, 51, 2, 45
+  modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
-  Unknown54: 2, 2, 311, 0, 2
+  modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: 4
     Unknown23: 4
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown114: 
-    Unknown54: 2, 2, 51, 0, -1
+    modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
     Unknown196: 23, 131, 2, 49, 2, 46, 2, 51
-    Unknown54: 2, 2, 51, 0, -1
+    modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
     Unknown115: 
     Unknown52: 0, 2, 51, 0, -1, 2, 52
-    Unknown54: 2, 2, 51, 2, 52
+    modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
     Unknown52: 3, 2, 18, 2, 51, 2, 311
-    Unknown54: 2, 2, 311, 0, 2
+    modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
         Unknown52: 1, 2, 45, 2, 13, 2, 51
         Unknown52: 0, 2, 51, 0, -1, 2, 52
-        Unknown54: 2, 2, 51, 2, 52
+        modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
         Unknown52: 3, 2, 18, 2, 51, 2, 311
-        Unknown54: 2, 2, 311, 0, 2
+        modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
     Unknown1914: 0
@@ -19028,7 +19028,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_3_21000'
   storeValue: (VARIABLE), 48, (STATIC), 131040000
   storeValue: (VARIABLE), 49, (STATIC), 1500000
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 0
-    Unknown54: 2, 2, 46, 0, -1
+    modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 47
     storeValue: (VARIABLE), 46, (VARIABLE), 47
@@ -19039,28 +19039,28 @@ startSubroutine: s32'cmnWSB_Slave_Up_3_21000'
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
   Unknown52: 2, 2, 8, 2, 45, 2, 50
   Unknown52: 0, 2, 45, 0, -1, 2, 51
-  Unknown54: 2, 2, 51, 2, 45
+  modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
-  Unknown54: 2, 2, 311, 0, 2
+  modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: 4
     Unknown23: 4
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown114: 
-    Unknown54: 2, 2, 51, 0, -1
+    modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
     Unknown196: 23, 131, 2, 49, 2, 46, 2, 51
-    Unknown54: 2, 2, 51, 0, -1
+    modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
     Unknown115: 
     Unknown52: 0, 2, 51, 0, -1, 2, 52
-    Unknown54: 2, 2, 51, 2, 52
+    modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
     Unknown52: 3, 2, 18, 2, 51, 2, 311
-    Unknown54: 2, 2, 311, 0, 2
+    modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
         Unknown52: 1, 2, 45, 2, 13, 2, 51
         Unknown52: 0, 2, 51, 0, -1, 2, 52
-        Unknown54: 2, 2, 51, 2, 52
+        modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
         Unknown52: 3, 2, 18, 2, 51, 2, 311
-        Unknown54: 2, 2, 311, 0, 2
+        modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
     Unknown1914: 0
@@ -19205,7 +19205,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_3_21000'
   storeValue: (VARIABLE), 48, (STATIC), 87360000
   storeValue: (VARIABLE), 49, (STATIC), 1500000
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 0
-    Unknown54: 2, 2, 46, 0, -1
+    modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 47
     storeValue: (VARIABLE), 46, (VARIABLE), 47
@@ -19216,28 +19216,28 @@ startSubroutine: s32'cmnWSB_Slave_Down_3_21000'
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
   Unknown52: 2, 2, 8, 2, 45, 2, 50
   Unknown52: 0, 2, 45, 0, -1, 2, 51
-  Unknown54: 2, 2, 51, 2, 45
+  modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
-  Unknown54: 2, 2, 311, 0, 2
+  modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: 4
     Unknown23: 4
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown114: 
-    Unknown54: 2, 2, 51, 0, -1
+    modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
     Unknown196: 23, 131, 2, 49, 2, 46, 2, 51
-    Unknown54: 2, 2, 51, 0, -1
+    modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
     Unknown115: 
     Unknown52: 0, 2, 51, 0, -1, 2, 52
-    Unknown54: 2, 2, 51, 2, 52
+    modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
     Unknown52: 3, 2, 18, 2, 51, 2, 311
-    Unknown54: 2, 2, 311, 0, 2
+    modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
         Unknown52: 1, 2, 45, 2, 13, 2, 51
         Unknown52: 0, 2, 51, 0, -1, 2, 52
-        Unknown54: 2, 2, 51, 2, 52
+        modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
         Unknown52: 3, 2, 18, 2, 51, 2, 311
-        Unknown54: 2, 2, 311, 0, 2
+        modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
     Unknown1914: 0
@@ -19382,7 +19382,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_3_21000'
   storeValue: (VARIABLE), 48, (STATIC), 87360000
   storeValue: (VARIABLE), 49, (STATIC), 1500000
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 0
-    Unknown54: 2, 2, 46, 0, -1
+    modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 47
     storeValue: (VARIABLE), 46, (VARIABLE), 47
@@ -19393,28 +19393,28 @@ startSubroutine: s32'cmnWSB_Slave_Bound_3_21000'
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
   Unknown52: 2, 2, 8, 2, 45, 2, 50
   Unknown52: 0, 2, 45, 0, -1, 2, 51
-  Unknown54: 2, 2, 51, 2, 45
+  modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
-  Unknown54: 2, 2, 311, 0, 2
+  modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: 4
     Unknown23: 4
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown114: 
-    Unknown54: 2, 2, 51, 0, -1
+    modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
     Unknown196: 23, 131, 2, 49, 2, 46, 2, 51
-    Unknown54: 2, 2, 51, 0, -1
+    modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
     Unknown115: 
     Unknown52: 0, 2, 51, 0, -1, 2, 52
-    Unknown54: 2, 2, 51, 2, 52
+    modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
     Unknown52: 3, 2, 18, 2, 51, 2, 311
-    Unknown54: 2, 2, 311, 0, 2
+    modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
         Unknown52: 1, 2, 45, 2, 13, 2, 51
         Unknown52: 0, 2, 51, 0, -1, 2, 52
-        Unknown54: 2, 2, 51, 2, 52
+        modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
         Unknown52: 3, 2, 18, 2, 51, 2, 311
-        Unknown54: 2, 2, 311, 0, 2
+        modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
     Unknown1914: 0
@@ -20470,7 +20470,7 @@ beginState: s32'cmnDebug17'
     storeValue: (VARIABLE), 46, (STATIC), 1
     upon: (FRAME_STEP)
       ifOperation: 16, (VARIABLE), 13, (STATIC), 5
-        Unknown54: 0, 2, 45, 0, 1
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
         ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
           Unknown1149: 0
           endIf: 
@@ -21076,7 +21076,7 @@ beginState: s32'cmn_Dust_alarm'
     callSubroutine: s32'cmn_Effect_NoLink'
     upon: 36
       if: (VARIABLE), 315
-        Unknown54: 0, 2, 45, 0, 1
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
         ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 20
           Unknown456: 0
           Unknown23: 36
@@ -21103,7 +21103,7 @@ beginState: s32'cmn_dustcharge_alarm'
     callSubroutine: s32'cmn_Effect_NoLink'
     upon: 36
       if: (VARIABLE), 315
-        Unknown54: 0, 2, 45, 0, 1
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
         ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 5
           Unknown456: 0
           Unknown23: 36
@@ -21777,7 +21777,7 @@ beginState: s32'cmn_FinishCamera_Screen_Effect'
     Unknown40: 
     Unknown53: 23, 2, 46, 22, 2, 18
     Unknown53: 23, 2, 47, 22, 2, 8
-    Unknown54: 2, 2, 47, 0, -1
+    modifyVar: (MUL), (VARIABLE), 47, (STATIC), -1
     Unknown52: 2, 2, 47, 0, 2, 2, 48
     ifOperation: (IS_LESSER), (VARIABLE), 46, (VARIABLE), 47
       Unknown41: 22
@@ -21846,7 +21846,7 @@ beginState: s32'cmn_FinishCamera_Screen_NoProce'
     Unknown40: 
     Unknown53: 23, 2, 46, 22, 2, 18
     Unknown53: 23, 2, 47, 22, 2, 8
-    Unknown54: 2, 2, 47, 0, -1
+    modifyVar: (MUL), (VARIABLE), 47, (STATIC), -1
     Unknown52: 2, 2, 47, 0, 2, 2, 48
     ifOperation: (IS_LESSER), (VARIABLE), 46, (VARIABLE), 47
       Unknown41: 22
@@ -22184,7 +22184,7 @@ beginState: s32'cmn_FinishCamera_Projectile'
     upon: 36
       Unknown2098: 13, 13
       Unknown2099: 13, 13
-      Unknown54: 2, 2, 18, 0, 2
+      modifyVar: (MUL), (VARIABLE), 18, (STATIC), 2
       Unknown41: 4
       Unknown2098: 14, 14
       Unknown2099: 14, 14
@@ -22649,7 +22649,7 @@ startSubroutine: s32'cmn_FinishCamera_Init'
     Unknown40: 
     Unknown53: 23, 2, 46, 22, 2, 18
     Unknown53: 23, 2, 47, 22, 2, 8
-    Unknown54: 2, 2, 47, 0, -1
+    modifyVar: (MUL), (VARIABLE), 47, (STATIC), -1
     Unknown52: 2, 2, 47, 0, 2, 2, 48
     ifOperation: (IS_LESSER), (VARIABLE), 46, (VARIABLE), 47
       Unknown41: 22
@@ -23313,7 +23313,7 @@ beginState: s32'cmn_Afro_Timer'
       storeValue: (VARIABLE), 48, (STATIC), 120
       endIf: 
     else: 
-      Unknown54: 0, 2, 46, 0, 1
+      modifyVar: (ADD), (VARIABLE), 46, (STATIC), 1
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 45
         Unknown23: 72
         Unknown23: 71
@@ -23331,7 +23331,7 @@ beginState: s32'cmn_Afro_Timer'
     storeValue: (VARIABLE), 48, (STATIC), 15
     endIf: 
   else: 
-    Unknown54: 0, 2, 46, 0, 1
+    modifyVar: (ADD), (VARIABLE), 46, (STATIC), 1
     ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 45
       Unknown23: 72
       Unknown23: 71
@@ -23347,7 +23347,7 @@ upon: (FRAME_STEP)
     ifNot: (VARIABLE), 81
       ifNot: (VARIABLE), 329
         if: (VARIABLE), 16
-          Unknown54: 0, 2, 50, 0, 1
+          modifyVar: (ADD), (VARIABLE), 50, (STATIC), 1
           Unknown49: 68
           if: (VARIABLE), 0
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 50, (STATIC), 540
@@ -23429,7 +23429,7 @@ upon: (FRAME_STEP)
     ifNot: (VARIABLE), 81
       ifNot: (VARIABLE), 329
         if: (VARIABLE), 16
-          Unknown54: 0, 2, 50, 0, 1
+          modifyVar: (ADD), (VARIABLE), 50, (STATIC), 1
           Unknown49: 68
           if: (VARIABLE), 0
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 50, (STATIC), 540
@@ -23460,7 +23460,7 @@ upon: (FRAME_STEP)
 upon: 12
   Unknown53: 23, 2, 281, 3, 2, 281
   Unknown177: 3, 17, 0
-  Unknown54: 0, 2, 49, 0, 1
+  modifyVar: (ADD), (VARIABLE), 49, (STATIC), 1
   ifOperation: 16, (VARIABLE), 49, (STATIC), 5
     ifNot: (VARIABLE), 142
       Unknown448: s32'cmn_afro_fireloop', 100
@@ -23487,7 +23487,7 @@ upon: 12
     endIf: 
   if: (VARIABLE), 315
     if: (VARIABLE), 16
-      Unknown54: 0, 2, 52, 0, 1
+      modifyVar: (ADD), (VARIABLE), 52, (STATIC), 1
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 52, (STATIC), 60
         Unknown23: 3
         Unknown23: 71
@@ -23511,7 +23511,7 @@ beginState: s32'cmn_Afro_Timer_CS'
     if: (VARIABLE), 0
       Unknown2498: 4, 2, 48
       upon: 12
-        Unknown54: 0, 2, 49, 0, 1
+        modifyVar: (ADD), (VARIABLE), 49, (STATIC), 1
         ifOperation: 16, (VARIABLE), 49, (STATIC), 5
           Unknown2278: s32'Afro', 0, 3
           Unknown449: s32'cmn_afro_fireloop', 100
@@ -23562,7 +23562,7 @@ startSubroutine: s32'cmnRomanCancel'
     storeValue: (VARIABLE), 48, (STATIC), 19
     storeValue: (VARIABLE), 49, (STATIC), 25
     storeValue: (VARIABLE), 341, (STATIC), 1
-    Unknown54: 3, 2, 335, 0, 100
+    modifyVar: (DIV), (VARIABLE), 335, (STATIC), 100
     Unknown36: 13, 6
     endIf: 
   Unknown2362: s32'RomanCancelNeutral'
@@ -23574,7 +23574,7 @@ startSubroutine: s32'cmnRomanCancel'
     storeValue: (VARIABLE), 48, (STATIC), 13
     storeValue: (VARIABLE), 49, (STATIC), 19
     storeValue: (VARIABLE), 341, (STATIC), 2
-    Unknown54: 3, 2, 335, 0, 100
+    modifyVar: (DIV), (VARIABLE), 335, (STATIC), 100
     Unknown36: 13, 6
     endIf: 
   Unknown2362: s32'RomanCancelAttack'
@@ -23586,7 +23586,7 @@ startSubroutine: s32'cmnRomanCancel'
     storeValue: (VARIABLE), 48, (STATIC), 7
     storeValue: (VARIABLE), 49, (STATIC), 13
     storeValue: (VARIABLE), 341, (STATIC), 3
-    Unknown54: 3, 2, 335, 0, 100
+    modifyVar: (DIV), (VARIABLE), 335, (STATIC), 100
     Unknown36: 13, 1
     endIf: 
   Unknown2362: s32'RomanCancelGuard'
@@ -23854,7 +23854,7 @@ startSubroutine: s32'cmnRomanCancel'
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (VARIABLE), 47
       Unknown27: s32'_NEUTRAL'
       endIf: 
-    modifyVar: (ADD), 2, 48, (STATIC), -1
+    modifyVar2: (ADD), (VARIABLE), 48, (STATIC), -1
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (VARIABLE), 0
       Unknown1663: 
       Unknown1664: 
@@ -24114,7 +24114,7 @@ beginState: s32'cmnRomanCancel_Object'
   storeValue: (VARIABLE), 45, (STATIC), 250000
   upon: (FRAME_STEP)
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 13, (STATIC), 10
-      Unknown54: 0, 2, 45, 0, 25000
+      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 25000
       Unknown60: '0x16000000670000001700000067000000'
       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 0, (VARIABLE), 45
         ifNot: (VARIABLE), 46

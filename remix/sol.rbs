@@ -4088,6 +4088,7 @@ beginState: s32'NmlAtk5D'
     hitAirPushbackY: 0, -30000
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk2E'
+    addGatlingOption: s32'Vortex'
     groundBounceCount: 1
     Unknown814: 25000
     Unknown806: 20000
