@@ -8960,12 +8960,12 @@ startSubroutine: s32'cmn_AtkLv0'
   Unknown765: 0, 190
   Unknown906: 1
   if: (VARIABLE), 31
-    hitAirPushBackX: 0, 21500
+    hitAirPushbackX: 0, 21500
     hitAirPushbackY: 0, 30000
     Unknown778: 0, 3000
     endIf: 
   else: 
-    hitAirPushBackX: 0, 21500
+    hitAirPushbackX: 0, 21500
     hitAirPushbackY: 0, 10000
     Unknown778: 0, 3500
     endElse: 
@@ -9018,12 +9018,12 @@ startSubroutine: s32'cmn_AtkLv1'
   Unknown765: 0, 195
   Unknown906: 1
   if: (VARIABLE), 31
-    hitAirPushBackX: 0, 21500
+    hitAirPushbackX: 0, 21500
     hitAirPushbackY: 0, 30000
     Unknown778: 0, 3000
     endIf: 
   else: 
-    hitAirPushBackX: 0, 21500
+    hitAirPushbackX: 0, 21500
     hitAirPushbackY: 0, 10000
     Unknown778: 0, 3500
     endElse: 
@@ -9076,12 +9076,12 @@ startSubroutine: s32'cmn_AtkLv2'
   Unknown765: 0, 200
   Unknown906: 1
   if: (VARIABLE), 31
-    hitAirPushBackX: 0, 22500
+    hitAirPushbackX: 0, 22500
     hitAirPushbackY: 0, 30000
     Unknown778: 0, 3000
     endIf: 
   else: 
-    hitAirPushBackX: 0, 21500
+    hitAirPushbackX: 0, 21500
     hitAirPushbackY: 0, 15000
     Unknown778: 0, 3500
     endElse: 
@@ -9134,12 +9134,12 @@ startSubroutine: s32'cmn_AtkLv3'
   Unknown765: 0, 205
   Unknown906: 1
   if: (VARIABLE), 31
-    hitAirPushBackX: 0, 22500
+    hitAirPushbackX: 0, 22500
     hitAirPushbackY: 0, 30000
     Unknown778: 0, 3000
     endIf: 
   else: 
-    hitAirPushBackX: 0, 21500
+    hitAirPushbackX: 0, 21500
     hitAirPushbackY: 0, 15000
     Unknown778: 0, 3500
     endElse: 
@@ -9192,12 +9192,12 @@ startSubroutine: s32'cmn_AtkLv4'
   Unknown765: 0, 210
   Unknown906: 1
   if: (VARIABLE), 31
-    hitAirPushBackX: 0, 23500
+    hitAirPushbackX: 0, 23500
     hitAirPushbackY: 0, 30000
     Unknown778: 0, 3000
     endIf: 
   else: 
-    hitAirPushBackX: 0, 21500
+    hitAirPushbackX: 0, 21500
     hitAirPushbackY: 0, 15000
     Unknown778: 0, 3500
     endElse: 
@@ -11528,16 +11528,16 @@ startSubroutine: s32'cmn_DustAttack'
   damage: 0, 40
   Unknown1124: 20
   setProration: 80
-  hitAirPushBackX: 0, 50000
+  hitAirPushbackX: 0, 50000
   hitAirPushbackY: 0, 30000
   groundHitEffect: 8
   airHitEffect: 8
   hitStop: 20
   Unknown996: 0, 0, 0
   Unknown1108: 45
-  Unknown1102: 60
+  pushbackX: 60
   callSubroutine: s32'cmn_fuwafuwafuwa'
-  hitAirPushBackX: 0, 10000
+  hitAirPushbackX: 0, 10000
   Unknown760: 0, 80, 0, 6, 0, 10
   hitAirPushbackY: 0, 30000
   Unknown770: 0, 60, 0, 8, 0, 16
@@ -11577,7 +11577,7 @@ startSubroutine: s32'cmn_DustAttack'
     if: (VARIABLE), 52
       Unknown1023: 18
       riscGain: 25
-      Unknown1102: 100
+      pushbackX: 100
       endIf: 
     endUpon: 
   upon: 10
@@ -11613,12 +11613,12 @@ startSubroutine: s32'cmn_DustAttack'
         Unknown1110: 0
         Unknown1111: 0
         Unknown929: 1, 1
-        hitAirPushBackX: 0, 50000
+        hitAirPushbackX: 0, 50000
         hitAirPushbackY: 0, 75000
         Unknown1124: 5
         setProration: 100
         Unknown1001: 0
-        Unknown1102: 200
+        pushbackX: 200
         groundHitEffect: 12
         airHitEffect: 12
         Unknown1051: 0
@@ -11703,7 +11703,7 @@ startSubroutine: s32'cmn_DustAttack'
       endIf: 
     else: 
       callSubroutine: s32'cmn_fuwafuwafuwa'
-      hitAirPushBackX: 0, 5000
+      hitAirPushbackX: 0, 5000
       Unknown760: 0, 80, 0, 6, 0, 10
       hitAirPushbackY: 0, 55000
       Unknown770: 0, 60, 0, 8, 0, 16
@@ -11737,7 +11737,7 @@ else:
   callSubroutine: s32'cmn_fuwafuwafuwa'
   groundCounterHitEffect: 11
   Unknown896: 11
-  hitAirPushBackX: 0, 10000
+  hitAirPushbackX: 0, 10000
   Unknown760: 0, 80, 0, 6, 0, 10
   hitAirPushbackY: 0, 35000
   Unknown770: 0, 60, 0, 8, 0, 16
@@ -12289,7 +12289,7 @@ startSubroutine: s32'cmn_Dust_HomingJump_Attack'
           storeValue: (VARIABLE), 348, (STATIC), 2000
           endIf: 
         endIf: 
-      hitAirPushBackX: 2, 346
+      hitAirPushbackX: 2, 346
       hitAirPushbackY: 2, 347
       Unknown778: 2, 348
       addVelocityX: 0, 2500
@@ -12325,7 +12325,7 @@ startSubroutine: s32'cmn_Dust_Finish'
   callSubroutine: s32'cmn_AtkLv4'
   damage: 0, 80
   Unknown1086: 50
-  hitAirPushBackX: 0, 0
+  hitAirPushbackX: 0, 0
   hitAirPushbackY: 0, 0
   Unknown778: 0, 0
   Unknown1111: 1
@@ -13081,7 +13081,7 @@ beginState: s32'cmn_nagenuke'
     Unknown1059: 1
     Unknown1133: 1
     Unknown1075: 1
-    Unknown1102: 20
+    pushbackX: 20
     damage: 0, 0
     Unknown1020: 1
     guardType: (NONE)
@@ -13109,7 +13109,7 @@ beginState: s32'cmn_nagenuke'
     Unknown1116: 1
     Unknown947: 1
     callSubroutine: s32'cmnNohosei'
-    Unknown1102: 0
+    pushbackX: 0
     Unknown957: 1
     endUpon: 
   sprite: s32'mom_sphere', 2
@@ -13284,7 +13284,7 @@ startSubroutine: s32'cmnAtkTemplNageLand'
   Unknown1075: 1
   Unknown773: 1
   Unknown1158: 1
-  Unknown1102: 0
+  pushbackX: 0
   damage: 0, 0
   Unknown1020: 1
   Unknown1100: 1
@@ -13325,7 +13325,7 @@ startSubroutine: s32'cmnAtkTemplNageAir'
   Unknown1075: 1
   Unknown773: 1
   Unknown1158: 1
-  Unknown1102: 0
+  pushbackX: 0
   damage: 0, 0
   Unknown1020: 1
   Unknown1100: 1
@@ -13446,7 +13446,7 @@ startSubroutine: s32'cmnAtkTemplNageFinishHit'
 
 startSubroutine: s32'cmnAtkTemplNage_Base'
   hitSoftKnockdown: 0
-  Unknown1102: 0
+  pushbackX: 0
   Unknown1103: 0
   Unknown1111: 1
   Unknown1117: 0
@@ -13534,7 +13534,7 @@ startSubroutine: s32'cmn_Hizakuzure'
   endSubroutine: 
 
 startSubroutine: s32'cmn_lightAttack_hitback'
-  Unknown1102: 125
+  pushbackX: 125
   Unknown1103: 85
   Unknown1005: 250
   Unknown1004: 250
@@ -13547,7 +13547,7 @@ startSubroutine: s32'cmn_lightAttack_flex'
 startSubroutine: s32'cmn_AtkTemplFloatDamage'
   Unknown1089: 1
   airHitEffect: 36
-  Unknown1102: 50
+  pushbackX: 50
   hitStop: 16
   Unknown1128: 1
   Unknown1003: 1
@@ -13669,7 +13669,7 @@ startSubroutine: s32'cmn_AtkTemplNmlAtkAir'
       Unknown52: 3, 2, 8, 0, 2, 2, 348
       modifyVar: (ADD), (VARIABLE), 347, (VARIABLE), 348
       endIf: 
-    hitAirPushBackX: 2, 346
+    hitAirPushbackX: 2, 346
     hitAirPushbackY: 2, 347
     endIf: 
   endSubroutine: 
@@ -13847,7 +13847,7 @@ startSubroutine: s32'cmnWSBWallStampAtk'
   Unknown1132: 0
   Unknown996: 0, 0, 0
   Unknown1039: 1
-  Unknown1102: 0
+  pushbackX: 0
   Unknown1210: 0
   Unknown271: '0x00000000770000001E0000001E000000'
   Unknown1773: 1
@@ -19859,7 +19859,7 @@ startSubroutine: s32'cmnDS_Initialize'
             ifOperation: (IS_EQUAL), (VARIABLE), 134, (STATIC), 34
               groundHitEffect: 8
               hitSoftKnockdown: 0
-              hitAirPushBackX: 0, 10000
+              hitAirPushbackX: 0, 10000
               hitAirPushbackY: 0, 30000
               endIf: 
             ifOperation: (IS_EQUAL), (VARIABLE), 134, (STATIC), 35
@@ -19888,18 +19888,18 @@ startSubroutine: s32'cmnDS_Initialize'
               endIf: 
             ifOperation: (IS_EQUAL), (VARIABLE), 134, (STATIC), 41
               groundHitEffect: 12
-              hitAirPushBackX: 0, 15000
+              hitAirPushbackX: 0, 15000
               hitAirPushbackY: 0, 30000
               endIf: 
             ifOperation: (IS_EQUAL), (VARIABLE), 134, (STATIC), 42
               groundHitEffect: 11
-              hitAirPushBackX: 0, 30000
+              hitAirPushbackX: 0, 30000
               hitAirPushbackY: 0, 15000
               endIf: 
             ifOperation: (IS_EQUAL), (VARIABLE), 134, (STATIC), 43
               groundHitEffect: 11
               wallBounceCount: 1
-              hitAirPushBackX: 0, 30000
+              hitAirPushbackX: 0, 30000
               hitAirPushbackY: 0, 15000
               hitSoftKnockdown: 0
               endIf: 
@@ -19907,13 +19907,13 @@ startSubroutine: s32'cmnDS_Initialize'
               groundHitEffect: 11
               wallBounceCount: 1
               Unknown898: 30
-              hitAirPushBackX: 0, 30000
+              hitAirPushbackX: 0, 30000
               hitAirPushbackY: 0, 15000
               endIf: 
             ifOperation: (IS_EQUAL), (VARIABLE), 134, (STATIC), 45
               groundHitEffect: 11
               Unknown933: 60
-              hitAirPushBackX: 0, 20000
+              hitAirPushbackX: 0, 20000
               hitSoftKnockdown: 0
               endIf: 
             ifOperation: (IS_EQUAL), (VARIABLE), 134, (STATIC), 46
@@ -19921,7 +19921,7 @@ startSubroutine: s32'cmnDS_Initialize'
               endIf: 
             ifOperation: (IS_EQUAL), (VARIABLE), 134, (STATIC), 47
               Unknown1111: 1
-              Unknown1102: 25
+              pushbackX: 25
               groundHitEffect: 20
               airHitEffect: 14
               endIf: 
@@ -20368,7 +20368,7 @@ beginState: s32'cmnDebug10'
     hitStop: 30
     Unknown1001: 100
     staggerDuration: 600
-    Unknown1102: 0
+    pushbackX: 0
     Unknown947: 1
     Unknown948: 1
     endUpon: 
@@ -20700,7 +20700,7 @@ beginState: s32'cmnDebug22'
     damage: 0, 0
     hitstunAmount: 0
     Unknown1023: 0
-    Unknown1102: 0
+    pushbackX: 0
     Unknown1018: 1
     Unknown1111: 1
     hitEffectFire: 1
@@ -20727,7 +20727,7 @@ beginState: s32'cmnDebug24'
     damage: 0, 0
     hitstunAmount: 0
     Unknown1023: 0
-    Unknown1102: 0
+    pushbackX: 0
     Unknown1018: 1
     Unknown1111: 1
     hitEffectFire: 1
@@ -20794,7 +20794,7 @@ beginState: s32'cmnDebug29'
     Unknown711: 0
     damage: 0, 0
     Unknown1111: 1
-    Unknown1102: 0
+    pushbackX: 0
     Unknown1142: 1
     hitstunAmount: 0
     Unknown1018: 1
@@ -20857,7 +20857,7 @@ beginState: s32'cmnDebug31'
     Unknown711: 0
     damage: 0, 0
     Unknown1018: 1
-    hitAirPushBackX: 0, 0
+    hitAirPushbackX: 0, 0
     hitAirPushbackY: 0, 0
     Unknown778: 0, 0
     Unknown1067: 1, 0, 150000
@@ -20874,7 +20874,7 @@ beginState: s32'cmnDebug32'
     Unknown711: 0
     damage: 0, 0
     Unknown1018: 1
-    hitAirPushBackX: 0, 0
+    hitAirPushbackX: 0, 0
     hitAirPushbackY: 0, -1
     Unknown778: 0, 0
     hitSoftKnockdown: 0
@@ -20887,7 +20887,7 @@ beginState: s32'cmnDebug32'
   Unknown1067: 1, 0, 1
   sprite: s32'null', 1
   Unknown233: 
-  hitAirPushBackX: 0, 0
+  hitAirPushbackX: 0, 0
   hitAirPushbackY: 0, 0
   Unknown778: 0, 0
   Unknown1067: 1, 0, 150000
@@ -20903,7 +20903,7 @@ beginState: s32'cmnDebug33'
     Unknown711: 0
     damage: 0, 0
     Unknown1018: 1
-    hitAirPushBackX: 0, 0
+    hitAirPushbackX: 0, 0
     hitAirPushbackY: 0, -1
     Unknown778: 0, 0
     hitSoftKnockdown: 0
@@ -20916,7 +20916,7 @@ beginState: s32'cmnDebug33'
   Unknown1067: 1, 0, 1
   sprite: s32'null', 1
   Unknown233: 
-  hitAirPushBackX: 0, 0
+  hitAirPushbackX: 0, 0
   hitAirPushbackY: 0, 0
   Unknown778: 0, 0
   staggerDuration: 600
@@ -21173,11 +21173,11 @@ beginState: s32'cmn_BurstObjGoldHontai'
     Unknown1117: 0
     Unknown1138: 0
     Unknown1039: 0
-    Unknown1102: 160
+    pushbackX: 160
     setForcedProration: 25
     Unknown1154: 1
     Unknown947: 1
-    hitAirPushBackX: 0, 40000
+    hitAirPushbackX: 0, 40000
     hitAirPushbackY: 0, 20000
     Unknown1076: 1
     Unknown1064: s32'CmnNeutral'
@@ -21228,11 +21228,11 @@ beginState: s32'cmn_BurstObjGoldObject'
     Unknown1117: 0
     Unknown1138: 0
     Unknown1039: 0
-    Unknown1102: 160
+    pushbackX: 160
     setForcedProration: 25
     Unknown1154: 1
     Unknown947: 1
-    hitAirPushBackX: 0, 40000
+    hitAirPushbackX: 0, 40000
     hitAirPushbackY: 0, 20000
     Unknown1076: 1
     Unknown1064: s32'CmnNeutral'
@@ -21292,11 +21292,11 @@ beginState: s32'cmn_BurstObjBlueHontai'
     Unknown1117: 0
     Unknown1138: 0
     Unknown1039: 0
-    Unknown1102: 70
+    pushbackX: 70
     setForcedProration: 25
     Unknown1154: 1
     Unknown947: 1
-    hitAirPushBackX: 0, 40000
+    hitAirPushbackX: 0, 40000
     hitAirPushbackY: 0, 20000
     Unknown1076: 1
     Unknown1064: s32'CmnNeutral'
@@ -21347,11 +21347,11 @@ beginState: s32'cmn_BurstObjBlueObject'
     Unknown1117: 0
     Unknown1138: 0
     Unknown1039: 0
-    Unknown1102: 70
+    pushbackX: 70
     setForcedProration: 25
     Unknown1154: 1
     Unknown947: 1
-    hitAirPushBackX: 0, 40000
+    hitAirPushbackX: 0, 40000
     hitAirPushbackY: 0, 20000
     Unknown1076: 1
     Unknown1064: s32'CmnNeutral'
@@ -21578,7 +21578,7 @@ beginState: s32'Banana'
     airHitEffect: 10
     groundHitEffect: 10
     Unknown870: 3
-    hitAirPushBackX: 0, 0
+    hitAirPushbackX: 0, 0
     hitAirPushbackY: 0, 10000
     Unknown1908: 1000
     Unknown1909: 1000
@@ -21612,7 +21612,7 @@ beginState: s32'RandomAttack'
   sprite: s32'vr_debug_dmg', 40
   physicsXImpulse: 0, 10000
   Unknown1915: 
-  hitAirPushBackX: 0, 100000
+  hitAirPushbackX: 0, 100000
   endLabel: 
   gotoLabel: s32'4'
   beginLabel: s32'0'
@@ -23400,7 +23400,7 @@ Unknown1073: 1
 Unknown1028: 0
 Unknown1138: 0
 Unknown1051: 3
-hitAirPushBackX: 0, 10000
+hitAirPushbackX: 0, 10000
 hitAirPushbackY: 0, 40000
 Unknown1148: s32'SE_BTL_CMN_Expl_Fire_M'
 upon: 86
@@ -23704,7 +23704,7 @@ startSubroutine: s32'cmnRomanCancel'
           Unknown139: 15000
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 335, (STATIC), 4
-          Unknown137: -15000
+          physicsXImpulseIfVelocityMatchesSign: -15000
           endIf: 
         if: (VARIABLE), 30
           ifOperation: (IS_EQUAL), (VARIABLE), 335, (STATIC), 8
@@ -24047,31 +24047,31 @@ beginState: s32'cmnRomanCancel_Object'
       recoveryState: 
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 3
-      hitAirPushBackX: 0, 8000
+      hitAirPushbackX: 0, 8000
       hitAirPushbackY: 0, 25000
       Unknown778: 0, 1500
-      Unknown1102: 100
+      pushbackX: 100
       groundHitEffect: 8
       airHitEffect: 8
       hitSoftKnockdown: 0
       ifOperation: (IS_EQUAL), (VARIABLE), 116, (STATIC), 6
-        hitAirPushBackX: 0, 12000
+        hitAirPushbackX: 0, 12000
         hitAirPushbackY: 0, 20000
         Unknown778: 0, 1500
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 116, (STATIC), 4
-        hitAirPushBackX: 0, 4000
+        hitAirPushbackX: 0, 4000
         hitAirPushbackY: 0, 30000
         Unknown778: 0, 1500
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 116, (STATIC), 8
-        hitAirPushBackX: 0, 4000
+        hitAirPushbackX: 0, 4000
         hitAirPushbackY: 0, 35000
         Unknown778: 0, 1500
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 116, (STATIC), 2
         Unknown2498: 3, 2, 30
-        hitAirPushBackX: 0, 4000
+        hitAirPushbackX: 0, 4000
         hitAirPushbackY: 0, 15000
         Unknown778: 0, 1500
         endIf: 
@@ -24086,10 +24086,10 @@ beginState: s32'cmnRomanCancel_Object'
       endUpon: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 4
-    hitAirPushBackX: 0, 15000
+    hitAirPushbackX: 0, 15000
     hitAirPushbackY: 0, 20000
     Unknown778: 0, 1400
-    Unknown1102: 60
+    pushbackX: 60
     setForcedProration: 50
     Unknown1001: 15
     groundHitEffect: 19

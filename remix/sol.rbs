@@ -3521,7 +3521,7 @@ beginState: s32'NmlAtk5A'
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
     Unknown75: s32'cmn_SameAttack', 0, 3, 0, 0, 0, 0, 0, 0
-    hitAirPushBackX: 0, 10000
+    hitAirPushbackX: 0, 10000
     hitAirPushbackY: 0, 27500
     addWhiffCancelOption: s32'NmlAtk5A'
     addWhiffCancelOption: s32'NmlAtk2A'
@@ -3591,15 +3591,18 @@ beginState: s32'NmlAtk6A'
     addGatlingOption: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk2E'
-    hitAirPushBackX: 0, 25000
+    hitAirPushbackX: 0, 25000
     hitAirPushbackY: 0, 15000
     wallBounceCount: 1
     wallBounceInCornerOnly: 1
     wallBounceXVelocityPercent: 20
     counterHitSoftKnockdown: 0
     Unknown75: s32'cmn_AtkVectorAirGuard', 0, 1, 0, 0, 0, 0, 0, 0
-    upon: (HIT_OR_GUARD)
-      pushbackX: 100000
+    upon: (GUARD)
+      extendPushboxX: 100000
+      endUpon: 
+    upon: (HIT)
+      extendPushboxX: 1000
       endUpon: 
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -350000
@@ -3615,7 +3618,7 @@ beginState: s32'NmlAtk6A'
   sprite: s32'sol210_04', 5
   hit: 
   sprite: s32'sol210_05', 4
-  pushbackX: 0
+  extendPushboxX: 0
   callSubroutine: s32'cmn_AttackEnd'
   enableGatlings: 1
   sprite: s32'sol210_06', 4
@@ -3637,7 +3640,7 @@ beginState: s32'NmlAtk2A'
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
     Unknown75: s32'cmn_SameAttack', 0, 3, 0, 0, 0, 0, 0, 0
-    hitAirPushBackX: 0, 12500
+    hitAirPushbackX: 0, 12500
     hitAirPushbackY: 0, 27500
     addWhiffCancelOption: s32'NmlAtk5A'
     addWhiffCancelOption: s32'NmlAtk2A'
@@ -3693,7 +3696,7 @@ beginState: s32'NmlAtk5B'
     storeValue: (VARIABLE), 340, (STATIC), 2
     Unknown75: s32'cmn_hosei', 0, 1, 0, 0, 0, 0, 0, 0
     callSubroutine: s32'cmn_fuwafuwafuwa'
-    hitAirPushBackX: 0, 10000
+    hitAirPushbackX: 0, 10000
     Unknown760: 0, 80, 0, 8, 0, 15
     hitAirPushbackY: 0, 25000
     Unknown770: 0, 50, 0, 6, 0, 15
@@ -3720,8 +3723,11 @@ beginState: s32'NmlAtk5B'
     callSubroutine: s32'cmn_AtkTemplNokezoriLow'
     Unknown2526: 1, 1, 6, 100, 60, 200
     Unknown2591: 1, 1, 6, 100, 200, 200
-    upon: (HIT_OR_GUARD)
-      pushbackX: 50000
+    upon: (GUARD)
+      extendPushboxX: 50000
+      endUpon: 
+    upon: (HIT)
+      extendPushboxX: 1000
       endUpon: 
     endUpon: 
   sprite: s32'sol201_00', 2
@@ -3740,7 +3746,7 @@ beginState: s32'NmlAtk5B'
   storeValue: (VARIABLE), 340, (STATIC), 2
   Unknown75: s32'cmn_hosei', 0, 1, 0, 0, 0, 0, 0, 0
   callSubroutine: s32'cmn_fuwafuwafuwa'
-  hitAirPushBackX: 0, 20000
+  hitAirPushbackX: 0, 20000
   Unknown760: 0, 80, 0, 8, 0, 15
   hitAirPushbackY: 0, 30000
   Unknown770: 0, 50, 0, 6, 0, 15
@@ -3749,7 +3755,7 @@ beginState: s32'NmlAtk5B'
   callSubroutine: s32'cmn_AtkTemplNokezoriHigh'
   sprite: s32'sol201_03', 4
   recoveryState: 
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'sol201_04', 4
   sprite: s32'sol201_05', 4
   sprite: s32'sol201_06', 4
@@ -3765,7 +3771,7 @@ beginState: s32'NmlAtk2B'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmn_AtkLv1'
     damage: 0, 28
-    Unknown1102: 120
+    pushbackX: 120
     guardType: (LOW)
     Unknown923: 1
     Unknown1107: 1
@@ -3775,7 +3781,7 @@ beginState: s32'NmlAtk2B'
     callSubroutine: s32'cmn_hosei'
     callSubroutine: s32'cmn_fuwafuwafuwa'
     airHitEffect: 10
-    hitAirPushBackX: 0, 5000
+    hitAirPushbackX: 0, 5000
     hitAirPushbackY: 0, 30000
     Unknown770: 0, 50, 0, 5, 0, 11
     Unknown778: 0, 1000
@@ -3815,7 +3821,7 @@ beginState: s32'NmlAtk5CNear'
     callSubroutine: s32'cmn_AtkLv4'
     callSubroutine: s32'cmn_countertype_middle'
     damage: 0, 44
-    Unknown1102: 50
+    pushbackX: 50
     Unknown1108: 45
     storeValue: (VARIABLE), 338, (STATIC), 0
     storeValue: (VARIABLE), 339, (STATIC), 0
@@ -3824,7 +3830,7 @@ beginState: s32'NmlAtk5CNear'
     Unknown75: s32'cmn_SameAttack', 0, 3, 0, 0, 0, 0, 0, 0
     callSubroutine: s32'cmn_AtkTemplFloatDamageBody'
     callSubroutine: s32'cmn_fuwafuwafuwa'
-    hitAirPushBackX: 0, 10000
+    hitAirPushbackX: 0, 10000
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 20000
     Unknown770: 0, 60, 0, 8, 0, 16
@@ -3842,8 +3848,12 @@ beginState: s32'NmlAtk5CNear'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
     addGatlingOption: s32'Cancel_FDash'
-    upon: (HIT_OR_GUARD)
-      pushbackX: 100000
+    upon: (GUARD)
+      extendPushboxX: 100000
+      Unknown75: s32'cmn_motionblur', 0, 10, 0, 0, 0, 0, 0, 0
+      endUpon: 
+    upon: (HIT)
+      extendPushboxX: 1000
       Unknown75: s32'cmn_motionblur', 0, 10, 0, 0, 0, 0, 0, 0
       endUpon: 
     Unknown953: 2
@@ -3862,7 +3872,7 @@ beginState: s32'NmlAtk5CNear'
   sprite: s32'sol202_02', 3
   sprite: s32'sol202_03', 3
   Unknown2173: 
-  pushbackX: 0
+  extendPushboxX: 0
   Unknown1658: s32'Cancel_FDash'
   Unknown393: 
   sprite: s32'sol202_04', 3
@@ -3879,8 +3889,8 @@ beginState: s32'NmlAtk5CFar'
     callSubroutine: s32'cmn_AtkLv3'
     callSubroutine: s32'cmn_countertype_middle'
     damage: 0, 36
-    Unknown1102: 50
-    hitAirPushBackX: 0, 36000
+    pushbackX: 50
+    hitAirPushbackX: 0, 36000
     hitAirPushbackY: 0, 8000
     Unknown933: 5
     Unknown906: 1
@@ -3894,7 +3904,7 @@ beginState: s32'NmlAtk5CFar'
     addGatlingOption: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk2D'
     upon: (HIT_OR_GUARD)
-      pushbackX: 50000
+      extendPushboxX: 50000
       endUpon: 
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -300000
@@ -3933,7 +3943,7 @@ beginState: s32'NmlAtk5CFar'
   physicsXImpulse: 0, 0
   sprite: s32'sol203_09', 1
   callSubroutine: s32'cmn_AttackEnd'
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'sol203_10', 4
   sprite: s32'sol203_11', 4
   sprite: s32'sol203_12', 4
@@ -3956,7 +3966,7 @@ beginState: s32'NmlAtk6C'
     callSubroutine: s32'cmn_fuwafuwafuwa'
     airHitEffect: 12
     groundCounterHitEffect: 12
-    hitAirPushBackX: 0, 40000
+    hitAirPushbackX: 0, 40000
     Unknown760: 0, 80, 0, 4, 0, 14
     hitAirPushbackY: 0, 25000
     counterhitAirPushbackY: 0, 60000
@@ -3978,7 +3988,7 @@ beginState: s32'NmlAtk6C'
     endUpon: 
   sprite: s32'sol212_00', 2
   setCarriedMomentumPercentage: 150
-  pushbackX: 100000
+  extendPushboxX: 100000
   storeValue: (VARIABLE), 53, (STATIC), 1
   sprite: s32'sol212_00', 1
   storeValue: (VARIABLE), 53, (STATIC), 0
@@ -4002,7 +4012,7 @@ beginState: s32'NmlAtk6C'
   Unknown446: s32'212eff02', 100
   sprite: s32'sol212_07', 4
   callSubroutine: s32'cmn_AttackEnd'
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'sol212_08', 4
   sprite: s32'sol212_09', 4
   sprite: s32'sol212_10', 4
@@ -4029,7 +4039,7 @@ beginState: s32'NmlAtk2C'
     Unknown75: s32'cmn_hosei', 0, 1, 0, 0, 0, 0, 0, 0
     callSubroutine: s32'cmn_fuwafuwafuwa'
     airHitEffect: 10
-    hitAirPushBackX: 0, 12000
+    hitAirPushbackX: 0, 12000
     hitAirPushbackY: 0, 35000
     Unknown770: 0, 50, 0, 5, 0, 11
     Unknown778: 0, 1000
@@ -4084,7 +4094,7 @@ beginState: s32'NmlAtk5D'
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
-    hitAirPushBackX: 0, 45000
+    hitAirPushbackX: 0, 45000
     hitAirPushbackY: 0, -30000
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk2E'
@@ -4094,8 +4104,8 @@ beginState: s32'NmlAtk5D'
     groundBounceYVelocity: 20000
     wallBounceCount: 1
     Unknown838: 12000
-    Unknown840: 38000
-    Unknown794: 2800
+    wallBounceYVelocity: 38000
+    wallBounceGravity: 2800
     wallBounceInCornerOnly: 1
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -350000
@@ -4105,11 +4115,11 @@ beginState: s32'NmlAtk5D'
     Unknown1148: s32'SE_BTL_CMN_Impact_Sword_L_2'
     Unknown1211: s32'SE_BTL_CMN_Impact_Sword_L_2'
     upon: (GUARD)
-      pushbackX: 100000
+      extendPushboxX: 100000
       Unknown75: s32'cmn_screenshake', 0, 3, 0, 1, 0, 0, 0, 0
       endUpon: 
     upon: (HIT)
-      pushbackX: 10000
+      extendPushboxX: 1000
       Unknown75: s32'cmn_screenshake', 0, 3, 0, 1, 0, 0, 0, 0
       endUpon:
     endUpon: 
@@ -4132,7 +4142,7 @@ beginState: s32'NmlAtk5D'
   Unknown2591: 0, 0, 0, 0, 0, 0
   sprite: s32'sol204_07', 4
   callSubroutine: s32'cmn_AttackEnd'
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'sol204_08', 4
   Unknown75: s32'cmn_motionblur', 0, 5, 0, 0, 0, 0, 0, 0
   sprite: s32'sol204_09', 4
@@ -4161,7 +4171,7 @@ beginState: s32'NmlAtk6D'
     callSubroutine: s32'cmn_hosei'
     groundHitEffect: 8
     airHitEffect: 8
-    hitAirPushBackX: 0, 5000
+    hitAirPushbackX: 0, 5000
     hitAirPushbackY: 0, -30000
     counterhitAirPushbackY: 0, -35000
     Unknown856: 1
@@ -4181,9 +4191,9 @@ beginState: s32'NmlAtk6D'
   sprite: s32'sol213_04', 1
   Unknown612: s32'SE_BTL_CMN_Swing_Grap_Heavy_L'
   sprite: s32'sol213_05', 2
-  pushbackX: 100000
+  extendPushboxX: 100000
   sprite: s32'sol213_06', 1
-  pushbackX: 200000
+  extendPushboxX: 200000
   sprite: s32'sol213_07', 3
   Unknown2189: 0, 5
   Unknown446: s32'Crater', 100
@@ -4192,7 +4202,7 @@ beginState: s32'NmlAtk6D'
   Unknown446: s32'cmn_Land_impact', 130
   Unknown75: s32'cmn_screenshake', 0, 1, 0, 2, 0, 0, 0, 0
   upon: (HIT_OR_GUARD)
-    pushbackX: 250000
+    extendPushboxX: 250000
     Unknown255: 1
     setCarriedMomentumPercentage: 25
     Unknown75: s32'cmn_screenshake', 0, 3, 0, 2, 0, 0, 0, 0
@@ -4201,7 +4211,7 @@ beginState: s32'NmlAtk6D'
   Unknown255: 0
   sprite: s32'sol213_09', 6
   callSubroutine: s32'cmn_AttackEnd'
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'sol213_10', 6
   sprite: s32'sol213_11', 5
   sprite: s32'sol213_12', 5
@@ -4224,7 +4234,7 @@ beginState: s32'NmlAtk2D'
     callSubroutine: s32'cmn_hosei'
     callSubroutine: s32'cmn_AtkTemplFloatDamageHead'
     callSubroutine: s32'cmn_fuwafuwafuwa'
-    hitAirPushBackX: 0, 27000
+    hitAirPushbackX: 0, 27000
     Unknown760: 0, 80, 0, 6, 0, 15
     hitAirPushbackY: 0, 60000
     Unknown770: 0, 60, 0, 4, 0, 15
@@ -4238,6 +4248,12 @@ beginState: s32'NmlAtk2D'
     Unknown1148: s32'SE_BTL_CMN_Impact_Sword_L'
     Unknown1211: s32'SE_BTL_CMN_Impact_Sword_L'
     addGatlingOption: s32'NmlAtk2E'
+    upon: (GUARD)
+      extendPushboxX: 100000
+      endUpon: 
+    upon: (HIT)
+      extendPushboxX: 1000
+      endUpon: 
     endUpon: 
   sprite: s32'sol233_00', 3
   sprite: s32'sol233_01', 4
@@ -4247,14 +4263,11 @@ beginState: s32'NmlAtk2D'
   sprite: s32'sol233_03', 1
   hit: 
   Unknown75: s32'cmn_screenshake', 0, 1, 0, 1, 0, 0, 0, 0
-  upon: (HIT_OR_GUARD)
-    pushbackX: 100000
-    endUpon: 
   sprite: s32'sol233_04', 1
   Unknown1709: 0
   sprite: s32'sol233_05', 3
   sprite: s32'sol233_06', 5
-  pushbackX: 0
+  extendPushboxX: 0
   callSubroutine: s32'cmn_AttackEnd'
   sprite: s32'sol233_07', 5
   sprite: s32'sol233_08', 5
@@ -4278,7 +4291,7 @@ beginState: s32'NmlAtk5E'
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
     upon: (HIT_OR_GUARD)
-      pushbackX: 100000
+      extendPushboxX: 100000
       endUpon: 
     endUpon: 
   sprite: s32'sol205_00', 5
@@ -4318,7 +4331,7 @@ beginState: s32'NmlAtk5E'
   hit: 
   sprite: s32'sol205_06', 4
   callSubroutine: s32'cmn_AttackEnd'
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'sol205_07', 4
   sprite: s32'sol205_08', 4
   sprite: s32'sol205_09', 4
@@ -4481,7 +4494,7 @@ beginState: s32'NmlAtk2E'
     callSubroutine: s32'cmn_hosei'
     groundHitEffect: 10
     airHitEffect: 10
-    hitAirPushBackX: 0, 8000
+    hitAirPushbackX: 0, 8000
     hitAirPushbackY: 0, 18000
     upon: 62
       hitSoftKnockdown: 0
@@ -4855,7 +4868,7 @@ beginState: s32'NmlAtkAir5E'
     Unknown75: s32'cmn_AtkLv3', 0, 0, 0, 0, 0, 0, 0, 1
     callSubroutine: s32'cmn_countertype_middle'
     damage: 0, 45
-    Unknown1102: 180
+    pushbackX: 180
     Unknown1108: 20
     storeValue: (VARIABLE), 338, (STATIC), 1000000000
     storeValue: (VARIABLE), 339, (STATIC), 5
@@ -4869,11 +4882,10 @@ beginState: s32'NmlAtkAir5E'
       endElse: 
     callSubroutine: s32'cmn_AtkTemplNmlAtkAir'
     groundHitEffect: 8
-    wallBounceCount: 1
-    Unknown794: 2000
+    wallBounceCount: 0
+    wallBounceGravity: 2000
     wallBounceInCornerOnly: 1
     wallBounceXVelocityPercent: 40
-    Unknown840: 0
     Unknown1005: 10
     Unknown1004: 50
     enableJumpCancel: 1
@@ -4895,10 +4907,10 @@ beginState: s32'NmlAtkAir5E'
   sprite: s32'sol254_03', 2
   sprite: s32'sol254_04', 3
   hit: 
-  sprite: s32'sol254_05', 4
+  sprite: s32'sol254_05', 2
   callSubroutine: s32'cmn_AttackEnd'
-  sprite: s32'sol254_06', 4
-  sprite: s32'sol254_07', 4
+  sprite: s32'sol254_06', 3
+  sprite: s32'sol254_07', 3
   sprite: s32'sol254_08', 5
   endState: 
 
@@ -4962,7 +4974,7 @@ beginState: s32'ThrowExe'
     airHitEffect: 17
     groundHitEffect: 17
     Unknown1159: 1
-    hitAirPushBackX: 0, 20000
+    hitAirPushbackX: 0, 20000
     hitAirPushbackY: 0, -22750
     Unknown778: 0, 1925
     groundBounceCount: 1
@@ -5210,7 +5222,7 @@ beginState: s32'VolcanicViperLandS'
     callSubroutine: s32'cmn_hosei'
     groundHitEffect: 8
     airHitEffect: 8
-    hitAirPushBackX: 0, 18000
+    hitAirPushbackX: 0, 18000
     hitAirPushbackY: 0, 40000
     Unknown75: s32'cmn_AtkVectorAirGuard', 0, 3, 0, 0, 0, 0, 0, 0
     Unknown2169: 0
@@ -5236,7 +5248,7 @@ beginState: s32'VolcanicViperLandS'
       endUpon: 
     callSubroutine: s32'BeginingMoveCheck'
     upon: (HIT_OR_GUARD)
-      pushbackX: 100000
+      extendPushboxX: 100000
       Unknown75: s32'cmn_screenshake', 0, 3, 0, 2, 0, 0, 0, 0
       endUpon: 
     endUpon: 
@@ -5263,7 +5275,7 @@ beginState: s32'VolcanicViperLandS'
   endLabel: 
   beginLabel: s32'drop'
   sprite: s32'sol408_04', 2
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'sol408_05', 2
   Unknown446: s32'VV_End', 100
   Unknown1058: 1
@@ -5305,7 +5317,7 @@ beginState: s32'VolcanicViperAirS'
     callSubroutine: s32'cmn_hosei'
     groundHitEffect: 8
     airHitEffect: 8
-    hitAirPushBackX: 0, 18000
+    hitAirPushbackX: 0, 18000
     hitAirPushbackY: 0, 50000
     Unknown75: s32'cmn_AtkVectorAirGuard', 0, 3, 0, 0, 0, 0, 0, 0
     Unknown2169: 0
@@ -5331,7 +5343,7 @@ beginState: s32'VolcanicViperAirS'
       endUpon: 
     callSubroutine: s32'BeginingMoveCheck'
     upon: (HIT_OR_GUARD)
-      pushbackX: 100000
+      extendPushboxX: 100000
       Unknown75: s32'cmn_screenshake', 0, 3, 0, 2, 0, 0, 0, 0
       endUpon: 
     endUpon: 
@@ -5361,7 +5373,7 @@ beginState: s32'VolcanicViperAirS'
   endLabel: 
   beginLabel: s32'drop'
   sprite: s32'sol408_04', 2
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'sol408_05', 2
   Unknown446: s32'VV_End_air', 100
   Unknown1058: 1
@@ -5400,7 +5412,7 @@ beginState: s32'VolcanicViperLandHS'
     callSubroutine: s32'cmn_countertype_high'
     damage: 0, 35
     Unknown1108: 75
-    Unknown1102: 40
+    pushbackX: 40
     hitEffectFire: 1
     storeValue: (VARIABLE), 338, (STATIC), 1000
     storeValue: (VARIABLE), 339, (STATIC), 0
@@ -5408,7 +5420,7 @@ beginState: s32'VolcanicViperLandHS'
     callSubroutine: s32'cmn_hosei'
     groundHitEffect: 8
     airHitEffect: 8
-    hitAirPushBackX: 0, 2000
+    hitAirPushbackX: 0, 2000
     hitAirPushbackY: 0, 45000
     Unknown75: s32'cmn_AtkVectorAirGuard', 0, 6, 0, 0, 0, 0, 0, 0
     Unknown2169: 0
@@ -5417,7 +5429,7 @@ beginState: s32'VolcanicViperLandHS'
       endUpon: 
     Unknown176: 0
     upon: (HIT_OR_GUARD)
-      pushbackX: 100000
+      extendPushboxX: 100000
       Unknown75: s32'cmn_screenshake', 0, 3, 0, 2, 0, 0, 0, 0
       endUpon: 
     upon: (HIT)
@@ -5506,7 +5518,7 @@ beginState: s32'VolcanicViperLandHS'
   callSubroutine: s32'cmn_hosei'
   groundHitEffect: 8
   airHitEffect: 8
-  hitAirPushBackX: 0, 18000
+  hitAirPushbackX: 0, 18000
   hitAirPushbackY: 0, 40000
   Unknown778: 0, 3000
   setStrikeInvulnerable: 0
@@ -5527,7 +5539,7 @@ beginState: s32'VolcanicViperLandHS'
           callSubroutine: s32'cmn_fuwafuwafuwa'
           groundHitEffect: 11
           airHitEffect: 11
-          hitAirPushBackX: 0, 30000
+          hitAirPushbackX: 0, 30000
           Unknown760: 0, 80, 0, 12, 0, 16
           hitAirPushbackY: 0, 70000
           Unknown770: 0, 70, 0, 12, 0, 16
@@ -5560,7 +5572,7 @@ beginState: s32'VolcanicViperLandHS'
   endLabel: 
   beginLabel: s32'drop'
   sprite: s32'sol408_05', 4
-  pushbackX: 0
+  extendPushboxX: 0
   Unknown2193: 100, 0, 500000
   Unknown446: s32'VV2_End', 130
   Unknown23: 4
@@ -5605,7 +5617,7 @@ beginState: s32'VolcanicViperAirHS'
     callSubroutine: s32'cmn_hosei'
     groundHitEffect: 8
     airHitEffect: 8
-    hitAirPushBackX: 0, 2000
+    hitAirPushbackX: 0, 2000
     hitAirPushbackY: 0, 55000
     Unknown75: s32'cmn_AtkVectorAirGuard', 0, 6, 0, 0, 0, 0, 0, 0
     Unknown2169: 0
@@ -5614,7 +5626,7 @@ beginState: s32'VolcanicViperAirHS'
       endUpon: 
     Unknown176: 0
     upon: (HIT_OR_GUARD)
-      pushbackX: 100000
+      extendPushboxX: 100000
       Unknown75: s32'cmn_screenshake', 0, 3, 0, 2, 0, 0, 0, 0
       Unknown612: s32'SE_BTL_CMN_Impact_Fire'
       upon: (FRAME_STEP)
@@ -5707,7 +5719,7 @@ beginState: s32'VolcanicViperAirHS'
   callSubroutine: s32'cmn_hosei'
   groundHitEffect: 8
   airHitEffect: 8
-  hitAirPushBackX: 0, 18000
+  hitAirPushbackX: 0, 18000
   hitAirPushbackY: 0, 40000
   Unknown778: 0, 3000
   Unknown23: 10
@@ -5726,7 +5738,7 @@ beginState: s32'VolcanicViperAirHS'
           callSubroutine: s32'cmn_fuwafuwafuwa'
           groundHitEffect: 11
           airHitEffect: 11
-          hitAirPushBackX: 0, 30000
+          hitAirPushbackX: 0, 30000
           Unknown760: 0, 80, 0, 12, 0, 16
           hitAirPushbackY: 0, 70000
           Unknown770: 0, 70, 0, 12, 0, 16
@@ -5759,7 +5771,7 @@ beginState: s32'VolcanicViperAirHS'
   endLabel: 
   beginLabel: s32'drop'
   sprite: s32'sol408_05', 4
-  pushbackX: 0
+  extendPushboxX: 0
   Unknown2193: 100, 0, 500000
   Unknown446: s32'VV2_End', 130
   Unknown23: 4
@@ -5795,7 +5807,7 @@ beginState: s32'BanditRevolver_Land'
   upon: (IMMEDIATE)
     Unknown75: s32'cmn_AtkLv3', 0, 2, 0, 2, 0, 0, 0, 0
     damage: 0, 20
-    Unknown1102: 160
+    pushbackX: 160
     Unknown1051: 0
     storeValue: (VARIABLE), 338, (STATIC), 0
     storeValue: (VARIABLE), 339, (STATIC), 0
@@ -5804,7 +5816,7 @@ beginState: s32'BanditRevolver_Land'
     callSubroutine: s32'cmn_fuwafuwafuwa'
     groundHitEffect: 11
     airHitEffect: 11
-    hitAirPushBackX: 0, 30000
+    hitAirPushbackX: 0, 30000
     Unknown760: 0, 80, 0, 8, 0, 14
     hitAirPushbackY: 0, 20000
     Unknown770: 0, 60, 0, 8, 0, 16
@@ -5813,7 +5825,7 @@ beginState: s32'BanditRevolver_Land'
     Unknown1118: s32'SE_BTL_CMN_Hit_Grap_M'
     Unknown1119: s32'SE_BTL_CMN_Guard_Grap_M'
     upon: (HIT_OR_GUARD)
-      pushbackX: 50000
+      extendPushboxX: 50000
       endUpon: 
     Unknown2169: 0
     upon: 2
@@ -5865,7 +5877,7 @@ beginState: s32'BanditRevolver_Land'
   Unknown2229: 95
   setGravity: 3000
   recoveryState: 
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'sol402_25', 2
   sprite: s32'sol021_14', 3
   sprite: s32'sol021_15', 3
@@ -5904,7 +5916,7 @@ beginState: s32'BanditRevolver_Land'
   storeValue: (VARIABLE), 340, (STATIC), 2
   callSubroutine: s32'cmn_hosei'
   airHitEffect: 8
-  hitAirPushBackX: 0, 25000
+  hitAirPushbackX: 0, 25000
   hitAirPushbackY: 0, -15000
   upon: 8
     Unknown446: s32'402_atk_2ndhit', 100
@@ -5918,7 +5930,7 @@ beginState: s32'BanditRevolver_Land'
   sprite: s32'sol402_13', 2
   recoveryState: 
   Unknown2229: 95
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'sol402_14', 2
   Unknown2189: 2, 4
   setGravity: 3000
@@ -5928,7 +5940,7 @@ beginState: s32'BanditRevolver_Land'
   endLabel: 
   beginLabel: s32'landing_2'
   sprite: s32'sol402_18', 4
-  pushbackX: 0
+  extendPushboxX: 0
   physicsXImpulse: 0, 30000
   Unknown2229: 90
   Unknown485: s32'bg_dashstart', 100
@@ -5945,19 +5957,19 @@ beginState: s32'BanditRevolver_Air'
   upon: (IMMEDIATE)
     Unknown75: s32'cmn_AtkLv3', 0, 2, 0, 2, 0, 0, 0, 0
     damage: 0, 20
-    Unknown1102: 160
+    pushbackX: 160
     Unknown1051: 0
     storeValue: (VARIABLE), 338, (STATIC), 0
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 2
     callSubroutine: s32'cmn_hosei'
     groundHitEffect: 8
-    hitAirPushBackX: 0, 20000
+    hitAirPushbackX: 0, 20000
     hitAirPushbackY: 0, 26000
     Unknown1118: s32'SE_BTL_CMN_Hit_Grap_M'
     Unknown1119: s32'SE_BTL_CMN_Guard_Grap_M'
     upon: (HIT_OR_GUARD)
-      pushbackX: 50000
+      extendPushboxX: 50000
       endUpon: 
     Unknown2169: 0
     upon: 2
@@ -6004,7 +6016,7 @@ beginState: s32'BanditRevolver_Air'
   Unknown2229: 95
   setGravity: 3000
   recoveryState: 
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'sol403_23', 2
   sprite: s32'sol021_14', 3
   sprite: s32'sol021_15', 3
@@ -6048,7 +6060,7 @@ beginState: s32'BanditRevolver_Air'
   storeValue: (VARIABLE), 340, (STATIC), 2
   callSubroutine: s32'cmn_hosei'
   airHitEffect: 8
-  hitAirPushBackX: 0, 25000
+  hitAirPushbackX: 0, 25000
   hitAirPushbackY: 0, -15000
   upon: 8
     Unknown446: s32'402_atk_2ndhit', 100
@@ -6062,7 +6074,7 @@ beginState: s32'BanditRevolver_Air'
   sprite: s32'sol403_09', 2
   recoveryState: 
   Unknown2229: 95
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'sol403_10', 2
   Unknown2189: 2, 4
   setGravity: 3000
@@ -6077,7 +6089,7 @@ beginState: s32'BanditRevolver_Air'
   gotoLabel: s32'loop2'
   beginLabel: s32'landing_2'
   sprite: s32'sol403_16', 4
-  pushbackX: 0
+  extendPushboxX: 0
   physicsXImpulse: 0, 30000
   Unknown2229: 70
   Unknown485: s32'bg_dashstart', 100
@@ -6096,7 +6108,7 @@ beginState: s32'BanditBringer_Land'
     damage: 0, 50
     guardType: (HIGH)
     Unknown1108: -50
-    Unknown1102: 120
+    pushbackX: 120
     hitEffectFire: 1
     hitSoftKnockdown: 0
     storeValue: (VARIABLE), 338, (STATIC), 1000000
@@ -6108,7 +6120,7 @@ beginState: s32'BanditBringer_Land'
       endUpon: 
     groundHitEffect: 8
     airHitEffect: 8
-    hitAirPushBackX: 0, 30000
+    hitAirPushbackX: 0, 30000
     hitAirPushbackY: 0, -50000
     groundBounceCount: 1
     groundBounceYVelocityPercent: 20
@@ -6197,7 +6209,7 @@ beginState: s32'BanditBringer_Air'
     damage: 0, 40
     guardType: (HIGH)
     Unknown1108: -50
-    Unknown1102: 120
+    pushbackX: 120
     hitEffectFire: 1
     hitSoftKnockdown: 0
     storeValue: (VARIABLE), 338, (STATIC), 1000000
@@ -6206,7 +6218,7 @@ beginState: s32'BanditBringer_Air'
     callSubroutine: s32'cmn_hosei'
     groundHitEffect: 8
     airHitEffect: 8
-    hitAirPushBackX: 0, 30000
+    hitAirPushbackX: 0, 30000
     hitAirPushbackY: 0, -50000
     groundBounceCount: 1
     groundBounceXVelocity: 15000
@@ -6349,7 +6361,7 @@ beginState: s32'BukkiraExe'
     groundHitEffect: 8
     groundBounceYVelocityPercent: 10
     hitAirPushbackY: 0, -8750
-    hitAirPushBackX: 0, 17500
+    hitAirPushbackX: 0, 17500
     Unknown778: 0, 0
     Unknown1142: 1
     Unknown1067: 4, -400000, 0
@@ -6481,7 +6493,7 @@ beginState: s32'Vortex'
     callSubroutine: s32'cmn_countertype_high'
     damage: 0, 45
     hitStop: 6
-    Unknown1102: 40
+    pushbackX: 40
     Unknown1108: 90
     Unknown1036: 90
     Unknown968: 4
@@ -6494,7 +6506,7 @@ beginState: s32'Vortex'
     Unknown75: s32'cmn_SameAttack', 0, 1, 0, 0, 0, 0, 0, 0
     callSubroutine: s32'cmn_fuwafuwafuwa'
     groundHitEffect: 11
-    hitAirPushBackX: 0, 3000
+    hitAirPushbackX: 0, 3000
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 80000
     Unknown770: 0, 60, 0, 4, 0, 10
@@ -6566,10 +6578,10 @@ beginState: s32'Vortex'
   Unknown615: s32'SE_BTL_SOL_04'
   Unknown615: s32'SE_BTL_SOL_02'
   upon: (HIT_OR_GUARD)
-    pushbackX: 50000
+    extendPushboxX: 50000
     endUpon: 
   sprite: s32'sol409_10', 4
-  pushbackX: 0
+  extendPushboxX: 0
   recoveryState: 
   sprite: s32'sol409_11', 3
   sprite: s32'sol409_12', 3
@@ -6605,7 +6617,7 @@ beginState: s32'Fefnir'
     callSubroutine: s32'cmn_fuwafuwafuwa'
     groundHitEffect: 11
     airHitEffect: 11
-    hitAirPushBackX: 0, 30000
+    hitAirPushbackX: 0, 30000
     hitAirPushbackY: 0, -30000
     Unknown770: 0, 70, 0, 8, 0, 12
     Unknown778: 0, 5000
@@ -6618,7 +6630,7 @@ beginState: s32'Fefnir'
     Unknown1167: 1
     tumbleDuration: 50
     upon: 86
-      hitAirPushBackX: 0, 20000
+      hitAirPushbackX: 0, 20000
       hitAirPushbackY: 0, 15000
       Unknown778: 0, 3000
       endUpon: 
@@ -6631,11 +6643,11 @@ beginState: s32'Fefnir'
     storeValue: (VARIABLE), 345, (STATIC), 0
     callSubroutine: s32'BeginingMoveCheck'
     upon: (GUARD)
-      pushbackX: 150000
+      extendPushboxX: 150000
       Unknown75: s32'cmn_screenshake', 0, 3, 0, 4, 0, 0, 0, 0
       endUpon:
     upon: (HIT)
-      pushbackX: 15000
+      extendPushboxX: 15000
       Unknown75: s32'cmn_screenshake', 0, 3, 0, 4, 0, 0, 0, 0
       endUpon: 
     Unknown1148: s32'SE_BTL_CMN_Impact_Fire'
@@ -6645,7 +6657,7 @@ beginState: s32'Fefnir'
   Unknown613: s16'vxxx211'
   Unknown75: s32'cmnAddTensionGG', 0, 2, 0, 0, 0, 0, 0, 0
   sprite: s32'sol410_01', 4
-  pushbackX: 100000
+  extendPushboxX: 100000
   Unknown446: s32'Fafnircharge', 100
   physicsXImpulse: 0, 45000
   Unknown615: s32'SE_BTL_SOL_00'
@@ -6663,7 +6675,7 @@ beginState: s32'Fefnir'
   physicsXImpulse: 0, 0
   Unknown615: s32'SE_BTL_SOL_04'
   sprite: s32'sol410_07', 4
-  pushbackX: 0
+  extendPushboxX: 0
   Unknown2123: 
   recoveryState: 
   sprite: s32'sol410_08', 3
@@ -6678,7 +6690,7 @@ beginState: s32'TyrantRave'
     callSubroutine: s32'cmn_countertype_middle'
     callSubroutine: s32'cmnNohosei_kakusei'
     damage: 0, 70
-    Unknown1102: 50
+    pushbackX: 50
     Unknown1117: 0
     hitSoftKnockdown: 0
     Unknown2249: 0
@@ -6687,7 +6699,7 @@ beginState: s32'TyrantRave'
     storeValue: (VARIABLE), 340, (STATIC), 1
     Unknown75: s32'cmn_hosei', 0, 1, 0, 0, 0, 0, 0, 0
     groundHitEffect: 8
-    hitAirPushBackX: 0, 1750
+    hitAirPushbackX: 0, 1750
     hitAirPushbackY: 0, 14000
     Unknown778: 0, 1050
     callSubroutine: s32'BeginingMoveCheck'
@@ -6797,7 +6809,7 @@ beginState: s32'TyrantRave'
           endIf: 
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 110
-        pushbackX: 0
+        extendPushboxX: 0
         Unknown41: 22
         Unknown1731: 0
         Unknown40: 
@@ -6836,7 +6848,7 @@ beginState: s32'TyrantRave'
   physicsXImpulse: 0, 3500
   Unknown615: s32'SE_BTL_SOL_OUGI_01'
   upon: (HIT_OR_GUARD)
-    pushbackX: 100000
+    extendPushboxX: 100000
     Unknown2121: s32'Cam_Finish_TyrantRave'
     endUpon: 
   Unknown1148: s32'SE_BTL_CMN_Impact_Fire'
@@ -6850,7 +6862,7 @@ beginState: s32'TyrantRave'
   sprite: s32'sol500_14', 8
   setStrikeInvulnerable: 0
   setThrowInvulnerable: 0
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'sol500_15', 3
   sprite: s32'sol500_16', 3
   sprite: s32'sol500_17', 3
@@ -6865,7 +6877,7 @@ beginState: s32'TyrantRave'
   Unknown75: s32'cmn_hosei', 0, 1, 0, 0, 0, 0, 0, 0
   damage: 0, 100
   Unknown1117: 0
-  Unknown1102: 120
+  pushbackX: 120
   Unknown1045: 1, s32''
   hitEffectFire: 1
   Unknown1069: '0x000000000000000000000000000000000100000016000000020000003F010000'
@@ -6874,7 +6886,7 @@ beginState: s32'TyrantRave'
   Unknown947: 1
   hitSoftKnockdown: 0
   groundHitEffect: 8
-  hitAirPushBackX: 0, 63000
+  hitAirPushbackX: 0, 63000
   hitAirPushbackY: 0, 31500
   Unknown1003: 1
   Unknown1002: 1
@@ -7297,7 +7309,7 @@ beginState: s32'HMCExe'
   airHitEffect: 9
   groundHitEffect: 9
   hitAirPushbackY: 0, 80000
-  hitAirPushBackX: 0, 2000
+  hitAirPushbackX: 0, 2000
   Unknown778: 0, 2000
   hitSoftKnockdown: 0
   Unknown1059: 0
