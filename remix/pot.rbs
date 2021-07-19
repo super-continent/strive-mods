@@ -3736,7 +3736,7 @@ beginState: s32'NmlAtk5CNear'
     Unknown808: 1000
     Unknown783: 0, 50, 0, 10, 0, 20
     groundBounceYVelocityPercent: 100
-    Unknown806: 14000
+    groundBounceYVelocity: 14000
     groundBounceCount: 1
     Unknown858: s32'CmnActBlowoff'
     addGatlingOption: s32'NmlAtk6A'
@@ -3906,7 +3906,7 @@ beginState: s32'NmlAtk5D'
     hitAirPushBackX: 0, 50000
     hitAirPushbackY: 0, -20000
     groundBounceCount: 1
-    Unknown806: 10000
+    groundBounceYVelocity: 10000
     counterhitAirPushbackX: 0, 30000
     addGatlingOption: s32'NmlAtk2E'
     Unknown935: 16
@@ -4775,7 +4775,7 @@ beginState: s32'ThrowExe'
     Unknown808: 0
     Unknown783: 0, 150, 0, 10, 0, 25
     groundBounceCount: 1
-    Unknown806: 10000
+    groundBounceYVelocity: 10000
     groundBounceYVelocityPercent: 100
     Unknown858: s32'CmnActBlowoff'
     Unknown1134: 1
@@ -5718,7 +5718,7 @@ beginState: s32'MegaFistFront'
     Unknown808: 0
     Unknown783: 0, 150, 0, 10, 0, 25
     groundBounceCount: 1
-    Unknown806: 20000
+    groundBounceYVelocity: 20000
     groundBounceYVelocityPercent: 100
     Unknown858: s32'CmnActBlowoff'
     Unknown2169: 0
@@ -5793,7 +5793,7 @@ beginState: s32'MegaFistBack'
     Unknown808: 0
     Unknown783: 0, 150, 0, 10, 0, 25
     groundBounceCount: 1
-    Unknown806: 20000
+    groundBounceYVelocity: 20000
     groundBounceYVelocityPercent: 100
     Unknown858: s32'CmnActBlowoff'
     Unknown2169: 0
@@ -5818,7 +5818,7 @@ beginState: s32'MegaFistBack'
       damage: 0, 80
       Unknown1102: 50
       hitAirPushbackY: 0, -100000
-      Unknown806: 70000
+      groundBounceYVelocity: 70000
       storeValue: (VARIABLE), 340, (STATIC), 10
       Unknown75: s32'cmn_SameAttack', 0, 3, 0, 0, 0, 0, 0, 0
       endIf: 
@@ -5900,7 +5900,7 @@ beginState: s32'GarudaImpact'
     hitAirPushBackX: 0, 45000
     hitAirPushbackY: 0, -10000
     groundBounceCount: 1
-    Unknown806: 10000
+    groundBounceYVelocity: 10000
     wallBounceCount: 1
     wallBounceInCornerOnly: 1
     counterhitAirPushbackX: 0, 50000

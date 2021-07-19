@@ -4472,7 +4472,7 @@ beginState: s32'NmlAtk6D'
     Unknown808: 0
     Unknown783: 0, 50, 0, 10, 0, 20
     groundBounceYVelocityPercent: 100
-    Unknown806: 8000
+    groundBounceYVelocity: 8000
     groundBounceCount: 1
     Unknown858: s32'CmnActBlowoff'
     groundCounterHitEffect: 8
@@ -6734,7 +6734,7 @@ beginState: s32'Banzai'
     Unknown808: 0
     Unknown783: 0, 80, 0, 18, 0, 38
     groundBounceYVelocityPercent: 100
-    Unknown806: 17000
+    groundBounceYVelocity: 17000
     groundBounceCount: 1
     Unknown858: s32'CmnActBlowoff'
     counterhitAirPushbackX: 0, 10000

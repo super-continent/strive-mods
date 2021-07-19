@@ -3981,7 +3981,7 @@ beginState: s32'NmlAtk5D'
     Unknown778: 0, 0
     Unknown808: 0
     Unknown783: 0, 200, 0, 10, 0, 25
-    Unknown806: 25000
+    groundBounceYVelocity: 25000
     groundBounceYVelocityPercent: 100
     groundBounceCount: 1
     Unknown858: s32'CmnActBlowoff'
@@ -4143,8 +4143,8 @@ beginState: s32'NmlAtk2D'
     Unknown808: 1000
     Unknown783: 0, 200, 0, 10, 0, 30
     groundBounceYVelocityPercent: 50
-    Unknown814: 5000
-    Unknown806: 40000
+    groundBounceXVelocity: 5000
+    groundBounceYVelocity: 40000
     groundBounceCount: 1
     Unknown858: s32'CmnActBlowoff'
     upon: (HIT_OR_GUARD)
@@ -5379,12 +5379,12 @@ beginState: s32'KyougenB'
   hitAirPushBackX: 0, 30000
   hitAirPushbackY: 0, -30000
   Unknown808: 3000
-  Unknown814: 14000
-  Unknown806: 25000
+  groundBounceXVelocity: 14000
+  groundBounceYVelocity: 25000
   groundBounceYVelocityPercent: 100
   groundBounceCount: 1
   if: (VARIABLE), 45
-    Unknown806: 40000
+    groundBounceYVelocity: 40000
     endIf: 
   Unknown953: 3
   storeValue: (VARIABLE), 343, (STATIC), -300000
@@ -5520,12 +5520,12 @@ beginState: s32'KyougenC'
   hitAirPushBackX: 0, 40000
   hitAirPushbackY: 0, -30000
   Unknown808: 3000
-  Unknown814: 20000
-  Unknown806: 25000
+  groundBounceXVelocity: 20000
+  groundBounceYVelocity: 25000
   groundBounceYVelocityPercent: 100
   groundBounceCount: 1
   if: (VARIABLE), 45
-    Unknown806: 40000
+    groundBounceYVelocity: 40000
     endIf: 
   Unknown953: 3
   storeValue: (VARIABLE), 343, (STATIC), -300000
@@ -6536,7 +6536,7 @@ beginState: s32'Genkai_Land'
     Unknown783: 0, 80, 0, 25, 0, 55
     groundBounceCount: 1
     Unknown858: s32'CmnActBlowoff'
-    Unknown806: 12000
+    groundBounceYVelocity: 12000
     Unknown75: s32'cmn_AtkVectorAirGuard', 0, 8, 0, 0, 0, 0, 0, 0
     Unknown176: 1
     Unknown1971: 1

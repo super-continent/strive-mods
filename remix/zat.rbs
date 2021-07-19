@@ -5345,7 +5345,7 @@ beginState: s32'NmlAtk6B'
     callSubroutine: s32'cmn_AtkTemplNokezoriHigh'
     hitAirPushbackY: 0, -20000
     groundBounceCount: 1
-    Unknown806: 5000
+    groundBounceYVelocity: 5000
     upon: (HIT_OR_GUARD)
       pushbackX: 50000
       endUpon: 
@@ -5634,7 +5634,7 @@ beginState: s32'NmlAtk5D'
     hitAirPushBackX: 0, 45000
     hitAirPushbackY: 0, -20000
     groundBounceCount: 1
-    Unknown806: 10000
+    groundBounceYVelocity: 10000
     groundCounterHitEffect: 15
     staggerDuration: 15
     addGatlingOption: s32'NmlAtk5E'
@@ -5694,7 +5694,7 @@ beginState: s32'NmlAtk6D'
     hitAirPushbackY: 0, -30000
     hitSoftKnockdown: 0
     groundBounceCount: 1
-    Unknown806: 20000
+    groundBounceYVelocity: 20000
     Unknown2169: 0
     upon: 2
       Unknown14: s32'landing'

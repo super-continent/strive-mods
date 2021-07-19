@@ -5914,7 +5914,7 @@ beginState: s32'NmlAtk6D'
     Unknown856: 1
     Unknown771: '0x00000000780000000000000002000000000000000A000000'
     Unknown784: '0x00000000C409000000000000020000000000000005000000'
-    Unknown806: 5000
+    groundBounceYVelocity: 5000
     Unknown808: 3000
     ifOperation: (IS_EQUAL), (VARIABLE), 5, (STATIC), 0
       storeValue: (VARIABLE), 52, (STATIC), 0
@@ -7480,7 +7480,7 @@ beginState: s32'AirThrowExe'
     Unknown1142: 1
     Unknown1067: 4, 240000, 200000
     groundBounceCount: 1
-    Unknown806: 1000
+    groundBounceYVelocity: 1000
     endUpon: 
   sprite: s32'keep', 4
   Unknown547: 1
@@ -8377,8 +8377,8 @@ beginState: s32'Wasureyuki'
     groundHitEffect: 9
     airHitEffect: 9
     Unknown75: s32'cmn_AtkVectorAirGuard', 0, 8, 0, 0, 0, 0, 0, 0
-    Unknown814: 2000
-    Unknown806: 10000
+    groundBounceXVelocity: 2000
+    groundBounceYVelocity: 10000
     groundBounceCount: 1
     Unknown858: s32'CmnActFDownUpper'
     Unknown1971: 1

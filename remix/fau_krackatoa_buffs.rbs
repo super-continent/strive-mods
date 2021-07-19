@@ -5010,8 +5010,8 @@ airHitEffect: 8
 hitAirPushBackX: 0, 20000
 hitAirPushbackY: 0, -20000
 groundBounceCount: 1
-Unknown806: 15000
-Unknown814: 30000
+groundBounceYVelocity: 15000
+groundBounceXVelocity: 30000
 wallBounceCount: 1
 wallBounceInCornerOnly: 1
 Unknown838: 20000
@@ -5077,7 +5077,7 @@ beginState: s32'NmlAtk6D'
     hitAirPushBackX: 0, 12000
     hitAirPushbackY: 0, -50000
     Unknown808: 2500
-    Unknown806: 65000
+    groundBounceYVelocity: 65000
     groundBounceYVelocityPercent: 100
     groundBounceCount: 1
     Unknown858: s32'CmnActZSpin'
@@ -6268,7 +6268,7 @@ beginState: s32'ThrowExe'
     hitAirPushBackX: 0, 0
     hitAirPushbackY: 0, -30000
     groundBounceYVelocityPercent: 100
-    Unknown806: 13000
+    groundBounceYVelocity: 13000
     groundBounceCount: 1
     Unknown858: s32'CmnActBlowoff'
     Unknown808: 0
@@ -6598,7 +6598,7 @@ startSubroutine: s32'Nekkakonnrenn4_Atk'
   if: (VARIABLE), 0
     hitAirPushbackY: 0, -30000
     groundBounceCount: 1
-    Unknown806: 32000
+    groundBounceYVelocity: 32000
     Unknown953: 3
     endIf: 
   checkInput: (INPUT_ANY_BACK)
@@ -7472,7 +7472,7 @@ beginState: s32'Kuebiko'
   Unknown783: 0, 80, 0, 10, 0, 30
   groundHitEffect: 8
   groundBounceYVelocityPercent: 100
-  Unknown806: 8000
+  groundBounceYVelocity: 8000
   groundBounceCount: 1
   Unknown858: s32'CmnActBlowoff'
   Unknown808: 0
@@ -7734,7 +7734,7 @@ beginState: s32'Kuebiko'
   Unknown783: 0, 80, 0, 15, 0, 30
   groundHitEffect: 8
   groundBounceYVelocityPercent: 100
-  Unknown806: 30000
+  groundBounceYVelocity: 30000
   groundBounceCount: 1
   Unknown858: s32'CmnActBlowoff'
   Unknown808: 0

@@ -4225,8 +4225,8 @@ beginState: s32'NmlAtk5CNear'
     Unknown808: 1000
     Unknown783: 0, 200, 0, 15, 0, 30
     groundBounceYVelocityPercent: 100
-    Unknown814: 10000
-    Unknown806: 10000
+    groundBounceXVelocity: 10000
+    groundBounceYVelocity: 10000
     groundBounceCount: 1
     Unknown858: s32'CmnActBlowoff'
     enableJumpCancel: 1
@@ -4712,7 +4712,7 @@ beginState: s32'NmlAtk5D'
     hitAirPushBackX: 0, 45000
     hitAirPushbackY: 0, -20000
     groundBounceCount: 1
-    Unknown806: 10000
+    groundBounceYVelocity: 10000
     wallBounceCount: 1
     wallBounceInCornerOnly: 1
     Unknown1005: 30
@@ -5019,7 +5019,7 @@ beginState: s32'NmlAtk6D'
     Unknown808: 0
     Unknown783: 0, 50, 0, 10, 0, 20
     groundBounceYVelocityPercent: 100
-    Unknown806: 8000
+    groundBounceYVelocity: 8000
     groundBounceCount: 1
     Unknown858: s32'CmnActBlowoff'
     Unknown2171: 1
@@ -5875,7 +5875,7 @@ beginState: s32'NmlAtkAir5E'
     hitAirPushBackX: 0, 45000
     hitAirPushbackY: 0, -20000
     groundBounceCount: 1
-    Unknown806: 10000
+    groundBounceYVelocity: 10000
     wallBounceCount: 1
     wallBounceInCornerOnly: 1
     Unknown1005: 30
@@ -6778,7 +6778,7 @@ beginState: s32'Semuke5D'
     Unknown808: 0
     Unknown783: 0, 100, 0, 10, 0, 30
     groundBounceYVelocityPercent: 40
-    Unknown814: 15000
+    groundBounceXVelocity: 15000
     groundBounceCount: 1
     Unknown858: s32'CmnActBlowoff'
     addGatlingOption: s32'Semuke5E'
@@ -7375,8 +7375,8 @@ beginState: s32'EisenSturmD'
   Unknown808: 0
   Unknown783: 0, 50, 0, 10, 0, 20
   groundBounceYVelocityPercent: 100
-  Unknown814: 10000
-  Unknown806: 8000
+  groundBounceXVelocity: 10000
+  groundBounceYVelocity: 8000
   groundBounceCount: 1
   Unknown858: s32'CmnActBlowoff'
   Unknown75: s32'cmn_AtkVectorAirGuard', 0, 5, 0, 0, 0, 0, 0, 0
@@ -8326,7 +8326,7 @@ groundHitEffect: 8
 airHitEffect: 8
 Unknown807: 
 groundBounceCount: 1
-Unknown806: 20000
+groundBounceYVelocity: 20000
 Unknown612: s32'SE_BTL_CMN_Swing_Slash_Heavy_M'
 pushbackX: 60000
 storeValue: (VARIABLE), 52, (STATIC), 2
@@ -8354,7 +8354,7 @@ hitAirPushbackY: 0, 25000
 Unknown778: 0, 1500
 Unknown807: 
 groundBounceCount: 1
-Unknown806: 10000
+groundBounceYVelocity: 10000
 Unknown1045: 2, s32'leo_501hit3'
 Unknown1108: 90
 Unknown612: s32'SE_BTL_CMN_Swing_Grap_Heavy_L'
@@ -8380,7 +8380,7 @@ groundHitEffect: 8
 airHitEffect: 8
 Unknown807: 
 groundBounceCount: 1
-Unknown806: 45000
+groundBounceYVelocity: 45000
 Unknown1045: 2, s32'leo_501hit4'
 Unknown1108: -90
 Unknown612: s32'SE_BTL_CMN_Swing_Hammer_Heavy_M'

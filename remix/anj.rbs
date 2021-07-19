@@ -3888,7 +3888,7 @@ beginState: s32'NmlAtk5D'
     Unknown808: 0
     Unknown783: 0, 50, 0, 10, 0, 20
     groundBounceYVelocityPercent: 100
-    Unknown806: 4000
+    groundBounceYVelocity: 4000
     groundBounceCount: 1
     Unknown858: s32'CmnActBlowoff'
     Unknown953: 3
@@ -5704,7 +5704,7 @@ beginState: s32'Rin'
     Unknown808: 0
     Unknown783: 0, 100, 0, 12, 0, 50
     groundBounceCount: 1
-    Unknown806: 42000
+    groundBounceYVelocity: 42000
     groundBounceYVelocityPercent: 100
     Unknown858: s32'CmnActBlowoff'
     Unknown953: 3
@@ -6295,8 +6295,8 @@ beginState: s32'KachoFugetsu'
   Unknown778: 0, 0
   Unknown808: 1000
   Unknown783: 0, 200, 0, 15, 0, 30
-  Unknown814: 3000
-  Unknown806: 30000
+  groundBounceXVelocity: 3000
+  groundBounceYVelocity: 30000
   groundBounceCount: 1
   Unknown858: s32'CmnActZSpin'
   Unknown1067: 4, 300000, 150000
@@ -6337,8 +6337,8 @@ beginState: s32'KachoFugetsu'
   Unknown808: 1000
   Unknown783: 0, 200, 0, 15, 0, 30
   groundBounceYVelocityPercent: 50
-  Unknown814: 0
-  Unknown806: 15000
+  groundBounceXVelocity: 0
+  groundBounceYVelocity: 15000
   groundBounceCount: 1
   Unknown858: s32'CmnActBlowoff'
   Unknown1067: 4, 380000, 100000

@@ -4090,8 +4090,8 @@ beginState: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk2E'
     addGatlingOption: s32'Vortex'
     groundBounceCount: 1
-    Unknown814: 25000
-    Unknown806: 20000
+    groundBounceXVelocity: 25000
+    groundBounceYVelocity: 20000
     wallBounceCount: 1
     Unknown838: 12000
     Unknown840: 38000
@@ -4104,12 +4104,12 @@ beginState: s32'NmlAtk5D'
     callSubroutine: s32'cmn_AtkTemplNokezoriHigh'
     Unknown1148: s32'SE_BTL_CMN_Impact_Sword_L_2'
     Unknown1211: s32'SE_BTL_CMN_Impact_Sword_L_2'
-    upon: (HIT_OR_GUARD)
+    upon: (GUARD)
       pushbackX: 100000
       Unknown75: s32'cmn_screenshake', 0, 3, 0, 1, 0, 0, 0, 0
       endUpon: 
-    upon: 74
-      pushbackX: 99999999
+    upon: (HIT)
+      pushbackX: 10000
       Unknown75: s32'cmn_screenshake', 0, 3, 0, 1, 0, 0, 0, 0
       endUpon:
     endUpon: 
@@ -6112,8 +6112,8 @@ beginState: s32'BanditBringer_Land'
     hitAirPushbackY: 0, -50000
     groundBounceCount: 1
     groundBounceYVelocityPercent: 20
-    Unknown814: 15000
-    Unknown806: 12000
+    groundBounceXVelocity: 15000
+    groundBounceYVelocity: 12000
     Unknown1148: s32'SE_BTL_CMN_Impact_Fire'
     Unknown1211: s32'SE_BTL_CMN_Impact_Fire'
     upon: 2
@@ -6209,8 +6209,8 @@ beginState: s32'BanditBringer_Air'
     hitAirPushBackX: 0, 30000
     hitAirPushbackY: 0, -50000
     groundBounceCount: 1
-    Unknown814: 15000
-    Unknown806: 12000
+    groundBounceXVelocity: 15000
+    groundBounceYVelocity: 12000
     groundBounceYVelocityPercent: 20
     Unknown1148: s32'SE_BTL_CMN_Impact_Fire'
     Unknown1211: s32'SE_BTL_CMN_Impact_Fire'
@@ -6605,14 +6605,14 @@ beginState: s32'Fefnir'
     callSubroutine: s32'cmn_fuwafuwafuwa'
     groundHitEffect: 11
     airHitEffect: 11
-    hitAirPushBackX: 0, 40000
+    hitAirPushBackX: 0, 30000
     hitAirPushbackY: 0, -30000
     Unknown770: 0, 70, 0, 8, 0, 12
     Unknown778: 0, 5000
     Unknown783: 0, 100, 0, 4, 0, 30
     groundBounceCount: 1
-    Unknown814: 4000
-    Unknown806: 30000
+    groundBounceXVelocity: 2000
+    groundBounceYVelocity: 30000
     Unknown858: s32'CmnActBlowoff'
     Unknown808: 0
     Unknown1167: 1
@@ -6630,8 +6630,12 @@ beginState: s32'Fefnir'
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
     callSubroutine: s32'BeginingMoveCheck'
-    upon: (HIT_OR_GUARD)
+    upon: (GUARD)
       pushbackX: 150000
+      Unknown75: s32'cmn_screenshake', 0, 3, 0, 4, 0, 0, 0, 0
+      endUpon:
+    upon: (HIT)
+      pushbackX: 15000
       Unknown75: s32'cmn_screenshake', 0, 3, 0, 4, 0, 0, 0, 0
       endUpon: 
     Unknown1148: s32'SE_BTL_CMN_Impact_Fire'

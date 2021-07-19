@@ -414,7 +414,7 @@ beginState: s32'cmn_MissionCMN_006'
         Unknown2357: -1
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -499,7 +499,7 @@ beginState: s32'cmn_MissionCMN_008'
         Unknown2357: -1
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -540,7 +540,7 @@ beginState: s32'cmn_MissionCMN_009'
         Unknown2357: -1
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -582,7 +582,7 @@ beginState: s32'cmn_MissionCMN_010'
         Unknown2357: -1
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown41: 3
       storeValue: (VARIABLE), 222, (VARIABLE), 32
       Unknown40: 
@@ -759,7 +759,7 @@ beginState: s32'cmn_MissionCMN_013'
         Unknown2352: s32'AirNandemo'
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -879,7 +879,7 @@ beginState: s32'cmn_MissionCMN_015'
         Unknown2357: -1
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2033: 3, s32'NmlAtk5CNear'
       if: (VARIABLE), 0
         storeValue: (VARIABLE), 222, (STATIC), 1
@@ -1210,7 +1210,7 @@ beginState: s32'cmn_MissionCMN_021'
           endElse: 
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -2128,7 +2128,7 @@ beginState: s32'cmn_MissionCMN_038'
         Unknown2357: -1
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2033: 3, s32'NmlAtk5CNear'
       ifNot: (VARIABLE), 0
         Unknown2033: 3, s32'NmlAtk5D'
@@ -2204,7 +2204,7 @@ beginState: s32'cmn_MissionCMN_039'
           endIf: 
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2033: 3, s32'BanditRevolver_Land'
       if: (VARIABLE), 0
         Unknown2399: 
@@ -2286,7 +2286,7 @@ beginState: s32'cmn_MissionCMN_040'
           endIf: 
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown41: 3
       storeValue: (VARIABLE), 222, (VARIABLE), 30
       Unknown40: 
@@ -2726,7 +2726,7 @@ beginState: s32'cmn_MissionCMN_047'
         Unknown2399: 
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -2825,7 +2825,7 @@ beginState: s32'cmn_MissionCMN_049'
         Unknown2399: 
         endElse: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2352: s32'GuardNandemo'
       endUpon: 
     endUpon: 
@@ -3005,7 +3005,7 @@ beginState: s32'cmn_MissionCMN_052'
     upon: 73
       Unknown2352: s32'Nandemo'
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -3554,7 +3554,7 @@ beginState: s32'cmn_MissionCMN_056'
       Unknown2391: 0
       Unknown2352: s32'MutekiwazaGuard'
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     upon: 73
@@ -4121,7 +4121,7 @@ beginState: s32'cmn_MissionCMN_065'
     upon: 73
       Unknown2399: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 1
         Unknown2033: 3, s32'NmlAtk2D'
         if: (VARIABLE), 0
@@ -4320,7 +4320,7 @@ beginState: s32'cmn_MissionCMN_067'
     upon: 71
       Unknown2399: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     upon: 73
@@ -4910,7 +4910,7 @@ beginState: s32'cmn_MissionCMN_078'
           endElse: 
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -4993,7 +4993,7 @@ beginState: s32'cmn_MissionCMN_079'
         Unknown2352: s32'SukiNandemo'
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -5179,7 +5179,7 @@ beginState: s32'cmn_MissionCMN_082'
         Unknown1803: s32'cmn_TrialTokeiMain', 23
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 1
         Unknown2357: -1
         Unknown2352: s32'GuardNandemo'
@@ -5405,7 +5405,7 @@ beginState: s32'cmn_MissionCMN_085'
           endIf: 
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     upon: 72
@@ -5477,7 +5477,7 @@ beginState: s32'cmn_MissionCMN_086'
     upon: 73
       Unknown2352: s32'FafnirHangeki'
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -5547,7 +5547,7 @@ beginState: s32'cmn_MissionCMN_087'
     upon: 73
       storeValue: (VARIABLE), 223, (STATIC), 1
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -5617,7 +5617,7 @@ beginState: s32'cmn_MissionCMN_088'
     upon: 73
       storeValue: (VARIABLE), 223, (STATIC), 1
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -5683,7 +5683,7 @@ beginState: s32'cmn_MissionCMN_089'
     upon: 73
       storeValue: (VARIABLE), 222, (STATIC), 1
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       storeValue: (VARIABLE), 222, (STATIC), 1
       storeValue: (VARIABLE), 223, (STATIC), 0
       endUpon: 
@@ -5747,7 +5747,7 @@ beginState: s32'cmn_MissionCMN_090'
     upon: 73
       Unknown2352: s32'IrukaHangeki'
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -5812,7 +5812,7 @@ beginState: s32'cmn_MissionCMN_091'
     upon: 73
       storeValue: (VARIABLE), 224, (STATIC), 1
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -6078,7 +6078,7 @@ beginState: s32'cmn_MissionCMN_094'
         Unknown2352: s32'Guardseyo'
         endElse: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -6161,7 +6161,7 @@ beginState: s32'cmn_MissionCMN_095'
         Unknown2352: s32'KabehashiriHangeki'
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -6223,7 +6223,7 @@ beginState: s32'cmn_MissionCMN_096'
         Unknown2352: s32'SukiNandemo'
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -6421,7 +6421,7 @@ beginState: s32'cmn_MissionCMN_100'
     upon: 73
       Unknown2352: s32'KapelHangeki'
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -6707,7 +6707,7 @@ beginState: s32'cmn_MissionCMN_105'
     upon: 73
       storeValue: (VARIABLE), 222, (STATIC), 1
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     endUpon: 
@@ -6833,7 +6833,7 @@ beginState: s32'cmn_MissionCMN_107'
         Unknown2399: 
         endElse: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2033: 22, s32'NmlAtk5D_Guard'
       if: (VARIABLE), 0
         Unknown2399: 
@@ -7028,7 +7028,7 @@ beginState: s32'cmn_MissionCMN_110'
           endIf: 
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     upon: 71
@@ -7093,7 +7093,7 @@ beginState: s32'cmn_MissionCMN_111'
         Unknown2399: 
         endElse: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     upon: 71
@@ -7274,7 +7274,7 @@ beginState: s32'cmn_MissionCMN_113'
           endElse: 
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     upon: 71
@@ -7331,7 +7331,7 @@ beginState: s32'cmn_MissionCMN_114'
     upon: 73
       storeValue: (VARIABLE), 222, (STATIC), 1
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     upon: 71
@@ -7432,7 +7432,7 @@ beginState: s32'cmn_MissionCMN_115'
         storeValue: (VARIABLE), 224, (STATIC), 1
         endIf: 
       endUpon: 
-    upon: 74
+    upon: (GUARD)
       Unknown2399: 
       endUpon: 
     upon: 71

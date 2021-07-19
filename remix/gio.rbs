@@ -4537,7 +4537,7 @@ beginState: s32'NmlAtk5D'
     hitAirPushBackX: 0, 30000
     hitAirPushbackY: 0, -40000
     groundBounceCount: 1
-    Unknown806: 10000
+    groundBounceYVelocity: 10000
     upon: (HIT_OR_GUARD)
       pushbackX: 80000
       endUpon: 
@@ -4722,7 +4722,7 @@ beginState: s32'NmlAtk6D3rd'
     hitAirPushbackY: 0, -40000
     groundBounceCount: 1
     Unknown859: 50
-    Unknown806: 10000
+    groundBounceYVelocity: 10000
     Unknown2169: 0
     upon: 2
       Unknown14: s32'landing'
@@ -6404,7 +6404,7 @@ startSubroutine: s32'LandUltimate_atk'
   hitAirPushbackY: 0, -20000
   groundBounceCount: 1
   groundBounceYVelocityPercent: 50
-  Unknown806: 10000
+  groundBounceYVelocity: 10000
   callSubroutine: s32'cmnNohosei_kakusei'
   endSubroutine: 
 
@@ -6427,7 +6427,7 @@ beginState: s32'LandUltimate'
     hitAirPushbackY: 0, -20000
     groundBounceCount: 1
     groundBounceYVelocityPercent: 50
-    Unknown806: 10000
+    groundBounceYVelocity: 10000
     upon: (HIT_OR_GUARD)
       pushbackX: 50000
       endUpon: 
@@ -6657,8 +6657,8 @@ beginState: s32'AirUltimate'
     hitAirPushBackX: 0, 45000
     hitAirPushbackY: 0, -25000
     Unknown808: 1500
-    Unknown814: 0
-    Unknown806: 25000
+    groundBounceXVelocity: 0
+    groundBounceYVelocity: 25000
     groundBounceCount: 1
     wallBounceCount: 1
     physicsYImpulse: 0, 0
@@ -6721,8 +6721,8 @@ beginState: s32'AirUltimate'
   hitAirPushBackX: 0, 47500
   hitAirPushbackY: 0, -70000
   Unknown808: 1500
-  Unknown814: 5000
-  Unknown806: 25000
+  groundBounceXVelocity: 5000
+  groundBounceYVelocity: 25000
   groundBounceCount: 1
   wallBounceCount: 1
   physicsYImpulse: 0, 0
@@ -7107,8 +7107,8 @@ startSubroutine: s32'AirUltimate_atk'
   damage: 0, 10
   Unknown1117: 0
   Unknown808: 1500
-  Unknown814: 5000
-  Unknown806: 25000
+  groundBounceXVelocity: 5000
+  groundBounceYVelocity: 25000
   groundBounceCount: 1
   wallBounceCount: 1
   Unknown1051: 0

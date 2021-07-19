@@ -3759,7 +3759,7 @@ beginState: s32'NmlAtk6B'
     hitAirPushbackY: 0, -20000
     hitSoftKnockdown: 1
     groundBounceCount: 1
-    Unknown806: 5000
+    groundBounceYVelocity: 5000
     upon: (HIT_OR_GUARD)
       pushbackX: 50000
       endUpon: 
@@ -4083,7 +4083,7 @@ beginState: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
     groundBounceCount: 1
-    Unknown806: 10000
+    groundBounceYVelocity: 10000
     Unknown2526: 0, 0, 0, 0, 0, 0
     Unknown2591: 0, 0, 0, 0, 0, 0
     Unknown1702: s32'weapon_arrowhead', 1
@@ -4224,7 +4224,7 @@ beginState: s32'NmlAtk6D'
   Unknown808: 0
   Unknown783: 0, 200, 0, 15, 0, 30
   groundBounceYVelocityPercent: 30
-  Unknown814: 15000
+  groundBounceXVelocity: 15000
   groundBounceCount: 1
   Unknown858: s32'CmnActBlowoff'
   Unknown1005: 130
@@ -5916,8 +5916,8 @@ startSubroutine: s32'BadMoon_atk'
   airHitEffect: 8
   hitAirPushBackX: 0, 20000
   groundBounceCount: 1
-  Unknown814: 5000
-  Unknown806: 10000
+  groundBounceXVelocity: 5000
+  groundBounceYVelocity: 10000
   Unknown1005: 10
   Unknown1004: 10
   Unknown953: 3
@@ -5945,8 +5945,8 @@ beginState: s32'BadMoon'
     airHitEffect: 8
     hitAirPushBackX: 0, 20000
     groundBounceCount: 1
-    Unknown814: 5000
-    Unknown806: 10000
+    groundBounceXVelocity: 5000
+    groundBounceYVelocity: 10000
     Unknown1005: 10
     Unknown1004: 10
     Unknown2169: 0
@@ -6524,7 +6524,7 @@ beginState: s32'Winger'
   hitAirPushBackX: 0, 45000
   hitAirPushbackY: 0, -30000
   groundBounceCount: 1
-  Unknown806: 5000
+  groundBounceYVelocity: 5000
   callSubroutine: s32'cmnNohosei_kakusei'
   Unknown75: s32'cmn_AtkVectorAirGuard', 0, 0, 0, 0, 0, 0, 0, 0
   Unknown1069: '0x000000000000000000000000000000000100000016000000020000003F010000'

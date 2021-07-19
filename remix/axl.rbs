@@ -3956,7 +3956,7 @@ beginState: s32'NmlAtk5D'
     Unknown808: 0
     Unknown783: 0, 50, 0, 10, 0, 20
     groundBounceYVelocityPercent: 100
-    Unknown806: 4000
+    groundBounceYVelocity: 4000
     groundBounceCount: 1
     Unknown858: s32'CmnActBlowoff'
     addGatlingOption: s32'NmlAtk6D'
@@ -4038,8 +4038,8 @@ beginState: s32'NmlAtk6D'
     Unknown859: 100
     wallBounceXVelocityPercent: 100
     Unknown847: 100
-    Unknown814: 22000
-    Unknown806: 12000
+    groundBounceXVelocity: 22000
+    groundBounceYVelocity: 12000
     Unknown838: 15000
     Unknown840: 20000
     Unknown794: 3000
@@ -6064,7 +6064,7 @@ beginState: s32'Katatumuri_Air'
     Unknown770: 0, 70, 0, 6, 0, 10
     Unknown778: 0, 0
     groundBounceYVelocityPercent: 100
-    Unknown806: 10000
+    groundBounceYVelocity: 10000
     groundBounceCount: 1
     Unknown858: s32'CmnActBlowoff'
     groundHitEffect: 11
@@ -6308,7 +6308,7 @@ beginState: s32'ByakueRenshou'
     hitAirPushBackX: 0, 6125
     hitAirPushbackY: 0, 25000
     groundBounceCount: 1
-    Unknown806: 10000
+    groundBounceYVelocity: 10000
     Unknown1971: 1
     upon: 62
       hitAirPushbackY: 0, 30000
@@ -6474,7 +6474,7 @@ airHitEffect: 9
 hitAirPushBackX: 0, 6125
 hitAirPushbackY: 0, 25000
 groundBounceCount: 1
-Unknown806: 10000
+groundBounceYVelocity: 10000
 Unknown75: s32'cmn_AtkVectorAirGuard', 0, 8, 0, 0, 0, 0, 0, 0
 Unknown615: s32'SE_BTL_AXL_16'
 Unknown615: s32'SE_BTL_AXL_00'
