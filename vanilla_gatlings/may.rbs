@@ -5085,7 +5085,7 @@ beginState: s32'ThrowExe'
   Unknown2189: 0, 5
   sprite: s32'may310_13', 20
   Unknown233: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown613: s16'vxxx106'
@@ -5179,7 +5179,7 @@ beginState: s32'AirThrowExe'
   Unknown613: s16'vxxx106'
   sprite: s32'may320_04', 3
   hit: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown1067: 4, 100000, 50000
@@ -6050,7 +6050,7 @@ beginState: s32'OverHeadKissExe'
   Unknown446: s32'404bake2', 100
   Unknown612: s32'SE_BTL_CMN_Swing_Grap_Heavy_L'
   Unknown2341: s32'Depth', 5000, 0, 20, s32'shake_easeout', 0
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown1165: s32'OverHeadKiss'
@@ -6324,7 +6324,7 @@ beginState: s32'Goshogawara'
       Unknown23: 93
       Unknown1803: s32'GoshogawaraBodyObj', 23
       endUpon: 
-    upon: 10
+    upon: (HIT)
       Unknown23: 10
       Unknown1803: s32'GoshogawaraBodyObj', 24
       endUpon: 
@@ -6480,7 +6480,7 @@ beginState: s32'AirGoshogawara'
       Unknown23: 93
       Unknown1803: s32'GoshogawaraBodyObj', 23
       endUpon: 
-    upon: 10
+    upon: (HIT)
       Unknown23: 10
       Unknown1803: s32'GoshogawaraBodyObj', 24
       endUpon: 

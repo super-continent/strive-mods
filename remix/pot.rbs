@@ -4823,7 +4823,7 @@ beginState: s32'ThrowExe'
   Unknown546: 0, 116, 0
   sprite: s32'pot310_09', 2
   Unknown233: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown485: s32'bg_down', 120
@@ -4919,7 +4919,7 @@ beginState: s32'AirThrowExe'
   sprite: s32'pot320_07', 4
   hit: 
   Unknown968: 6
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     Unknown99: 0, 1
     endUpon: 
@@ -5140,7 +5140,7 @@ beginState: s32'PotemkinBusterExe'
   sprite: s32'pot409_34', 4
   Unknown428: 0, 20
   Unknown233: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown1157: 1
@@ -6244,7 +6244,7 @@ sprite: s32'pot409_33', 2
 Unknown546: 0, 111, 0
 sprite: s32'pot409_34', 4
 Unknown233: 
-upon: 10
+upon: (HIT)
   Unknown75: s32'cmnAtkTemplNageFinish', 0, 1, 0, 0, 0, 0, 0, 0
   endUpon: 
 

@@ -4900,7 +4900,7 @@ beginState: s32'ThrowExe'
   Unknown2189: 2, 5
   sprite: s32'anj310_10', 2
   hit: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown1067: 4, 200000, 100000
@@ -4986,7 +4986,7 @@ beginState: s32'AirThrowExe'
   sprite: s32'anj320_10', 3
   hit: 
   Unknown1067: 4, 100000, 100000
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown1702: s32'weapon_Airthrow', 0
@@ -6416,7 +6416,7 @@ beginState: s32'KachoFugetsu'
   storeValue: (VARIABLE), 344, (STATIC), 0
   storeValue: (VARIABLE), 345, (STATIC), 0
   Unknown1067: 3, -1, 0
-  upon: 10
+  upon: (HIT)
     Unknown23: 10
     Unknown2234: 1
     Unknown446: s32'Cam_KachofugetsuEnd', 100

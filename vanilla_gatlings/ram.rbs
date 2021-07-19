@@ -6472,7 +6472,7 @@ beginState: s32'ThrowExe'
     hitAirPushBackX: 0, 0
     hitAirPushbackY: 0, 0
     Unknown1059: 1
-    upon: 10
+    upon: (HIT)
       ifOperation: (IS_LESSER), (VARIABLE), 47, (STATIC), 10
         Unknown54: 0, 2, 47, 0, 1
         storeValue: (VARIABLE), 46, (VARIABLE), 47
@@ -6535,7 +6535,7 @@ beginState: s32'ThrowExe'
   Unknown24: s32'loop', 2, 45
   sprite: s32'ram310_08', 2
   Unknown233: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   damage: 0, 10
@@ -6671,7 +6671,7 @@ beginState: s32'AirThrowExe'
   Unknown615: s32'SE_BTL_RAM_02'
   sprite: s32'ram320_08', 2
   Unknown233: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   damage: 0, 10

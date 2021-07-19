@@ -5265,7 +5265,7 @@ beginState: s32'ThrowExe'
   Unknown612: s32'SE_BTL_CMN_Swing_Grap_Heavy_S'
   sprite: s32'mll310_09', 3
   Unknown233: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   physicsXImpulse: 0, -7000
@@ -5382,7 +5382,7 @@ beginState: s32'AirThrowExe'
   setGravity: 1750
   Unknown233: 
   damage: 0, 30
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown1139: 0

@@ -6067,7 +6067,7 @@ beginState: s32'ThrowExe'
   Unknown233: 
   sprite: s32'leo310_07', 6
   hit: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   damage: 0, 80
@@ -6222,7 +6222,7 @@ beginState: s32'AirThrowExe'
   Unknown546: 0, 117, 0
   sprite: s32'leo320_13', 1
   Unknown233: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown1067: 4, 180000, 100000
@@ -7013,7 +7013,7 @@ beginState: s32'Semuke5E'
   Unknown240: 
   Unknown446: s32'Leo420Eff', 100
   hit: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   callSubroutine: s32'cmn_AtkLv4'
@@ -7186,7 +7186,7 @@ beginState: s32'EisenSturmC'
     upon: 2
       Unknown14: s32'landing'
       endUpon: 
-    upon: 10
+    upon: (HIT)
       Unknown2239: 1
       endUpon: 
     upon: (HIT_OR_GUARD)
@@ -7221,7 +7221,7 @@ beginState: s32'EisenSturmC'
   Unknown725: 1
   Unknown1108: 90
   Unknown1110: 0
-  upon: 10
+  upon: (HIT)
     Unknown2239: 1
     endUpon: 
   storeValue: (VARIABLE), 338, (STATIC), 1000
@@ -7285,7 +7285,7 @@ beginState: s32'EisenSturmD'
     Unknown778: 0, 0
     Unknown783: 0, 150, 0, 14, 0, 30
     Unknown75: s32'cmn_AtkVectorAirGuard', 0, 7, 0, 0, 0, 0, 0, 0
-    upon: 10
+    upon: (HIT)
       Unknown2239: 1
       endUpon: 
     upon: (HIT_OR_GUARD)
@@ -7323,7 +7323,7 @@ beginState: s32'EisenSturmD'
   Unknown1110: 0
   Unknown725: 1
   Unknown1108: 90
-  upon: 10
+  upon: (HIT)
     Unknown2239: 1
     endUpon: 
   storeValue: (VARIABLE), 338, (STATIC), 1000
@@ -7860,7 +7860,7 @@ beginState: s32'GlaenzenDunkelExe'
   beginLabel: s32'landing'
   sprite: s32'leo422_20', 18
   Unknown233: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     if: (VARIABLE), 45
       Unknown2595: s32'GlaenzenDunkelSemuke'

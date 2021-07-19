@@ -5742,7 +5742,7 @@ beginState: s32'ThrowExe'
   Unknown393: 
   Unknown446: s32'310kick', 100
   Unknown1059: 0
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown2341: s32'ShakeTateYoko', 2200, 0, 24, s32'shake_easeout', 0
@@ -5875,7 +5875,7 @@ beginState: s32'AirThrowExe'
     Unknown2189: 2, 5
     endUpon: 
   Unknown2341: s32'Depth', 8200, 0, 24, s32'shake_easeout', 0
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   sprite: s32'chp320_14', 4
@@ -6361,7 +6361,7 @@ beginState: s32'BetaBlade'
     Unknown2591: 1, 1, 1, 0, 200, 5
     Unknown1148: s32'SE_BTL_CMN_Impact_Katana_M'
     Unknown1211: s32'SE_BTL_CMN_Impact_Katana_M'
-    upon: 10
+    upon: (HIT)
       Unknown2239: 1
       endUpon: 
     upon: (HIT_OR_GUARD)
@@ -6406,7 +6406,7 @@ beginState: s32'BetaBlade'
   physicsYImpulse: 0, 35000
   setGravity: 2100
   setStrikeInvulnerable: 0
-  upon: 10
+  upon: (HIT)
     Unknown2239: 1
     endUpon: 
   upon: (HIT_OR_GUARD)
@@ -6483,7 +6483,7 @@ beginState: s32'AirBetaBlade'
     upon: 2
       Unknown14: s32'landing'
       endUpon: 
-    upon: 10
+    upon: (HIT)
       Unknown2239: 1
       endUpon: 
     Unknown1148: s32'SE_BTL_CMN_Impact_Katana_L'
@@ -6533,7 +6533,7 @@ beginState: s32'AirBetaBlade'
     Unknown23: 9
     Unknown75: s32'cmn_screenshake', 0, 3, 0, 2, 0, 0, 0, 0
     endUpon: 
-  upon: 10
+  upon: (HIT)
     Unknown2239: 1
     endUpon: 
   Unknown615: s32'SE_BTL_CHP_05'
@@ -6970,7 +6970,7 @@ beginState: s32'GenrouzanExe'
   Unknown1059: 0
   Unknown1064: s32''
   Unknown1067: 4, -260000, 270000
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   upon: (HIT_OR_GUARD)
@@ -8719,7 +8719,7 @@ beginState: s32'BankiMessai'
   Unknown953: 1
   Unknown446: s32'204atk1', 100
   Unknown1059: 0
-  upon: 10
+  upon: (HIT)
     Unknown23: 10
     Unknown2234: 1
     endUpon: 

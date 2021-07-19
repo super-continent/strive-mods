@@ -4990,7 +4990,7 @@ beginState: s32'ThrowExe'
   Unknown2341: s32'Depth', 2000, 0, 32, s32'shake_easeout', 0
   Unknown612: s32'SE_BTL_CMN_Swing_Grap_Sharp_S'
   Unknown615: s32'SE_BTL_INO_04_1'
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   sprite: s32'ino310_12', 2
@@ -5062,7 +5062,7 @@ beginState: s32'AirThrowExe'
   Unknown546: 0, 115, 0
   sprite: s32'ino320_03', 3
   Unknown233: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown612: s32'SE_BTL_CMN_Swing_Grap_Heavy_M'

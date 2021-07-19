@@ -4941,7 +4941,7 @@ beginState: s32'NmlAtk5D2nd'
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
     Unknown75: s32'cmn_SameAttack', 0, 1, 0, 0, 0, 0, 0, 0
-    upon: 10
+    upon: (HIT)
       Unknown23: 10
       callSubroutine: s32'cmn_AtkTemplFloatDamage'
       Unknown922: 1
@@ -5029,7 +5029,7 @@ storeValue: (VARIABLE), 344, (STATIC), 0
 storeValue: (VARIABLE), 345, (STATIC), 0
 Unknown1148: s32'SE_BTL_CMN_Impact_Katana_L'
 Unknown1211: s32'SE_BTL_CMN_Impact_Katana_L'
-upon: 10
+upon: (HIT)
   Unknown23: 10
   enableSpecialCancel: 1
   Unknown2234: 1
@@ -6391,7 +6391,7 @@ beginState: s32'ThrowExe'
   Unknown40: 
   Unknown233: 
   Unknown1067: 4, 300000, 300000
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   sprite: s32'fau310_38', 2
@@ -6512,7 +6512,7 @@ beginState: s32'AirThrowExe'
   Unknown546: 0, 116, 0
   Unknown233: 
   Unknown1067: 4, 350000, 150000
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown613: s16'vxxx107'
@@ -7058,7 +7058,7 @@ beginState: s32'MettaGariExe'
     Unknown446: s32'Cam_MettaGari', 100
     Unknown2525: 1
     Unknown75: s32'cmn_motionblur', 0, 6, 0, 0, 0, 0, 0, 0
-    upon: 10
+    upon: (HIT)
       ifOperation: (IS_LESSER), (VARIABLE), 45, (STATIC), 18
         Unknown54: 0, 2, 45, 0, 1
         storeValue: (VARIABLE), 46, (VARIABLE), 45
@@ -7204,7 +7204,7 @@ beginState: s32'MettaGariExe'
   Unknown612: s32'SE_BTL_CMN_Swing_Sword_Sharp_M'
   sprite: s32'fau406_21', 3
   hit: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown711: 2
@@ -7932,7 +7932,7 @@ beginState: s32'Hikimodoshi'
     Unknown2248: 
     Unknown40: 
     Unknown233: 
-    upon: 10
+    upon: (HIT)
       Unknown23: 10
       storeValue: (VARIABLE), 50, (STATIC), 1
       Unknown2234: 0
@@ -7987,7 +7987,7 @@ beginState: s32'Hikimodoshi'
   callSubroutine: s32'cmnthrow_RedromanSenkoInput'
   callSubroutine: s32'cmnNohosei'
   storeValue: (VARIABLE), 50, (STATIC), 0
-  upon: 10
+  upon: (HIT)
     Unknown75: s32'cmn_screenshake', 0, 3, 0, 2, 0, 0, 0, 0
     Unknown2234: 1
     Unknown2188: 0
@@ -8126,7 +8126,7 @@ beginState: s32'NiceShot'
   Unknown615: s32'SE_BTL_FAU_18'
   sprite: s32'fau402_03', 2
   hit: 
-  upon: 10
+  upon: (HIT)
     Unknown23: 10
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 14, (STATIC), 330000
       damage: 0, 120
@@ -8580,7 +8580,7 @@ Unknown2244: 1
 Unknown428: 0, 0
 Unknown427: 0, 0
 Unknown429: 0, 0
-upon: 10
+upon: (HIT)
   Unknown75: s32'cmnAtkTemplNageFinish', 0, 1, 0, 0, 0, 0, 0, 0
   Unknown41: 22
   Unknown2182: 1

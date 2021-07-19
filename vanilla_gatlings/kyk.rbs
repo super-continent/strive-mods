@@ -7624,7 +7624,7 @@ beginState: s32'ThrowExe'
   hitAirPushBackX: 0, 20000
   hitAirPushbackY: 0, 10000
   wallBounceCount: 0
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown2341: s32'Horizontal', 3000, 0, 16, s32'shake_easeout', 0
@@ -7737,7 +7737,7 @@ beginState: s32'AirThrowExe'
   sprite: s32'kyk320_07', 3
   Unknown546: 0, 115, 0
   Unknown233: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown1067: 4, 200000, 10000
@@ -8231,7 +8231,7 @@ beginState: s32'StunDipper'
     Unknown446: s32'Stundipper', 100
     Unknown615: s32'SE_BTL_KYK_03_2'
     Unknown615: s32'SE_BTL_KYK_02'
-    upon: 10
+    upon: (HIT)
       Unknown75: s32'cmn_screenshake', 0, 3, 0, 1, 0, 0, 0, 0
       endUpon: 
     endIf: 
@@ -8543,7 +8543,7 @@ beginState: s32'VaporThrustC'
     upon: 2
       Unknown14: s32'landing'
       endUpon: 
-    upon: 10
+    upon: (HIT)
       Unknown2239: 1
       endUpon: 
     upon: (HIT_OR_GUARD)
@@ -8776,7 +8776,7 @@ beginState: s32'VaporThrustD'
     upon: 2
       Unknown14: s32'landing'
       endUpon: 
-    upon: 10
+    upon: (HIT)
       Unknown2239: 1
       endUpon: 
     Unknown1148: s32'SE_BTL_CMN_Impact_Electric'
@@ -9059,7 +9059,7 @@ beginState: s32'AirVaporThrustC'
     upon: 2
       Unknown14: s32'landing'
       endUpon: 
-    upon: 10
+    upon: (HIT)
       Unknown2239: 1
       endUpon: 
     Unknown1148: s32'SE_BTL_CMN_Impact_Electric'
@@ -9304,7 +9304,7 @@ beginState: s32'AirVaporThrustD'
     upon: 2
       Unknown14: s32'landing'
       endUpon: 
-    upon: 10
+    upon: (HIT)
       Unknown2239: 1
       endUpon: 
     Unknown1148: s32'SE_BTL_CMN_Impact_Electric'
@@ -9594,7 +9594,7 @@ beginState: s32'Diaekura'
     hitAirPushbackY: 0, -20000
     Unknown933: 1
     Unknown906: 1
-    upon: 10
+    upon: (HIT)
       ifNot: (VARIABLE), 5
         ifNot: (VARIABLE), 3
           storeValue: (VARIABLE), 3, (STATIC), 1
@@ -10008,7 +10008,7 @@ beginState: s32'RideTheLightning'
         endIf: 
       Unknown2121: s32'Cam_Finish_RTL'
       endUpon: 
-    upon: 10
+    upon: (HIT)
       Unknown23: 10
       storeValue: (VARIABLE), 45, (STATIC), 1
       Unknown2593: 0, 0
@@ -10503,7 +10503,7 @@ beginState: s32'AirRideTheLightning'
         endIf: 
       Unknown2121: s32'Cam_Finish_RTL_Air'
       endUpon: 
-    upon: 10
+    upon: (HIT)
       Unknown23: 10
       storeValue: (VARIABLE), 45, (STATIC), 1
       Unknown2593: 0, 0

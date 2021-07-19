@@ -11580,7 +11580,7 @@ startSubroutine: s32'cmn_DustAttack'
       Unknown1102: 100
       endIf: 
     endUpon: 
-  upon: 10
+  upon: (HIT)
     Unknown23: 10
     if: (VARIABLE), 52
       Unknown23: 62
@@ -24078,7 +24078,7 @@ beginState: s32'cmnRomanCancel_Object'
       endIf: 
     Unknown1118: s32'SE_BTL_CMN_Hit_Energy'
     Unknown1119: s32'SE_BTL_CMN_Guard_Energy'
-    upon: 10
+    upon: (HIT)
       Unknown2427: s32'RCRedNearHit', 0, 1
       endUpon: 
     upon: 86
@@ -24104,7 +24104,7 @@ beginState: s32'cmnRomanCancel_Object'
       groundHitEffect: 8
       airHitEffect: 8
       endIf: 
-    upon: 10
+    upon: (HIT)
       Unknown2427: s32'RCYellowNearHit', 0, 1
       endUpon: 
     upon: 86

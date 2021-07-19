@@ -5781,7 +5781,7 @@ beginState: s32'ThrowExe'
   Unknown94: 0, 112000
   sprite: s32'gio310_19', 4
   Unknown233: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown2189: 0, 5
@@ -5875,7 +5875,7 @@ beginState: s32'AirThrowExe'
   sprite: s32'gio320_03', 4
   sprite: s32'gio320_04', 3
   Unknown233: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown612: s32'SE_BTL_CMN_Swing_Grap_Sharp_M'

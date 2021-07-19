@@ -5008,7 +5008,7 @@ beginState: s32'ThrowExe'
   Unknown2193: 100, 117250, 84000
   Unknown546: 130, 100, 0
   hit: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown1067: 4, 100000, 100000
@@ -5088,7 +5088,7 @@ beginState: s32'AirThrowExe'
   sprite: s32'sol320_04', 3
   Unknown446: s32'cmn_explosion_s', 137
   hit: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown1067: 4, 250000, 180000
@@ -5226,7 +5226,7 @@ beginState: s32'VolcanicViperLandS'
     Unknown2526: 1, 1, 6, 100, 60, 300
     Unknown2591: 1, 1, 6, 100, 200, 300
     callSubroutine: s32'cmnMutekiRC'
-    upon: 10
+    upon: (HIT)
       Unknown2239: 1
       endUpon: 
     callSubroutine: s32'BeginingMoveCheck'
@@ -5321,7 +5321,7 @@ beginState: s32'VolcanicViperAirS'
     Unknown2526: 1, 1, 6, 100, 60, 300
     Unknown2591: 1, 1, 6, 100, 200, 300
     callSubroutine: s32'cmnMutekiRC'
-    upon: 10
+    upon: (HIT)
       Unknown2239: 1
       endUpon: 
     callSubroutine: s32'BeginingMoveCheck'
@@ -5415,7 +5415,7 @@ beginState: s32'VolcanicViperLandHS'
       pushbackX: 100000
       Unknown75: s32'cmn_screenshake', 0, 3, 0, 2, 0, 0, 0, 0
       endUpon: 
-    upon: 10
+    upon: (HIT)
       Unknown23: 10
       Unknown49: 69
       if: (VARIABLE), 0
@@ -5506,7 +5506,7 @@ beginState: s32'VolcanicViperLandHS'
   Unknown778: 0, 3000
   setStrikeInvulnerable: 0
   Unknown23: 10
-  upon: 10
+  upon: (HIT)
     Unknown23: 10
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 106, (STATIC), 250000
       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 15, (STATIC), 350000
@@ -5618,7 +5618,7 @@ beginState: s32'VolcanicViperAirHS'
           endIf: 
         endUpon: 
       endUpon: 
-    upon: 10
+    upon: (HIT)
       Unknown23: 10
       Unknown49: 69
       if: (VARIABLE), 0
@@ -5706,7 +5706,7 @@ beginState: s32'VolcanicViperAirHS'
   hitAirPushbackY: 0, 40000
   Unknown778: 0, 3000
   Unknown23: 10
-  upon: 10
+  upon: (HIT)
     Unknown23: 10
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 106, (STATIC), 250000
       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 15, (STATIC), 350000
@@ -5842,7 +5842,7 @@ beginState: s32'BanditRevolver_Land'
   Unknown446: s32'402_atk_1st', 100
   addPositionX: 75000
   hit: 
-  upon: 10
+  upon: (HIT)
     Unknown23: 10
     Unknown75: s32'cmn_screenshake', 0, 3, 0, 1, 0, 0, 0, 0
     storeValue: (VARIABLE), 45, (STATIC), 1
@@ -5981,7 +5981,7 @@ beginState: s32'BanditRevolver_Air'
   Unknown446: s32'402_atk_1st', 100
   addPositionX: 75000
   hit: 
-  upon: 10
+  upon: (HIT)
     Unknown23: 10
     Unknown75: s32'cmn_screenshake', 0, 3, 0, 1, 0, 0, 0, 0
     storeValue: (VARIABLE), 45, (STATIC), 1
@@ -6414,7 +6414,7 @@ beginState: s32'BukkiraExe'
   Unknown2193: 100, -400000, 0
   Unknown546: 130, 100, 0
   Unknown233: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown2193: 120, -150000, 0
@@ -6495,7 +6495,7 @@ beginState: s32'Vortex'
     Unknown770: 0, 60, 0, 4, 0, 10
     Unknown778: 0, 0
     Unknown783: 0, 120, 0, 18, 0, 40
-    upon: 10
+    upon: (HIT)
       Unknown2193: 100, 200000, 300000
       Unknown446: s32'Grandviper_hitblow', 130
       endUpon: 
@@ -6708,7 +6708,7 @@ beginState: s32'TyrantRave'
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 106, (STATIC), 35000
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 15, (STATIC), 300000
       ifNot: (VARIABLE), 368
-        upon: 10
+        upon: (HIT)
           Unknown23: 10
           storeValue: (VARIABLE), 46, (STATIC), 1
           endUpon: 
@@ -7304,7 +7304,7 @@ beginState: s32'HMCExe'
   physicsXImpulse: 0, 8000
   physicsYImpulse: 0, 30000
   Unknown135: 
-  upon: 10
+  upon: (HIT)
     Unknown75: s32'cmnAtkTemplNageFinish', 0, 1, 0, 0, 0, 0, 0, 0
     endUpon: 
   upon: 2

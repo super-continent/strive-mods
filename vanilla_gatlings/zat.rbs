@@ -6805,7 +6805,7 @@ beginState: s32'ThrowExe'
   Unknown446: s32'ThrowEff', 100
   Unknown544: 6
   Unknown233: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown2189: 0, 5
@@ -6924,7 +6924,7 @@ beginState: s32'AirThrowExe'
   sprite: s32'zat320_09', 7
   sprite: s32'zat320_10', 4
   Unknown233: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     endUpon: 
   Unknown1067: 4, 300000, 100000
@@ -7661,7 +7661,7 @@ beginState: s32'DamnedFangExe'
   Unknown615: s32'SE_BTL_ZAT_09'
   sprite: s32'zat270_15', 2
   Unknown233: 
-  upon: 10
+  upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     Unknown2341: s32'Impact', 2000, 0, 36, s32'shake_easeout', 0
     endUpon: 
