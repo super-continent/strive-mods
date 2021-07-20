@@ -6181,7 +6181,7 @@ beginState: s32'NmlAtk6A'
     addGatlingOption: s32'NmlAtk5CNear'
     addGatlingOption: s32'NmlAtk5CFar'
     upon: (HIT_OR_GUARD)
-      pushbackX: 100000
+      extendPushboxX: 100000
       endUpon: 
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -350000
@@ -6297,7 +6297,7 @@ beginState: s32'NmlAtk5B'
     addGatlingOption: s32'NmlAtk2E'
     enableJumpCancel: 1
     upon: (HIT_OR_GUARD)
-      pushbackX: 50000
+      extendPushboxX: 50000
       endUpon: 
     upon: 8
       upon: 12
@@ -6350,7 +6350,7 @@ beginState: s32'NmlAtk6B'
     Unknown783: 0, 250, 0, 5, 0, 15
     airHitEffect: 13
     upon: (HIT_OR_GUARD)
-      pushbackX: 50000
+      extendPushboxX: 50000
       endUpon: 
     callSubroutine: s32'cmn_AtkTemplNokezoriLow'
     Unknown953: 1
@@ -6474,7 +6474,7 @@ beginState: s32'NmlAtk5CNear'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
     upon: (HIT_OR_GUARD)
-      pushbackX: 90000
+      extendPushboxX: 90000
       endUpon: 
     Unknown1148: s32'SE_BTL_CMN_Impact_Katana_S'
     Unknown1211: s32'SE_BTL_CMN_Impact_Katana_S'
@@ -6634,7 +6634,7 @@ beginState: s32'NmlAtk5D'
     Unknown778: 0, 0
     Unknown783: 0, 100, 0, 5, 0, 50
     upon: (HIT_OR_GUARD)
-      pushbackX: 100000
+      extendPushboxX: 100000
       endUpon: 
     Unknown1148: s32'SE_BTL_CMN_Impact_Katana_M'
     Unknown1211: s32'SE_BTL_CMN_Impact_Katana_M'
@@ -6701,7 +6701,7 @@ beginState: s32'NmlAtk6D'
     wallBounceCount: 1
     wallBounceInCornerOnly: 1
     upon: (HIT_OR_GUARD)
-      pushbackX: 100000
+      extendPushboxX: 100000
       endUpon: 
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -400000
@@ -6768,7 +6768,7 @@ beginState: s32'NmlAtk2D'
     Unknown783: 0, 125, 0, 10, 0, 50
     Unknown75: s32'cmn_AtkVectorAirGuard', 0, 6, 0, 0, 0, 0, 0, 0
     upon: (HIT_OR_GUARD)
-      pushbackX: 100000
+      extendPushboxX: 100000
       endUpon: 
     Unknown953: 2
     storeValue: (VARIABLE), 343, (STATIC), -300000
@@ -7043,7 +7043,7 @@ beginState: s32'NmlAtk2E'
       endUpon: 
     counterHitSoftKnockdown: 0
     upon: (HIT_OR_GUARD)
-      pushbackX: 100000
+      extendPushboxX: 100000
       endUpon: 
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -200000
@@ -8114,7 +8114,7 @@ beginState: s32'StunDipper'
         Unknown1803: s32'Taiden_Effect', 23
         endIf: 
       endIf: 
-    pushbackX: 100000
+    extendPushboxX: 100000
     endUpon: 
   Unknown953: 1
   storeValue: (VARIABLE), 343, (STATIC), -300000
@@ -8291,7 +8291,7 @@ beginState: s32'FadulArc'
       Unknown14: s32'landing'
       endUpon: 
     upon: (HIT_OR_GUARD)
-      pushbackX: 80000
+      extendPushboxX: 80000
       if: (VARIABLE), 3
         ifNot: (VARIABLE), 5
           callSubroutine: s32'cmn_AtkLv4'
@@ -8546,7 +8546,7 @@ beginState: s32'VaporThrustC'
       Unknown2239: 1
       endUpon: 
     upon: (HIT_OR_GUARD)
-      pushbackX: 50000
+      extendPushboxX: 50000
       if: (VARIABLE), 3
         ifNot: (VARIABLE), 5
           callSubroutine: s32'cmn_AtkLv4'
@@ -8781,7 +8781,7 @@ beginState: s32'VaporThrustD'
     Unknown1148: s32'SE_BTL_CMN_Impact_Electric'
     Unknown1211: s32'SE_BTL_CMN_Impact_Electric'
     upon: (HIT_OR_GUARD)
-      pushbackX: 50000
+      extendPushboxX: 50000
       if: (VARIABLE), 3
         ifNot: (VARIABLE), 5
           callSubroutine: s32'cmn_AtkLv4'
@@ -9309,7 +9309,7 @@ beginState: s32'AirVaporThrustD'
     Unknown1148: s32'SE_BTL_CMN_Impact_Electric'
     Unknown1211: s32'SE_BTL_CMN_Impact_Electric'
     upon: (HIT_OR_GUARD)
-      pushbackX: 50000
+      extendPushboxX: 50000
       if: (VARIABLE), 3
         ifNot: (VARIABLE), 5
           callSubroutine: s32'cmn_AtkLv4'
@@ -9688,7 +9688,7 @@ beginState: s32'Diaekura'
   Unknown615: s32'SE_BTL_KYK_06'
   Unknown615: s32'SE_BTL_KYK_04'
   upon: (HIT_OR_GUARD)
-    pushbackX: 70000
+    extendPushboxX: 70000
     endUpon: 
   Unknown1148: s32'SE_BTL_CMN_Impact_Electric'
   Unknown1211: s32'SE_BTL_CMN_Impact_Electric'
@@ -9760,7 +9760,7 @@ beginState: s32'Diaekura'
     Unknown615: s32'SE_BTL_KYK_06'
     Unknown615: s32'SE_BTL_KYK_04'
     upon: (HIT_OR_GUARD)
-      pushbackX: 70000
+      extendPushboxX: 70000
       endUpon: 
     Unknown1148: s32'SE_BTL_CMN_Impact_Electric'
     Unknown1211: s32'SE_BTL_CMN_Impact_Electric'
@@ -10164,7 +10164,7 @@ beginState: s32'RideTheLightning'
   Unknown24: s32'super', 2, 5
   sprite: s32'kyk500_11', 2
   physicsXImpulse: 0, 40000
-  pushbackX: 200000
+  extendPushboxX: 200000
   Unknown615: s32'SE_BTL_KYK_KAKUSEI_02'
   endLabel: 
   sprite: s32'kyk500_12', 3
@@ -10341,7 +10341,7 @@ beginState: s32'RideTheLightning'
   beginLabel: s32'super'
   sprite: s32'kyk500_11', 2
   physicsXImpulse: 0, 40000
-  pushbackX: 200000
+  extendPushboxX: 200000
   Unknown615: s32'SE_BTL_KYK_KAKUSEI_02'
   endLabel: 
   sprite: s32'kyk500_12', 2
@@ -10678,7 +10678,7 @@ beginState: s32'AirRideTheLightning'
   Unknown24: s32'super', 2, 5
   sprite: s32'kyk501_11', 2
   physicsXImpulse: 0, 40000
-  pushbackX: 200000
+  extendPushboxX: 200000
   sprite: s32'kyk501_12', 3
   callSubroutine: s32'Ride_TossinFunc'
   hit: 
@@ -10865,7 +10865,7 @@ beginState: s32'AirRideTheLightning'
   sprite: s32'kyk501_11', 2
   hitAirPushbackY: 0, 10000
   physicsXImpulse: 0, 40000
-  pushbackX: 200000
+  extendPushboxX: 200000
   Unknown615: s32'SE_BTL_KYK_KAKUSEI_02'
   callSubroutine: s32'cmn_countertype_high'
   Unknown1324: s32'AirRideTheLightning_DI'

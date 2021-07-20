@@ -10485,7 +10485,7 @@ startSubroutine: s32'cmnGuardBreak'
   endSubroutine: 
 
 startSubroutine: s32'cmnJumpPre'
-  setCarriedMomentumPercentage: 70
+  setCarriedMomentumPercentage: 90
   upon: (BEFORE_EXIT)
     Unknown1662: s32'CmnFAirDash', 5
     Unknown1662: s32'CmnBAirDash', 5
