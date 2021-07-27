@@ -52,6 +52,35 @@ beginState: s32'EventFall'
   Unknown27: s32'EventStand'
   endState: 
 
+beginState: s32'Event085'
+  sprite: s32'anj085_00', 10
+  sprite: s32'anj085_01', 10
+  sprite: s32'anj085_02', 10
+  sprite: s32'anj085_03', 6
+  sprite: s32'anj085_04', 5
+  sprite: s32'anj085_05', 7
+  addPositionX: 30000
+  sprite: s32'anj085_06', 7
+  addPositionX: 20000
+  Unknown658: 100, 1, 0
+  Unknown2176: 0, 100
+  Unknown1709: 1
+  sprite: s32'anj085_07', 7
+  sprite: s32'anj085_08', 7
+  sprite: s32'anj085_09', 9
+  sprite: s32'anj085_10', 6
+  addPositionX: 50000
+  sprite: s32'anj085_11', 6
+  addPositionX: 50000
+  sprite: s32'anj085_12', 6
+  addPositionX: 20000
+  sprite: s32'anj085_13', 6
+  endLabel: 
+  Unknown2176: 1, 100
+  Unknown658: 100, 1, 0
+  sprite: s32'anj085_13', 2147483647
+  endState: 
+
 beginState: s32'Event001'
   sprite: s32'anj001_00', 6
   sprite: s32'anj001_01', 6
@@ -2406,6 +2435,57 @@ beginState: s32'CmnActBlowoff'
   sprite: s32'anj068_30', 2
   endLabel: 
   beginLabel: s32'4'
+  sprite: s32'anj068_31', 2
+  sprite: s32'anj068_32', 2
+  sprite: s32'anj068_33', 3
+  sprite: s32'anj068_34', 3
+  sprite: s32'anj068_35', 3
+  sprite: s32'anj068_36', 3
+  sprite: s32'anj068_37', 3
+  sprite: s32'anj068_38', 3
+  sprite: s32'anj068_39', 3
+  sprite: s32'anj068_40', 3
+  sprite: s32'anj068_41', 3
+  sprite: s32'anj068_42', 3
+  sprite: s32'anj068_43', 4
+  sprite: s32'anj068_44', 3
+  sprite: s32'anj068_45', 3
+  sprite: s32'anj068_46', 3
+  sprite: s32'anj068_47', 3
+  sprite: s32'anj068_48', 4
+  sprite: s32'anj068_49', 2147483647
+  endState: 
+
+beginState: s32'fuwafuwa'
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'anj068_04', 3
+  sprite: s32'anj068_05', 3
+  sprite: s32'anj068_06', 4
+  sprite: s32'anj068_07', 3
+  sprite: s32'anj068_08', 3
+  sprite: s32'anj068_09', 3
+  sprite: s32'anj068_10', 3
+  sprite: s32'anj068_11', 3
+  sprite: s32'anj068_12', 3
+  sprite: s32'anj068_13', 3
+  sprite: s32'anj068_14', 3
+  sprite: s32'anj068_15', 3
+  sprite: s32'anj068_16', 3
+  sprite: s32'anj068_17', 3
+  sprite: s32'anj068_18', 3
+  sprite: s32'anj068_19', 3
+  sprite: s32'anj068_20', 3
+  sprite: s32'anj068_21', 3
+  sprite: s32'anj068_22', 3
+  sprite: s32'anj068_23', 3
+  sprite: s32'anj068_24', 3
+  sprite: s32'anj068_25', 3
+  sprite: s32'anj068_26', 3
+  sprite: s32'anj068_27', 3
+  sprite: s32'anj068_28', 3
+  sprite: s32'anj068_29', 2
+  sprite: s32'anj068_30', 2
   sprite: s32'anj068_31', 2
   sprite: s32'anj068_32', 2
   sprite: s32'anj068_33', 3
@@ -4884,6 +4964,7 @@ beginState: s32'ThrowExe'
     endUpon: 
   sprite: s32'keep', 4
   Unknown547: 1
+  callSubroutine: s32'cmnAtkTemplNage__EnemyCell'
   sprite: s32'anj310_00', 2
   Unknown2189: 0, 5
   Unknown550: 
@@ -4971,6 +5052,7 @@ beginState: s32'AirThrowExe'
     endUpon: 
   sprite: s32'keep', 4
   Unknown547: 1
+  callSubroutine: s32'cmnAtkTemplNage__EnemyCell'
   sprite: s32'anj320_00', 4
   Unknown2189: 2, 3
   Unknown550: 
@@ -5791,7 +5873,7 @@ beginState: s32'Sai'
   upon: 50
     Unknown23: 50
     callSubroutine: s32'cmnWorldStop_Start'
-    callSubroutine: s32'cmnDeleteAllHalfCamera'
+    callSubroutine: s32'cmnCameraSettings'
     Unknown612: s32'SE_BTL_SYS_Skill'
     callSubroutine: s32'cmnWorldStop_Tension'
     Unknown2189: 2, 5
@@ -5824,11 +5906,7 @@ beginState: s32'Sai'
         Unknown2244: 1
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 172
-        Unknown2560: 0
-        Unknown1972: 0
-        Unknown428: 0, 40
-        Unknown427: 0, 20
-        Unknown429: 0, 40
+        callSubroutineWithArgs: s32'cmnCameraSettings', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 174
         Unknown2244: 0
