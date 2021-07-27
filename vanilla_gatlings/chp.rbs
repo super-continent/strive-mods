@@ -136,7 +136,7 @@ beginState: s32'Event205'
   Unknown446: s32'chp205_rakko_event', 130
   Unknown446: s32'Rakko_tornado', 100
   Unknown446: s32'chp_rakko_tornado', 100
-  Unknown75: s32'cmn_screenshake', 0, 1, 0, 2, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 2, (STATIC), 0, (STATIC), 0
   sprite: s32'chp205_04', 5
   sprite: s32'chp205_05', 4
   extendPushboxX: 0
@@ -370,7 +370,7 @@ beginState: s32'Event640'
   Unknown612: s32'SE_BTL_CMN_Swing_Grap_Sharp_M'
   sprite: s32'chp640_06', 2
   Unknown2175: 8, 127
-  Unknown75: s32'cmn_screenshake', 0, 1, 0, 2, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 2, (STATIC), 0, (STATIC), 0
   Unknown2176: 1, 127
   sprite: s32'chp640_07', 2
   sprite: s32'chp640_08', 2
@@ -1454,8 +1454,8 @@ startSubroutine: s32'CPUEstimate'
 startSubroutine: s32'OnFrameStep'
   callSubroutine: s32'cmnOnFrameStep'
   if: (VARIABLE), 3
-    Unknown54: 0, 2, 76, 0, 1
-    Unknown54: 0, 2, 3, 0, -1
+    modifyVar: (ADD), (VARIABLE), 76, (STATIC), 1
+    modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
     ifNot: (VARIABLE), 3
       Unknown2068: 
       endIf: 
@@ -1527,7 +1527,7 @@ beginState: s32'CmnActEntryToStand1P'
 
 beginState: s32'CmnActEntryToStand2P'
   upon: (IMMEDIATE)
-    Unknown75: s32'cmnEntryToStand', 0, 60, 0, 60, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmnEntryToStand', (STATIC), 60, (STATIC), 60, (STATIC), 0, (STATIC), 0
     endUpon: 
   sprite: s32'chp000_13', 6
   sprite: s32'chp000_14', 6
@@ -2136,7 +2136,7 @@ beginState: s32'CmnActFDash'
     Unknown36: 13, 7
     upon: 13
       upon: 46
-        Unknown1650: 1
+        enableWhiffCancel: 1
         ifNot: (VARIABLE), 32
           addWhiffCancelOption: s32'HaritsukiR_Landwall'
           endIf: 
@@ -2183,7 +2183,7 @@ beginState: s32'CmnActFDashStop'
 
 beginState: s32'CmnActBDash'
   sprite: s32'chp034_00', 2
-  Unknown2187: 5
+  strikeInvulnerableForTime: 5
   upon: (FRAME_STEP)
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 3
       Unknown207: 150
@@ -2218,7 +2218,7 @@ beginState: s32'CmnActAirFDash'
   upon: 46
     checkInput: (INPUT_6)
     if: (VARIABLE), 0
-      Unknown1650: 1
+      enableWhiffCancel: 1
       ifNot: (VARIABLE), 32
         addWhiffCancelOption: s32'HaritsukiR_wall'
         endIf: 
@@ -2228,7 +2228,7 @@ beginState: s32'CmnActAirFDash'
       endIf: 
     checkInput: 276
     if: (VARIABLE), 0
-      Unknown1650: 1
+      enableWhiffCancel: 1
       ifNot: (VARIABLE), 32
         addWhiffCancelOption: s32'HaritsukiR_wall'
         endIf: 
@@ -3709,7 +3709,7 @@ beginState: s32'CmnActMatchWin'
     endIf: 
   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 15
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 74
-      Unknown54: 0, 2, 45, 0, 5000
+      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 5000
       Unknown248: 2, 45
       endIf: 
     endIf: 
@@ -3744,7 +3744,7 @@ beginState: s32'CmnActLose'
   Unknown612: s32'SE_BTL_CMN_Swing_Grap_Sharp_M'
   sprite: s32'chp640_06', 2
   Unknown2175: 8, 127
-  Unknown75: s32'cmn_screenshake', 0, 1, 0, 2, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 2, (STATIC), 0, (STATIC), 0
   Unknown2176: 1, 127
   sprite: s32'chp640_07', 2
   sprite: s32'chp640_08', 2
@@ -3851,12 +3851,12 @@ beginState: s32'NmlAtk5A'
     callSubroutine: s32'cmn_AtkLv0'
     damage: 0, 20
     Unknown1107: 1
-    Unknown75: s32'cmn_lightAttack_hitback', 0, 0, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_lightAttack_hitback', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
     storeValue: (VARIABLE), 338, (STATIC), 100000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
-    Unknown75: s32'cmn_SameAttack', 0, 3, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_SameAttack', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
     hitAirPushbackX: 0, 12500
     hitAirPushbackY: 0, 27500
     addWhiffCancelOption: s32'NmlAtk5A'
@@ -3913,7 +3913,7 @@ beginState: s32'NmlAtk5A'
   sprite: s32'chp200_06', 2
   sprite: s32'chp200_07', 3
   callSubroutine: s32'cmnNandemoCancel'
-  Unknown1650: 0
+  enableWhiffCancel: 0
   sprite: s32'chp200_08', 3
   sprite: s32'chp200_09', 2
   sprite: s32'chp200_10', 2
@@ -3927,13 +3927,13 @@ beginState: s32'NmlAtk6A'
     storeValue: (VARIABLE), 338, (STATIC), 10000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
-    Unknown75: s32'cmn_hosei', 0, 1, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
     callSubroutine: s32'cmn_AtkTemplNokezoriLow'
     hitAirPushbackX: 0, 32000
     hitAirPushbackY: 0, 18000
     groundCounterHitEffect: 11
     counterHitSoftKnockdown: 0
-    Unknown75: s32'cmn_AtkVectorAirGuard', 0, 1, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
     Unknown953: 1
     addGatlingOption: s32'NmlAtk5CNear'
     addGatlingOption: s32'NmlAtk5CFar'
@@ -3949,7 +3949,7 @@ beginState: s32'NmlAtk6A'
     upon: (HIT_OR_GUARD)
       Unknown23: 9
       extendPushboxX: 150000
-      Unknown75: s32'cmn_screenshake', 0, 3, 0, 1, 0, 0, 0, 0
+      callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 1, (STATIC), 0, (STATIC), 0
       endUpon: 
     endUpon: 
   sprite: s32'chp210_00', 2
@@ -3980,13 +3980,13 @@ beginState: s32'NmlAtk2A'
     callSubroutine: s32'cmn_AtkLv0'
     damage: 0, 18
     Unknown1107: 1
-    Unknown75: s32'cmn_lightAttack_hitback', 0, 0, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_lightAttack_hitback', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
     Unknown923: 1
     storeValue: (VARIABLE), 338, (STATIC), 100000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
-    Unknown75: s32'cmn_SameAttack', 0, 3, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_SameAttack', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
     hitAirPushbackX: 0, 15000
     hitAirPushbackY: 0, 27500
     addWhiffCancelOption: s32'NmlAtk5A'
@@ -4039,12 +4039,12 @@ beginState: s32'NmlAtk5B'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmn_AtkLv0'
     damage: 0, 24
-    Unknown75: s32'cmn_lightAttack_hitback', 0, 0, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_lightAttack_hitback', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
     storeValue: (VARIABLE), 338, (STATIC), 100000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
-    Unknown75: s32'cmn_SameAttack', 0, 3, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_SameAttack', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
     callSubroutine: s32'cmn_AtkTemplNokezoriLow'
     callSubroutine: s32'cmn_fuwafuwafuwa'
     airHitEffect: 12
@@ -4077,9 +4077,13 @@ beginState: s32'NmlAtk5B'
       Unknown23: 8
       callSubroutine: s32'cmn_lightAttack_flex'
       endUpon: 
-    upon: (HIT_OR_GUARD)
+    upon: (GUARD)
       Unknown23: 9
       extendPushboxX: 50000
+      endUpon: 
+    upon: (HIT)
+      Unknown23: 9
+      extendPushboxX: 20000
       endUpon: 
     endUpon: 
   sprite: s32'chp201_00', 1
@@ -4102,7 +4106,7 @@ beginState: s32'NmlAtk5B'
   sprite: s32'chp201_09', 2
   sprite: s32'chp201_10', 2
   callSubroutine: s32'cmnNandemoCancel'
-  Unknown1650: 0
+  enableWhiffCancel: 0
   sprite: s32'chp201_11', 2
   sprite: s32'chp201_12', 2
   endState: 
@@ -4122,7 +4126,7 @@ beginState: s32'NmlAtk6B'
     wallBounceCount: 1
     wallBounceXVelocityPercent: 15
     wallBounceInCornerOnly: 1
-    Unknown794: 3000
+    wallBounceGravity: 3000
     enableSpecialCancel: 0
     Unknown2204: 1
     Unknown2169: 0
@@ -4185,7 +4189,7 @@ beginState: s32'NmlAtk2B'
     Unknown1004: 150
     addWhiffCancelOption: s32'NmlAtk5A'
     addWhiffCancelOption: s32'NmlAtk6A'
-    addWhiffCancelOption: s32'NmlAtk2A'    
+    addWhiffCancelOption: s32'NmlAtk2A'
     addWhiffCancelOption: s32'NmlAtk5B'
     addWhiffCancelOption: s32'NmlAtk6B'
     addWhiffCancelOption: s32'NmlAtk2B'
@@ -4199,7 +4203,7 @@ beginState: s32'NmlAtk2B'
     addWhiffCancelOption: s32'NmlAtk2E'
     addGatlingOption: s32'NmlAtk5A'
     addGatlingOption: s32'NmlAtk6A'
-    addGatlingOption: s32'NmlAtk2A'    
+    addGatlingOption: s32'NmlAtk2A'
     addGatlingOption: s32'NmlAtk5B'
     addGatlingOption: s32'NmlAtk6B'
     addGatlingOption: s32'NmlAtk2B'
@@ -4241,7 +4245,7 @@ beginState: s32'NmlAtk5CNear'
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
-    Unknown75: s32'cmn_SameAttack', 0, 3, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_SameAttack', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
     addGatlingOption: s32'NmlAtk6A'
     addGatlingOption: s32'NmlAtk6B'
     addGatlingOption: s32'NmlAtk6D'
@@ -4278,7 +4282,7 @@ beginState: s32'NmlAtk5CNear'
   sprite: s32'chp202_02', 3
   Unknown446: s32'202atk', 100
   hit: 
-  Unknown75: s32'cmn_screenshake', 0, 1, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'chp202_03', 3
   sprite: s32'chp202_04', 3
   Unknown2173: 
@@ -4299,7 +4303,7 @@ beginState: s32'NmlAtk5CFar'
     storeValue: (VARIABLE), 338, (STATIC), 100000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
-    Unknown75: s32'cmn_hosei', 0, 1, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
     hitAirPushbackX: 0, 24000
     hitAirPushbackY: 0, 8000
     Unknown933: 10
@@ -4356,7 +4360,7 @@ beginState: s32'NmlAtk2C'
     storeValue: (VARIABLE), 338, (STATIC), 100000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
-    Unknown75: s32'cmn_hosei', 0, 1, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
     addGatlingOption: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk2D'
     callSubroutine: s32'cmn_fuwafuwafuwa'
@@ -4390,7 +4394,7 @@ beginState: s32'NmlAtk2C'
   sprite: s32'chp232_03', 2
   sprite: s32'chp232_04', 3
   callSubroutine: s32'cmn_AttackEnd'
-  Unknown1650: 1
+  enableWhiffCancel: 1
   addWhiffCancelOption: s32'NmlAtk2D'
   extendPushboxX: 0
   sprite: s32'chp232_05', 3
@@ -4421,7 +4425,7 @@ beginState: s32'NmlAtk5D'
     storeValue: (VARIABLE), 345, (STATIC), 0
     upon: (HIT_OR_GUARD)
       Unknown23: 9
-      Unknown75: s32'cmn_screenshake', 0, 3, 0, 2, 0, 0, 0, 0
+      callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 2, (STATIC), 0, (STATIC), 0
       extendPushboxX: 200000
       endUpon: 
     endUpon: 
@@ -4433,7 +4437,7 @@ beginState: s32'NmlAtk5D'
   sprite: s32'chp204_03', 2
   Unknown446: s32'204atk1', 100
   hit: 
-  Unknown75: s32'cmn_screenshake', 0, 1, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'chp204_04', 5
   Unknown32: s32'204atk1'
   Unknown446: s32'204atk2', 100
@@ -4472,7 +4476,7 @@ beginState: s32'NmlAtk6D'
     Unknown808: 0
     Unknown783: 0, 50, 0, 10, 0, 20
     groundBounceYVelocityPercent: 100
-    Unknown806: 8000
+    groundBounceYVelocity: 8000
     groundBounceCount: 1
     Unknown858: s32'CmnActBlowoff'
     groundCounterHitEffect: 8
@@ -4484,7 +4488,7 @@ beginState: s32'NmlAtk6D'
     Unknown1211: s32'SE_BTL_CMN_Impact_Katana_L'
     upon: (HIT_OR_GUARD)
       Unknown23: 9
-      Unknown75: s32'cmn_screenshake', 0, 3, 0, 2, 0, 0, 0, 0
+      callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 2, (STATIC), 0, (STATIC), 0
       extendPushboxX: 200000
       endUpon: 
     endUpon: 
@@ -4503,7 +4507,7 @@ beginState: s32'NmlAtk6D'
   Unknown446: s32'213atk', 100
   hit: 
   Unknown2177: 0, 100
-  Unknown75: s32'cmn_screenshake', 0, 1, 0, 2, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 2, (STATIC), 0, (STATIC), 0
   sprite: s32'chp213_07', 3
   sprite: s32'chp213_08', 2
   callSubroutine: s32'cmn_AttackEnd'
@@ -4537,7 +4541,7 @@ beginState: s32'NmlAtk2D'
     Unknown770: 0, 60, 0, 7, 0, 17
     Unknown778: 0, 0
     Unknown783: 0, 200, 0, 5, 0, 30
-    Unknown75: s32'cmn_AtkVectorAirGuard', 0, 2, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
     Unknown953: 2
     storeValue: (VARIABLE), 343, (STATIC), -300000
     storeValue: (VARIABLE), 344, (STATIC), 0
@@ -4548,7 +4552,7 @@ beginState: s32'NmlAtk2D'
     Unknown1211: s32'SE_BTL_CMN_Impact_Katana_L'
     upon: (HIT_OR_GUARD)
       Unknown23: 9
-      Unknown75: s32'cmn_screenshake', 0, 3, 0, 1, 0, 0, 0, 0
+      callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 1, (STATIC), 0, (STATIC), 0
       extendPushboxX: 100000
       endUpon: 
     Unknown2581: s32'weapon', s32'G_weapon_root_ALL', s32'body', s32'G_wep_Attach_R'
@@ -4574,7 +4578,7 @@ beginState: s32'NmlAtk2D'
   sprite: s32'chp233_05', 2
   hit: 
   addPositionX: 100000
-  Unknown75: s32'cmn_screenshake', 0, 1, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'chp233_06', 3
   Unknown446: s32'233atk1', 100
   sprite: s32'chp233_07', 4
@@ -4594,7 +4598,7 @@ beginState: s32'NmlAtk5E'
     Unknown2193: 123, -50000, 0
     callSubroutine: s32'cmn_DustAttack'
     damage: 0, 40
-    Unknown1102: 30
+    pushbackX: 30
     Unknown1108: 90
     Unknown1036: 90
     Unknown1045: 2, s32'chp_rakko_hit'
@@ -4648,7 +4652,7 @@ beginState: s32'NmlAtk5E'
   Unknown446: s32'chp205_rakko', 130
   Unknown446: s32'Rakko_tatumaki', 100
   Unknown446: s32'chp_rakko_tornado', 100
-  Unknown75: s32'cmn_screenshake', 0, 1, 0, 2, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 2, (STATIC), 0, (STATIC), 0
   sprite: s32'chp205_04', 5
   hit: 
   sprite: s32'chp205_05', 4
@@ -4672,11 +4676,11 @@ beginState: s32'HomingJump'
     storeValue: (VARIABLE), 51, (STATIC), 45000
     upon: 13
       upon: (FRAME_STEP)
-        Unknown54: 0, 2, 45, 0, 25
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 25
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 1000
           storeValue: (VARIABLE), 45, (STATIC), 1000
           endIf: 
-        Unknown54: 0, 2, 46, 0, 1
+        modifyVar: (ADD), (VARIABLE), 46, (STATIC), 1
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 6
           ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 3
             Unknown1695: s32'chp021_05', 2, 45
@@ -4978,7 +4982,7 @@ beginState: s32'NmlAtk5F'
   sprite: s32'chp300_54', 3
   sprite: s32'chp300_55', 3
   sprite: s32'chp300_56', 2
-  Unknown54: 0, 2, 45, 0, 1
+  modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
   endLabel: 
   gotoLabel: s32'TypeA_Loop2'
   beginLabel: s32'TypeA_Next2'
@@ -5149,14 +5153,14 @@ beginState: s32'NmlAtk6F'
 
 beginState: s32'NmlAtkAir5A'
   upon: (IMMEDIATE)
-    Unknown75: s32'cmn_AtkLv0', 0, 0, 0, 0, 0, 0, 0, 1
+    callSubroutineWithArgs: s32'cmn_AtkLv0', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
     damage: 0, 16
     Unknown1107: 1
     storeValue: (VARIABLE), 338, (STATIC), 1000000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
-    Unknown75: s32'cmn_SameAttack', 0, 3, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_SameAttack', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
     ifNot: (VARIABLE), 317
       storeValue: (VARIABLE), 346, (STATIC), 21500
       storeValue: (VARIABLE), 347, (STATIC), 10000
@@ -5202,7 +5206,7 @@ beginState: s32'NmlAtkAir5A'
   endState: 
 
 startSubroutine: s32'NmlAtkAir5B_atk'
-  Unknown75: s32'cmn_AtkLv1', 0, 2, 0, 2, 0, 0, 0, 1
+  callSubroutineWithArgs: s32'cmn_AtkLv1', (STATIC), 2, (STATIC), 2, (STATIC), 0, (STATIC), 1
   damage: 0, 16
   Unknown1107: 1
   storeValue: (VARIABLE), 338, (STATIC), 1000000000
@@ -5218,7 +5222,7 @@ startSubroutine: s32'NmlAtkAir5B_atk'
   callSubroutine: s32'cmn_AtkTemplNmlAtkAir'
   Unknown1005: 30
   Unknown1004: 30
-  Unknown75: s32'cmn_AtkVectorAirGuard', 0, 6, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 6, (STATIC), 0, (STATIC), 0, (STATIC), 0
   Unknown953: 1
   storeValue: (VARIABLE), 343, (STATIC), -350000
   storeValue: (VARIABLE), 344, (STATIC), 0
@@ -5228,7 +5232,7 @@ startSubroutine: s32'NmlAtkAir5B_atk'
 
 beginState: s32'NmlAtkAir5B'
   upon: (IMMEDIATE)
-    Unknown75: s32'cmn_AtkLv1', 0, 2, 0, 2, 0, 0, 0, 1
+    callSubroutineWithArgs: s32'cmn_AtkLv1', (STATIC), 2, (STATIC), 2, (STATIC), 0, (STATIC), 1
     damage: 0, 16
     Unknown1107: 1
     Unknown1702: s32'Toge', 0
@@ -5245,7 +5249,7 @@ beginState: s32'NmlAtkAir5B'
     callSubroutine: s32'cmn_AtkTemplNmlAtkAir'
     Unknown1005: 30
     Unknown1004: 30
-    Unknown75: s32'cmn_AtkVectorAirGuard', 0, 6, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 6, (STATIC), 0, (STATIC), 0, (STATIC), 0
     addGatlingOption: s32'NmlAtkAir5A'
     addGatlingOption: s32'NmlAtkAir5B'
     addGatlingOption: s32'NmlAtkAir2B'
@@ -5287,7 +5291,7 @@ beginState: s32'NmlAtkAir5B'
   callSubroutine: s32'cmn_AtkTemplNmlAtkAir'
   Unknown1005: 30
   Unknown1004: 30
-  Unknown75: s32'cmn_AtkVectorAirGuard', 0, 0, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
   callSubroutine: s32'cmn_Dust_HomingJump_Attack'
   sprite: s32'chp251_05', 3
   recoveryState: 
@@ -5298,7 +5302,7 @@ beginState: s32'NmlAtkAir5B'
   endState: 
 
 startSubroutine: s32'NmlAtkAir2B_atk'
-  Unknown75: s32'cmn_AtkLv1', 0, 5, 0, 5, 0, 0, 0, 1
+  callSubroutineWithArgs: s32'cmn_AtkLv1', (STATIC), 5, (STATIC), 5, (STATIC), 0, (STATIC), 1
   damage: 0, 14
   hitStop: 2
   Unknown968: 8
@@ -5311,7 +5315,7 @@ startSubroutine: s32'NmlAtkAir2B_atk'
   callSubroutine: s32'cmn_hosei'
   hitAirPushbackX: 0, 5000
   hitAirPushbackY: 0, -20000
-  Unknown75: s32'cmn_AtkVectorAirGuard', 0, 6, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 6, (STATIC), 0, (STATIC), 0, (STATIC), 0
   upon: 8
     Unknown116: 150
     endUpon: 
@@ -5323,7 +5327,7 @@ startSubroutine: s32'NmlAtkAir2B_atk'
 
 beginState: s32'NmlAtkAir2B'
   upon: (IMMEDIATE)
-    Unknown75: s32'cmn_AtkLv1', 0, 5, 0, 5, 0, 0, 0, 1
+    callSubroutineWithArgs: s32'cmn_AtkLv1', (STATIC), 5, (STATIC), 5, (STATIC), 0, (STATIC), 1
     damage: 0, 14
     hitStop: 2
     Unknown968: 8
@@ -5336,7 +5340,7 @@ beginState: s32'NmlAtkAir2B'
     callSubroutine: s32'cmn_hosei'
     hitAirPushbackX: 0, 5000
     hitAirPushbackY: 0, -20000
-    Unknown75: s32'cmn_AtkVectorAirGuard', 0, 6, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 6, (STATIC), 0, (STATIC), 0, (STATIC), 0
     upon: 8
       Unknown116: 150
       endUpon: 
@@ -5386,7 +5390,7 @@ beginState: s32'NmlAtkAir2B'
 
 beginState: s32'NmlAtkAir5C'
   upon: (IMMEDIATE)
-    Unknown75: s32'cmn_AtkLv2', 0, 0, 0, 0, 0, 0, 0, 1
+    callSubroutineWithArgs: s32'cmn_AtkLv2', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
     damage: 0, 32
     Unknown725: 1
     storeValue: (VARIABLE), 338, (STATIC), 1000000000
@@ -5441,7 +5445,7 @@ beginState: s32'NmlAtkAir5C'
   endState: 
 
 startSubroutine: s32'NmlAtkAir5D_atk'
-  Unknown75: s32'cmn_AtkLv2', 0, 2, 0, 2, 0, 0, 0, 1
+  callSubroutineWithArgs: s32'cmn_AtkLv2', (STATIC), 2, (STATIC), 2, (STATIC), 0, (STATIC), 1
   damage: 0, 22
   Unknown725: 1
   Unknown1108: -90
@@ -5456,7 +5460,7 @@ startSubroutine: s32'NmlAtkAir5D_atk'
   else: 
     endElse: 
   callSubroutine: s32'cmn_AtkTemplNmlAtkAir'
-  Unknown75: s32'cmn_AtkVectorAirGuard', 0, 6, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 6, (STATIC), 0, (STATIC), 0, (STATIC), 0
   enableJumpCancel: 1
   Unknown1685: 1
   Unknown953: 1
@@ -5470,7 +5474,7 @@ startSubroutine: s32'NmlAtkAir5D_atk'
 
 beginState: s32'NmlAtkAir5D'
   upon: (IMMEDIATE)
-    Unknown75: s32'cmn_AtkLv2', 0, 2, 0, 2, 0, 0, 0, 1
+    callSubroutineWithArgs: s32'cmn_AtkLv2', (STATIC), 2, (STATIC), 2, (STATIC), 0, (STATIC), 1
     damage: 0, 22
     Unknown725: 1
     Unknown1108: -90
@@ -5485,7 +5489,7 @@ beginState: s32'NmlAtkAir5D'
     else: 
       endElse: 
     callSubroutine: s32'cmn_AtkTemplNmlAtkAir'
-    Unknown75: s32'cmn_AtkVectorAirGuard', 0, 6, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 6, (STATIC), 0, (STATIC), 0, (STATIC), 0
     enableJumpCancel: 1
     Unknown1685: 1
     Unknown953: 1
@@ -5516,7 +5520,7 @@ beginState: s32'NmlAtkAir5D'
   else: 
     endElse: 
   callSubroutine: s32'cmn_AtkTemplNmlAtkAir'
-  Unknown75: s32'cmn_AtkVectorAirGuard', 0, 0, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
   Unknown953: 2
   callSubroutine: s32'cmn_Dust_HomingJump_Attack'
   sprite: s32'chp253_06', 3
@@ -5531,7 +5535,7 @@ beginState: s32'NmlAtkAir5D'
 
 beginState: s32'NmlAtkAir5E'
   upon: (IMMEDIATE)
-    Unknown75: s32'cmn_AtkLv2', 0, 0, 0, 0, 0, 0, 0, 1
+    callSubroutineWithArgs: s32'cmn_AtkLv2', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
     callSubroutine: s32'cmn_countertype_middle'
     damage: 0, 44
     Unknown1108: -60
@@ -5655,7 +5659,7 @@ beginState: s32'ThrowExe'
   Unknown546: 125, 100, 0
   sprite: s32'chp310_01', 1
   Unknown446: s32'Cam_Throw', 100
-  Unknown75: s32'cmn_motionblur', 0, 1, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_motionblur', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'chp310_02', 1
   sprite: s32'chp310_03', 1
   sprite: s32'chp310_04', 2
@@ -5827,9 +5831,9 @@ beginState: s32'AirThrowExe'
   Unknown546: 125, 100, 1
   Unknown612: s32'SE_BTL_CMN_Impact_Catch'
   Unknown2189: 0, 5
-  Unknown75: s32'cmn_motionblur', 0, 1, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_motionblur', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
   callSubroutine: s32'cmnCam_AirThrow'
-  Unknown75: s32'cmn_vertical_offset', 0, 1, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_vertical_offset', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'chp320_01', 3
   sprite: s32'chp320_02', 3
   Unknown2193: 114, 120000, -20000
@@ -5922,7 +5926,7 @@ beginState: s32'AlphaBlade'
     endUpon: 
   sprite: s32'chp401_00', 2
   Unknown2189: 0, 1
-  Unknown75: s32'cmnAddTensionGG', 0, 2, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'chp401_01', 2
   sprite: s32'chp401_02', 2
   physicsXImpulse: 0, 30000
@@ -5934,7 +5938,7 @@ beginState: s32'AlphaBlade'
   Unknown449: s32'bg_brakelong', 130
   Unknown251: 0
   Unknown665: 100, 1, 1
-  Unknown75: s32'cmn_screenshake', 0, 1, 0, 2, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 2, (STATIC), 0, (STATIC), 0
   Unknown338: 0
   Unknown615: s32'SE_BTL_CHP_00'
   Unknown612: s32'SE_BTL_CMN_Warp_In'
@@ -5952,7 +5956,7 @@ beginState: s32'AlphaBlade'
     addWhiffCancelOption: s32'HaritsukiL_wall_LandKAlpha'
     endIf: 
   sprite: s32'chp401_05', 6
-  Unknown1650: 1
+  enableWhiffCancel: 1
   upon: 46
     Unknown23: 46
     Unknown14: s32'wall'
@@ -5969,7 +5973,7 @@ beginState: s32'AlphaBlade'
   Unknown615: s32'SE_BTL_CHP_02'
   Unknown612: s32'SE_BTL_CMN_Swing_Slash_Sharp_S'
   sprite: s32'chp401_10', 2
-  Unknown1650: 0
+  enableWhiffCancel: 0
   Unknown338: 255
   callSubroutine: s32'cmnLandingStiffadd'
   Unknown1824: 3, 1
@@ -5988,7 +5992,7 @@ beginState: s32'AlphaBlade'
   Unknown18: 
   beginLabel: s32'wall'
   sprite: s32'chp401_02', 1
-  Unknown1650: 0
+  enableWhiffCancel: 0
   Unknown446: s32'Warpjump1', 103
   Unknown239: 
   Unknown338: 255
@@ -6048,7 +6052,7 @@ beginState: s32'AlphaBlade_yoko'
       endUpon: 
     endUpon: 
   sprite: s32'chp400_00', 2
-  Unknown75: s32'cmnAddTensionGG', 0, 2, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'chp400_01', 2
   sprite: s32'chp400_02', 2
   Unknown613: s16'vxxx202'
@@ -6059,7 +6063,7 @@ beginState: s32'AlphaBlade_yoko'
   Unknown251: 0
   Unknown2323: -1
   Unknown665: 100, 1, 1
-  Unknown75: s32'cmn_screenshake', 0, 1, 0, 2, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 2, (STATIC), 0, (STATIC), 0
   Unknown612: s32'SE_BTL_CMN_Warp_In'
   Unknown615: s32'SE_BTL_CHP_00'
   sprite: s32'chp400_03', 6
@@ -6069,7 +6073,7 @@ beginState: s32'AlphaBlade_yoko'
   Unknown43: 4, 1
   Unknown446: s32'Alpha_yoko', 100
   Unknown43: 6, 1
-  Unknown1650: 1
+  enableWhiffCancel: 1
   addWhiffCancelOption: s32'HaritsukiR_Landwall'
   addWhiffCancelOption: s32'HaritsukiL_Landwall'
   ifNot: (VARIABLE), 52
@@ -6080,7 +6084,7 @@ beginState: s32'AlphaBlade_yoko'
   Unknown446: s32'Alpha_zanzo_400', 100
   sprite: s32'chp400_09', 1
   physicsXImpulse: 0, 10000
-  Unknown1650: 0
+  enableWhiffCancel: 0
   Unknown251: 1
   Unknown338: 255
   Unknown612: s32'SE_BTL_CMN_Swing_Slash_Sharp_S'
@@ -6121,14 +6125,14 @@ beginState: s32'AirAlphaBlade'
       endUpon: 
     endUpon: 
   sprite: s32'chp403_00', 2
-  Unknown75: s32'cmnAddTensionGG', 0, 2, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'chp403_01', 2
   sprite: s32'chp403_02', 2
   sprite: s32'chp403_03', 2
   Unknown338: 0
   Unknown615: s32'SE_BTL_CHP_00'
   Unknown612: s32'SE_BTL_CMN_Warp_In'
-  Unknown75: s32'cmn_screenshake', 0, 1, 0, 2, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 2, (STATIC), 0, (STATIC), 0
   sprite: s32'chp403_04', 15
   Unknown251: 0
   Unknown176: 1
@@ -6218,7 +6222,7 @@ beginState: s32'AirAlphaBlade'
   Unknown2323: -1
   sprite: s32'chp403_08', 2
   Unknown448: s32'bg_down_default', 123
-  Unknown75: s32'cmn_screenshake', 0, 1, 0, 2, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 2, (STATIC), 0, (STATIC), 0
   Unknown251: 1
   Unknown338: 255
   Unknown1709: 1
@@ -6255,7 +6259,7 @@ beginState: s32'AirAlphaBlade_yoko'
       endUpon: 
     endUpon: 
   sprite: s32'chp402_00', 2
-  Unknown75: s32'cmnAddTensionGG', 0, 2, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
   Unknown176: 1
   sprite: s32'chp402_01', 2
   physicsXImpulse: 0, 5250
@@ -6267,7 +6271,7 @@ beginState: s32'AirAlphaBlade_yoko'
   Unknown613: s16'vxxx202'
   Unknown615: s32'SE_BTL_CHP_00'
   Unknown612: s32'SE_BTL_CMN_Warp_In'
-  Unknown75: s32'cmn_screenshake', 0, 1, 0, 2, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 2, (STATIC), 0, (STATIC), 0
   sprite: s32'chp402_03', 6
   physicsXImpulse: 0, 100000
   Unknown2279: 0, 5, 0, 0
@@ -6281,7 +6285,7 @@ beginState: s32'AirAlphaBlade_yoko'
   Unknown2323: -1
   sprite: s32'chp402_10', 2
   Unknown446: s32'Alpha_zanzo_402', 100
-  Unknown1650: 1
+  enableWhiffCancel: 1
   addWhiffCancelOption: s32'HaritsukiR_wall'
   addWhiffCancelOption: s32'HaritsukiL_wall'
   ifNot: (VARIABLE), 52
@@ -6290,7 +6294,7 @@ beginState: s32'AirAlphaBlade_yoko'
     endIf: 
   sprite: s32'chp402_10', 1
   physicsXImpulse: 0, 10000
-  Unknown1650: 0
+  enableWhiffCancel: 0
   Unknown338: 255
   Unknown612: s32'SE_BTL_CMN_Swing_Slash_Sharp_S'
   sprite: s32'chp402_10', 1
@@ -6327,7 +6331,7 @@ beginState: s32'AirAlphaBlade_yoko'
 
 beginState: s32'BetaBlade'
   upon: (IMMEDIATE)
-    Unknown75: s32'cmn_AtkLv2', 0, 2, 0, 2, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_AtkLv2', (STATIC), 2, (STATIC), 2, (STATIC), 0, (STATIC), 0
     callSubroutine: s32'cmnMutekiRC'
     callSubroutine: s32'cmn_countertype_high_slash'
     damage: 0, 30
@@ -6346,7 +6350,7 @@ beginState: s32'BetaBlade'
     Unknown770: 0, 60, 0, 7, 0, 17
     Unknown778: 0, 0
     Unknown783: 0, 200, 0, 5, 0, 30
-    Unknown75: s32'cmn_AtkVectorAirGuard', 0, 6, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 6, (STATIC), 0, (STATIC), 0, (STATIC), 0
     Unknown2169: 0
     Unknown2204: 1
     upon: 2
@@ -6366,13 +6370,13 @@ beginState: s32'BetaBlade'
       endUpon: 
     upon: (HIT_OR_GUARD)
       Unknown23: 9
-      Unknown75: s32'cmn_screenshake', 0, 3, 0, 1, 0, 0, 0, 0
+      callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 1, (STATIC), 0, (STATIC), 0
       extendPushboxX: 50000
       endUpon: 
     endUpon: 
   sprite: s32'chp407_00', 3
   setStrikeInvulnerable: 1
-  Unknown75: s32'cmnAddTensionGG', 0, 7, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 7, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'chp407_01', 3
   physicsXImpulse: 0, 0
   physicsYImpulse: 0, 0
@@ -6385,7 +6389,7 @@ beginState: s32'BetaBlade'
   Unknown612: s32'SE_BTL_CMN_Swing_Grap_Sharp_M'
   Unknown32: s32'bataZanzo00'
   Unknown446: s32'bataZanzo01', 100
-  Unknown75: s32'cmn_AtkLv2', 0, 2, 0, 2, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_AtkLv2', (STATIC), 2, (STATIC), 2, (STATIC), 0, (STATIC), 0
   callSubroutine: s32'cmnMutekiRC'
   damage: 0, 26
   Unknown725: 1
@@ -6397,7 +6401,7 @@ beginState: s32'BetaBlade'
   groundHitEffect: 8
   hitAirPushbackY: 0, 45000
   hitAirPushbackX: 0, 17500
-  Unknown75: s32'cmn_AtkVectorAirGuard', 0, 4, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 4, (STATIC), 0, (STATIC), 0, (STATIC), 0
   Unknown953: 2
   storeValue: (VARIABLE), 343, (STATIC), -300000
   storeValue: (VARIABLE), 344, (STATIC), 0
@@ -6411,7 +6415,7 @@ beginState: s32'BetaBlade'
     endUpon: 
   upon: (HIT_OR_GUARD)
     Unknown23: 9
-    Unknown75: s32'cmn_screenshake', 0, 3, 0, 2, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 2, (STATIC), 0, (STATIC), 0
     endUpon: 
   Unknown615: s32'SE_BTL_CHP_05'
   Unknown615: s32'SE_BTL_CHP_06'
@@ -6445,11 +6449,11 @@ beginState: s32'BetaBlade'
 
 beginState: s32'AirBetaBlade'
   upon: (IMMEDIATE)
-    Unknown75: s32'cmn_AtkLv2', 0, 2, 0, 2, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_AtkLv2', (STATIC), 2, (STATIC), 2, (STATIC), 0, (STATIC), 0
     callSubroutine: s32'cmnMutekiRC'
     callSubroutine: s32'cmn_countertype_high_slash'
     damage: 0, 30
-    Unknown1102: 50
+    pushbackX: 50
     Unknown725: 1
     Unknown1108: 60
     storeValue: (VARIABLE), 338, (STATIC), 1000
@@ -6467,10 +6471,10 @@ beginState: s32'AirBetaBlade'
     Unknown783: 0, 150, 0, 10, 0, 50
     upon: (HIT_OR_GUARD)
       Unknown23: 9
-      Unknown75: s32'cmn_screenshake', 0, 3, 0, 1, 0, 0, 0, 0
+      callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 1, (STATIC), 0, (STATIC), 0
       extendPushboxX: 50000
       endUpon: 
-    Unknown75: s32'cmn_AtkVectorAirGuard', 0, 6, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 6, (STATIC), 0, (STATIC), 0, (STATIC), 0
     Unknown953: 2
     storeValue: (VARIABLE), 343, (STATIC), -300000
     storeValue: (VARIABLE), 344, (STATIC), 0
@@ -6491,7 +6495,7 @@ beginState: s32'AirBetaBlade'
     endUpon: 
   sprite: s32'chp407_00', 3
   Unknown446: s32'Step_mahojin', 100
-  Unknown75: s32'cmnAddTensionGG', 0, 7, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 7, (STATIC), 0, (STATIC), 0, (STATIC), 0
   Unknown111: 50
   Unknown116: 0
   setGravity: 0
@@ -6508,12 +6512,12 @@ beginState: s32'AirBetaBlade'
   setStrikeInvulnerable: 0
   hit: 
   Unknown23: 9
-  Unknown75: s32'cmn_AtkLv2', 0, 2, 0, 2, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_AtkLv2', (STATIC), 2, (STATIC), 2, (STATIC), 0, (STATIC), 0
   callSubroutine: s32'cmnMutekiRC'
   damage: 0, 26
   Unknown725: 1
   Unknown1108: 60
-  Unknown1102: 50
+  pushbackX: 50
   storeValue: (VARIABLE), 338, (STATIC), 1000
   storeValue: (VARIABLE), 339, (STATIC), 0
   storeValue: (VARIABLE), 340, (STATIC), 2
@@ -6521,7 +6525,7 @@ beginState: s32'AirBetaBlade'
   groundHitEffect: 8
   hitAirPushbackX: 0, 15000
   hitAirPushbackY: 0, 65000
-  Unknown75: s32'cmn_AtkVectorAirGuard', 0, 4, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 4, (STATIC), 0, (STATIC), 0, (STATIC), 0
   Unknown953: 2
   storeValue: (VARIABLE), 343, (STATIC), -300000
   storeValue: (VARIABLE), 344, (STATIC), 0
@@ -6531,7 +6535,7 @@ beginState: s32'AirBetaBlade'
   setGravity: 2100
   upon: (HIT_OR_GUARD)
     Unknown23: 9
-    Unknown75: s32'cmn_screenshake', 0, 3, 0, 2, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 2, (STATIC), 0, (STATIC), 0
     endUpon: 
   upon: (HIT)
     Unknown2239: 1
@@ -6570,7 +6574,7 @@ beginState: s32'GammaBlade'
     Unknown1148: s32'SE_BTL_CMN_Hit_Grap_M'
     endUpon: 
   sprite: s32'chp410_00', 3
-  Unknown75: s32'cmnAddTensionGG', 0, 3, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'chp410_01', 3
   Unknown613: s16'vxxx211'
   sprite: s32'chp410_02', 4
@@ -6581,7 +6585,7 @@ beginState: s32'GammaBlade'
   sprite: s32'chp410_04', 2
   Unknown2193: 100, 80000, 0
   Unknown446: s32'GammaBladeObj', 130
-  Unknown75: s32'cmn_screenshake', 0, 1, 0, 1, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 1, (STATIC), 0, (STATIC), 0
   sprite: s32'chp410_05', 4
   sprite: s32'chp410_06', 4
   sprite: s32'chp410_07', 4
@@ -6605,14 +6609,14 @@ beginState: s32'Sushi'
     hitAirPushbackY: 0, 22000
     wallBounceCount: 1
     wallBounceXVelocityPercent: 20
-    Unknown794: 2800
+    wallBounceGravity: 2800
     wallBounceInCornerOnly: 1
     Unknown1004: 150
     Unknown1005: 50
     addWhiffCancelOption: s32'Sukiyaki'
     addWhiffCancelOption: s32'Banzai'
-    Unknown1662: s32'Sukiyaki', 3
-    Unknown1662: s32'Banzai', 3
+    whiffCancelOptionBufferTime: s32'Sukiyaki', 3
+    whiffCancelOptionBufferTime: s32'Banzai', 3
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -350000
     storeValue: (VARIABLE), 344, (STATIC), 0
@@ -6620,11 +6624,11 @@ beginState: s32'Sushi'
     upon: (HIT_OR_GUARD)
       Unknown23: 9
       extendPushboxX: 150000
-      Unknown75: s32'cmn_screenshake', 0, 2, 0, 1, 0, 0, 0, 0
+      callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 2, (STATIC), 1, (STATIC), 0, (STATIC), 0
       endUpon: 
     endUpon: 
   sprite: s32'chp404_00', 1
-  Unknown75: s32'cmnAddTensionGG', 0, 1, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'chp404_01', 2
   Unknown613: s16'vxxx205'
   sprite: s32'chp404_02', 2
@@ -6638,9 +6642,9 @@ beginState: s32'Sushi'
   physicsXImpulse: 0, 7000
   Unknown446: s32'SushiTail', 124
   Unknown615: s32'SE_BTL_CHP_03'
-  Unknown75: s32'cmn_screenshake', 0, 1, 0, 1, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 1, (STATIC), 0, (STATIC), 0
   sprite: s32'chp404_07', 3
-  Unknown1650: 1
+  enableWhiffCancel: 1
   sprite: s32'chp404_08', 5
   Unknown2173: 
   physicsXImpulse: 0, 0
@@ -6672,7 +6676,7 @@ beginState: s32'Sukiyaki'
     Unknown780: 0, 500
     Unknown784: '0x0000000064000000000000000A000000000000001E000000'
     addWhiffCancelOption: s32'Banzai'
-    Unknown1662: s32'Banzai', 3
+    whiffCancelOptionBufferTime: s32'Banzai', 3
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -350000
     storeValue: (VARIABLE), 344, (STATIC), 0
@@ -6685,7 +6689,7 @@ beginState: s32'Sukiyaki'
   sprite: s32'chp010_00', 1
   Unknown613: s16'vxxx206'
   physicsXImpulse: 0, 31500
-  Unknown75: s32'cmnAddTensionGG', 0, 1, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'chp405_00', 1
   sprite: s32'chp405_01', 2
   sprite: s32'chp405_02', 1
@@ -6697,7 +6701,7 @@ beginState: s32'Sukiyaki'
   hit: 
   Unknown615: s32'SE_BTL_CHP_03'
   sprite: s32'chp405_06', 1
-  Unknown1650: 1
+  enableWhiffCancel: 1
   Unknown2173: 
   extendPushboxX: 0
   sprite: s32'chp405_07', 3
@@ -6715,7 +6719,7 @@ beginState: s32'Banzai'
     callSubroutine: s32'cmn_countertype_high'
     damage: 0, 40
     guardType: (HIGH)
-    Unknown1102: 130
+    pushbackX: 130
     Unknown1103: 150
     Unknown1108: -70
     hitSoftKnockdown: 0
@@ -6723,7 +6727,7 @@ beginState: s32'Banzai'
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
-    Unknown75: s32'cmn_SameAttack', 0, 1, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_SameAttack', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
     callSubroutine: s32'cmn_fuwafuwafuwa'
     groundHitEffect: 8
     hitAirPushbackX: 0, 20000
@@ -6734,7 +6738,7 @@ beginState: s32'Banzai'
     Unknown808: 0
     Unknown783: 0, 80, 0, 18, 0, 38
     groundBounceYVelocityPercent: 100
-    Unknown806: 17000
+    groundBounceYVelocity: 17000
     groundBounceCount: 1
     Unknown858: s32'CmnActBlowoff'
     counterhitAirPushbackX: 0, 10000
@@ -6751,7 +6755,7 @@ beginState: s32'Banzai'
     endUpon: 
   sprite: s32'chp406_00', 2
   physicsXImpulse: 0, 5250
-  Unknown75: s32'cmnAddTensionGG', 0, 1, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'chp406_01', 2
   Unknown612: s32'SE_BTL_CMN_Jump'
   sprite: s32'chp406_02', 2
@@ -6790,7 +6794,7 @@ beginState: s32'Banzai'
 beginState: s32'Genrouzan'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmnAtkTemplNageLand'
-    Unknown75: s32'cmnSpecialAtkThrowInit', 0, 1, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmnSpecialAtkThrowInit', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
     Unknown1042: s32'GenrouzanExe'
     throwRange: 20000
     Unknown2169: 0
@@ -6800,7 +6804,7 @@ beginState: s32'Genrouzan'
     Unknown1058: 1
     endUpon: 
   sprite: s32'chp408_00', 1
-  Unknown75: s32'cmnAddTensionGG', 0, 4, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 4, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'chp408_01', 1
   sprite: s32'chp408_02', 1
   sprite: s32'chp408_03', 1
@@ -6902,7 +6906,7 @@ beginState: s32'GenrouzanExe'
   sprite: s32'chp409_04', 4
   sprite: s32'chp409_05', 4
   Unknown446: s32'Cam_GenrouzanX', 100
-  Unknown75: s32'cmn_motionblur', 0, 1, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_motionblur', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'chp409_06', 4
   sprite: s32'chp409_07', 4
   sprite: s32'chp409_08', 4
@@ -7003,7 +7007,7 @@ beginState: s32'Shuriken'
   Unknown109: 
   Unknown114: 
   Unknown176: 1
-  Unknown75: s32'cmnAddTensionGG', 0, 3, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'chp412_01', 6
   sprite: s32'chp412_02', 8
   Unknown613: s16'vxxx212'
@@ -7037,7 +7041,7 @@ beginState: s32'HaritsukiL_wall'
     Unknown251: 0
     recoveryState: 
     addWhiffCancelOption: s32'WallRun'
-    Unknown1650: 1
+    enableWhiffCancel: 1
     Unknown2030: s32'AlphaBlade'
     if: (VARIABLE), 0
       storeValue: (VARIABLE), 55, (STATIC), 1
@@ -7064,7 +7068,7 @@ beginState: s32'HaritsukiR_wall'
     Unknown251: 0
     recoveryState: 
     addWhiffCancelOption: s32'WallRun'
-    Unknown1650: 1
+    enableWhiffCancel: 1
     Unknown2030: s32'AlphaBlade'
     if: (VARIABLE), 0
       storeValue: (VARIABLE), 55, (STATIC), 1
@@ -7188,11 +7192,11 @@ beginState: s32'WallRun'
   gotoLabel: s32'Run'
   beginLabel: s32'Run'
   physicsYImpulse: 0, 35000
-  Unknown1650: 1
+  enableWhiffCancel: 1
   upon: (FRAME_STEP)
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
       Unknown23: 3
-      Unknown1650: 0
+      enableWhiffCancel: 0
       Unknown27: s32'WallRun_jump'
       endIf: 
     endUpon: 
@@ -7265,11 +7269,11 @@ beginState: s32'WallRun_land'
   gotoLabel: s32'Run'
   beginLabel: s32'Run'
   physicsYImpulse: 0, 35000
-  Unknown1650: 1
+  enableWhiffCancel: 1
   upon: (FRAME_STEP)
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
       Unknown23: 3
-      Unknown1650: 0
+      enableWhiffCancel: 0
       Unknown27: s32'WallRun_jump'
       endIf: 
     endUpon: 
@@ -7315,7 +7319,7 @@ beginState: s32'WallRun_6P'
     storeValue: (VARIABLE), 339, (STATIC), 3
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
-    Unknown75: s32'cmn_SameAttack', 0, 3, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_SameAttack', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
     callSubroutine: s32'cmn_fuwafuwafuwa'
     airHitEffect: 8
     hitAirPushbackX: 0, -3000
@@ -7387,7 +7391,7 @@ beginState: s32'WallRun_K'
     storeValue: (VARIABLE), 339, (STATIC), 3
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
-    Unknown75: s32'cmn_SameAttack', 0, 3, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_SameAttack', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
     callSubroutine: s32'cmn_fuwafuwafuwa'
     airHitEffect: 8
     hitAirPushbackX: 0, -7000
@@ -7426,12 +7430,12 @@ beginState: s32'WallRun_K'
   sprite: s32'chp424_05', 4
   Unknown32: s32'201atk1_wall'
   Unknown446: s32'201atk2_wall', 100
-  Unknown1650: 1
+  enableWhiffCancel: 1
   Unknown116: 60
   sprite: s32'chp424_06', 2
   recoveryState: 
   sprite: s32'chp424_07', 2
-  Unknown1650: 0
+  enableWhiffCancel: 0
   sprite: s32'chp424_08', 2
   sprite: s32'chp424_09', 2
   endLabel: 
@@ -7466,7 +7470,7 @@ beginState: s32'WallRun_S'
     storeValue: (VARIABLE), 339, (STATIC), 3
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
-    Unknown75: s32'cmn_SameAttack', 0, 3, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_SameAttack', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
     callSubroutine: s32'cmn_fuwafuwafuwa'
     airHitEffect: 8
     hitAirPushbackX: 0, -7000
@@ -7540,7 +7544,7 @@ beginState: s32'WallRun_SFar'
     storeValue: (VARIABLE), 339, (STATIC), 3
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
-    Unknown75: s32'cmn_SameAttack', 0, 3, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_SameAttack', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
     callSubroutine: s32'cmn_fuwafuwafuwa'
     airHitEffect: 8
     hitAirPushbackX: 0, -7000
@@ -7615,7 +7619,7 @@ beginState: s32'WallRun_HS'
     storeValue: (VARIABLE), 339, (STATIC), 3
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
-    Unknown75: s32'cmn_SameAttack', 0, 3, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_SameAttack', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
     callSubroutine: s32'cmn_fuwafuwafuwa'
     airHitEffect: 8
     hitAirPushbackX: 0, -12000
@@ -7686,7 +7690,7 @@ beginState: s32'WallRun_6HS'
     storeValue: (VARIABLE), 339, (STATIC), 3
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
-    Unknown75: s32'cmn_SameAttack', 0, 3, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_SameAttack', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
     airHitEffect: 11
     hitAirPushbackX: 0, 60000
     hitAirPushbackY: 0, 15000
@@ -7788,7 +7792,7 @@ beginState: s32'WallRun_jump'
   endState: 
 
 startSubroutine: s32'ZanseiRouga_atk'
-  Unknown75: s32'cmn_AtkLv4', 0, 4, 0, 4, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_AtkLv4', (STATIC), 4, (STATIC), 4, (STATIC), 0, (STATIC), 0
   damage: 0, 10
   Unknown1067: 4, 250000, 0
   Unknown1111: 1
@@ -7802,7 +7806,7 @@ startSubroutine: s32'ZanseiRouga_atk'
   storeValue: (VARIABLE), 338, (STATIC), 1000000000
   storeValue: (VARIABLE), 339, (STATIC), 0
   storeValue: (VARIABLE), 340, (STATIC), 1
-  Unknown75: s32'cmn_hosei', 0, 1, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
   groundHitEffect: 9
   airHitEffect: 9
   hitAirPushbackX: 0, 5000
@@ -7818,7 +7822,7 @@ startSubroutine: s32'ZanseiRouga_atk'
 
 beginState: s32'ZanseiRouga'
   upon: (IMMEDIATE)
-    Unknown75: s32'cmn_AtkLv4', 0, 4, 0, 4, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_AtkLv4', (STATIC), 4, (STATIC), 4, (STATIC), 0, (STATIC), 0
     damage: 0, 10
     Unknown1067: 4, 250000, 0
     Unknown1111: 1
@@ -7833,7 +7837,7 @@ beginState: s32'ZanseiRouga'
     storeValue: (VARIABLE), 338, (STATIC), 1000000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
-    Unknown75: s32'cmn_hosei', 0, 1, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
     groundHitEffect: 9
     airHitEffect: 9
     hitAirPushbackX: 0, 5000
@@ -7881,7 +7885,7 @@ beginState: s32'ZanseiRouga'
   sprite: s32'chp500_03', 4
   Unknown26: 3, 2, 49
   sprite: s32'chp500_04', 44
-  Unknown271: '0x01000000770000002B0000002C000000'
+  Unknown271: 1, 119, 43, 44
   upon: 50
     Unknown23: 50
     callSubroutine: s32'cmnWorldStop_Start'
@@ -7906,8 +7910,8 @@ beginState: s32'ZanseiRouga'
   physicsXImpulse: 0, 50000
   addVelocityY: 0, 5000
   storeValue: (VARIABLE), 48, (STATIC), 0
-  Unknown54: 0, 2, 45, 0, -1
-  Unknown54: 0, 2, 46, 0, 1
+  modifyVar: (ADD), (VARIABLE), 45, (STATIC), -1
+  modifyVar: (ADD), (VARIABLE), 46, (STATIC), 1
   upon: 78
     Unknown23: 78
     Unknown2341: s32'Horizontal', 1000, 0, 10, s32'shake_easeout', 0
@@ -7917,7 +7921,7 @@ beginState: s32'ZanseiRouga'
       Unknown14: s32'loop'
       endUpon: 
     storeValue: (VARIABLE), 48, (STATIC), 1
-    Unknown54: 0, 2, 47, 0, 1
+    modifyVar: (ADD), (VARIABLE), 47, (STATIC), 1
     ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 47, (STATIC), 3
       ifOperation: 4, (VARIABLE), 46, (STATIC), 2
         upon: 6
@@ -8045,7 +8049,7 @@ beginState: s32'ZanseiRouga'
   addVelocityY: 0, 5000
   sprite: s32'keep', 237
   Unknown32: s32'Zansei_dash'
-  Unknown271: '0x0100000077000000EE000000EE000000'
+  Unknown271: 1, 119, 238, 238
   upon: 50
     Unknown23: 50
     callSubroutine: s32'cmnWorldStop_Start'
@@ -8305,7 +8309,7 @@ beginState: s32'ZanseiRouga'
   storeValue: (VARIABLE), 338, (STATIC), 1000000000
   storeValue: (VARIABLE), 339, (STATIC), 0
   storeValue: (VARIABLE), 340, (STATIC), 1
-  Unknown75: s32'cmn_hosei', 0, 1, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
   callSubroutine: s32'cmnNohosei_kakusei'
   Unknown1059: 0
   groundHitEffect: 8
@@ -8344,12 +8348,12 @@ beginState: s32'ZanseiRouga'
   endState: 
 
 startSubroutine: s32'BankiMessai_atk'
-  Unknown75: s32'cmn_AtkLv3', 0, 5, 0, 5, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_AtkLv3', (STATIC), 5, (STATIC), 5, (STATIC), 0, (STATIC), 0
   damage: 0, 15
   hitStop: 2
   Unknown968: 8
   Unknown1117: 0
-  Unknown1102: 40
+  pushbackX: 40
   Unknown1027: 500000, 0, 350000, 0
   Unknown1018: 1
   hitSoftKnockdown: 0
@@ -8357,7 +8361,7 @@ startSubroutine: s32'BankiMessai_atk'
   storeValue: (VARIABLE), 338, (STATIC), 1000000000
   storeValue: (VARIABLE), 339, (STATIC), 0
   storeValue: (VARIABLE), 340, (STATIC), 1
-  Unknown75: s32'cmn_hosei', 0, 1, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
   hitAirPushbackX: 0, 8000
   hitAirPushbackY: 0, 4600
   Unknown778: 0, 875
@@ -8368,12 +8372,12 @@ startSubroutine: s32'BankiMessai_atk'
 
 beginState: s32'BankiMessai'
   upon: (IMMEDIATE)
-    Unknown75: s32'cmn_AtkLv3', 0, 5, 0, 5, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_AtkLv3', (STATIC), 5, (STATIC), 5, (STATIC), 0, (STATIC), 0
     damage: 0, 15
     hitStop: 2
     Unknown968: 8
     Unknown1117: 0
-    Unknown1102: 40
+    pushbackX: 40
     Unknown1027: 500000, 0, 350000, 0
     Unknown1018: 1
     hitSoftKnockdown: 0
@@ -8382,7 +8386,7 @@ beginState: s32'BankiMessai'
     storeValue: (VARIABLE), 338, (STATIC), 1000000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
-    Unknown75: s32'cmn_hosei', 0, 1, 0, 0, 0, 0, 0, 0
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
     hitAirPushbackX: 0, 8000
     hitAirPushbackY: 0, 4600
     Unknown778: 0, 875
@@ -8406,7 +8410,7 @@ beginState: s32'BankiMessai'
       Unknown23: 90
       Unknown2189: 2, 5
       upon: 42
-        Unknown54: 0, 2, 52, 0, 1
+        modifyVar: (ADD), (VARIABLE), 52, (STATIC), 1
         ifOperation: (IS_GREATER), (VARIABLE), 52, (STATIC), 3
           Unknown23: 42
           if: (VARIABLE), 16
@@ -8441,7 +8445,7 @@ beginState: s32'BankiMessai'
   setThrowInvulnerable: 1
   sprite: s32'chp501_02', 1
   sprite: s32'chp501_03', 30
-  Unknown271: '0x01000000770000002700000028000000'
+  Unknown271: 1, 119, 39, 40
   upon: 50
     Unknown23: 50
     callSubroutine: s32'cmnWorldStop_Start'
@@ -8489,12 +8493,12 @@ beginState: s32'BankiMessai'
   beginLabel: s32'Land'
   sprite: s32'chp200_00', 1
   if: (VARIABLE), 46
-    Unknown271: '0x01000000770000000000000001000000'
+    Unknown271: 1, 119, 0, 1
     endIf: 
   storeValue: (VARIABLE), 46, (STATIC), 0
   Unknown2229: 80
   Unknown2189: 2, 5
-  Unknown75: s32'cmn_motionblur', 0, 7, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_motionblur', (STATIC), 7, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'chp200_01', 1
   sprite: s32'chp200_02', 1
   hit: 
@@ -8704,7 +8708,7 @@ beginState: s32'BankiMessai'
   storeValue: (VARIABLE), 338, (STATIC), 1000000000
   storeValue: (VARIABLE), 339, (STATIC), 0
   storeValue: (VARIABLE), 340, (STATIC), 1
-  Unknown75: s32'cmn_hosei', 0, 1, 0, 0, 0, 0, 0, 0
+  callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
   groundHitEffect: 8
   airHitEffect: 8
   hitAirPushbackX: 0, 30000
@@ -8713,7 +8717,7 @@ beginState: s32'BankiMessai'
   callSubroutine: s32'cmnNohosei_kakusei'
   Unknown1064: s32''
   Unknown1073: 1
-  Unknown1069: '0x000000000000000000000000000000000100000016000000020000003F010000'
+  Unknown1069: 0, 0, 0, 0, 1, 22, 2, 319
   Unknown788: 1
   Unknown955: 5
   Unknown953: 1

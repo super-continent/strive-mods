@@ -1,0 +1,2329 @@
+beginState: s32'ArcadeEvtSOL_A'
+  endState: 
+
+beginState: s32'ArcadeEvtSOL_B'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L1_111', 30, 1
+  Unknown2139: s32'Event300', 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L1_112', 30, 0
+  Unknown2139: s32'Event001', 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L1_113', 30, 1
+  Unknown2139: s32'Event616', 1
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtSOL_C'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    endUpon: 
+  sprite: s32'null', 210
+  Unknown2139: s32'EventSOL_L1_101', 0
+  Unknown2139: s32'EventSOL_L1_100', 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L1_101', 30, 1
+  Unknown2139: s32'Event616', 1
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtSOL_D'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    Unknown2139: s32'EventFall', 2
+    endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L1_201', 30, 2
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L1_202', 30, 0
+  Unknown2139: s32'Event001', 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L1_203', 30, 2
+  sprite: s32'null', 1
+  Unknown2139: s32'CmnActStand', 0
+  Unknown2139: s32'CmnActStand', 1
+  Unknown2139: s32'CmnActStand', 2
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtSOL_E'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'Event085', 1
+    Unknown2139: s32'EventStand', 2
+    endUpon: 
+  sprite: s32'null', 120
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L1_211', 30, 2
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtSOL_F'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    Unknown2139: s32'EventFall', 2
+    endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L1_401', 30, 2
+  Unknown2139: s32'Event301', 2
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L1_402', 30, 0
+  Unknown2139: s32'Event306', 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L1_403', 30, 2
+  sprite: s32'null', 1
+  Unknown2139: s32'CmnActStand', 0
+  Unknown2139: s32'CmnActStand', 1
+  Unknown2139: s32'CmnActStand', 2
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtSOL_G'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    Unknown2139: s32'EventFall', 2
+    endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L2_401', 30, 2
+  Unknown2139: s32'Event301', 2
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L2_402', 30, 0
+  Unknown2139: s32'Event001', 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L2_403', 30, 1
+  sprite: s32'null', 1
+  Unknown2139: s32'CmnActStand', 0
+  Unknown2139: s32'CmnActStand', 1
+  Unknown2139: s32'CmnActStand', 2
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtSOL_H'
+  upon: (IMMEDIATE)
+    Unknown2107: 1
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'Event085_2', 1
+    Unknown2139: s32'EventStand', 2
+    endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L1_411', 30, 1
+  sprite: s32'null', 60
+  Unknown2139: s32'Event022', 1
+  sprite: s32'null', 30
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L1_412', 30, 2
+  Unknown2139: s32'Event300', 2
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L1_413', 30, 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtSOL_I'
+  upon: (IMMEDIATE)
+    Unknown2107: 1
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'Event085_2', 1
+    Unknown2139: s32'EventStand', 2
+    endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L2_411', 30, 1
+  sprite: s32'null', 60
+  Unknown2139: s32'Event022', 1
+  sprite: s32'null', 30
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L2_412', 30, 2
+  Unknown2139: s32'Event300', 2
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L2_413', 30, 0
+  Unknown2139: s32'Event306', 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtSOL_J'
+  endState: 
+
+beginState: s32'ArcadeEvtSOL_K'
+  upon: (IMMEDIATE)
+    Unknown2107: 1
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L1_421', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L1_422', 30, 1
+  sprite: s32'null', 60
+  Unknown2139: s32'Event022', 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L1_423', 30, 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtSOL_L'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'Event085_2', 1
+    endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L3_401', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L3_402', 30, 0
+  Unknown2139: s32'Event306', 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtSOL_M'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L3_301', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L3_302', 30, 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L3_303', 30, 1
+  sprite: s32'null', 1
+  Unknown2139: s32'CmnActStand', 0
+  Unknown2139: s32'CmnActStand', 1
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtSOL_N'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L3_321', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L3_322', 30, 0
+  Unknown2139: s32'Event306', 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L3_323', 30, 1
+  Unknown2139: s32'Event301', 1
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtSOL_O'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L3_311', 30, 1
+  Unknown2139: s32'Event305', 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L3_312', 30, 0
+  Unknown2139: s32'Event306', 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L3_313', 30, 1
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtSOL_P'
+  endState: 
+
+beginState: s32'ArcadeEvtSOL_Q'
+  upon: (IMMEDIATE)
+    Unknown2107: 1
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'Event085_2', 1
+    endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L3_501', 30, 1
+  sprite: s32'null', 60
+  Unknown2139: s32'Event022', 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_SOL_L3_502', 30, 0
+  Unknown2139: s32'Event306', 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'TutorialEvtSOL_A'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA1_01', 30, 1
+  Unknown2139: s32'TutorialChouhatsuTypeA', 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA1_02', 30, 0
+  Unknown2139: s32'TutorialIdle', 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA1_03', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA1_04', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA1_05', 30, 0
+  Unknown2139: s32'TutorialKeiiTypeB', 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA1_06', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA1_07', 30, 1
+  Unknown2139: s32'TutorialIdle', 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA1_08', 30, 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2139: s32'CmnActStand', 0
+  Unknown2139: s32'CmnActStand', 1
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'TutorialEvtSOL_B'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA2_01', 30, 0
+  Unknown2139: s32'TutorialChouhatsuTypeB', 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA2_02', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA2_03', 30, 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA2_04', 30, 1
+  Unknown2139: s32'TutorialKeiiTypeA', 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA2_05', 30, 0
+  Unknown2139: s32'TutorialKeiiTypeA', 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA2_06', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA2_07', 30, 1
+  Unknown2139: s32'TutorialIdle', 1
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2139: s32'CmnActStand', 0
+  Unknown2139: s32'CmnActStand', 1
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'TutorialEvtSOL_C'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA3_01', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA3_02', 30, 1
+  Unknown2139: s32'TutorialKeiiTypeA', 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA3_03', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA3_04', 30, 0
+  Unknown2139: s32'TutorialKeiiTypeB', 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA3_05', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA3_06', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA3_07', 30, 0
+  Unknown2139: s32'TutorialIdle', 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA3_08', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA3_09', 30, 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'TU_TA3_10', 30, 1
+  Unknown2139: s32'TutorialKeiiTypeA', 1
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'RomanCancel_Mirage'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnRomanCancel_Mirage'
+    Unknown2493: s32'sol', '0x0000000000000000000000000000000000000000000000000000000000000000'
+    Unknown2057: s32'RomanCancel_Mirage'
+    Unknown2058: s32'Body'
+    Unknown2058: s32'Head_Low'
+    Unknown2058: s32'Weapon'
+    Unknown2059: 
+    Unknown2060: s32'RomanCancel_Mirage'
+    Unknown2064: s32'RomanCancel_Mirage'
+    endUpon: 
+  Unknown25: s32'air', 2, 115
+  sprite: s32'sol350_01', 6
+  sprite: s32'sol350_02', 3
+  sprite: s32'sol350_03', 3
+  sprite: s32'sol350_04', 3
+  sprite: s32'sol350_05', 3
+  sprite: s32'sol350_06', 3
+  sprite: s32'sol350_07', 3
+  sprite: s32'sol350_08', 2
+  sprite: s32'sol350_09', 2
+  sprite: s32'sol350_11', 2
+  sprite: s32'sol350_12', 3
+  sprite: s32'sol350_13', 3
+  sprite: s32'sol350_14', 3
+  sprite: s32'sol350_12', 3
+  sprite: s32'sol350_15', 2
+  sprite: s32'sol350_16', 2
+  sprite: s32'sol350_17', 2
+  endLabel: 
+  Unknown18: 
+  beginLabel: s32'air'
+  sprite: s32'sol351_01', 6
+  sprite: s32'sol351_02', 3
+  sprite: s32'sol351_03', 3
+  sprite: s32'sol351_04', 3
+  sprite: s32'sol351_05', 3
+  sprite: s32'sol351_06', 3
+  sprite: s32'sol351_07', 3
+  sprite: s32'sol351_08', 2
+  sprite: s32'sol351_09', 2
+  sprite: s32'sol351_11', 2
+  sprite: s32'sol351_12', 3
+  sprite: s32'sol351_13', 3
+  sprite: s32'sol351_14', 3
+  sprite: s32'sol351_12', 3
+  sprite: s32'sol351_15', 2
+  sprite: s32'sol351_16', 2
+  sprite: s32'sol351_17', 2
+  endState: 
+
+beginState: s32'200eff'
+  upon: (IMMEDIATE)
+    Unknown458: 3
+    Unknown454: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol200_eff'
+    Unknown466: 2
+    endUpon: 
+  sprite: s32'null', 8
+  endState: 
+
+beginState: s32'203eff'
+  upon: (IMMEDIATE)
+    Unknown458: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol203_eff'
+    Unknown94: 0, 154969
+    Unknown99: 0, 215000
+    Unknown1732: 0, -34993
+    endUpon: 
+  sprite: s32'null', 200
+  endState: 
+
+beginState: s32'204eff'
+  upon: (IMMEDIATE)
+    Unknown458: 3
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol204_eff'
+    Unknown94: 0, -39992
+    Unknown99: 0, 0
+    Unknown1732: 0, 0
+    endUpon: 
+  sprite: s32'null', 200
+  endState: 
+
+beginState: s32'204floor'
+  upon: (IMMEDIATE)
+    Unknown458: 3
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol204_floor'
+    endUpon: 
+  sprite: s32'null', 200
+  endState: 
+
+beginState: s32'212eff01'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown450: s32'sol212_eff1'
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'212eff02'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown450: s32'sol212_eff2'
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'212floor'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown450: s32'sol212_floor'
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'Airthrow_explosion'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_airthrow'
+    Unknown94: 0, 160412
+    Unknown99: 0, 260032
+    Unknown1732: 0, -15928
+    Unknown148: 1600
+    Unknown156: 1600
+    Unknown180: 1600
+    endUpon: 
+  sprite: s32'null', 60
+  endState: 
+
+beginState: s32'402_tossin'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown450: s32'sol402_atk_tossin'
+    Unknown454: 3
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 6
+  sprite: s32'null', 100
+  Unknown454: 0
+  endState: 
+
+beginState: s32'402_tossin_air'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown450: s32'sol402_atk_tossin_air'
+    Unknown454: 3
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 6
+  sprite: s32'null', 100
+  Unknown454: 0
+  endState: 
+
+beginState: s32'402_tossinsmoke'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown450: s32'sol402_atk_tossinsmoke'
+    Unknown2314: 1
+    Unknown94: 0, -29994
+    Unknown99: 0, 0
+    Unknown1732: 0, 0
+    Unknown148: 1000
+    Unknown156: 1000
+    Unknown180: 1500
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'402_atk_1st'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown450: s32'sol402_atk_1st'
+    Unknown454: 3
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'402_atk_2nd'
+  upon: (IMMEDIATE)
+    Unknown458: 3
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown450: s32'sol402_2nd'
+    Unknown454: 3
+    Unknown2314: 1
+    Unknown94: 0, 0
+    Unknown99: 0, 70000
+    Unknown1732: 0, 0
+    Unknown231: 10000
+    Unknown232: 0
+    Unknown164: 0
+    endUpon: 
+  sprite: s32'null', 4
+  sprite: s32'null', 100
+  Unknown454: 0
+  endState: 
+
+beginState: s32'402_atk_2ndhit'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown450: s32'sol402_2nd_hit'
+    Unknown2314: 1
+    Unknown94: 0, 259948
+    Unknown99: 0, 305000
+    Unknown1732: 0, 74985
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'Step_mahojin'
+  upon: (IMMEDIATE)
+    Unknown450: s32'cmn_step_mahojin'
+    Unknown231: 5000
+    Unknown295: 1
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+beginState: s32'Fafnircharge'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    Unknown454: 3
+    Unknown457: 3
+    Unknown450: s32'sol_fafnir_charge'
+    endUpon: 
+  sprite: s32'null', 4
+  Unknown92: 70000
+  Unknown98: 275000
+  Unknown1731: 0
+  sprite: s32'null', 4
+  Unknown92: 50000
+  Unknown98: 310000
+  Unknown1731: 0
+  sprite: s32'null', 4
+  Unknown92: 55000
+  Unknown98: 325000
+  Unknown1731: 0
+  sprite: s32'null', 4
+  Unknown92: 45000
+  Unknown98: 335000
+  Unknown1731: 0
+  sprite: s32'null', 4
+  endState: 
+
+beginState: s32'Bringercharge'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    Unknown454: 3
+    Unknown457: 3
+    Unknown94: 0, 15000
+    Unknown99: 0, 30000
+    upon: 23
+      Unknown23: 3
+      Unknown94: 0, 35000
+      Unknown99: 0, -10000
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 60
+  Unknown450: s32'sol_bringer_charge'
+  endState: 
+
+beginState: s32'Dust_atk_sol'
+  upon: (IMMEDIATE)
+    Unknown458: 3
+    Unknown456: 3
+    Unknown454: 3
+    Unknown450: s32'sol_dust'
+    Unknown2056: 0
+    Unknown2314: 1
+    upon: 36
+      if: (VARIABLE), 315
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 20
+          Unknown456: 0
+          Unknown23: 36
+          Unknown295: 1
+          endIf: 
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'GunFlame_Obj'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    callSubroutine: s32'cmn_AtkLv2'
+    damage: 0, 40
+    hitEffectFire: 1
+    Unknown1138: 1
+    Unknown1112: 1
+    Unknown1058: 1
+    Unknown2314: 1
+    Unknown1058: 1
+    Unknown1051: 3
+    storeValue: (VARIABLE), 338, (STATIC), 10001
+    storeValue: (VARIABLE), 339, (STATIC), 3
+    storeValue: (VARIABLE), 340, (STATIC), 1
+    callSubroutine: s32'cmn_hosei'
+    callSubroutine: s32'cmn_fuwafuwafuwa'
+    groundHitEffect: 11
+    hitAirPushbackX: 0, 8000
+    Unknown760: 0, 80, 0, 4, 0, 8
+    hitAirPushbackY: 0, 30000
+    Unknown770: 0, 60, 0, 8, 0, 13
+    Unknown778: 0, 0
+    Unknown783: 0, 125, 0, 10, 0, 30
+    Unknown1005: 200
+    Unknown1004: 200
+    Unknown1629: 1
+    Unknown1118: s32'SE_BTL_CMN_Hit_Energy'
+    Unknown1119: s32'SE_BTL_CMN_Guard_Energy'
+    Unknown1148: s32'SE_BTL_CMN_Impact_Fire'
+    Unknown1211: s32'SE_BTL_CMN_Impact_Fire'
+    Unknown953: 2
+    Unknown458: 3
+    upon: 8
+      Unknown14: s32'end'
+      Unknown1803: s32'GunFlame_Eff', 23
+      endUpon: 
+    upon: 35
+      Unknown14: s32'end'
+      Unknown1803: s32'GunFlame_Eff', 23
+      endUpon: 
+    upon: 66
+      Unknown1803: s32'GunFlame_Eff', 24
+      Unknown1798: 4, 25
+      endUpon: 
+    Unknown2595: s32'GunFlameObj'
+    endUpon: 
+  sprite: s32'null', 2
+  sprite: s32'null', 10
+  Unknown446: s32'GunFlame_Eff', 100
+  sprite: s32'GunFlame', 10
+  Unknown2279: 0, 1, 0, 0
+  Unknown445: s32'GunFlame_Eff', 100
+  Unknown43: 4, 1
+  hit: 
+  sprite: s32'GunFlame', 10
+  Unknown94: 0, 130000
+  Unknown2279: 0, 1, 0, 1
+  Unknown445: s32'GunFlame_Eff', 100
+  Unknown43: 4, 1
+  damage: 0, 35
+  sprite: s32'GunFlame', 10
+  Unknown94: 0, 130000
+  Unknown2279: 0, 1, 0, 1
+  Unknown445: s32'GunFlame_Eff', 100
+  Unknown43: 4, 1
+  damage: 0, 30
+  sprite: s32'GunFlame', 10
+  Unknown94: 0, 130000
+  damage: 0, 30
+  endLabel: 
+  beginLabel: s32'end'
+  sprite: s32'null', 30
+  Unknown1630: 1
+  recoveryState: 
+  endState: 
+
+beginState: s32'GunFlame_Eff'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_gunflame'
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown2314: 1
+    if: (VARIABLE), 115
+      Unknown94: 0, 130000
+      endIf: 
+    ifNot: (VARIABLE), 116
+      Unknown2217: 1
+      upon: 45
+        Unknown23: 45
+        Unknown23: 23
+        Unknown450: s32'sol_gunflame_end'
+        endUpon: 
+      endIf: 
+    upon: 23
+      Unknown23: 23
+      Unknown23: 45
+      Unknown450: s32'sol_gunflame_end'
+      endUpon: 
+    upon: 24
+      Unknown239: 
+      endUpon: 
+    upon: 25
+      Unknown94: 0, 260000
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 10
+  sprite: s32'null', 50
+  Unknown2217: 0
+  Unknown23: 45
+  Unknown23: 23
+  endState: 
+
+beginState: s32'Crater'
+  upon: (IMMEDIATE)
+    Unknown458: 3
+    upon: 99
+      ifNot: (VARIABLE), 317
+        Unknown42: 23, 12, 3, 12
+        Unknown454: 12
+        Unknown453: 12
+        Unknown2500: 15, 3, 2, 319, 0, 0
+          Unknown453: 3
+          endIf: 
+        endIf: 
+      endUpon: 
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown450: s32'sol_crater'
+    Unknown94: 0, 454909
+    Unknown99: 0, 0
+    Unknown1732: 0, 40012
+    Unknown2314: 1
+    Unknown2033: 3, s32'BanditBringer_Air'
+    if: (VARIABLE), 0
+      Unknown94: 0, -200000
+      Unknown188: 1200
+      endIf: 
+    upon: 36
+      if: (VARIABLE), 315
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 10
+          Unknown456: 0
+          Unknown23: 36
+          Unknown295: 1
+          endIf: 
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 80
+  Unknown615: s32'SE_BTL_SOL_08'
+  endState: 
+
+beginState: s32'Crater_sp'
+  upon: (IMMEDIATE)
+    Unknown458: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_crater_impact'
+    Unknown94: 0, 454909
+    Unknown99: 0, 0
+    Unknown1732: 0, 40012
+    Unknown94: 0, -200000
+    Unknown188: 1200
+    endUpon: 
+  sprite: s32'null', 80
+  endState: 
+
+beginState: s32'407Crater'
+  upon: (IMMEDIATE)
+    Unknown458: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_bukkira_crater'
+    Unknown188: 1900
+    endUpon: 
+  sprite: s32'null', 300
+  Unknown612: s32'SE_BTL_CMN_LandBreak_Clay_M'
+  Unknown615: s32'SE_BTL_SOL_13'
+  endState: 
+
+beginState: s32'Grandviper_atk'
+  upon: (IMMEDIATE)
+    Unknown458: 3
+    Unknown456: 3
+    Unknown454: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_grandviper_atk'
+    upon: 36
+      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+      ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 5
+        Unknown23: 36
+        Unknown295: 1
+        Unknown456: 0
+        endIf: 
+      endUpon: 
+    upon: 47
+      Unknown454: 0
+      endUpon: 
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 80
+  endState: 
+
+beginState: s32'Grandviper_floor'
+  upon: (IMMEDIATE)
+    Unknown456: 0
+    Unknown454: 0
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_grandviper_floor'
+    Unknown94: 0, 200000
+    Unknown99: 0, 0
+    Unknown1732: 0, 0
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 80
+  endState: 
+
+beginState: s32'Grandviper_sliding'
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'null', 2
+  Unknown448: s32'sol_grandviper_sliding', 100
+  sprite: s32'null', 2
+  Unknown448: s32'sol_grandviper_sliding', 100
+  sprite: s32'null', 2
+  Unknown448: s32'sol_grandviper_sliding', 100
+  endState: 
+
+beginState: s32'Grandviper_hibana'
+  upon: (IMMEDIATE)
+    Unknown456: 0
+    Unknown454: 0
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_grandviper_sliding'
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 40
+  endState: 
+
+beginState: s32'Grandviper_hitblow'
+  upon: (IMMEDIATE)
+    Unknown456: 0
+    Unknown454: 0
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'cmn_hitblow_sp'
+    Unknown295: 1
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 60
+  Unknown164: 90000
+  endState: 
+
+beginState: s32'BanditBringerPunch'
+  upon: (IMMEDIATE)
+    Unknown458: 3
+    Unknown456: 3
+    Unknown454: 3
+    Unknown2314: 1
+    upon: 99
+      Unknown23: 99
+      Unknown23: 23
+      Unknown454: 3
+      Unknown453: 3
+      Unknown456: 0
+      Unknown2315: 60
+      Unknown450: s32'sol_banditbringer_end'
+      upon: 36
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 20
+          Unknown23: 36
+          Unknown295: 1
+          endIf: 
+        endUpon: 
+      endUpon: 
+    Unknown450: s32'sol_banditbringer_loop'
+    upon: 47
+      Unknown23: 47
+      Unknown23: 99
+      Unknown23: 23
+      Unknown454: 0
+      Unknown450: s32'sol_banditbringer_end'
+      endUpon: 
+    upon: 23
+      Unknown23: 47
+      Unknown23: 99
+      Unknown23: 23
+      Unknown94: 0, -100000
+      Unknown450: s32'sol_banditbringer_end'
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 60
+  endState: 
+
+beginState: s32'FafnirPunch'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_fafnir_main'
+    Unknown2314: 1
+    upon: 47
+      Unknown23: 47
+      Unknown454: 0
+      Unknown456: 0
+      Unknown295: 1
+      endUpon: 
+    upon: 99
+      Unknown23: 99
+      Unknown23: 23
+      Unknown454: 3
+      Unknown453: 3
+      Unknown456: 0
+      Unknown2315: 60
+      upon: 36
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 5
+          Unknown23: 36
+          Unknown295: 1
+          Unknown1801: 1
+          Unknown2189: 0, 5
+          endIf: 
+        endUpon: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 200
+  Unknown94: 0, -80000
+  Unknown99: 0, -20000
+  endState: 
+
+beginState: s32'CounterAtk_slow'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_counter_atk'
+    Unknown454: 3
+    upon: 47
+      Unknown454: 0
+      endUpon: 
+    Unknown94: 0, 138805
+    Unknown99: 0, 262555
+    Unknown1732: 0, 194231
+    Unknown148: 600
+    Unknown156: 600
+    Unknown180: 600
+    Unknown231: 340000
+    Unknown232: 158000
+    Unknown164: 346000
+    endUpon: 
+  sprite: s32'null', 240
+  endState: 
+
+beginState: s32'CounterSpeedline_slow'
+  upon: (IMMEDIATE)
+    Unknown294: 1
+    Unknown450: s32'sol_counter_atk_speedline'
+    Unknown454: 3
+    Unknown94: 0, 138805
+    Unknown99: 0, 262555
+    Unknown1732: 0, 194231
+    Unknown148: 600
+    Unknown156: 600
+    Unknown180: 600
+    Unknown231: 340000
+    Unknown232: 158000
+    Unknown164: 346000
+    endUpon: 
+  sprite: s32'null', 240
+  endState: 
+
+beginState: s32'TyrantRavePunch0'
+  upon: (IMMEDIATE)
+    Unknown454: 0
+    Unknown294: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_500bake01'
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    callSubroutine: s32'cmn_Effect_NoLink'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+beginState: s32'TyrantRavePunch1'
+  upon: (IMMEDIATE)
+    Unknown454: 0
+    Unknown294: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_tyrantrave1'
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    callSubroutine: s32'cmn_Effect_NoLink'
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'TyrantRavePunch2'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    Unknown450: s32'sol_tyrantrave2'
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    upon: 99
+      Unknown23: 99
+      Unknown295: 1
+      Unknown456: 0
+      endUpon: 
+    upon: 47
+      Unknown23: 47
+      Unknown295: 1
+      Unknown456: 0
+      endUpon: 
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown466: 0
+    Unknown2189: 0, 5
+    endUpon: 
+  sprite: s32'_TyrantRave_00', 4
+  physicsXImpulse: 0, 7500
+  sprite: s32'_TyrantRave_00', 5
+  physicsXImpulse: 0, 5250
+  sprite: s32'_TyrantRave_01', 6
+  physicsXImpulse: 0, 3500
+  sprite: s32'_TyrantRave_02', 6
+  physicsXImpulse: 0, 1750
+  sprite: s32'null', 50
+  physicsXImpulse: 0, 0
+  endState: 
+
+beginState: s32'TyrantRave_sub'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_tyrantrave_sub'
+    Unknown94: 0, -264947
+    Unknown99: 0, 30000
+    Unknown1732: 0, 264947
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    callSubroutine: s32'cmn_Effect_NoLink'
+    upon: 23
+      Unknown23: 23
+      Unknown2055: 0
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 300
+  endState: 
+
+beginState: s32'TyrantRavePunch2_core'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_tyrantrave2_core'
+    Unknown294: 1
+    Unknown1801: 1
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    endUpon: 
+  sprite: s32'null', 150
+  endState: 
+
+beginState: s32'CS500_glare'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown450: s32'sol_cs500_glare'
+    Unknown294: 1
+    Unknown94: 0, 78471
+    Unknown99: 0, -5826
+    Unknown1732: 0, -117752
+    upon: 99
+      Unknown19: 23
+      endUpon: 
+    callSubroutine: s32'cmn_Effect_NoLink'
+    endUpon: 
+  sprite: s32'null', 150
+  endState: 
+
+beginState: s32'CS500_TyrantRave01'
+  upon: (IMMEDIATE)
+    Unknown294: 1
+    Unknown454: 3
+    Unknown450: s32'sol_cs500_eff01'
+    Unknown94: 0, 63011
+    Unknown99: 0, 249621
+    Unknown1732: 0, 39591
+    Unknown231: 0
+    Unknown232: 0
+    Unknown164: 342000
+    endUpon: 
+  sprite: s32'null', 10
+  sprite: s32'null', 14
+  Unknown92: -63011
+  Unknown98: 249621
+  Unknown1731: 39591
+  Unknown231: 0
+  Unknown232: 22000
+  Unknown164: 342000
+  sprite: s32'null', 11
+  Unknown92: -29387
+  Unknown98: 251869
+  Unknown1731: 78821
+  Unknown231: 0
+  sprite: s32'null', 3
+  Unknown92: -3050
+  Unknown98: 178391
+  Unknown1731: 116227
+  Unknown231: 0
+  Unknown232: 44000
+  Unknown164: 332000
+  sprite: s32'null', 8
+  Unknown92: -10339
+  Unknown98: 200208
+  Unknown1731: 102498
+  Unknown231: 6000
+  Unknown232: 34000
+  Unknown164: 347600
+  sprite: s32'null', 5
+  Unknown92: -133296
+  Unknown98: 173436
+  Unknown1731: 146892
+  Unknown231: 352000
+  Unknown232: 44000
+  Unknown164: 342000
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'CS500_TyrantRave02'
+  upon: (IMMEDIATE)
+    Unknown294: 1
+    Unknown454: 3
+    Unknown450: s32'sol_cs500_eff02'
+    Unknown94: 0, -62792
+    Unknown99: 0, 325483
+    Unknown1732: 0, 309634
+    Unknown231: 64000
+    Unknown232: 328000
+    Unknown164: 196000
+    upon: 99
+      Unknown19: 23
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 50
+  sprite: s32'null', 27
+  Unknown92: -48205
+  Unknown98: 323037
+  Unknown1731: 352121
+  Unknown231: 64000
+  Unknown232: 328000
+  Unknown164: 196000
+  sprite: s32'null', 13
+  Unknown92: 19886
+  Unknown98: 343785
+  Unknown1731: 263621
+  sprite: s32'null', 140
+  Unknown92: -24757
+  Unknown98: 339629
+  Unknown1731: 148575
+  endState: 
+
+beginState: s32'CS501_bg'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown450: s32'dsl_cs501_bg'
+    Unknown295: 1
+    Unknown94: 0, 43717
+    Unknown99: 0, 318518
+    Unknown1732: 0, -66882
+    Unknown231: 280000
+    Unknown232: 0
+    Unknown164: 320000
+    upon: 99
+      Unknown19: 23
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 107
+  sprite: s32'null', 10
+  Unknown92: -132089
+  Unknown98: 285585
+  Unknown1731: 193273
+  Unknown148: 500
+  Unknown156: 500
+  Unknown180: 500
+  Unknown231: 246400
+  Unknown232: 308000
+  Unknown164: 222400
+  sprite: s32'null', 4
+  Unknown92: -118929
+  Unknown98: 279909
+  Unknown1731: 251746
+  Unknown231: 246400
+  Unknown232: 308000
+  Unknown164: 222400
+  sprite: s32'null', 10
+  Unknown92: -26542
+  Unknown98: 305401
+  Unknown1731: 235207
+  Unknown148: 300
+  Unknown156: 300
+  Unknown180: 300
+  Unknown231: 238400
+  Unknown232: 358000
+  Unknown164: 220400
+  sprite: s32'null', 110
+  Unknown92: -494408
+  Unknown98: 285647
+  Unknown1731: 287631
+  endState: 
+
+beginState: s32'CS501_ryuhai'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown450: s32'dsl_ryuhai01'
+    Unknown295: 1
+    Unknown94: 0, -255252
+    Unknown99: 0, 218702
+    Unknown1732: 0, 274820
+    Unknown1801: 1
+    endUpon: 
+  sprite: s32'null', 50
+  sprite: s32'null', 150
+  Unknown454: 0
+  endState: 
+
+beginState: s32'CS501_handfire'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown450: s32'dsl_tukamifire'
+    Unknown94: 0, 112999
+    Unknown99: 0, 266843
+    Unknown1732: 0, 7319
+    endUpon: 
+  sprite: s32'null', 120
+  endState: 
+
+beginState: s32'CS501_wingfire'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown450: s32'dsl_wing_fire'
+    Unknown295: 1
+    Unknown94: 0, -306436
+    Unknown99: 0, -81303
+    Unknown1732: 0, -1283152
+    Unknown148: 1200
+    Unknown156: 1200
+    Unknown180: 1200
+    Unknown231: 358400
+    Unknown232: 138000
+    Unknown164: 13200
+    endUpon: 
+  sprite: s32'null', 16
+  sprite: s32'null', 100
+  Unknown454: 0
+  endState: 
+
+beginState: s32'502_handfire'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'dsl_tukamifire'
+    Unknown94: 0, 112999
+    Unknown99: 0, 266843
+    Unknown1732: 0, 7319
+    endUpon: 
+  sprite: s32'null', 140
+  endState: 
+
+beginState: s32'Dsl_dashfire'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown458: 3
+    Unknown456: 0
+    Unknown454: 0
+    Unknown450: s32'dsl_502_dash'
+    Unknown94: 0, 94981
+    Unknown99: 0, 0
+    Unknown1732: 0, 0
+    Unknown295: 1
+    endUpon: 
+  sprite: s32'null', 70
+  endState: 
+
+beginState: s32'Dsl_dashfire_SE'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown458: 3
+    Unknown456: 0
+    Unknown454: 0
+    Unknown450: s32'dsl_502_dash'
+    Unknown94: 0, 94981
+    Unknown99: 0, 0
+    Unknown1732: 0, 0
+    Unknown295: 1
+    endUpon: 
+  sprite: s32'null', 70
+  Unknown643: '0x53455F42544C5F534F4C5F4B414B555345495F30310000000000000000000000'
+  Unknown642: '0x53455F42544C5F434D4E5F446173685F53746172740000000000000000000000'
+  endState: 
+
+beginState: s32'502_handfire_atk'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown450: s32'dsl_tukamifire_atk'
+    upon: (BEFORE_EXIT)
+      Unknown480: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 36
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'502_jump'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown450: s32'dsl_502_jump'
+    Unknown188: 1700
+    endUpon: 
+  sprite: s32'null', 120
+  endState: 
+
+beginState: s32'502_atk1'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'dsl_502_atk01'
+    Unknown239: 
+    endUpon: 
+  sprite: s32'null', 50
+  endState: 
+
+beginState: s32'502_atk2'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'dsl_502_atk02'
+    Unknown239: 
+    endUpon: 
+  sprite: s32'null', 50
+  endState: 
+
+beginState: s32'502_atk3'
+  upon: (IMMEDIATE)
+    Unknown450: s32'dsl_502_atk03'
+    Unknown239: 
+    endUpon: 
+  sprite: s32'null', 50
+  endState: 
+
+beginState: s32'502_explosion'
+  upon: (IMMEDIATE)
+    Unknown2314: 1
+    Unknown450: s32'dsl_explosion_sp'
+    Unknown94: 0, 68987
+    Unknown99: 0, 150000
+    Unknown1732: 0, -274945
+    Unknown148: 1700
+    Unknown156: 1700
+    Unknown180: 1700
+    Unknown231: 350000
+    Unknown232: 328000
+    Unknown164: 18000
+    endUpon: 
+  sprite: s32'null', 120
+  endState: 
+
+beginState: s32'502_floor_damage'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown450: s32'dsl_floor_damage'
+    Unknown94: 0, -109200
+    Unknown99: 0, 10752
+    Unknown1732: 0, 27488
+    endUpon: 
+  sprite: s32'null', 180
+  Unknown612: s32'SE_BTL_CMN_Expl_Fire_L'
+  endState: 
+
+beginState: s32'502_fire_end1'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown450: s32'dsl_tukamifire_end'
+    Unknown99: 0, 0
+    Unknown1732: 0, 0
+    endUpon: 
+  sprite: s32'null', 4
+  sprite: s32'null', 1
+  Unknown446: s32'502_sippai', 100
+  Unknown615: s32'SE_BTL_SOL_KAKUSEI_03'
+  sprite: s32'null', 79
+  Unknown454: 0
+  endState: 
+
+beginState: s32'502_fire_end2'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown450: s32'dsl_tukamifire_end'
+    Unknown239: 
+    Unknown94: 0, -4507
+    Unknown99: 0, 261548
+    Unknown1732: 0, 113966
+    Unknown231: 0
+    Unknown232: 246000
+    Unknown164: 0
+    endUpon: 
+  sprite: s32'null', 4
+  sprite: s32'null', 58
+  Unknown448: s32'sol_502_Success', 100
+  Unknown615: s32'SE_BTL_SOL_KAKUSEI_03'
+  endState: 
+
+beginState: s32'502_sippai'
+  upon: (IMMEDIATE)
+    Unknown450: s32'sol_502_Failure'
+    Unknown239: 
+    endUpon: 
+  sprite: s32'null', 180
+  endState: 
+
+beginState: s32'VV_1st_atk'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_vv_1st'
+    Unknown2314: 1
+    upon: 36
+      if: (VARIABLE), 315
+        Unknown23: 36
+        Unknown454: 3
+        Unknown94: 0, -100000
+        Unknown1732: 0, -10000
+        endIf: 
+      endUpon: 
+    upon: 47
+      Unknown23: 47
+      Unknown456: 0
+      Unknown454: 0
+      Unknown295: 1
+      Unknown2314: 1
+      Unknown1801: 1
+      Unknown450: s32'sol_vv_1st_koware'
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 60
+  endState: 
+
+beginState: s32'VV_1st_atk_air'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown456: 3
+    Unknown450: s32'sol_vv_1st_air'
+    Unknown94: 0, -34993
+    Unknown99: 0, 0
+    Unknown1732: 0, 0
+    Unknown2314: 1
+    upon: 36
+      if: (VARIABLE), 315
+        Unknown23: 36
+        Unknown454: 3
+        Unknown94: 0, -125000
+        Unknown1732: 0, -20000
+        endIf: 
+      endUpon: 
+    upon: 47
+      Unknown23: 47
+      Unknown456: 0
+      Unknown454: 0
+      Unknown295: 1
+      Unknown2314: 1
+      Unknown1801: 1
+      Unknown450: s32'sol_vv_1st_koware'
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 60
+  endState: 
+
+beginState: s32'VV_floor'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown458: 3
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_vv_floor'
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown94: 0, -167819
+    Unknown99: 0, -325610
+    Unknown1732: 0, 238560
+    Unknown231: 0
+    Unknown232: 336000
+    Unknown164: 0
+    endUpon: 
+  sprite: s32'null', 50
+  endState: 
+
+beginState: s32'VV_floor_hs'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown458: 3
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_vv_hs_floor'
+    callSubroutine: s32'cmn_Effect_NoLink'
+    endUpon: 
+  sprite: s32'null', 50
+  endState: 
+
+beginState: s32'VV_Loop'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_vvloop'
+    Unknown94: 0, -187815
+    Unknown99: 0, -325610
+    Unknown1732: 0, 238560
+    Unknown2314: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    upon: 47
+      Unknown23: 47
+      Unknown456: 0
+      Unknown454: 0
+      Unknown295: 1
+      Unknown2314: 1
+      Unknown1801: 1
+      Unknown450: s32'sol_vvloop_koware'
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 7
+  sprite: s32'null', 60
+  Unknown23: 47
+  Unknown456: 0
+  Unknown454: 0
+  Unknown295: 1
+  Unknown2314: 1
+  Unknown1801: 1
+  endState: 
+
+beginState: s32'VV_Loop_air'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_vvloop_air'
+    Unknown94: 0, 32333
+    Unknown99: 0, -410271
+    Unknown1732: 0, 127504
+    Unknown148: 1200
+    Unknown156: 1200
+    Unknown180: 2000
+    Unknown2314: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    upon: 47
+      Unknown23: 47
+      Unknown456: 0
+      Unknown454: 0
+      Unknown295: 1
+      Unknown2314: 1
+      Unknown1801: 1
+      Unknown450: s32'sol_vvloop_koware'
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 7
+  sprite: s32'null', 60
+  Unknown23: 47
+  Unknown456: 0
+  Unknown454: 0
+  Unknown295: 1
+  Unknown2314: 1
+  Unknown1801: 1
+  endState: 
+
+beginState: s32'VV_Loop_hs'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_vvloop_hs'
+    Unknown94: 0, 54989
+    Unknown99: 0, -100000
+    Unknown1732: 0, 104979
+    Unknown180: 1400
+    Unknown2314: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    upon: 47
+      Unknown23: 47
+      Unknown456: 0
+      Unknown454: 0
+      Unknown295: 1
+      Unknown2314: 1
+      Unknown1801: 1
+      Unknown450: s32'sol_vvloop_hs_koware'
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 24
+  sprite: s32'null', 60
+  Unknown23: 47
+  Unknown456: 0
+  Unknown454: 0
+  Unknown295: 1
+  Unknown2314: 1
+  Unknown1801: 1
+  endState: 
+
+beginState: s32'VV_Loop_hs_air'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_vvloop_hs_air'
+    Unknown94: 0, 190107
+    Unknown99: 0, 186473
+    Unknown1732: 0, 175473
+    Unknown148: 1000
+    Unknown156: 1000
+    Unknown180: 1600
+    Unknown231: 0
+    Unknown232: 320000
+    Unknown164: 0
+    Unknown2314: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    upon: 47
+      Unknown23: 47
+      Unknown456: 0
+      Unknown454: 0
+      Unknown295: 1
+      Unknown2314: 1
+      Unknown1801: 1
+      Unknown450: s32'sol_vvloop_hs_koware'
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 24
+  sprite: s32'null', 60
+  Unknown23: 47
+  Unknown456: 0
+  Unknown454: 0
+  Unknown295: 1
+  Unknown2314: 1
+  Unknown1801: 1
+  endState: 
+
+beginState: s32'VV_End'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown456: 3
+    Unknown94: 0, 139972
+    Unknown99: 0, 585000
+    Unknown1732: 0, 139972
+    Unknown450: s32'sol_vvend'
+    Unknown2314: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    upon: 47
+      Unknown23: 47
+      Unknown456: 0
+      Unknown454: 0
+      Unknown295: 1
+      Unknown2314: 1
+      Unknown1801: 1
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 120
+  endState: 
+
+beginState: s32'VV_End_air'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    Unknown94: 0, 94981
+    Unknown99: 0, 515000
+    Unknown1732: 0, 139972
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_vvend_air'
+    Unknown2314: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    upon: 47
+      Unknown23: 47
+      Unknown456: 0
+      Unknown454: 0
+      Unknown295: 1
+      Unknown2314: 1
+      Unknown1801: 1
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 120
+  endState: 
+
+beginState: s32'VV2_End'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_vv2end'
+    Unknown94: 0, 114977
+    Unknown99: 0, 170000
+    Unknown1732: 0, 99980
+    Unknown180: 1400
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutine: s32'cmn_Effect_NoLink'
+    endUpon: 
+  sprite: s32'null', 120
+  endState: 
+
+beginState: s32'VV2_End_air'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_vv2end'
+    Unknown94: 0, 129974
+    Unknown99: 0, 345135
+    Unknown1732: 0, 5284
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutine: s32'cmn_Effect_NoLink'
+    endUpon: 
+  sprite: s32'null', 120
+  endState: 
+
+beginState: s32'TEST_MIGI'
+  upon: (IMMEDIATE)
+    Unknown450: s32'cmn_migi'
+    endUpon: 
+  sprite: s32'null', 500
+  endState: 
+
+beginState: s32'VV_ptclight'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown458: 3
+    Unknown454: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'sol_vv_ptclight'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    endUpon: 
+  sprite: s32'null', 50
+  endState: 
+
+beginState: s32'Win01_eff'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown450: s32'sol_win01_eff'
+    Unknown294: 1
+    Unknown94: 0, 4999
+    Unknown99: 0, -30000
+    Unknown1732: 0, 54989
+    endUpon: 
+  sprite: s32'null', 50
+  endState: 
+
+beginState: s32'Win02_handfire01a'
+  upon: (IMMEDIATE)
+    Unknown450: s32'sol_616_handfire01a'
+    Unknown239: 
+    endUpon: 
+  sprite: s32'null', 300
+  Unknown615: s32'SE_BTL_SOL_14'
+  endState: 
+
+beginState: s32'Win02_handfire01b'
+  upon: (IMMEDIATE)
+    Unknown450: s32'sol_616_handfire01b'
+    endUpon: 
+  sprite: s32'null', 2000
+  endState: 
+
+beginState: s32'Win02_handfire01c'
+  upon: (IMMEDIATE)
+    Unknown450: s32'sol_616_handfire01c'
+    Unknown239: 
+    endUpon: 
+  sprite: s32'null', 2000
+  endState: 
+
+beginState: s32'Win02_handfire02'
+  upon: (IMMEDIATE)
+    Unknown450: s32'sol_616_handfire02'
+    endUpon: 
+  sprite: s32'null', 180
+  Unknown612: s32'SE_BTL_CMN_Expl_Fire_M'
+  sprite: s32'null', 1
+  Unknown480: 
+  endState: 
+
+beginState: s32'Dsl_startA'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown456: 3
+    Unknown457: 3
+    endUpon: 
+  sprite: s32'null', 40
+  Unknown450: s32'dsl_startA'
+  endState: 
+
+beginState: s32'Dsl_startB'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown456: 3
+    Unknown457: 3
+    endUpon: 
+  sprite: s32'null', 100
+  Unknown450: s32'dsl_startB'
+  endState: 
+
+beginState: s32'Dsl_startC'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown456: 3
+    Unknown457: 3
+    endUpon: 
+  sprite: s32'null', 80
+  Unknown450: s32'dsl_startC'
+  endState: 
+
+beginState: s32'Dsl_startD'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown456: 3
+    Unknown457: 3
+    endUpon: 
+  sprite: s32'null', 40
+  Unknown450: s32'dsl_startD'
+  endState: 
+
+beginState: s32'sol233_bake1'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown1955: s32'sol233_bake1'
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'sol233_bake2'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown1955: s32'sol233_bake2'
+    endUpon: 
+  sprite: s32'null', 15
+  endState: 
+
+beginState: s32'sol233_bake3'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown1955: s32'sol233_bake3'
+    endUpon: 
+  sprite: s32'null', 15
+  endState: 
+
+beginState: s32'sol232_bake1'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown1955: s32'sol232_bake1'
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'sol232_bake1_sub'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown1955: s32'sol232_bake1_sub'
+    endUpon: 
+  sprite: s32'null', 15
+  endState: 
+
+beginState: s32'sol232_bake2'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown1955: s32'sol232_bake2'
+    endUpon: 
+  sprite: s32'null', 15
+  endState: 
+
+beginState: s32'sol232_bake3'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown1955: s32'sol232_bake3'
+    endUpon: 
+  sprite: s32'null', 15
+  endState: 
+
+beginState: s32'sol252_bake1'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown1955: s32'sol252_bake1'
+    upon: 36
+      if: (VARIABLE), 315
+        Unknown23: 36
+        Unknown19: 23
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'sol252_bake2'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown1955: s32'sol252_bake2'
+    upon: 36
+      if: (VARIABLE), 315
+        Unknown23: 36
+        Unknown19: 23
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 15
+  endState: 
+
+beginState: s32'sol252_bake3'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown1955: s32'sol252_bake3'
+    Unknown2314: 1
+    upon: 36
+      if: (VARIABLE), 315
+        Unknown23: 36
+        Unknown19: 23
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 15
+  endState: 
+
+startSubroutine: s32'TargetCamera_Dafult'
+  Unknown2082: 
+  Unknown454: 3
+  Unknown188: 100
+  Unknown290: 300
+  endSubroutine: 
+
+beginState: s32'slow_hit01'
+  upon: (IMMEDIATE)
+    Unknown450: s32'cmn_slow_hit01'
+    Unknown454: 3
+    upon: 47
+      Unknown454: 0
+      endUpon: 
+    Unknown94: 0, 350000
+    Unknown99: 0, 300000
+    Unknown1732: 0, -67973
+    endUpon: 
+  sprite: s32'null', 180
+  endState: 
+
+beginState: s32'Fefnir_Slow_cam'
+  upon: (IMMEDIATE)
+    Unknown2082: 
+    Unknown47: s16'jam'
+    ifNot: (VARIABLE), 0
+      Unknown2080: '0x17000000160000000000000048E8010000000000580F020000000000A0860100000000000000000000000000A42C02000000000000000000000000004600000028000000000000000500000000000000350000000000000008000000000000006C696E65617200000000000000000000000000000000000000000000000000006C696E6561720000000000000000000000000000000000000000000000000000'
+      endIf: 
+    else: 
+      Unknown2080: '0x17000000160000000000000048E8010000000000580F020000000000A0860100000000000000000000000000A42C02000000000000000000000000004600000028000000000000000500000000000000350000000000000008000000000000006C696E65617200000000000000000000000000000000000000000000000000006C696E6561720000000000000000000000000000000000000000000000000000'
+      endElse: 
+    physicsXImpulse: 0, 3000
+    Unknown36: 13, 10
+    upon: 13
+      Unknown120: -50
+      endUpon: 
+    upon: 77
+      Unknown53: 23, 2, 18, 22, 2, 18
+      Unknown294: 1
+      Unknown41: 22
+      Unknown295: 1
+      Unknown40: 
+      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+      ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 4
+        Unknown47: s16'jam'
+        ifNot: (VARIABLE), 0
+          if: (VARIABLE), 16
+            Unknown2080: '0x17000000160000000000000048E8010000000000580F020000000000A086010000000000589EFFFF00000000007102000000000000000000A8610000640000001E00000000000000320000000000000000000000000000000C000000000000006C696E65617200000000000000000000000000000000000000000000000000006C696E6561720000000000000000000000000000000000000000000000000000'
+            endIf: 
+          else: 
+            Unknown2080: '0x17000000160000000000000048E8010000000000580F020000000000A0860100000000003850FFFF00000000007102000000000000000000A8610000640000001E00000000000000320000000000000000000000000000000C000000000000006C696E65617200000000000000000000000000000000000000000000000000006C696E6561720000000000000000000000000000000000000000000000000000'
+            endElse: 
+          endIf: 
+        else: 
+          if: (VARIABLE), 16
+            Unknown2080: '0x17000000160000000000000048E8010000000000580F020000000000A086010000000000589EFFFF00000000F04902000000000000000000A8610000640000001E00000000000000320000000000000000000000000000000C000000000000006C696E65617200000000000000000000000000000000000000000000000000006C696E6561720000000000000000000000000000000000000000000000000000'
+            endIf: 
+          else: 
+            Unknown2080: '0x17000000160000000000000048E8010000000000580F020000000000A0860100000000004877FFFF00000000F04902000000000000000000A8610000640000001E00000000000000320000000000000000000000000000000C000000000000006C696E65617200000000000000000000000000000000000000000000000000006C696E6561720000000000000000000000000000000000000000000000000000'
+            endElse: 
+          endElse: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 13
+        endIf: 
+      endUpon: 
+    upon: 47
+      Unknown19: 23
+      endUpon: 
+    upon: (BEFORE_EXIT)
+      Unknown294: 0
+      Unknown41: 22
+      Unknown295: 0
+      Unknown40: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 40
+  callSubroutineWithArgs: s32'cmn_motionblur', (STATIC), 8, (STATIC), 0, (STATIC), 0, (STATIC), 0
+  sprite: s32'null', 1000
+  Unknown393: 
+  endState: 
+
+beginState: s32'slow_hit'
+  upon: (IMMEDIATE)
+    Unknown294: 1
+    Unknown450: s32'cmn_slow_hit01'
+    Unknown94: 0, 350000
+    Unknown99: 0, 300000
+    Unknown1732: 0, -67973
+    upon: 23
+      Unknown1801: 1
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'Cam_Bukkira'
+  upon: (IMMEDIATE)
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', (STATIC), -1100000, (STATIC), 1300000, (STATIC), -1200000, (STATIC), 1200000
+    Unknown2563: 4, 42, s32'accel_brake'
+    Unknown2551: 0, 0, 0, 460000, 0, 155000, 0, 0, 0, 117, 0, 0, s32'linear', s32'linear'
+    Unknown2552: 0, -42000, 0, 50000, 0, 120000, 0, 0, 0, 117, 0, 0, s32'linear', s32'linear'
+    Unknown2558: 0, 1000, 0, 1000, 0, 0, 0, 117, 0, 0, s32'linear', s32'linear'
+    Unknown2553: 0, 0, 0, 1000, 0, 0, 0, 117, 0, 0, s32'linear', s32'linear'
+    Unknown2544: 0, 100, 0, 100, 0, 0, 0, 117, 0, 0, s32'linear', s32'linear'
+    Unknown2566: 0, 0, 0, -4500, 0, 28, 0, 100, 0, 36, s32'accel_brake', s32'brake'
+    Unknown2573: 0, 900, 0, 900, 0, 0, 0, 117, 0, 0, s32'linear', s32'linear'
+    Unknown2572: s32'sol_bukkira', 0, 0, 0, 1000, 0, 117, s32'linear'
+    Unknown428: 1, 1
+    Unknown412: -1, 500, 0
+    Unknown413: -1, 0, 0
+    Unknown414: -1, 0, 0
+    Unknown415: -1, 500, 0
+    Unknown416: -1, 0, 0
+    Unknown417: -1, 30, 10
+    Unknown429: 1, 1
+    Unknown425: -1, 1600, 40
+    Unknown426: -1, 0, 40
+    endUpon: 
+  sprite: s32'null', 30
+  sprite: s32'null', 35
+  sprite: s32'null', 36
+  Unknown2552: 0, -62000, 0, 50000, 0, 115000, 0, 42, 0, 0, 0, 0, s32'linear', s32'linear'
+  Unknown2566: 0, 0, 0, -4500, 0, 0, 0, 0, 0, 42, s32'accel_brake', s32'accel_brake'
+  sprite: s32'null', 14
+  Unknown2552: 0, -222000, 0, 20000, 0, 125000, 0, 24, 0, 0, 0, 0, s32'brake', s32'linear'
+  Unknown2558: 0, 1000, 0, 0, 0, 24, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2553: 0, 1000, 0, 0, 0, 24, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2573: 0, 900, 0, 0, 0, 24, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2572: s32'sol_bukkira', 0, 0, 0, 1000, 0, 24, s32'brake'
+  Unknown428: 0, 20
+  Unknown429: 0, 20
+  endState: 
+
+beginState: s32'Cam_Throw'
+  upon: (IMMEDIATE)
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', (STATIC), -1300000, (STATIC), 1000000, (STATIC), -1500000, (STATIC), 1200000
+    Unknown2563: 4, 16, s32'accel_brake'
+    Unknown2551: 0, 0, 0, 460000, 0, 135000, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'linear'
+    Unknown2553: 0, 700, 0, 700, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'linear'
+    Unknown2558: 0, 1000, 0, 1000, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'accel_brake'
+    Unknown2544: 0, 100, 0, 100, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'brake'
+    Unknown2572: s32'sol_throw2', 0, 0, 0, 1000, 0, 80, s32'linear'
+    Unknown2573: 0, 500, 0, 500, 0, 0, 0, 80, 0, 0, s32'linear', s32'brake'
+    Unknown428: 1, 30
+    Unknown412: -1, 500, 0
+    Unknown413: -1, 0, 0
+    Unknown414: -1, 0, 0
+    Unknown415: -1, 500, 0
+    Unknown416: -1, 0, 0
+    Unknown417: -1, 30, 10
+    Unknown429: 1, 1
+    Unknown425: -1, 1600, 40
+    Unknown426: -1, 0, 40
+    endUpon: 
+  sprite: s32'null', 58
+  Unknown2552: 0, 68000, 0, 60000, 0, 135000, 0, 32, 0, 100, 0, 0, s32'accel_brake', s32'brake'
+  sprite: s32'null', 14
+  Unknown2552: 0, 72000, 0, 60000, 0, 125000, 0, 32, 0, 100, 0, 0, s32'linear', s32'brake'
+  sprite: s32'null', 12
+  Unknown2552: 0, 148000, 0, 0, 0, 135000, 0, 48, 0, 0, 0, 0, s32'linear', s32'brake'
+  Unknown2553: 0, 1000, 0, 0, 0, 48, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2558: 0, 1000, 0, 0, 0, 48, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2573: 0, 500, 0, 0, 0, 48, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2572: s32'sol_throw2', 0, 0, 0, 1000, 0, 10, s32'brake'
+  Unknown428: 0, 10
+  Unknown429: 0, 10
+  sprite: s32'null', 60
+  Unknown2575: s32'orthoone', 0, 0, s32'linear'
+  endState: 
+
+beginState: s32'Cam_AirThrow'
+  upon: (IMMEDIATE)
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', (STATIC), -1500000, (STATIC), 1000000, (STATIC), -1500000, (STATIC), 1100000
+    Unknown2563: 4, 16, s32'accel_brake'
+    Unknown2551: 0, 66000, 0, 400000, 0, 155000, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'brake'
+    Unknown2552: 0, 66000, 0, 0, 0, 190000, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'brake'
+    Unknown2553: 0, 1000, 0, 1000, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'brake'
+    Unknown2558: 0, 1000, 0, 1000, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'brake'
+    Unknown2544: 0, 100, 0, 100, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'brake'
+    Unknown2573: 0, 500, 0, 500, 0, 0, 0, 100, 0, 0, s32'linear', s32'brake'
+    Unknown2572: s32'sol_airthrow', 0, 0, 0, 1000, 0, 100, s32'linear'
+    Unknown428: 1, 1
+    Unknown412: -1, 700, 0
+    Unknown413: -1, 0, 0
+    Unknown414: -1, 0, 0
+    Unknown415: -1, 500, 0
+    Unknown416: -1, 0, 0
+    Unknown417: -1, 30, 10
+    Unknown429: 1, 1
+    Unknown425: -1, 1600, 40
+    Unknown426: -1, 0, 40
+    endUpon: 
+  sprite: s32'null', 32
+  sprite: s32'null', 16
+  Unknown2574: 0, 0, 0, -65000, 0, 16, 0, 0, 0, 26, s32'accel', s32'brake'
+  Unknown2552: 0, 116000, 0, 0, 0, 250000, 0, 32, 0, 100, 0, 0, s32'brake', s32'brake'
+  Unknown2558: 0, 1000, 0, 0, 0, 42, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2553: 0, 1000, 0, 0, 0, 42, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2573: 0, 500, 0, 0, 0, 42, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2572: s32'sol_airthrow', 0, 0, 0, 1000, 0, 42, s32'linear'
+  callSubroutine: s32'cmnCam_CommonCameraEnd'
+  Unknown428: 0, 10
+  Unknown429: 0, 10
+  endState: 
+
+beginState: s32'Cam_Dragon'
+  upon: (IMMEDIATE)
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', (STATIC), -1400000, (STATIC), 650000, (STATIC), -1400000, (STATIC), 750000
+    Unknown2563: 3, 40, s32'accel_brake'
+    Unknown454: 3
+    Unknown2551: 0, 66000, 0, 400000, 0, 205000, 0, 0, 0, 400, 0, 0, s32'accel_brake', s32'brake'
+    Unknown2552: 0, 23000, 0, 80000, 0, 160000, 0, 0, 0, 400, 0, 0, s32'accel_brake', s32'brake'
+    Unknown2553: 0, 1000, 0, 1000, 0, 0, 0, 400, 0, 0, s32'accel_brake', s32'brake'
+    Unknown2558: 0, 1000, 0, 1000, 0, 0, 0, 400, 0, 0, s32'accel_brake', s32'brake'
+    Unknown2544: 0, 100, 0, 100, 0, 0, 0, 400, 0, 0, s32'accel_brake', s32'brake'
+    Unknown2545: 0, 80, 0, 32, 0, 400, 0, 0, s32'linear', s32'linear'
+    Unknown2573: 0, 0, 0, 650, 0, 0, 0, 190, 0, 0, s32'linear', s32'brake'
+    Unknown2572: s32'sol_dragon_day1', 0, 0, 0, 1000, 0, 190, s32'linear'
+    Unknown428: 1, 1
+    Unknown412: -1, 700, 0
+    Unknown413: -1, 0, 0
+    Unknown414: -1, 0, 0
+    Unknown415: -1, 500, 0
+    Unknown416: -1, 0, 0
+    Unknown417: -1, 40, 10
+    Unknown429: 1, 1
+    Unknown425: -1, 1400, 40
+    Unknown426: -1, 0, 40
+    Unknown295: 1
+    Unknown1801: 1
+    endUpon: 
+  sprite: s32'null', 32
+  Unknown2566: 0, 0, 0, 6000, 0, 52, 0, 300, 0, 0, s32'accel_brake', s32'accel_brake'
+  sprite: s32'null', 44
+  Unknown2552: 0, 34000, 0, -40000, 0, 115000, 0, 24, 0, 300, 0, 0, s32'accel_brake', s32'brake'
+  Unknown2574: 0, 0, 0, 38000, 0, 24, 0, 0, 0, 16, s32'accel_brake', s32'brake'
+  Unknown2551: 0, 166000, 0, 400000, 0, 205000, 0, 64, 0, 300, 0, 0, s32'accel_brake', s32'brake'
+  sprite: s32'null', 1
+  Unknown2500: 9, 22, 2, 279, 0, 0
+    Unknown14: s32'finish'
+    endIf: 
+  else: 
+    Unknown14: s32'normal'
+    endElse: 
+  endLabel: 
+  beginLabel: s32'finish'
+  sprite: s32'null', 1
+  Unknown2574: 0, 38000, 0, -200000, 0, 99, 0, 83, 0, 99, s32'brake', s32'accel_brake'
+  Unknown2545: 0, 90, 0, 162, 0, 180, 0, 0, s32'linear', s32'linear'
+  Unknown2566: 0, -6000, 0, 11500, 0, 156, 0, 24, 0, 36, s32'brake', s32'accel_brake'
+  Unknown2552: 0, -226000, 0, -180000, 0, 190000, 0, 210, 0, 150, 0, 0, s32'brake', s32'brake'
+  Unknown2573: 0, 0, 0, 650, 0, 0, 0, 340, 0, 0, s32'linear', s32'brake'
+  Unknown2572: s32'sol_dragon_day1', 0, 0, 0, 1000, 0, 340, s32'linear'
+  Unknown454: 0
+  sprite: s32'null', 140
+  Unknown446: s32'cmn_FinishCamera_Screen_Effect', 100
+  endLabel: 
+  gotoLabel: s32'end'
+  beginLabel: s32'normal'
+  sprite: s32'null', 15
+  Unknown2574: 0, 38000, 0, -200000, 0, 24, 0, 83, 0, 24, s32'accel_brake', s32'linear'
+  Unknown2545: 0, 90, 0, 12, 0, 180, 0, 0, s32'linear', s32'linear'
+  Unknown2566: 0, -6000, 0, 11500, 0, 6, 0, 24, 0, 36, s32'accel_brake', s32'accel_brake'
+  Unknown2552: 0, -226000, 0, -180000, 0, 190000, 0, 60, 0, 150, 0, 0, s32'accel_brake', s32'brake'
+  Unknown454: 0
+  endLabel: 
+  beginLabel: s32'end'
+  sprite: s32'null', 21
+  Unknown41: 4
+  Unknown2098: 3, 22
+  Unknown98: 0
+  storeValue: (VARIABLE), 50, (STATIC), -1200000
+  storeValue: (VARIABLE), 51, (STATIC), 1200000
+  callSubroutine: s32'cmnThrowPosition_Limit'
+  Unknown40: 
+  Unknown2563: 4, 20, s32'accel_brake'
+  Unknown428: 0, 40
+  Unknown429: 0, 40
+  sprite: s32'null', 63
+  Unknown2552: 0, -286000, 0, -260000, 0, 170000, 0, 60, 0, 150, 0, 0, s32'brake', s32'brake'
+  sprite: s32'null', 16
+  Unknown2552: 0, 0, 0, 0, 0, 135000, 0, 24, 0, 100, 0, 0, s32'brake', s32'brake'
+  Unknown2558: 0, 1000, 0, 0, 0, 24, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2553: 0, 1000, 0, 0, 0, 24, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2573: 0, 650, 0, 0, 0, 24, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2572: s32'sol_dragon_day1', 0, 0, 0, 1000, 0, 24, s32'linear'
+  Unknown2545: 0, 65, 0, 24, 0, 0, 0, 0, s32'linear', s32'linear'
+  Unknown2574: 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, s32'linear', s32'linear'
+  Unknown2565: 24, s32'brake'
+  sprite: s32'null', 20
+  Unknown2575: s32'orthoone', 0, 0, s32'orthoone'
+  endState: 
+
+beginState: s32'Cam_Finish_TyrantRave'
+  callSubroutineWithArgs: s32'cmn_FinishCamera_Init', (STATIC), 5, (STATIC), 0, (STATIC), 0, (STATIC), 0
+  endState: 
+
+beginState: s32'DUMMY'
+  sprite: s32'e0ea04_01', 2
+  endState: 
+
