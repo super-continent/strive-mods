@@ -5,7 +5,7 @@ This is  where I will be releasing Guilty Gear Strive mods.
 
 ![Mod Logo](/assets/title.png)
 # Guilty Gear Strive + Gatlings
-## [Releases Here](https://github.com/super-continent/strive-mods/releases/latest)
+## [Releases On GameBanana](https://gamebanana.com/members/submissions/sublog/1952193)
 
 Strive + Gatlings is a mod which aims to 
 add gatlings from the old Guilty Gear games back 
