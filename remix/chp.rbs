@@ -1391,6 +1391,7 @@ startSubroutine: s32'RoundInit'
   Unknown600: 3, s32'pot'
   Unknown600: 3, s32'leo'
   Unknown600: 3, s32'nag'
+  Unknown600: 3, s32'gld'
   Unknown2594: 0, s32'NmlAtk5A'
   Unknown2594: 1, s32'NmlAtk5B'
   Unknown2594: 2, s32'NmlAtk5CNear'
@@ -2838,6 +2839,57 @@ beginState: s32'CmnActBlowoff'
   sprite: s32'chp068_49', 2147483647
   endState: 
 
+beginState: s32'fuwafuwa'
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'chp068_04', 3
+  sprite: s32'chp068_05', 3
+  sprite: s32'chp068_06', 4
+  sprite: s32'chp068_07', 3
+  sprite: s32'chp068_08', 3
+  sprite: s32'chp068_09', 3
+  sprite: s32'chp068_10', 3
+  sprite: s32'chp068_11', 3
+  sprite: s32'chp068_12', 3
+  sprite: s32'chp068_13', 3
+  sprite: s32'chp068_14', 3
+  sprite: s32'chp068_15', 3
+  sprite: s32'chp068_16', 3
+  sprite: s32'chp068_17', 3
+  sprite: s32'chp068_18', 3
+  sprite: s32'chp068_19', 3
+  sprite: s32'chp068_20', 3
+  sprite: s32'chp068_21', 3
+  sprite: s32'chp068_22', 3
+  sprite: s32'chp068_23', 3
+  sprite: s32'chp068_24', 3
+  sprite: s32'chp068_25', 3
+  sprite: s32'chp068_26', 3
+  sprite: s32'chp068_27', 3
+  sprite: s32'chp068_28', 3
+  sprite: s32'chp068_29', 2
+  sprite: s32'chp068_30', 2
+  sprite: s32'chp068_31', 2
+  sprite: s32'chp068_32', 2
+  sprite: s32'chp068_33', 3
+  sprite: s32'chp068_34', 3
+  sprite: s32'chp068_35', 3
+  sprite: s32'chp068_36', 3
+  sprite: s32'chp068_37', 3
+  sprite: s32'chp068_38', 3
+  sprite: s32'chp068_39', 3
+  sprite: s32'chp068_40', 3
+  sprite: s32'chp068_41', 3
+  sprite: s32'chp068_42', 3
+  sprite: s32'chp068_43', 4
+  sprite: s32'chp068_44', 3
+  sprite: s32'chp068_45', 3
+  sprite: s32'chp068_46', 3
+  sprite: s32'chp068_47', 3
+  sprite: s32'chp068_48', 4
+  sprite: s32'chp068_49', 2147483647
+  endState: 
+
 beginState: s32'CmnActKirimomiUpper'
   Unknown24: s32'dust', 2, 158
   beginLabel: s32'loop'
@@ -3895,7 +3947,7 @@ beginState: s32'NmlAtk5A'
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk6D'
     addGatlingOption: s32'NmlAtk2E'
-    enableJumpCancel: 1
+    enableJumpCancel: 1          
     upon: 8
       Unknown23: 8
       callSubroutine: s32'cmn_lightAttack_flex'
@@ -5613,10 +5665,10 @@ beginState: s32'NmlAtkThrow'
     Unknown1042: s32'ThrowExe'
     throwRange: 75000
     callSubroutine: s32'cmnthrow_land_timer'
-    Unknown233: 
+    Unknown233:
     endUpon: 
   sprite: s32'chp311_00', 1
-  sprite: s32'chp311_00', 3
+  sprite: s32'chp311_00', 3 
   Unknown612: s32'SE_BTL_CMN_Emotion_1'
   sprite: s32'chp311_01', 4
   Unknown1915: 
@@ -5658,6 +5710,7 @@ beginState: s32'ThrowExe'
     endUpon: 
   sprite: s32'keep', 4
   Unknown547: 1
+  callSubroutine: s32'cmnAtkTemplNage__EnemyCell'
   sprite: s32'chp310_00', 2
   Unknown550: 
   Unknown2193: 100, 120000, 340000
@@ -5823,6 +5876,7 @@ beginState: s32'AirThrowExe'
     Unknown778: 0, 2500
     Unknown725: 1
     Unknown1067: 4, 100000, -200000
+    groundHitEffect: 8
     Unknown1148: s32'SE_BTL_CMN_Impact_Katana_L'
     Unknown2169: 0
     upon: 2
@@ -5831,6 +5885,7 @@ beginState: s32'AirThrowExe'
     endUpon: 
   sprite: s32'keep', 4
   Unknown547: 1
+  callSubroutine: s32'cmnAtkTemplNage__EnemyCell'
   sprite: s32'chp320_00', 3
   Unknown550: 
   Unknown2193: 100, 120000, 340000
@@ -8061,7 +8116,7 @@ beginState: s32'ZanseiRouga'
   upon: 50
     Unknown23: 50
     callSubroutine: s32'cmnWorldStop_Start'
-    callSubroutine: s32'cmnDeleteAllHalfCamera'
+    callSubroutine: s32'cmnCameraSettings'
     Unknown251: 0
     Unknown2188: 1
     Unknown2560: 1
@@ -8291,8 +8346,7 @@ beginState: s32'ZanseiRouga'
   Unknown40: 
   Unknown2571: 0, 0, 0, 0
   sprite: s32'chp500_13', 2147483647
-  Unknown2560: 0
-  Unknown1972: 0
+  callSubroutineWithArgs: s32'cmnCameraSettings', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
   Unknown1827: 1
   Unknown446: s32'Zansei_atk', 100
   physicsYImpulse: 0, -150000
