@@ -796,7 +796,7 @@ startSubroutine: s32'RoundInit'
   addMove: s32'InviteHell'
     moveType: (SPECIAL)
     characterState: (STANDING)
-    moveInput: 186
+    moveInput: (INPUT_ANY_DOWNDOWN)
     moveInput: (INPUT_PRESS_H)
     Unknown1419: 1
     Unknown1525: -976, -292, 110, 296
