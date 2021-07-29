@@ -54,6 +54,32 @@ beginState: s32'EventFall'
   Unknown27: s32'EventStand'
   endState: 
 
+beginState: s32'Event085'
+  sprite: s32'ino085_00', 10
+  sprite: s32'ino085_01', 10
+  sprite: s32'ino085_02', 10
+  sprite: s32'ino085_03', 6
+  sprite: s32'ino085_04', 5
+  sprite: s32'ino085_05', 7
+  sprite: s32'ino085_06', 7
+  Unknown658: 100, 1, 0
+  Unknown2176: 0, 100
+  Unknown1709: 1
+  sprite: s32'ino085_07', 7
+  sprite: s32'ino085_08', 7
+  sprite: s32'ino085_09', 9
+  sprite: s32'ino085_10', 6
+  sprite: s32'ino085_11', 6
+  addPositionX: 80000
+  sprite: s32'ino085_12', 6
+  addPositionX: 30000
+  sprite: s32'ino085_13', 6
+  endLabel: 
+  Unknown2176: 1, 100
+  Unknown658: 100, 1, 0
+  sprite: s32'ino085_13', 2147483647
+  endState: 
+
 beginState: s32'Event022'
   sprite: s32'ino022_00', 3
   sprite: s32'ino022_01', 3
@@ -2449,7 +2475,58 @@ beginState: s32'CmnActBlowoff'
   sprite: s32'ino068_46', 3
   sprite: s32'ino068_47', 3
   sprite: s32'ino068_48', 4
-  sprite: s32'ino068_49', 2147483647
+  sprite: s32'ino068_48', 2147483647
+  endState: 
+
+beginState: s32'fuwafuwa'
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'ino068_04', 3
+  sprite: s32'ino068_05', 3
+  sprite: s32'ino068_06', 4
+  sprite: s32'ino068_07', 3
+  sprite: s32'ino068_08', 3
+  sprite: s32'ino068_09', 3
+  sprite: s32'ino068_10', 3
+  sprite: s32'ino068_11', 3
+  sprite: s32'ino068_12', 3
+  sprite: s32'ino068_13', 3
+  sprite: s32'ino068_14', 3
+  sprite: s32'ino068_15', 3
+  sprite: s32'ino068_16', 3
+  sprite: s32'ino068_17', 3
+  sprite: s32'ino068_18', 3
+  sprite: s32'ino068_19', 3
+  sprite: s32'ino068_20', 3
+  sprite: s32'ino068_21', 3
+  sprite: s32'ino068_22', 3
+  sprite: s32'ino068_23', 3
+  sprite: s32'ino068_24', 3
+  sprite: s32'ino068_25', 3
+  sprite: s32'ino068_26', 3
+  sprite: s32'ino068_27', 3
+  sprite: s32'ino068_28', 3
+  sprite: s32'ino068_29', 2
+  sprite: s32'ino068_30', 2
+  sprite: s32'ino068_31', 2
+  sprite: s32'ino068_32', 2
+  sprite: s32'ino068_33', 3
+  sprite: s32'ino068_34', 3
+  sprite: s32'ino068_35', 3
+  sprite: s32'ino068_36', 3
+  sprite: s32'ino068_37', 3
+  sprite: s32'ino068_38', 3
+  sprite: s32'ino068_39', 3
+  sprite: s32'ino068_40', 3
+  sprite: s32'ino068_41', 3
+  sprite: s32'ino068_42', 3
+  sprite: s32'ino068_43', 4
+  sprite: s32'ino068_44', 3
+  sprite: s32'ino068_45', 3
+  sprite: s32'ino068_46', 3
+  sprite: s32'ino068_47', 3
+  sprite: s32'ino068_48', 4
+  sprite: s32'ino068_48', 2147483647
   endState: 
 
 beginState: s32'CmnActKirimomiUpper'
@@ -2524,7 +2601,7 @@ beginState: s32'CmnActKirimomiUpper'
   sprite: s32'ino068_46', 3
   sprite: s32'ino068_47', 3
   sprite: s32'ino068_48', 4
-  sprite: s32'ino068_49', 2147483647
+  sprite: s32'ino068_48', 2147483647
   endState: 
 
 beginState: s32'CmnActWallBound'
@@ -4968,6 +5045,7 @@ beginState: s32'ThrowExe'
     endUpon: 
   sprite: s32'keep', 4
   Unknown547: 1
+  callSubroutine: s32'cmnAtkTemplNage__EnemyCell'
   sprite: s32'ino310_00', 3
   Unknown550: 
   Unknown2193: 100, 120000, 340000
@@ -5059,6 +5137,7 @@ beginState: s32'AirThrowExe'
     endUpon: 
   sprite: s32'keep', 4
   Unknown547: 1
+  callSubroutine: s32'cmnAtkTemplNage__EnemyCell'
   sprite: s32'ino320_00', 24
   Unknown550: 
   Unknown2193: 100, 120000, 340000
@@ -6147,7 +6226,7 @@ beginState: s32'Megalo_ThrowExe'
   upon: 50
     Unknown23: 50
     callSubroutineWithArgs: s32'cmnWorldStop_Start', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
-    callSubroutine: s32'cmnDeleteAllHalfCamera'
+    callSubroutine: s32'cmnCameraSettings'
     Unknown2189: 2, 5
     Unknown2060: s32'500cs'
     Unknown2097: 
@@ -6402,12 +6481,8 @@ ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 72
   endIf: 
 
 ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 320
-  Unknown2560: 0
-  Unknown1972: 0
   Unknown2244: 0
-  Unknown428: 0, 40
-  Unknown427: 0, 20
-  Unknown429: 0, 40
+  callSubroutineWithArgs: s32'cmnCameraSettings', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
   endIf: 
 
 ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
@@ -6797,7 +6872,7 @@ beginState: s32'WSB_Slave_Slide'
   sprite: s32'ino068_46', 3
   sprite: s32'ino068_47', 3
   sprite: s32'ino068_48', 4
-  sprite: s32'ino068_49', 2147483647
+  sprite: s32'ino068_48', 2147483647
   endLabel: 
   gotoLabel: s32'loop'
   beginLabel: s32'landing'
@@ -6939,7 +7014,7 @@ beginState: s32'WSB_Slave_Up'
   sprite: s32'ino068_46', 3
   sprite: s32'ino068_47', 3
   sprite: s32'ino068_48', 4
-  sprite: s32'ino068_49', 2147483647
+  sprite: s32'ino068_48', 2147483647
   endLabel: 
   gotoLabel: s32'loop'
   beginLabel: s32'landing'
@@ -7070,7 +7145,7 @@ beginState: s32'WSB_Slave_Down'
   sprite: s32'ino068_46', 3
   sprite: s32'ino068_47', 3
   sprite: s32'ino068_48', 4
-  sprite: s32'ino068_49', 2147483647
+  sprite: s32'ino068_48', 2147483647
   endLabel: 
   gotoLabel: s32'loop'
   beginLabel: s32'landing'
@@ -7191,7 +7266,7 @@ beginState: s32'WSB_Slave_Bound'
   sprite: s32'ino068_46', 3
   sprite: s32'ino068_47', 3
   sprite: s32'ino068_48', 4
-  sprite: s32'ino068_49', 2147483647
+  sprite: s32'ino068_48', 2147483647
   endLabel: 
   gotoLabel: s32'gorogoro'
   beginLabel: s32'bound'

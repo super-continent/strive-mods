@@ -1010,6 +1010,7 @@ startSubroutine: s32'RoundInit'
   Unknown601: s16'vxxx607', 1, -1, 100
   Unknown601: s16'vxxx705', 1, 1, 100
   Unknown600: 1, s32'may'
+  Unknown600: 2, s32'gld'
   Unknown600: 2, s32'sol'
   Unknown600: 2, s32'leo'
   Unknown600: 2, s32'nag'
@@ -3032,6 +3033,57 @@ beginState: s32'CmnActBlowoff'
   sprite: s32'fau068_30', 2
   endLabel: 
   beginLabel: s32'4'
+  sprite: s32'fau068_31', 2
+  sprite: s32'fau068_32', 2
+  sprite: s32'fau068_33', 3
+  sprite: s32'fau068_34', 3
+  sprite: s32'fau068_35', 3
+  sprite: s32'fau068_36', 3
+  sprite: s32'fau068_37', 3
+  sprite: s32'fau068_38', 3
+  sprite: s32'fau068_39', 3
+  sprite: s32'fau068_40', 3
+  sprite: s32'fau068_41', 3
+  sprite: s32'fau068_42', 3
+  sprite: s32'fau068_43', 4
+  sprite: s32'fau068_44', 3
+  sprite: s32'fau068_45', 3
+  sprite: s32'fau068_46', 3
+  sprite: s32'fau068_47', 3
+  sprite: s32'fau068_48', 4
+  sprite: s32'fau068_49', 2147483647
+  endState: 
+
+beginState: s32'fuwafuwa'
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'fau068_04', 3
+  sprite: s32'fau068_05', 3
+  sprite: s32'fau068_06', 4
+  sprite: s32'fau068_07', 3
+  sprite: s32'fau068_08', 3
+  sprite: s32'fau068_09', 3
+  sprite: s32'fau068_10', 3
+  sprite: s32'fau068_11', 3
+  sprite: s32'fau068_12', 3
+  sprite: s32'fau068_13', 3
+  sprite: s32'fau068_14', 3
+  sprite: s32'fau068_15', 3
+  sprite: s32'fau068_16', 3
+  sprite: s32'fau068_17', 3
+  sprite: s32'fau068_18', 3
+  sprite: s32'fau068_19', 3
+  sprite: s32'fau068_20', 3
+  sprite: s32'fau068_21', 3
+  sprite: s32'fau068_22', 3
+  sprite: s32'fau068_23', 3
+  sprite: s32'fau068_24', 3
+  sprite: s32'fau068_25', 3
+  sprite: s32'fau068_26', 3
+  sprite: s32'fau068_27', 3
+  sprite: s32'fau068_28', 3
+  sprite: s32'fau068_29', 2
+  sprite: s32'fau068_30', 2
   sprite: s32'fau068_31', 2
   sprite: s32'fau068_32', 2
   sprite: s32'fau068_33', 3
@@ -6288,6 +6340,7 @@ beginState: s32'ThrowExe'
     endUpon: 
   sprite: s32'keep', 4
   Unknown547: 1
+  callSubroutine: s32'cmnAtkTemplNage__EnemyCell'
   Unknown612: s32'SE_SWINGB'
   sprite: s32'fau310_00', 2
   Unknown550: 
@@ -6480,6 +6533,7 @@ beginState: s32'AirThrowExe'
     endUpon: 
   sprite: s32'keep', 4
   Unknown547: 1
+  callSubroutine: s32'cmnAtkTemplNage__EnemyCell'
   Unknown612: s32'SE_CATCHA'
   physicsYImpulse: 0, 0
   physicsXImpulse: 0, 0
@@ -7218,6 +7272,10 @@ beginState: s32'MettaGariExe'
   hit: 
   upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
+    Unknown2193: 136, 0, 25000
+    Unknown446: s32'Afro_smoke', 130
+    Unknown53: 22, 2, 324, 23, 0, 1
+    Unknown613: s16'vxxx206'
     endUpon: 
   Unknown711: 2
   damage: 0, 36
@@ -7229,10 +7287,6 @@ beginState: s32'MettaGariExe'
   groundHitEffect: 8
   hitAirPushbackX: 0, 15000
   hitAirPushbackY: 0, 25000
-  Unknown2193: 136, 0, 25000
-  Unknown446: s32'Afro_smoke', 130
-  Unknown53: 22, 2, 324, 23, 0, 1
-  Unknown613: s16'vxxx206'
   Unknown1165: s32'MettaGari'
   Unknown41: 22
   Unknown595: s16'vxxx300', 2
@@ -8079,11 +8133,13 @@ beginState: s32'NiceShot'
             else: 
               storeValue: (VARIABLE), 45, (STATIC), 1
               ifOperation: (IS_EQUAL), (VARIABLE), 51, (STATIC), 3
+                ifNot: (VARIABLE), 368
                 Unknown41: 32
                 Unknown76: s32'CmnActZSpin'
                 Unknown40: 
                 Unknown23: 47
                 callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 3, (STATIC), 0, (STATIC), 0
+                endIf: 
                 endIf: 
               else: 
                 Unknown41: 32
@@ -8093,11 +8149,6 @@ beginState: s32'NiceShot'
                 callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 2, (STATIC), 0, (STATIC), 0
                 endElse: 
               endElse: 
-            endIf: 
-          endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 51, (STATIC), 3
-          if: (VARIABLE), 319
-            Unknown23: 12
             endIf: 
           endIf: 
         endUpon: 
@@ -8457,7 +8508,7 @@ beginState: s32'excitingexe'
   Unknown271: 1, 119, 388, 389
   upon: 50
     callSubroutine: s32'cmnWorldStop_Start'
-    callSubroutine: s32'cmnDeleteAllHalfCamera'
+    callSubroutine: s32'cmnCameraSettings'
     Unknown23: 50
     Unknown251: 0
     Unknown2560: 1
@@ -8603,8 +8654,6 @@ Unknown2571: 0, 0, 0, 500
 Unknown2107: 1
 upon: (BEFORE_EXIT)
   Unknown1803: s32'CS500_whiteout', 23
-  Unknown2560: 0
-  Unknown1972: 0
   Unknown2244: 0
   Unknown2571: 0, 0, 0, 0
   Unknown2107: 0
@@ -8612,6 +8661,7 @@ upon: (BEFORE_EXIT)
   Unknown2182: 0
   Unknown40: 
   Unknown403: 0
+  callSubroutineWithArgs: s32'cmnCameraSettings', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
   endUpon: 
 
 sprite: s32'fau501_00', 10

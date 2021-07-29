@@ -4526,9 +4526,9 @@ beginState: s32'CmnActBDash'
   if: (VARIABLE), 5
     Unknown446: s32'DKY_aura_yoin', 100
     endIf: 
-  sprite: s32'kyk034_01', 2
-  sprite: s32'kyk034_02', 2
-  sprite: s32'kyk034_03', 2
+  sprite: s32'kyk034_01', 3
+  sprite: s32'kyk034_02', 3
+  sprite: s32'kyk034_03', 3
   sprite: s32'kyk034_04', 60
   endLabel: 
   beginLabel: s32'landing'
@@ -5102,6 +5102,57 @@ beginState: s32'CmnActBlowoff'
   sprite: s32'kyk068_30', 2
   endLabel: 
   beginLabel: s32'4'
+  sprite: s32'kyk068_31', 2
+  sprite: s32'kyk068_32', 2
+  sprite: s32'kyk068_33', 3
+  sprite: s32'kyk068_34', 3
+  sprite: s32'kyk068_35', 3
+  sprite: s32'kyk068_36', 3
+  sprite: s32'kyk068_37', 3
+  sprite: s32'kyk068_38', 3
+  sprite: s32'kyk068_39', 3
+  sprite: s32'kyk068_40', 3
+  sprite: s32'kyk068_41', 3
+  sprite: s32'kyk068_42', 3
+  sprite: s32'kyk068_43', 4
+  sprite: s32'kyk068_44', 3
+  sprite: s32'kyk068_45', 3
+  sprite: s32'kyk068_46', 3
+  sprite: s32'kyk068_47', 3
+  sprite: s32'kyk068_48', 4
+  sprite: s32'kyk068_49', 2147483647
+  endState: 
+
+beginState: s32'fuwafuwa'
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'kyk068_04', 3
+  sprite: s32'kyk068_05', 3
+  sprite: s32'kyk068_06', 4
+  sprite: s32'kyk068_07', 3
+  sprite: s32'kyk068_08', 3
+  sprite: s32'kyk068_09', 3
+  sprite: s32'kyk068_10', 3
+  sprite: s32'kyk068_11', 3
+  sprite: s32'kyk068_12', 3
+  sprite: s32'kyk068_13', 3
+  sprite: s32'kyk068_14', 3
+  sprite: s32'kyk068_15', 3
+  sprite: s32'kyk068_16', 3
+  sprite: s32'kyk068_17', 3
+  sprite: s32'kyk068_18', 3
+  sprite: s32'kyk068_19', 3
+  sprite: s32'kyk068_20', 3
+  sprite: s32'kyk068_21', 3
+  sprite: s32'kyk068_22', 3
+  sprite: s32'kyk068_23', 3
+  sprite: s32'kyk068_24', 3
+  sprite: s32'kyk068_25', 3
+  sprite: s32'kyk068_26', 3
+  sprite: s32'kyk068_27', 3
+  sprite: s32'kyk068_28', 3
+  sprite: s32'kyk068_29', 2
+  sprite: s32'kyk068_30', 2
   sprite: s32'kyk068_31', 2
   sprite: s32'kyk068_32', 2
   sprite: s32'kyk068_33', 3
@@ -6209,7 +6260,7 @@ beginState: s32'NmlAtk6A'
   sprite: s32'kyk210_04', 2
   sprite: s32'kyk210_05', 4
   callSubroutine: s32'cmn_AttackEnd'
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'kyk210_06', 4
   sprite: s32'kyk210_07', 2
   sprite: s32'kyk210_08', 2
@@ -6334,7 +6385,7 @@ beginState: s32'NmlAtk5B'
   sprite: s32'kyk201_03', 4
   sprite: s32'kyk201_04', 3
   recoveryState: 
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'kyk201_05', 3
   sprite: s32'kyk201_06', 5
   callSubroutine: s32'cmnNandemoCancel'
@@ -6388,7 +6439,7 @@ beginState: s32'NmlAtk6B'
   hit: 
   sprite: s32'kyk211_08', 2
   callSubroutine: s32'cmn_AttackEnd'
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'kyk211_09', 4
   sprite: s32'kyk211_10', 5
   sprite: s32'kyk211_11', 3
@@ -6517,7 +6568,7 @@ beginState: s32'NmlAtk5CNear'
   Unknown446: s32'kyk202_bake2', 100
   sprite: s32'kyk202_05', 6
   Unknown2173: 
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'kyk202_06', 7
   sprite: s32'kyk202_07', 6
   callSubroutine: s32'cmnNandemoCancel'
@@ -6550,6 +6601,8 @@ beginState: s32'NmlAtk5CFar'
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
     callSubroutine: s32'cmn_AtkTemplNokezoriLow'
+    Unknown2581: s32'Weapon', s32'G_wep_grip', s32'Body', s32'G_grip_R'
+    Unknown2524: s32'ex1', 0, 180000, -90000, 0, 0, 0, 0
     endUpon: 
   sprite: s32'kyk203_00', 2
   sprite: s32'kyk203_01', 4
@@ -6655,6 +6708,8 @@ beginState: s32'NmlAtk5D'
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
     callSubroutine: s32'cmn_AtkTemplNokezoriLow'
+    Unknown2526: 1, 1, 6, 0, 60, 50
+    Unknown2591: 1, 1, 6, 0, 200, 50
     endUpon: 
   sprite: s32'kyk204_00', 2
   sprite: s32'kyk204_01', 2
@@ -6668,15 +6723,19 @@ beginState: s32'NmlAtk5D'
   Unknown446: s32'kyk204_bake1', 100
   hit: 
   callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+  Unknown2526: 1, 2, 6, 700, 60, 1000
+  Unknown2591: 1, 2, 6, 700, 200, 1000
   sprite: s32'kyk204_06', 3
   Unknown32: s32'kyk204_bake1'
   Unknown446: s32'kyk204_bake2', 100
   sprite: s32'kyk204_07', 5
   callSubroutine: s32'cmn_AttackEnd'
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'kyk204_08', 4
   sprite: s32'kyk204_09', 3
   sprite: s32'kyk204_10', 3
+  Unknown2526: 1, 1, 6, 0, 60, 50
+  Unknown2591: 1, 1, 6, 0, 200, 50
   sprite: s32'kyk204_11', 2
   addPositionX: -14000
   sprite: s32'kyk204_12', 2
@@ -6745,7 +6804,7 @@ beginState: s32'NmlAtk6D'
   Unknown446: s32'kyk213_bake2', 100
   sprite: s32'kyk213_08', 4
   callSubroutine: s32'cmn_AttackEnd'
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'kyk213_09', 4
   sprite: s32'kyk213_10', 2
   sprite: s32'kyk213_11', 2
@@ -6786,6 +6845,8 @@ beginState: s32'NmlAtk2D'
     storeValue: (VARIABLE), 343, (STATIC), -300000
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
+    Unknown2526: 1, 1, 6, 0, 60, 50
+    Unknown2591: 1, 1, 6, 0, 200, 50
     endUpon: 
   sprite: s32'kyk233_00', 4
   sprite: s32'kyk233_01', 4
@@ -6797,8 +6858,6 @@ beginState: s32'NmlAtk2D'
   hit: 
   Unknown1148: s32'SE_BTL_CMN_Impact_Katana_L'
   Unknown1211: s32'SE_BTL_CMN_Impact_Katana_L'
-  Unknown2526: 1, 1, 6, 0, 60, 50
-  Unknown2591: 1, 1, 6, 0, 200, 50
   callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 1, (STATIC), 0, (STATIC), 0
   sprite: s32'kyk233_04', 4
   callSubroutineWithArgs: s32'cmn_AtkLv4', (STATIC), 2, (STATIC), 2, (STATIC), 0, (STATIC), 0
@@ -6833,7 +6892,7 @@ beginState: s32'NmlAtk2D'
   Unknown1211: s32'SE_BTL_CMN_Impact_Katana_L'
   sprite: s32'kyk233_05', 4
   callSubroutine: s32'cmn_AttackEnd'
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'kyk233_06', 6
   sprite: s32'kyk233_07', 5
   sprite: s32'kyk233_08', 5
@@ -6858,6 +6917,8 @@ beginState: s32'NmlAtk5E'
     storeValue: (VARIABLE), 345, (STATIC), 0
     Unknown2581: s32'Weapon', s32'G_wep_grip', s32'Body', s32'G_grip_R'
     Unknown2524: s32'ex1', 0, 180000, -90000, 0, 0, 0, 0
+    Unknown2526: 0, 0, 0, 0, 0, 0
+    Unknown2591: 0, 0, 0, 0, 0, 0
     endUpon: 
   sprite: s32'kyk205_00', 3
   Unknown1695: s32'kyk000_00', 0, 500
@@ -6889,10 +6950,14 @@ beginState: s32'NmlAtk5E'
   hit: 
   Unknown612: s32'SE_BTL_CMN_Swing_Slash_Heavy_M'
   callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 2, (STATIC), 0, (STATIC), 0
+  Unknown2526: 1, 2, 6, 700, 60, 1000
+  Unknown2591: 1, 2, 6, 700, 200, 1000
   sprite: s32'kyk205_09', 2
   Unknown32: s32'kyk205_bake1'
   Unknown446: s32'kyk205_bake2', 100
   callSubroutine: s32'cmn_AttackEnd'
+  Unknown2526: 0, 0, 0, 0, 0, 0
+  Unknown2591: 0, 0, 0, 0, 0, 0
   sprite: s32'kyk205_10', 4
   sprite: s32'kyk205_11', 4
   sprite: s32'kyk205_12', 3
@@ -7077,7 +7142,7 @@ beginState: s32'NmlAtk2E'
   Unknown446: s32'kyk234_bake02', 100
   sprite: s32'kyk234_05', 4
   callSubroutine: s32'cmn_AttackEnd'
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'kyk234_06', 5
   sprite: s32'kyk234_07', 3
   sprite: s32'kyk234_08', 3
@@ -7374,6 +7439,8 @@ beginState: s32'NmlAtkAir5C'
     Unknown1148: s32'SE_BTL_CMN_Impact_Katana_M'
     Unknown1211: s32'SE_BTL_CMN_Impact_Katana_M'
     callSubroutine: s32'cmnLandingStiffadd_Timer'
+    Unknown2526: 1, 1, 6, 0, 60, 50
+    Unknown2591: 1, 1, 6, 0, 200, 50
     endUpon: 
   sprite: s32'kyk252_00', 3
   sprite: s32'kyk252_01', 3
@@ -7382,10 +7449,14 @@ beginState: s32'NmlAtkAir5C'
   sprite: s32'kyk252_02', 3
   Unknown446: s32'kyk252_bake1', 100
   hit: 
+  Unknown2526: 1, 2, 6, 700, 60, 1000
+  Unknown2591: 1, 2, 6, 700, 200, 1000
   sprite: s32'kyk252_03', 3
   callSubroutine: s32'cmn_AttackEnd'
   Unknown32: s32'kyk252_bake1'
   Unknown446: s32'kyk252_bake2', 100
+  Unknown2526: 1, 1, 6, 0, 60, 50
+  Unknown2591: 1, 1, 6, 0, 200, 50
   sprite: s32'kyk252_04', 4
   sprite: s32'kyk252_05', 6
   sprite: s32'kyk252_06', 3
@@ -7423,6 +7494,8 @@ beginState: s32'NmlAtkAir5D'
     storeValue: (VARIABLE), 345, (STATIC), 0
     callSubroutine: s32'cmn_Dust_HomingJump_Attack'
     callSubroutine: s32'cmnLandingStiffadd_Timer'
+    Unknown2526: 1, 1, 6, 0, 60, 50
+    Unknown2591: 1, 1, 6, 0, 200, 50
     endUpon: 
   sprite: s32'kyk253_00', 1
   sprite: s32'kyk253_01', 2
@@ -7559,6 +7632,7 @@ beginState: s32'ThrowExe'
     endUpon: 
   sprite: s32'keep', 4
   Unknown547: 1
+  callSubroutine: s32'cmnAtkTemplNage__EnemyCell'
   sprite: s32'kyk310_00', 2
   Unknown550: 
   Unknown2193: 100, 120000, 340000
@@ -7702,6 +7776,7 @@ beginState: s32'AirThrowExe'
     endUpon: 
   sprite: s32'keep', 4
   Unknown547: 1
+  callSubroutine: s32'cmnAtkTemplNage__EnemyCell'
   sprite: s32'kyk320_00', 2
   Unknown550: 
   Unknown2193: 100, 120000, 340000
@@ -8050,6 +8125,8 @@ beginState: s32'StunDipper'
     if: (VARIABLE), 5
       Unknown2595: s32'StunDipper_DI'
       endIf: 
+    Unknown2526: 1, 1, 6, 0, 60, 50
+    Unknown2591: 1, 1, 6, 0, 200, 50
     endUpon: 
   Unknown24: s32'super', 2, 5
   sprite: s32'kyk400_00', 2
@@ -8142,7 +8219,7 @@ beginState: s32'StunDipper'
   Unknown615: s32'SE_BTL_KYK_02'
   sprite: s32'kyk400_10', 4
   recoveryState: 
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'kyk400_11', 4
   sprite: s32'kyk400_12', 8
   sprite: s32'kyk400_13', 5
@@ -8595,6 +8672,8 @@ beginState: s32'VaporThrustC'
     storeValue: (VARIABLE), 343, (STATIC), -200000
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
+    Unknown2526: 1, 1, 6, 0, 60, 50
+    Unknown2591: 1, 1, 6, 0, 200, 50
     endUpon: 
   Unknown24: s32'super', 2, 5
   sprite: s32'kyk405_00', 2
@@ -8614,10 +8693,14 @@ beginState: s32'VaporThrustC'
   physicsYImpulse: 0, 35000
   setGravity: 2100
   hit: 
+  Unknown2526: 1, 2, 6, 700, 60, 1000
+  Unknown2591: 1, 2, 6, 700, 200, 1000
   sprite: s32'kyk405_05', 4
   setStrikeInvulnerable: 0
-  pushbackX: 0
+  extendPushboxX: 0
   Unknown1058: 1
+  Unknown2526: 1, 1, 6, 0, 60, 50
+  Unknown2591: 1, 1, 6, 0, 200, 50
   sprite: s32'kyk405_06', 4
   sprite: s32'kyk405_07', 3
   sprite: s32'kyk405_08', 3
@@ -8691,6 +8774,8 @@ beginState: s32'VaporThrustC'
   storeValue: (VARIABLE), 343, (STATIC), -200000
   storeValue: (VARIABLE), 344, (STATIC), 0
   storeValue: (VARIABLE), 345, (STATIC), 0
+  Unknown2526: 1, 2, 6, 700, 60, 1000
+  Unknown2591: 1, 2, 6, 700, 200, 1000
   sprite: s32'kyk405_04', 2
   callSubroutineWithArgs: s32'cmn_AtkLv4', (STATIC), 2, (STATIC), 2, (STATIC), 0, (STATIC), 0
   storeValue: (VARIABLE), 338, (STATIC), 1000
@@ -8723,8 +8808,10 @@ beginState: s32'VaporThrustC'
   callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'kyk405_05', 4
   setStrikeInvulnerable: 0
-  pushbackX: 0
+  extendPushboxX: 0
   Unknown1058: 1
+  Unknown2526: 1, 1, 6, 0, 60, 50
+  Unknown2591: 1, 1, 6, 0, 200, 50
   sprite: s32'kyk405_06', 4
   sprite: s32'kyk405_07', 3
   sprite: s32'kyk405_08', 3
@@ -8862,7 +8949,7 @@ beginState: s32'VaporThrustD'
   Unknown2591: 1, 2, 6, 700, 200, 1000
   sprite: s32'kyk406_05', 4
   setStrikeInvulnerable: 0
-  pushbackX: 0
+  extendPushboxX: 0
   Unknown1058: 1
   sprite: s32'kyk406_06', 4
   sprite: s32'kyk406_07', 3
@@ -9010,7 +9097,7 @@ beginState: s32'VaporThrustD'
   callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 5, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'kyk406_06', 4
   setStrikeInvulnerable: 0
-  pushbackX: 0
+  extendPushboxX: 0
   Unknown1058: 1
   sprite: s32'kyk406_07', 3
   sprite: s32'kyk406_08', 3
@@ -9076,7 +9163,7 @@ beginState: s32'AirVaporThrustC'
     Unknown1148: s32'SE_BTL_CMN_Impact_Electric'
     Unknown1211: s32'SE_BTL_CMN_Impact_Electric'
     upon: (HIT_OR_GUARD)
-      pushbackX: 50000
+      extendPushboxX: 50000
       if: (VARIABLE), 3
         ifNot: (VARIABLE), 5
           callSubroutine: s32'cmn_AtkLv4'
@@ -9117,6 +9204,8 @@ beginState: s32'AirVaporThrustC'
     storeValue: (VARIABLE), 343, (STATIC), -200000
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
+    Unknown2526: 1, 1, 6, 0, 60, 50
+    Unknown2591: 1, 1, 6, 0, 200, 50
     endUpon: 
   Unknown24: s32'super', 2, 5
   sprite: s32'kyk405_00', 2
@@ -9140,10 +9229,14 @@ beginState: s32'AirVaporThrustC'
   setGravity: 2100
   hit: 
   callSubroutine: s32'cmnMutekiRC'
+  Unknown2526: 1, 2, 6, 0, 60, 1000
+  Unknown2591: 1, 2, 6, 0, 200, 1000
   sprite: s32'kyk405_05', 4
   setStrikeInvulnerable: 0
-  pushbackX: 0
+  extendPushboxX: 0
   Unknown1058: 1
+  Unknown2526: 1, 1, 6, 0, 60, 50
+  Unknown2591: 1, 1, 6, 0, 200, 50
   sprite: s32'kyk405_06', 4
   sprite: s32'kyk405_07', 3
   sprite: s32'kyk405_08', 3
@@ -9220,6 +9313,8 @@ beginState: s32'AirVaporThrustC'
   storeValue: (VARIABLE), 343, (STATIC), -200000
   storeValue: (VARIABLE), 344, (STATIC), 0
   storeValue: (VARIABLE), 345, (STATIC), 0
+  Unknown2526: 1, 2, 6, 700, 60, 1000
+  Unknown2591: 1, 2, 6, 700, 200, 1000
   sprite: s32'kyk405_04', 2
   callSubroutineWithArgs: s32'cmn_AtkLv4', (STATIC), 2, (STATIC), 2, (STATIC), 0, (STATIC), 0
   storeValue: (VARIABLE), 338, (STATIC), 1000
@@ -9251,8 +9346,10 @@ beginState: s32'AirVaporThrustC'
   callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'kyk405_05', 4
   setStrikeInvulnerable: 0
-  pushbackX: 0
+  extendPushboxX: 0
   Unknown1058: 1
+  Unknown2526: 1, 1, 6, 0, 60, 50
+  Unknown2591: 1, 1, 6, 0, 200, 50
   sprite: s32'kyk405_06', 4
   sprite: s32'kyk405_07', 3
   sprite: s32'kyk405_08', 3
@@ -9397,7 +9494,7 @@ beginState: s32'AirVaporThrustD'
   Unknown2591: 1, 2, 6, 700, 200, 1000
   sprite: s32'kyk406_05', 4
   setStrikeInvulnerable: 0
-  pushbackX: 0
+  extendPushboxX: 0
   Unknown1058: 1
   sprite: s32'kyk406_06', 4
   sprite: s32'kyk406_07', 3
@@ -9550,7 +9647,7 @@ beginState: s32'AirVaporThrustD'
   callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 5, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'kyk406_06', 4
   setStrikeInvulnerable: 0
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'kyk406_07', 3
   sprite: s32'kyk406_08', 3
   sprite: s32'kyk406_09', 3
@@ -9710,7 +9807,7 @@ beginState: s32'Diaekura'
   Unknown2591: 1, 2, 6, 700, 200, 1000
   sprite: s32'kyk407_06', 3
   recoveryState: 
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'kyk407_07', 3
   sprite: s32'kyk407_08', 4
   sprite: s32'kyk407_09', 3
@@ -9797,7 +9894,7 @@ beginState: s32'Diaekura'
   Unknown2591: 1, 2, 6, 700, 200, 1000
   sprite: s32'kyk407_06', 3
   recoveryState: 
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'kyk407_07', 3
   sprite: s32'kyk407_08', 4
   sprite: s32'kyk407_09', 3
@@ -10064,7 +10161,7 @@ beginState: s32'RideTheLightning'
   upon: 50
     Unknown23: 50
     callSubroutine: s32'cmnWorldStop_Start'
-    callSubroutine: s32'cmnDeleteAllHalfCamera'
+    callSubroutine: s32'cmnCameraSettings'
     Unknown612: s32'SE_BTL_SYS_SKill'
     Unknown615: s32'SE_BTL_KYK_KAKUSEI_00'
     callSubroutine: s32'cmnWorldStop_Tension'
@@ -10111,10 +10208,7 @@ beginState: s32'RideTheLightning'
         Unknown2589: s32'Overlay_kakusei', 0, 16
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 140
-        Unknown1972: 0
-        Unknown427: 0, 20
-        Unknown428: 0, 40
-        Unknown429: 0, 40
+        callSubroutineWithArgs: s32'cmnCameraSettings', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 140
         Unknown446: s32'kyk500_tossin01', 100
@@ -10139,7 +10233,7 @@ beginState: s32'RideTheLightning'
           endIf: 
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 145
-        pushbackX: 0
+        extendPushboxX: 0
         Unknown41: 22
         Unknown1731: 0
         Unknown40: 
@@ -10311,7 +10405,7 @@ beginState: s32'RideTheLightning'
   sprite: s32'kyk500_27', 3
   sprite: s32'kyk500_28', 3
   sprite: s32'kyk500_29', 3
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'kyk500_30', 3
   sprite: s32'kyk500_31', 62
   endLabel: 
@@ -10466,7 +10560,7 @@ beginState: s32'RideTheLightning'
   sprite: s32'kyk500_27', 3
   sprite: s32'kyk500_28', 3
   sprite: s32'kyk500_29', 3
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'kyk500_30', 3
   sprite: s32'kyk500_31', 62
   endState: 
@@ -10559,7 +10653,7 @@ beginState: s32'AirRideTheLightning'
   upon: 50
     Unknown23: 50
     callSubroutine: s32'cmnWorldStop_Start'
-    callSubroutine: s32'cmnDeleteAllHalfCamera'
+    callSubroutine: s32'cmnCameraSettings'
     Unknown612: s32'SE_BTL_SYS_SKill'
     Unknown615: s32'SE_BTL_KYK_KAKUSEI_00'
     callSubroutine: s32'cmnWorldStop_Tension'
@@ -10648,7 +10742,7 @@ beginState: s32'AirRideTheLightning'
           endIf: 
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 145
-        pushbackX: 0
+        extendPushboxX: 0
         Unknown41: 22
         Unknown1731: 0
         Unknown40: 
@@ -10830,7 +10924,7 @@ beginState: s32'AirRideTheLightning'
   sprite: s32'kyk501_27', 3
   sprite: s32'kyk501_28', 3
   sprite: s32'kyk501_29', 3
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'kyk501_30', 3
   sprite: s32'kyk501_31', 2
   endLabel: 
@@ -10998,7 +11092,7 @@ beginState: s32'AirRideTheLightning'
   sprite: s32'kyk501_27', 3
   sprite: s32'kyk501_28', 3
   sprite: s32'kyk501_29', 3
-  pushbackX: 0
+  extendPushboxX: 0
   sprite: s32'kyk501_30', 3
   sprite: s32'kyk501_31', 2
   endLabel: 
@@ -11104,6 +11198,7 @@ beginState: s32'DragonInstall'
       Unknown2244: 0
       Unknown2097: 
       upon: (BEFORE_EXIT)
+        callSubroutineWithArgs: s32'cmnCameraSettings', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
         Unknown2065: 
         Unknown2066: 
         callSubroutine: s32'DI_MeshSetCheck'
@@ -11127,7 +11222,7 @@ beginState: s32'DragonInstall'
     Unknown23: 50
     Unknown32: s32'dky_aura'
     callSubroutine: s32'cmnWorldStop_Start'
-    callSubroutine: s32'cmnDeleteAllHalfCamera'
+    callSubroutine: s32'cmnCameraSettings'
     Unknown612: s32'SE_BTL_SYS_Skill'
     callSubroutine: s32'cmnWorldStop_Tension'
     Unknown2189: 2, 5

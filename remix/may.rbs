@@ -2215,6 +2215,57 @@ beginState: s32'CmnActBlowoff'
   sprite: s32'may068_49', 2147483647
   endState: 
 
+beginState: s32'fuwafuwa'
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'may068_04', 3
+  sprite: s32'may068_05', 3
+  sprite: s32'may068_06', 4
+  sprite: s32'may068_07', 3
+  sprite: s32'may068_08', 3
+  sprite: s32'may068_09', 3
+  sprite: s32'may068_10', 3
+  sprite: s32'may068_11', 3
+  sprite: s32'may068_12', 3
+  sprite: s32'may068_13', 3
+  sprite: s32'may068_14', 3
+  sprite: s32'may068_15', 3
+  sprite: s32'may068_16', 3
+  sprite: s32'may068_17', 3
+  sprite: s32'may068_18', 3
+  sprite: s32'may068_19', 3
+  sprite: s32'may068_20', 3
+  sprite: s32'may068_21', 3
+  sprite: s32'may068_22', 3
+  sprite: s32'may068_23', 3
+  sprite: s32'may068_24', 3
+  sprite: s32'may068_25', 3
+  sprite: s32'may068_26', 3
+  sprite: s32'may068_27', 3
+  sprite: s32'may068_28', 3
+  sprite: s32'may068_29', 2
+  sprite: s32'may068_30', 2
+  sprite: s32'may068_31', 2
+  sprite: s32'may068_32', 2
+  sprite: s32'may068_33', 3
+  sprite: s32'may068_34', 3
+  sprite: s32'may068_35', 3
+  sprite: s32'may068_36', 3
+  sprite: s32'may068_37', 3
+  sprite: s32'may068_38', 3
+  sprite: s32'may068_39', 3
+  sprite: s32'may068_40', 3
+  sprite: s32'may068_41', 3
+  sprite: s32'may068_42', 3
+  sprite: s32'may068_43', 4
+  sprite: s32'may068_44', 3
+  sprite: s32'may068_45', 3
+  sprite: s32'may068_46', 3
+  sprite: s32'may068_47', 3
+  sprite: s32'may068_48', 4
+  sprite: s32'may068_49', 2147483647
+  endState: 
+
 beginState: s32'CmnActKirimomiUpper'
   Unknown24: s32'dust', 2, 158
   beginLabel: s32'loop'
@@ -5036,6 +5087,7 @@ beginState: s32'ThrowExe'
     endUpon: 
   sprite: s32'keep', 4
   Unknown547: 1
+  callSubroutine: s32'cmnAtkTemplNage__EnemyCell'
   sprite: s32'keep', 1
   Unknown2193: 100, 120000, 240000
   Unknown448: s32'cmn_nage', 130
@@ -5165,6 +5217,7 @@ beginState: s32'AirThrowExe'
     endUpon: 
   sprite: s32'keep', 4
   Unknown547: 1
+  callSubroutine: s32'cmnAtkTemplNage__EnemyCell'
   sprite: s32'may320_00', 2
   Unknown550: 
   Unknown2193: 100, 170000, 260000
@@ -6151,7 +6204,7 @@ beginState: s32'Yamada'
   upon: 50
     Unknown23: 50
     callSubroutine: s32'cmnWorldStop_Start'
-    callSubroutine: s32'cmnDeleteAllHalfCamera'
+    callSubroutine: s32'cmnCameraSettings'
     Unknown612: s32'SE_BTL_SYS_Skill'
     callSubroutine: s32'cmnWorldStop_Tension'
     Unknown2189: 2, 5
@@ -6269,11 +6322,7 @@ beginState: s32'Yamada'
         endIf: 
       endUpon: 
     upon: (BEFORE_EXIT)
-      Unknown2560: 0
-      Unknown1972: 0
-      Unknown428: 0, 40
-      Unknown427: 0, 20
-      Unknown429: 0, 40
+      callSubroutineWithArgs: s32'cmnCameraSettings', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
       endUpon: 
     endUpon: 
   endLabel: 

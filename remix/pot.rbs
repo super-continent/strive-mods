@@ -2381,6 +2381,57 @@ beginState: s32'CmnActBlowoff'
   sprite: s32'pot068_49', 2147483647
   endState: 
 
+beginState: s32'fuwafuwa'
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'pot068_04', 3
+  sprite: s32'pot068_05', 3
+  sprite: s32'pot068_06', 4
+  sprite: s32'pot068_07', 3
+  sprite: s32'pot068_08', 3
+  sprite: s32'pot068_09', 3
+  sprite: s32'pot068_10', 3
+  sprite: s32'pot068_11', 3
+  sprite: s32'pot068_12', 3
+  sprite: s32'pot068_13', 3
+  sprite: s32'pot068_14', 3
+  sprite: s32'pot068_15', 3
+  sprite: s32'pot068_16', 3
+  sprite: s32'pot068_17', 3
+  sprite: s32'pot068_18', 3
+  sprite: s32'pot068_19', 3
+  sprite: s32'pot068_20', 3
+  sprite: s32'pot068_21', 3
+  sprite: s32'pot068_22', 3
+  sprite: s32'pot068_23', 3
+  sprite: s32'pot068_24', 3
+  sprite: s32'pot068_25', 3
+  sprite: s32'pot068_26', 3
+  sprite: s32'pot068_27', 3
+  sprite: s32'pot068_28', 3
+  sprite: s32'pot068_29', 2
+  sprite: s32'pot068_30', 2
+  sprite: s32'pot068_31', 2
+  sprite: s32'pot068_32', 2
+  sprite: s32'pot068_33', 3
+  sprite: s32'pot068_34', 3
+  sprite: s32'pot068_35', 3
+  sprite: s32'pot068_36', 3
+  sprite: s32'pot068_37', 3
+  sprite: s32'pot068_38', 3
+  sprite: s32'pot068_39', 3
+  sprite: s32'pot068_40', 3
+  sprite: s32'pot068_41', 3
+  sprite: s32'pot068_42', 3
+  sprite: s32'pot068_43', 4
+  sprite: s32'pot068_44', 3
+  sprite: s32'pot068_45', 3
+  sprite: s32'pot068_46', 3
+  sprite: s32'pot068_47', 3
+  sprite: s32'pot068_48', 4
+  sprite: s32'pot068_49', 2147483647
+  endState: 
+
 beginState: s32'CmnActKirimomiUpper'
   Unknown24: s32'dust', 2, 158
   beginLabel: s32'loop'
@@ -4799,6 +4850,7 @@ beginState: s32'ThrowExe'
     endUpon: 
   sprite: s32'keep', 4
   Unknown547: 1
+  callSubroutine: s32'cmnAtkTemplNage__EnemyCell'
   sprite: s32'pot310_00', 3
   Unknown550: 
   Unknown2193: 100, 120000, 340000
@@ -4901,6 +4953,7 @@ beginState: s32'AirThrowExe'
     endUpon: 
   sprite: s32'keep', 4
   Unknown547: 1
+  callSubroutine: s32'cmnAtkTemplNage__EnemyCell'
   physicsXImpulse: 0, 0
   physicsYImpulse: 0, 0
   setGravity: 0
@@ -6008,7 +6061,6 @@ beginState: s32'HeavenlyPBuster'
   upon: 50
     Unknown23: 50
     callSubroutine: s32'cmnWorldStop_Start'
-    callSubroutine: s32'cmnDeleteAllHalfCamera'
     Unknown612: s32'SE_BTL_SYS_Skill'
     callSubroutine: s32'cmnWorldStop_Tension'
     Unknown2273: 0, 1500
@@ -6075,6 +6127,7 @@ beginState: s32'HeavenlyPBusterExe'
     Unknown2060: s32'500cs'
     Unknown2045: s32'pot500cs', 0
     Unknown2560: 1
+    callSubroutine: s32'cmnCameraSettings'
     Unknown2052: s32'pot500cs', 23, 0, 0
     Unknown1972: 1
     Unknown41: 22
@@ -6170,11 +6223,7 @@ endIf:
 ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 449
   Unknown23: 3
   Unknown14: s32'next'
-  Unknown2560: 0
-  Unknown1972: 0
-  Unknown428: 0, 40
-  Unknown427: 0, 20
-  Unknown429: 0, 40
+  callSubroutineWithArgs: s32'cmnCameraSettings', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
   endIf: 
 
 ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
