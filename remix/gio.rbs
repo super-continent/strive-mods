@@ -1817,10 +1817,10 @@ beginState: s32'CmnActJumpPre'
   Unknown24: s32'FJumpPre', 2, 11
   Unknown24: s32'BJumpPre', 2, 10
   sprite: s32'gio020_00', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpPre'
   sprite: s32'gio021_00', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpPre'
   sprite: s32'gio022_00', 4
   endState: 
@@ -1958,7 +1958,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'gio020_21', 2
   sprite: s32'gio020_22', 2
   sprite: s32'gio020_23', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLanding'
   sprite: s32'gio021_18', 3
   sprite: s32'gio021_19', 3
@@ -1973,7 +1973,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'gio021_26', 3
   sprite: s32'gio021_27', 3
   sprite: s32'gio021_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLandingTurn'
   Unknown240: 
   sprite: s32'gio022_21', 3
@@ -1984,7 +1984,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'gio022_26', 3
   sprite: s32'gio022_27', 3
   sprite: s32'gio022_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLanding'
   sprite: s32'gio022_18', 3
   sprite: s32'gio022_19', 3
@@ -1999,7 +1999,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'gio022_26', 3
   sprite: s32'gio022_27', 3
   sprite: s32'gio022_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLandingTurn'
   Unknown240: 
   sprite: s32'gio021_21', 3
@@ -2081,7 +2081,7 @@ beginState: s32'CmnActLandingStiff'
   endLabel: 
   beginLabel: s32'_End'
   sprite: s32'keep', 1
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'CmnActFWalk'
@@ -2204,7 +2204,7 @@ beginState: s32'CmnActFDash'
   sprite: s32'gio032_17', 4
   endLabel: 
   Unknown27: s32'_NEUTRAL'
-  Unknown18: 
+  exitState: 
   beginLabel: s32'Cancel_FDash'
   sprite: s32'gio032_00', 2
   callSubroutine: s32'cmnFDashCancel'
@@ -2246,7 +2246,7 @@ beginState: s32'CmnActFDash'
   sprite: s32'gio032_16', 2
   endLabel: 
   Unknown27: s32'_NEUTRAL'
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'CmnActFDashStop'
@@ -3626,7 +3626,7 @@ beginState: s32'CmnActRomanCancel'
   sprite: s32'gio350_15', 2
   sprite: s32'gio350_16', 2
   sprite: s32'gio350_17', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'air'
   sprite: s32'gio351_01', 3
   sprite: s32'gio351_02', 3
@@ -3759,7 +3759,7 @@ beginState: s32'CmnActRoundWin'
   Unknown615: s32'SE_BTL_GIO_08'
   Unknown1708: 
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'gio616_00', 5
   sprite: s32'gio616_01', 5
@@ -5213,7 +5213,7 @@ beginState: s32'NmlAtk5F'
   sprite: s32'gio300_28', 3
   sprite: s32'gio300_29', 3
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'gio301_00', 3
   sprite: s32'gio301_01', 3
@@ -5378,7 +5378,7 @@ beginState: s32'NmlAtk6F'
   sprite: s32'gio305_29', 4
   Unknown1702: s32'wolf_body_leg_only', 0
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'gio306_00', 3
   sprite: s32'gio306_01', 3
@@ -5898,10 +5898,10 @@ beginState: s32'NmlAtkAirThrow'
     Unknown1042: s32'AirThrowExe'
     callSubroutine: s32'cmnthrow_air_range'
     callSubroutine: s32'cmnthrow_land_timer'
+    Unknown233: 
     endUpon: 
   sprite: s32'gio321_00', 1
   sprite: s32'gio321_00', 3
-  Unknown233: 
   Unknown612: s32'SE_BTL_CMN_Emotion_1'
   sprite: s32'gio321_01', 4
   Unknown1915: 
@@ -6839,7 +6839,7 @@ beginState: s32'AirUltimate'
   sprite: s32'gio271_16', 2
   sprite: s32'gio271_17', 2
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'atk1'
   sprite: s32'gio010_08', 5
   Unknown240: 
@@ -6911,7 +6911,7 @@ beginState: s32'AirUltimate'
   sprite: s32'gio020_13', 2
   Unknown2486: 1
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'atk2'
   sprite: s32'gio253_01', 3
   Unknown176: 1
@@ -6967,7 +6967,7 @@ beginState: s32'AirUltimate'
   sprite: s32'gio020_13', 2
   Unknown2486: 1
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'atk2.5'
   sprite: s32'gio035_00', 2
   Unknown2193: 100, 0, 100000
@@ -7027,14 +7027,14 @@ beginState: s32'AirUltimate'
   sprite: s32'gio032_16', 2
   sprite: s32'gio032_16', 30
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'next2'
   Unknown2031: 22, s32'ultimate_obj_wolf'
   Unknown25: s32'end3', 2, 0
   Unknown24: s32'atk3', 2, 45
   beginLabel: s32'end3'
   sprite: s32'keep', 1
-  Unknown18: 
+  exitState: 
   beginLabel: s32'atk3'
   sprite: s32'gio213_04', 3
   Unknown19: 5

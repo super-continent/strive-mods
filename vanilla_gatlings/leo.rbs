@@ -1594,10 +1594,10 @@ beginState: s32'CmnActJumpPre'
   Unknown24: s32'FJumpPre', 2, 11
   Unknown24: s32'BJumpPre', 2, 10
   sprite: s32'leo020_00', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpPre'
   sprite: s32'leo021_00', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpPre'
   sprite: s32'leo022_00', 4
   endState: 
@@ -1738,7 +1738,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'leo020_21', 2
   sprite: s32'leo020_22', 2
   sprite: s32'leo020_23', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLanding'
   sprite: s32'leo021_18', 3
   sprite: s32'leo021_19', 3
@@ -1753,7 +1753,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'leo021_26', 3
   sprite: s32'leo021_27', 3
   sprite: s32'leo021_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLandingTurn'
   Unknown240: 
   sprite: s32'leo022_21', 3
@@ -1764,7 +1764,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'leo022_26', 3
   sprite: s32'leo022_27', 3
   sprite: s32'leo022_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLanding'
   sprite: s32'leo022_18', 3
   sprite: s32'leo022_19', 3
@@ -1779,7 +1779,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'leo022_26', 3
   sprite: s32'leo022_27', 3
   sprite: s32'leo022_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLandingTurn'
   Unknown240: 
   sprite: s32'leo021_21', 3
@@ -1861,7 +1861,7 @@ beginState: s32'CmnActLandingStiff'
   endLabel: 
   beginLabel: s32'_End'
   sprite: s32'keep', 1
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'CmnActFWalk'
@@ -3337,7 +3337,7 @@ beginState: s32'CmnActRomanCancel'
   sprite: s32'leo350_15', 2
   sprite: s32'leo350_16', 2
   sprite: s32'leo350_17', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'air'
   sprite: s32'leo351_01', 3
   sprite: s32'leo351_02', 3
@@ -3447,7 +3447,7 @@ beginState: s32'CmnActRoundWin'
   sprite: s32'leo615_43', 2147483647
   Unknown1708: 
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'leo616_00', 3
   Unknown1702: s32'Cross_rotation', 1
@@ -3479,7 +3479,7 @@ beginState: s32'CmnActRoundWin'
   sprite: s32'leo616_21', 5
   sprite: s32'leo616_22', 2147483647
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeC'
   Unknown24: s32'TypeA', 2, 315
   sprite: s32'leo615_00', 3
@@ -5532,7 +5532,7 @@ beginState: s32'NmlAtk5F'
   sprite: s32'leo300_44', 4
   sprite: s32'leo300_45', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'leo301_00', 3
   sprite: s32'leo301_01', 3
@@ -5600,7 +5600,7 @@ beginState: s32'NmlAtk5F'
   sprite: s32'leo301_48', 3
   sprite: s32'leo301_49', 3
   endLabel: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'NmlAtk6F'
@@ -5651,7 +5651,7 @@ beginState: s32'NmlAtk6F'
   sprite: s32'leo305_19', 6
   sprite: s32'leo305_20', 6
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'leo306_00', 4
   Unknown1702: s32'Cross', 1
@@ -7015,7 +7015,7 @@ beginState: s32'Semuke5E'
   sprite: s32'leo419_09', 3
   endLabel: 
   Unknown27: s32'Semuke'
-  Unknown18: 
+  exitState: 
   beginLabel: s32'Throw'
   sprite: s32'leo420_00', 2
   Unknown233: 
@@ -7117,7 +7117,7 @@ beginState: s32'Semuke5E'
   sprite: s32'leo420_28', 5
   endLabel: 
   Unknown27: s32'Semuke'
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'SemukeReverse'
@@ -7722,7 +7722,7 @@ beginState: s32'Turbulenz'
   sprite: s32'leo406_11', 2
   sprite: s32'leo406_12', 2
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'usiro'
   sprite: s32'leo406_13', 2
   Unknown2595: s32'TurbulenzSemuke'
@@ -7952,7 +7952,7 @@ beginState: s32'GlaenzenDunkelExe'
   sprite: s32'leo422_33', 3
   sprite: s32'leo422_34', 3
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'usiro'
   sprite: s32'leo422_35', 3
   sprite: s32'leo422_36', 3
@@ -8055,7 +8055,7 @@ beginState: s32'SchildBrechen'
   callSubroutine: s32'cmnNandemoCancel'
   sprite: s32'leo423_23', 3
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'usiro'
   sprite: s32'leo423_17', 3
   Unknown2595: s32'SchildBrechenSemuke'

@@ -23476,7 +23476,7 @@ beginState: s32'cmn_Afro_Timer'
   endLabel: 
   beginLabel: s32'end'
   sprite: s32'null', 5
-  Unknown18: 
+  exitState: 
   beginLabel: s32'Bomb'
   sprite: s32'null', 2147483647
   Unknown244: 

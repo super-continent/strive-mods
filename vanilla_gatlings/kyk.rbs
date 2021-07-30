@@ -4125,13 +4125,13 @@ beginState: s32'CmnActJumpPre'
   if: (VARIABLE), 5
     Unknown446: s32'DKY_aura_naname_yoin', 100
     endIf: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpPre'
   sprite: s32'kyk021_00', 4
   if: (VARIABLE), 5
     Unknown446: s32'DKY_aura_naname_yoin', 100
     endIf: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpPre'
   sprite: s32'kyk022_00', 4
   if: (VARIABLE), 5
@@ -4270,7 +4270,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'kyk020_22', 3
   sprite: s32'kyk020_23', 3
   sprite: s32'kyk020_24', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLanding'
   sprite: s32'kyk021_18', 3
   sprite: s32'kyk021_19', 3
@@ -4285,7 +4285,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'kyk021_26', 3
   sprite: s32'kyk021_27', 3
   sprite: s32'kyk021_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLandingTurn'
   Unknown240: 
   sprite: s32'kyk022_21', 3
@@ -4296,7 +4296,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'kyk022_26', 3
   sprite: s32'kyk022_27', 3
   sprite: s32'kyk022_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLanding'
   sprite: s32'kyk022_18', 3
   sprite: s32'kyk022_19', 3
@@ -4311,7 +4311,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'kyk022_26', 3
   sprite: s32'kyk022_27', 3
   sprite: s32'kyk022_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLandingTurn'
   Unknown240: 
   sprite: s32'kyk021_21', 3
@@ -4387,7 +4387,7 @@ beginState: s32'CmnActLandingStiff'
   endLabel: 
   beginLabel: s32'_End'
   sprite: s32'keep', 1
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'CmnActFWalk'
@@ -5832,7 +5832,7 @@ beginState: s32'CmnActRomanCancel'
   sprite: s32'kyk350_15', 2
   sprite: s32'kyk350_16', 2
   sprite: s32'kyk350_17', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'air'
   sprite: s32'kyk351_01', 3
   sprite: s32'kyk351_02', 3
@@ -5914,7 +5914,7 @@ beginState: s32'CmnActRoundWin'
   sprite: s32'kyk615_14', 6
   endLabel: 
   gotoLabel: s32'loop'
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'kyk616_00', 6
   sprite: s32'kyk616_01', 6
@@ -7180,7 +7180,7 @@ beginState: s32'NmlAtk5F'
   sprite: s32'kyk300_20', 6
   sprite: s32'kyk300_21', 6
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'kyk301_00', 4
   Unknown446: s32'Thunder_chohatu2', 100
@@ -7267,7 +7267,7 @@ beginState: s32'NmlAtk6F'
   sprite: s32'kyk305_17', 6
   sprite: s32'kyk305_18', 6
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'kyk306_00', 5
   Unknown446: s32'Thunder_keii2', 100
@@ -7547,7 +7547,7 @@ beginState: s32'NmlAtkAir5E'
   sprite: s32'kyk254_08', 3
   sprite: s32'kyk254_09', 2
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'landing'
   sprite: s32'kyk020_22', 3
   sprite: s32'kyk020_23', 3
@@ -7932,7 +7932,7 @@ beginState: s32'StunEdge2'
   sprite: s32'kyk401_14', 6
   sprite: s32'kyk401_15', 4
   sprite: s32'kyk401_16', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'super'
   sprite: s32'kyk402_00', 2
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 5, (STATIC), 0, (STATIC), 0, (STATIC), 0
@@ -7971,7 +7971,7 @@ beginState: s32'StunEdge2'
   sprite: s32'kyk401_14', 6
   sprite: s32'kyk401_15', 4
   sprite: s32'kyk401_16', 4
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'AirStunEdge1'
@@ -8216,7 +8216,7 @@ beginState: s32'StunDipper'
   sprite: s32'kyk400_13', 5
   sprite: s32'kyk400_14', 5
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'super'
   sprite: s32'kyk400_00', 2
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
@@ -8472,7 +8472,7 @@ beginState: s32'FadulArc'
   sprite: s32'kyk404_15', 6
   sprite: s32'kyk404_16', 6
   sprite: s32'kyk404_17', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'super'
   sprite: s32'kyk404_00', 2
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
@@ -8718,7 +8718,7 @@ beginState: s32'VaporThrustC'
   sprite: s32'kyk020_23', 4
   sprite: s32'kyk020_24', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'super'
   sprite: s32'kyk405_00', 2
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 7, (STATIC), 0, (STATIC), 0, (STATIC), 0
@@ -8968,7 +8968,7 @@ beginState: s32'VaporThrustD'
   sprite: s32'kyk020_23', 4
   sprite: s32'kyk020_24', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'super'
   sprite: s32'kyk406_00', 2
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 7, (STATIC), 0, (STATIC), 0, (STATIC), 0
@@ -9254,7 +9254,7 @@ beginState: s32'AirVaporThrustC'
   sprite: s32'kyk020_23', 4
   sprite: s32'kyk020_24', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'super'
   sprite: s32'kyk405_00', 2
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 7, (STATIC), 0, (STATIC), 0, (STATIC), 0
@@ -9513,7 +9513,7 @@ beginState: s32'AirVaporThrustD'
   sprite: s32'kyk020_23', 4
   sprite: s32'kyk020_24', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'super'
   sprite: s32'kyk406_00', 2
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 7, (STATIC), 0, (STATIC), 0, (STATIC), 0
@@ -9814,7 +9814,7 @@ beginState: s32'Diaekura'
   callSubroutine: s32'cmnNandemoCancel'
   sprite: s32'kyk407_15', 2
   sprite: s32'kyk407_16', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'super'
   sprite: s32'kyk407_00', 3
   Unknown446: s32'Taiden_charge', 100
@@ -10434,7 +10434,7 @@ beginState: s32'RideTheLightning'
   sprite: s32'kyk500_53', 3
   sprite: s32'kyk500_54', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'super'
   sprite: s32'kyk500_11', 2
   physicsXImpulse: 0, 40000
@@ -10957,7 +10957,7 @@ beginState: s32'AirRideTheLightning'
   sprite: s32'kyk501_56', 3
   sprite: s32'kyk501_57', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'super'
   sprite: s32'kyk501_11', 2
   hitAirPushbackY: 0, 10000

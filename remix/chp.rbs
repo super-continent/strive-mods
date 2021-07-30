@@ -1823,10 +1823,10 @@ beginState: s32'CmnActJumpPre'
   Unknown24: s32'FJumpPre', 2, 11
   Unknown24: s32'BJumpPre', 2, 10
   sprite: s32'chp020_00', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpPre'
   sprite: s32'chp021_00', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpPre'
   sprite: s32'chp022_00', 4
   endState: 
@@ -1963,7 +1963,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'chp020_21', 3
   sprite: s32'chp020_22', 3
   sprite: s32'chp020_23', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLanding'
   sprite: s32'chp021_19', 3
   sprite: s32'chp021_20', 3
@@ -1978,7 +1978,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'chp021_27', 3
   sprite: s32'chp021_28', 3
   sprite: s32'chp021_29', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLandingTurn'
   Unknown240: 
   sprite: s32'chp022_21', 3
@@ -1990,7 +1990,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'chp022_27', 3
   sprite: s32'chp022_28', 3
   sprite: s32'chp022_29', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLanding'
   sprite: s32'chp022_19', 3
   sprite: s32'chp022_20', 3
@@ -2005,7 +2005,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'chp022_27', 3
   sprite: s32'chp022_28', 3
   sprite: s32'chp022_29', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLandingTurn'
   Unknown240: 
   sprite: s32'chp021_21', 3
@@ -2088,7 +2088,7 @@ beginState: s32'CmnActLandingStiff'
   endLabel: 
   beginLabel: s32'_End'
   sprite: s32'keep', 1
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'CmnActFWalk'
@@ -3549,7 +3549,7 @@ beginState: s32'CmnActRomanCancel'
   sprite: s32'chp350_15', 2
   sprite: s32'chp350_16', 2
   sprite: s32'chp350_17', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'air'
   sprite: s32'chp351_01', 3
   sprite: s32'chp351_02', 3
@@ -3648,7 +3648,7 @@ beginState: s32'CmnActRoundWin'
   sprite: s32'chp615_33', 6
   endLabel: 
   gotoLabel: s32'loop'
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'chp616_00', 4
   sprite: s32'chp616_01', 4
@@ -3721,7 +3721,7 @@ beginState: s32'CmnActRoundWin'
   sprite: s32'chp616_61', 4
   endLabel: 
   gotoLabel: s32'loop1'
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'CmnActMatchWin'
@@ -5064,7 +5064,7 @@ beginState: s32'NmlAtk5F'
   sprite: s32'chp300_65', 3
   sprite: s32'chp300_66', 3
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'chp301_00', 4
   sprite: s32'chp301_01', 4
@@ -5180,7 +5180,7 @@ beginState: s32'NmlAtk6F'
   sprite: s32'chp305_21', 3
   sprite: s32'chp305_22', 2
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'chp306_00', 4
   sprite: s32'chp306_01', 4
@@ -5840,10 +5840,10 @@ beginState: s32'NmlAtkAirThrow'
     Unknown1042: s32'AirThrowExe'
     callSubroutine: s32'cmnthrow_air_range'
     callSubroutine: s32'cmnthrow_land_timer'
+    Unknown233: 
     endUpon: 
   sprite: s32'chp321_00', 1
   sprite: s32'chp321_00', 3
-  Unknown233: 
   Unknown612: s32'SE_BTL_CMN_Emotion_1'
   sprite: s32'chp321_01', 4
   Unknown1915: 
@@ -6052,7 +6052,7 @@ beginState: s32'AlphaBlade'
   Unknown2229: 100
   Unknown2230: 100
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'wall'
   sprite: s32'chp401_02', 1
   enableWhiffCancel: 0
@@ -7838,7 +7838,7 @@ beginState: s32'WallRun_jump'
   sprite: s32'keep', 1
   Unknown27: s32'_NEUTRAL'
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'fall'
   sprite: s32'chp422_00', 4
   Unknown176: 1
@@ -8049,7 +8049,7 @@ beginState: s32'ZanseiRouga'
   sprite: s32'chp500_16', 4
   sprite: s32'chp500_17', 4
   sprite: s32'chp500_18', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'final_pre'
   sprite: s32'chp500_05', 2
   Unknown2055: 1
@@ -8551,7 +8551,7 @@ beginState: s32'BankiMessai'
   sprite: s32'chp033_07', 4
   Unknown176: 1
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'Land'
   sprite: s32'chp200_00', 1
   if: (VARIABLE), 46
@@ -8682,7 +8682,7 @@ beginState: s32'BankiMessai'
   sprite: s32'chp233_14', 4
   Unknown1709: 1
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BankiHit'
   sprite: s32'chp233_06', 3
   Unknown446: s32'233atk1', 100

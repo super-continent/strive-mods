@@ -2231,11 +2231,11 @@ beginState: s32'CmnActJumpPre'
   Unknown24: s32'BJumpPre', 2, 10
   sprite: s32'zat020_00', 4
   Unknown446: s32'ShadowJump01', 100
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpPre'
   sprite: s32'zat021_00', 4
   Unknown446: s32'ShadowJump02', 100
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpPre'
   sprite: s32'zat022_00', 4
   Unknown446: s32'ShadowJump03', 100
@@ -2379,7 +2379,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'zat020_21', 2
   sprite: s32'zat020_22', 2
   sprite: s32'zat020_23', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLanding'
   sprite: s32'zat021_18', 3
   Unknown448: s32'zat_landing', 123
@@ -2396,7 +2396,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'zat021_26', 3
   sprite: s32'zat021_27', 3
   sprite: s32'zat021_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLandingTurn'
   Unknown240: 
   sprite: s32'zat022_21', 3
@@ -2408,7 +2408,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'zat022_26', 3
   sprite: s32'zat022_27', 3
   sprite: s32'zat022_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLanding'
   sprite: s32'zat022_18', 3
   Unknown448: s32'zat_landing', 123
@@ -2425,7 +2425,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'zat022_26', 3
   sprite: s32'zat022_27', 3
   sprite: s32'zat022_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLandingTurn'
   Unknown240: 
   sprite: s32'zat021_21', 3
@@ -2511,7 +2511,7 @@ beginState: s32'CmnActLandingStiff'
   endLabel: 
   beginLabel: s32'_End'
   sprite: s32'keep', 1
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'CmnActFWalk'
@@ -4184,7 +4184,7 @@ beginState: s32'CmnActRomanCancel'
   sprite: s32'zat350_15', 2
   sprite: s32'zat350_16', 2
   sprite: s32'zat350_17', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'air'
   sprite: s32'zat351_01', 3
   Unknown1702: s32'Edy_Body', 1
@@ -4283,7 +4283,7 @@ beginState: s32'CmnActRoundWin'
   sprite: s32'zat615_23', 2147483647
   Unknown613: s16'vxxx404demo'
   Unknown1922: 1
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   Unknown13: s32'end', 11, 2, 14, 0, 300000
   sprite: s32'zat401_00', 2
@@ -6266,7 +6266,7 @@ beginState: s32'NmlAtk5F'
   sprite: s32'zat401_13', 2
   sprite: s32'zat401_14', 1
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'zat301_00', 4
   Unknown446: s32'301Floor_shadowloop', 100
@@ -6371,7 +6371,7 @@ beginState: s32'NmlAtk6F'
   sprite: s32'zat305_38', 4
   sprite: s32'zat305_39', 4
   sprite: s32'zat305_40', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'zat401_00', 2
   Unknown2189: 0, 5
@@ -6922,10 +6922,10 @@ beginState: s32'NmlAtkAirThrow'
     Unknown1702: s32'Edy_Head', 1
     Unknown1702: s32'body', 0
     Unknown1702: s32'Head_Low', 0
+    Unknown233: 
     endUpon: 
   sprite: s32'zat321_00', 1
   sprite: s32'zat321_00', 3
-  Unknown233: 
   Unknown612: s32'SE_BTL_CMN_Emotion_1'
   sprite: s32'zat321_01', 3
   Unknown1915: 

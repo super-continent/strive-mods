@@ -1395,10 +1395,10 @@ beginState: s32'CmnActJumpPre'
   Unknown24: s32'FJumpPre', 2, 11
   Unknown24: s32'BJumpPre', 2, 10
   sprite: s32'pot020_00', 5
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpPre'
   sprite: s32'pot021_00', 5
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpPre'
   sprite: s32'pot022_00', 5
   endState: 
@@ -1537,7 +1537,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'pot020_21', 2
   sprite: s32'pot020_22', 2
   sprite: s32'pot020_23', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLanding'
   Unknown615: s32'SE_BTL_POT_09'
   sprite: s32'pot021_19', 3
@@ -1553,7 +1553,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'pot021_27', 3
   sprite: s32'pot021_28', 3
   sprite: s32'pot021_29', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLandingTurn'
   Unknown240: 
   sprite: s32'pot022_22', 3
@@ -1564,7 +1564,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'pot022_27', 3
   sprite: s32'pot022_28', 3
   sprite: s32'pot022_29', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLanding'
   Unknown615: s32'SE_BTL_POT_09'
   sprite: s32'pot022_19', 3
@@ -1580,7 +1580,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'pot022_27', 3
   sprite: s32'pot022_28', 3
   sprite: s32'pot022_29', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLandingTurn'
   Unknown240: 
   sprite: s32'pot021_22', 3
@@ -1663,7 +1663,7 @@ beginState: s32'CmnActLandingStiff'
   endLabel: 
   beginLabel: s32'_End'
   sprite: s32'keep', 1
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'CmnActFWalk'
@@ -3100,7 +3100,7 @@ beginState: s32'CmnActRomanCancel'
   sprite: s32'pot350_15', 2
   sprite: s32'pot350_16', 2
   sprite: s32'pot350_17', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'air'
   sprite: s32'pot351_01', 3
   sprite: s32'pot351_02', 3
@@ -3188,7 +3188,7 @@ beginState: s32'CmnActRoundWin'
   sprite: s32'pot615_18', 2147483647
   Unknown1708: 
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'pot616_00', 4
   Unknown613: s16'vxxx404demo'
@@ -3214,7 +3214,7 @@ beginState: s32'CmnActRoundWin'
   sprite: s32'pot616_17', 2147483647
   Unknown1708: 
   endLabel: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'CmnActMatchWin'
@@ -4388,7 +4388,7 @@ beginState: s32'NmlAtk5F'
   sprite: s32'pot300_66', 4
   sprite: s32'pot300_67', 3
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'pot301_00', 5
   sprite: s32'pot301_01', 5
@@ -4494,7 +4494,7 @@ beginState: s32'NmlAtk6F'
   sprite: s32'pot305_15', 4
   sprite: s32'pot305_16', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'pot306_00', 5
   sprite: s32'pot306_01', 5
@@ -5317,7 +5317,7 @@ beginState: s32'FDB'
   sprite: s32'pot407_11', 4
   sprite: s32'pot407_12', 3
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'kaeshi'
   sprite: s32'pot407_09', 3
   Unknown2193: 100, 300000, 450000
@@ -5578,7 +5578,7 @@ beginState: s32'HeatKnucle'
   sprite: s32'pot400_08', 3
   sprite: s32'pot400_09', 2
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'hit'
   sprite: s32'pot401_00', 5
   Unknown1915: 
@@ -5923,7 +5923,7 @@ beginState: s32'MegaFistBack'
   sprite: s32'pot402_11', 2
   sprite: s32'pot402_12', 4
   callSubroutine: s32'cmnNandemoCancel'
-  Unknown18: 
+  exitState: 
   beginLabel: s32'landing2'
   sprite: s32'pot402_09', 4
   recoveryState: 
@@ -6578,7 +6578,7 @@ beginState: s32'WSB_Slave_Slide'
   sprite: s32'keep', 1
   Unknown27: s32'_NEUTRAL'
   endLabel: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'WSB_Master_Up'
@@ -6728,7 +6728,7 @@ beginState: s32'WSB_Slave_Up'
   sprite: s32'keep', 1
   Unknown27: s32'_NEUTRAL'
   endLabel: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'WSB_Master_Down'
@@ -6875,7 +6875,7 @@ beginState: s32'WSB_Slave_Down'
   sprite: s32'keep', 1
   Unknown27: s32'_NEUTRAL'
   endLabel: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'WSB_Master_Bound'

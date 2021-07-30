@@ -1491,10 +1491,10 @@ beginState: s32'CmnActJumpPre'
   Unknown24: s32'FJumpPre', 2, 11
   Unknown24: s32'BJumpPre', 2, 10
   sprite: s32'sol020_00', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpPre'
   sprite: s32'sol021_00', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpPre'
   sprite: s32'sol022_00', 4
   endState: 
@@ -1626,7 +1626,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'sol020_18', 1
   sprite: s32'sol020_19', 2
   sprite: s32'sol020_20', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLanding'
   sprite: s32'sol021_18', 3
   sprite: s32'sol021_19', 3
@@ -1641,7 +1641,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'sol021_26', 3
   sprite: s32'sol021_27', 3
   sprite: s32'sol021_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLandingTurn'
   Unknown240: 
   sprite: s32'sol022_21', 3
@@ -1652,7 +1652,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'sol022_26', 3
   sprite: s32'sol022_27', 3
   sprite: s32'sol022_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLanding'
   sprite: s32'sol022_18', 3
   sprite: s32'sol022_19', 3
@@ -1667,7 +1667,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'sol022_26', 3
   sprite: s32'sol022_27', 3
   sprite: s32'sol022_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLandingTurn'
   Unknown240: 
   sprite: s32'sol021_21', 3
@@ -1743,7 +1743,7 @@ beginState: s32'CmnActLandingStiff'
   endLabel: 
   beginLabel: s32'_End'
   sprite: s32'keep', 1
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'CmnActFWalk'
@@ -3198,7 +3198,7 @@ beginState: s32'CmnActRomanCancel'
   sprite: s32'sol350_15', 2
   sprite: s32'sol350_16', 2
   sprite: s32'sol350_17', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'air'
   sprite: s32'sol351_01', 3
   sprite: s32'sol351_02', 3
@@ -3281,7 +3281,7 @@ beginState: s32'CmnActRoundWin'
   sprite: s32'sol615_15', 6
   sprite: s32'sol615_16', 6
   sprite: s32'sol615_17', 2147483647
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'sol616_00', 5
   upon: 47
@@ -3370,7 +3370,7 @@ beginState: s32'CmnActRoundWin'
   sprite: s32'sol616_57', 6
   sprite: s32'sol616_58', 2147483647
   Unknown1708: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'CmnActMatchWin'
@@ -4589,7 +4589,7 @@ beginState: s32'NmlAtk5F'
   sprite: s32'sol300_12', 4
   sprite: s32'sol300_13', 4
   sprite: s32'sol300_14', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'sol301_00', 6
   sprite: s32'sol301_01', 6
@@ -4648,7 +4648,7 @@ beginState: s32'NmlAtk6F'
   sprite: s32'sol305_12', 4
   sprite: s32'sol305_13', 4
   sprite: s32'sol305_14', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'sol306_00', 6
   sprite: s32'sol306_01', 6
@@ -5936,7 +5936,7 @@ beginState: s32'BanditRevolver_Land'
   sprite: s32'sol021_27', 3
   sprite: s32'sol021_28', 3
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'2nd'
   sprite: s32'sol402_10', 2
   Unknown2189: 0, 4
@@ -6080,7 +6080,7 @@ beginState: s32'BanditRevolver_Air'
   sprite: s32'sol021_27', 3
   sprite: s32'sol021_28', 3
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'2nd'
   sprite: s32'sol403_06', 2
   Unknown2189: 0, 4
@@ -6524,7 +6524,7 @@ beginState: s32'BukkiraExe'
   sprite: s32'sol000_00', 1
   Unknown239: 
   Unknown23: 1
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'Vortex'

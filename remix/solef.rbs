@@ -409,7 +409,7 @@ beginState: s32'RomanCancel_Mirage'
   sprite: s32'sol350_16', 2
   sprite: s32'sol350_17', 2
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'air'
   sprite: s32'sol351_01', 6
   sprite: s32'sol351_02', 3

@@ -1420,10 +1420,10 @@ beginState: s32'CmnActJumpPre'
   Unknown24: s32'FJumpPre', 2, 11
   Unknown24: s32'BJumpPre', 2, 10
   sprite: s32'mll020_00', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpPre'
   sprite: s32'mll021_00', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpPre'
   sprite: s32'mll022_00', 4
   endState: 
@@ -1558,7 +1558,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'mll020_21', 2
   sprite: s32'mll020_22', 2
   sprite: s32'mll020_23', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLanding'
   sprite: s32'mll021_18', 3
   sprite: s32'mll021_19', 3
@@ -1573,7 +1573,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'mll021_26', 3
   sprite: s32'mll021_27', 3
   sprite: s32'mll021_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLandingTurn'
   Unknown240: 
   sprite: s32'mll022_21', 3
@@ -1584,7 +1584,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'mll022_26', 3
   sprite: s32'mll022_27', 3
   sprite: s32'mll022_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLanding'
   sprite: s32'mll022_18', 3
   sprite: s32'mll022_19', 3
@@ -1599,7 +1599,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'mll022_26', 3
   sprite: s32'mll022_27', 3
   sprite: s32'mll022_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLandingTurn'
   Unknown240: 
   sprite: s32'mll021_21', 3
@@ -1681,7 +1681,7 @@ beginState: s32'CmnActLandingStiff'
   endLabel: 
   beginLabel: s32'_End'
   sprite: s32'keep', 1
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'CmnActFWalk'
@@ -3140,7 +3140,7 @@ beginState: s32'CmnActRomanCancel'
   sprite: s32'mll350_15', 2
   sprite: s32'mll350_16', 2
   sprite: s32'mll350_17', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'air'
   sprite: s32'mll351_01', 3
   sprite: s32'mll351_02', 3
@@ -3269,7 +3269,7 @@ beginState: s32'CmnActRoundWin'
   sprite: s32'mll615_50', 2147483647
   Unknown1922: 1
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'mll616_00', 4
   Unknown2189: 2, 5
@@ -4641,7 +4641,7 @@ beginState: s32'NmlAtk5F'
   sprite: s32'mll300_18', 4
   sprite: s32'mll300_19', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'mll301_00', 6
   Unknown1702: s32'book_tea', 1
@@ -4873,7 +4873,7 @@ beginState: s32'NmlAtk6F'
   Unknown2177: 0, 100
   sprite: s32'mll305_63', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'mll306_00', 5
   sprite: s32'mll306_01', 5

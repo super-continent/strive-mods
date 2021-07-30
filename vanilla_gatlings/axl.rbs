@@ -1371,10 +1371,10 @@ beginState: s32'CmnActJumpPre'
   Unknown24: s32'FJumpPre', 2, 11
   Unknown24: s32'BJumpPre', 2, 10
   sprite: s32'axl020_00', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpPre'
   sprite: s32'axl021_00', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpPre'
   sprite: s32'axl022_00', 4
   endState: 
@@ -1507,7 +1507,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'axl020_19', 3
   Unknown615: s32'SE_BTL_AXL_09'
   sprite: s32'axl020_20', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLanding'
   sprite: s32'axl021_18', 3
   sprite: s32'axl021_19', 3
@@ -1523,7 +1523,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'axl021_26', 3
   sprite: s32'axl021_27', 3
   sprite: s32'axl021_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLandingTurn'
   Unknown240: 
   sprite: s32'axl022_21', 3
@@ -1534,7 +1534,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'axl022_26', 3
   sprite: s32'axl022_27', 3
   sprite: s32'axl022_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLanding'
   sprite: s32'axl022_18', 3
   sprite: s32'axl022_19', 3
@@ -1550,7 +1550,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'axl022_26', 3
   sprite: s32'axl022_27', 3
   sprite: s32'axl022_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLandingTurn'
   Unknown240: 
   sprite: s32'axl021_21', 3
@@ -1626,7 +1626,7 @@ beginState: s32'CmnActLandingStiff'
   endLabel: 
   beginLabel: s32'_End'
   sprite: s32'keep', 1
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'CmnActFWalk'
@@ -3088,7 +3088,7 @@ beginState: s32'CmnActRomanCancel'
   sprite: s32'axl350_15', 2
   sprite: s32'axl350_16', 2
   sprite: s32'axl350_17', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'air'
   sprite: s32'axl351_01', 3
   sprite: s32'axl351_02', 3
@@ -3168,7 +3168,7 @@ beginState: s32'CmnActRoundWin'
   Unknown613: s16'vxxx404demo'
   Unknown1922: 1
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'axl616_00', 5
   sprite: s32'axl616_01', 5
@@ -4527,7 +4527,7 @@ beginState: s32'NmlAtk5F'
   sprite: s32'axl300_18', 7
   sprite: s32'axl300_19', 7
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'axl301_00', 8
   sprite: s32'axl301_01', 8
@@ -4606,7 +4606,7 @@ beginState: s32'NmlAtk6F'
   sprite: s32'axl305_26', 4
   sprite: s32'axl305_27', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'axl306_00', 6
   sprite: s32'axl306_01', 6
@@ -5045,7 +5045,7 @@ beginState: s32'ThrowExe'
   sprite: s32'axl310_17', 4
   sprite: s32'axl310_18', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'back'
   sprite: s32'axl310_02', 4
   Unknown546: 124, 100, 1
@@ -6742,7 +6742,7 @@ beginState: s32'OneVision_Add'
   setStrikeInvulnerable: 0
   setThrowInvulnerable: 0
   sprite: s32'axl502_08', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'landHit'
   sprite: s32'axl502_04', 4
   recoveryState: 
@@ -6750,7 +6750,7 @@ beginState: s32'OneVision_Add'
   sprite: s32'axl502_06', 6
   sprite: s32'axl502_07', 6
   sprite: s32'axl502_08', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'air'
   sprite: s32'axl502_09', 3
   Unknown176: 1
@@ -6836,7 +6836,7 @@ beginState: s32'OneVision_Add'
   setStrikeInvulnerable: 0
   setThrowInvulnerable: 0
   sprite: s32'axl502_12', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'AirHit'
   sprite: s32'axl502_04', 4
   recoveryState: 

@@ -1619,10 +1619,10 @@ beginState: s32'CmnActJumpPre'
   Unknown24: s32'FJumpPre', 2, 11
   Unknown24: s32'BJumpPre', 2, 10
   sprite: s32'ram020_00', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpPre'
   sprite: s32'ram021_00', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpPre'
   sprite: s32'ram022_00', 4
   endState: 
@@ -1760,7 +1760,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'ram020_21', 2
   sprite: s32'ram020_22', 2
   sprite: s32'ram020_23', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLanding'
   sprite: s32'ram021_18', 3
   sprite: s32'ram021_19', 3
@@ -1775,7 +1775,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'ram021_26', 3
   sprite: s32'ram021_27', 3
   sprite: s32'ram021_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLandingTurn'
   Unknown240: 
   sprite: s32'ram022_21', 3
@@ -1786,7 +1786,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'ram022_26', 3
   sprite: s32'ram022_27', 3
   sprite: s32'ram022_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLanding'
   sprite: s32'ram022_18', 3
   sprite: s32'ram022_19', 3
@@ -1801,7 +1801,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'ram022_26', 3
   sprite: s32'ram022_27', 3
   sprite: s32'ram022_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLandingTurn'
   Unknown240: 
   sprite: s32'ram021_21', 3
@@ -1883,7 +1883,7 @@ beginState: s32'CmnActLandingStiff'
   endLabel: 
   beginLabel: s32'_End'
   sprite: s32'keep', 1
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'CmnActFWalk'
@@ -3434,7 +3434,7 @@ beginState: s32'CmnActRomanCancel'
   sprite: s32'ram350_15', 2
   sprite: s32'ram350_16', 2
   sprite: s32'ram350_17', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'air'
   sprite: s32'ram351_01', 3
   sprite: s32'ram351_02', 3
@@ -3649,7 +3649,7 @@ beginState: s32'CmnActRoundWin'
   Unknown613: s16'vxxx403demo'
   Unknown1922: 1
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   upon: (FRAME_STEP)
     if: (VARIABLE), 3
@@ -5452,7 +5452,7 @@ beginState: s32'NmlAtk5F'
   sprite: s32'ram300_101', 3
   sprite: s32'ram300_102', 3
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'ram301_00', 4
   sprite: s32'ram301_01', 4
@@ -5613,7 +5613,7 @@ beginState: s32'NmlAtk6F'
   sprite: s32'ram305_51', 4
   sprite: s32'ram305_52', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'ram306_00', 1
   sprite: s32'ram306_00', 3
@@ -7671,7 +7671,7 @@ beginState: s32'AgresaOrdono'
   sprite: s32'ram406_18', 4
   sprite: s32'ram406_19', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'landing'
   sprite: s32'ram020_18', 2
   sprite: s32'ram020_19', 2

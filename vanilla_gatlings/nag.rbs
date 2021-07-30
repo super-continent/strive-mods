@@ -2085,25 +2085,25 @@ beginState: s32'CmnActJumpPre'
   Unknown24: s32'BJumpPre', 2, 10
   sprite: s32'nag020_00', 3
   sprite: s32'nag020_01', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpPre'
   sprite: s32'nag021_00', 5
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpPre'
   sprite: s32'nag022_00', 5
-  Unknown18: 
+  exitState: 
   beginLabel: s32'VHighJumpPre'
   sprite: s32'nag020_00', 2
   sprite: s32'nag020_01', 1
   sprite: s32'nag020_02', 1
   sprite: s32'nag020_03', 1
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FHighJumpPre'
   sprite: s32'nag021_00', 2
   sprite: s32'nag021_01', 1
   sprite: s32'nag021_02', 1
   sprite: s32'nag021_03', 1
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BHighJumpPre'
   sprite: s32'nag022_00', 2
   sprite: s32'nag022_01', 1
@@ -2269,7 +2269,7 @@ beginState: s32'CmnActJumpLanding'
   Unknown2305: 27, -50, 0
   sprite: s32'nag020_26', 2
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLanding'
   sprite: s32'nag021_21', 3
   Unknown2305: 25, 0, 0
@@ -2290,7 +2290,7 @@ beginState: s32'CmnActJumpLanding'
   Unknown2305: 26, -210, 0
   sprite: s32'nag021_31', 3
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLandingTurn'
   Unknown240: 
   sprite: s32'nag022_25', 3
@@ -2300,7 +2300,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'nag022_29', 3
   sprite: s32'nag022_30', 3
   sprite: s32'nag022_31', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLanding'
   sprite: s32'nag022_21', 3
   Unknown2305: 25, 1, 0
@@ -2323,7 +2323,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'nag022_30', 3
   sprite: s32'nag022_31', 3
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLandingTurn'
   Unknown240: 
   sprite: s32'nag021_24', 3
@@ -2411,7 +2411,7 @@ beginState: s32'CmnActLandingStiff'
   endLabel: 
   beginLabel: s32'_End'
   sprite: s32'keep', 1
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'CmnActFWalk'
@@ -4289,7 +4289,7 @@ beginState: s32'CmnActRomanCancel'
   Unknown1722: '0x00000000000000000000000000000000000000000000000020BF0200'
   Unknown1721: '0x0000000000000000000000000000000030F8FFFF0000000000000000'
   sprite: s32'nag350_17', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'air'
   sprite: s32'nag351_01', 3
   Unknown2305: 25, 1, 0
@@ -4426,7 +4426,7 @@ beginState: s32'CmnActRoundWin'
   sprite: s32'nag615_57', 6
   sprite: s32'nag615_58', 2147483647
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'nag616_00', 4
   Unknown2305: 25, 3, 0
@@ -6616,7 +6616,7 @@ beginState: s32'NmlAtk5F'
   sprite: s32'nag300_22', 4
   sprite: s32'nag300_23', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'nag301_00', 4
   Unknown1702: s32'onigiri', 1
@@ -6730,7 +6730,7 @@ beginState: s32'NmlAtk5F'
   sprite: s32'nag301_64', 3
   sprite: s32'nag301_65', 3
   endLabel: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'NmlAtk6F'
@@ -6805,7 +6805,7 @@ beginState: s32'NmlAtk6F'
   sprite: s32'nag305_43', 5
   Unknown1721: '0x00000000000000000000000000000000000000000000000000000000'
   Unknown1722: '0x00000000000000000000000000000000000000000000000050C30000'
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'nag306_00', 4
   Unknown1702: s32'haikuset', 1
@@ -7790,7 +7790,7 @@ beginState: s32'Shizuriyuki'
   sprite: s32'nag404_12', 4
   sprite: s32'nag404_13', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'2nd'
   sprite: s32'nag404_07', 3
   extendPushboxX: 0
@@ -8579,7 +8579,7 @@ beginState: s32'Wasureyuki'
   sprite: s32'nag500_66', 5
   sprite: s32'nag500_67', 5
   sprite: s32'nag500_68', 4
-  Unknown18: 
+  exitState: 
   beginLabel: s32'hit'
   sprite: s32'nag500_02', 4
   extendPushboxX: 0
@@ -9166,7 +9166,7 @@ beginState: s32'Wasureyuki'
   sprite: s32'nag500_60', 4
   sprite: s32'nag500_61', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'suka'
   sprite: s32'nag500_69', 4
   Unknown1803: s32'Cam_Wasureyuki', 23
@@ -9672,7 +9672,7 @@ beginState: s32'WSB_Slave_Down'
   sprite: s32'keep', 1
   Unknown27: s32'_NEUTRAL'
   endLabel: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'WSB_Master_Bound'

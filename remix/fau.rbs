@@ -1923,7 +1923,7 @@ beginState: s32'CmnActCrouch2Stand'
   sprite: s32'fau010_69', 3
   sprite: s32'fau010_70', 3
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'stand06'
   sprite: s32'fau010_06', 3
   endLabel: 
@@ -1952,11 +1952,11 @@ beginState: s32'CmnActJumpPre'
   Unknown24: s32'BJumpPre', 2, 10
   sprite: s32'fau020_00', 4
   Unknown446: s32'Standsmoke_end', 100
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpPre'
   sprite: s32'fau021_00', 4
   Unknown446: s32'Standsmoke_end', 100
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpPre'
   sprite: s32'fau022_00', 4
   Unknown446: s32'Standsmoke_end', 100
@@ -2095,7 +2095,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'fau020_21', 2
   sprite: s32'fau020_22', 2
   sprite: s32'fau020_23', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLanding'
   sprite: s32'fau021_18', 3
   sprite: s32'fau021_19', 3
@@ -2110,7 +2110,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'fau021_26', 3
   sprite: s32'fau021_27', 3
   sprite: s32'fau021_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'FJumpLandingTurn'
   Unknown240: 
   sprite: s32'fau022_21', 3
@@ -2121,7 +2121,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'fau022_26', 3
   sprite: s32'fau022_27', 3
   sprite: s32'fau022_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLanding'
   sprite: s32'fau022_18', 3
   sprite: s32'fau022_19', 3
@@ -2136,7 +2136,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'fau022_26', 3
   sprite: s32'fau022_27', 3
   sprite: s32'fau022_28', 3
-  Unknown18: 
+  exitState: 
   beginLabel: s32'BJumpLandingTurn'
   Unknown240: 
   sprite: s32'fau021_21', 3
@@ -2218,7 +2218,7 @@ beginState: s32'CmnActLandingStiff'
   endLabel: 
   beginLabel: s32'_End'
   sprite: s32'keep', 1
-  Unknown18: 
+  exitState: 
   endState: 
 
 beginState: s32'CmnActFWalk'
@@ -3811,7 +3811,7 @@ beginState: s32'CmnActRomanCancel'
   sprite: s32'fau350_15', 2
   sprite: s32'fau350_16', 2
   sprite: s32'fau350_17', 2
-  Unknown18: 
+  exitState: 
   beginLabel: s32'air'
   sprite: s32'fau351_01', 3
   sprite: s32'fau351_02', 3
@@ -3903,7 +3903,7 @@ beginState: s32'CmnActRoundWin'
   sprite: s32'fau615_25', 4
   sprite: s32'fau615_26', 2147483647
   Unknown1708: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'fau616_00', 2
   Unknown1702: s32'Medicine', 1
@@ -5615,7 +5615,7 @@ beginState: s32'NmlAtk5F'
   sprite: s32'fau300_26', 4
   sprite: s32'fau300_27', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'fau301_00', 4
   sprite: s32'fau301_01', 4
@@ -5781,7 +5781,7 @@ beginState: s32'NmlAtk6F'
   sprite: s32'fau305_47', 4
   sprite: s32'fau305_48', 4
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'TypeB'
   sprite: s32'fau306_00', 4
   Unknown1702: s32'flower_evil', 1
@@ -6488,10 +6488,10 @@ beginState: s32'NmlAtkAirThrow'
     Unknown1042: s32'AirThrowExe'
     callSubroutine: s32'cmnthrow_air_range'
     callSubroutine: s32'cmnthrow_land_timer'
+    Unknown233: 
     endUpon: 
   sprite: s32'fau321_00', 1
   sprite: s32'fau321_00', 3
-  Unknown233: 
   Unknown612: s32'SE_BTL_CMN_Emotion_1'
   sprite: s32'fau321_01', 4
   Unknown1915: 
@@ -7500,7 +7500,7 @@ beginState: s32'Kuebiko'
   sprite: s32'fau409_24', 3
   sprite: s32'fau409_25', 3
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'attack_d'
   sprite: s32'null', 25
   sprite: s32'fau411_00', 3
@@ -7596,7 +7596,7 @@ beginState: s32'Kuebiko'
   callSubroutine: s32'cmnNandemoCancelC'
   sprite: s32'fau411_18', 3
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'attack_hold'
   Unknown13: s32'attack_d_hold', 9, 2, 45, 0, 3
   sprite: s32'fau409_00', 5
@@ -7760,7 +7760,7 @@ beginState: s32'Kuebiko'
   sprite: s32'fau409_24', 3
   sprite: s32'fau409_25', 3
   endLabel: 
-  Unknown18: 
+  exitState: 
   beginLabel: s32'attack_d_hold'
   sprite: s32'null', 30
   Unknown2595: s32'KuebikoChold'
