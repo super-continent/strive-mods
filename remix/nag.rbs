@@ -51,7 +51,7 @@ beginState: s32'EventFall'
     Unknown99: 0, 500000
     physicsXImpulse: 0, 20000
     Unknown135: 
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown268: 1
       Unknown14: s32'landing'
       endUpon: 
@@ -243,7 +243,7 @@ beginState: s32'Event300'
   sprite: s32'nag300_20', 600
   upon: (FRAME_STEP)
     ifNot: (VARIABLE), 95
-      Unknown23: 3
+      clearRegisteredUponCode: (FRAME_STEP)
       Unknown14: s32'TypeA_Next'
       endIf: 
     endUpon: 
@@ -294,7 +294,7 @@ beginState: s32'Event305'
   sprite: s32'nag305_28', 600
   upon: (FRAME_STEP)
     ifNot: (VARIABLE), 95
-      Unknown23: 3
+      clearRegisteredUponCode: (FRAME_STEP)
       Unknown14: s32'TypeA_Next'
       endIf: 
     endUpon: 
@@ -841,6 +841,7 @@ startSubroutine: s32'RoundInit'
     addMoveFlag: 15
     Unknown1538: 75
     Unknown1540: 300
+    disableCancelsIntoMove: 1
     endMove: 
   addMove: s32'berserkEnd'
     moveType: (SPECIAL)
@@ -1746,7 +1747,7 @@ beginState: s32'CmnActStand'
   sprite: s32'nag000_29', 5
   endLabel: 
   Unknown24: s32'loop', 2, 6
-  Unknown13: s32'loop', 22, 0, 80, 0, 100
+  gotoIfOperation: s32'loop', 22, (STATIC), 80, (STATIC), 100
   Unknown25: s32'loop', 2, 86
   storeValue: (VARIABLE), 87, (STATIC), 600
   sprite: s32'nag001_00', 3
@@ -1850,13 +1851,13 @@ beginState: s32'CmnActStand'
   endLabel: 
   gotoLabel: s32'loop'
   beginLabel: s32'LandingStiff'
-  Unknown13: s32'LandingStiff_Front', 9, 2, 312, 0, 1
-  Unknown13: s32'LandingStiff_Back', 9, 2, 312, 0, 2
-  Unknown13: s32'LandingStiff_Vert5', 9, 2, 387, 0, 5
-  Unknown13: s32'LandingStiff_Vert4', 9, 2, 387, 0, 4
-  Unknown13: s32'LandingStiff_Vert3', 9, 2, 387, 0, 3
-  Unknown13: s32'LandingStiff_Vert2', 9, 2, 387, 0, 2
-  Unknown13: s32'LandingStiff_Vert1', 9, 2, 387, 0, 1
+  gotoIfOperation: s32'LandingStiff_Front', (IS_EQUAL), (VARIABLE), 312, (STATIC), 1
+  gotoIfOperation: s32'LandingStiff_Back', (IS_EQUAL), (VARIABLE), 312, (STATIC), 2
+  gotoIfOperation: s32'LandingStiff_Vert5', (IS_EQUAL), (VARIABLE), 387, (STATIC), 5
+  gotoIfOperation: s32'LandingStiff_Vert4', (IS_EQUAL), (VARIABLE), 387, (STATIC), 4
+  gotoIfOperation: s32'LandingStiff_Vert3', (IS_EQUAL), (VARIABLE), 387, (STATIC), 3
+  gotoIfOperation: s32'LandingStiff_Vert2', (IS_EQUAL), (VARIABLE), 387, (STATIC), 2
+  gotoIfOperation: s32'LandingStiff_Vert1', (IS_EQUAL), (VARIABLE), 387, (STATIC), 1
   sprite: s32'nag020_22', 3
   beginLabel: s32'LandingStiff_Vert1'
   sprite: s32'nag020_23', 3
@@ -1869,16 +1870,16 @@ beginState: s32'CmnActStand'
   beginLabel: s32'LandingStiff_Vert5'
   gotoLabel: s32'loop'
   beginLabel: s32'LandingStiff_Front'
-  Unknown13: s32'LandingStiff_Front10', 9, 2, 387, 0, 10
-  Unknown13: s32'LandingStiff_Front9', 9, 2, 387, 0, 9
-  Unknown13: s32'LandingStiff_Front8', 9, 2, 387, 0, 8
-  Unknown13: s32'LandingStiff_Front7', 9, 2, 387, 0, 7
-  Unknown13: s32'LandingStiff_Front6', 9, 2, 387, 0, 6
-  Unknown13: s32'LandingStiff_Front5', 9, 2, 387, 0, 5
-  Unknown13: s32'LandingStiff_Front4', 9, 2, 387, 0, 4
-  Unknown13: s32'LandingStiff_Front3', 9, 2, 387, 0, 3
-  Unknown13: s32'LandingStiff_Front2', 9, 2, 387, 0, 2
-  Unknown13: s32'LandingStiff_Front1', 9, 2, 387, 0, 1
+  gotoIfOperation: s32'LandingStiff_Front10', (IS_EQUAL), (VARIABLE), 387, (STATIC), 10
+  gotoIfOperation: s32'LandingStiff_Front9', (IS_EQUAL), (VARIABLE), 387, (STATIC), 9
+  gotoIfOperation: s32'LandingStiff_Front8', (IS_EQUAL), (VARIABLE), 387, (STATIC), 8
+  gotoIfOperation: s32'LandingStiff_Front7', (IS_EQUAL), (VARIABLE), 387, (STATIC), 7
+  gotoIfOperation: s32'LandingStiff_Front6', (IS_EQUAL), (VARIABLE), 387, (STATIC), 6
+  gotoIfOperation: s32'LandingStiff_Front5', (IS_EQUAL), (VARIABLE), 387, (STATIC), 5
+  gotoIfOperation: s32'LandingStiff_Front4', (IS_EQUAL), (VARIABLE), 387, (STATIC), 4
+  gotoIfOperation: s32'LandingStiff_Front3', (IS_EQUAL), (VARIABLE), 387, (STATIC), 3
+  gotoIfOperation: s32'LandingStiff_Front2', (IS_EQUAL), (VARIABLE), 387, (STATIC), 2
+  gotoIfOperation: s32'LandingStiff_Front1', (IS_EQUAL), (VARIABLE), 387, (STATIC), 1
   sprite: s32'nag021_22', 3
   beginLabel: s32'LandingStiff_Front1'
   sprite: s32'nag021_23', 3
@@ -1901,16 +1902,16 @@ beginState: s32'CmnActStand'
   beginLabel: s32'LandingStiff_Front10'
   gotoLabel: s32'loop'
   beginLabel: s32'LandingStiff_Back'
-  Unknown13: s32'LandingStiff_Back10', 9, 2, 387, 0, 10
-  Unknown13: s32'LandingStiff_Back9', 9, 2, 387, 0, 9
-  Unknown13: s32'LandingStiff_Back8', 9, 2, 387, 0, 8
-  Unknown13: s32'LandingStiff_Back7', 9, 2, 387, 0, 7
-  Unknown13: s32'LandingStiff_Back6', 9, 2, 387, 0, 6
-  Unknown13: s32'LandingStiff_Back5', 9, 2, 387, 0, 5
-  Unknown13: s32'LandingStiff_Back4', 9, 2, 387, 0, 4
-  Unknown13: s32'LandingStiff_Back3', 9, 2, 387, 0, 3
-  Unknown13: s32'LandingStiff_Back2', 9, 2, 387, 0, 2
-  Unknown13: s32'LandingStiff_Back1', 9, 2, 387, 0, 1
+  gotoIfOperation: s32'LandingStiff_Back10', (IS_EQUAL), (VARIABLE), 387, (STATIC), 10
+  gotoIfOperation: s32'LandingStiff_Back9', (IS_EQUAL), (VARIABLE), 387, (STATIC), 9
+  gotoIfOperation: s32'LandingStiff_Back8', (IS_EQUAL), (VARIABLE), 387, (STATIC), 8
+  gotoIfOperation: s32'LandingStiff_Back7', (IS_EQUAL), (VARIABLE), 387, (STATIC), 7
+  gotoIfOperation: s32'LandingStiff_Back6', (IS_EQUAL), (VARIABLE), 387, (STATIC), 6
+  gotoIfOperation: s32'LandingStiff_Back5', (IS_EQUAL), (VARIABLE), 387, (STATIC), 5
+  gotoIfOperation: s32'LandingStiff_Back4', (IS_EQUAL), (VARIABLE), 387, (STATIC), 4
+  gotoIfOperation: s32'LandingStiff_Back3', (IS_EQUAL), (VARIABLE), 387, (STATIC), 3
+  gotoIfOperation: s32'LandingStiff_Back2', (IS_EQUAL), (VARIABLE), 387, (STATIC), 2
+  gotoIfOperation: s32'LandingStiff_Back1', (IS_EQUAL), (VARIABLE), 387, (STATIC), 1
   sprite: s32'nag022_22', 3
   beginLabel: s32'LandingStiff_Back1'
   sprite: s32'nag022_23', 3
@@ -2007,7 +2008,7 @@ beginState: s32'CmnActCrouch'
   sprite: s32'nag010_46', 5
   endLabel: 
   Unknown24: s32'loop', 2, 6
-  Unknown13: s32'loop', 22, 0, 80, 0, 100
+  gotoIfOperation: s32'loop', 22, (STATIC), 80, (STATIC), 100
   Unknown25: s32'loop', 2, 86
   storeValue: (VARIABLE), 87, (STATIC), 600
   sprite: s32'nag011_00', 5
@@ -2070,25 +2071,25 @@ beginState: s32'CmnActJumpPre'
     callSubroutine: s32'cmnJumpPre'
     storeValue: (VARIABLE), 53, (STATIC), 0
     storeValue: (VARIABLE), 203, (STATIC), 0
-    Unknown2362: s32'CmnVHighJump'
+    checkCurrentStateEntryName: s32'CmnVHighJump'
     if: (VARIABLE), 0
       storeValue: (VARIABLE), 203, (STATIC), 1
       storeValue: (VARIABLE), 53, (STATIC), 1
       endIf: 
-    Unknown2362: s32'CmnFHighJump'
+    checkCurrentStateEntryName: s32'CmnFHighJump'
     if: (VARIABLE), 0
       storeValue: (VARIABLE), 203, (STATIC), 2
       storeValue: (VARIABLE), 53, (STATIC), 1
       endIf: 
-    Unknown2362: s32'CmnBHighJump'
+    checkCurrentStateEntryName: s32'CmnBHighJump'
     if: (VARIABLE), 0
       storeValue: (VARIABLE), 203, (STATIC), 3
       storeValue: (VARIABLE), 53, (STATIC), 1
       endIf: 
     endUpon: 
-  Unknown13: s32'VHighJumpPre', 9, 2, 203, 0, 1
-  Unknown13: s32'FHighJumpPre', 9, 2, 203, 0, 2
-  Unknown13: s32'BHighJumpPre', 9, 2, 203, 0, 3
+  gotoIfOperation: s32'VHighJumpPre', (IS_EQUAL), (VARIABLE), 203, (STATIC), 1
+  gotoIfOperation: s32'FHighJumpPre', (IS_EQUAL), (VARIABLE), 203, (STATIC), 2
+  gotoIfOperation: s32'BHighJumpPre', (IS_EQUAL), (VARIABLE), 203, (STATIC), 3
   Unknown2305: 25, 0, 0
   Unknown2305: 26, -200, 0
   Unknown2305: 27, 0, 0
@@ -2262,8 +2263,8 @@ beginState: s32'CmnActJumpLanding'
       callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 1, (STATIC), 0, (STATIC), 0
       endIf: 
     endUpon: 
-  Unknown13: s32'FJumpLanding', 9, 2, 312, 0, 1
-  Unknown13: s32'BJumpLanding', 9, 2, 312, 0, 2
+  gotoIfOperation: s32'FJumpLanding', (IS_EQUAL), (VARIABLE), 312, (STATIC), 1
+  gotoIfOperation: s32'BJumpLanding', (IS_EQUAL), (VARIABLE), 312, (STATIC), 2
   Unknown2305: 25, 1, 0
   Unknown2305: 26, -100, 0
   Unknown2305: 27, -210, 0
@@ -2289,7 +2290,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'nag021_22', 3
   sprite: s32'nag021_23', 3
   endLabel: 
-  Unknown13: s32'FJumpLandingTurn', 13, 2, 104, 0, 0
+  gotoIfOperation: s32'FJumpLandingTurn', (IS_LESSER_OR_EQUAL), (VARIABLE), 104, (STATIC), 0
   sprite: s32'nag021_24', 3
   Unknown2305: 26, -230, 0
   sprite: s32'nag021_25', 3
@@ -2324,7 +2325,7 @@ beginState: s32'CmnActJumpLanding'
   Unknown2305: 27, -230, 0
   Unknown1722: '0x00000000000000000000000000000000000000000000000000000000'
   endLabel: 
-  Unknown13: s32'FJumpLandingTurn', 13, 2, 104, 0, 0
+  gotoIfOperation: s32'FJumpLandingTurn', (IS_LESSER_OR_EQUAL), (VARIABLE), 104, (STATIC), 0
   sprite: s32'nag022_24', 3
   sprite: s32'nag022_25', 3
   sprite: s32'nag022_26', 3
@@ -2494,7 +2495,7 @@ beginState: s32'CmnActBDash'
   sprite: s32'nag034_00', 2
   strikeInvulnerableForTime: 16
   Unknown2169: 0
-  upon: 2
+  upon: (TOUCH_GROUND)
     Unknown14: s32'landing'
     endUpon: 
   upon: (FRAME_STEP)
@@ -2502,7 +2503,7 @@ beginState: s32'CmnActBDash'
       Unknown207: 150
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 10
-      Unknown23: 3
+      clearRegisteredUponCode: (FRAME_STEP)
       Unknown207: 50
       endIf: 
     endUpon: 
@@ -2556,8 +2557,8 @@ beginState: s32'CmnActAirBDash'
 
 beginState: s32'CmnActNokezoriHighLv1'
   callSubroutine: s32'cmnDamageCellDiffLand'
-  Unknown13: s32'diff', 9, 2, 313, 0, 1
-  Unknown13: s32'diff', 9, 2, 313, 0, 3
+  gotoIfOperation: s32'diff', (IS_EQUAL), (VARIABLE), 313, (STATIC), 1
+  gotoIfOperation: s32'diff', (IS_EQUAL), (VARIABLE), 313, (STATIC), 3
   Unknown2305: 25, 0, 0
   Unknown2305: 26, 100, 0
   Unknown2305: 27, 0, 0
@@ -2580,9 +2581,9 @@ beginState: s32'CmnActNokezoriHighLv1'
 
 beginState: s32'CmnActNokezoriHighLv2'
   callSubroutine: s32'cmnDamageCellDiffLand'
-  Unknown13: s32'diff1', 9, 2, 313, 0, 1
-  Unknown13: s32'diff2', 9, 2, 313, 0, 2
-  Unknown13: s32'diff3', 9, 2, 313, 0, 3
+  gotoIfOperation: s32'diff1', (IS_EQUAL), (VARIABLE), 313, (STATIC), 1
+  gotoIfOperation: s32'diff2', (IS_EQUAL), (VARIABLE), 313, (STATIC), 2
+  gotoIfOperation: s32'diff3', (IS_EQUAL), (VARIABLE), 313, (STATIC), 3
   Unknown2305: 25, 0, 0
   Unknown2305: 26, 100, 0
   Unknown2305: 27, 0, 0
@@ -2620,9 +2621,9 @@ beginState: s32'CmnActNokezoriHighLv2'
 
 beginState: s32'CmnActNokezoriHighLv3'
   callSubroutine: s32'cmnDamageCellDiffLand'
-  Unknown13: s32'diff1', 9, 2, 313, 0, 1
-  Unknown13: s32'diff2', 9, 2, 313, 0, 2
-  Unknown13: s32'diff3', 9, 2, 313, 0, 3
+  gotoIfOperation: s32'diff1', (IS_EQUAL), (VARIABLE), 313, (STATIC), 1
+  gotoIfOperation: s32'diff2', (IS_EQUAL), (VARIABLE), 313, (STATIC), 2
+  gotoIfOperation: s32'diff3', (IS_EQUAL), (VARIABLE), 313, (STATIC), 3
   Unknown2305: 25, 0, 0
   Unknown2305: 26, 100, 0
   Unknown2305: 27, 0, 0
@@ -2662,9 +2663,9 @@ beginState: s32'CmnActNokezoriHighLv3'
 
 beginState: s32'CmnActNokezoriHighLv4'
   callSubroutine: s32'cmnDamageCellDiffLand'
-  Unknown13: s32'diff1', 9, 2, 313, 0, 1
-  Unknown13: s32'diff2', 9, 2, 313, 0, 2
-  Unknown13: s32'diff3', 9, 2, 313, 0, 3
+  gotoIfOperation: s32'diff1', (IS_EQUAL), (VARIABLE), 313, (STATIC), 1
+  gotoIfOperation: s32'diff2', (IS_EQUAL), (VARIABLE), 313, (STATIC), 2
+  gotoIfOperation: s32'diff3', (IS_EQUAL), (VARIABLE), 313, (STATIC), 3
   Unknown2305: 25, 0, 0
   Unknown2305: 26, 100, 0
   Unknown2305: 27, 0, 0
@@ -2707,8 +2708,8 @@ beginState: s32'CmnActNokezoriHighLv4'
 
 beginState: s32'CmnActNokezoriHighLv5'
   callSubroutine: s32'cmnDamageCellDiffLand'
-  Unknown13: s32'diff', 9, 2, 313, 0, 1
-  Unknown13: s32'diff', 9, 2, 313, 0, 3
+  gotoIfOperation: s32'diff', (IS_EQUAL), (VARIABLE), 313, (STATIC), 1
+  gotoIfOperation: s32'diff', (IS_EQUAL), (VARIABLE), 313, (STATIC), 3
   Unknown2305: 25, 0, 0
   Unknown2305: 26, 100, 0
   Unknown2305: 27, 0, 0
@@ -3282,10 +3283,10 @@ beginState: s32'CmnActFloatDamage'
   endState: 
 
 beginState: s32'CmnActBlowoff'
-  Unknown13: s32'1', 9, 2, 351, 0, 1
-  Unknown13: s32'2', 9, 2, 351, 0, 2
-  Unknown13: s32'3', 9, 2, 351, 0, 3
-  Unknown13: s32'4', 9, 2, 351, 0, 4
+  gotoIfOperation: s32'1', (IS_EQUAL), (VARIABLE), 351, (STATIC), 1
+  gotoIfOperation: s32'2', (IS_EQUAL), (VARIABLE), 351, (STATIC), 2
+  gotoIfOperation: s32'3', (IS_EQUAL), (VARIABLE), 351, (STATIC), 3
+  gotoIfOperation: s32'4', (IS_EQUAL), (VARIABLE), 351, (STATIC), 4
   sprite: s32'nag075_00', 3
   Unknown2305: 25, 1, 0
   Unknown2305: 26, -70, 0
@@ -3449,7 +3450,7 @@ beginState: s32'CmnActKirimomiUpper'
   sprite: s32'nag074_06', 5
   sprite: s32'nag074_07', 5
   endLabel: 
-  Unknown23: 3
+  clearRegisteredUponCode: (FRAME_STEP)
   Unknown2033: 22, s32'HomingJump'
   Unknown25: s32'loop', 2, 0
   sprite: s32'nag068_04', 3
@@ -4376,9 +4377,9 @@ beginState: s32'CmnActRoundWin'
     callSubroutine: s32'cmnactroundwin'
     endUpon: 
   sprite: s32'keep', 2
-  Unknown13: s32'TypeA', 9, 2, 153, 0, 1
-  Unknown13: s32'TypeB', 9, 2, 153, 0, 2
-  Unknown13: s32'TypeB', 22, 0, 50, 0, 100
+  gotoIfOperation: s32'TypeA', (IS_EQUAL), (VARIABLE), 153, (STATIC), 1
+  gotoIfOperation: s32'TypeB', (IS_EQUAL), (VARIABLE), 153, (STATIC), 2
+  gotoIfOperation: s32'TypeB', 22, (STATIC), 50, (STATIC), 100
   beginLabel: s32'TypeA'
   sprite: s32'nag615_00', 6
   Unknown2189: 2, 5
@@ -4841,8 +4842,10 @@ beginState: s32'NmlAtk5A'
     addWhiffCancelOption: s32'NmlAtk6D'
     addWhiffCancelOption: s32'NmlAtk2D'
     addWhiffCancelOption: s32'NmlAtk2E'
+    addWhiffCancelOption: s32'Berserk_Hukyou'
+    addGatlingOption: s32'Berserk_Hukyou'
     upon: 8
-      Unknown23: 8
+      clearRegisteredUponCode: 8
       callSubroutine: s32'cmn_lightAttack_flex'
       endUpon: 
     Unknown2305: 25, 0, 0
@@ -4913,6 +4916,7 @@ beginState: s32'NmlAtk6A'
       endUpon: 
     addGatlingOption: s32'NmlAtk6B'
     addGatlingOption: s32'NmlAtk6D'
+    addGatlingOption: s32'Berserk_Hukyou'
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -300000
     storeValue: (VARIABLE), 344, (STATIC), 0
@@ -4998,8 +5002,10 @@ beginState: s32'NmlAtk2A'
     addWhiffCancelOption: s32'NmlAtk6D'
     addWhiffCancelOption: s32'NmlAtk2D'
     addWhiffCancelOption: s32'NmlAtk2E'
+    addWhiffCancelOption: s32'Berserk_Hukyou'
+    addGatlingOption: s32'Berserk_Hukyou'
     upon: 8
-      Unknown23: 8
+      clearRegisteredUponCode: 8
       callSubroutine: s32'cmn_lightAttack_flex'
       endUpon: 
     Unknown2305: 25, 0, 0
@@ -5061,6 +5067,7 @@ beginState: s32'NmlAtk5B'
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
+    addGatlingOption: s32'Berserk_Hukyou'
     Unknown2305: 25, 0, 0
     Unknown2305: 26, 130, 0
     Unknown2305: 27, 0, 0
@@ -5127,6 +5134,7 @@ beginState: s32'NmlAtk6B'
     groundBounceCount: 1
     groundCounterHitEffect: 15
     staggerDuration: 11
+    addGatlingOption: s32'Berserk_Hukyou'
     upon: (HIT_OR_GUARD)
       extendPushboxX: 50000
       endUpon: 
@@ -5208,6 +5216,7 @@ beginState: s32'NmlAtk2B'
     addGatlingOption: s32'NmlAtk6D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
+    addGatlingOption: s32'Berserk_Hukyou'
     upon: (HIT_OR_GUARD)
       extendPushboxX: 50000
       endUpon: 
@@ -5267,6 +5276,7 @@ beginState: s32'NmlAtk5CNear'
     addGatlingOption: s32'NmlAtk6A'
     addGatlingOption: s32'NmlAtk6B'
     addGatlingOption: s32'NmlAtk6D'
+    addGatlingOption: s32'Berserk_Hukyou'
     enableJumpCancel: 1
     Unknown1148: s32'SE_BTL_CMN_Impact_Katana_M'
     Unknown1211: s32'SE_BTL_CMN_Impact_Katana_M'
@@ -5346,6 +5356,7 @@ beginState: s32'NmlAtk5CFar'
     addGatlingOption: s32'NmlAtk2C'
     addGatlingOption: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'Berserk_Hukyou'
     callSubroutine: s32'BloodEater_Low'
     Unknown1148: s32'SE_BTL_CMN_Impact_Katana_M'
     Unknown1211: s32'SE_BTL_CMN_Impact_Katana_M'
@@ -5559,7 +5570,7 @@ beginState: s32'NmlAtk5C_hasei2'
     Unknown1148: s32'SE_BTL_CMN_Impact_Katana_L'
     Unknown1211: s32'SE_BTL_CMN_Impact_Katana_L'
     upon: 62
-      Unknown23: 62
+      clearRegisteredUponCode: 62
       upon: 39
         ifNot: (VARIABLE), 319
           Unknown2500: 9, 22, 2, 81, 0, 1
@@ -5571,7 +5582,7 @@ beginState: s32'NmlAtk5C_hasei2'
             endIf: 
           endIf: 
         else: 
-          Unknown23: 39
+          clearRegisteredUponCode: 39
           endElse: 
         endUpon: 
       endUpon: 
@@ -5652,7 +5663,7 @@ beginState: s32'NmlAtk5C_hasei2'
   sprite: s32'nag276_14', 3
   recoveryState: 
   extendPushboxX: 0
-  Unknown23: 39
+  clearRegisteredUponCode: 39
   Unknown1721: '0x01000000000000000000000000000000000000000000000000000000'
   sprite: s32'nag276_15', 3
   sprite: s32'nag276_16', 4
@@ -5706,6 +5717,7 @@ beginState: s32'NmlAtk2C'
     Unknown783: 0, 100, 0, 10, 0, 35
     addGatlingOption: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'Berserk_Hukyou'
     callSubroutine: s32'BloodEater_Low'
     Unknown1702: s32'Toge', 0
     Unknown1148: s32'SE_BTL_CMN_Impact_Katana_M'
@@ -6365,7 +6377,7 @@ beginState: s32'HomingJump'
     storeValue: (VARIABLE), 49, (STATIC), -180000
     storeValue: (VARIABLE), 50, (STATIC), 150000
     storeValue: (VARIABLE), 51, (STATIC), 100000
-    upon: 13
+    upon: (TIMER)
       upon: (FRAME_STEP)
         modifyVar: (ADD), (VARIABLE), 45, (STATIC), 50
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 1000
@@ -6525,6 +6537,7 @@ beginState: s32'NmlAtk2E'
     airHitEffect: 10
     hitAirPushbackX: 0, 5000
     hitAirPushbackY: 0, 20000
+    addGatlingOption: s32'Berserk_Hukyou'
     upon: 62
       hitSoftKnockdown: 0
       endUpon: 
@@ -6587,7 +6600,7 @@ beginState: s32'NmlAtk5F'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmnChouhatsuKeii'
     endUpon: 
-  Unknown13: s32'TypeB', 22, 0, 50, 0, 100
+  gotoIfOperation: s32'TypeB', 22, (STATIC), 50, (STATIC), 100
   beginLabel: s32'TypeA'
   sprite: s32'nag300_00', 3
   Unknown2305: 25, 1, 0
@@ -6623,7 +6636,7 @@ beginState: s32'NmlAtk5F'
   sprite: s32'nag300_20', 600
   upon: (FRAME_STEP)
     ifNot: (VARIABLE), 95
-      Unknown23: 3
+      clearRegisteredUponCode: (FRAME_STEP)
       Unknown14: s32'TypeA_Next'
       endIf: 
     endUpon: 
@@ -6697,7 +6710,7 @@ beginState: s32'NmlAtk5F'
   endLabel: 
   Unknown25: s32'TypeB_Next', 2, 95
   modifyVar: (ADD), (VARIABLE), 46, (STATIC), 1
-  Unknown13: s32'TypeB_Loop', 13, 2, 46, 0, 5
+  gotoIfOperation: s32'TypeB_Loop', (IS_LESSER_OR_EQUAL), (VARIABLE), 46, (STATIC), 5
   gotoLabel: s32'TypeB_Start'
   beginLabel: s32'TypeB_Next'
   sprite: s32'nag301_30', 3
@@ -6754,7 +6767,7 @@ beginState: s32'NmlAtk6F'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmnChouhatsuKeii'
     endUpon: 
-  Unknown13: s32'TypeB', 22, 0, 50, 0, 100
+  gotoIfOperation: s32'TypeB', 22, (STATIC), 50, (STATIC), 100
   beginLabel: s32'TypeA'
   sprite: s32'nag305_00', 4
   Unknown2305: 25, 1, 0
@@ -6796,7 +6809,7 @@ beginState: s32'NmlAtk6F'
   sprite: s32'nag305_28', 600
   upon: (FRAME_STEP)
     ifNot: (VARIABLE), 95
-      Unknown23: 3
+      clearRegisteredUponCode: (FRAME_STEP)
       Unknown14: s32'TypeA_Next'
       endIf: 
     endUpon: 
@@ -6873,7 +6886,7 @@ beginState: s32'NmlAtk6F'
   sprite: s32'nag306_34', 600
   upon: (FRAME_STEP)
     ifNot: (VARIABLE), 95
-      Unknown23: 3
+      clearRegisteredUponCode: (FRAME_STEP)
       Unknown14: s32'TypeB_Next'
       endIf: 
     endUpon: 
@@ -6911,12 +6924,12 @@ beginState: s32'NmlAtkAir5A'
     addWhiffCancelOption: s32'NmlAtkAir5B'
     addWhiffCancelOption: s32'NmlAtkAir5D'
     upon: 8
-      Unknown23: 8
+      clearRegisteredUponCode: 8
       callSubroutine: s32'cmn_lightAttack_flex'
       endUpon: 
     ifNot: (VARIABLE), 317
-      storeValue: (VARIABLE), 346, (STATIC), 21500
-      storeValue: (VARIABLE), 347, (STATIC), 10000
+      storeValue: (VARIABLE), 346, (STATIC), 15000
+      storeValue: (VARIABLE), 347, (STATIC), 15000
       endIf: 
     else: 
       endElse: 
@@ -6962,8 +6975,8 @@ beginState: s32'NmlAtkAir5B'
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
     ifNot: (VARIABLE), 317
-      storeValue: (VARIABLE), 346, (STATIC), 10000
-      storeValue: (VARIABLE), 347, (STATIC), 25000
+      storeValue: (VARIABLE), 346, (STATIC), 8000
+      storeValue: (VARIABLE), 347, (STATIC), 30000
       endIf: 
     else: 
       endElse: 
@@ -7672,7 +7685,7 @@ beginState: s32'Kamuriyuki'
     addGatlingOption: s32'Hukyou_B'
     Unknown1702: s32'Toge', 0
     Unknown2169: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       endUpon: 
     upon: (HIT_OR_GUARD)
@@ -7787,7 +7800,7 @@ beginState: s32'Shizuriyuki'
   sprite: s32'nag404_04', 3
   hit: 
   upon: (HIT_OR_GUARD)
-    Unknown23: 9
+    clearRegisteredUponCode: (HIT_OR_GUARD)
     storeValue: (VARIABLE), 45, (STATIC), 1
     endUpon: 
   Unknown446: s32'nag_404_Slash01', 100
@@ -7796,7 +7809,7 @@ beginState: s32'Shizuriyuki'
   beginLabel: s32'miss'
   sprite: s32'nag404_05', 4
   recoveryState: 
-  Unknown23: 9
+  clearRegisteredUponCode: (HIT_OR_GUARD)
   extendPushboxX: 0
   sprite: s32'nag404_06', 5
   sprite: s32'nag404_07', 6
@@ -7981,7 +7994,7 @@ beginState: s32'Hukyou'
         addWhiffCancelOption: s32'Hukyou_Bhasei'
         endIf: 
       else: 
-        Unknown23: 12
+        clearRegisteredUponCode: 12
         Unknown1657: s32'Hukyou_hasei'
         Unknown1657: s32'Hukyou_Bhasei'
         endElse: 
@@ -7995,7 +8008,7 @@ beginState: s32'Hukyou'
           endIf: 
         endIf: 
       endUpon: 
-    Unknown2362: s32'Hukyou_hasei'
+    checkCurrentStateEntryName: s32'Hukyou_hasei'
     if: (VARIABLE), 0
       Unknown2595: s32'Hukyou_hasei'
       endIf: 
@@ -8042,7 +8055,7 @@ beginState: s32'Hukyou_B'
         addWhiffCancelOption: s32'Hukyou_Bhasei'
         endIf: 
       else: 
-        Unknown23: 12
+        clearRegisteredUponCode: 12
         Unknown1657: s32'Hukyou_hasei'
         Unknown1657: s32'Hukyou_Bhasei'
         endElse: 
@@ -8056,7 +8069,7 @@ beginState: s32'Hukyou_B'
           endIf: 
         endIf: 
       endUpon: 
-    Unknown2362: s32'Hukyou_Bhasei'
+    checkCurrentStateEntryName: s32'Hukyou_Bhasei'
     if: (VARIABLE), 0
       Unknown2595: s32'Hukyou_Bhasei'
       endIf: 
@@ -8100,8 +8113,8 @@ beginState: s32'berserk'
     Unknown32: s32'BloodEater_BUObj'
     upon: 99
       Unknown27: s32'WSB_Master_Wait'
-      Unknown23: 99
-      Unknown23: 50
+      clearRegisteredUponCode: 99
+      clearRegisteredUponCode: 50
       endUpon: 
     endUpon: 
   sprite: s32'nag400_00', 3
@@ -8112,7 +8125,7 @@ beginState: s32'berserk'
     Unknown271: 1, 119, 37, 38
     upon: 50
       Unknown615: s32'SE_BTL_NAG_14'
-      Unknown23: 50
+      clearRegisteredUponCode: 50
       Unknown294: 1
       Unknown2189: 2, 5
       Unknown446: s32'Cam_Berserk', 100
@@ -8186,14 +8199,14 @@ beginState: s32'berserkEnd'
     if: (VARIABLE), 263
       Unknown271: 1, 119, 58, 59
       upon: 50
-        Unknown23: 50
+        clearRegisteredUponCode: 50
         Unknown294: 1
         endUpon: 
       endIf: 
     upon: 99
       Unknown27: s32'WSB_Master_Wait'
-      Unknown23: 99
-      Unknown23: 50
+      clearRegisteredUponCode: 99
+      clearRegisteredUponCode: 50
       endUpon: 
     endUpon: 
   sprite: s32'nag401_00', 5
@@ -8259,8 +8272,8 @@ beginState: s32'Zansetu'
     Unknown1702: s32'Mask_low', 1
     upon: 99
       Unknown27: s32'WSB_Master_Wait'
-      Unknown23: 99
-      Unknown23: 50
+      clearRegisteredUponCode: 99
+      clearRegisteredUponCode: 50
       endUpon: 
     upon: (HIT_OR_GUARD)
       callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 3, (STATIC), 0, (STATIC), 0
@@ -8282,7 +8295,7 @@ beginState: s32'Zansetu'
   sprite: s32'nag501_03', 3
   Unknown271: 1, 119, 57, 58
   upon: 50
-    Unknown23: 50
+    clearRegisteredUponCode: 50
     callSubroutine: s32'cmnWorldStop_Start'
     callSubroutine: s32'cmnWorldStop_Tension'
     Unknown2189: 2, 5
@@ -8328,8 +8341,8 @@ beginState: s32'Zansetu'
   Unknown615: s32'SE_BTL_NAG_KAKUSEI_06'
   upon: 99
     Unknown27: s32'WSB_Master_Wait'
-    Unknown23: 99
-    Unknown23: 50
+    clearRegisteredUponCode: 99
+    clearRegisteredUponCode: 50
     upon: (BEFORE_EXIT)
       storeValue: (VARIABLE), 4, (STATIC), 0
       storeValue: (VARIABLE), 6, (STATIC), 0
@@ -8450,7 +8463,7 @@ beginState: s32'Wasureyuki'
     Unknown2526: 0, 0, 0, 0, 0, 0
     Unknown2591: 0, 0, 0, 0, 0, 0
     upon: 99
-      Unknown23: 99
+      clearRegisteredUponCode: 99
       Unknown2560: 0
       Unknown1972: 0
       Unknown428: 0, 10
@@ -8465,23 +8478,23 @@ beginState: s32'Wasureyuki'
         endUpon: 
       endUpon: 
     upon: 90
-      Unknown23: 90
+      clearRegisteredUponCode: 90
       Unknown1974: 1
       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 14, (STATIC), 500000
         ifNot: (VARIABLE), 368
           upon: 95
             Unknown2499: 22, 2, 77
-              Unknown23: 42
+              clearRegisteredUponCode: 42
               endIf: 
             else: 
-              Unknown23: 95
+              clearRegisteredUponCode: 95
               Unknown14: s32'hit'
               endElse: 
             endUpon: 
           upon: 42
             modifyVar: (ADD), (VARIABLE), 51, (STATIC), 1
             ifOperation: (IS_GREATER), (VARIABLE), 51, (STATIC), 2
-              Unknown23: 42
+              clearRegisteredUponCode: 42
               Unknown2189: 2, 5
               Unknown446: s32'Cam_Wasureyuki', 100
               Unknown1803: s32'nag_500_Slash01', 23
@@ -8495,7 +8508,7 @@ beginState: s32'Wasureyuki'
       extendPushboxX: 150000
       Unknown2121: s32'Cam_Finish_Wasureyuki'
       endUpon: 
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       endUpon: 
     Unknown1702: s32'Toge', 0
@@ -8508,7 +8521,7 @@ beginState: s32'Wasureyuki'
   sprite: s32'nag203_00', 172
   Unknown271: 1, 119, 172, 173
   upon: 50
-    Unknown23: 50
+    clearRegisteredUponCode: 50
     callSubroutine: s32'cmnWorldStop_Start'
     callSubroutine: s32'cmnCameraSettings'
     Unknown612: s32'SE_BTL_SYS_Skill'
@@ -8600,7 +8613,7 @@ beginState: s32'Wasureyuki'
   beginLabel: s32'hit'
   sprite: s32'nag500_02', 4
   extendPushboxX: 0
-  Unknown23: 9
+  clearRegisteredUponCode: (HIT_OR_GUARD)
   sprite: s32'nag500_03', 4
   sprite: s32'nag500_04', 3
   sprite: s32'nag500_05', 3
@@ -9060,7 +9073,7 @@ beginState: s32'Wasureyuki'
   sprite: s32'nag500_38', 6
   Unknown1702: s32'Toge', 0
   Unknown1915: 
-  Unknown23: 10
+  clearRegisteredUponCode: (HIT)
   sprite: s32'nag500_39', 2
   Unknown446: s32'nag_500_Finish', 100
   Unknown612: s32'SE_BTL_CMN_Swing_Grap_Heavy_L'
@@ -9131,14 +9144,14 @@ beginState: s32'Wasureyuki'
   Unknown1032: 60
   Unknown1151: 1
   upon: 95
-    Unknown23: 95
+    clearRegisteredUponCode: 95
     Unknown2499: 22, 2, 77
       Unknown2096: 5
       endIf: 
     Unknown446: s32'Cam_Wasureyuki_Last', 100
     endUpon: 
   upon: (HIT)
-    Unknown23: 1
+    clearRegisteredUponCode: (BEFORE_EXIT)
     storeValue: (VARIABLE), 54, (STATIC), 1
     upon: (BEFORE_EXIT)
       storeValue: (VARIABLE), 54, (STATIC), 0
@@ -9190,8 +9203,8 @@ beginState: s32'Wasureyuki'
   Unknown2230: 100
   Unknown116: 25
   Unknown135: 
-  Unknown23: 2
-  upon: 2
+  clearRegisteredUponCode: (TOUCH_GROUND)
+  upon: (TOUCH_GROUND)
     Unknown14: s32'sukalanding'
     endUpon: 
   sprite: s32'nag500_70', 4
@@ -9991,7 +10004,7 @@ beginState: s32'WorldSideBreak_Master_DF'
   sprite: s32'nag021_22', 3
   sprite: s32'nag021_23', 3
   endLabel: 
-  Unknown13: s32'FJumpLandingTurn', 13, 2, 104, 0, 0
+  gotoIfOperation: s32'FJumpLandingTurn', (IS_LESSER_OR_EQUAL), (VARIABLE), 104, (STATIC), 0
   sprite: s32'nag021_24', 3
   Unknown2305: 26, -230, 0
   sprite: s32'nag021_25', 3
@@ -10053,28 +10066,28 @@ beginState: s32'WorldSideBreak_Slave_DF'
 beginState: s32'DUMMY'
   sprite: s32'e0ea04_01', 2
   endState: 
-  
+
 beginState: s32'Berserk_Hukyou'
   upon: (IMMEDIATE)
     recoveryState: 
     Unknown1974: 1
     Unknown1058: 1
-    endUpon:
+    endUpon: 
   sprite: s32'nag010_01', 2
   callSubroutine: s32'cmn_dash'
   callSubroutine: s32'cmn_dashstart'
   callSubroutine: s32'cmn_land'
   Unknown612: s32'SE_BTL_CMN_Dash_Start'
-  Unknown139: 35000 
+  Unknown139: 30000
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 5, (STATIC), 0, (STATIC), 0, (STATIC), 0
   setCarriedMomentumPercentage: 150
   sprite: s32'nag010_02', 2
   Unknown613: s16'vxxx203'
-  sprite: s32'nag010_03', 2
-  sprite: s32'nag010_04', 2
-  sprite: s32'nag010_05', 4
-  sprite: s32'nag010_06', 5
-  sprite: s32'nag010_45', 5
+  sprite: s32'nag010_03', 3
+  sprite: s32'nag010_04', 3
+  sprite: s32'nag010_05', 3
+  sprite: s32'nag010_06', 3
+  sprite: s32'nag010_45', 3
   sprite: s32'nag010_46', 3
   callSubroutine: s32'cmnNandemoCancel'
   callSubroutine: s32'cmn_dashbrake'

@@ -71,7 +71,7 @@ beginState: s32'EventFall'
     Unknown99: 0, 500000
     physicsXImpulse: 0, 20000
     Unknown135: 
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown268: 1
       Unknown14: s32'landing'
       endUpon: 
@@ -231,7 +231,7 @@ beginState: s32'Event300'
   upon: (FRAME_STEP)
     ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 1
       ifNot: (VARIABLE), 95
-        Unknown23: 3
+        clearRegisteredUponCode: (FRAME_STEP)
         Unknown14: s32'TypeA_Next'
         endIf: 
       endIf: 
@@ -292,7 +292,7 @@ beginState: s32'Event301'
   upon: (FRAME_STEP)
     ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (STATIC), 1
       ifNot: (VARIABLE), 95
-        Unknown23: 3
+        clearRegisteredUponCode: (FRAME_STEP)
         Unknown14: s32'TypeB_Next'
         endIf: 
       endIf: 
@@ -443,7 +443,7 @@ beginState: s32'Event305'
   sprite: s32'gio305_25', 2147483647
   upon: (FRAME_STEP)
     ifNot: (VARIABLE), 95
-      Unknown23: 3
+      clearRegisteredUponCode: (FRAME_STEP)
       Unknown14: s32'TypeA_Next'
       Unknown1803: s32'Gio305_phone', 23
       endIf: 
@@ -529,7 +529,7 @@ beginState: s32'Event306_2'
   sprite: s32'gio306_20', 600
   upon: (FRAME_STEP)
     ifNot: (VARIABLE), 95
-      Unknown23: 3
+      clearRegisteredUponCode: (FRAME_STEP)
       Unknown14: s32'TypeB_Next'
       endIf: 
     endUpon: 
@@ -1540,7 +1540,7 @@ beginState: s32'CmnActStand'
   sprite: s32'gio000_21', 5
   sprite: s32'gio000_22', 5
   endLabel: 
-  Unknown13: s32'loop', 22, 0, 80, 0, 100
+  gotoIfOperation: s32'loop', 22, (STATIC), 80, (STATIC), 100
   Unknown25: s32'loop', 2, 86
   storeValue: (VARIABLE), 87, (STATIC), 960
   sprite: s32'gio001_00', 3
@@ -1626,13 +1626,13 @@ beginState: s32'CmnActStand'
   endLabel: 
   gotoLabel: s32'loop'
   beginLabel: s32'LandingStiff'
-  Unknown13: s32'LandingStiff_Front', 9, 2, 312, 0, 1
-  Unknown13: s32'LandingStiff_Back', 9, 2, 312, 0, 2
-  Unknown13: s32'LandingStiff_Vert5', 9, 2, 387, 0, 5
-  Unknown13: s32'LandingStiff_Vert4', 9, 2, 387, 0, 4
-  Unknown13: s32'LandingStiff_Vert3', 9, 2, 387, 0, 3
-  Unknown13: s32'LandingStiff_Vert2', 9, 2, 387, 0, 2
-  Unknown13: s32'LandingStiff_Vert1', 9, 2, 387, 0, 1
+  gotoIfOperation: s32'LandingStiff_Front', (IS_EQUAL), (VARIABLE), 312, (STATIC), 1
+  gotoIfOperation: s32'LandingStiff_Back', (IS_EQUAL), (VARIABLE), 312, (STATIC), 2
+  gotoIfOperation: s32'LandingStiff_Vert5', (IS_EQUAL), (VARIABLE), 387, (STATIC), 5
+  gotoIfOperation: s32'LandingStiff_Vert4', (IS_EQUAL), (VARIABLE), 387, (STATIC), 4
+  gotoIfOperation: s32'LandingStiff_Vert3', (IS_EQUAL), (VARIABLE), 387, (STATIC), 3
+  gotoIfOperation: s32'LandingStiff_Vert2', (IS_EQUAL), (VARIABLE), 387, (STATIC), 2
+  gotoIfOperation: s32'LandingStiff_Vert1', (IS_EQUAL), (VARIABLE), 387, (STATIC), 1
   sprite: s32'gio020_19', 3
   beginLabel: s32'LandingStiff_Vert1'
   sprite: s32'gio020_20', 3
@@ -1645,16 +1645,16 @@ beginState: s32'CmnActStand'
   beginLabel: s32'LandingStiff_Vert5'
   gotoLabel: s32'loop'
   beginLabel: s32'LandingStiff_Front'
-  Unknown13: s32'LandingStiff_Front10', 9, 2, 387, 0, 10
-  Unknown13: s32'LandingStiff_Front9', 9, 2, 387, 0, 9
-  Unknown13: s32'LandingStiff_Front8', 9, 2, 387, 0, 8
-  Unknown13: s32'LandingStiff_Front7', 9, 2, 387, 0, 7
-  Unknown13: s32'LandingStiff_Front6', 9, 2, 387, 0, 6
-  Unknown13: s32'LandingStiff_Front5', 9, 2, 387, 0, 5
-  Unknown13: s32'LandingStiff_Front4', 9, 2, 387, 0, 4
-  Unknown13: s32'LandingStiff_Front3', 9, 2, 387, 0, 3
-  Unknown13: s32'LandingStiff_Front2', 9, 2, 387, 0, 2
-  Unknown13: s32'LandingStiff_Front1', 9, 2, 387, 0, 1
+  gotoIfOperation: s32'LandingStiff_Front10', (IS_EQUAL), (VARIABLE), 387, (STATIC), 10
+  gotoIfOperation: s32'LandingStiff_Front9', (IS_EQUAL), (VARIABLE), 387, (STATIC), 9
+  gotoIfOperation: s32'LandingStiff_Front8', (IS_EQUAL), (VARIABLE), 387, (STATIC), 8
+  gotoIfOperation: s32'LandingStiff_Front7', (IS_EQUAL), (VARIABLE), 387, (STATIC), 7
+  gotoIfOperation: s32'LandingStiff_Front6', (IS_EQUAL), (VARIABLE), 387, (STATIC), 6
+  gotoIfOperation: s32'LandingStiff_Front5', (IS_EQUAL), (VARIABLE), 387, (STATIC), 5
+  gotoIfOperation: s32'LandingStiff_Front4', (IS_EQUAL), (VARIABLE), 387, (STATIC), 4
+  gotoIfOperation: s32'LandingStiff_Front3', (IS_EQUAL), (VARIABLE), 387, (STATIC), 3
+  gotoIfOperation: s32'LandingStiff_Front2', (IS_EQUAL), (VARIABLE), 387, (STATIC), 2
+  gotoIfOperation: s32'LandingStiff_Front1', (IS_EQUAL), (VARIABLE), 387, (STATIC), 1
   sprite: s32'gio021_19', 3
   beginLabel: s32'LandingStiff_Front1'
   sprite: s32'gio021_20', 3
@@ -1677,16 +1677,16 @@ beginState: s32'CmnActStand'
   beginLabel: s32'LandingStiff_Front10'
   gotoLabel: s32'loop'
   beginLabel: s32'LandingStiff_Back'
-  Unknown13: s32'LandingStiff_Back10', 9, 2, 387, 0, 10
-  Unknown13: s32'LandingStiff_Back9', 9, 2, 387, 0, 9
-  Unknown13: s32'LandingStiff_Back8', 9, 2, 387, 0, 8
-  Unknown13: s32'LandingStiff_Back7', 9, 2, 387, 0, 7
-  Unknown13: s32'LandingStiff_Back6', 9, 2, 387, 0, 6
-  Unknown13: s32'LandingStiff_Back5', 9, 2, 387, 0, 5
-  Unknown13: s32'LandingStiff_Back4', 9, 2, 387, 0, 4
-  Unknown13: s32'LandingStiff_Back3', 9, 2, 387, 0, 3
-  Unknown13: s32'LandingStiff_Back2', 9, 2, 387, 0, 2
-  Unknown13: s32'LandingStiff_Back1', 9, 2, 387, 0, 1
+  gotoIfOperation: s32'LandingStiff_Back10', (IS_EQUAL), (VARIABLE), 387, (STATIC), 10
+  gotoIfOperation: s32'LandingStiff_Back9', (IS_EQUAL), (VARIABLE), 387, (STATIC), 9
+  gotoIfOperation: s32'LandingStiff_Back8', (IS_EQUAL), (VARIABLE), 387, (STATIC), 8
+  gotoIfOperation: s32'LandingStiff_Back7', (IS_EQUAL), (VARIABLE), 387, (STATIC), 7
+  gotoIfOperation: s32'LandingStiff_Back6', (IS_EQUAL), (VARIABLE), 387, (STATIC), 6
+  gotoIfOperation: s32'LandingStiff_Back5', (IS_EQUAL), (VARIABLE), 387, (STATIC), 5
+  gotoIfOperation: s32'LandingStiff_Back4', (IS_EQUAL), (VARIABLE), 387, (STATIC), 4
+  gotoIfOperation: s32'LandingStiff_Back3', (IS_EQUAL), (VARIABLE), 387, (STATIC), 3
+  gotoIfOperation: s32'LandingStiff_Back2', (IS_EQUAL), (VARIABLE), 387, (STATIC), 2
+  gotoIfOperation: s32'LandingStiff_Back1', (IS_EQUAL), (VARIABLE), 387, (STATIC), 1
   sprite: s32'gio022_19', 3
   beginLabel: s32'LandingStiff_Back1'
   sprite: s32'gio022_20', 3
@@ -1762,7 +1762,7 @@ beginState: s32'CmnActCrouch'
   sprite: s32'gio010_29', 5
   sprite: s32'gio010_30', 5
   endLabel: 
-  Unknown13: s32'loop', 22, 0, 80, 0, 100
+  gotoIfOperation: s32'loop', 22, (STATIC), 80, (STATIC), 100
   Unknown25: s32'loop', 2, 86
   storeValue: (VARIABLE), 87, (STATIC), 600
   sprite: s32'gio011_00', 6
@@ -1950,8 +1950,8 @@ beginState: s32'CmnActJumpLanding'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmnJumpLanding'
     endUpon: 
-  Unknown13: s32'FJumpLanding', 9, 2, 312, 0, 1
-  Unknown13: s32'BJumpLanding', 9, 2, 312, 0, 2
+  gotoIfOperation: s32'FJumpLanding', (IS_EQUAL), (VARIABLE), 312, (STATIC), 1
+  gotoIfOperation: s32'BJumpLanding', (IS_EQUAL), (VARIABLE), 312, (STATIC), 2
   sprite: s32'gio020_18', 3
   sprite: s32'gio020_19', 3
   sprite: s32'gio020_20', 3
@@ -1964,7 +1964,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'gio021_19', 3
   sprite: s32'gio021_20', 3
   endLabel: 
-  Unknown13: s32'FJumpLandingTurn', 13, 2, 104, 0, 0
+  gotoIfOperation: s32'FJumpLandingTurn', (IS_LESSER_OR_EQUAL), (VARIABLE), 104, (STATIC), 0
   sprite: s32'gio021_21', 3
   sprite: s32'gio021_22', 3
   sprite: s32'gio021_23', 3
@@ -1990,7 +1990,7 @@ beginState: s32'CmnActJumpLanding'
   sprite: s32'gio022_19', 3
   sprite: s32'gio022_20', 3
   endLabel: 
-  Unknown13: s32'BJumpLandingTurn', 13, 2, 104, 0, 0
+  gotoIfOperation: s32'BJumpLandingTurn', (IS_LESSER_OR_EQUAL), (VARIABLE), 104, (STATIC), 0
   sprite: s32'gio022_21', 3
   sprite: s32'gio022_22', 3
   sprite: s32'gio022_23', 3
@@ -2016,8 +2016,8 @@ beginState: s32'CmnActLandingStiff'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmnLandingStiff'
     endUpon: 
-  Unknown13: s32'FJumpLanding', 9, 2, 312, 0, 1
-  Unknown13: s32'BJumpLanding', 9, 2, 312, 0, 2
+  gotoIfOperation: s32'FJumpLanding', (IS_EQUAL), (VARIABLE), 312, (STATIC), 1
+  gotoIfOperation: s32'BJumpLanding', (IS_EQUAL), (VARIABLE), 312, (STATIC), 2
   sprite: s32'gio020_18', 3
   storeValue: (VARIABLE), 387, (STATIC), 0
   sprite: s32'gio020_19', 3
@@ -2139,7 +2139,7 @@ beginState: s32'CmnActBWalk'
 
 beginState: s32'CmnActFDash'
   upon: (IMMEDIATE)
-    Unknown2362: s32'CmnFDash'
+    checkCurrentStateEntryName: s32'CmnFDash'
     if: (VARIABLE), 0
       Unknown276: 1
       Unknown2234: 1
@@ -2154,7 +2154,7 @@ beginState: s32'CmnActFDash'
     storeValue: (VARIABLE), 55, (STATIC), 0
     storeValue: (VARIABLE), 56, (VARIABLE), 32
     endUpon: 
-  Unknown2362: s32'Cancel_FDash'
+  checkCurrentStateEntryName: s32'Cancel_FDash'
   Unknown24: s32'Cancel_FDash', 2, 0
   sprite: s32'gio032_00', 2
   Unknown176: 1
@@ -2178,8 +2178,8 @@ beginState: s32'CmnActFDash'
   sprite: s32'gio032_05', 3
   sprite: s32'gio032_06', 2
   Unknown2175: 4, 123
-  Unknown23: 1
-  Unknown23: 3
+  clearRegisteredUponCode: (BEFORE_EXIT)
+  clearRegisteredUponCode: (FRAME_STEP)
   Unknown2229: 82
   callSubroutine: s32'cmnNandemoCancel'
   upon: (BEFORE_EXIT)
@@ -2210,8 +2210,8 @@ beginState: s32'CmnActFDash'
   callSubroutine: s32'cmnFDashCancel'
   Unknown176: 1
   storeValue: (VARIABLE), 55, (STATIC), 1
-  Unknown36: 13, 23
-  upon: 13
+  setEventTrigger: (TIMER), 23
+  upon: (TIMER)
     callSubroutine: s32'cmnNandemoCancel'
     endUpon: 
   sprite: s32'gio032_01', 2
@@ -2223,7 +2223,7 @@ beginState: s32'CmnActFDash'
   sprite: s32'gio032_04', 3
   sprite: s32'gio032_05', 3
   sprite: s32'gio032_06', 2
-  Unknown23: 1
+  clearRegisteredUponCode: (BEFORE_EXIT)
   Unknown2229: 82
   upon: (BEFORE_EXIT)
     Unknown139: 10000
@@ -2270,7 +2270,7 @@ beginState: s32'CmnActBDash'
   sprite: s32'gio034_00', 3
   strikeInvulnerableForTime: 10
   Unknown2169: 0
-  upon: 2
+  upon: (TOUCH_GROUND)
     Unknown14: s32'landing'
     endUpon: 
   upon: (FRAME_STEP)
@@ -2278,7 +2278,7 @@ beginState: s32'CmnActBDash'
       Unknown207: 150
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 10
-      Unknown23: 3
+      clearRegisteredUponCode: (FRAME_STEP)
       Unknown207: 50
       endIf: 
     endUpon: 
@@ -2311,11 +2311,11 @@ beginState: s32'CmnActAirFDash'
   sprite: s32'gio035_04', 2
   Unknown615: s32'SE_BTL_GIO_00'
   sprite: s32'gio035_05', 3
-  Unknown23: 3
+  clearRegisteredUponCode: (FRAME_STEP)
   Unknown207: 200
   physicsYImpulse: 0, 20000
   setGravity: 6550
-  upon: 4
+  upon: (FALL_SPEED)
     Unknown135: 
     endUpon: 
   sprite: s32'gio035_06', 3
@@ -2339,8 +2339,8 @@ beginState: s32'CmnActAirBDash'
 
 beginState: s32'CmnActNokezoriHighLv1'
   callSubroutine: s32'cmnDamageCellDiffLand'
-  Unknown13: s32'diff', 9, 2, 313, 0, 1
-  Unknown13: s32'diff', 9, 2, 313, 0, 3
+  gotoIfOperation: s32'diff', (IS_EQUAL), (VARIABLE), 313, (STATIC), 1
+  gotoIfOperation: s32'diff', (IS_EQUAL), (VARIABLE), 313, (STATIC), 3
   sprite: s32'gio050_05', 1
   endLabel: 
   gotoLabel: s32'top'
@@ -2357,9 +2357,9 @@ beginState: s32'CmnActNokezoriHighLv1'
 
 beginState: s32'CmnActNokezoriHighLv2'
   callSubroutine: s32'cmnDamageCellDiffLand'
-  Unknown13: s32'diff1', 9, 2, 313, 0, 1
-  Unknown13: s32'diff2', 9, 2, 313, 0, 2
-  Unknown13: s32'diff3', 9, 2, 313, 0, 3
+  gotoIfOperation: s32'diff1', (IS_EQUAL), (VARIABLE), 313, (STATIC), 1
+  gotoIfOperation: s32'diff2', (IS_EQUAL), (VARIABLE), 313, (STATIC), 2
+  gotoIfOperation: s32'diff3', (IS_EQUAL), (VARIABLE), 313, (STATIC), 3
   sprite: s32'gio050_05', 1
   sprite: s32'gio050_03', 3
   endLabel: 
@@ -2386,9 +2386,9 @@ beginState: s32'CmnActNokezoriHighLv2'
 
 beginState: s32'CmnActNokezoriHighLv3'
   callSubroutine: s32'cmnDamageCellDiffLand'
-  Unknown13: s32'diff1', 9, 2, 313, 0, 1
-  Unknown13: s32'diff2', 9, 2, 313, 0, 2
-  Unknown13: s32'diff3', 9, 2, 313, 0, 3
+  gotoIfOperation: s32'diff1', (IS_EQUAL), (VARIABLE), 313, (STATIC), 1
+  gotoIfOperation: s32'diff2', (IS_EQUAL), (VARIABLE), 313, (STATIC), 2
+  gotoIfOperation: s32'diff3', (IS_EQUAL), (VARIABLE), 313, (STATIC), 3
   sprite: s32'gio050_05', 1
   sprite: s32'gio050_03', 2
   endLabel: 
@@ -2417,9 +2417,9 @@ beginState: s32'CmnActNokezoriHighLv3'
 
 beginState: s32'CmnActNokezoriHighLv4'
   callSubroutine: s32'cmnDamageCellDiffLand'
-  Unknown13: s32'diff1', 9, 2, 313, 0, 1
-  Unknown13: s32'diff2', 9, 2, 313, 0, 2
-  Unknown13: s32'diff3', 9, 2, 313, 0, 3
+  gotoIfOperation: s32'diff1', (IS_EQUAL), (VARIABLE), 313, (STATIC), 1
+  gotoIfOperation: s32'diff2', (IS_EQUAL), (VARIABLE), 313, (STATIC), 2
+  gotoIfOperation: s32'diff3', (IS_EQUAL), (VARIABLE), 313, (STATIC), 3
   sprite: s32'gio050_05', 1
   sprite: s32'gio050_03', 2
   endLabel: 
@@ -2450,8 +2450,8 @@ beginState: s32'CmnActNokezoriHighLv4'
 
 beginState: s32'CmnActNokezoriHighLv5'
   callSubroutine: s32'cmnDamageCellDiffLand'
-  Unknown13: s32'diff', 9, 2, 313, 0, 1
-  Unknown13: s32'diff', 9, 2, 313, 0, 3
+  gotoIfOperation: s32'diff', (IS_EQUAL), (VARIABLE), 313, (STATIC), 1
+  gotoIfOperation: s32'diff', (IS_EQUAL), (VARIABLE), 313, (STATIC), 3
   sprite: s32'gio050_05', 1
   endLabel: 
   gotoLabel: s32'top'
@@ -2842,10 +2842,10 @@ beginState: s32'CmnActFloatDamage'
   endState: 
 
 beginState: s32'CmnActBlowoff'
-  Unknown13: s32'1', 9, 2, 351, 0, 1
-  Unknown13: s32'2', 9, 2, 351, 0, 2
-  Unknown13: s32'3', 9, 2, 351, 0, 3
-  Unknown13: s32'4', 9, 2, 351, 0, 4
+  gotoIfOperation: s32'1', (IS_EQUAL), (VARIABLE), 351, (STATIC), 1
+  gotoIfOperation: s32'2', (IS_EQUAL), (VARIABLE), 351, (STATIC), 2
+  gotoIfOperation: s32'3', (IS_EQUAL), (VARIABLE), 351, (STATIC), 3
+  gotoIfOperation: s32'4', (IS_EQUAL), (VARIABLE), 351, (STATIC), 4
   sprite: s32'gio075_00', 3
   endLabel: 
   beginLabel: s32'loop'
@@ -2983,7 +2983,7 @@ beginState: s32'CmnActKirimomiUpper'
   sprite: s32'gio074_06', 5
   sprite: s32'gio074_07', 5
   endLabel: 
-  Unknown23: 3
+  clearRegisteredUponCode: (FRAME_STEP)
   Unknown2033: 22, s32'HomingJump'
   Unknown25: s32'loop', 2, 0
   sprite: s32'gio068_04', 3
@@ -3680,9 +3680,9 @@ beginState: s32'CmnActRoundWin'
     callSubroutine: s32'cmnactroundwin'
     endUpon: 
   sprite: s32'keep', 2
-  Unknown13: s32'TypeA', 9, 2, 153, 0, 1
-  Unknown13: s32'TypeB', 9, 2, 153, 0, 2
-  Unknown13: s32'TypeB', 22, 0, 50, 0, 100
+  gotoIfOperation: s32'TypeA', (IS_EQUAL), (VARIABLE), 153, (STATIC), 1
+  gotoIfOperation: s32'TypeB', (IS_EQUAL), (VARIABLE), 153, (STATIC), 2
+  gotoIfOperation: s32'TypeB', 22, (STATIC), 50, (STATIC), 100
   beginLabel: s32'TypeA'
   sprite: s32'gio615_00', 5
   Unknown446: s32'RoundWin1', 100
@@ -4077,7 +4077,7 @@ beginState: s32'NmlAtk5A'
     addGatlingOption: s32'NmlAtk6D'
     addGatlingOption: s32'NmlAtk2E'
     upon: 8
-      Unknown23: 8
+      clearRegisteredUponCode: 8
       callSubroutine: s32'cmn_lightAttack_flex'
       endUpon: 
     Unknown2526: 1, 1, 6, 100, 60, 200
@@ -4193,7 +4193,7 @@ beginState: s32'NmlAtk2A'
     addGatlingOption: s32'NmlAtk6D'
     addGatlingOption: s32'NmlAtk2E'
     upon: 8
-      Unknown23: 8
+      clearRegisteredUponCode: 8
       callSubroutine: s32'cmn_lightAttack_flex'
       endUpon: 
     Unknown2526: 1, 1, 6, 100, 60, 200
@@ -4671,7 +4671,7 @@ beginState: s32'NmlAtk6D'
       endUpon: 
     addGatlingOption: s32'NmlAtk6D2nd'
     Unknown2169: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       endUpon: 
     upon: (HIT_OR_GUARD)
@@ -4739,7 +4739,7 @@ beginState: s32'NmlAtk6D2nd'
     Unknown772: 5
     addGatlingOption: s32'NmlAtk6D3rd'
     Unknown2169: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       endUpon: 
     upon: (HIT_OR_GUARD)
@@ -4799,7 +4799,7 @@ beginState: s32'NmlAtk6D3rd'
     Unknown859: 50
     groundBounceYVelocity: 10000
     Unknown2169: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       endUpon: 
     upon: (HIT_OR_GUARD)
@@ -4967,7 +4967,7 @@ beginState: s32'HomingJump'
     storeValue: (VARIABLE), 49, (STATIC), 10000
     storeValue: (VARIABLE), 50, (STATIC), 100000
     storeValue: (VARIABLE), 51, (STATIC), 5000
-    upon: 13
+    upon: (TIMER)
       upon: (FRAME_STEP)
         modifyVar: (ADD), (VARIABLE), 45, (STATIC), 50
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 1000
@@ -5152,7 +5152,7 @@ beginState: s32'NmlAtk5F'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmnChouhatsuKeii'
     endUpon: 
-  Unknown13: s32'TypeB', 22, 0, 50, 0, 100
+  gotoIfOperation: s32'TypeB', 22, (STATIC), 50, (STATIC), 100
   beginLabel: s32'TypeA'
   sprite: s32'gio300_00', 2
   sprite: s32'gio300_01', 2
@@ -5180,7 +5180,7 @@ beginState: s32'NmlAtk5F'
   upon: (FRAME_STEP)
     ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 1
       ifNot: (VARIABLE), 95
-        Unknown23: 3
+        clearRegisteredUponCode: (FRAME_STEP)
         Unknown14: s32'TypeA_Next'
         endIf: 
       endIf: 
@@ -5240,7 +5240,7 @@ beginState: s32'NmlAtk5F'
   upon: (FRAME_STEP)
     ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (STATIC), 1
       ifNot: (VARIABLE), 95
-        Unknown23: 3
+        clearRegisteredUponCode: (FRAME_STEP)
         Unknown14: s32'TypeB_Next'
         endIf: 
       endIf: 
@@ -5319,7 +5319,7 @@ beginState: s32'NmlAtk6F'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmnChouhatsuKeii'
     endUpon: 
-  Unknown13: s32'TypeB', 22, 0, 50, 0, 100
+  gotoIfOperation: s32'TypeB', 22, (STATIC), 50, (STATIC), 100
   sprite: s32'gio305_00', 4
   Unknown1702: s32'wolf_body_leg_only', 1
   sprite: s32'gio305_01', 4
@@ -5359,7 +5359,7 @@ beginState: s32'NmlAtk6F'
   sprite: s32'gio305_25', 600
   upon: (FRAME_STEP)
     ifNot: (VARIABLE), 95
-      Unknown23: 3
+      clearRegisteredUponCode: (FRAME_STEP)
       Unknown14: s32'TypeA_Next'
       Unknown1803: s32'Gio305_phone', 23
       endIf: 
@@ -5412,7 +5412,7 @@ beginState: s32'NmlAtk6F'
   sprite: s32'gio306_20', 600
   upon: (FRAME_STEP)
     ifNot: (VARIABLE), 95
-      Unknown23: 3
+      clearRegisteredUponCode: (FRAME_STEP)
       Unknown14: s32'TypeB_Next'
       endIf: 
     endUpon: 
@@ -5454,7 +5454,7 @@ beginState: s32'NmlAtkAir5A'
     addWhiffCancelOption: s32'NmlAtkAir5D'
     addWhiffCancelOption: s32'NmlAtkAir5E'
     upon: 8
-      Unknown23: 8
+      clearRegisteredUponCode: 8
       callSubroutine: s32'cmn_lightAttack_flex'
       endUpon: 
     ifNot: (VARIABLE), 317
@@ -5866,7 +5866,7 @@ beginState: s32'ThrowExe'
   physicsYImpulse: 0, -30000
   Unknown2168: 0
   setGravity: 1
-  upon: 2
+  upon: (TOUCH_GROUND)
     Unknown14: s32'land'
     Unknown1803: s32'wolf_throw', 23
     endUpon: 
@@ -6117,7 +6117,7 @@ beginState: s32'Special2_land'
   physicsYImpulse: 0, 32000
   setGravity: 2450
   setCarriedMomentumPercentage: 20
-  upon: 2
+  upon: (TOUCH_GROUND)
     Unknown14: s32'landing'
     endUpon: 
   sprite: s32'gio402_03', 3
@@ -6224,7 +6224,7 @@ beginState: s32'Special2_air'
   Unknown2229: 92
   physicsYImpulse: 0, 30000
   setGravity: 2450
-  upon: 2
+  upon: (TOUCH_GROUND)
     Unknown14: s32'landing'
     Unknown32: s32'402wolf'
     Unknown1702: s32'wolf_head_high', 1
@@ -6329,7 +6329,7 @@ beginState: s32'Special3'
       callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 2, (STATIC), 0, (STATIC), 0
       endUpon: 
     Unknown2169: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       endUpon: 
     Unknown953: 2
@@ -6397,7 +6397,7 @@ beginState: s32'Special4'
     Unknown846: '0x436D6E41637446446F776E557070657200000000000000000000000000000000'
     Unknown789: 1
     upon: (HIT_OR_GUARD)
-      Unknown23: 9
+      clearRegisteredUponCode: (HIT_OR_GUARD)
       extendPushboxX: 100000
       Unknown2341: s32'Impact', 200, 0, 30, s32'shake_easeout', 0
       Unknown14: s32'end'
@@ -6514,7 +6514,7 @@ beginState: s32'LandUltimate'
     Unknown2526: 0, 0, 0, 0, 0, 0
     Unknown2591: 0, 0, 0, 0, 0, 0
     upon: 99
-      Unknown23: 99
+      clearRegisteredUponCode: 99
       Unknown2560: 0
       Unknown1972: 0
       Unknown428: 0, 10
@@ -6537,7 +6537,7 @@ beginState: s32'LandUltimate'
   sprite: s32'gio530_00', 140
   Unknown271: 1, 119, 140, 141
   upon: 50
-    Unknown23: 50
+    clearRegisteredUponCode: 50
     callSubroutine: s32'cmnWorldStop_Start'
     callSubroutine: s32'cmnCameraSettings'
     Unknown612: s32'SE_BTL_SYS_Skill'
@@ -6740,8 +6740,8 @@ beginState: s32'AirUltimate'
     Unknown760: 0, 80, 0, 1, 0, 10
     callSubroutine: s32'cmnNohosei_kakusei'
     upon: 99
-      Unknown23: 50
-      Unknown23: 99
+      clearRegisteredUponCode: 50
+      clearRegisteredUponCode: 99
       Unknown428: 0, 10
       Unknown427: 0, 10
       Unknown429: 0, 10
@@ -6753,7 +6753,7 @@ beginState: s32'AirUltimate'
       Unknown32: s32'Cam_AirUltimate1'
       endUpon: 
     upon: (BEFORE_EXIT)
-      Unknown23: 1
+      clearRegisteredUponCode: (BEFORE_EXIT)
       Unknown1803: s32'Cam_AirUltimate1', 23
       endUpon: 
     Unknown2189: 2, 5
@@ -6769,7 +6769,7 @@ beginState: s32'AirUltimate'
   sprite: s32'gio501_01', 36
   Unknown271: 1, 119, 37, 38
   upon: 50
-    Unknown23: 50
+    clearRegisteredUponCode: 50
     callSubroutine: s32'cmnWorldStop_Start'
     Unknown612: s32'SE_BTL_SYS_Skill'
     callSubroutine: s32'cmnWorldStop_Tension'
@@ -6805,7 +6805,7 @@ beginState: s32'AirUltimate'
   physicsYImpulse: 0, -70000
   setGravity: 2000
   Unknown2169: 0
-  upon: 2
+  upon: (TOUCH_GROUND)
     Unknown14: s32'land1'
     if: (VARIABLE), 16
       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 14, (STATIC), 500000
@@ -6867,12 +6867,12 @@ beginState: s32'AirUltimate'
   Unknown621: 1, 255
   storeValue: (VARIABLE), 52, (STATIC), 2
   upon: 23
-    Unknown23: 23
+    clearRegisteredUponCode: 23
     storeValue: (VARIABLE), 45, (STATIC), 1
     upon: 42
       modifyVar: (ADD), (VARIABLE), 52, (STATIC), 1
       ifOperation: (IS_GREATER), (VARIABLE), 52, (STATIC), 2
-        Unknown23: 42
+        clearRegisteredUponCode: 42
         ifNot: (VARIABLE), 368
           Unknown446: s32'Cam_AirUltimate1', 100
           callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 2, (STATIC), 0, (STATIC), 0
@@ -6942,7 +6942,7 @@ beginState: s32'AirUltimate'
   storeValue: (VARIABLE), 45, (STATIC), 0
   storeValue: (VARIABLE), 52, (STATIC), 4
   upon: 23
-    Unknown23: 23
+    clearRegisteredUponCode: 23
     storeValue: (VARIABLE), 45, (STATIC), 1
     endUpon: 
   endLabel: 
@@ -6983,7 +6983,7 @@ beginState: s32'AirUltimate'
   physicsYImpulse: 0, 10000
   setGravity: 5000
   Unknown1914: 0
-  upon: 2
+  upon: (TOUCH_GROUND)
     Unknown14: s32'landing'
     Unknown176: 1
     endUpon: 
@@ -7117,7 +7117,7 @@ beginState: s32'AirUltimate'
   Unknown612: s32'SE_BTL_CMN_Jump'
   Unknown612: s32'SE_BTL_CMN_Swing_Grap_Heavy_L'
   Unknown2341: s32'Depth', 400, 0, 32, s32'shake_easeout', 0
-  Unknown23: 90
+  clearRegisteredUponCode: 90
   storeValue: (VARIABLE), 52, (STATIC), 6
   Unknown32: s32'wolf_ultimate3'
   Unknown1702: s32'wolf_head_high_fourlegs', 0
@@ -7162,7 +7162,7 @@ beginState: s32'AirUltimate'
   sprite: s32'gio403_06', 3
   sprite: s32'gio403_07', 3
   sprite: s32'gio403_08', 12
-  upon: 2
+  upon: (TOUCH_GROUND)
     Unknown14: s32'land2'
     endUpon: 
   endLabel: 

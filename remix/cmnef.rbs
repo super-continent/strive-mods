@@ -8462,15 +8462,15 @@ startSubroutine: s32'cmnactmatchwin'
   ifOperation: (IS_LESSER), (VARIABLE), 349, (STATIC), 0
     Unknown239: 
     endIf: 
-  Unknown36: 13, 1
-  upon: 13
+  setEventTrigger: (TIMER), 1
+  upon: (TIMER)
     Unknown251: 1
     endUpon: 
   endSubroutine: 
 
 startSubroutine: s32'cmnactroundwin'
-  Unknown36: 13, 2
-  upon: 13
+  setEventTrigger: (TIMER), 2
+  upon: (TIMER)
     Unknown251: 1
     Unknown252: 1
     ifNot: (VARIABLE), 263
@@ -8497,15 +8497,15 @@ startSubroutine: s32'cmnactroundwin'
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 7
         Unknown249: 200000
-        Unknown23: 12
+        clearRegisteredUponCode: 12
         endIf: 
       endUpon: 
     endUpon: 
   endSubroutine: 
 
 startSubroutine: s32'cmnactlose'
-  Unknown36: 13, 2
-  upon: 13
+  setEventTrigger: (TIMER), 2
+  upon: (TIMER)
     Unknown251: 1
     Unknown252: 1
     ifNot: (VARIABLE), 263
@@ -8538,7 +8538,7 @@ startSubroutine: s32'cmnactlose'
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 7
         Unknown249: 200000
-        Unknown23: 12
+        clearRegisteredUponCode: 12
         endIf: 
       endUpon: 
     endUpon: 
@@ -8548,8 +8548,8 @@ startSubroutine: s32'cmnAssistResult'
   Unknown251: 0
   Unknown268: 0
   Unknown287: 0
-  Unknown36: 13, 30
-  upon: 13
+  setEventTrigger: (TIMER), 30
+  upon: (TIMER)
     Unknown2055: 0
     endUpon: 
   endSubroutine: 
@@ -8707,7 +8707,7 @@ beginState: s32'cmnWSBDummy'
 startSubroutine: s32'cmn_wall_dir'
   if: (VARIABLE), 319
     upon: 46
-      Unknown23: 46
+      clearRegisteredUponCode: 46
       Unknown2095: 1000, 0
       Unknown255: 1
       Unknown49: 38
@@ -8729,14 +8729,14 @@ startSubroutine: s32'cmn_wall_dir'
         modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 2
           ifOperation: (IS_NOT_EQUAL), (VARIABLE), 81, (STATIC), 3
-            Unknown23: 12
+            clearRegisteredUponCode: 12
             Unknown2188: 0
             Unknown41: 22
             Unknown2188: 0
             Unknown40: 
             endIf: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 2
-            Unknown23: 12
+            clearRegisteredUponCode: 12
             Unknown2188: 0
             Unknown41: 22
             Unknown2188: 0
@@ -9083,8 +9083,8 @@ startSubroutine: s32'cmn_AtkLv0'
     Unknown1024: 15
     endIf: 
   Unknown914: 1
-  upon: 100
-    Unknown23: 100
+  upon: (COUNTER_HIT)
+    clearRegisteredUponCode: (COUNTER_HIT)
     if: (VARIABLE), 130
       callSubroutine: s32'cmn_RISCounter'
       endIf: 
@@ -9141,8 +9141,8 @@ startSubroutine: s32'cmn_AtkLv1'
     Unknown1024: 15
     endIf: 
   Unknown914: 1
-  upon: 100
-    Unknown23: 100
+  upon: (COUNTER_HIT)
+    clearRegisteredUponCode: (COUNTER_HIT)
     if: (VARIABLE), 130
       callSubroutine: s32'cmn_RISCounter'
       endIf: 
@@ -9199,8 +9199,8 @@ startSubroutine: s32'cmn_AtkLv2'
     Unknown1024: 15
     endIf: 
   Unknown914: 1
-  upon: 100
-    Unknown23: 100
+  upon: (COUNTER_HIT)
+    clearRegisteredUponCode: (COUNTER_HIT)
     if: (VARIABLE), 130
       callSubroutine: s32'cmn_RISCounter'
       endIf: 
@@ -9257,8 +9257,8 @@ startSubroutine: s32'cmn_AtkLv3'
     Unknown1024: 15
     endIf: 
   Unknown914: 1
-  upon: 100
-    Unknown23: 100
+  upon: (COUNTER_HIT)
+    clearRegisteredUponCode: (COUNTER_HIT)
     if: (VARIABLE), 130
       callSubroutine: s32'cmn_RISCounter'
       endIf: 
@@ -9315,8 +9315,8 @@ startSubroutine: s32'cmn_AtkLv4'
     Unknown1024: 15
     endIf: 
   Unknown914: 1
-  upon: 100
-    Unknown23: 100
+  upon: (COUNTER_HIT)
+    clearRegisteredUponCode: (COUNTER_HIT)
     if: (VARIABLE), 130
       callSubroutine: s32'cmn_RISCounter'
       endIf: 
@@ -10004,7 +10004,7 @@ startSubroutine: s32'cmn_fuwafuwafuwaCounter'
 
 startSubroutine: s32'cmn_RISCounter'
   Unknown2498: 22, 2, 352
-    Unknown23: 100
+    clearRegisteredUponCode: (COUNTER_HIT)
     Unknown929: 1, 1
     Unknown969: 10
     Unknown1045: 4, s32'cmn_counterhit_large'
@@ -10023,9 +10023,9 @@ startSubroutine: s32'cmn_RISCounter'
 
 startSubroutine: s32'cmn_countertype_middle'
   if: (VARIABLE), 130
-    upon: 100
+    upon: (COUNTER_HIT)
       Unknown2499: 22, 2, 352
-        Unknown23: 100
+        clearRegisteredUponCode: (COUNTER_HIT)
         Unknown929: 1, 1
         Unknown969: 10
         Unknown1045: 4, s32'cmn_counterhit_middle'
@@ -10046,9 +10046,9 @@ startSubroutine: s32'cmn_countertype_middle'
 
 startSubroutine: s32'cmn_countertype_middle_slash'
   if: (VARIABLE), 130
-    upon: 100
+    upon: (COUNTER_HIT)
       Unknown2499: 22, 2, 352
-        Unknown23: 100
+        clearRegisteredUponCode: (COUNTER_HIT)
         Unknown929: 1, 1
         Unknown969: 10
         Unknown1045: 4, s32'cmn_counterslash'
@@ -10070,9 +10070,9 @@ startSubroutine: s32'cmn_countertype_middle_slash'
 
 startSubroutine: s32'cmn_countertype_high'
   if: (VARIABLE), 130
-    upon: 100
+    upon: (COUNTER_HIT)
       Unknown2499: 22, 2, 352
-        Unknown23: 100
+        clearRegisteredUponCode: (COUNTER_HIT)
         Unknown929: 1, 1
         Unknown969: 10
         Unknown1045: 4, s32'cmn_counterhit_large'
@@ -10094,9 +10094,9 @@ startSubroutine: s32'cmn_countertype_high'
 
 startSubroutine: s32'cmn_countertype_high_slash'
   if: (VARIABLE), 130
-    upon: 100
+    upon: (COUNTER_HIT)
       Unknown2499: 22, 2, 352
-        Unknown23: 100
+        clearRegisteredUponCode: (COUNTER_HIT)
         Unknown929: 1, 1
         Unknown969: 10
         Unknown1045: 4, s32'cmn_counterslash'
@@ -10122,7 +10122,7 @@ beginState: s32'cmnCounterCamera'
     upon: 39
       modifyVar: (ADD), (VARIABLE), 52, (STATIC), 1
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 52, (STATIC), 2
-        Unknown23: 39
+        clearRegisteredUponCode: 39
         storeValue: (VARIABLE), 54, (STATIC), 1
         Unknown2498: 3, 2, 24
           storeValue: (VARIABLE), 54, (STATIC), 0
@@ -10189,7 +10189,7 @@ beginState: s32'cmnHiCounterCamera'
     upon: 39
       modifyVar: (ADD), (VARIABLE), 52, (STATIC), 1
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 52, (STATIC), 2
-        Unknown23: 39
+        clearRegisteredUponCode: 39
         storeValue: (VARIABLE), 53, (STATIC), 1
         Unknown2498: 3, 2, 24
           storeValue: (VARIABLE), 53, (STATIC), 0
@@ -10244,7 +10244,7 @@ beginState: s32'cmnHiCounterCamera'
             upon: 39
               modifyVar: (ADD), (VARIABLE), 52, (STATIC), 1
               ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 52, (STATIC), 3
-                Unknown23: 39
+                clearRegisteredUponCode: 39
                 Unknown392: 100
                 callSubroutine: s32'cmnCam_InitializeBase'
                 Unknown446: s32'cmnCounterCamera_Target', 100
@@ -10257,10 +10257,10 @@ beginState: s32'cmnHiCounterCamera'
                 Unknown2545: 0, 62, 0, 16, 0, 16, 0, 16, s32'linear', s32'linear'
                 Unknown612: s32'SE_BTL_CMN_SlowHitstop1'
                 upon: 32
-                  Unknown23: 32
-                  Unknown23: 3
-                  Unknown23: 73
-                  Unknown23: 56
+                  clearRegisteredUponCode: 32
+                  clearRegisteredUponCode: (FRAME_STEP)
+                  clearRegisteredUponCode: 73
+                  clearRegisteredUponCode: 56
                   storeValue: (VARIABLE), 53, (STATIC), 0
                   Unknown14: s32'delete'
                   endUpon: 
@@ -10312,9 +10312,9 @@ beginState: s32'cmnHiCounterCamera'
   sprite: s32'null', 48
   beginLabel: s32'end'
   sprite: s32'null', 32
-  Unknown23: 3
-  Unknown23: 73
-  Unknown23: 56
+  clearRegisteredUponCode: (FRAME_STEP)
+  clearRegisteredUponCode: 73
+  clearRegisteredUponCode: 56
   Unknown393: 
   Unknown2575: s32'orthoone', 0, 32, s32'orthoone'
   Unknown2553: 0, 1000, 0, 0, 0, 32, 0, 0, 0, 0, s32'brake', s32'accel_brake'
@@ -10547,8 +10547,8 @@ startSubroutine: s32'cmnGuardLanding'
   endSubroutine: 
 
 startSubroutine: s32'cmnAirGuard'
-  Unknown36: 13, 1
-  upon: 13
+  setEventTrigger: (TIMER), 1
+  upon: (TIMER)
     if: (VARIABLE), 36
       ifNot: (VARIABLE), 24
         upon: (BEFORE_EXIT)
@@ -10571,7 +10571,7 @@ startSubroutine: s32'cmnGuardBreak'
   Unknown2591: 0, 0, 0, 0, 0, 0
   Unknown2033: 3, s32'CmnActHajikareAir'
   if: (VARIABLE), 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'_Landing'
       Unknown2229: 50
       endUpon: 
@@ -10627,14 +10627,14 @@ startSubroutine: s32'cmnLandingStiffadd'
   endSubroutine: 
 
 startSubroutine: s32'cmnLandingStiffadd_Timer'
-  Unknown36: 13, 3
-  upon: 13
+  setEventTrigger: (TIMER), 3
+  upon: (TIMER)
     callSubroutine: s32'cmnLandingStiffadd'
     endUpon: 
   endSubroutine: 
 
 startSubroutine: s32'cmnFDash'
-  Unknown2362: s32'CmnFDash'
+  checkCurrentStateEntryName: s32'CmnFDash'
   if: (VARIABLE), 0
     Unknown1362: 1
     Unknown1352: 1
@@ -10655,8 +10655,8 @@ startSubroutine: s32'cmnFDashCancel'
   Unknown2438: 1
   upon: (FRAME_STEP)
     ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 3
-      Unknown23: 3
-      Unknown23: 1
+      clearRegisteredUponCode: (FRAME_STEP)
+      clearRegisteredUponCode: (BEFORE_EXIT)
       endIf: 
     endUpon: 
   upon: (BEFORE_EXIT)
@@ -10798,8 +10798,8 @@ startSubroutine: s32'cmnQuickDown2'
   setStrikeInvulnerable: 1
   setThrowInvulnerable: 1
   Unknown668: 128, 1, 1
-  Unknown36: 13, 11
-  upon: 13
+  setEventTrigger: (TIMER), 11
+  upon: (TIMER)
     physicsXImpulse: 0, 0
     endUpon: 
   endSubroutine: 
@@ -10812,7 +10812,7 @@ startSubroutine: s32'cmnBurst'
   Unknown1974: 1
   Unknown2314: 1
   Unknown2257: 0
-  Unknown2362: s32'CmnMaximumBurst'
+  checkCurrentStateEntryName: s32'CmnMaximumBurst'
   if: (VARIABLE), 0
     Unknown613: s16'vxxx115'
     storeValue: (VARIABLE), 45, (STATIC), 11
@@ -10833,7 +10833,7 @@ startSubroutine: s32'cmnBurst'
       Unknown14: s32'_Bakuhatsu'
       Unknown176: 1
       Unknown2189: 2, 5
-      Unknown2362: s32'CmnMaximumBurst'
+      checkCurrentStateEntryName: s32'CmnMaximumBurst'
       if: (VARIABLE), 0
         Unknown446: s32'cmn_BurstObjGold', 100
         endIf: 
@@ -10841,10 +10841,10 @@ startSubroutine: s32'cmnBurst'
         Unknown446: s32'cmn_BurstObjBlue', 100
         endElse: 
       upon: 49
-        Unknown23: 49
+        clearRegisteredUponCode: 49
         Unknown2041: s32'cmn_burst'
         if: (VARIABLE), 0
-          Unknown23: 23
+          clearRegisteredUponCode: 23
           storeValue: (VARIABLE), 48, (STATIC), 1
           endIf: 
         endUpon: 
@@ -10861,11 +10861,11 @@ startSubroutine: s32'cmnBurst'
         endIf: 
       endIf: 
     endUpon: 
-  upon: 4
-    Unknown23: 4
-    Unknown23: 3
+  upon: (FALL_SPEED)
+    clearRegisteredUponCode: (FALL_SPEED)
+    clearRegisteredUponCode: (FRAME_STEP)
     Unknown2169: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       ifNot: (VARIABLE), 48
         Unknown1827: 0
@@ -10875,7 +10875,7 @@ startSubroutine: s32'cmnBurst'
         endIf: 
       upon: (FRAME_STEP)
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 9
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown27: s32'_NEUTRAL'
           endIf: 
         endUpon: 
@@ -10902,7 +10902,7 @@ startSubroutine: s32'cmnthrow_land_timer'
       Unknown1364: 0
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 39
-      Unknown23: 3
+      clearRegisteredUponCode: (FRAME_STEP)
       Unknown14: s32'end'
       endIf: 
     ifNot: (VARIABLE), 16
@@ -10931,7 +10931,7 @@ startSubroutine: s32'cmnThrowPosition_F_Wall'
             modifyVar: (SUB), (VARIABLE), 48, (VARIABLE), 49
             endIf: 
           else: 
-            Unknown23: 3
+            clearRegisteredUponCode: (FRAME_STEP)
             storeValue: (VARIABLE), 83, (VARIABLE), 45
             endElse: 
           endUpon: 
@@ -10949,7 +10949,7 @@ startSubroutine: s32'cmnThrowPosition_F_Wall'
             modifyVar: (SUB), (VARIABLE), 48, (VARIABLE), 49
             endIf: 
           else: 
-            Unknown23: 3
+            clearRegisteredUponCode: (FRAME_STEP)
             storeValue: (VARIABLE), 83, (VARIABLE), 45
             endElse: 
           endUpon: 
@@ -10971,7 +10971,7 @@ startSubroutine: s32'cmnThrowPosition_B_Wall'
             modifyVar: (SUB), (VARIABLE), 48, (VARIABLE), 49
             endIf: 
           else: 
-            Unknown23: 3
+            clearRegisteredUponCode: (FRAME_STEP)
             storeValue: (VARIABLE), 83, (VARIABLE), 45
             endElse: 
           endUpon: 
@@ -10989,7 +10989,7 @@ startSubroutine: s32'cmnThrowPosition_B_Wall'
             modifyVar: (SUB), (VARIABLE), 48, (VARIABLE), 49
             endIf: 
           else: 
-            Unknown23: 3
+            clearRegisteredUponCode: (FRAME_STEP)
             storeValue: (VARIABLE), 83, (VARIABLE), 45
             endElse: 
           endUpon: 
@@ -11142,13 +11142,13 @@ beginState: s32'cmnCam_AirThrowAction'
       Unknown196: 4, 100, 0, 0, 0, 0, 0, 8
       Unknown2033: 3, s32'AirThrowExe'
       ifNot: (VARIABLE), 0
-        Unknown23: 56
+        clearRegisteredUponCode: 56
         Unknown14: s32'end'
         endIf: 
       endUpon: 
     upon: 23
-      Unknown23: 23
-      Unknown23: 56
+      clearRegisteredUponCode: 23
+      clearRegisteredUponCode: 56
       Unknown14: s32'end'
       endUpon: 
     endUpon: 
@@ -11195,7 +11195,7 @@ startSubroutine: s32'cmnCam_InitializeBase'
     Unknown19: 4
     endUpon: 
   upon: 49
-    Unknown23: 49
+    clearRegisteredUponCode: 49
     Unknown2041: s32'DeleteCamera'
     if: (VARIABLE), 0
       callSubroutine: s32'cmnCam_ClearCamInterrupt'
@@ -11317,15 +11317,15 @@ startSubroutine: s32'cmnCam_InitializeTarget'
   endSubroutine: 
 
 startSubroutine: s32'cmnCam_ClearCamInterrupt'
-  Unknown23: 35
-  Unknown23: 99
-  Unknown23: 46
-  Unknown23: 7
-  Unknown23: 56
-  Unknown23: 36
-  Unknown23: 47
-  Unknown23: 49
-  Unknown23: 73
+  clearRegisteredUponCode: 35
+  clearRegisteredUponCode: 99
+  clearRegisteredUponCode: 46
+  clearRegisteredUponCode: 7
+  clearRegisteredUponCode: 56
+  clearRegisteredUponCode: 36
+  clearRegisteredUponCode: 47
+  clearRegisteredUponCode: 49
+  clearRegisteredUponCode: 73
   Unknown1803: s32'cmnCam_Singleton', 23
   endSubroutine: 
 
@@ -11363,19 +11363,19 @@ beginState: s32'cmnCam_Singleton'
     Unknown32: s32'cmnCam_Singleton'
     Unknown40: 
     upon: 23
-      Unknown23: 23
+      clearRegisteredUponCode: 23
       storeValue: (VARIABLE), 53, (STATIC), 1
       Unknown19: 23
       endUpon: 
     upon: 24
-      Unknown23: 24
+      clearRegisteredUponCode: 24
       Unknown19: 23
       Unknown2040: 2, s32'DeleteCamera', 0
-      Unknown23: 21
+      clearRegisteredUponCode: 21
       Unknown393: 
       endUpon: 
     upon: 21
-      Unknown23: 21
+      clearRegisteredUponCode: 21
       if: (VARIABLE), 53
         Unknown2575: s32'orthodefault', 0, 0, s32'orthoone'
         endIf: 
@@ -11437,7 +11437,7 @@ startSubroutine: s32'cmn_cam_delete_on_rc'
 
 startSubroutine: s32'cmn_cam_delete_on_wsb'
   upon: 99
-    Unknown23: 99
+    clearRegisteredUponCode: 99
     Unknown19: 23
     Unknown2554: 
     Unknown2575: s32'orthozero', 0, 0, s32'orthoone'
@@ -11445,7 +11445,7 @@ startSubroutine: s32'cmn_cam_delete_on_wsb'
   endSubroutine: 
 
 startSubroutine: s32'cmn_cam_delete_on_finish'
-  Unknown23: 99
+  clearRegisteredUponCode: 99
   Unknown19: 23
   Unknown2554: 
   Unknown2575: s32'orthozero', 0, 1, s32'orthoone'
@@ -11619,7 +11619,7 @@ startSubroutine: s32'cmnMutekiRC'
       endElse: 
     endUpon: 
   upon: 99
-    Unknown23: 36
+    clearRegisteredUponCode: 36
     Unknown2234: 0
     endUpon: 
   endSubroutine: 
@@ -11665,11 +11665,11 @@ startSubroutine: s32'cmn_DustAttack'
   upon: 12
     checkInput: (INPUT_HOLD_D)
     ifNot: (VARIABLE), 0
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       storeValue: (VARIABLE), 52, (STATIC), 0
       endIf: 
     ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 28
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       storeValue: (VARIABLE), 52, (STATIC), 1
       Unknown711: 4
       Unknown963: 125
@@ -11677,7 +11677,7 @@ startSubroutine: s32'cmn_DustAttack'
       endIf: 
     endUpon: 
   upon: 86
-    Unknown23: 86
+    clearRegisteredUponCode: 86
     if: (VARIABLE), 52
       Unknown1023: 18
       riscGain: 25
@@ -11685,10 +11685,10 @@ startSubroutine: s32'cmn_DustAttack'
       endIf: 
     endUpon: 
   upon: (HIT)
-    Unknown23: 10
+    clearRegisteredUponCode: (HIT)
     if: (VARIABLE), 52
-      Unknown23: 62
-      Unknown23: 100
+      clearRegisteredUponCode: 62
+      clearRegisteredUponCode: (COUNTER_HIT)
       Unknown49: 87
       if: (VARIABLE), 0
         storeValue: (VARIABLE), 50, (STATIC), 1
@@ -11737,7 +11737,7 @@ startSubroutine: s32'cmn_DustAttack'
         whiffCancelOptionBufferTime: s32'RomanCancelAttack', 45
         Unknown1324: s32'NmlAtk5EHold'
         upon: 95
-          Unknown23: 95
+          clearRegisteredUponCode: 95
           if: (VARIABLE), 263
             if: (VARIABLE), 264
               Unknown2360: s32'HomingJump'
@@ -11749,20 +11749,20 @@ startSubroutine: s32'cmn_DustAttack'
           Unknown2498: 22, 2, 77
             Unknown271: 9, 119, 45, 45
             upon: 50
-              Unknown23: 50
+              clearRegisteredUponCode: 50
               upon: 12
                 Unknown2248: 
                 Unknown41: 22
                 Unknown2248: 
                 Unknown40: 
                 ifNot: (VARIABLE), 81
-                  Unknown23: 12
+                  clearRegisteredUponCode: 12
                   Unknown2360: s32'HomingJump'
                   if: (VARIABLE), 0
                     Unknown1659: s32'HomingJump'
                     Unknown2188: 0
                     endIf: 
-                  Unknown23: 1
+                  clearRegisteredUponCode: (BEFORE_EXIT)
                   Unknown2565: 30, s32'linear'
                   Unknown428: 0, 20
                   Unknown429: 0, 20
@@ -11817,9 +11817,9 @@ startSubroutine: s32'cmn_DustAttack'
         endElse: 
       endIf: 
     endUpon: 
-  upon: 100
+  upon: (COUNTER_HIT)
     Unknown2499: 22, 2, 352
-      Unknown23: 100
+      clearRegisteredUponCode: (COUNTER_HIT)
       Unknown947: 1
       Unknown948: 1
       Unknown788: 0
@@ -11870,12 +11870,12 @@ startSubroutine: s32'cmn_Dust_Kirimomi_Blend'
         Unknown612: s32'SE_BTL_CMN_Blow_Spin'
         endIf: 
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 35
-        Unknown23: 3
+        clearRegisteredUponCode: (FRAME_STEP)
         Unknown612: s32'SE_BTL_CMN_Blow_Spin'
         endIf: 
       endIf: 
     else: 
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       endElse: 
     endUpon: 
   upon: 12
@@ -11904,8 +11904,8 @@ startSubroutine: s32'cmn_Dust_Kirimomi_Blend'
           Unknown99: 2, 47
           endIf: 
         else: 
-          Unknown23: 3
-          Unknown23: 12
+          clearRegisteredUponCode: (FRAME_STEP)
+          clearRegisteredUponCode: 12
           Unknown2033: 22, s32'HomingJump'
           if: (VARIABLE), 0
             physicsXImpulse: 0, -50000
@@ -11926,7 +11926,7 @@ startSubroutine: s32'cmn_Dust_Kirimomi_Blend'
         endIf: 
       endIf: 
     else: 
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       endElse: 
     endUpon: 
   endSubroutine: 
@@ -12241,8 +12241,8 @@ beginState: s32'cmn_Chase_Camera'
                   endElse: 
                 if: (VARIABLE), 54
                   if: (VARIABLE), 55
-                    Unknown23: 77
-                    Unknown23: 42
+                    clearRegisteredUponCode: 77
+                    clearRegisteredUponCode: 42
                     endIf: 
                   endIf: 
                 endIf: 
@@ -12262,8 +12262,8 @@ beginState: s32'cmn_Chase_Camera'
       Unknown2528: 
       endUpon: 
     upon: 99
-      Unknown23: 99
-      Unknown23: 42
+      clearRegisteredUponCode: 99
+      clearRegisteredUponCode: 42
       Unknown19: 23
       Unknown1918: s32'DustSpeedCtrl', 0, 0, 0, 0, 0, 0, 0, 0
       endUpon: 
@@ -12318,7 +12318,7 @@ startSubroutine: s32'cmn_Dust_HomingJump_Attack'
       Unknown1001: 5
       riscConsume: 10
       Unknown924: 0
-      Unknown2362: s32'NmlAtkAir5A'
+      checkCurrentStateEntryName: s32'NmlAtkAir5A'
       if: (VARIABLE), 0
         addGatlingOption: s32'DustFinish_A'
         ifOperation: (IS_EQUAL), (VARIABLE), 346, (STATIC), 0
@@ -12331,7 +12331,7 @@ startSubroutine: s32'cmn_Dust_HomingJump_Attack'
           storeValue: (VARIABLE), 348, (STATIC), 2000
           endIf: 
         endIf: 
-      Unknown2362: s32'NmlAtkAir5B'
+      checkCurrentStateEntryName: s32'NmlAtkAir5B'
       if: (VARIABLE), 0
         addGatlingOption: s32'DustFinish_B'
         ifOperation: (IS_EQUAL), (VARIABLE), 346, (STATIC), 0
@@ -12344,7 +12344,7 @@ startSubroutine: s32'cmn_Dust_HomingJump_Attack'
           storeValue: (VARIABLE), 348, (STATIC), 2000
           endIf: 
         endIf: 
-      Unknown2362: s32'NmlAtkAir5C'
+      checkCurrentStateEntryName: s32'NmlAtkAir5C'
       if: (VARIABLE), 0
         addGatlingOption: s32'DustFinish_C'
         ifOperation: (IS_EQUAL), (VARIABLE), 346, (STATIC), 0
@@ -12357,7 +12357,7 @@ startSubroutine: s32'cmn_Dust_HomingJump_Attack'
           storeValue: (VARIABLE), 348, (STATIC), 2000
           endIf: 
         endIf: 
-      Unknown2362: s32'NmlAtkAir5D'
+      checkCurrentStateEntryName: s32'NmlAtkAir5D'
       if: (VARIABLE), 0
         addGatlingOption: s32'DustFinish_D'
         ifOperation: (IS_EQUAL), (VARIABLE), 346, (STATIC), 0
@@ -12370,7 +12370,7 @@ startSubroutine: s32'cmn_Dust_HomingJump_Attack'
           storeValue: (VARIABLE), 348, (STATIC), 2000
           endIf: 
         endIf: 
-      Unknown2362: s32'NmlAtkAir5E'
+      checkCurrentStateEntryName: s32'NmlAtkAir5E'
       if: (VARIABLE), 0
         addGatlingOption: s32'DustFinish'
         ifOperation: (IS_EQUAL), (VARIABLE), 346, (STATIC), 0
@@ -12439,7 +12439,7 @@ startSubroutine: s32'cmn_Dust_Finish'
     recoveryState: 
     endUpon: 
   upon: 78
-    Unknown23: 78
+    clearRegisteredUponCode: 78
     Unknown32: s32'cmn_Chase_Camera'
     Unknown1918: s32'DustSpeedCtrl', 0, 0, 0, 0, 0, 0, 0, 0
     Unknown176: 1
@@ -12461,7 +12461,7 @@ startSubroutine: s32'cmn_Dust_Finish'
       upon: 77
         ifNot: (VARIABLE), 16
           ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 0
-            Unknown23: 50
+            clearRegisteredUponCode: 50
             Unknown271: 0, 119, 1, 1
             endIf: 
           endIf: 
@@ -12645,7 +12645,7 @@ startSubroutine: s32'cmn_Dust_Finish_Master'
   Unknown1971: 1
   Unknown2169: 0
   Unknown2168: 0
-  upon: 2
+  upon: (TOUCH_GROUND)
     Unknown14: s32'landing'
     Unknown239: 
     physicsXImpulse: 0, -50000
@@ -12664,8 +12664,8 @@ startSubroutine: s32'cmn_Dust_Finish_Master'
     storeValue: (VARIABLE), 317, (STATIC), 0
     storeValue: (VARIABLE), 306, (STATIC), 0
     endUpon: 
-  Unknown36: 13, 26
-  upon: 13
+  setEventTrigger: (TIMER), 26
+  upon: (TIMER)
     Unknown210: -2750000
     Unknown98: 3000000
     physicsXImpulse: 0, 90000
@@ -12683,7 +12683,7 @@ startSubroutine: s32'cmn_Dust_Finish_Slave'
   Unknown1971: 1
   Unknown2169: 0
   Unknown2168: 0
-  upon: 2
+  upon: (TOUCH_GROUND)
     Unknown14: s32'landing'
     Unknown2077: s32'ShakeTateYoko', 3000, 0, 20, 10
     Unknown448: s32'cmn_crater_sp', 100
@@ -12787,15 +12787,15 @@ startSubroutine: s32'cmn_Dust_End_Master'
     Unknown2248: 
     Unknown40: 
     endUpon: 
-  upon: 2
+  upon: (TOUCH_GROUND)
     Unknown14: s32'landing'
     physicsXImpulse: 0, 15000
     Unknown2229: 90
     Unknown448: s32'bg_dash_default', 100
     endUpon: 
   Unknown392: 500
-  Unknown36: 13, 35
-  upon: 13
+  setEventTrigger: (TIMER), 35
+  upon: (TIMER)
     Unknown393: 
     endUpon: 
   Unknown2427: s32'DustAtkEndNG', 0, 1
@@ -12822,7 +12822,7 @@ startSubroutine: s32'cmn_Dust_End_Slave'
   upon: 12
     Unknown2033: 22, s32'WorldSideBreak_Master_DF'
     if: (VARIABLE), 0
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       upon: (FRAME_STEP)
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
           Unknown53: 23, 2, 316, 22, 2, 316
@@ -12841,12 +12841,12 @@ startSubroutine: s32'cmn_Dust_End_Slave'
           physicsYImpulse: 0, -40000
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 1
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown251: 1
           setGravity: 2000
           Unknown2169: 0
           Unknown2168: 0
-          upon: 2
+          upon: (TOUCH_GROUND)
             ifNot: (VARIABLE), 77
               Unknown76: s32'CmnActKorogari'
               endIf: 
@@ -12857,7 +12857,7 @@ startSubroutine: s32'cmn_Dust_End_Slave'
             Unknown2229: 95
             upon: (FRAME_STEP)
               ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 22
-                Unknown23: 3
+                clearRegisteredUponCode: (FRAME_STEP)
                 physicsXImpulse: 0, 0
                 endIf: 
               endUpon: 
@@ -12923,7 +12923,7 @@ beginState: s32'cmn_tailsmoke'
     Unknown188: 1750
     upon: (FRAME_STEP)
       Unknown2498: 3, 2, 31
-        Unknown23: 3
+        clearRegisteredUponCode: (FRAME_STEP)
         Unknown454: 0
         Unknown191: 105
         Unknown341: 105
@@ -13471,7 +13471,7 @@ startSubroutine: s32'cmnSpecialAtkThrowInit'
   if: (VARIABLE), 330
     upon: 42
       ifNot: (VARIABLE), 16
-        Unknown23: 42
+        clearRegisteredUponCode: 42
         recoveryState: 
         endIf: 
       endUpon: 
@@ -13635,7 +13635,7 @@ startSubroutine: s32'cmn_Hizakuzure'
       endIf: 
     else: 
       ifNot: (VARIABLE), 16
-        Unknown23: 3
+        clearRegisteredUponCode: (FRAME_STEP)
         Unknown14: s32'ko'
         endIf: 
       endElse: 
@@ -13666,7 +13666,7 @@ startSubroutine: s32'cmn_AtkTemplFloatDamage'
 
 startSubroutine: s32'cmn_AtkTemplFloatDamageHead'
   upon: 62
-    Unknown23: 62
+    clearRegisteredUponCode: 62
     callSubroutine: s32'cmn_AtkTemplFloatDamage'
     Unknown921: 1
     endUpon: 
@@ -13674,7 +13674,7 @@ startSubroutine: s32'cmn_AtkTemplFloatDamageHead'
 
 startSubroutine: s32'cmn_AtkTemplFloatDamageBody'
   upon: 62
-    Unknown23: 62
+    clearRegisteredUponCode: 62
     callSubroutine: s32'cmn_AtkTemplFloatDamage'
     Unknown922: 1
     endUpon: 
@@ -13696,7 +13696,7 @@ startSubroutine: s32'cmn_FloatDamage'
         physicsYImpulse: 0, 2500
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 13
-        Unknown23: 3
+        clearRegisteredUponCode: (FRAME_STEP)
         Unknown2229: 80
         physicsYImpulse: 0, 0
         setGravity: 4000
@@ -13709,13 +13709,13 @@ startSubroutine: s32'cmn_FloatDamage'
     setGravity: 1000
     Unknown2031: 3, s32'NmlAtk5E'
     if: (VARIABLE), 0
-      upon: 4
-        Unknown23: 4
+      upon: (FALL_SPEED)
+        clearRegisteredUponCode: (FALL_SPEED)
         Unknown2181: 1
         endUpon: 
       endIf: 
     endIf: 
-  upon: 2
+  upon: (TOUCH_GROUND)
     Unknown2273: 0, 750
     Unknown449: s32'bg_down_default', 127
     Unknown2229: 85
@@ -13726,7 +13726,7 @@ startSubroutine: s32'cmn_FloatDamage'
       upon: (FRAME_STEP)
         modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 8
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown1352: 1
           Unknown1688: 1
           endIf: 
@@ -13739,7 +13739,7 @@ startSubroutine: s32'cmn_FloatDamage'
       upon: (FRAME_STEP)
         modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 7
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown1352: 1
           Unknown1688: 1
           endIf: 
@@ -13750,7 +13750,7 @@ startSubroutine: s32'cmn_FloatDamage'
 
 startSubroutine: s32'cmn_AtkTemplNokezoriHigh'
   upon: 62
-    Unknown23: 62
+    clearRegisteredUponCode: 62
     Unknown49: 89
     if: (VARIABLE), 0
       groundHitEffect: 4
@@ -13760,7 +13760,7 @@ startSubroutine: s32'cmn_AtkTemplNokezoriHigh'
 
 startSubroutine: s32'cmn_AtkTemplNokezoriLow'
   upon: 62
-    Unknown23: 62
+    clearRegisteredUponCode: 62
     Unknown49: 89
     if: (VARIABLE), 0
       groundHitEffect: 5
@@ -13838,7 +13838,7 @@ startSubroutine: s32'cmn_Korogari_ToDown_Brake'
     ifNot: (VARIABLE), 81
       modifyVar: (ADD), (VARIABLE), 46, (STATIC), 1
       ifOperation: (IS_EQUAL), (VARIABLE), 46, (STATIC), 20
-        Unknown23: 12
+        clearRegisteredUponCode: 12
         Unknown2229: 80
         endIf: 
       endIf: 
@@ -13860,8 +13860,8 @@ startSubroutine: s32'cmn_HaritsukiGetUp'
   endSubroutine: 
 
 startSubroutine: s32'cmn_GorogoroBGParticle'
-  Unknown36: 13, 1
-  upon: 13
+  setEventTrigger: (TIMER), 1
+  upon: (TIMER)
     Unknown448: s32'cmn_landcrack', 100
     upon: (FRAME_STEP)
       modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
@@ -13897,7 +13897,7 @@ startSubroutine: s32'cmn_Jitabata'
         Unknown1688: 1
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 47, (VARIABLE), 49
-        Unknown23: 3
+        clearRegisteredUponCode: (FRAME_STEP)
         Unknown27: s32'_NEUTRAL'
         endIf: 
       endIf: 
@@ -13928,7 +13928,7 @@ startSubroutine: s32'cmn_Down2Stand'
       Unknown1709: 1
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 13, (VARIABLE), 45
-      Unknown23: 3
+      clearRegisteredUponCode: (FRAME_STEP)
       Unknown1709: 0
       endIf: 
     endUpon: 
@@ -15389,7 +15389,7 @@ startSubroutine: s32'cmnWorldSideBreak_Base'
     ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 74
       callSubroutine: s32'cmnWorldSideBreak_Action_Master'
       Unknown41: 3
-      Unknown23: 2
+      clearRegisteredUponCode: (TOUCH_GROUND)
       Unknown40: 
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 65
@@ -15586,16 +15586,16 @@ startSubroutine: s32'cmnWinActionWait'
     endUpon: 
   upon: (FRAME_STEP)
     ifNot: (VARIABLE), 8
-      Unknown23: 3
-      Unknown23: 2
+      clearRegisteredUponCode: (FRAME_STEP)
+      clearRegisteredUponCode: (TOUCH_GROUND)
       Unknown14: s32'loop'
       Unknown1361: 1
       endIf: 
     endUpon: 
   Unknown2169: 0
-  upon: 2
-    Unknown23: 3
-    Unknown23: 2
+  upon: (TOUCH_GROUND)
+    clearRegisteredUponCode: (FRAME_STEP)
+    clearRegisteredUponCode: (TOUCH_GROUND)
     Unknown14: s32'landing'
     Unknown1361: 1
     endUpon: 
@@ -16227,7 +16227,7 @@ beginState: s32'cmn_ForceTrans_Up_CameraObj'
   physicsYImpulse: 0, 40000
   Unknown1736: 0, 3000
   sprite: s32'null', 60
-  Unknown23: 3
+  clearRegisteredUponCode: (FRAME_STEP)
   physicsXImpulse: 0, 21000
   Unknown2229: 101
   physicsYImpulse: 0, 50000
@@ -16344,8 +16344,8 @@ beginState: s32'cmnWSB_FinishCamera'
     else: 
       Unknown423: '0x020000002D00000000000000E093040000000000206CFBFF'
       endElse: 
-    Unknown36: 13, 72
-    upon: 13
+    setEventTrigger: (TIMER), 72
+    upon: (TIMER)
       Unknown428: 0, 40
       Unknown427: 0, 20
       Unknown429: 0, 40
@@ -16419,8 +16419,8 @@ beginState: s32'cmnWSB_FinishCamera_3'
     else: 
       Unknown423: '0x020000002D00000000000000E093040000000000206CFBFF'
       endElse: 
-    Unknown36: 13, 72
-    upon: 13
+    setEventTrigger: (TIMER), 72
+    upon: (TIMER)
       Unknown428: 0, 40
       Unknown427: 0, 20
       Unknown429: 0, 40
@@ -16822,7 +16822,7 @@ startSubroutine: s32'cmnWSB_Master_Slide_6'
   upon: 49
     Unknown2041: s32'WSB_Slide'
     if: (VARIABLE), 0
-      Unknown23: 49
+      clearRegisteredUponCode: 49
       Unknown178: 22
       Unknown1914: 0
       Unknown94: 0, -500000
@@ -16836,7 +16836,7 @@ startSubroutine: s32'cmnWSB_Master_Slide_6'
           Unknown485: s32'bg_dashstart', 163
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown176: 1
           Unknown210: 150000
           Unknown485: s32'bg_dashbrake', 100
@@ -16871,8 +16871,8 @@ startSubroutine: s32'cmnWSB_Slave_Slide_6'
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
-  upon: 4
-    Unknown23: 4
+  upon: (FALL_SPEED)
+    clearRegisteredUponCode: (FALL_SPEED)
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
@@ -16888,7 +16888,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_6'
         endIf: 
       endUpon: 
     Unknown1914: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       Unknown176: 1
       Unknown196: 23, 131, 0, -700000, 0, 0, 0, 15
@@ -16919,7 +16919,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_6'
             endElse: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown210: -750000
           Unknown176: 1
           Unknown2277: 1
@@ -16975,8 +16975,8 @@ startSubroutine: s32'cmnWSB_Master_Up_6'
   upon: 49
     Unknown2041: s32'WSB_Up'
     if: (VARIABLE), 0
-      Unknown23: 49
-      Unknown23: 36
+      clearRegisteredUponCode: 49
+      clearRegisteredUponCode: 36
       Unknown2055: 1
       Unknown251: 1
       Unknown14: s32'jump'
@@ -16987,14 +16987,14 @@ startSubroutine: s32'cmnWSB_Master_Up_6'
       Unknown196: 23, 131, 0, 100000, 0, 0, 0, 16
       Unknown1731: 0
       Unknown232: 0
-      upon: 4
-        Unknown23: 4
-        upon: 2
+      upon: (FALL_SPEED)
+        clearRegisteredUponCode: (FALL_SPEED)
+        upon: (TOUCH_GROUND)
           Unknown14: s32'landing'
           Unknown196: 23, 131, 0, 150000, 0, 0, 0, 5
           upon: (FRAME_STEP)
             ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 5
-              Unknown23: 3
+              clearRegisteredUponCode: (FRAME_STEP)
               Unknown176: 1
               Unknown210: 150000
               endIf: 
@@ -17030,8 +17030,8 @@ startSubroutine: s32'cmnWSB_Slave_Up_6'
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
-  upon: 4
-    Unknown23: 4
+  upon: (FALL_SPEED)
+    clearRegisteredUponCode: (FALL_SPEED)
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
@@ -17047,7 +17047,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_6'
         endIf: 
       endUpon: 
     Unknown1914: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       Unknown176: 1
       Unknown196: 23, 131, 0, -700000, 0, 0, 0, 15
@@ -17079,7 +17079,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_6'
             endElse: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown210: -750000
           Unknown176: 1
           Unknown2277: 1
@@ -17091,7 +17091,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_6'
   Unknown1736: 0, 12500
   upon: 12
     ifOperation: (IS_GREATER), (VARIABLE), 281, (STATIC), -12500
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       Unknown1736: 0, 0
       Unknown1731: 0
       endIf: 
@@ -17144,8 +17144,8 @@ startSubroutine: s32'cmnWSB_Master_Down_6'
   upon: 49
     Unknown2041: s32'WSB_Down'
     if: (VARIABLE), 0
-      Unknown23: 49
-      Unknown23: 36
+      clearRegisteredUponCode: 49
+      clearRegisteredUponCode: 36
       Unknown2055: 1
       Unknown251: 1
       Unknown14: s32'jump'
@@ -17156,14 +17156,14 @@ startSubroutine: s32'cmnWSB_Master_Down_6'
       Unknown196: 23, 131, 0, 100000, 0, 0, 0, 16
       Unknown1731: 0
       Unknown232: 0
-      upon: 4
-        Unknown23: 4
-        upon: 2
+      upon: (FALL_SPEED)
+        clearRegisteredUponCode: (FALL_SPEED)
+        upon: (TOUCH_GROUND)
           Unknown14: s32'landing'
           Unknown196: 23, 131, 0, 150000, 0, 0, 0, 5
           upon: (FRAME_STEP)
             ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 5
-              Unknown23: 3
+              clearRegisteredUponCode: (FRAME_STEP)
               Unknown176: 1
               Unknown210: 150000
               endIf: 
@@ -17199,8 +17199,8 @@ startSubroutine: s32'cmnWSB_Slave_Down_6'
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
-  upon: 4
-    Unknown23: 4
+  upon: (FALL_SPEED)
+    clearRegisteredUponCode: (FALL_SPEED)
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
@@ -17216,7 +17216,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_6'
         endIf: 
       endUpon: 
     Unknown1914: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       Unknown176: 1
       Unknown196: 23, 131, 0, -700000, 0, 0, 0, 15
@@ -17248,7 +17248,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_6'
             endElse: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown210: -750000
           Unknown176: 1
           Unknown2277: 1
@@ -17260,7 +17260,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_6'
   Unknown1736: 0, 12500
   upon: 12
     ifOperation: (IS_GREATER), (VARIABLE), 281, (STATIC), -12500
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       Unknown1736: 0, 0
       Unknown1731: 0
       endIf: 
@@ -17313,8 +17313,8 @@ startSubroutine: s32'cmnWSB_Master_Bound_6'
   upon: 49
     Unknown2041: s32'WSB_Bound'
     if: (VARIABLE), 0
-      Unknown23: 49
-      Unknown23: 36
+      clearRegisteredUponCode: 49
+      clearRegisteredUponCode: 36
       Unknown2055: 1
       Unknown251: 1
       Unknown14: s32'jump'
@@ -17325,14 +17325,14 @@ startSubroutine: s32'cmnWSB_Master_Bound_6'
       Unknown196: 23, 131, 0, 100000, 0, 0, 0, 16
       Unknown1731: 0
       Unknown232: 0
-      upon: 4
-        Unknown23: 4
-        upon: 2
+      upon: (FALL_SPEED)
+        clearRegisteredUponCode: (FALL_SPEED)
+        upon: (TOUCH_GROUND)
           Unknown14: s32'landing'
           Unknown196: 23, 131, 0, 150000, 0, 0, 0, 5
           upon: (FRAME_STEP)
             ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 5
-              Unknown23: 3
+              clearRegisteredUponCode: (FRAME_STEP)
               Unknown176: 1
               Unknown210: 150000
               endIf: 
@@ -17368,8 +17368,8 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6'
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
-  upon: 4
-    Unknown23: 4
+  upon: (FALL_SPEED)
+    clearRegisteredUponCode: (FALL_SPEED)
     storeValue: (VARIABLE), 45, (STATIC), 65
     Unknown52: 2, 2, 18, 0, 10, 2, 46
     storeValue: (VARIABLE), 47, (STATIC), 5460000
@@ -17392,7 +17392,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6'
         modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'bound'
       Unknown176: 1
       Unknown2077: s32'ShakeTateYoko', 2500, 0, 10, 5
@@ -17420,8 +17420,8 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6'
       modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
       Unknown52: 3, 2, 50, 2, 51, 2, 311
       modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
-      upon: 4
-        Unknown23: 4
+      upon: (FALL_SPEED)
+        clearRegisteredUponCode: (FALL_SPEED)
         Unknown52: 1, 2, 45, 2, 13, 2, 51
         Unknown52: 0, 2, 51, 0, -1, 2, 52
         modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
@@ -17437,7 +17437,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6'
             endIf: 
           endUpon: 
         Unknown1914: 0
-        upon: 2
+        upon: (TOUCH_GROUND)
           Unknown14: s32'landing'
           Unknown176: 1
           Unknown196: 23, 131, 0, -725000, 0, 200000, 0, 15
@@ -17469,7 +17469,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6'
                 endElse: 
               endIf: 
             ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-              Unknown23: 3
+              clearRegisteredUponCode: (FRAME_STEP)
               Unknown210: -750000
               Unknown98: 0
               Unknown176: 1
@@ -17484,7 +17484,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6'
   Unknown1736: 0, 11538
   upon: 12
     ifOperation: (IS_GREATER), (VARIABLE), 281, (STATIC), -11538
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       Unknown1736: 0, 0
       Unknown1731: 0
       endIf: 
@@ -17541,8 +17541,8 @@ startSubroutine: s32'cmnWSB_Master_Slide_6_4500'
   upon: 49
     Unknown2041: s32'WSB_Slide'
     if: (VARIABLE), 0
-      Unknown23: 49
-      Unknown23: 36
+      clearRegisteredUponCode: 49
+      clearRegisteredUponCode: 36
       Unknown2055: 1
       Unknown251: 1
       Unknown14: s32'dash'
@@ -17560,7 +17560,7 @@ startSubroutine: s32'cmnWSB_Master_Slide_6_4500'
           Unknown485: s32'bg_dashstart', 163
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown176: 1
           Unknown210: 150000
           Unknown485: s32'bg_dashbrake', 100
@@ -17595,8 +17595,8 @@ startSubroutine: s32'cmnWSB_Slave_Slide_6_4500'
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
-  upon: 4
-    Unknown23: 4
+  upon: (FALL_SPEED)
+    clearRegisteredUponCode: (FALL_SPEED)
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
@@ -17612,7 +17612,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_6_4500'
         endIf: 
       endUpon: 
     Unknown1914: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       Unknown176: 1
       Unknown196: 23, 131, 0, -700000, 0, 0, 0, 15
@@ -17644,7 +17644,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_6_4500'
             endElse: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown210: -750000
           Unknown176: 1
           Unknown2277: 1
@@ -17656,7 +17656,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_6_4500'
   Unknown1736: 0, 46666
   upon: 12
     ifOperation: (IS_GREATER), (VARIABLE), 281, (STATIC), -46666
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       Unknown1736: 0, 0
       Unknown1731: 0
       endIf: 
@@ -17712,8 +17712,8 @@ startSubroutine: s32'cmnWSB_Master_Up_6_4500'
   upon: 49
     Unknown2041: s32'WSB_Up'
     if: (VARIABLE), 0
-      Unknown23: 49
-      Unknown23: 36
+      clearRegisteredUponCode: 49
+      clearRegisteredUponCode: 36
       Unknown2055: 1
       Unknown251: 1
       Unknown14: s32'jump'
@@ -17724,14 +17724,14 @@ startSubroutine: s32'cmnWSB_Master_Up_6_4500'
       Unknown196: 23, 131, 0, 100000, 0, 0, 0, 16
       Unknown1731: 0
       Unknown232: 0
-      upon: 4
-        Unknown23: 4
-        upon: 2
+      upon: (FALL_SPEED)
+        clearRegisteredUponCode: (FALL_SPEED)
+        upon: (TOUCH_GROUND)
           Unknown14: s32'landing'
           Unknown196: 23, 131, 0, 150000, 0, 0, 0, 5
           upon: (FRAME_STEP)
             ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 5
-              Unknown23: 3
+              clearRegisteredUponCode: (FRAME_STEP)
               Unknown176: 1
               Unknown210: 150000
               endIf: 
@@ -17767,8 +17767,8 @@ startSubroutine: s32'cmnWSB_Slave_Up_6_4500'
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
-  upon: 4
-    Unknown23: 4
+  upon: (FALL_SPEED)
+    clearRegisteredUponCode: (FALL_SPEED)
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
@@ -17784,7 +17784,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_6_4500'
         endIf: 
       endUpon: 
     Unknown1914: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       Unknown176: 1
       Unknown196: 23, 131, 0, -700000, 0, 0, 0, 15
@@ -17816,7 +17816,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_6_4500'
             endElse: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown210: -750000
           Unknown176: 1
           Unknown2277: 1
@@ -17828,7 +17828,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_6_4500'
   Unknown1736: 0, 46666
   upon: 12
     ifOperation: (IS_GREATER), (VARIABLE), 281, (STATIC), -46666
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       Unknown1736: 0, 0
       Unknown1731: 0
       endIf: 
@@ -17884,8 +17884,8 @@ startSubroutine: s32'cmnWSB_Master_Down_6_4500'
   upon: 49
     Unknown2041: s32'WSB_Down'
     if: (VARIABLE), 0
-      Unknown23: 49
-      Unknown23: 36
+      clearRegisteredUponCode: 49
+      clearRegisteredUponCode: 36
       Unknown2055: 1
       Unknown251: 1
       Unknown14: s32'jump'
@@ -17896,14 +17896,14 @@ startSubroutine: s32'cmnWSB_Master_Down_6_4500'
       Unknown196: 23, 131, 0, 100000, 0, 0, 0, 16
       Unknown1731: 0
       Unknown232: 0
-      upon: 4
-        Unknown23: 4
-        upon: 2
+      upon: (FALL_SPEED)
+        clearRegisteredUponCode: (FALL_SPEED)
+        upon: (TOUCH_GROUND)
           Unknown14: s32'landing'
           Unknown196: 23, 131, 0, 150000, 0, 0, 0, 5
           upon: (FRAME_STEP)
             ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 5
-              Unknown23: 3
+              clearRegisteredUponCode: (FRAME_STEP)
               Unknown176: 1
               Unknown210: 150000
               endIf: 
@@ -17939,8 +17939,8 @@ startSubroutine: s32'cmnWSB_Slave_Down_6_4500'
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
-  upon: 4
-    Unknown23: 4
+  upon: (FALL_SPEED)
+    clearRegisteredUponCode: (FALL_SPEED)
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
@@ -17956,7 +17956,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_6_4500'
         endIf: 
       endUpon: 
     Unknown1914: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       Unknown176: 1
       Unknown196: 23, 131, 0, -700000, 0, 0, 0, 15
@@ -17988,7 +17988,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_6_4500'
             endElse: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown210: -750000
           Unknown176: 1
           Unknown2277: 1
@@ -18000,7 +18000,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_6_4500'
   Unknown1736: 0, 46666
   upon: 12
     ifOperation: (IS_GREATER), (VARIABLE), 281, (STATIC), -46666
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       Unknown1736: 0, 0
       Unknown1731: 0
       endIf: 
@@ -18056,8 +18056,8 @@ startSubroutine: s32'cmnWSB_Master_Bound_6_4500'
   upon: 49
     Unknown2041: s32'WSB_Bound'
     if: (VARIABLE), 0
-      Unknown23: 49
-      Unknown23: 36
+      clearRegisteredUponCode: 49
+      clearRegisteredUponCode: 36
       Unknown2055: 1
       Unknown251: 1
       Unknown14: s32'jump'
@@ -18068,14 +18068,14 @@ startSubroutine: s32'cmnWSB_Master_Bound_6_4500'
       Unknown196: 23, 131, 0, 100000, 0, 0, 0, 16
       Unknown1731: 0
       Unknown232: 0
-      upon: 4
-        Unknown23: 4
-        upon: 2
+      upon: (FALL_SPEED)
+        clearRegisteredUponCode: (FALL_SPEED)
+        upon: (TOUCH_GROUND)
           Unknown14: s32'landing'
           Unknown196: 23, 131, 0, 150000, 0, 0, 0, 5
           upon: (FRAME_STEP)
             ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 5
-              Unknown23: 3
+              clearRegisteredUponCode: (FRAME_STEP)
               Unknown176: 1
               Unknown210: 150000
               endIf: 
@@ -18111,8 +18111,8 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6_4500'
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
-  upon: 4
-    Unknown23: 4
+  upon: (FALL_SPEED)
+    clearRegisteredUponCode: (FALL_SPEED)
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
@@ -18128,7 +18128,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6_4500'
         endIf: 
       endUpon: 
     Unknown1914: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       Unknown176: 1
       Unknown196: 23, 131, 0, -700000, 0, 0, 0, 15
@@ -18160,7 +18160,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6_4500'
             endElse: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown210: -750000
           Unknown176: 1
           Unknown2277: 1
@@ -18172,7 +18172,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6_4500'
   Unknown1736: 0, 46666
   upon: 12
     ifOperation: (IS_GREATER), (VARIABLE), 281, (STATIC), -46666
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       Unknown1736: 0, 0
       Unknown1731: 0
       endIf: 
@@ -18228,8 +18228,8 @@ startSubroutine: s32'cmnWSB_Master_Slide_3_4500'
   upon: 49
     Unknown2041: s32'WSB_Slide'
     if: (VARIABLE), 0
-      Unknown23: 49
-      Unknown23: 36
+      clearRegisteredUponCode: 49
+      clearRegisteredUponCode: 36
       Unknown2055: 1
       Unknown251: 1
       Unknown14: s32'dash'
@@ -18247,7 +18247,7 @@ startSubroutine: s32'cmnWSB_Master_Slide_3_4500'
           Unknown485: s32'bg_dashstart', 163
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown176: 1
           Unknown210: 150000
           Unknown485: s32'bg_dashbrake', 100
@@ -18282,8 +18282,8 @@ startSubroutine: s32'cmnWSB_Slave_Slide_3_4500'
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
-  upon: 4
-    Unknown23: 4
+  upon: (FALL_SPEED)
+    clearRegisteredUponCode: (FALL_SPEED)
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
@@ -18299,7 +18299,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_3_4500'
         endIf: 
       endUpon: 
     Unknown1914: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       Unknown176: 1
       Unknown196: 23, 131, 0, -700000, 0, 0, 0, 15
@@ -18331,7 +18331,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_3_4500'
             endElse: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown210: -750000
           Unknown176: 1
           Unknown2277: 1
@@ -18343,7 +18343,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_3_4500'
   Unknown1736: 0, 176666
   upon: 12
     ifOperation: (IS_GREATER), (VARIABLE), 281, (STATIC), -176666
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       Unknown1736: 0, 0
       Unknown1731: 0
       endIf: 
@@ -18399,8 +18399,8 @@ startSubroutine: s32'cmnWSB_Master_Up_3_4500'
   upon: 49
     Unknown2041: s32'WSB_Up'
     if: (VARIABLE), 0
-      Unknown23: 49
-      Unknown23: 36
+      clearRegisteredUponCode: 49
+      clearRegisteredUponCode: 36
       Unknown2055: 1
       Unknown251: 1
       Unknown14: s32'jump'
@@ -18411,14 +18411,14 @@ startSubroutine: s32'cmnWSB_Master_Up_3_4500'
       Unknown196: 23, 131, 0, 100000, 0, 0, 0, 16
       Unknown1731: 0
       Unknown232: 0
-      upon: 4
-        Unknown23: 4
-        upon: 2
+      upon: (FALL_SPEED)
+        clearRegisteredUponCode: (FALL_SPEED)
+        upon: (TOUCH_GROUND)
           Unknown14: s32'landing'
           Unknown196: 23, 131, 0, 150000, 0, 0, 0, 5
           upon: (FRAME_STEP)
             ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 5
-              Unknown23: 3
+              clearRegisteredUponCode: (FRAME_STEP)
               Unknown176: 1
               Unknown210: 150000
               endIf: 
@@ -18454,8 +18454,8 @@ startSubroutine: s32'cmnWSB_Slave_Up_3_4500'
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
-  upon: 4
-    Unknown23: 4
+  upon: (FALL_SPEED)
+    clearRegisteredUponCode: (FALL_SPEED)
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
@@ -18471,7 +18471,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_3_4500'
         endIf: 
       endUpon: 
     Unknown1914: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       Unknown176: 1
       Unknown196: 23, 131, 0, -700000, 0, 0, 0, 15
@@ -18503,7 +18503,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_3_4500'
             endElse: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown210: -750000
           Unknown176: 1
           Unknown2277: 1
@@ -18515,7 +18515,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_3_4500'
   Unknown1736: 0, 176666
   upon: 12
     ifOperation: (IS_GREATER), (VARIABLE), 281, (STATIC), -176666
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       Unknown1736: 0, 0
       Unknown1731: 0
       endIf: 
@@ -18571,8 +18571,8 @@ startSubroutine: s32'cmnWSB_Master_Down_3_4500'
   upon: 49
     Unknown2041: s32'WSB_Down'
     if: (VARIABLE), 0
-      Unknown23: 49
-      Unknown23: 36
+      clearRegisteredUponCode: 49
+      clearRegisteredUponCode: 36
       Unknown2055: 1
       Unknown251: 1
       Unknown14: s32'jump'
@@ -18583,14 +18583,14 @@ startSubroutine: s32'cmnWSB_Master_Down_3_4500'
       Unknown196: 23, 131, 0, 100000, 0, 0, 0, 16
       Unknown1731: 0
       Unknown232: 0
-      upon: 4
-        Unknown23: 4
-        upon: 2
+      upon: (FALL_SPEED)
+        clearRegisteredUponCode: (FALL_SPEED)
+        upon: (TOUCH_GROUND)
           Unknown14: s32'landing'
           Unknown196: 23, 131, 0, 150000, 0, 0, 0, 5
           upon: (FRAME_STEP)
             ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 5
-              Unknown23: 3
+              clearRegisteredUponCode: (FRAME_STEP)
               Unknown176: 1
               Unknown210: 150000
               endIf: 
@@ -18626,8 +18626,8 @@ startSubroutine: s32'cmnWSB_Slave_Down_3_4500'
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
-  upon: 4
-    Unknown23: 4
+  upon: (FALL_SPEED)
+    clearRegisteredUponCode: (FALL_SPEED)
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
@@ -18643,7 +18643,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_3_4500'
         endIf: 
       endUpon: 
     Unknown1914: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       Unknown176: 1
       Unknown196: 23, 131, 0, -700000, 0, 0, 0, 15
@@ -18675,7 +18675,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_3_4500'
             endElse: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown210: -750000
           Unknown176: 1
           Unknown2277: 1
@@ -18687,7 +18687,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_3_4500'
   Unknown1736: 0, 176666
   upon: 12
     ifOperation: (IS_GREATER), (VARIABLE), 281, (STATIC), -176666
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       Unknown1736: 0, 0
       Unknown1731: 0
       endIf: 
@@ -18743,8 +18743,8 @@ startSubroutine: s32'cmnWSB_Master_Bound_3_4500'
   upon: 49
     Unknown2041: s32'WSB_Bound'
     if: (VARIABLE), 0
-      Unknown23: 49
-      Unknown23: 36
+      clearRegisteredUponCode: 49
+      clearRegisteredUponCode: 36
       Unknown2055: 1
       Unknown251: 1
       Unknown14: s32'jump'
@@ -18755,14 +18755,14 @@ startSubroutine: s32'cmnWSB_Master_Bound_3_4500'
       Unknown196: 23, 131, 0, 100000, 0, 0, 0, 16
       Unknown1731: 0
       Unknown232: 0
-      upon: 4
-        Unknown23: 4
-        upon: 2
+      upon: (FALL_SPEED)
+        clearRegisteredUponCode: (FALL_SPEED)
+        upon: (TOUCH_GROUND)
           Unknown14: s32'landing'
           Unknown196: 23, 131, 0, 150000, 0, 0, 0, 5
           upon: (FRAME_STEP)
             ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 5
-              Unknown23: 3
+              clearRegisteredUponCode: (FRAME_STEP)
               Unknown176: 1
               Unknown210: 150000
               endIf: 
@@ -18798,8 +18798,8 @@ startSubroutine: s32'cmnWSB_Slave_Bound_3_4500'
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
-  upon: 4
-    Unknown23: 4
+  upon: (FALL_SPEED)
+    clearRegisteredUponCode: (FALL_SPEED)
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown52: 0, 2, 51, 0, -1, 2, 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
@@ -18815,7 +18815,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_3_4500'
         endIf: 
       endUpon: 
     Unknown1914: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       Unknown176: 1
       Unknown196: 23, 131, 0, -700000, 0, 0, 0, 15
@@ -18847,7 +18847,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_3_4500'
             endElse: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown210: -750000
           Unknown176: 1
           Unknown2277: 1
@@ -18859,7 +18859,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_3_4500'
   Unknown1736: 0, 176666
   upon: 12
     ifOperation: (IS_GREATER), (VARIABLE), 281, (STATIC), -176666
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       Unknown1736: 0, 0
       Unknown1731: 0
       endIf: 
@@ -18915,8 +18915,8 @@ startSubroutine: s32'cmnWSB_Master_Slide_3_21000'
   upon: 49
     Unknown2041: s32'WSB_Slide'
     if: (VARIABLE), 0
-      Unknown23: 49
-      Unknown23: 36
+      clearRegisteredUponCode: 49
+      clearRegisteredUponCode: 36
       Unknown2055: 1
       Unknown251: 1
       Unknown14: s32'dash'
@@ -18934,7 +18934,7 @@ startSubroutine: s32'cmnWSB_Master_Slide_3_21000'
           Unknown485: s32'bg_dashstart', 163
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown176: 1
           Unknown210: 150000
           Unknown485: s32'bg_dashbrake', 100
@@ -18969,8 +18969,8 @@ startSubroutine: s32'cmnWSB_Slave_Slide_3_21000'
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
-  upon: 4
-    Unknown23: 4
+  upon: (FALL_SPEED)
+    clearRegisteredUponCode: (FALL_SPEED)
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown114: 
     modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
@@ -18991,7 +18991,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_3_21000'
         endIf: 
       endUpon: 
     Unknown1914: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       Unknown176: 1
       Unknown196: 23, 131, 0, -700000, 0, 0, 0, 15
@@ -19023,7 +19023,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_3_21000'
             endElse: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown210: -750000
           Unknown176: 1
           Unknown2277: 1
@@ -19035,7 +19035,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_3_21000'
   Unknown1736: 0, 777222
   upon: 12
     ifOperation: (IS_GREATER), (VARIABLE), 281, (STATIC), -777222
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       Unknown1736: 0, 0
       Unknown1731: 0
       endIf: 
@@ -19091,8 +19091,8 @@ startSubroutine: s32'cmnWSB_Master_Up_3_21000'
   upon: 49
     Unknown2041: s32'WSB_Up'
     if: (VARIABLE), 0
-      Unknown23: 49
-      Unknown23: 36
+      clearRegisteredUponCode: 49
+      clearRegisteredUponCode: 36
       Unknown2055: 1
       Unknown251: 1
       Unknown14: s32'jump'
@@ -19103,14 +19103,14 @@ startSubroutine: s32'cmnWSB_Master_Up_3_21000'
       Unknown196: 23, 131, 0, 100000, 0, 0, 0, 16
       Unknown1731: 0
       Unknown232: 0
-      upon: 4
-        Unknown23: 4
-        upon: 2
+      upon: (FALL_SPEED)
+        clearRegisteredUponCode: (FALL_SPEED)
+        upon: (TOUCH_GROUND)
           Unknown14: s32'landing'
           Unknown196: 23, 131, 0, 150000, 0, 0, 0, 5
           upon: (FRAME_STEP)
             ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 5
-              Unknown23: 3
+              clearRegisteredUponCode: (FRAME_STEP)
               Unknown176: 1
               Unknown210: 150000
               endIf: 
@@ -19146,8 +19146,8 @@ startSubroutine: s32'cmnWSB_Slave_Up_3_21000'
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
-  upon: 4
-    Unknown23: 4
+  upon: (FALL_SPEED)
+    clearRegisteredUponCode: (FALL_SPEED)
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown114: 
     modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
@@ -19168,7 +19168,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_3_21000'
         endIf: 
       endUpon: 
     Unknown1914: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       Unknown176: 1
       Unknown196: 23, 131, 0, -700000, 0, 0, 0, 15
@@ -19200,7 +19200,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_3_21000'
             endElse: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown210: -750000
           Unknown176: 1
           Unknown2277: 1
@@ -19212,7 +19212,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_3_21000'
   Unknown1736: 0, 777222
   upon: 12
     ifOperation: (IS_GREATER), (VARIABLE), 281, (STATIC), -777222
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       Unknown1736: 0, 0
       Unknown1731: 0
       endIf: 
@@ -19268,8 +19268,8 @@ startSubroutine: s32'cmnWSB_Master_Down_3_21000'
   upon: 49
     Unknown2041: s32'WSB_Down'
     if: (VARIABLE), 0
-      Unknown23: 49
-      Unknown23: 36
+      clearRegisteredUponCode: 49
+      clearRegisteredUponCode: 36
       Unknown2055: 1
       Unknown251: 1
       Unknown14: s32'jump'
@@ -19280,14 +19280,14 @@ startSubroutine: s32'cmnWSB_Master_Down_3_21000'
       Unknown196: 23, 131, 0, 100000, 0, 0, 0, 16
       Unknown1731: 0
       Unknown232: 0
-      upon: 4
-        Unknown23: 4
-        upon: 2
+      upon: (FALL_SPEED)
+        clearRegisteredUponCode: (FALL_SPEED)
+        upon: (TOUCH_GROUND)
           Unknown14: s32'landing'
           Unknown196: 23, 131, 0, 150000, 0, 0, 0, 5
           upon: (FRAME_STEP)
             ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 5
-              Unknown23: 3
+              clearRegisteredUponCode: (FRAME_STEP)
               Unknown176: 1
               Unknown210: 150000
               endIf: 
@@ -19323,8 +19323,8 @@ startSubroutine: s32'cmnWSB_Slave_Down_3_21000'
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
-  upon: 4
-    Unknown23: 4
+  upon: (FALL_SPEED)
+    clearRegisteredUponCode: (FALL_SPEED)
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown114: 
     modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
@@ -19345,7 +19345,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_3_21000'
         endIf: 
       endUpon: 
     Unknown1914: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       Unknown176: 1
       Unknown196: 23, 131, 0, -700000, 0, 0, 0, 15
@@ -19377,7 +19377,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_3_21000'
             endElse: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown210: -750000
           Unknown176: 1
           Unknown2277: 1
@@ -19389,7 +19389,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_3_21000'
   Unknown1736: 0, 777222
   upon: 12
     ifOperation: (IS_GREATER), (VARIABLE), 281, (STATIC), -777222
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       Unknown1736: 0, 0
       Unknown1731: 0
       endIf: 
@@ -19445,8 +19445,8 @@ startSubroutine: s32'cmnWSB_Master_Bound_3_21000'
   upon: 49
     Unknown2041: s32'WSB_Bound'
     if: (VARIABLE), 0
-      Unknown23: 49
-      Unknown23: 36
+      clearRegisteredUponCode: 49
+      clearRegisteredUponCode: 36
       Unknown2055: 1
       Unknown251: 1
       Unknown14: s32'jump'
@@ -19457,14 +19457,14 @@ startSubroutine: s32'cmnWSB_Master_Bound_3_21000'
       Unknown196: 23, 131, 0, 100000, 0, 0, 0, 16
       Unknown1731: 0
       Unknown232: 0
-      upon: 4
-        Unknown23: 4
-        upon: 2
+      upon: (FALL_SPEED)
+        clearRegisteredUponCode: (FALL_SPEED)
+        upon: (TOUCH_GROUND)
           Unknown14: s32'landing'
           Unknown196: 23, 131, 0, 150000, 0, 0, 0, 5
           upon: (FRAME_STEP)
             ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 5
-              Unknown23: 3
+              clearRegisteredUponCode: (FRAME_STEP)
               Unknown176: 1
               Unknown210: 150000
               endIf: 
@@ -19500,8 +19500,8 @@ startSubroutine: s32'cmnWSB_Slave_Bound_3_21000'
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
   Unknown52: 3, 2, 50, 2, 51, 2, 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
-  upon: 4
-    Unknown23: 4
+  upon: (FALL_SPEED)
+    clearRegisteredUponCode: (FALL_SPEED)
     Unknown52: 1, 2, 45, 2, 13, 2, 51
     Unknown114: 
     modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
@@ -19522,7 +19522,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_3_21000'
         endIf: 
       endUpon: 
     Unknown1914: 0
-    upon: 2
+    upon: (TOUCH_GROUND)
       Unknown14: s32'landing'
       Unknown176: 1
       Unknown196: 23, 131, 0, -700000, 0, 0, 0, 15
@@ -19554,7 +19554,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_3_21000'
             endElse: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
-          Unknown23: 3
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown210: -750000
           Unknown176: 1
           Unknown2277: 1
@@ -19566,7 +19566,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_3_21000'
   Unknown1736: 0, 777222
   upon: 12
     ifOperation: (IS_GREATER), (VARIABLE), 281, (STATIC), -777222
-      Unknown23: 12
+      clearRegisteredUponCode: 12
       Unknown1736: 0, 0
       Unknown1731: 0
       endIf: 
@@ -19723,7 +19723,7 @@ beginState: s32'cmn_wallbreak_end'
 
 startSubroutine: s32'cmn_Effect_NoLink'
   upon: 47
-    Unknown23: 47
+    clearRegisteredUponCode: 47
     Unknown456: 0
     Unknown454: 0
     Unknown295: 1
@@ -19736,7 +19736,7 @@ startSubroutine: s32'cmnWSB_Effect_NoStop_or_Delete'
   ifNot: (VARIABLE), 330
     upon: 36
       if: (VARIABLE), 315
-        Unknown23: 36
+        clearRegisteredUponCode: 36
         Unknown456: 0
         Unknown295: 1
         Unknown1801: 1
@@ -19780,7 +19780,7 @@ startSubroutine: s32'cmn_WSB_Assist'
   Unknown14: s32'loop'
   Unknown2169: 0
   Unknown2168: 0
-  upon: 2
+  upon: (TOUCH_GROUND)
     Unknown14: s32'landing'
     Unknown2050: 1
     physicsXImpulse: 0, 40000
@@ -20029,8 +20029,8 @@ startSubroutine: s32'cmnDS_Initialize'
               groundHitEffect: 20
               airHitEffect: 14
               endIf: 
-            upon: 100
-              Unknown23: 100
+            upon: (COUNTER_HIT)
+              clearRegisteredUponCode: (COUNTER_HIT)
               if: (VARIABLE), 130
                 callSubroutine: s32'cmn_RISCounter'
                 endIf: 
@@ -20918,7 +20918,7 @@ beginState: s32'cmnDebug29'
   upon: (FRAME_STEP)
     Unknown2033: 22, s32'CmnActBDash'
     if: (VARIABLE), 0
-      Unknown23: 3
+      clearRegisteredUponCode: (FRAME_STEP)
       Unknown14: s32'start'
       endIf: 
     endUpon: 
@@ -21182,7 +21182,7 @@ beginState: s32'cmn_Dust_alarm'
         modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
         ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 20
           Unknown456: 0
-          Unknown23: 36
+          clearRegisteredUponCode: 36
           Unknown295: 1
           endIf: 
         endIf: 
@@ -21209,7 +21209,7 @@ beginState: s32'cmn_dustcharge_alarm'
         modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
         ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 5
           Unknown456: 0
-          Unknown23: 36
+          clearRegisteredUponCode: 36
           Unknown295: 1
           endIf: 
         endIf: 
@@ -21291,7 +21291,7 @@ beginState: s32'cmn_BurstObjGoldHontai'
       Unknown1803: s32'cmn_BurstObjGoldObject', 23
       endUpon: 
     upon: 23
-      Unknown23: 23
+      clearRegisteredUponCode: 23
       recoveryState: 
       endUpon: 
     upon: 60
@@ -21500,65 +21500,65 @@ beginState: s32'cmn_KizetsuLoop'
     storeValue: (VARIABLE), 45, (STATIC), 0
     upon: 23
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 0
-        Unknown23: 23
+        clearRegisteredUponCode: 23
         storeValue: (VARIABLE), 69, (STATIC), 1
-        Unknown23: 36
+        clearRegisteredUponCode: 36
         Unknown14: s32'dead'
         endIf: 
       endUpon: 
     upon: 24
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
-        Unknown23: 24
+        clearRegisteredUponCode: 24
         storeValue: (VARIABLE), 69, (STATIC), 1
-        Unknown23: 36
+        clearRegisteredUponCode: 36
         Unknown14: s32'dead'
         endIf: 
       endUpon: 
     upon: 25
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 2
-        Unknown23: 25
+        clearRegisteredUponCode: 25
         storeValue: (VARIABLE), 69, (STATIC), 1
-        Unknown23: 36
+        clearRegisteredUponCode: 36
         Unknown14: s32'dead'
         endIf: 
       endUpon: 
     upon: 26
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 3
-        Unknown23: 26
+        clearRegisteredUponCode: 26
         storeValue: (VARIABLE), 69, (STATIC), 1
-        Unknown23: 36
+        clearRegisteredUponCode: 36
         Unknown14: s32'dead'
         endIf: 
       endUpon: 
     upon: 27
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 4
-        Unknown23: 27
+        clearRegisteredUponCode: 27
         storeValue: (VARIABLE), 69, (STATIC), 1
-        Unknown23: 36
+        clearRegisteredUponCode: 36
         Unknown14: s32'dead'
         endIf: 
       endUpon: 
     upon: 28
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 5
-        Unknown23: 28
+        clearRegisteredUponCode: 28
         storeValue: (VARIABLE), 69, (STATIC), 1
-        Unknown23: 36
+        clearRegisteredUponCode: 36
         Unknown14: s32'dead'
         endIf: 
       endUpon: 
     upon: 29
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 6
-        Unknown23: 29
+        clearRegisteredUponCode: 29
         storeValue: (VARIABLE), 69, (STATIC), 1
-        Unknown23: 36
+        clearRegisteredUponCode: 36
         Unknown14: s32'dead'
         endIf: 
       endUpon: 
     upon: 30
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 7
-        Unknown23: 30
+        clearRegisteredUponCode: 30
         storeValue: (VARIABLE), 69, (STATIC), 1
-        Unknown23: 36
+        clearRegisteredUponCode: 36
         Unknown14: s32'dead'
         endIf: 
       endUpon: 
@@ -21584,7 +21584,7 @@ beginState: s32'cmn_FaultlessDefenceLoop'
       Unknown53: 23, 2, 281, 3, 2, 281
       Unknown2031: 3, s32'NmlAtk5E'
       if: (VARIABLE), 0
-        Unknown23: 36
+        clearRegisteredUponCode: 36
         Unknown2055: 0
         Unknown448: s32'cmn_fd_end', 100
         endIf: 
@@ -21849,7 +21849,7 @@ beginState: s32'cmn_kakusei_finish'
       Unknown460: 2
       Unknown454: 2
       upon: 39
-        Unknown23: 39
+        clearRegisteredUponCode: 39
         Unknown2282: -100
         Unknown1955: s32'cmn_kakusei_finish_total'
         Unknown53: 23, 2, 1, 2, 2, 1
@@ -23002,7 +23002,7 @@ beginState: s32'cmn_FinishCamera_FarCamera'
     Unknown1737: 0, -1000
     endUpon: 
   sprite: s32'null', 180
-  Unknown23: 3
+  clearRegisteredUponCode: (FRAME_STEP)
   Unknown176: 1
   Unknown1736: 0, 0
   Unknown1742: 0
@@ -23402,9 +23402,9 @@ beginState: s32'cmn_Afro_Timer'
     storeValue: (VARIABLE), 45, (STATIC), 10
     upon: 72
       Unknown2498: 3, 2, 356
-        Unknown23: 72
-        Unknown23: 71
-        Unknown23: 3
+        clearRegisteredUponCode: 72
+        clearRegisteredUponCode: 71
+        clearRegisteredUponCode: (FRAME_STEP)
         Unknown14: s32'Bomb'
         storeValue: (VARIABLE), 50, (STATIC), 0
         storeValue: (VARIABLE), 48, (STATIC), 120
@@ -23412,17 +23412,17 @@ beginState: s32'cmn_Afro_Timer'
       else: 
         modifyVar: (ADD), (VARIABLE), 46, (STATIC), 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 45
-          Unknown23: 72
-          Unknown23: 71
+          clearRegisteredUponCode: 72
+          clearRegisteredUponCode: 71
           Unknown14: s32'end'
           endIf: 
         endElse: 
       endUpon: 
     upon: 71
       Unknown2498: 3, 2, 356
-        Unknown23: 72
-        Unknown23: 71
-        Unknown23: 3
+        clearRegisteredUponCode: 72
+        clearRegisteredUponCode: 71
+        clearRegisteredUponCode: (FRAME_STEP)
         Unknown14: s32'Bomb'
         storeValue: (VARIABLE), 50, (STATIC), 0
         storeValue: (VARIABLE), 48, (STATIC), 15
@@ -23430,9 +23430,9 @@ beginState: s32'cmn_Afro_Timer'
       else: 
         modifyVar: (ADD), (VARIABLE), 46, (STATIC), 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (VARIABLE), 45
-          Unknown23: 72
-          Unknown23: 71
-          Unknown23: 3
+          clearRegisteredUponCode: 72
+          clearRegisteredUponCode: 71
+          clearRegisteredUponCode: (FRAME_STEP)
           Unknown14: s32'end'
           endIf: 
         endElse: 
@@ -23458,9 +23458,9 @@ beginState: s32'cmn_Afro_Timer'
                   endElse: 
                 endIf: 
               ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 50, (VARIABLE), 47
-                Unknown23: 72
-                Unknown23: 71
-                Unknown23: 3
+                clearRegisteredUponCode: 72
+                clearRegisteredUponCode: 71
+                clearRegisteredUponCode: (FRAME_STEP)
                 Unknown14: s32'end'
                 endIf: 
               endIf: 
@@ -23502,7 +23502,7 @@ beginState: s32'cmn_Afro_Timer'
     Unknown448: s32'cmn_guard_sp_simple', 124
     endUpon: 
   upon: 71
-    Unknown23: 71
+    clearRegisteredUponCode: 71
     Unknown49: 68
     ifNot: (VARIABLE), 0
       Unknown2498: 3, 2, 356
@@ -23535,8 +23535,8 @@ beginState: s32'cmn_Afro_Timer'
                 endElse: 
               endIf: 
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 50, (VARIABLE), 48
-              Unknown23: 3
-              Unknown23: 71
+              clearRegisteredUponCode: (FRAME_STEP)
+              clearRegisteredUponCode: 71
               Unknown233: 
               Unknown14: s32'end'
               Unknown450: s32''
@@ -23565,9 +23565,9 @@ beginState: s32'cmn_Afro_Timer'
           storeValue: (VARIABLE), 51, (STATIC), 1
           endIf: 
         if: (VARIABLE), 51
-          Unknown23: 3
-          Unknown23: 71
-          Unknown23: 12
+          clearRegisteredUponCode: (FRAME_STEP)
+          clearRegisteredUponCode: 71
+          clearRegisteredUponCode: 12
           Unknown233: 
           Unknown14: s32'end'
           Unknown450: s32''
@@ -23579,9 +23579,9 @@ beginState: s32'cmn_Afro_Timer'
       if: (VARIABLE), 16
         modifyVar: (ADD), (VARIABLE), 52, (STATIC), 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 52, (STATIC), 60
-          Unknown23: 3
-          Unknown23: 71
-          Unknown23: 12
+          clearRegisteredUponCode: (FRAME_STEP)
+          clearRegisteredUponCode: 71
+          clearRegisteredUponCode: 12
           Unknown233: 
           Unknown450: s32''
           Unknown448: s32'cmn_afro_fireburn', 100
@@ -23635,7 +23635,7 @@ startSubroutine: s32'cmnRomanCancel'
   Unknown2189: 2, 5
   storeValue: (VARIABLE), 341, (STATIC), 0
   storeValue: (VARIABLE), 342, (STATIC), 0
-  Unknown60: '0x16000000670000000300000067000000'
+  Unknown60: 22, 103, 3, 103
   storeValue: (VARIABLE), 342, (VARIABLE), 0
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 342, (STATIC), 500000
     storeValue: (VARIABLE), 342, (STATIC), 1
@@ -23643,7 +23643,7 @@ startSubroutine: s32'cmnRomanCancel'
   else: 
     storeValue: (VARIABLE), 342, (STATIC), 2
     endElse: 
-  Unknown2362: s32'RomanCancelGap'
+  checkCurrentStateEntryName: s32'RomanCancelGap'
   if: (VARIABLE), 0
     Unknown2427: s32'Romancancel_Purple', 0, 1
     storeValue: (VARIABLE), 45, (STATIC), 1
@@ -23653,9 +23653,9 @@ startSubroutine: s32'cmnRomanCancel'
     storeValue: (VARIABLE), 49, (STATIC), 25
     storeValue: (VARIABLE), 341, (STATIC), 1
     modifyVar: (DIV), (VARIABLE), 335, (STATIC), 100
-    Unknown36: 13, 6
+    setEventTrigger: (TIMER), 6
     endIf: 
-  Unknown2362: s32'RomanCancelNeutral'
+  checkCurrentStateEntryName: s32'RomanCancelNeutral'
   if: (VARIABLE), 0
     Unknown2427: s32'Romancancel_Blue', 0, 1
     storeValue: (VARIABLE), 45, (STATIC), 2
@@ -23665,9 +23665,9 @@ startSubroutine: s32'cmnRomanCancel'
     storeValue: (VARIABLE), 49, (STATIC), 19
     storeValue: (VARIABLE), 341, (STATIC), 2
     modifyVar: (DIV), (VARIABLE), 335, (STATIC), 100
-    Unknown36: 13, 6
+    setEventTrigger: (TIMER), 6
     endIf: 
-  Unknown2362: s32'RomanCancelAttack'
+  checkCurrentStateEntryName: s32'RomanCancelAttack'
   if: (VARIABLE), 0
     Unknown2427: s32'Romancancel_Red', 0, 1
     storeValue: (VARIABLE), 45, (STATIC), 3
@@ -23677,9 +23677,9 @@ startSubroutine: s32'cmnRomanCancel'
     storeValue: (VARIABLE), 49, (STATIC), 13
     storeValue: (VARIABLE), 341, (STATIC), 3
     modifyVar: (DIV), (VARIABLE), 335, (STATIC), 100
-    Unknown36: 13, 1
+    setEventTrigger: (TIMER), 1
     endIf: 
-  Unknown2362: s32'RomanCancelGuard'
+  checkCurrentStateEntryName: s32'RomanCancelGuard'
   if: (VARIABLE), 0
     Unknown2427: s32'Romancancel_Yellow', 0, 1
     storeValue: (VARIABLE), 45, (STATIC), 4
@@ -23687,7 +23687,7 @@ startSubroutine: s32'cmnRomanCancel'
     storeValue: (VARIABLE), 47, (STATIC), 75
     storeValue: (VARIABLE), 341, (STATIC), 4
     storeValue: (VARIABLE), 335, (STATIC), 0
-    Unknown36: 13, 14
+    setEventTrigger: (TIMER), 14
     Unknown2188: 1
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 337, (STATIC), 1
@@ -23713,8 +23713,8 @@ startSubroutine: s32'cmnRomanCancel'
   if: (VARIABLE), 52
     storeValue: (VARIABLE), 335, (VARIABLE), 52
     endIf: 
-  upon: 13
-    Unknown23: 13
+  upon: (TIMER)
+    clearRegisteredUponCode: (TIMER)
     ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
       Unknown271: 0, 119, 39, 39
       endIf: 
@@ -23729,7 +23729,7 @@ startSubroutine: s32'cmnRomanCancel'
       endIf: 
     endUpon: 
   upon: 50
-    Unknown23: 50
+    clearRegisteredUponCode: 50
     tensionUsage: 5000
     Unknown2231: 1
     Unknown2188: 1
@@ -24024,7 +24024,7 @@ startSubroutine: s32'cmnRomanCancel'
     if: (VARIABLE), 51
       ifNot: (VARIABLE), 329
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 50, (STATIC), 500000
-          Unknown23: 12
+          clearRegisteredUponCode: 12
           ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
             Unknown2233: 20
             Unknown2240: 1
@@ -24048,9 +24048,9 @@ startSubroutine: s32'cmnRomanCancel'
       endIf: 
     endUpon: 
   upon: 99
-    Unknown23: 99
-    Unknown23: 13
-    Unknown23: 50
+    clearRegisteredUponCode: 99
+    clearRegisteredUponCode: (TIMER)
+    clearRegisteredUponCode: 50
     Unknown271: 0, 119, 1, 1
     endUpon: 
   endSubroutine: 
@@ -24206,7 +24206,7 @@ beginState: s32'cmnRomanCancel_Object'
     upon: (FRAME_STEP)
       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 13, (STATIC), 10
         modifyVar: (ADD), (VARIABLE), 45, (STATIC), 25000
-        Unknown60: '0x16000000670000001700000067000000'
+        Unknown60: 22, 103, 23, 103
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 0, (VARIABLE), 45
           ifNot: (VARIABLE), 46
             storeValue: (VARIABLE), 46, (STATIC), 1
@@ -24217,14 +24217,14 @@ beginState: s32'cmnRomanCancel_Object'
           endIf: 
         endIf: 
       else: 
-        Unknown23: 3
+        clearRegisteredUponCode: (FRAME_STEP)
         recoveryState: 
         Unknown191: 0
         endElse: 
       endUpon: 
-    Unknown60: '0x16000000670000001700000067000000'
+    Unknown60: 22, 103, 23, 103
     Unknown53: 3, 2, 50, 23, 2, 0
-    Unknown60: '0x16000000670000001700000067000000'
+    Unknown60: 22, 103, 23, 103
     storeValue: (VARIABLE), 342, (VARIABLE), 0
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 342, (STATIC), 500000
       storeValue: (VARIABLE), 342, (STATIC), 1
@@ -24284,8 +24284,8 @@ beginState: s32'cmnRomanCancelSeal'
     Unknown295: 1
     Unknown1801: 1
     Unknown2314: 1
-    Unknown36: 13, 8
-    upon: 13
+    setEventTrigger: (TIMER), 8
+    upon: (TIMER)
       Unknown20: 
       endUpon: 
     upon: (BEFORE_EXIT)
@@ -24328,7 +24328,7 @@ startSubroutine: s32'cmnRomanCancel_Mirage'
     endUpon: 
   if: (VARIABLE), 115
     ifOperation: (IS_EQUAL), (VARIABLE), 116, (STATIC), 2
-      Unknown23: 1
+      clearRegisteredUponCode: (BEFORE_EXIT)
       Unknown19: 23
       endIf: 
     endIf: 
@@ -24591,27 +24591,27 @@ startSubroutine: s32'cmnCutScene_ObjHide'
   endSubroutine: 
 
 startSubroutine: s32'cmnChouhatsuKeii'
-  Unknown2362: s32'NmlAtk5F'
+  checkCurrentStateEntryName: s32'NmlAtk5F'
   if: (VARIABLE), 0
     Unknown2247: 
     recoveryState: 
     Unknown2192: 120
-    Unknown36: 13, 120
+    setEventTrigger: (TIMER), 120
     endIf: 
-  Unknown2362: s32'NmlAtk6F'
+  checkCurrentStateEntryName: s32'NmlAtk6F'
   if: (VARIABLE), 0
     recoveryState: 
     Unknown2192: 60
-    Unknown36: 13, 60
+    setEventTrigger: (TIMER), 60
     endIf: 
-  upon: 13
+  upon: (TIMER)
     if: (VARIABLE), 31
       Unknown1361: 1
       endIf: 
     endUpon: 
   ifNot: (VARIABLE), 330
     upon: 47
-      Unknown23: 47
+      clearRegisteredUponCode: 47
       Unknown613: s16''
       endUpon: 
     endIf: 
@@ -24635,7 +24635,7 @@ startSubroutine: s32'cmnWorldStop_End'
   Unknown294: 0
   Unknown2234: 1
   Unknown2188: 0
-  Unknown23: 99
+  clearRegisteredUponCode: 99
   Unknown296: 180
   if: (VARIABLE), 330
     Unknown2234: 0
@@ -24647,7 +24647,7 @@ beginState: s32'cmnWorldStop_Obj'
     Unknown38: s32'cmnWorldStop_Obj'
     upon: 77
       ifNot: (VARIABLE), 81
-        Unknown23: 77
+        clearRegisteredUponCode: 77
         ifNot: (VARIABLE), 115
           Unknown41: 3
           callSubroutine: s32'cmnWorldStop_End'
