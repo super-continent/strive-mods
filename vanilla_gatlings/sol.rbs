@@ -3775,9 +3775,6 @@ beginState: s32'NmlAtk5B'
     upon: (GUARD)
       extendPushboxX: 50000
       endUpon: 
-    upon: (HIT)
-      extendPushboxX: 20000
-      endUpon: 
     endUpon: 
   sprite: s32'sol201_00', 2
   sprite: s32'sol201_01', 1

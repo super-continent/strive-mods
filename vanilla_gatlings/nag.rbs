@@ -5048,9 +5048,6 @@ beginState: s32'NmlAtk5B'
       extendPushboxX: 50000
       endUpon: 
     callSubroutine: s32'cmn_AtkTemplNokezoriLow'
-    upon: (HIT)
-      extendPushboxX: 20000
-      endUpon: 
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -350000
     storeValue: (VARIABLE), 344, (STATIC), 0
@@ -5191,9 +5188,6 @@ beginState: s32'NmlAtk2B'
     addGatlingOption: s32'NmlAtk2E'
     upon: (GUARD)
       extendPushboxX: 50000
-      endUpon: 
-    upon: (HIT)
-      extendPushboxX: 20000
       endUpon: 
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -300000

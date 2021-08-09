@@ -4130,12 +4130,8 @@ beginState: s32'NmlAtk5B'
       callSubroutine: s32'cmn_lightAttack_flex'
       endUpon: 
     upon: (GUARD)
-      clearRegisteredUponCode: (HIT_OR_GUARD)
+      clearRegisteredUponCode: (GUARD)
       extendPushboxX: 50000
-      endUpon: 
-    upon: (HIT)
-      clearRegisteredUponCode: (HIT_OR_GUARD)
-      extendPushboxX: 20000
       endUpon: 
     endUpon: 
   sprite: s32'chp201_00', 1

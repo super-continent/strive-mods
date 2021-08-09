@@ -3542,12 +3542,8 @@ beginState: s32'NmlAtk5B'
     addGatlingOption: s32'NmlAtk2E'
     addGatlingOption: s32'Cancel_FDash'
     upon: (GUARD)
-      clearRegisteredUponCode: (HIT_OR_GUARD)
+      clearRegisteredUponCode: (GUARD)
       extendPushboxX: 100000
-      endUpon: 
-    upon: (HIT)
-      clearRegisteredUponCode: (HIT_OR_GUARD)
-      extendPushboxX: 50000
       endUpon: 
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -450000

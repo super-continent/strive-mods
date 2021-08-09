@@ -13645,8 +13645,8 @@ beginSubroutine: s32'cmn_Hizakuzure'
 beginSubroutine: s32'cmn_lightAttack_hitback'
   pushbackX: 70
   Unknown1103: 50
-  Unknown1005: 100
-  Unknown1004: 100
+  Unknown1005: 250
+  Unknown1004: 250
   endSubroutine: 
 
 beginSubroutine: s32'cmn_lightAttack_flex'

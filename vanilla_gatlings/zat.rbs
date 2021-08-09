@@ -5354,9 +5354,6 @@ beginState: s32'NmlAtk5B'
     upon: (GUARD)
       extendPushboxX: 50000
       endUpon: 
-    upon: (HIT)
-      extendPushboxX: 20000
-      endUpon: 
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -250000
     storeValue: (VARIABLE), 344, (STATIC), 0
