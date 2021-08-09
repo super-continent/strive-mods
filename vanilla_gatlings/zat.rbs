@@ -327,14 +327,14 @@ beginState: s32'Event640'
   gotoLabel: s32'loop'
   endState: 
 
-startSubroutine: s32'PreInit'
+beginSubroutine: s32'PreInit'
   Unknown1264: s16'zat'
   endSubroutine: 
 
-startSubroutine: s32'PreInit2nd'
+beginSubroutine: s32'PreInit2nd'
   endSubroutine: 
 
-startSubroutine: s32'RoundInit'
+beginSubroutine: s32'RoundInit'
   callSubroutine: s32'cmnRoundInit'
   walkFSpeed: 4900
   walkBSpeed: 3800
@@ -1659,16 +1659,16 @@ startSubroutine: s32'RoundInit'
   Unknown2594: 97, s32'AirSunVoidShotObj'
   endSubroutine: 
 
-startSubroutine: s32'CPUEstimate'
+beginSubroutine: s32'CPUEstimate'
   endSubroutine: 
 
-startSubroutine: s32'OnActionBeginPre'
+beginSubroutine: s32'OnActionBeginPre'
   storeValue: (VARIABLE), 58, (VARIABLE), 59
   storeValue: (VARIABLE), 59, (STATIC), 0
   Unknown2067: '0x4368616E6765436F6C6F72000000000000000000000000000000000000000000'
   endSubroutine: 
 
-startSubroutine: s32'OnFrameStep'
+beginSubroutine: s32'OnFrameStep'
   callSubroutine: s32'cmnOnFrameStep'
   Unknown1895: 0, -16744193
   Unknown1894: 0, 1
@@ -1762,38 +1762,38 @@ startSubroutine: s32'OnFrameStep'
     endElse: 
   endSubroutine: 
 
-startSubroutine: s32'OnDamage'
+beginSubroutine: s32'OnDamage'
   callSubroutine: s32'cmnOnDamage'
   Unknown1798: 4, 25
   endSubroutine: 
 
-startSubroutine: s32'OnGuard'
+beginSubroutine: s32'OnGuard'
   callSubroutine: s32'cmnOnGuard'
   endSubroutine: 
 
-startSubroutine: s32'OnLanding'
+beginSubroutine: s32'OnLanding'
   callSubroutine: s32'cmnJumpCheck'
   endSubroutine: 
 
-startSubroutine: s32'OnDie'
+beginSubroutine: s32'OnDie'
   callSubroutine: s32'cmnOnDie'
   endSubroutine: 
 
-startSubroutine: s32'zat_default'
+beginSubroutine: s32'zat_default'
   Unknown1702: s32'body', 1
   Unknown1702: s32'Head_Low', 1
   Unknown1702: s32'Edy_Body', 0
   Unknown1702: s32'Edy_Head', 0
   endSubroutine: 
 
-startSubroutine: s32'edy_default'
+beginSubroutine: s32'edy_default'
   Unknown1702: s32'Edy_Body', 1
   Unknown1702: s32'Edy_Head', 1
   Unknown1702: s32'body', 0
   Unknown1702: s32'Head_Low', 0
   endSubroutine: 
 
-startSubroutine: s32'OnActionBeginPre'
+beginSubroutine: s32'OnActionBeginPre'
   Unknown2526: 0, 0, 0, 0, 0, 0
   Unknown2591: 0, 0, 0, 0, 0, 0
   endSubroutine: 
@@ -3738,7 +3738,7 @@ beginState: s32'CmnActQuickDown2Stand'
   sprite: s32'zat067_10', 1
   endState: 
 
-startSubroutine: s32'Guard_delete'
+beginSubroutine: s32'Guard_delete'
   Unknown32: s32'Guard_Lv1'
   Unknown32: s32'Guard_Lv2'
   Unknown32: s32'Guard_Lv3'
@@ -4658,7 +4658,7 @@ beginState: s32'WinActionWait'
   gotoLabel: s32'loop'
   endState: 
 
-startSubroutine: s32'Pre_Fly1'
+beginSubroutine: s32'Pre_Fly1'
   Unknown1347: 1
   Unknown1348: 1
   Unknown1352: 1
@@ -4784,7 +4784,7 @@ startSubroutine: s32'Pre_Fly1'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'Pre_Fly2'
+beginSubroutine: s32'Pre_Fly2'
   Unknown2229: 100
   Unknown2230: 100
   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 7
@@ -5561,7 +5561,7 @@ beginState: s32'NmlAtk5CNear'
   sprite: s32'zat202_11', 3
   endState: 
 
-startSubroutine: s32'NmlAtk5CFarint'
+beginSubroutine: s32'NmlAtk5CFarint'
   callSubroutineWithArgs: s32'cmn_AtkLv2', (STATIC), 2, (STATIC), 2, (STATIC), 0, (STATIC), 0
   callSubroutine: s32'cmn_countertype_middle_slash'
   damage: 0, 20
@@ -6406,7 +6406,7 @@ beginState: s32'NmlAtk6F'
   sprite: s32'zat401_14', 1
   endState: 
 
-startSubroutine: s32'NmlAtkAir5Aint'
+beginSubroutine: s32'NmlAtkAir5Aint'
   callSubroutineWithArgs: s32'cmn_AtkLv0', (STATIC), 3, (STATIC), 3, (STATIC), 0, (STATIC), 1
   storeValue: (VARIABLE), 338, (STATIC), 1000000000
   storeValue: (VARIABLE), 339, (STATIC), 0
@@ -6774,7 +6774,7 @@ beginState: s32'DebugSkillEx'
   sprite: s32'keep', 2147483647
   endState: 
 
-startSubroutine: s32'_ThrowGripParamLand'
+beginSubroutine: s32'_ThrowGripParamLand'
   Unknown1101: s32'zat310_00'
   Unknown1042: s32'ThrowExe'
   throwRange: 85750
@@ -6882,7 +6882,7 @@ beginState: s32'ThrowExe'
   sprite: s32'zat310_14', 6
   endState: 
 
-startSubroutine: s32'_ThrowGripParamAir'
+beginSubroutine: s32'_ThrowGripParamAir'
   Unknown1101: s32'zat320_00'
   Unknown1042: s32'AirThrowExe'
   throwRange: 192500

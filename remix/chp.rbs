@@ -449,14 +449,14 @@ beginState: s32'Event022'
   endLabel: 
   endState: 
 
-startSubroutine: s32'PreInit'
+beginSubroutine: s32'PreInit'
   Unknown1264: s16'chp'
   endSubroutine: 
 
-startSubroutine: s32'PreInit2nd'
+beginSubroutine: s32'PreInit2nd'
   endSubroutine: 
 
-startSubroutine: s32'RoundInit'
+beginSubroutine: s32'RoundInit'
   callSubroutine: s32'cmnRoundInit'
   walkFSpeed: 8800
   walkBSpeed: 6800
@@ -1449,10 +1449,10 @@ startSubroutine: s32'RoundInit'
   Unknown2594: 90, s32'BankiMessai'
   endSubroutine: 
 
-startSubroutine: s32'CPUEstimate'
+beginSubroutine: s32'CPUEstimate'
   endSubroutine: 
 
-startSubroutine: s32'OnFrameStep'
+beginSubroutine: s32'OnFrameStep'
   callSubroutine: s32'cmnOnFrameStep'
   if: (VARIABLE), 3
     modifyVar: (ADD), (VARIABLE), 76, (STATIC), 1
@@ -1463,7 +1463,7 @@ startSubroutine: s32'OnFrameStep'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'OnGuard'
+beginSubroutine: s32'OnGuard'
   if: (VARIABLE), 3
     Unknown2068: 
     storeValue: (VARIABLE), 3, (STATIC), 0
@@ -1471,7 +1471,7 @@ startSubroutine: s32'OnGuard'
   callSubroutine: s32'cmnOnGuard'
   endSubroutine: 
 
-startSubroutine: s32'OnDamage'
+beginSubroutine: s32'OnDamage'
   callSubroutine: s32'cmnOnDamage'
   if: (VARIABLE), 3
     Unknown2068: 
@@ -1479,12 +1479,12 @@ startSubroutine: s32'OnDamage'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'OnLanding'
+beginSubroutine: s32'OnLanding'
   callSubroutine: s32'cmnJumpCheck'
   storeValue: (VARIABLE), 4, (STATIC), 0
   endSubroutine: 
 
-startSubroutine: s32'OnDie'
+beginSubroutine: s32'OnDie'
   callSubroutine: s32'cmnOnDie'
   endSubroutine: 
 
@@ -5263,7 +5263,7 @@ beginState: s32'NmlAtkAir5A'
   sprite: s32'chp250_02', 4
   endState: 
 
-startSubroutine: s32'NmlAtkAir5B_atk'
+beginSubroutine: s32'NmlAtkAir5B_atk'
   callSubroutineWithArgs: s32'cmn_AtkLv1', (STATIC), 2, (STATIC), 2, (STATIC), 0, (STATIC), 1
   damage: 0, 16
   Unknown1107: 1
@@ -5359,7 +5359,7 @@ beginState: s32'NmlAtkAir5B'
   sprite: s32'chp251_07', 2
   endState: 
 
-startSubroutine: s32'NmlAtkAir2B_atk'
+beginSubroutine: s32'NmlAtkAir2B_atk'
   callSubroutineWithArgs: s32'cmn_AtkLv1', (STATIC), 5, (STATIC), 5, (STATIC), 0, (STATIC), 1
   damage: 0, 14
   hitStop: 2
@@ -5502,7 +5502,7 @@ beginState: s32'NmlAtkAir5C'
   sprite: s32'chp252_12', 3
   endState: 
 
-startSubroutine: s32'NmlAtkAir5D_atk'
+beginSubroutine: s32'NmlAtkAir5D_atk'
   callSubroutineWithArgs: s32'cmn_AtkLv2', (STATIC), 2, (STATIC), 2, (STATIC), 0, (STATIC), 1
   damage: 0, 22
   Unknown725: 1
@@ -5642,14 +5642,14 @@ beginState: s32'DebugSkillEx'
   sprite: s32'keep', 2147483647
   endState: 
 
-startSubroutine: s32'_ThrowGripParamLand'
+beginSubroutine: s32'_ThrowGripParamLand'
   Unknown1101: s32'chp310_00'
   Unknown1042: s32'ThrowExe'
   throwRange: 63000
   Unknown1027: -1, -1, -1, -1
   endSubroutine: 
 
-startSubroutine: s32'_ThrowGripParamAir'
+beginSubroutine: s32'_ThrowGripParamAir'
   Unknown1101: s32'chp320_00'
   Unknown1042: s32'AirThrowExe'
   throwRange: 192500
@@ -7352,7 +7352,7 @@ beginState: s32'WallRun_land'
   gotoLabel: s32'loop'
   endState: 
 
-startSubroutine: s32'WallRunComboLimit'
+beginSubroutine: s32'WallRunComboLimit'
   if: (VARIABLE), 45
     Unknown27: s32'WallRun'
     endIf: 
@@ -7852,7 +7852,7 @@ beginState: s32'WallRun_jump'
   Unknown27: s32'_NEUTRAL'
   endState: 
 
-startSubroutine: s32'ZanseiRouga_atk'
+beginSubroutine: s32'ZanseiRouga_atk'
   callSubroutineWithArgs: s32'cmn_AtkLv4', (STATIC), 4, (STATIC), 4, (STATIC), 0, (STATIC), 0
   damage: 0, 10
   Unknown1067: 4, 250000, 0
@@ -8407,7 +8407,7 @@ beginState: s32'ZanseiRouga'
   sprite: s32'chp500_21', 6
   endState: 
 
-startSubroutine: s32'BankiMessai_atk'
+beginSubroutine: s32'BankiMessai_atk'
   callSubroutineWithArgs: s32'cmn_AtkLv3', (STATIC), 5, (STATIC), 5, (STATIC), 0, (STATIC), 0
   damage: 0, 15
   hitStop: 2

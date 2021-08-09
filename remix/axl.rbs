@@ -319,14 +319,14 @@ beginState: s32'Event640'
   sprite: s32'axl640_11', 2147483647
   endState: 
 
-startSubroutine: s32'PreInit'
+beginSubroutine: s32'PreInit'
   Unknown1264: s16'axl'
   endSubroutine: 
 
-startSubroutine: s32'PreInit2nd'
+beginSubroutine: s32'PreInit2nd'
   endSubroutine: 
 
-startSubroutine: s32'RoundInit'
+beginSubroutine: s32'RoundInit'
   callSubroutine: s32'cmnRoundInit'
   walkFSpeed: 5200
   walkBSpeed: 4900
@@ -986,7 +986,7 @@ startSubroutine: s32'RoundInit'
   Unknown2594: 92, s32'FakeNmlAtk5CFar'
   endSubroutine: 
 
-startSubroutine: s32'OnFrameStep'
+beginSubroutine: s32'OnFrameStep'
   callSubroutine: s32'cmnOnFrameStep'
   Unknown59: s32'TRP_AXL', 2, 157
   if: (VARIABLE), 157
@@ -1020,26 +1020,26 @@ startSubroutine: s32'OnFrameStep'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'OnDamage'
+beginSubroutine: s32'OnDamage'
   callSubroutine: s32'cmnOnDamage'
   endSubroutine: 
 
-startSubroutine: s32'OnGuard'
+beginSubroutine: s32'OnGuard'
   callSubroutine: s32'cmnOnGuard'
   endSubroutine: 
 
-startSubroutine: s32'OnLanding'
+beginSubroutine: s32'OnLanding'
   callSubroutine: s32'cmnJumpCheck'
   endSubroutine: 
 
-startSubroutine: s32'OnDie'
+beginSubroutine: s32'OnDie'
   callSubroutine: s32'cmnOnDie'
   endSubroutine: 
 
-startSubroutine: s32'CPUEstimate'
+beginSubroutine: s32'CPUEstimate'
   endSubroutine: 
 
-startSubroutine: s32'OnActionBeginPre'
+beginSubroutine: s32'OnActionBeginPre'
   Unknown2526: 1, 1, 1, 0, 60, 5
   Unknown2591: 1, 1, 1, 0, 60, 5
   endSubroutine: 
@@ -4934,14 +4934,14 @@ beginState: s32'DebugSkillEx'
   sprite: s32'keep', 2147483647
   endState: 
 
-startSubroutine: s32'_ThrowGripParamLand'
+beginSubroutine: s32'_ThrowGripParamLand'
   Unknown1101: s32'axl310_00'
   Unknown1042: s32'ThrowExe'
   throwRange: 78750
   Unknown1027: -1, -1, -1, -1
   endSubroutine: 
 
-startSubroutine: s32'_ThrowGripParamAir'
+beginSubroutine: s32'_ThrowGripParamAir'
   Unknown1101: s32'axl320_00'
   Unknown1042: s32'AirThrowExe'
   throwRange: 192500

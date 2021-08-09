@@ -353,14 +353,14 @@ beginState: s32'Event640'
   sprite: s32'gld640_19', 2147483647
   endState: 
 
-startSubroutine: s32'PreInit'
+beginSubroutine: s32'PreInit'
   Unknown1264: s16'gld'
   endSubroutine: 
 
-startSubroutine: s32'PreInit2nd'
+beginSubroutine: s32'PreInit2nd'
   endSubroutine: 
 
-startSubroutine: s32'RoundInit'
+beginSubroutine: s32'RoundInit'
   callSubroutine: s32'cmnRoundInit'
   walkFSpeed: 6300
   walkBSpeed: 5200
@@ -1459,10 +1459,10 @@ startSubroutine: s32'RoundInit'
   Unknown2594: 99, s32'GLD_Ultimate2Obj_Lv3'
   endSubroutine: 
 
-startSubroutine: s32'CPUEstimate'
+beginSubroutine: s32'CPUEstimate'
   endSubroutine: 
 
-startSubroutine: s32'OnFrameStep'
+beginSubroutine: s32'OnFrameStep'
   callSubroutine: s32'cmnOnFrameStep'
   ifNot: (VARIABLE), 329
     if: (VARIABLE), 16
@@ -1528,19 +1528,19 @@ startSubroutine: s32'OnFrameStep'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'OnGuard'
+beginSubroutine: s32'OnGuard'
   callSubroutine: s32'cmnOnGuard'
   endSubroutine: 
 
-startSubroutine: s32'OnDamage'
+beginSubroutine: s32'OnDamage'
   callSubroutine: s32'cmnOnDamage'
   endSubroutine: 
 
-startSubroutine: s32'OnLanding'
+beginSubroutine: s32'OnLanding'
   callSubroutine: s32'cmnJumpCheck'
   endSubroutine: 
 
-startSubroutine: s32'OnDie'
+beginSubroutine: s32'OnDie'
   callSubroutine: s32'cmnOnDie'
   endSubroutine: 
 
@@ -3770,7 +3770,7 @@ beginState: s32'CmnActRoundWin'
   gotoLabel: s32'TypeB_loop'
   endState: 
 
-startSubroutine: s32'gld615voice_1'
+beginSubroutine: s32'gld615voice_1'
   storeValue: (VARIABLE), 46, (VARIABLE), 395
   if: (VARIABLE), 205
     storeValue: (VARIABLE), 46, (VARIABLE), 205
@@ -4108,7 +4108,7 @@ startSubroutine: s32'gld615voice_1'
   Unknown1825: s32'Time', 2, 46
   endSubroutine: 
 
-startSubroutine: s32'gld615voice_2'
+beginSubroutine: s32'gld615voice_2'
   ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
     Unknown613: s16'vxxx605demo'
     endIf: 
@@ -5930,14 +5930,14 @@ beginState: s32'DebugSkillEx'
   sprite: s32'keep', 2147483647
   endState: 
 
-startSubroutine: s32'_ThrowGripParamLand'
+beginSubroutine: s32'_ThrowGripParamLand'
   Unknown1101: s32'tmp310_00'
   Unknown1042: s32'ThrowExe'
   throwRange: 63000
   Unknown1027: -1, -1, -1, -1
   endSubroutine: 
 
-startSubroutine: s32'_ThrowGripParamAir'
+beginSubroutine: s32'_ThrowGripParamAir'
   Unknown1101: s32'tmp320_00'
   Unknown1042: s32'AirThrowExe'
   throwRange: 192500
@@ -6193,7 +6193,7 @@ beginState: s32'AirThrowExe'
   gotoLabel: s32'downloop'
   endState: 
 
-startSubroutine: s32'SecurityLv'
+beginSubroutine: s32'SecurityLv'
   storeValue: (VARIABLE), 4, (STATIC), 0
   ifOperation: (IS_LESSER), (VARIABLE), 25, (STATIC), 5000
     storeValue: (VARIABLE), 4, (STATIC), 1
@@ -6374,7 +6374,7 @@ beginState: s32'Drone'
   sprite: s32'gld401_10', 4
   endState: 
 
-startSubroutine: s32'SwingCommonAtk1'
+beginSubroutine: s32'SwingCommonAtk1'
   callSubroutine: s32'cmn_AtkLv4'
   callSubroutine: s32'cmn_countertype_middle'
   damage: 0, 70
@@ -6387,7 +6387,7 @@ startSubroutine: s32'SwingCommonAtk1'
   Unknown764: 0, 1500
   endSubroutine: 
 
-startSubroutine: s32'SwingCommonAtk2'
+beginSubroutine: s32'SwingCommonAtk2'
   callSubroutine: s32'cmn_AtkLv4'
   callSubroutine: s32'cmn_countertype_middle'
   damage: 0, 70
@@ -6400,7 +6400,7 @@ startSubroutine: s32'SwingCommonAtk2'
   Unknown764: 0, 1500
   endSubroutine: 
 
-startSubroutine: s32'AirSwingCommonAtk'
+beginSubroutine: s32'AirSwingCommonAtk'
   callSubroutine: s32'cmn_AtkLv4'
   callSubroutine: s32'cmn_countertype_middle'
   damage: 0, 70
@@ -6411,7 +6411,7 @@ startSubroutine: s32'AirSwingCommonAtk'
   Unknown764: 0, 1500
   endSubroutine: 
 
-startSubroutine: s32'LandSwingGuard'
+beginSubroutine: s32'LandSwingGuard'
   upon: 86
     clearRegisteredUponCode: 86
     setGuardBreakDuration: 36
@@ -6422,7 +6422,7 @@ startSubroutine: s32'LandSwingGuard'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'LandSwingGuard_2nd'
+beginSubroutine: s32'LandSwingGuard_2nd'
   upon: 86
     clearRegisteredUponCode: 86
     setGuardBreakDuration: 36
@@ -7088,7 +7088,7 @@ beginState: s32'Swing_pattern8'
   sprite: s32'gld417_18', 3
   endState: 
 
-startSubroutine: s32'AirSwing_move'
+beginSubroutine: s32'AirSwing_move'
   Unknown109: 
   Unknown116: 75
   Unknown114: 
@@ -7100,7 +7100,7 @@ startSubroutine: s32'AirSwing_move'
   Unknown1824: 10, 1
   endSubroutine: 
 
-startSubroutine: s32'AirSwing_move2'
+beginSubroutine: s32'AirSwing_move2'
   Unknown176: 1
   Unknown110: 
   Unknown115: 

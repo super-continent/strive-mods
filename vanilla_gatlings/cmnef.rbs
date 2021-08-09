@@ -7763,7 +7763,7 @@ beginState: s32'cmn_Dummy'
   Unknown450: s32'cmn_kizetu'
   endState: 
 
-startSubroutine: s32'cmn_EnvInit'
+beginSubroutine: s32'cmn_EnvInit'
   storeValue: (VARIABLE), 168, (STATIC), 80
   storeValue: (VARIABLE), 169, (STATIC), 80
   storeValue: (VARIABLE), 170, (STATIC), 80
@@ -7776,7 +7776,7 @@ startSubroutine: s32'cmn_EnvInit'
   storeValue: (VARIABLE), 178, (STATIC), 60
   endSubroutine: 
 
-startSubroutine: s32'cmn_VoiceInit'
+beginSubroutine: s32'cmn_VoiceInit'
   Unknown601: s16'vxxx000', 2, 6, 100
   Unknown601: s16'vxxx001', 2, 6, 100
   Unknown601: s16'vxxx002', 2, 6, 100
@@ -7833,7 +7833,7 @@ startSubroutine: s32'cmn_VoiceInit'
   Unknown601: s16'vxxx412demo', 1, 3, 100
   endSubroutine: 
 
-startSubroutine: s32'cmnTensionBalanceInit'
+beginSubroutine: s32'cmnTensionBalanceInit'
   Unknown1307: 7, 5, 12, 5
   Unknown1308: -6, -80, -100, -150
   Unknown1309: 40, 90, 140, 200, 250, 40
@@ -7852,14 +7852,14 @@ startSubroutine: s32'cmnTensionBalanceInit'
   Unknown1322: 60, -1, 600, 0
   endSubroutine: 
 
-startSubroutine: s32'cmnPositiveBonusStart'
+beginSubroutine: s32'cmnPositiveBonusStart'
   storeValue: (VARIABLE), 318, (STATIC), 1
   storeValue: (VARIABLE), 79, (STATIC), 110
   storeValue: (VARIABLE), 80, (STATIC), 110
   Unknown2579: 1, 1
   endSubroutine: 
 
-startSubroutine: s32'cmnPositiveBonusEnd'
+beginSubroutine: s32'cmnPositiveBonusEnd'
   if: (VARIABLE), 318
     Unknown2329: 0, -12500
     endIf: 
@@ -7869,7 +7869,7 @@ startSubroutine: s32'cmnPositiveBonusEnd'
   Unknown2579: 1, 0
   endSubroutine: 
 
-startSubroutine: s32'cmnGuardInit'
+beginSubroutine: s32'cmnGuardInit'
   Unknown1323: 10, 20, 30, 40, 50
   Unknown1250: 100
   Unknown1289: 2, 4
@@ -7878,7 +7878,7 @@ startSubroutine: s32'cmnGuardInit'
   Unknown1292: 120, 80, 120
   endSubroutine: 
 
-startSubroutine: s32'cmnRoundInit'
+beginSubroutine: s32'cmnRoundInit'
   health: 420
   Unknown1261: 9, 9, 9, 9, 9, 9
   Unknown1228: 1750
@@ -7941,11 +7941,11 @@ beginState: s32'cmn_JustGuardobj_shot'
   Unknown448: s32'cmn_guard_just', 100
   endState: 
 
-startSubroutine: s32'cmnAfroInit'
+beginSubroutine: s32'cmnAfroInit'
   Unknown1327: s32'afro', 0, 0, 0, 0, 200, 200
   endSubroutine: 
 
-startSubroutine: s32'cmn_SkillInit'
+beginSubroutine: s32'cmn_SkillInit'
   addMove: s32'CmnNeutral'
     moveType: 0
     characterState: (NONE)
@@ -8428,7 +8428,7 @@ startSubroutine: s32'cmn_SkillInit'
     endMove: 
   endSubroutine: 
 
-startSubroutine: s32'cmnEntryToStand'
+beginSubroutine: s32'cmnEntryToStand'
   storeValue: (VARIABLE), 45, (VARIABLE), 330
   storeValue: (VARIABLE), 46, (VARIABLE), 331
   upon: (FRAME_STEP)
@@ -8456,7 +8456,7 @@ startSubroutine: s32'cmnEntryToStand'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnactmatchwin'
+beginSubroutine: s32'cmnactmatchwin'
   Unknown2334: 3, 3, 100, 32, 100
   storeValue: (VARIABLE), 349, (VARIABLE), 0
   ifOperation: (IS_LESSER), (VARIABLE), 349, (STATIC), 0
@@ -8468,7 +8468,7 @@ startSubroutine: s32'cmnactmatchwin'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnactroundwin'
+beginSubroutine: s32'cmnactroundwin'
   setEventTrigger: (TIMER), 2
   upon: (TIMER)
     Unknown251: 1
@@ -8503,7 +8503,7 @@ startSubroutine: s32'cmnactroundwin'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnactlose'
+beginSubroutine: s32'cmnactlose'
   setEventTrigger: (TIMER), 2
   upon: (TIMER)
     Unknown251: 1
@@ -8544,7 +8544,7 @@ startSubroutine: s32'cmnactlose'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnAssistResult'
+beginSubroutine: s32'cmnAssistResult'
   Unknown251: 0
   Unknown268: 0
   Unknown287: 0
@@ -8554,12 +8554,12 @@ startSubroutine: s32'cmnAssistResult'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnAssistResultSpeed'
+beginSubroutine: s32'cmnAssistResultSpeed'
   physicsXImpulse: 0, -20000
   physicsYImpulse: 0, 40000
   endSubroutine: 
 
-startSubroutine: s32'cmnOnFrameStep'
+beginSubroutine: s32'cmnOnFrameStep'
   Unknown2033: 3, s32'CmnActRomanCancel'
   ifNot: (VARIABLE), 0
     checkInput: 225
@@ -8704,7 +8704,7 @@ beginState: s32'cmnWSBDummy'
   sprite: s32'null', 2147483647
   endState: 
 
-startSubroutine: s32'cmn_wall_dir'
+beginSubroutine: s32'cmn_wall_dir'
   if: (VARIABLE), 319
     upon: 46
       clearRegisteredUponCode: 46
@@ -8768,7 +8768,7 @@ beginState: s32'cmn_wall_col'
   sprite: s32'null', 5
   endState: 
 
-startSubroutine: s32'cmnAtk_GB_TGG'
+beginSubroutine: s32'cmnAtk_GB_TGG'
   ifOperation: (IS_EQUAL), (VARIABLE), 332, (STATIC), 1
     ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 2
       Unknown1117: 15
@@ -9031,7 +9031,7 @@ startSubroutine: s32'cmnAtk_GB_TGG'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnOnDie'
+beginSubroutine: s32'cmnOnDie'
   Unknown41: 3
   Unknown393: 
   Unknown40: 
@@ -9040,7 +9040,7 @@ startSubroutine: s32'cmnOnDie'
   Unknown40: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_AtkLv0'
+beginSubroutine: s32'cmn_AtkLv0'
   if: (VARIABLE), 130
     Unknown707: 
     endIf: 
@@ -9098,7 +9098,7 @@ startSubroutine: s32'cmn_AtkLv0'
     endElse: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_AtkLv1'
+beginSubroutine: s32'cmn_AtkLv1'
   if: (VARIABLE), 130
     Unknown707: 
     endIf: 
@@ -9156,7 +9156,7 @@ startSubroutine: s32'cmn_AtkLv1'
     endElse: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_AtkLv2'
+beginSubroutine: s32'cmn_AtkLv2'
   if: (VARIABLE), 130
     Unknown707: 
     endIf: 
@@ -9214,7 +9214,7 @@ startSubroutine: s32'cmn_AtkLv2'
     endElse: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_AtkLv3'
+beginSubroutine: s32'cmn_AtkLv3'
   if: (VARIABLE), 130
     Unknown707: 
     endIf: 
@@ -9272,7 +9272,7 @@ startSubroutine: s32'cmn_AtkLv3'
     endElse: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_AtkLv4'
+beginSubroutine: s32'cmn_AtkLv4'
   if: (VARIABLE), 130
     Unknown707: 
     endIf: 
@@ -9330,7 +9330,7 @@ startSubroutine: s32'cmn_AtkLv4'
     endElse: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_WSBPoint_Add_Lv0'
+beginSubroutine: s32'cmn_WSBPoint_Add_Lv0'
   Unknown949: 0
   ifNot: (VARIABLE), 340
     storeValue: (VARIABLE), 340, (STATIC), 1
@@ -9350,7 +9350,7 @@ startSubroutine: s32'cmn_WSBPoint_Add_Lv0'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_WSBPoint_Add_Lv1'
+beginSubroutine: s32'cmn_WSBPoint_Add_Lv1'
   Unknown949: 0
   ifNot: (VARIABLE), 340
     storeValue: (VARIABLE), 340, (STATIC), 1
@@ -9370,7 +9370,7 @@ startSubroutine: s32'cmn_WSBPoint_Add_Lv1'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_WSBPoint_Add_Lv2'
+beginSubroutine: s32'cmn_WSBPoint_Add_Lv2'
   Unknown949: 0
   ifNot: (VARIABLE), 340
     storeValue: (VARIABLE), 340, (STATIC), 1
@@ -9390,7 +9390,7 @@ startSubroutine: s32'cmn_WSBPoint_Add_Lv2'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_WSBPoint_Add_Lv3'
+beginSubroutine: s32'cmn_WSBPoint_Add_Lv3'
   Unknown949: 0
   ifNot: (VARIABLE), 340
     storeValue: (VARIABLE), 340, (STATIC), 1
@@ -9410,7 +9410,7 @@ startSubroutine: s32'cmn_WSBPoint_Add_Lv3'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_WSBPoint_Add_Lv4'
+beginSubroutine: s32'cmn_WSBPoint_Add_Lv4'
   Unknown949: 0
   ifNot: (VARIABLE), 340
     storeValue: (VARIABLE), 340, (STATIC), 1
@@ -9430,7 +9430,7 @@ startSubroutine: s32'cmn_WSBPoint_Add_Lv4'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_WSBPoint_Add_Lv5'
+beginSubroutine: s32'cmn_WSBPoint_Add_Lv5'
   Unknown949: 0
   ifNot: (VARIABLE), 340
     storeValue: (VARIABLE), 340, (STATIC), 1
@@ -9450,7 +9450,7 @@ startSubroutine: s32'cmn_WSBPoint_Add_Lv5'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_WSBPoint_Add_Lv10'
+beginSubroutine: s32'cmn_WSBPoint_Add_Lv10'
   Unknown949: 0
   ifNot: (VARIABLE), 340
     storeValue: (VARIABLE), 340, (STATIC), 1
@@ -9466,7 +9466,7 @@ startSubroutine: s32'cmn_WSBPoint_Add_Lv10'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_hosei'
+beginSubroutine: s32'cmn_hosei'
   if: (VARIABLE), 205
     Unknown1825: s32'-------------------------------', 0, 0
     Unknown1825: s32'cmn_hosei', 0, 0
@@ -9933,7 +9933,7 @@ startSubroutine: s32'cmn_hosei'
   storeValue: (VARIABLE), 340, (STATIC), 0
   endSubroutine: 
 
-startSubroutine: s32'cmnAddTensionGG'
+beginSubroutine: s32'cmnAddTensionGG'
   ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 1
     Unknown2190: 30
     endIf: 
@@ -9960,12 +9960,12 @@ startSubroutine: s32'cmnAddTensionGG'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_SameAttack'
+beginSubroutine: s32'cmn_SameAttack'
   Unknown763: 2, 330
   Unknown764: 0, 500
   endSubroutine: 
 
-startSubroutine: s32'cmn_AttackEnd'
+beginSubroutine: s32'cmn_AttackEnd'
   Unknown2173: 
   Unknown2033: 23, s32'NmlAtk5CFar'
   ifNot: (VARIABLE), 0
@@ -9990,19 +9990,19 @@ startSubroutine: s32'cmn_AttackEnd'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_fuwafuwafuwa'
+beginSubroutine: s32'cmn_fuwafuwafuwa'
   Unknown924: 1
   Unknown926: 3
   airHitEffect: 11
   endSubroutine: 
 
-startSubroutine: s32'cmn_fuwafuwafuwaCounter'
+beginSubroutine: s32'cmn_fuwafuwafuwaCounter'
   Unknown925: 1
   Unknown927: 3
   Unknown896: 11
   endSubroutine: 
 
-startSubroutine: s32'cmn_RISCounter'
+beginSubroutine: s32'cmn_RISCounter'
   Unknown2498: 22, 2, 352
     clearRegisteredUponCode: (COUNTER_HIT)
     Unknown929: 1, 1
@@ -10021,7 +10021,7 @@ startSubroutine: s32'cmn_RISCounter'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_countertype_middle'
+beginSubroutine: s32'cmn_countertype_middle'
   if: (VARIABLE), 130
     upon: (COUNTER_HIT)
       Unknown2499: 22, 2, 352
@@ -10044,7 +10044,7 @@ startSubroutine: s32'cmn_countertype_middle'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_countertype_middle_slash'
+beginSubroutine: s32'cmn_countertype_middle_slash'
   if: (VARIABLE), 130
     upon: (COUNTER_HIT)
       Unknown2499: 22, 2, 352
@@ -10068,7 +10068,7 @@ startSubroutine: s32'cmn_countertype_middle_slash'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_countertype_high'
+beginSubroutine: s32'cmn_countertype_high'
   if: (VARIABLE), 130
     upon: (COUNTER_HIT)
       Unknown2499: 22, 2, 352
@@ -10092,7 +10092,7 @@ startSubroutine: s32'cmn_countertype_high'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_countertype_high_slash'
+beginSubroutine: s32'cmn_countertype_high_slash'
   if: (VARIABLE), 130
     upon: (COUNTER_HIT)
       Unknown2499: 22, 2, 352
@@ -10332,7 +10332,7 @@ beginState: s32'cmnHiCounterCamera'
   endLabel: 
   endState: 
 
-startSubroutine: s32'cmnCamCounterSlowSettings'
+beginSubroutine: s32'cmnCamCounterSlowSettings'
   Unknown2500: 11, 22, (VARIABLE), 8, (STATIC), 0
     Unknown2500: 13, 22, (VARIABLE), 18, (STATIC), 150000
       Unknown41: 22
@@ -10349,7 +10349,7 @@ startSubroutine: s32'cmnCamCounterSlowSettings'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnCamCounterTrack'
+beginSubroutine: s32'cmnCamCounterTrack'
   Unknown41: 4
   Unknown2098: 3, 22
   Unknown2099: 3, 22
@@ -10505,7 +10505,7 @@ startSubroutine: s32'cmnCamCounterTrack'
   Unknown2552: 2, 60, 2, 56, 2, 58, 0, 8, 0, 400, 0, 0, s32'linear', s32'linear'
   endSubroutine: 
 
-startSubroutine: s32'cmnHighGuard'
+beginSubroutine: s32'cmnHighGuard'
   ifOperation: (IS_NOT_EQUAL), (VARIABLE), 326, (STATIC), 2147483647
     ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 326, (STATIC), 45
       storeValue: (VARIABLE), 46, (STATIC), 1
@@ -10529,7 +10529,7 @@ startSubroutine: s32'cmnHighGuard'
     endElse: 
   endSubroutine: 
 
-startSubroutine: s32'cmnGuardLanding'
+beginSubroutine: s32'cmnGuardLanding'
   upon: (FRAME_STEP)
     ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 1
       physicsXImpulse: 0, -15000
@@ -10546,7 +10546,7 @@ startSubroutine: s32'cmnGuardLanding'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnAirGuard'
+beginSubroutine: s32'cmnAirGuard'
   setEventTrigger: (TIMER), 1
   upon: (TIMER)
     if: (VARIABLE), 36
@@ -10566,7 +10566,7 @@ startSubroutine: s32'cmnAirGuard'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnGuardBreak'
+beginSubroutine: s32'cmnGuardBreak'
   Unknown2526: 0, 0, 0, 0, 0, 0
   Unknown2591: 0, 0, 0, 0, 0, 0
   Unknown2033: 3, s32'CmnActHajikareAir'
@@ -10581,7 +10581,7 @@ startSubroutine: s32'cmnGuardBreak'
   Unknown40: 
   endSubroutine: 
 
-startSubroutine: s32'cmnJumpPre'
+beginSubroutine: s32'cmnJumpPre'
   setCarriedMomentumPercentage: 60
   upon: (BEFORE_EXIT)
     whiffCancelOptionBufferTime: s32'CmnFAirDash', 5
@@ -10592,7 +10592,7 @@ startSubroutine: s32'cmnJumpPre'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnJumpCheck'
+beginSubroutine: s32'cmnJumpCheck'
   storeValue: (VARIABLE), 312, (STATIC), 0
   if: (VARIABLE), 11
     storeValue: (VARIABLE), 312, (STATIC), 1
@@ -10602,7 +10602,7 @@ startSubroutine: s32'cmnJumpCheck'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnJumpLanding'
+beginSubroutine: s32'cmnJumpLanding'
   Unknown1334: 1
   ifNot: (VARIABLE), 336
     Unknown1339: 1
@@ -10614,26 +10614,26 @@ startSubroutine: s32'cmnJumpLanding'
   storeValue: (VARIABLE), 345, (STATIC), 0
   endSubroutine: 
 
-startSubroutine: s32'cmnLandingStiff'
+beginSubroutine: s32'cmnLandingStiff'
   storeValue: (VARIABLE), 387, (STATIC), 0
   storeValue: (VARIABLE), 343, (STATIC), -350000
   storeValue: (VARIABLE), 344, (STATIC), 0
   storeValue: (VARIABLE), 345, (STATIC), 0
   endSubroutine: 
 
-startSubroutine: s32'cmnLandingStiffadd'
+beginSubroutine: s32'cmnLandingStiffadd'
   Unknown1824: 3, 1
   storeValue: (VARIABLE), 336, (STATIC), 1
   endSubroutine: 
 
-startSubroutine: s32'cmnLandingStiffadd_Timer'
+beginSubroutine: s32'cmnLandingStiffadd_Timer'
   setEventTrigger: (TIMER), 3
   upon: (TIMER)
     callSubroutine: s32'cmnLandingStiffadd'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnFDash'
+beginSubroutine: s32'cmnFDash'
   checkCurrentStateEntryName: s32'CmnFDash'
   if: (VARIABLE), 0
     Unknown1362: 1
@@ -10642,13 +10642,13 @@ startSubroutine: s32'cmnFDash'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnFDashStop'
+beginSubroutine: s32'cmnFDashStop'
   Unknown1362: 1
   Unknown1352: 1
   Unknown1339: 1
   endSubroutine: 
 
-startSubroutine: s32'cmnFDashCancel'
+beginSubroutine: s32'cmnFDashCancel'
   Unknown276: 1
   recoveryState: 
   Unknown2234: 1
@@ -10665,7 +10665,7 @@ startSubroutine: s32'cmnFDashCancel'
   Unknown1165: s32'DashCancel'
   endSubroutine: 
 
-startSubroutine: s32'cmnAirFDash'
+beginSubroutine: s32'cmnAirFDash'
   Unknown446: s32'cmn_Step_mahojin', 130
   Unknown276: 1
   Unknown1687: 8
@@ -10700,7 +10700,7 @@ startSubroutine: s32'cmnAirFDash'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnAirBDash'
+beginSubroutine: s32'cmnAirBDash'
   callSubroutine: s32'cmnLandingStiffadd'
   Unknown207: 10
   upon: (FRAME_STEP)
@@ -10713,7 +10713,7 @@ startSubroutine: s32'cmnAirBDash'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnAirMoveCancel'
+beginSubroutine: s32'cmnAirMoveCancel'
   enableJumpCancel: 1
   Unknown1685: 1
   endSubroutine: 
@@ -10733,14 +10733,14 @@ beginState: s32'cmn_Step_mahojin'
   Unknown454: 0
   endState: 
 
-startSubroutine: s32'cmnDamageCellDiffLand'
+beginSubroutine: s32'cmnDamageCellDiffLand'
   modifyVar: (ADD), (VARIABLE), 313, (STATIC), 1
   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 313, (STATIC), 4
     storeValue: (VARIABLE), 313, (STATIC), 0
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnDamageCellDiffAir'
+beginSubroutine: s32'cmnDamageCellDiffAir'
   if: (VARIABLE), 314
     storeValue: (VARIABLE), 314, (STATIC), 0
     endIf: 
@@ -10749,19 +10749,19 @@ startSubroutine: s32'cmnDamageCellDiffAir'
     endElse: 
   endSubroutine: 
 
-startSubroutine: s32'cmnOnDamage'
+beginSubroutine: s32'cmnOnDamage'
   endSubroutine: 
 
-startSubroutine: s32'cmnOnGuard'
+beginSubroutine: s32'cmnOnGuard'
   endSubroutine: 
 
-startSubroutine: s32'cmnWSBPointLimit'
+beginSubroutine: s32'cmnWSBPointLimit'
   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 306, (STATIC), 2500
     storeValue: (VARIABLE), 306, (STATIC), 2500
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnUkemi'
+beginSubroutine: s32'cmnUkemi'
   Unknown41: 3
   storeValue: (VARIABLE), 319, (STATIC), 0
   Unknown40: 
@@ -10777,7 +10777,7 @@ startSubroutine: s32'cmnUkemi'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnQuickDown1'
+beginSubroutine: s32'cmnQuickDown1'
   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 104, (STATIC), 0
     physicsXImpulse: 0, -20000
     Unknown2229: 95
@@ -10793,7 +10793,7 @@ startSubroutine: s32'cmnQuickDown1'
   Unknown612: s32'SE_BTL_SYS_Ukemi_Flash'
   endSubroutine: 
 
-startSubroutine: s32'cmnQuickDown2'
+beginSubroutine: s32'cmnQuickDown2'
   Unknown613: s16'vxxx109'
   setStrikeInvulnerable: 1
   setThrowInvulnerable: 1
@@ -10804,7 +10804,7 @@ startSubroutine: s32'cmnQuickDown2'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnBurst'
+beginSubroutine: s32'cmnBurst'
   recoveryState: 
   Unknown176: 1
   Unknown1827: 1
@@ -10883,16 +10883,16 @@ startSubroutine: s32'cmnBurst'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnthrow_Redroman'
+beginSubroutine: s32'cmnthrow_Redroman'
   Unknown968: 10
   endSubroutine: 
 
-startSubroutine: s32'cmnthrow_RedromanSenkoInput'
+beginSubroutine: s32'cmnthrow_RedromanSenkoInput'
   Unknown2359: 0
   whiffCancelOptionBufferTime: s32'RomanCancelAttack', 10
   endSubroutine: 
 
-startSubroutine: s32'cmnthrow_land_timer'
+beginSubroutine: s32'cmnthrow_land_timer'
   Unknown2322: 1
   if: (VARIABLE), 92
     Unknown1364: 1
@@ -10911,14 +10911,14 @@ startSubroutine: s32'cmnthrow_land_timer'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnthrow_air_range'
+beginSubroutine: s32'cmnthrow_air_range'
   throwRange: 200000
   Unknown1027: -1, -1, 200000, -50000
   callSubroutine: s32'cmnLandingStiffadd'
   Unknown1824: 10, 1
   endSubroutine: 
 
-startSubroutine: s32'cmnThrowPosition_F_Wall'
+beginSubroutine: s32'cmnThrowPosition_F_Wall'
   ifNot: (VARIABLE), 317
     ifNot: (VARIABLE), 32
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 83, (VARIABLE), 45
@@ -10958,7 +10958,7 @@ startSubroutine: s32'cmnThrowPosition_F_Wall'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnThrowPosition_B_Wall'
+beginSubroutine: s32'cmnThrowPosition_B_Wall'
   ifNot: (VARIABLE), 317
     if: (VARIABLE), 32
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 83, (VARIABLE), 45
@@ -10998,7 +10998,7 @@ startSubroutine: s32'cmnThrowPosition_B_Wall'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnThrowPosition_Limit'
+beginSubroutine: s32'cmnThrowPosition_Limit'
   ifNot: (VARIABLE), 317
     if: (VARIABLE), 32
       modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
@@ -11021,7 +11021,7 @@ startSubroutine: s32'cmnThrowPosition_Limit'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnInitializeThrowBaseAndTarget'
+beginSubroutine: s32'cmnInitializeThrowBaseAndTarget'
   callSubroutine: s32'cmnCam_InitializeBase'
   Unknown446: s32'cmnCam_Target', 100
   Unknown43: 4, 1
@@ -11080,7 +11080,7 @@ beginState: s32'cmnCam_Target'
   sprite: s32'null', 500
   endState: 
 
-startSubroutine: s32'cmnCam_CommonCameraEnd'
+beginSubroutine: s32'cmnCam_CommonCameraEnd'
   if: (VARIABLE), 317
     ifOperation: (IS_EQUAL), (VARIABLE), 316, (STATIC), 0
       Unknown41: 22
@@ -11093,7 +11093,7 @@ startSubroutine: s32'cmnCam_CommonCameraEnd'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnCam_AirThrow'
+beginSubroutine: s32'cmnCam_AirThrow'
   ifNot: (VARIABLE), 317
     Unknown446: s32'cmnCam_AirThrowAction', 100
     endIf: 
@@ -11165,7 +11165,7 @@ beginState: s32'cmnCam_AirThrowAction'
   Unknown2545: 0, 65, 0, 20, 0, 0, 0, 0, s32'accel_brake', s32'brake'
   endState: 
 
-startSubroutine: s32'cmnCam_Initialize'
+beginSubroutine: s32'cmnCam_Initialize'
   Unknown41: 3
   Unknown2239: 1
   Unknown40: 
@@ -11174,7 +11174,7 @@ startSubroutine: s32'cmnCam_Initialize'
   callSubroutine: s32'cmn_cam_delete_on_wsb'
   endSubroutine: 
 
-startSubroutine: s32'cmnCam_InitializeBase'
+beginSubroutine: s32'cmnCam_InitializeBase'
   Unknown2082: 
   if: (VARIABLE), 317
     Unknown2558: 0, 0, 0, 1000, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'accel_brake'
@@ -11272,7 +11272,7 @@ beginState: s32'cmnCam_FinishTimeOut'
     endIf: 
   endState: 
 
-startSubroutine: s32'cmnGlareDelete'
+beginSubroutine: s32'cmnGlareDelete'
   Unknown419: 0, 0
   Unknown419: 0, 1
   Unknown419: 0, 2
@@ -11309,14 +11309,14 @@ beginState: s32'cmnCam_ReturnToDefault'
   Unknown2575: s32'orthodefault', 0, 0, s32'orthoone'
   endState: 
 
-startSubroutine: s32'cmnCam_InitializeTarget'
+beginSubroutine: s32'cmnCam_InitializeTarget'
   Unknown2082: 
   Unknown41: 3
   Unknown40: 
   Unknown2314: 1
   endSubroutine: 
 
-startSubroutine: s32'cmnCam_ClearCamInterrupt'
+beginSubroutine: s32'cmnCam_ClearCamInterrupt'
   clearRegisteredUponCode: 35
   clearRegisteredUponCode: 99
   clearRegisteredUponCode: 46
@@ -11329,7 +11329,7 @@ startSubroutine: s32'cmnCam_ClearCamInterrupt'
   Unknown1803: s32'cmnCam_Singleton', 23
   endSubroutine: 
 
-startSubroutine: s32'cmnCameraSettings'
+beginSubroutine: s32'cmnCameraSettings'
   ifOperation: (IS_EQUAL), (VARIABLE), 333, (STATIC), 0
     Unknown1803: s32'cmnCam_Singleton', 24
     ifNot: (VARIABLE), 317
@@ -11419,7 +11419,7 @@ beginState: s32'cmnCam_RC_Target'
   sprite: s32'null', 500
   endState: 
 
-startSubroutine: s32'cmn_cam_delete_on_rc'
+beginSubroutine: s32'cmn_cam_delete_on_rc'
   upon: 47
     upon: 36
       Unknown2033: 3, s32'CmnActRomanCancel'
@@ -11435,7 +11435,7 @@ startSubroutine: s32'cmn_cam_delete_on_rc'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_cam_delete_on_wsb'
+beginSubroutine: s32'cmn_cam_delete_on_wsb'
   upon: 99
     clearRegisteredUponCode: 99
     Unknown19: 23
@@ -11444,7 +11444,7 @@ startSubroutine: s32'cmn_cam_delete_on_wsb'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_cam_delete_on_finish'
+beginSubroutine: s32'cmn_cam_delete_on_finish'
   clearRegisteredUponCode: 99
   Unknown19: 23
   Unknown2554: 
@@ -11452,7 +11452,7 @@ startSubroutine: s32'cmn_cam_delete_on_finish'
   Unknown393: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_vertical_offset'
+beginSubroutine: s32'cmn_vertical_offset'
   ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), -3
     Unknown2100: 0, -240000, 0, 0
     endIf: 
@@ -11473,7 +11473,7 @@ startSubroutine: s32'cmn_vertical_offset'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_motionblur'
+beginSubroutine: s32'cmn_motionblur'
   ifNot: (VARIABLE), 317
     ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 1
       Unknown392: 50
@@ -11508,7 +11508,7 @@ startSubroutine: s32'cmn_motionblur'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_screenshake'
+beginSubroutine: s32'cmn_screenshake'
   ifNot: (VARIABLE), 315
     ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 0
       ifOperation: (IS_EQUAL), (VARIABLE), 331, (STATIC), 0
@@ -11598,7 +11598,7 @@ startSubroutine: s32'cmn_screenshake'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnMutekiRC'
+beginSubroutine: s32'cmnMutekiRC'
   upon: 36
     if: (VARIABLE), 310
       Unknown2234: 0
@@ -11624,7 +11624,7 @@ startSubroutine: s32'cmnMutekiRC'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_DustAttack'
+beginSubroutine: s32'cmn_DustAttack'
   Unknown446: s32'cmn_Dust_alarm', 100
   callSubroutine: s32'cmn_AtkLv2'
   Unknown1171: 1
@@ -11853,7 +11853,7 @@ startSubroutine: s32'cmn_DustAttack'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_Dust_Kirimomi_Blend'
+beginSubroutine: s32'cmn_Dust_Kirimomi_Blend'
   Unknown2526: 1, 1, 0, 0, 45, 1000
   Unknown2591: 1, 1, 0, 0, 120, 1000
   Unknown2593: 0, 500
@@ -11931,7 +11931,7 @@ startSubroutine: s32'cmn_Dust_Kirimomi_Blend'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_Dust_HomingJump'
+beginSubroutine: s32'cmn_Dust_HomingJump'
   Unknown1971: 1
   Unknown2188: 1
   Unknown41: 22
@@ -12271,7 +12271,7 @@ beginState: s32'cmn_Chase_Camera'
   sprite: s32'null', 1000
   endState: 
 
-startSubroutine: s32'cmn_Dust_HomingJump_Loop'
+beginSubroutine: s32'cmn_Dust_HomingJump_Loop'
   Unknown176: 1
   physicsXImpulse: 0, 2500
   physicsYImpulse: 0, 5000
@@ -12312,7 +12312,7 @@ startSubroutine: s32'cmn_Dust_HomingJump_Loop'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_Dust_HomingJump_Attack'
+beginSubroutine: s32'cmn_Dust_HomingJump_Attack'
   ifOperation: (IS_NOT_EQUAL), (VARIABLE), 316, (STATIC), 0
     if: (VARIABLE), 317
       Unknown1001: 5
@@ -12415,7 +12415,7 @@ startSubroutine: s32'cmn_Dust_HomingJump_Attack'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_Dust_Finish'
+beginSubroutine: s32'cmn_Dust_Finish'
   callSubroutine: s32'cmn_AtkLv4'
   damage: 0, 80
   Unknown1086: 50
@@ -12638,7 +12638,7 @@ beginState: s32'cmn_hibana'
   sprite: s32'null', 60
   endState: 
 
-startSubroutine: s32'cmn_Dust_Finish_Master'
+beginSubroutine: s32'cmn_Dust_Finish_Master'
   Unknown1668: 60, 0
   Unknown2188: 1
   Unknown2234: 0
@@ -12676,7 +12676,7 @@ startSubroutine: s32'cmn_Dust_Finish_Master'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_Dust_Finish_Slave'
+beginSubroutine: s32'cmn_Dust_Finish_Slave'
   Unknown1668: 60, 0
   Unknown2234: 0
   Unknown2188: 1
@@ -12718,7 +12718,7 @@ startSubroutine: s32'cmn_Dust_Finish_Slave'
   Unknown612: s32'SE_BTL_CMN_Blow_Down'
   endSubroutine: 
 
-startSubroutine: s32'cmn_Dust_End_Master'
+beginSubroutine: s32'cmn_Dust_End_Master'
   Unknown1025: 0, 1500000
   Unknown1668: 60, 0
   Unknown2234: 0
@@ -12801,7 +12801,7 @@ startSubroutine: s32'cmn_Dust_End_Master'
   Unknown2427: s32'DustAtkEndNG', 0, 1
   endSubroutine: 
 
-startSubroutine: s32'cmn_Dust_End_Slave'
+beginSubroutine: s32'cmn_Dust_End_Slave'
   Unknown1025: 0, 1500000
   Unknown1668: 60, 0
   Unknown2234: 0
@@ -13216,7 +13216,7 @@ beginState: s32'cmn_nagenuke'
   Unknown612: s32'SE_BTL_CMN_Sousai_Nage'
   endState: 
 
-startSubroutine: s32'cmnHajikareForNagenukeLandInit'
+beginSubroutine: s32'cmnHajikareForNagenukeLandInit'
   upon: (FRAME_STEP)
     Unknown2188: 1
     ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 1
@@ -13241,7 +13241,7 @@ startSubroutine: s32'cmnHajikareForNagenukeLandInit'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnHajikareForNagenukeAirInit'
+beginSubroutine: s32'cmnHajikareForNagenukeAirInit'
   upon: (FRAME_STEP)
     Unknown2188: 1
     ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 5
@@ -13265,7 +13265,7 @@ startSubroutine: s32'cmnHajikareForNagenukeAirInit'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnNandemoCancel'
+beginSubroutine: s32'cmnNandemoCancel'
   recoveryState: 
   Unknown2171: 0
   Unknown1334: 1
@@ -13285,7 +13285,7 @@ startSubroutine: s32'cmnNandemoCancel'
   Unknown1827: 0
   endSubroutine: 
 
-startSubroutine: s32'cmnNandemoCancelC'
+beginSubroutine: s32'cmnNandemoCancelC'
   recoveryState: 
   Unknown2171: 0
   Unknown1335: 1
@@ -13304,7 +13304,7 @@ startSubroutine: s32'cmnNandemoCancelC'
   Unknown1827: 0
   endSubroutine: 
 
-startSubroutine: s32'cmnNandemoCancelA'
+beginSubroutine: s32'cmnNandemoCancelA'
   recoveryState: 
   Unknown1344: 1
   Unknown1345: 1
@@ -13320,7 +13320,7 @@ startSubroutine: s32'cmnNandemoCancelA'
   Unknown135: 
   endSubroutine: 
 
-startSubroutine: s32'cmnNohosei'
+beginSubroutine: s32'cmnNohosei'
   Unknown762: 0
   Unknown772: 0
   Unknown1128: 1
@@ -13339,7 +13339,7 @@ startSubroutine: s32'cmnNohosei'
   Unknown773: 1
   endSubroutine: 
 
-startSubroutine: s32'cmnNohosei_kakusei'
+beginSubroutine: s32'cmnNohosei_kakusei'
   Unknown762: 0
   Unknown772: 0
   Unknown1128: 1
@@ -13358,13 +13358,13 @@ startSubroutine: s32'cmnNohosei_kakusei'
   Unknown773: 1
   endSubroutine: 
 
-startSubroutine: s32'cmnNageWSBPoint'
+beginSubroutine: s32'cmnNageWSBPoint'
   Unknown41: 22
   modifyVar: (ADD), (VARIABLE), 306, (STATIC), 1000
   Unknown40: 
   endSubroutine: 
 
-startSubroutine: s32'cmnAtkTemplNageLand'
+beginSubroutine: s32'cmnAtkTemplNageLand'
   Unknown1128: 1
   Unknown1127: 1
   Unknown997: 0
@@ -13405,7 +13405,7 @@ startSubroutine: s32'cmnAtkTemplNageLand'
   Unknown1073: 1
   endSubroutine: 
 
-startSubroutine: s32'cmnAtkTemplNageAir'
+beginSubroutine: s32'cmnAtkTemplNageAir'
   Unknown1128: 1
   Unknown1127: 1
   Unknown997: 0
@@ -13445,7 +13445,7 @@ startSubroutine: s32'cmnAtkTemplNageAir'
   Unknown1073: 1
   endSubroutine: 
 
-startSubroutine: s32'cmnNmlAtkThrowInit'
+beginSubroutine: s32'cmnNmlAtkThrowInit'
   Unknown1019: 1
   Unknown1042: s32''
   Unknown1064: s32''
@@ -13454,7 +13454,7 @@ startSubroutine: s32'cmnNmlAtkThrowInit'
   Unknown1073: 1
   endSubroutine: 
 
-startSubroutine: s32'cmnNmlAtkAirThrowInit'
+beginSubroutine: s32'cmnNmlAtkAirThrowInit'
   Unknown1019: 1
   Unknown1042: s32''
   Unknown1064: s32''
@@ -13463,7 +13463,7 @@ startSubroutine: s32'cmnNmlAtkAirThrowInit'
   Unknown1073: 1
   endSubroutine: 
 
-startSubroutine: s32'cmnSpecialAtkThrowInit'
+beginSubroutine: s32'cmnSpecialAtkThrowInit'
   Unknown1019: 1
   Unknown1042: s32''
   Unknown1064: s32''
@@ -13478,14 +13478,14 @@ startSubroutine: s32'cmnSpecialAtkThrowInit'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnSpecialAtkAirThrowInit'
+beginSubroutine: s32'cmnSpecialAtkAirThrowInit'
   Unknown1019: 1
   Unknown1042: s32''
   Unknown1064: s32''
   Unknown1073: 1
   endSubroutine: 
 
-startSubroutine: s32'cmnAtkTemplNageDageki'
+beginSubroutine: s32'cmnAtkTemplNageDageki'
   Unknown1111: 1
   Unknown1128: 1
   Unknown1127: 1
@@ -13502,7 +13502,7 @@ startSubroutine: s32'cmnAtkTemplNageDageki'
   Unknown1061: 1
   endSubroutine: 
 
-startSubroutine: s32'cmnAtkTemplNageChuukeiHit'
+beginSubroutine: s32'cmnAtkTemplNageChuukeiHit'
   Unknown1128: 1
   Unknown1127: 1
   Unknown997: 0
@@ -13521,7 +13521,7 @@ startSubroutine: s32'cmnAtkTemplNageChuukeiHit'
   Unknown1073: 1
   endSubroutine: 
 
-startSubroutine: s32'cmnAtkTemplNageFinishHit'
+beginSubroutine: s32'cmnAtkTemplNageFinishHit'
   Unknown1128: 1
   Unknown1127: 1
   Unknown997: 0
@@ -13538,7 +13538,7 @@ startSubroutine: s32'cmnAtkTemplNageFinishHit'
   Unknown1073: 1
   endSubroutine: 
 
-startSubroutine: s32'cmnAtkTemplNage_Base'
+beginSubroutine: s32'cmnAtkTemplNage_Base'
   hitSoftKnockdown: 0
   pushbackX: 0
   Unknown1103: 0
@@ -13566,17 +13566,17 @@ startSubroutine: s32'cmnAtkTemplNage_Base'
   Unknown1073: 1
   endSubroutine: 
 
-startSubroutine: s32'cmnAtkTemplNage_LandBase'
+beginSubroutine: s32'cmnAtkTemplNage_LandBase'
   callSubroutine: s32'cmnAtkTemplNage_Base'
   endSubroutine: 
 
-startSubroutine: s32'cmnAtkTemplNage_AirBase'
+beginSubroutine: s32'cmnAtkTemplNage_AirBase'
   callSubroutine: s32'cmnAtkTemplNage_Base'
   Unknown2232: 
   Unknown99: 0, 1
   endSubroutine: 
 
-startSubroutine: s32'cmnAtkTemplNage__EnemyCell'
+beginSubroutine: s32'cmnAtkTemplNage__EnemyCell'
   Unknown2033: 23, s32'ThrowExe'
   if: (VARIABLE), 0
     Unknown544: 22
@@ -13587,7 +13587,7 @@ startSubroutine: s32'cmnAtkTemplNage__EnemyCell'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnAtkTemplNageFinish'
+beginSubroutine: s32'cmnAtkTemplNageFinish'
   riscConsume: 10
   Unknown1143: 1
   Unknown1001: 25
@@ -13608,7 +13608,7 @@ startSubroutine: s32'cmnAtkTemplNageFinish'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnAtkTemplDagekiLock'
+beginSubroutine: s32'cmnAtkTemplDagekiLock'
   riscConsume: 0
   Unknown1143: 0
   Unknown965: 1
@@ -13619,7 +13619,7 @@ startSubroutine: s32'cmnAtkTemplDagekiLock'
   Unknown1037: 1
   endSubroutine: 
 
-startSubroutine: s32'cmn_Hizakuzure'
+beginSubroutine: s32'cmn_Hizakuzure'
   upon: (FRAME_STEP)
     if: (VARIABLE), 16
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 51
@@ -13642,18 +13642,18 @@ startSubroutine: s32'cmn_Hizakuzure'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_lightAttack_hitback'
+beginSubroutine: s32'cmn_lightAttack_hitback'
   pushbackX: 125
   Unknown1103: 85
   Unknown1005: 250
   Unknown1004: 250
   endSubroutine: 
 
-startSubroutine: s32'cmn_lightAttack_flex'
+beginSubroutine: s32'cmn_lightAttack_flex'
   enableWhiffCancel: 1
   endSubroutine: 
 
-startSubroutine: s32'cmn_AtkTemplFloatDamage'
+beginSubroutine: s32'cmn_AtkTemplFloatDamage'
   Unknown1089: 1
   airHitEffect: 36
   pushbackX: 50
@@ -13664,7 +13664,7 @@ startSubroutine: s32'cmn_AtkTemplFloatDamage'
   Unknown1067: 6, 0, 60000
   endSubroutine: 
 
-startSubroutine: s32'cmn_AtkTemplFloatDamageHead'
+beginSubroutine: s32'cmn_AtkTemplFloatDamageHead'
   upon: 62
     clearRegisteredUponCode: 62
     callSubroutine: s32'cmn_AtkTemplFloatDamage'
@@ -13672,7 +13672,7 @@ startSubroutine: s32'cmn_AtkTemplFloatDamageHead'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_AtkTemplFloatDamageBody'
+beginSubroutine: s32'cmn_AtkTemplFloatDamageBody'
   upon: 62
     clearRegisteredUponCode: 62
     callSubroutine: s32'cmn_AtkTemplFloatDamage'
@@ -13680,7 +13680,7 @@ startSubroutine: s32'cmn_AtkTemplFloatDamageBody'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_FloatDamage'
+beginSubroutine: s32'cmn_FloatDamage'
   Unknown176: 1
   if: (VARIABLE), 320
     upon: (FRAME_STEP)
@@ -13748,7 +13748,7 @@ startSubroutine: s32'cmn_FloatDamage'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_AtkTemplNokezoriHigh'
+beginSubroutine: s32'cmn_AtkTemplNokezoriHigh'
   upon: 62
     clearRegisteredUponCode: 62
     Unknown49: 89
@@ -13758,7 +13758,7 @@ startSubroutine: s32'cmn_AtkTemplNokezoriHigh'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_AtkTemplNokezoriLow'
+beginSubroutine: s32'cmn_AtkTemplNokezoriLow'
   upon: 62
     clearRegisteredUponCode: 62
     Unknown49: 89
@@ -13768,7 +13768,7 @@ startSubroutine: s32'cmn_AtkTemplNokezoriLow'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_AtkTemplNmlAtkAir'
+beginSubroutine: s32'cmn_AtkTemplNmlAtkAir'
   ifNot: (VARIABLE), 317
     ifOperation: (IS_GREATER), (VARIABLE), 7, (STATIC), 0
       modifyVarAfterOperation: (DIV), (VARIABLE), 7, (STATIC), 4, (VARIABLE), 348
@@ -13783,7 +13783,7 @@ startSubroutine: s32'cmn_AtkTemplNmlAtkAir'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_AtkVectorAirGuard'
+beginSubroutine: s32'cmn_AtkVectorAirGuard'
   Unknown785: 0
   Unknown786: 0
   Unknown782: 1540
@@ -13829,11 +13829,11 @@ startSubroutine: s32'cmn_AtkVectorAirGuard'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_Korogari_ToDown_Time'
+beginSubroutine: s32'cmn_Korogari_ToDown_Time'
   storeValue: (VARIABLE), 72, (STATIC), 34
   endSubroutine: 
 
-startSubroutine: s32'cmn_Korogari_ToDown_Brake'
+beginSubroutine: s32'cmn_Korogari_ToDown_Brake'
   upon: 12
     ifNot: (VARIABLE), 81
       modifyVar: (ADD), (VARIABLE), 46, (STATIC), 1
@@ -13845,12 +13845,12 @@ startSubroutine: s32'cmn_Korogari_ToDown_Brake'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_NoBlend'
+beginSubroutine: s32'cmn_NoBlend'
   Unknown2526: 0, 0, 0, 0, 0, 0
   Unknown2591: 0, 0, 0, 0, 0, 0
   endSubroutine: 
 
-startSubroutine: s32'cmn_HaritsukiGetUp'
+beginSubroutine: s32'cmn_HaritsukiGetUp'
   Unknown41: 3
   storeValue: (VARIABLE), 319, (STATIC), 0
   Unknown40: 
@@ -13859,7 +13859,7 @@ startSubroutine: s32'cmn_HaritsukiGetUp'
   Unknown40: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_GorogoroBGParticle'
+beginSubroutine: s32'cmn_GorogoroBGParticle'
   setEventTrigger: (TIMER), 1
   upon: (TIMER)
     Unknown448: s32'cmn_landcrack', 100
@@ -13873,7 +13873,7 @@ startSubroutine: s32'cmn_GorogoroBGParticle'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_Jitabata'
+beginSubroutine: s32'cmn_Jitabata'
   upon: (FRAME_STEP)
     if: (VARIABLE), 45
       ifNot: (VARIABLE), 46
@@ -13904,7 +13904,7 @@ startSubroutine: s32'cmn_Jitabata'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_DownBound'
+beginSubroutine: s32'cmn_DownBound'
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 8, (STATIC), -50000
     storeValue: (VARIABLE), 8, (STATIC), -50000
     endIf: 
@@ -13915,7 +13915,7 @@ startSubroutine: s32'cmn_DownBound'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_Down2Stand'
+beginSubroutine: s32'cmn_Down2Stand'
   Unknown2033: 23, s32'CmnActQuickDown2Stand'
   if: (VARIABLE), 0
     storeValue: (VARIABLE), 45, (STATIC), 15
@@ -13934,7 +13934,7 @@ startSubroutine: s32'cmn_Down2Stand'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSBWallStampAtk'
+beginSubroutine: s32'cmnWSBWallStampAtk'
   Unknown2498: 22, 2, 77
     Unknown830: 59
     Unknown832: 59
@@ -13972,13 +13972,13 @@ startSubroutine: s32'cmnWSBWallStampAtk'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSBWallStampDmgParam'
+beginSubroutine: s32'cmnWSBWallStampDmgParam'
   storeValue: (VARIABLE), 61, (STATIC), 61
   storeValue: (VARIABLE), 62, (STATIC), 60
   storeValue: (VARIABLE), 63, (STATIC), 30
   endSubroutine: 
 
-startSubroutine: s32'cmnWSBWallBreak'
+beginSubroutine: s32'cmnWSBWallBreak'
   Unknown2498: 22, 2, 77
     if: (VARIABLE), 130
       Unknown2188: 1
@@ -14023,10 +14023,10 @@ startSubroutine: s32'cmnWSBWallBreak'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSBWallBreakAfterDamage'
+beginSubroutine: s32'cmnWSBWallBreakAfterDamage'
   endSubroutine: 
 
-startSubroutine: s32'cmnOnWSBCalc'
+beginSubroutine: s32'cmnOnWSBCalc'
   Unknown41: 22
   Unknown1784: 22, 0, 50, 0, 75
   Unknown40: 
@@ -14061,7 +14061,7 @@ startSubroutine: s32'cmnOnWSBCalc'
     endElse: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWorldSideBreak_Position'
+beginSubroutine: s32'cmnWorldSideBreak_Position'
   Unknown41: 3
   Unknown251: 0
   Unknown2169: 0
@@ -14187,7 +14187,7 @@ beginState: s32'cmnWorldSideBreakObj'
     endUpon: 
   endState: 
 
-startSubroutine: s32'cmnWorldSideBreak_Type'
+beginSubroutine: s32'cmnWorldSideBreak_Type'
   modifyVarAfterOperation: (MUL), (VARIABLE), 308, (STATIC), 2184, (VARIABLE), 47
   Unknown53: 23, 2, 48, 22, 2, 18
   modifyVarAfterOperation: (SUB), (VARIABLE), 48, (VARIABLE), 47, (VARIABLE), 49
@@ -14255,7 +14255,7 @@ startSubroutine: s32'cmnWorldSideBreak_Type'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWorldSideBreak_PosX'
+beginSubroutine: s32'cmnWorldSideBreak_PosX'
   ifOperation: (IS_EQUAL), (VARIABLE), 322, (STATIC), 6
     ifOperation: (IS_EQUAL), (VARIABLE), 323, (STATIC), 1500
       ifOperation: (IS_GREATER), (VARIABLE), 309, (STATIC), 0
@@ -14394,7 +14394,7 @@ startSubroutine: s32'cmnWorldSideBreak_PosX'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWorldSideBreak_PosY'
+beginSubroutine: s32'cmnWorldSideBreak_PosY'
   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 308, (STATIC), 495
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 308, (STATIC), 505
       storeValue: (VARIABLE), 54, (STATIC), -1092000
@@ -14562,7 +14562,7 @@ startSubroutine: s32'cmnWorldSideBreak_PosY'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWorldSideBreak_PosZ'
+beginSubroutine: s32'cmnWorldSideBreak_PosZ'
   ifOperation: (IS_EQUAL), (VARIABLE), 322, (STATIC), 6
     ifOperation: (IS_EQUAL), (VARIABLE), 323, (STATIC), 1500
       ifOperation: (IS_EQUAL), (VARIABLE), 46, (STATIC), 1
@@ -14625,7 +14625,7 @@ startSubroutine: s32'cmnWorldSideBreak_PosZ'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWorldSideBreak_LandingHeight'
+beginSubroutine: s32'cmnWorldSideBreak_LandingHeight'
   Unknown41: 3
   Unknown270: 0
   Unknown40: 
@@ -14934,7 +14934,7 @@ startSubroutine: s32'cmnWorldSideBreak_LandingHeight'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWorldSideBreak_LH_Self'
+beginSubroutine: s32'cmnWorldSideBreak_LH_Self'
   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 308, (STATIC), 495
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 308, (STATIC), 505
       Unknown1914: -1092000
@@ -15087,7 +15087,7 @@ startSubroutine: s32'cmnWorldSideBreak_LH_Self'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Action_LandingHeight'
+beginSubroutine: s32'cmnWSB_Action_LandingHeight'
   Unknown270: 0
   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 308, (STATIC), 495
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 308, (STATIC), 505
@@ -15241,11 +15241,11 @@ startSubroutine: s32'cmnWSB_Action_LandingHeight'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWorldSideBreak_AngleX'
+beginSubroutine: s32'cmnWorldSideBreak_AngleX'
   storeValue: (VARIABLE), 56, (STATIC), 0
   endSubroutine: 
 
-startSubroutine: s32'cmnWorldSideBreak_AngleY'
+beginSubroutine: s32'cmnWorldSideBreak_AngleY'
   ifOperation: (IS_EQUAL), (VARIABLE), 322, (STATIC), 3
     ifOperation: (IS_GREATER), (VARIABLE), 309, (STATIC), 0
       storeValue: (VARIABLE), 57, (STATIC), 70000
@@ -15256,11 +15256,11 @@ startSubroutine: s32'cmnWorldSideBreak_AngleY'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWorldSideBreak_AngleZ'
+beginSubroutine: s32'cmnWorldSideBreak_AngleZ'
   storeValue: (VARIABLE), 58, (STATIC), 0
   endSubroutine: 
 
-startSubroutine: s32'cmnWorldSideBreak_EnemyCell'
+beginSubroutine: s32'cmnWorldSideBreak_EnemyCell'
   ifOperation: (IS_EQUAL), (VARIABLE), 46, (STATIC), 1
     Unknown41: 22
     Unknown2321: 24
@@ -15291,7 +15291,7 @@ startSubroutine: s32'cmnWorldSideBreak_EnemyCell'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWorldSideBreak_Base'
+beginSubroutine: s32'cmnWorldSideBreak_Base'
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 45, (STATIC), 75
     Unknown41: 3
     Unknown2188: 1
@@ -15421,7 +15421,7 @@ startSubroutine: s32'cmnWorldSideBreak_Base'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWorldSideBreak_Camera'
+beginSubroutine: s32'cmnWorldSideBreak_Camera'
   ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
     Unknown737: 
     Unknown41: 3
@@ -15573,7 +15573,7 @@ startSubroutine: s32'cmnWorldSideBreak_Camera'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWinActionWait'
+beginSubroutine: s32'cmnWinActionWait'
   Unknown2188: 1
   Unknown240: 
   Unknown176: 1
@@ -15622,7 +15622,7 @@ startSubroutine: s32'cmnWinActionWait'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Master_Wait'
+beginSubroutine: s32'cmnWSB_Master_Wait'
   Unknown176: 1
   Unknown1415: 1
   addMove: s32'WSB_Master_Wait'
@@ -16308,7 +16308,7 @@ beginState: s32'cmn_ForceTrans_Down_TargetObj'
   sprite: s32'null', 300
   endState: 
 
-startSubroutine: s32'cmnWSB_Finish'
+beginSubroutine: s32'cmnWSB_Finish'
   Unknown2499: 3, 2, 77
     Unknown19: 23
     endIf: 
@@ -16469,7 +16469,7 @@ beginState: s32'cmnWSB_FinishCamera_3'
   Unknown1972: 0
   endState: 
 
-startSubroutine: s32'cmnWorldSideBreak_Action_Master'
+beginSubroutine: s32'cmnWorldSideBreak_Action_Master'
   ifOperation: (IS_EQUAL), (VARIABLE), 46, (STATIC), 1
     Unknown41: 3
     Unknown27: s32'WSB_Master_Slide'
@@ -16492,7 +16492,7 @@ startSubroutine: s32'cmnWorldSideBreak_Action_Master'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWorldSideBreak_Action_Slave'
+beginSubroutine: s32'cmnWorldSideBreak_Action_Slave'
   ifOperation: (IS_EQUAL), (VARIABLE), 46, (STATIC), 1
     Unknown41: 22
     Unknown76: s32'WSB_Slave_Slide'
@@ -16515,7 +16515,7 @@ startSubroutine: s32'cmnWorldSideBreak_Action_Slave'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Action_Default'
+beginSubroutine: s32'cmnWSB_Action_Default'
   Unknown1668: 60, 0
   Unknown2188: 1
   Unknown2234: 0
@@ -16538,7 +16538,7 @@ startSubroutine: s32'cmnWSB_Action_Default'
   callSubroutine: s32'cmnWSB_Action_LandingHeight'
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Action_Master_Default'
+beginSubroutine: s32'cmnWSB_Action_Master_Default'
   ifOperation: (IS_EQUAL), (VARIABLE), 322, (STATIC), 6
     ifOperation: (IS_EQUAL), (VARIABLE), 323, (STATIC), 4500
       Unknown232: 35000
@@ -16555,7 +16555,7 @@ startSubroutine: s32'cmnWSB_Action_Master_Default'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Action_Slave_Default'
+beginSubroutine: s32'cmnWSB_Action_Slave_Default'
   ifOperation: (IS_EQUAL), (VARIABLE), 322, (STATIC), 6
     ifOperation: (IS_EQUAL), (VARIABLE), 323, (STATIC), 4500
       Unknown232: -35000
@@ -16568,7 +16568,7 @@ startSubroutine: s32'cmnWSB_Action_Slave_Default'
   storeValue: (VARIABLE), 167, (STATIC), 1
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Master_Slide'
+beginSubroutine: s32'cmnWSB_Master_Slide'
   ifOperation: (IS_EQUAL), (VARIABLE), 322, (STATIC), 6
     ifOperation: (IS_EQUAL), (VARIABLE), 323, (STATIC), 1500
       callSubroutine: s32'cmnWSB_Master_Slide_6'
@@ -16598,7 +16598,7 @@ startSubroutine: s32'cmnWSB_Master_Slide'
     endElse: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Slide'
+beginSubroutine: s32'cmnWSB_Slave_Slide'
   ifOperation: (IS_EQUAL), (VARIABLE), 322, (STATIC), 6
     ifOperation: (IS_EQUAL), (VARIABLE), 323, (STATIC), 1500
       callSubroutine: s32'cmnWSB_Slave_Slide_6'
@@ -16629,7 +16629,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide'
   Unknown613: s16'vxxx003'
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Master_Up'
+beginSubroutine: s32'cmnWSB_Master_Up'
   ifOperation: (IS_EQUAL), (VARIABLE), 322, (STATIC), 6
     ifOperation: (IS_EQUAL), (VARIABLE), 323, (STATIC), 1500
       callSubroutine: s32'cmnWSB_Master_Up_6'
@@ -16659,7 +16659,7 @@ startSubroutine: s32'cmnWSB_Master_Up'
     endElse: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Up'
+beginSubroutine: s32'cmnWSB_Slave_Up'
   ifOperation: (IS_EQUAL), (VARIABLE), 322, (STATIC), 6
     ifOperation: (IS_EQUAL), (VARIABLE), 323, (STATIC), 1500
       callSubroutine: s32'cmnWSB_Slave_Up_6'
@@ -16690,7 +16690,7 @@ startSubroutine: s32'cmnWSB_Slave_Up'
   Unknown613: s16'vxxx003'
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Master_Down'
+beginSubroutine: s32'cmnWSB_Master_Down'
   ifOperation: (IS_EQUAL), (VARIABLE), 322, (STATIC), 6
     ifOperation: (IS_EQUAL), (VARIABLE), 323, (STATIC), 1500
       callSubroutine: s32'cmnWSB_Master_Down_6'
@@ -16720,7 +16720,7 @@ startSubroutine: s32'cmnWSB_Master_Down'
     endElse: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Down'
+beginSubroutine: s32'cmnWSB_Slave_Down'
   ifOperation: (IS_EQUAL), (VARIABLE), 322, (STATIC), 6
     ifOperation: (IS_EQUAL), (VARIABLE), 323, (STATIC), 1500
       callSubroutine: s32'cmnWSB_Slave_Down_6'
@@ -16751,7 +16751,7 @@ startSubroutine: s32'cmnWSB_Slave_Down'
   Unknown613: s16'vxxx003'
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Master_Bound'
+beginSubroutine: s32'cmnWSB_Master_Bound'
   ifOperation: (IS_EQUAL), (VARIABLE), 322, (STATIC), 6
     ifOperation: (IS_EQUAL), (VARIABLE), 323, (STATIC), 1500
       callSubroutine: s32'cmnWSB_Master_Bound_6'
@@ -16781,7 +16781,7 @@ startSubroutine: s32'cmnWSB_Master_Bound'
     endElse: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Bound'
+beginSubroutine: s32'cmnWSB_Slave_Bound'
   ifOperation: (IS_EQUAL), (VARIABLE), 322, (STATIC), 6
     ifOperation: (IS_EQUAL), (VARIABLE), 323, (STATIC), 1500
       callSubroutine: s32'cmnWSB_Slave_Bound_6'
@@ -16812,7 +16812,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound'
   Unknown613: s16'vxxx003'
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Master_Slide_6'
+beginSubroutine: s32'cmnWSB_Master_Slide_6'
   Unknown14: s32'dash'
   Unknown178: 22
   Unknown94: 0, -1500000
@@ -16847,7 +16847,7 @@ startSubroutine: s32'cmnWSB_Master_Slide_6'
   Unknown393: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Slide_6'
+beginSubroutine: s32'cmnWSB_Slave_Slide_6'
   Unknown14: s32'loop'
   Unknown446: s32'cmnWSB_Camera_Slide_6', 100
   Unknown176: 1
@@ -16966,7 +16966,7 @@ beginState: s32'cmnWSB_Camera_Slide_6'
   endLabel: 
   endState: 
 
-startSubroutine: s32'cmnWSB_Master_Up_6'
+beginSubroutine: s32'cmnWSB_Master_Up_6'
   upon: 36
     Unknown178: 22
     Unknown2055: 0
@@ -17006,7 +17006,7 @@ startSubroutine: s32'cmnWSB_Master_Up_6'
   Unknown393: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Up_6'
+beginSubroutine: s32'cmnWSB_Slave_Up_6'
   Unknown14: s32'loop'
   Unknown446: s32'cmnWSB_Camera_Up_6', 100
   Unknown176: 1
@@ -17135,7 +17135,7 @@ beginState: s32'cmnWSB_Camera_Up_6'
   endLabel: 
   endState: 
 
-startSubroutine: s32'cmnWSB_Master_Down_6'
+beginSubroutine: s32'cmnWSB_Master_Down_6'
   upon: 36
     Unknown178: 22
     Unknown2055: 0
@@ -17175,7 +17175,7 @@ startSubroutine: s32'cmnWSB_Master_Down_6'
   Unknown393: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Down_6'
+beginSubroutine: s32'cmnWSB_Slave_Down_6'
   Unknown14: s32'loop'
   Unknown446: s32'cmnWSB_Camera_Down_6', 100
   Unknown176: 1
@@ -17304,7 +17304,7 @@ beginState: s32'cmnWSB_Camera_Down_6'
   endLabel: 
   endState: 
 
-startSubroutine: s32'cmnWSB_Master_Bound_6'
+beginSubroutine: s32'cmnWSB_Master_Bound_6'
   upon: 36
     Unknown178: 22
     Unknown2055: 0
@@ -17344,7 +17344,7 @@ startSubroutine: s32'cmnWSB_Master_Bound_6'
   Unknown393: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Bound_6'
+beginSubroutine: s32'cmnWSB_Slave_Bound_6'
   Unknown14: s32'gorogoro'
   Unknown446: s32'cmnWSB_Camera_Bound_6', 100
   Unknown176: 1
@@ -17532,7 +17532,7 @@ beginState: s32'cmnWSB_Camera_Bound_6'
   endLabel: 
   endState: 
 
-startSubroutine: s32'cmnWSB_Master_Slide_6_4500'
+beginSubroutine: s32'cmnWSB_Master_Slide_6_4500'
   upon: 36
     Unknown178: 22
     Unknown2055: 0
@@ -17570,7 +17570,7 @@ startSubroutine: s32'cmnWSB_Master_Slide_6_4500'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Slide_6_4500'
+beginSubroutine: s32'cmnWSB_Slave_Slide_6_4500'
   Unknown14: s32'loop'
   Unknown446: s32'cmnWSB_Camera_Slide_6_L', 100
   Unknown393: 
@@ -17703,7 +17703,7 @@ beginState: s32'cmnWSB_Camera_Slide_6_L'
   Unknown2571: 0, 231, 0, 0
   endState: 
 
-startSubroutine: s32'cmnWSB_Master_Up_6_4500'
+beginSubroutine: s32'cmnWSB_Master_Up_6_4500'
   upon: 36
     Unknown178: 22
     Unknown2055: 0
@@ -17742,7 +17742,7 @@ startSubroutine: s32'cmnWSB_Master_Up_6_4500'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Up_6_4500'
+beginSubroutine: s32'cmnWSB_Slave_Up_6_4500'
   Unknown14: s32'loop'
   Unknown446: s32'cmnWSB_Camera_Up_6_L', 100
   Unknown393: 
@@ -17875,7 +17875,7 @@ beginState: s32'cmnWSB_Camera_Up_6_L'
   Unknown2571: 0, 231, 0, 0
   endState: 
 
-startSubroutine: s32'cmnWSB_Master_Down_6_4500'
+beginSubroutine: s32'cmnWSB_Master_Down_6_4500'
   upon: 36
     Unknown178: 22
     Unknown2055: 0
@@ -17914,7 +17914,7 @@ startSubroutine: s32'cmnWSB_Master_Down_6_4500'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Down_6_4500'
+beginSubroutine: s32'cmnWSB_Slave_Down_6_4500'
   Unknown14: s32'loop'
   Unknown446: s32'cmnWSB_Camera_Down_6_L', 100
   Unknown393: 
@@ -18047,7 +18047,7 @@ beginState: s32'cmnWSB_Camera_Down_6_L'
   Unknown2571: 0, 231, 0, 0
   endState: 
 
-startSubroutine: s32'cmnWSB_Master_Bound_6_4500'
+beginSubroutine: s32'cmnWSB_Master_Bound_6_4500'
   upon: 36
     Unknown178: 22
     Unknown2055: 0
@@ -18086,7 +18086,7 @@ startSubroutine: s32'cmnWSB_Master_Bound_6_4500'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Bound_6_4500'
+beginSubroutine: s32'cmnWSB_Slave_Bound_6_4500'
   Unknown14: s32'gorogoro'
   Unknown446: s32'cmnWSB_Camera_Bound_6_L', 100
   Unknown393: 
@@ -18219,7 +18219,7 @@ beginState: s32'cmnWSB_Camera_Bound_6_L'
   Unknown2571: 0, 231, 0, 0
   endState: 
 
-startSubroutine: s32'cmnWSB_Master_Slide_3_4500'
+beginSubroutine: s32'cmnWSB_Master_Slide_3_4500'
   upon: 36
     Unknown178: 22
     Unknown2055: 0
@@ -18257,7 +18257,7 @@ startSubroutine: s32'cmnWSB_Master_Slide_3_4500'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Slide_3_4500'
+beginSubroutine: s32'cmnWSB_Slave_Slide_3_4500'
   Unknown14: s32'loop'
   Unknown446: s32'cmnWSB_Camera_Slide_3', 100
   Unknown393: 
@@ -18390,7 +18390,7 @@ beginState: s32'cmnWSB_Camera_Slide_3'
   Unknown2571: 0, 231, 0, 0
   endState: 
 
-startSubroutine: s32'cmnWSB_Master_Up_3_4500'
+beginSubroutine: s32'cmnWSB_Master_Up_3_4500'
   upon: 36
     Unknown178: 22
     Unknown2055: 0
@@ -18429,7 +18429,7 @@ startSubroutine: s32'cmnWSB_Master_Up_3_4500'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Up_3_4500'
+beginSubroutine: s32'cmnWSB_Slave_Up_3_4500'
   Unknown14: s32'loop'
   Unknown446: s32'cmnWSB_Camera_Up_3', 100
   Unknown393: 
@@ -18562,7 +18562,7 @@ beginState: s32'cmnWSB_Camera_Up_3'
   Unknown2571: 0, 231, 0, 0
   endState: 
 
-startSubroutine: s32'cmnWSB_Master_Down_3_4500'
+beginSubroutine: s32'cmnWSB_Master_Down_3_4500'
   upon: 36
     Unknown178: 22
     Unknown2055: 0
@@ -18601,7 +18601,7 @@ startSubroutine: s32'cmnWSB_Master_Down_3_4500'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Down_3_4500'
+beginSubroutine: s32'cmnWSB_Slave_Down_3_4500'
   Unknown14: s32'loop'
   Unknown446: s32'cmnWSB_Camera_Down_3', 100
   Unknown393: 
@@ -18734,7 +18734,7 @@ beginState: s32'cmnWSB_Camera_Down_3'
   Unknown2571: 0, 231, 0, 0
   endState: 
 
-startSubroutine: s32'cmnWSB_Master_Bound_3_4500'
+beginSubroutine: s32'cmnWSB_Master_Bound_3_4500'
   upon: 36
     Unknown178: 22
     Unknown2055: 0
@@ -18773,7 +18773,7 @@ startSubroutine: s32'cmnWSB_Master_Bound_3_4500'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Bound_3_4500'
+beginSubroutine: s32'cmnWSB_Slave_Bound_3_4500'
   Unknown14: s32'gorogoro'
   Unknown446: s32'cmnWSB_Camera_Bound_3', 100
   Unknown393: 
@@ -18906,7 +18906,7 @@ beginState: s32'cmnWSB_Camera_Bound_3'
   Unknown2571: 0, 231, 0, 0
   endState: 
 
-startSubroutine: s32'cmnWSB_Master_Slide_3_21000'
+beginSubroutine: s32'cmnWSB_Master_Slide_3_21000'
   upon: 36
     Unknown178: 22
     Unknown2055: 0
@@ -18944,7 +18944,7 @@ startSubroutine: s32'cmnWSB_Master_Slide_3_21000'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Slide_3_21000'
+beginSubroutine: s32'cmnWSB_Slave_Slide_3_21000'
   Unknown14: s32'loop'
   Unknown446: s32'cmnWSB_Camera_Slide_3_L', 100
   Unknown393: 
@@ -19082,7 +19082,7 @@ beginState: s32'cmnWSB_Camera_Slide_3_L'
   Unknown2571: 0, 231, 0, 0
   endState: 
 
-startSubroutine: s32'cmnWSB_Master_Up_3_21000'
+beginSubroutine: s32'cmnWSB_Master_Up_3_21000'
   upon: 36
     Unknown178: 22
     Unknown2055: 0
@@ -19121,7 +19121,7 @@ startSubroutine: s32'cmnWSB_Master_Up_3_21000'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Up_3_21000'
+beginSubroutine: s32'cmnWSB_Slave_Up_3_21000'
   Unknown14: s32'loop'
   Unknown446: s32'cmnWSB_Camera_Up_3_L', 100
   Unknown393: 
@@ -19259,7 +19259,7 @@ beginState: s32'cmnWSB_Camera_Up_3_L'
   Unknown2571: 0, 231, 0, 0
   endState: 
 
-startSubroutine: s32'cmnWSB_Master_Down_3_21000'
+beginSubroutine: s32'cmnWSB_Master_Down_3_21000'
   upon: 36
     Unknown178: 22
     Unknown2055: 0
@@ -19298,7 +19298,7 @@ startSubroutine: s32'cmnWSB_Master_Down_3_21000'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Down_3_21000'
+beginSubroutine: s32'cmnWSB_Slave_Down_3_21000'
   Unknown14: s32'loop'
   Unknown446: s32'cmnWSB_Camera_Down_3_L', 100
   Unknown393: 
@@ -19436,7 +19436,7 @@ beginState: s32'cmnWSB_Camera_Down_3_L'
   Unknown2571: 0, 231, 0, 0
   endState: 
 
-startSubroutine: s32'cmnWSB_Master_Bound_3_21000'
+beginSubroutine: s32'cmnWSB_Master_Bound_3_21000'
   upon: 36
     Unknown178: 22
     Unknown2055: 0
@@ -19475,7 +19475,7 @@ startSubroutine: s32'cmnWSB_Master_Bound_3_21000'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Slave_Bound_3_21000'
+beginSubroutine: s32'cmnWSB_Slave_Bound_3_21000'
   Unknown14: s32'gorogoro'
   Unknown446: s32'cmnWSB_Camera_Bound_3_L', 100
   Unknown393: 
@@ -19613,7 +19613,7 @@ beginState: s32'cmnWSB_Camera_Bound_3_L'
   Unknown2571: 0, 231, 0, 0
   endState: 
 
-startSubroutine: s32'cmn_wallbreak_eff'
+beginSubroutine: s32'cmn_wallbreak_eff'
   Unknown295: 1
   Unknown1801: 1
   Unknown70: s32'cmn_wallbreak_lv1'
@@ -19721,7 +19721,7 @@ beginState: s32'cmn_wallbreak_end'
     endIf: 
   endState: 
 
-startSubroutine: s32'cmn_Effect_NoLink'
+beginSubroutine: s32'cmn_Effect_NoLink'
   upon: 47
     clearRegisteredUponCode: 47
     Unknown456: 0
@@ -19732,7 +19732,7 @@ startSubroutine: s32'cmn_Effect_NoLink'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Effect_NoStop_or_Delete'
+beginSubroutine: s32'cmnWSB_Effect_NoStop_or_Delete'
   ifNot: (VARIABLE), 330
     upon: 36
       if: (VARIABLE), 315
@@ -19752,7 +19752,7 @@ startSubroutine: s32'cmnWSB_Effect_NoStop_or_Delete'
     endElse: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWSB_Effect_Angle'
+beginSubroutine: s32'cmnWSB_Effect_Angle'
   ifOperation: (IS_EQUAL), (VARIABLE), 322, (STATIC), 3
     upon: 99
       ifNot: (VARIABLE), 317
@@ -19767,7 +19767,7 @@ startSubroutine: s32'cmnWSB_Effect_Angle'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmn_WSB_Assist'
+beginSubroutine: s32'cmn_WSB_Assist'
   Unknown240: 
   Unknown178: 22
   Unknown94: 0, -750000
@@ -19794,7 +19794,7 @@ startSubroutine: s32'cmn_WSB_Assist'
     endUpon: 
   endSubroutine: 
 
-startSubroutine: s32'cmnDS_Initialize'
+beginSubroutine: s32'cmnDS_Initialize'
   upon: (FRAME_STEP)
     storeValue: (VARIABLE), 45, (STATIC), 0
     ifOperation: (IS_EQUAL), (VARIABLE), 134, (STATIC), 1
@@ -21055,57 +21055,57 @@ beginState: s32'cmn_batten'
     endUpon: 
   endState: 
 
-startSubroutine: s32'cmn_idling'
+beginSubroutine: s32'cmn_idling'
   Unknown485: s32'bg_idling', 143
   endSubroutine: 
 
-startSubroutine: s32'cmn_walk'
+beginSubroutine: s32'cmn_walk'
   endSubroutine: 
 
-startSubroutine: s32'cmn_dashstart'
+beginSubroutine: s32'cmn_dashstart'
   Unknown485: s32'bg_dashstart', 143
   endSubroutine: 
 
-startSubroutine: s32'cmn_dash'
+beginSubroutine: s32'cmn_dash'
   Unknown485: s32'bg_dash', 143
   endSubroutine: 
 
-startSubroutine: s32'cmn_dashbrake'
+beginSubroutine: s32'cmn_dashbrake'
   Unknown485: s32'bg_dashbrake', 143
   endSubroutine: 
 
-startSubroutine: s32'cmn_jump'
+beginSubroutine: s32'cmn_jump'
   Unknown485: s32'bg_jump', 143
   endSubroutine: 
 
-startSubroutine: s32'cmn_land'
+beginSubroutine: s32'cmn_land'
   Unknown485: s32'bg_land', 143
   endSubroutine: 
 
-startSubroutine: s32'cmn_down_s'
+beginSubroutine: s32'cmn_down_s'
   endSubroutine: 
 
-startSubroutine: s32'cmn_down'
+beginSubroutine: s32'cmn_down'
   Unknown485: s32'bg_down', 143
   endSubroutine: 
 
-startSubroutine: s32'cmn_nokezori'
+beginSubroutine: s32'cmn_nokezori'
   Unknown485: s32'bg_nokezori', 143
   endSubroutine: 
 
-startSubroutine: s32'cmn_landcrack'
+beginSubroutine: s32'cmn_landcrack'
   Unknown485: s32'bg_landcrack', 143
   endSubroutine: 
 
-startSubroutine: s32'cmn_brakelong'
+beginSubroutine: s32'cmn_brakelong'
   Unknown485: s32'bg_brakelong', 143
   endSubroutine: 
 
-startSubroutine: s32'cmn_shotground'
+beginSubroutine: s32'cmn_shotground'
   Unknown485: s32'bg_shotground', 143
   endSubroutine: 
 
-startSubroutine: s32'cmnZokuseiDmgCheckFunc'
+beginSubroutine: s32'cmnZokuseiDmgCheckFunc'
   storeValue: (VARIABLE), 45, (STATIC), 0
   Unknown2498: 3, 2, 330
     Unknown2500: 10, 3, (VARIABLE), 359, (STATIC), 0
@@ -21119,15 +21119,15 @@ startSubroutine: s32'cmnZokuseiDmgCheckFunc'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnDmgFire'
+beginSubroutine: s32'cmnDmgFire'
   Unknown446: s32'cmn_dmg_fire', 103
   endSubroutine: 
 
-startSubroutine: s32'cmnDmgElectric'
+beginSubroutine: s32'cmnDmgElectric'
   Unknown446: s32'cmn_dmg_electric', 103
   endSubroutine: 
 
-startSubroutine: s32'cmnDmgIce'
+beginSubroutine: s32'cmnDmgIce'
   Unknown446: s32'cmn_dmg_ice', 103
   endSubroutine: 
 
@@ -21783,7 +21783,7 @@ beginState: s32'cmn_Land_impact'
   Unknown612: s32'SE_BTL_CMN_LandBreak_Clay_M'
   endState: 
 
-startSubroutine: s32'cmn_IgnoreSlow'
+beginSubroutine: s32'cmn_IgnoreSlow'
   Unknown2593: 0, 0
   Unknown2591: 0, 0, 0, 0, 0, 0
   Unknown2526: 0, 0, 0, 0, 0, 0
@@ -21985,7 +21985,7 @@ beginState: s32'cmn_FinishCamera_Screen_NoProce'
   Unknown1972: 0
   endState: 
 
-startSubroutine: s32'cmn_FinishCamera_Pattern'
+beginSubroutine: s32'cmn_FinishCamera_Pattern'
   Unknown2499: 3, 2, 315
     if: (VARIABLE), 317
       Unknown446: s32'cmn_FinishCamera_Screen_Effect', 100
@@ -22733,7 +22733,7 @@ beginState: s32'cmn_FinishCamera_Far06'
   Unknown1972: 0
   endState: 
 
-startSubroutine: s32'cmn_FinishCamera_Init'
+beginSubroutine: s32'cmn_FinishCamera_Init'
   ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 0
     Unknown2095: 300, 1
     Unknown41: 3
@@ -23114,7 +23114,7 @@ beginState: s32'cmn_DebugBomb'
   recoveryState: 
   endState: 
 
-startSubroutine: s32'cmnDownZokuseiAtkParam'
+beginSubroutine: s32'cmnDownZokuseiAtkParam'
   Unknown2500: 9, 22, (VARIABLE), 307, (STATIC), 0
     storeValue: (VARIABLE), 61, (STATIC), 10000
     storeValue: (VARIABLE), 62, (STATIC), 30000
@@ -23304,7 +23304,7 @@ beginState: s32'cmn_AfroObj'
     endUpon: 
   endState: 
 
-startSubroutine: s32'cmn_Afro'
+beginSubroutine: s32'cmn_Afro'
   Unknown2279: 0, 1, 0, 0
   Unknown445: s32'cmn_AfroObj', 100
   Unknown30: s16'zat'
@@ -23360,7 +23360,7 @@ else:
 endElse: 
 endElse: 
 endSubroutine: 
-startSubroutine: s32'cmn_AfroCS'
+beginSubroutine: s32'cmn_AfroCS'
   Unknown446: s32'cmn_AfroObj', 100
   Unknown30: s16'zat'
   Unknown41: 1
@@ -23613,10 +23613,10 @@ beginState: s32'cmn_Afro_Timer_CS'
   sprite: s32'null', 2147483647
   endState: 
 
-startSubroutine: s32'cmn_GammaBlade'
+beginSubroutine: s32'cmn_GammaBlade'
   endSubroutine: 
 
-startSubroutine: s32'cmnRomanCancel'
+beginSubroutine: s32'cmnRomanCancel'
   Unknown109: 
   Unknown114: 
   Unknown129: 
@@ -24315,7 +24315,7 @@ beginState: s32'cmnRomanCancelSeal'
   sprite: s32'null', 60
   endState: 
 
-startSubroutine: s32'cmnRomanCancel_Mirage'
+beginSubroutine: s32'cmnRomanCancel_Mirage'
   Unknown456: 3
   Unknown2314: 1
   Unknown2003: 12384
@@ -24333,7 +24333,7 @@ startSubroutine: s32'cmnRomanCancel_Mirage'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnBattleStatsRCCancel'
+beginSubroutine: s32'cmnBattleStatsRCCancel'
   ifOperation: (IS_EQUAL), (VARIABLE), 342, (STATIC), 1
     ifOperation: (IS_EQUAL), (VARIABLE), 341, (STATIC), 1
       Unknown2427: s32'RCPurpleNearSkill', 0, 1
@@ -24459,7 +24459,7 @@ startSubroutine: s32'cmnBattleStatsRCCancel'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnBattleStatsRC'
+beginSubroutine: s32'cmnBattleStatsRC'
   ifOperation: (IS_EQUAL), (VARIABLE), 342, (STATIC), 1
     ifOperation: (IS_EQUAL), (VARIABLE), 341, (STATIC), 1
       Unknown2427: s32'RCPurpleNear', 0, 1
@@ -24586,10 +24586,10 @@ startSubroutine: s32'cmnBattleStatsRC'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnCutScene_ObjHide'
+beginSubroutine: s32'cmnCutScene_ObjHide'
   endSubroutine: 
 
-startSubroutine: s32'cmnChouhatsuKeii'
+beginSubroutine: s32'cmnChouhatsuKeii'
   checkCurrentStateEntryName: s32'NmlAtk5F'
   if: (VARIABLE), 0
     Unknown2247: 
@@ -24616,12 +24616,12 @@ startSubroutine: s32'cmnChouhatsuKeii'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'cmnWorldStop_Tension'
+beginSubroutine: s32'cmnWorldStop_Tension'
   Unknown2329: 0, 5000
   tensionUsage: 5000
   endSubroutine: 
 
-startSubroutine: s32'cmnWorldStop_Start'
+beginSubroutine: s32'cmnWorldStop_Start'
   Unknown294: 1
   Unknown2234: 0
   Unknown2188: 1
@@ -24630,7 +24630,7 @@ startSubroutine: s32'cmnWorldStop_Start'
   Unknown445: s32'cmnWorldStop_Obj', 100
   endSubroutine: 
 
-startSubroutine: s32'cmnWorldStop_End'
+beginSubroutine: s32'cmnWorldStop_End'
   Unknown294: 0
   Unknown2234: 1
   Unknown2188: 0

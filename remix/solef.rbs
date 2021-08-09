@@ -2024,7 +2024,7 @@ beginState: s32'sol252_bake3'
   sprite: s32'null', 15
   endState: 
 
-startSubroutine: s32'TargetCamera_Dafult'
+beginSubroutine: s32'TargetCamera_Dafult'
   Unknown2082: 
   Unknown454: 3
   Unknown188: 100

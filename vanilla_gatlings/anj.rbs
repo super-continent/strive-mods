@@ -430,14 +430,14 @@ beginState: s32'Event350'
   Unknown27: s32'EventStand'
   endState: 
 
-startSubroutine: s32'PreInit'
+beginSubroutine: s32'PreInit'
   Unknown1264: s16'anj'
   endSubroutine: 
 
-startSubroutine: s32'PreInit2nd'
+beginSubroutine: s32'PreInit2nd'
   endSubroutine: 
 
-startSubroutine: s32'RoundInit'
+beginSubroutine: s32'RoundInit'
   callSubroutine: s32'cmnRoundInit'
   walkFSpeed: 5600
   walkBSpeed: 4900
@@ -1026,27 +1026,27 @@ startSubroutine: s32'RoundInit'
   Unknown2594: 92, s32'KachoFugetsuFar'
   endSubroutine: 
 
-startSubroutine: s32'OnFrameStep'
+beginSubroutine: s32'OnFrameStep'
   callSubroutine: s32'cmnOnFrameStep'
   endSubroutine: 
 
-startSubroutine: s32'OnGuard'
+beginSubroutine: s32'OnGuard'
   callSubroutine: s32'cmnOnGuard'
   endSubroutine: 
 
-startSubroutine: s32'OnDamage'
+beginSubroutine: s32'OnDamage'
   callSubroutine: s32'cmnOnDamage'
   endSubroutine: 
 
-startSubroutine: s32'OnLanding'
+beginSubroutine: s32'OnLanding'
   callSubroutine: s32'cmnJumpCheck'
   endSubroutine: 
 
-startSubroutine: s32'OnDie'
+beginSubroutine: s32'OnDie'
   callSubroutine: s32'cmnOnDie'
   endSubroutine: 
 
-startSubroutine: s32'CPUEstimate'
+beginSubroutine: s32'CPUEstimate'
   endSubroutine: 
 
 beginState: s32'CmnActEntryToStand1P'
@@ -4864,14 +4864,14 @@ beginState: s32'DebugSkillEx'
   sprite: s32'keep', 2147483647
   endState: 
 
-startSubroutine: s32'_ThrowGripParamLand'
+beginSubroutine: s32'_ThrowGripParamLand'
   Unknown1101: s32'anj310_00'
   Unknown1042: s32'ThrowExe'
   throwRange: 75250
   Unknown1027: -1, -1, -1, -1
   endSubroutine: 
 
-startSubroutine: s32'_ThrowGripParamAir'
+beginSubroutine: s32'_ThrowGripParamAir'
   Unknown1101: s32'anj320_00'
   Unknown1042: s32'AirThrowExe'
   throwRange: 192500
@@ -5104,7 +5104,7 @@ beginState: s32'Shitsu'
   sprite: s32'anj400_17', 2
   endState: 
 
-startSubroutine: s32'Atemi_ExMuteki'
+beginSubroutine: s32'Atemi_ExMuteki'
   Unknown1827: 1
   Unknown1839: 0
   Unknown1846: 0
@@ -5112,7 +5112,7 @@ startSubroutine: s32'Atemi_ExMuteki'
   Unknown1851: 0, 29
   endSubroutine: 
 
-startSubroutine: s32'Dodge_Blend'
+beginSubroutine: s32'Dodge_Blend'
   physicsXImpulse: 0, 15000
   Unknown2229: 90
   Unknown2581: s32'weapon', s32'G_wepL_grip', s32'body', s32'G_grip_L'

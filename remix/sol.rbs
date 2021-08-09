@@ -454,14 +454,14 @@ beginState: s32'Event085'
   sprite: s32'sol063_10', 2147483647
   endState: 
 
-startSubroutine: s32'PreInit'
+beginSubroutine: s32'PreInit'
   Unknown1264: s16'sol'
   endSubroutine: 
 
-startSubroutine: s32'PreInit2nd'
+beginSubroutine: s32'PreInit2nd'
   endSubroutine: 
 
-startSubroutine: s32'RoundInit'
+beginSubroutine: s32'RoundInit'
   callSubroutine: s32'cmnRoundInit'
   walkFSpeed: 7900
   walkBSpeed: 4800
@@ -1178,27 +1178,27 @@ startSubroutine: s32'RoundInit'
   Unknown2594: 89, s32'HMC'
   endSubroutine: 
 
-startSubroutine: s32'OnFrameStep'
+beginSubroutine: s32'OnFrameStep'
   callSubroutine: s32'cmnOnFrameStep'
   endSubroutine: 
 
-startSubroutine: s32'OnDamage'
+beginSubroutine: s32'OnDamage'
   callSubroutine: s32'cmnOnDamage'
   endSubroutine: 
 
-startSubroutine: s32'OnGuard'
+beginSubroutine: s32'OnGuard'
   callSubroutine: s32'cmnOnGuard'
   endSubroutine: 
 
-startSubroutine: s32'OnLanding'
+beginSubroutine: s32'OnLanding'
   callSubroutine: s32'cmnJumpCheck'
   endSubroutine: 
 
-startSubroutine: s32'OnDie'
+beginSubroutine: s32'OnDie'
   callSubroutine: s32'cmnOnDie'
   endSubroutine: 
 
-startSubroutine: s32'CPUEstimate'
+beginSubroutine: s32'CPUEstimate'
   endSubroutine: 
 
 beginState: s32'CmnActEntryToStand1P'
@@ -4970,14 +4970,14 @@ beginState: s32'DebugSkillEx'
   sprite: s32'keep', 2147483647
   endState: 
 
-startSubroutine: s32'_ThrowGripParamLand'
+beginSubroutine: s32'_ThrowGripParamLand'
   Unknown1101: s32'sol310_00'
   Unknown1042: s32'ThrowExe'
   throwRange: 75250
   Unknown1027: -1, -1, -1, -1
   endSubroutine: 
 
-startSubroutine: s32'_ThrowGripParamAir'
+beginSubroutine: s32'_ThrowGripParamAir'
   Unknown1101: s32'sol320_00'
   Unknown1042: s32'AirThrowExe'
   throwRange: 192500
@@ -5180,7 +5180,7 @@ beginState: s32'AirThrowExe'
   gotoLabel: s32'loop'
   endState: 
 
-startSubroutine: s32'BeginingMoveCheck'
+beginSubroutine: s32'BeginingMoveCheck'
   Unknown2030: s32'NmlAtk6C'
   if: (VARIABLE), 0
     if: (VARIABLE), 53

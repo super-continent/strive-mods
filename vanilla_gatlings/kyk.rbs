@@ -1,4 +1,4 @@
-startSubroutine: s32'TutorialPhase1Pre'
+beginSubroutine: s32'TutorialPhase1Pre'
   Unknown1825: s32'p1 pre start', 0, 0
   Unknown1299: 0, 2000
   Unknown1385: 0
@@ -273,7 +273,7 @@ startSubroutine: s32'TutorialPhase1Pre'
     endMove: 
   endSubroutine: 
 
-startSubroutine: s32'TutorialPhase1'
+beginSubroutine: s32'TutorialPhase1'
   Unknown1825: s32'p1 start', 0, 0
   Unknown1299: 0, 0
   Unknown1385: 10
@@ -548,7 +548,7 @@ startSubroutine: s32'TutorialPhase1'
     endMove: 
   endSubroutine: 
 
-startSubroutine: s32'TutorialPhase2Pre'
+beginSubroutine: s32'TutorialPhase2Pre'
   Unknown1825: s32'p2 pre start', 0, 0
   Unknown1299: 0, 2000
   Unknown1385: 0
@@ -823,7 +823,7 @@ startSubroutine: s32'TutorialPhase2Pre'
     endMove: 
   endSubroutine: 
 
-startSubroutine: s32'TutorialPhase2'
+beginSubroutine: s32'TutorialPhase2'
   Unknown1825: s32'p2 start', 0, 0
   Unknown1299: 0, 0
   Unknown1385: 50
@@ -1098,7 +1098,7 @@ startSubroutine: s32'TutorialPhase2'
     endMove: 
   endSubroutine: 
 
-startSubroutine: s32'TutorialPhase3Pre'
+beginSubroutine: s32'TutorialPhase3Pre'
   Unknown1825: s32'p3 pre start', 0, 0
   Unknown1299: 0, 2000
   Unknown1385: 0
@@ -1373,7 +1373,7 @@ startSubroutine: s32'TutorialPhase3Pre'
     endMove: 
   endSubroutine: 
 
-startSubroutine: s32'TutorialPhase3'
+beginSubroutine: s32'TutorialPhase3'
   Unknown1825: s32'p3 start', 0, 0
   Unknown1299: 0, -30
   Unknown1385: 30
@@ -1658,7 +1658,7 @@ startSubroutine: s32'TutorialPhase3'
     endMove: 
   endSubroutine: 
 
-startSubroutine: s32'TutorialPhase4'
+beginSubroutine: s32'TutorialPhase4'
   Unknown1825: s32'p4 start', 0, 0
   Unknown1385: 30
   Unknown2413: 0
@@ -2637,14 +2637,14 @@ beginState: s32'Event301'
   Unknown27: s32'EventStand'
   endState: 
 
-startSubroutine: s32'PreInit'
+beginSubroutine: s32'PreInit'
   Unknown1264: s16'kyk'
   endSubroutine: 
 
-startSubroutine: s32'PreInit2nd'
+beginSubroutine: s32'PreInit2nd'
   endSubroutine: 
 
-startSubroutine: s32'RoundInit'
+beginSubroutine: s32'RoundInit'
   callSubroutine: s32'cmnRoundInit'
   walkFSpeed: 6600
   walkBSpeed: 5000
@@ -3522,12 +3522,12 @@ startSubroutine: s32'RoundInit'
   Unknown2594: 100, s32'SacredEdgeObj_DI'
   endSubroutine: 
 
-startSubroutine: s32'CPUEstimate'
+beginSubroutine: s32'CPUEstimate'
   ifNot: (VARIABLE), 371
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'OnFrameStep'
+beginSubroutine: s32'OnFrameStep'
   callSubroutine: s32'cmnOnFrameStep'
   if: (VARIABLE), 90
     Unknown59: s32'TRP_KYK0', 2, 157
@@ -3672,27 +3672,27 @@ startSubroutine: s32'OnFrameStep'
     endIf: 
   endSubroutine: 
 
-startSubroutine: s32'OnDamage'
+beginSubroutine: s32'OnDamage'
   callSubroutine: s32'cmnOnDamage'
   endSubroutine: 
 
-startSubroutine: s32'OnDamage2'
+beginSubroutine: s32'OnDamage2'
   callSubroutine: s32'DI_MeshSetCheck'
   endSubroutine: 
 
-startSubroutine: s32'OnGuard'
+beginSubroutine: s32'OnGuard'
   callSubroutine: s32'cmnOnGuard'
   endSubroutine: 
 
-startSubroutine: s32'OnLanding'
+beginSubroutine: s32'OnLanding'
   callSubroutine: s32'cmnJumpCheck'
   endSubroutine: 
 
-startSubroutine: s32'OnDie'
+beginSubroutine: s32'OnDie'
   callSubroutine: s32'cmnOnDie'
   endSubroutine: 
 
-startSubroutine: s32'DI_MeshSetCheck'
+beginSubroutine: s32'DI_MeshSetCheck'
   ifNot: (VARIABLE), 5
     ifOperation: (IS_NOT_EQUAL), (VARIABLE), 5, (VARIABLE), 202
       storeValue: (VARIABLE), 202, (VARIABLE), 5
@@ -7561,7 +7561,7 @@ beginState: s32'DebugSkillEx'
   sprite: s32'keep', 2147483647
   endState: 
 
-startSubroutine: s32'_ThrowGripParamLand'
+beginSubroutine: s32'_ThrowGripParamLand'
   Unknown1101: s32'kyk310_00'
   Unknown1042: s32'ThrowExe'
   throwRange: 75250
@@ -7569,7 +7569,7 @@ startSubroutine: s32'_ThrowGripParamLand'
   callSubroutine: s32'cmnLandThrow'
   endSubroutine: 
 
-startSubroutine: s32'_ThrowGripParamAir'
+beginSubroutine: s32'_ThrowGripParamAir'
   Unknown1101: s32'kyk320_00'
   Unknown1042: s32'AirThrowExe'
   throwRange: 192500
@@ -9902,7 +9902,7 @@ beginState: s32'Diaekura'
   sprite: s32'kyk407_16', 2
   endState: 
 
-startSubroutine: s32'Ride_TossinFunc'
+beginSubroutine: s32'Ride_TossinFunc'
   callSubroutineWithArgs: s32'cmn_AtkLv2', (STATIC), 5, (STATIC), 5, (STATIC), 0, (STATIC), 0
   callSubroutine: s32'cmn_countertype_middle'
   callSubroutine: s32'cmnNohosei_kakusei'
@@ -9932,7 +9932,7 @@ startSubroutine: s32'Ride_TossinFunc'
   storeValue: (VARIABLE), 345, (STATIC), 0
   endSubroutine: 
 
-startSubroutine: s32'RideDI_TossinFunc'
+beginSubroutine: s32'RideDI_TossinFunc'
   callSubroutineWithArgs: s32'cmn_AtkLv2', (STATIC), 11, (STATIC), 11, (STATIC), 0, (STATIC), 0
   callSubroutine: s32'cmn_countertype_high'
   callSubroutine: s32'cmnNohosei_kakusei'
@@ -9965,7 +9965,7 @@ startSubroutine: s32'RideDI_TossinFunc'
   Unknown1324: s32'RideTheLightning_DI'
   endSubroutine: 
 
-startSubroutine: s32'RideDI_FinishFunc'
+beginSubroutine: s32'RideDI_FinishFunc'
   callSubroutineWithArgs: s32'cmn_AtkLv4', (STATIC), 11, (STATIC), 11, (STATIC), 0, (STATIC), 0
   callSubroutine: s32'cmnNohosei_kakusei'
   callSubroutine: s32'cmn_countertype_high_slash'
@@ -9998,7 +9998,7 @@ startSubroutine: s32'RideDI_FinishFunc'
   Unknown1324: s32'RideTheLightning_DI'
   endSubroutine: 
 
-startSubroutine: s32'AirRideDI_TossinFunc'
+beginSubroutine: s32'AirRideDI_TossinFunc'
   callSubroutineWithArgs: s32'cmn_AtkLv2', (STATIC), 11, (STATIC), 11, (STATIC), 0, (STATIC), 0
   callSubroutine: s32'cmn_countertype_high'
   callSubroutine: s32'cmnNohosei_kakusei'
@@ -10031,7 +10031,7 @@ startSubroutine: s32'AirRideDI_TossinFunc'
   Unknown1324: s32'AirRideTheLightning_DI'
   endSubroutine: 
 
-startSubroutine: s32'AirRideDI_FinishFunc'
+beginSubroutine: s32'AirRideDI_FinishFunc'
   callSubroutineWithArgs: s32'cmn_AtkLv4', (STATIC), 11, (STATIC), 11, (STATIC), 0, (STATIC), 0
   callSubroutine: s32'cmnNohosei_kakusei'
   callSubroutine: s32'cmn_countertype_high_slash'
