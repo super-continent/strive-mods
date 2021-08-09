@@ -486,7 +486,7 @@ beginState: s32'ByakueObj'
     upon: (HIT)
       modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 3
-        Unknown1069: 0, 0, 0, 0, 1, 22, 2, 319
+        Unknown1069: (STATIC), 0, (STATIC), 0, 1, 22, (VARIABLE), 319
         Unknown788: 1
         Unknown955: 5
         Unknown953: 1

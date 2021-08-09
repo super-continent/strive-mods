@@ -4087,7 +4087,6 @@ beginState: s32'NmlAtk5A'
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
     storeValue: (VARIABLE), 350, (STATIC), -30000
-    pushbackX: 60
     endUpon: 
   sprite: s32'gio200_00', 1
   sprite: s32'gio200_01', 2
@@ -4110,7 +4109,7 @@ beginState: s32'NmlAtk6A'
     storeValue: (VARIABLE), 338, (STATIC), 10000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
-    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
     airHitEffect: 11
     groundHitEffect: 11
     hitAirPushbackX: 0, 25000
@@ -4119,9 +4118,6 @@ beginState: s32'NmlAtk6A'
     callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
     upon: (GUARD)
       extendPushboxX: 80000
-      endUpon: 
-    upon: (HIT)
-      extendPushboxX: 40000
       endUpon: 
     Unknown2526: 1, 1, 6, 100, 60, 200
     Unknown2591: 1, 1, 6, 100, 200, 200
@@ -4203,7 +4199,6 @@ beginState: s32'NmlAtk2A'
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
     storeValue: (VARIABLE), 350, (STATIC), -30000
-    pushbackX: 60
     endUpon: 
   sprite: s32'gio230_00', 2
   sprite: s32'gio230_01', 2
@@ -4540,9 +4535,6 @@ beginState: s32'NmlAtk2C'
     addGatlingOption: s32'NmlAtk2E'
     upon: (GUARD)
       extendPushboxX: 50000
-      endUpon: 
-    upon: (HIT)
-      extendPushboxX: 30000
       endUpon: 
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -280000
@@ -6671,7 +6663,7 @@ beginState: s32'LandUltimate'
   hitAirPushbackX: 0, 40000
   hitAirPushbackY: 0, 25000
   callSubroutine: s32'cmnNohosei_kakusei'
-  Unknown1069: 0, 0, 0, 0, 1, 22, 2, 319
+  Unknown1069: (STATIC), 0, (STATIC), 0, 1, 22, (VARIABLE), 319
   Unknown788: 1
   Unknown955: 5
   Unknown953: 1
@@ -7143,7 +7135,7 @@ beginState: s32'AirUltimate'
   Unknown783: 0, 100, 0, 5, 0, 30
   groundBounceCount: 0
   wallBounceCount: 0
-  Unknown1069: 0, 0, 0, 0, 1, 22, 2, 319
+  Unknown1069: (STATIC), 0, (STATIC), 0, 1, 22, (VARIABLE), 319
   Unknown788: 1
   Unknown955: 10
   Unknown953: 1

@@ -4449,12 +4449,8 @@ beginState: s32'NmlAtk5A'
     storeValue: (VARIABLE), 343, (STATIC), -300000
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
-    pushbackX: 60
     upon: (GUARD)
       extendPushboxX: 50000
-      endUpon: 
-    upon: (HIT)
-      extendPushboxX: 30000
       endUpon: 
     endUpon: 
   sprite: s32'fau200_00', 2
@@ -4486,7 +4482,7 @@ beginState: s32'NmlAtk6A'
     storeValue: (VARIABLE), 338, (STATIC), 10000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
-    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
     groundHitEffect: 8
     airHitEffect: 8
     hitAirPushbackX: 0, 25000
@@ -4555,7 +4551,6 @@ beginState: s32'NmlAtk2A'
     storeValue: (VARIABLE), 343, (STATIC), -400000
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
-    pushbackX: 60
     upon: (HIT_OR_GUARD)
       extendPushboxX: 50000
       endUpon: 
@@ -4731,6 +4726,7 @@ beginState: s32'NmlAtk5CNear'
     Unknown770: 0, 60, 0, 8, 0, 16
     Unknown778: 0, 500
     Unknown783: 0, 250, 0, 10, 0, 30
+    addGatlingOption: s32'NmlAtk5A'
     addGatlingOption: s32'NmlAtk6A'
     addGatlingOption: s32'NmlAtk5CFar'
     addGatlingOption: s32'NmlAtk5D'
@@ -5021,7 +5017,7 @@ beginState: s32'NmlAtk5D2nd'
           Unknown2037: 103, 22, 130
           storeValue: (VARIABLE), 166, (STATIC), 60
           Unknown40: 
-          Unknown2500: 4, 22, 2, 13, 0, 3
+          Unknown2500: 4, 22, (VARIABLE), 13, (STATIC), 3
             Unknown41: 22
             Unknown2315: 2
             Unknown40: 
@@ -8198,7 +8194,7 @@ beginState: s32'NiceShot'
       storeValue: (VARIABLE), 52, (STATIC), 3
       ifNot: (VARIABLE), 368
         Unknown2595: s32'NiceShot3'
-        Unknown1069: 0, 1, 0, 1, 1, 22, 2, 319
+        Unknown1069: (STATIC), 1, (STATIC), 1, 1, 22, (VARIABLE), 319
         Unknown788: 1
         Unknown947: 1
         Unknown955: 25
@@ -8273,7 +8269,7 @@ beginState: s32'NiceShot'
   if: (VARIABLE), 214
     Unknown2031: 32, s32'NiceShot'
     if: (VARIABLE), 0
-      Unknown2500: 10, 32, 2, 8, 0, 0
+      Unknown2500: 10, 32, (VARIABLE), 8, (STATIC), 0
         Unknown14: s32'pose'
         endIf: 
       endIf: 

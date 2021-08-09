@@ -3950,7 +3950,6 @@ beginState: s32'NmlAtk5A'
     storeValue: (VARIABLE), 343, (STATIC), -250000
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
-    pushbackX: 60
     endUpon: 
   sprite: s32'leo200_00', 2
   sprite: s32'leo200_01', 2
@@ -3973,7 +3972,7 @@ beginState: s32'NmlAtk6A'
     storeValue: (VARIABLE), 338, (STATIC), 10000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
-    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
     callSubroutine: s32'cmn_AtkTemplFloatDamageBody'
     hitAirPushbackX: 0, 33000
     hitAirPushbackY: 0, 10000
@@ -4062,7 +4061,6 @@ beginState: s32'NmlAtk2A'
     storeValue: (VARIABLE), 343, (STATIC), -250000
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
-    pushbackX: 60
     endUpon: 
   sprite: s32'leo230_00', 3
   sprite: s32'leo230_01', 2
@@ -6975,7 +6973,7 @@ beginState: s32'Semuke5E'
           pushbackX: 30
           groundHitEffect: 19
           airHitEffect: 19
-          Unknown964: 48
+          setGuardBreakDuration: 48
           Unknown1018: 1
           Unknown1037: 1
           Unknown1111: 1
@@ -7552,7 +7550,6 @@ beginState: s32'ZweitWind'
     callSubroutine: s32'SemukeFurimuki'
     callSubroutine: s32'cmn_AtkLv4'
     damage: 0, 41
-    pushbackX: 60
     Unknown725: 1
     Unknown1045: 2, s32'leo_405hit'
     Unknown1166: 1
@@ -8000,9 +7997,9 @@ beginState: s32'SchildBrechen'
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
     callSubroutineWithArgs: s32'cmn_SameAttack', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
-    Unknown1167: 1
+    enableGuardBreak: 1
     tumbleDuration: 50
-    Unknown964: 57
+    setGuardBreakDuration: 57
     upon: 86
       clearRegisteredUponCode: 86
       hitAirPushbackX: 0, 5000
@@ -8351,7 +8348,7 @@ beginState: s32'LeidenschaftDirigent'
               Unknown446: s32'Cam_LeidenschaftDirigent_Stay', 100
               endIf: 
             endIf: 
-          Unknown2500: 13, 22, 2, 77, 0, 0
+          Unknown2500: 13, 22, (VARIABLE), 77, (STATIC), 0
             modifyVar: (ADD), (VARIABLE), 47, (STATIC), 1
             endIf: 
           endIf: 
@@ -8523,7 +8520,7 @@ beginState: s32'LeidenschaftDirigent'
   Unknown1803: s32'Leo501Eff', 28
   Unknown615: s32'SE_BTL_LEO_KAKUSEI_03'
   Unknown612: s32'SE_BTL_CMN_Swing_Grap_Heavy_L'
-  Unknown1069: 0, 0, 0, 0, 1, 22, 2, 319
+  Unknown1069: (STATIC), 0, (STATIC), 0, 1, 22, (VARIABLE), 319
   Unknown788: 1
   Unknown955: 5
   Unknown953: 2

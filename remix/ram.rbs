@@ -4153,7 +4153,6 @@ beginState: s32'NmlAtk5A'
     storeValue: (VARIABLE), 343, (STATIC), -250000
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
-    pushbackX: 60
     endUpon: 
   sprite: s32'ram200_00', 4
   sprite: s32'ram200_01', 2
@@ -4186,7 +4185,7 @@ beginState: s32'NmlAtk6A'
     storeValue: (VARIABLE), 338, (STATIC), 10000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
-    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
     callSubroutine: s32'cmn_AtkTemplNokezoriLow'
     hitAirPushbackX: 0, 30000
     hitAirPushbackY: 0, 2000
@@ -4292,7 +4291,6 @@ beginState: s32'NmlAtk2A'
     storeValue: (VARIABLE), 343, (STATIC), -250000
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
-    pushbackX: 60
     endUpon: 
   sprite: s32'ram230_00', 5
   sprite: s32'ram230_01', 2
@@ -7019,12 +7017,12 @@ beginState: s32'Erarurumo2'
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 3
     callSubroutine: s32'cmn_hosei'
-    Unknown1167: 1
+    enableGuardBreak: 1
     if: (VARIABLE), 53
-      Unknown964: 43
+      setGuardBreakDuration: 43
       endIf: 
     else: 
-      Unknown964: 31
+      setGuardBreakDuration: 31
       endElse: 
     upon: 86
       clearRegisteredUponCode: 86
@@ -7990,7 +7988,7 @@ beginState: s32'Morutobato'
     callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 8, (STATIC), 0, (STATIC), 0, (STATIC), 0
     Unknown1971: 1
     callSubroutine: s32'cmnNohosei_kakusei'
-    Unknown1069: 0, 0, 0, 0, 1, 22, 2, 319
+    Unknown1069: (STATIC), 0, (STATIC), 0, 1, 22, (VARIABLE), 319
     Unknown788: 1
     Unknown955: 10
     Unknown953: 1

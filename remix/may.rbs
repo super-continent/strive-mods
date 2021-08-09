@@ -3381,7 +3381,6 @@ beginState: s32'NmlAtk5A'
     storeValue: (VARIABLE), 343, (STATIC), -200000
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
-    pushbackX: 60
     endUpon: 
   sprite: s32'may200_00', 2
   sprite: s32'may200_01', 1
@@ -3403,7 +3402,7 @@ beginState: s32'NmlAtk6A'
     storeValue: (VARIABLE), 338, (STATIC), 10000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
-    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
     airHitEffect: 11
     groundHitEffect: 11
     hitAirPushbackX: 0, 30000
@@ -3510,7 +3509,6 @@ beginState: s32'NmlAtk2A'
     Unknown1211: s32'SE_BTL_CMN_Impact_Iron_S'
     Unknown2526: 1, 1, 6, 100, 60, 500
     Unknown2591: 1, 1, 6, 100, 200, 500
-    pushbackX: 60
     endUpon: 
   sprite: s32'may230_00', 2
   sprite: s32'may230_01', 2
@@ -4090,8 +4088,8 @@ beginState: s32'NmlAtk6D'
   hit: 
   damage: 0, 90
   hitStop: 20
-  Unknown964: 35
-  Unknown1167: 1
+  setGuardBreakDuration: 35
+  enableGuardBreak: 1
   storeValue: (VARIABLE), 338, (STATIC), 100
   storeValue: (VARIABLE), 339, (STATIC), 0
   storeValue: (VARIABLE), 340, (STATIC), 1

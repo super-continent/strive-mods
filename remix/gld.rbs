@@ -6414,8 +6414,8 @@ startSubroutine: s32'AirSwingCommonAtk'
 startSubroutine: s32'LandSwingGuard'
   upon: 86
     clearRegisteredUponCode: 86
-    Unknown964: 36
-    Unknown1167: 1
+    setGuardBreakDuration: 36
+    enableGuardBreak: 1
     hitAirPushbackX: 0, 10000
     hitAirPushbackY: 0, 35000
     Unknown778: 0, 2000
@@ -6425,8 +6425,8 @@ startSubroutine: s32'LandSwingGuard'
 startSubroutine: s32'LandSwingGuard_2nd'
   upon: 86
     clearRegisteredUponCode: 86
-    Unknown964: 36
-    Unknown1167: 1
+    setGuardBreakDuration: 36
+    enableGuardBreak: 1
     hitAirPushbackX: 0, 15000
     hitAirPushbackY: 0, 35000
     Unknown778: 0, 2000
@@ -7800,7 +7800,7 @@ beginState: s32'GLD_Ultimate1'
     setThrowInvulnerable: 1
     Unknown1148: s32'SE_BTL_CMN_Impact_Iron_L'
     Unknown1211: s32'SE_BTL_CMN_Impact_Iron_L'
-    Unknown1069: 0, 0, 0, 0, 1, 22, 2, 319
+    Unknown1069: (STATIC), 0, (STATIC), 0, 1, 22, (VARIABLE), 319
     Unknown788: 1
     Unknown955: 10
     Unknown953: 2
@@ -7822,7 +7822,7 @@ beginState: s32'GLD_Ultimate1'
     if: (VARIABLE), 0
       storeValue: (VARIABLE), 47, (STATIC), 220
       endIf: 
-    Unknown52: 1, 2, 47, 0, 17, 2, 48
+    modifyVarAfterOperation: (SUB), (VARIABLE), 47, (STATIC), 17, (VARIABLE), 48
     endUpon: 
   gotoIfOperation: s32'Lv2_start', (IS_EQUAL), (VARIABLE), 46, (STATIC), 1
   gotoIfOperation: s32'Lv3_start', (IS_EQUAL), (VARIABLE), 46, (STATIC), 2
@@ -8135,7 +8135,7 @@ beginState: s32'GLD_Ultimate1'
       if: (VARIABLE), 0
         damage: 0, 190
         endIf: 
-      Unknown1069: 0, 0, 0, 0, 1, 22, 2, 319
+      Unknown1069: (STATIC), 0, (STATIC), 0, 1, 22, (VARIABLE), 319
       Unknown788: 1
       Unknown955: 10
       Unknown953: 2

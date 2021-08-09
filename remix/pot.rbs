@@ -3447,7 +3447,6 @@ beginState: s32'NmlAtk5A'
     storeValue: (VARIABLE), 345, (STATIC), 0
     Unknown1148: s32'SE_BTL_CMN_Impact_Iron_S'
     Unknown1211: s32'SE_BTL_CMN_Impact_Iron_S'
-    pushbackX: 60
     endUpon: 
   sprite: s32'pot200_00', 1
   sprite: s32'pot200_01', 1
@@ -3477,7 +3476,7 @@ beginState: s32'NmlAtk6A'
     storeValue: (VARIABLE), 338, (STATIC), 10000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
-    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
     callSubroutine: s32'cmn_fuwafuwafuwa'
     groundHitEffect: 12
     airHitEffect: 12
@@ -3570,7 +3569,6 @@ beginState: s32'NmlAtk2A'
     storeValue: (VARIABLE), 345, (STATIC), 0
     Unknown1148: s32'SE_BTL_CMN_Impact_Iron_S'
     Unknown1211: s32'SE_BTL_CMN_Impact_Iron_S'
-    pushbackX: 60
     endUpon: 
   sprite: s32'pot230_00', 4
   sprite: s32'pot230_01', 3
@@ -5519,8 +5517,8 @@ beginState: s32'HeatKnucle'
     Unknown1027: -1, -1, 5500000, 50000
     callSubroutine: s32'BeginingMoveCheck'
     Unknown1037: 1
-    Unknown1167: 1
-    Unknown964: 150
+    enableGuardBreak: 1
+    setGuardBreakDuration: 150
     Unknown1079: 1
     Unknown1064: s32'HeatKnucle'
     Unknown1082: 1
@@ -5682,7 +5680,7 @@ beginState: s32'HeatKnucle'
   Unknown1064: s32''
   hit: 
   Unknown446: s32'401Yakkyou', 0
-  Unknown1069: 0, 1, 0, 1, 1, 22, 2, 319
+  Unknown1069: (STATIC), 1, (STATIC), 1, 1, 22, (VARIABLE), 319
   Unknown788: 1
   Unknown947: 1
   Unknown955: 15
@@ -5973,8 +5971,8 @@ beginState: s32'GarudaImpact'
     counterhitAirPushbackX: 0, 50000
     upon: 86
       clearRegisteredUponCode: 86
-      Unknown964: 54
-      Unknown1167: 1
+      setGuardBreakDuration: 54
+      enableGuardBreak: 1
       hitAirPushbackX: 0, 15000
       hitAirPushbackY: 0, 35000
       Unknown778: 0, 3000
@@ -6360,7 +6358,7 @@ beginState: s32'Giganter'
     airHitEffect: 13
     hitAirPushbackX: 0, 40000
     hitAirPushbackY: 0, 30000
-    Unknown1069: 0, 0, 0, 0, 1, 22, 2, 319
+    Unknown1069: (STATIC), 0, (STATIC), 0, 1, 22, (VARIABLE), 319
     Unknown788: 1
     Unknown955: 10
     Unknown953: 1

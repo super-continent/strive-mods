@@ -7834,7 +7834,7 @@ startSubroutine: s32'cmn_VoiceInit'
   endSubroutine: 
 
 startSubroutine: s32'cmnTensionBalanceInit'
-  Unknown1307: '0x07000000050000000C00000005000000'
+  Unknown1307: 7, 5, 12, 5
   Unknown1308: -6, -80, -100, -150
   Unknown1309: 40, 90, 140, 200, 250, 40
   Unknown1310: 10, 20, 30, 40, 50
@@ -7874,13 +7874,13 @@ startSubroutine: s32'cmnGuardInit'
   Unknown1250: 100
   Unknown1289: 2, 4
   Unknown1290: 500, 600, 700, 800, 900, 25
-  Unknown1291: 25, 50
+  setFDConstantMeterDrain: 25, 50
   Unknown1292: 120, 80, 120
   endSubroutine: 
 
 startSubroutine: s32'cmnRoundInit'
   health: 500
-  Unknown1261: '0x090000000900000009000000090000000900000009000000'
+  Unknown1261: 9, 9, 9, 9, 9, 9
   Unknown1228: 1750
   Unknown1229: 5250
   Unknown1230: 16
@@ -8438,7 +8438,7 @@ startSubroutine: s32'cmnEntryToStand'
       Unknown268: 0
       Unknown210: -402000
       Unknown196: 23, 131, 0, -252000, 0, 0, 2, 46
-      Unknown52: 2, 0, -2500, 2, 46, 2, 281
+      modifyVarAfterOperation: (MUL), (STATIC), -2500, (VARIABLE), 46, (VARIABLE), 281
       Unknown1736: 0, 2500
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (VARIABLE), 45
@@ -9335,12 +9335,12 @@ startSubroutine: s32'cmn_WSBPoint_Add_Lv0'
   ifNot: (VARIABLE), 340
     storeValue: (VARIABLE), 340, (STATIC), 1
     endIf: 
-  Unknown52: 3, 0, 0, 2, 340, 2, 349
-  Unknown1069: 2, 349, 0, 10000, 1, 22, 2, 306
-  Unknown2500: 13, 22, 2, 83, 0, 750000
-    Unknown2500: 12, 22, 2, 83, 0, -750000
-      Unknown2500: 13, 22, 2, 306, 0, 1750
-        Unknown1069: 2, 349, 0, 1500, 1, 22, 2, 306
+  modifyVarAfterOperation: (DIV), (STATIC), 10000, (VARIABLE), 340, (VARIABLE), 349
+  Unknown1069: (VARIABLE), 349, (STATIC), 10000, 1, 22, (VARIABLE), 306
+  Unknown2500: 13, 22, (VARIABLE), 83, (STATIC), 750000
+    Unknown2500: 12, 22, (VARIABLE), 83, (STATIC), -750000
+      Unknown2500: 13, 22, (VARIABLE), 306, (STATIC), 1750
+        Unknown1069: (VARIABLE), 349, (STATIC), 1500, 1, 22, (VARIABLE), 306
         Unknown947: 1
         endIf: 
       endIf: 
@@ -9355,12 +9355,12 @@ startSubroutine: s32'cmn_WSBPoint_Add_Lv1'
   ifNot: (VARIABLE), 340
     storeValue: (VARIABLE), 340, (STATIC), 1
     endIf: 
-  Unknown52: 3, 0, 300, 2, 340, 2, 349
-  Unknown1069: 2, 349, 0, 10000, 1, 22, 2, 306
-  Unknown2500: 13, 22, 2, 83, 0, 750000
-    Unknown2500: 12, 22, 2, 83, 0, -750000
-      Unknown2500: 13, 22, 2, 306, 0, 1750
-        Unknown1069: 2, 349, 0, 1500, 1, 22, 2, 306
+  modifyVarAfterOperation: (DIV), (STATIC), 300, (VARIABLE), 340, (VARIABLE), 349
+  Unknown1069: (VARIABLE), 349, (STATIC), 10000, 1, 22, (VARIABLE), 306
+  Unknown2500: 13, 22, (VARIABLE), 83, (STATIC), 750000
+    Unknown2500: 12, 22, (VARIABLE), 83, (STATIC), -750000
+      Unknown2500: 13, 22, (VARIABLE), 306, (STATIC), 1750
+        Unknown1069: (VARIABLE), 349, (STATIC), 1500, 1, 22, (VARIABLE), 306
         Unknown947: 1
         endIf: 
       endIf: 
@@ -9375,12 +9375,12 @@ startSubroutine: s32'cmn_WSBPoint_Add_Lv2'
   ifNot: (VARIABLE), 340
     storeValue: (VARIABLE), 340, (STATIC), 1
     endIf: 
-  Unknown52: 3, 0, 400, 2, 340, 2, 349
-  Unknown1069: 2, 349, 0, 10000, 1, 22, 2, 306
-  Unknown2500: 13, 22, 2, 83, 0, 750000
-    Unknown2500: 12, 22, 2, 83, 0, -750000
-      Unknown2500: 13, 22, 2, 306, 0, 1750
-        Unknown1069: 2, 349, 0, 1500, 1, 22, 2, 306
+  modifyVarAfterOperation: (DIV), (STATIC), 400, (VARIABLE), 340, (VARIABLE), 349
+  Unknown1069: (VARIABLE), 349, (STATIC), 10000, 1, 22, (VARIABLE), 306
+  Unknown2500: 13, 22, (VARIABLE), 83, (STATIC), 750000
+    Unknown2500: 12, 22, (VARIABLE), 83, (STATIC), -750000
+      Unknown2500: 13, 22, (VARIABLE), 306, (STATIC), 1750
+        Unknown1069: (VARIABLE), 349, (STATIC), 1500, 1, 22, (VARIABLE), 306
         Unknown947: 1
         endIf: 
       endIf: 
@@ -9395,12 +9395,12 @@ startSubroutine: s32'cmn_WSBPoint_Add_Lv3'
   ifNot: (VARIABLE), 340
     storeValue: (VARIABLE), 340, (STATIC), 1
     endIf: 
-  Unknown52: 3, 0, 500, 2, 340, 2, 349
-  Unknown1069: 2, 349, 0, 10000, 1, 22, 2, 306
-  Unknown2500: 13, 22, 2, 83, 0, 750000
-    Unknown2500: 12, 22, 2, 83, 0, -750000
-      Unknown2500: 13, 22, 2, 306, 0, 1750
-        Unknown1069: 2, 349, 0, 1500, 1, 22, 2, 306
+  modifyVarAfterOperation: (DIV), (STATIC), 500, (VARIABLE), 340, (VARIABLE), 349
+  Unknown1069: (VARIABLE), 349, (STATIC), 10000, 1, 22, (VARIABLE), 306
+  Unknown2500: 13, 22, (VARIABLE), 83, (STATIC), 750000
+    Unknown2500: 12, 22, (VARIABLE), 83, (STATIC), -750000
+      Unknown2500: 13, 22, (VARIABLE), 306, (STATIC), 1750
+        Unknown1069: (VARIABLE), 349, (STATIC), 1500, 1, 22, (VARIABLE), 306
         Unknown947: 1
         endIf: 
       endIf: 
@@ -9415,12 +9415,12 @@ startSubroutine: s32'cmn_WSBPoint_Add_Lv4'
   ifNot: (VARIABLE), 340
     storeValue: (VARIABLE), 340, (STATIC), 1
     endIf: 
-  Unknown52: 3, 0, 600, 2, 340, 2, 349
-  Unknown1069: 2, 349, 0, 10000, 1, 22, 2, 306
-  Unknown2500: 13, 22, 2, 83, 0, 750000
-    Unknown2500: 12, 22, 2, 83, 0, -750000
-      Unknown2500: 13, 22, 2, 306, 0, 1750
-        Unknown1069: 2, 349, 0, 1500, 1, 22, 2, 306
+  modifyVarAfterOperation: (DIV), (STATIC), 600, (VARIABLE), 340, (VARIABLE), 349
+  Unknown1069: (VARIABLE), 349, (STATIC), 10000, 1, 22, (VARIABLE), 306
+  Unknown2500: 13, 22, (VARIABLE), 83, (STATIC), 750000
+    Unknown2500: 12, 22, (VARIABLE), 83, (STATIC), -750000
+      Unknown2500: 13, 22, (VARIABLE), 306, (STATIC), 1750
+        Unknown1069: (VARIABLE), 349, (STATIC), 1500, 1, 22, (VARIABLE), 306
         Unknown947: 1
         endIf: 
       endIf: 
@@ -9435,12 +9435,12 @@ startSubroutine: s32'cmn_WSBPoint_Add_Lv5'
   ifNot: (VARIABLE), 340
     storeValue: (VARIABLE), 340, (STATIC), 1
     endIf: 
-  Unknown52: 3, 0, 700, 2, 340, 2, 349
-  Unknown1069: 2, 349, 0, 10000, 1, 22, 2, 306
-  Unknown2500: 13, 22, 2, 83, 0, 750000
-    Unknown2500: 12, 22, 2, 83, 0, -750000
-      Unknown2500: 13, 22, 2, 306, 0, 1750
-        Unknown1069: 2, 349, 0, 1500, 1, 22, 2, 306
+  modifyVarAfterOperation: (DIV), (STATIC), 700, (VARIABLE), 340, (VARIABLE), 349
+  Unknown1069: (VARIABLE), 349, (STATIC), 10000, 1, 22, (VARIABLE), 306
+  Unknown2500: 13, 22, (VARIABLE), 83, (STATIC), 750000
+    Unknown2500: 12, 22, (VARIABLE), 83, (STATIC), -750000
+      Unknown2500: 13, 22, (VARIABLE), 306, (STATIC), 1750
+        Unknown1069: (VARIABLE), 349, (STATIC), 1500, 1, 22, (VARIABLE), 306
         Unknown947: 1
         endIf: 
       endIf: 
@@ -9455,12 +9455,12 @@ startSubroutine: s32'cmn_WSBPoint_Add_Lv10'
   ifNot: (VARIABLE), 340
     storeValue: (VARIABLE), 340, (STATIC), 1
     endIf: 
-  Unknown52: 3, 0, 5000, 2, 340, 2, 340
-  Unknown1069: 2, 340, 0, 10000, 1, 22, 2, 306
-  Unknown2500: 13, 22, 2, 83, 0, 750000
-    Unknown2500: 12, 22, 2, 83, 0, -750000
-      Unknown2500: 13, 22, 2, 306, 0, 1750
-        Unknown1069: 2, 340, 0, 1500, 1, 22, 2, 306
+  modifyVarAfterOperation: (DIV), (STATIC), 5000, (VARIABLE), 340, (VARIABLE), 340
+  Unknown1069: (VARIABLE), 340, (STATIC), 10000, 1, 22, (VARIABLE), 306
+  Unknown2500: 13, 22, (VARIABLE), 83, (STATIC), 750000
+    Unknown2500: 12, 22, (VARIABLE), 83, (STATIC), -750000
+      Unknown2500: 13, 22, (VARIABLE), 306, (STATIC), 1750
+        Unknown1069: (VARIABLE), 340, (STATIC), 1500, 1, 22, (VARIABLE), 306
         endIf: 
       endIf: 
     endIf: 
@@ -9479,44 +9479,44 @@ startSubroutine: s32'cmn_hosei'
       ifOperation: (IS_EQUAL), (VARIABLE), 338, (STATIC), 1000000000
         callSubroutine: s32'cmn_WSBPoint_Add_Lv1'
         endIf: 
-      Unknown52: 3, 2, 338, 0, 1000000000, 2, 339
+      modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000000, (VARIABLE), 339
       ifOperation: 16, (VARIABLE), 339, (STATIC), 2
         callSubroutine: s32'cmn_WSBPoint_Add_Lv1'
         endIf: 
-      Unknown52: 3, 2, 338, 0, 100000000, 2, 339
-      ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+      modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000000, (VARIABLE), 339
+      ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
         callSubroutine: s32'cmn_WSBPoint_Add_Lv1'
         endIf: 
-      Unknown52: 3, 2, 338, 0, 10000000, 2, 339
-      ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+      modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000000, (VARIABLE), 339
+      ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
         callSubroutine: s32'cmn_WSBPoint_Add_Lv1'
         endIf: 
-      Unknown52: 3, 2, 338, 0, 1000000, 2, 339
-      ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+      modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000, (VARIABLE), 339
+      ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
         callSubroutine: s32'cmn_WSBPoint_Add_Lv1'
         endIf: 
-      Unknown52: 3, 2, 338, 0, 100000, 2, 339
-      ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+      modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000, (VARIABLE), 339
+      ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
         callSubroutine: s32'cmn_WSBPoint_Add_Lv1'
         endIf: 
-      Unknown52: 3, 2, 338, 0, 10000, 2, 339
-      ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+      modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000, (VARIABLE), 339
+      ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
         callSubroutine: s32'cmn_WSBPoint_Add_Lv1'
         endIf: 
-      Unknown52: 3, 2, 338, 0, 1000, 2, 339
-      ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+      modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000, (VARIABLE), 339
+      ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
         callSubroutine: s32'cmn_WSBPoint_Add_Lv3'
         endIf: 
-      Unknown52: 3, 2, 338, 0, 100, 2, 339
-      ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+      modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100, (VARIABLE), 339
+      ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
         callSubroutine: s32'cmn_WSBPoint_Add_Lv5'
         endIf: 
-      Unknown52: 3, 2, 338, 0, 10, 2, 339
-      ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+      modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10, (VARIABLE), 339
+      ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
         callSubroutine: s32'cmn_WSBPoint_Add_Lv5'
         endIf: 
-      Unknown52: 3, 2, 338, 0, 1, 2, 339
-      ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+      modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1, (VARIABLE), 339
+      ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
         callSubroutine: s32'cmn_WSBPoint_Add_Lv5'
         endIf: 
       endIf: 
@@ -9524,81 +9524,81 @@ startSubroutine: s32'cmn_hosei'
       ifOperation: (IS_EQUAL), (VARIABLE), 338, (STATIC), 1000000000
         callSubroutine: s32'cmn_WSBPoint_Add_Lv1'
         endIf: 
-      Unknown52: 3, 2, 338, 0, 1000000000, 2, 339
+      modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000000, (VARIABLE), 339
       ifOperation: 16, (VARIABLE), 339, (STATIC), 2
         callSubroutine: s32'cmn_WSBPoint_Add_Lv0'
         endIf: 
-      Unknown52: 3, 2, 338, 0, 100000000, 2, 339
-      ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+      modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000000, (VARIABLE), 339
+      ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
         callSubroutine: s32'cmn_WSBPoint_Add_Lv1'
         endIf: 
-      Unknown52: 3, 2, 338, 0, 1000000, 2, 339
-      ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+      modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000, (VARIABLE), 339
+      ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
         callSubroutine: s32'cmn_WSBPoint_Add_Lv1'
         endIf: 
-      Unknown52: 3, 2, 338, 0, 10000000, 2, 339
-      ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+      modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000000, (VARIABLE), 339
+      ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
         callSubroutine: s32'cmn_WSBPoint_Add_Lv3'
         endIf: 
       endIf: 
     if: (VARIABLE), 205
       ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 0
-        Unknown52: 3, 2, 338, 0, 1000000000, 2, 339
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000000, (VARIABLE), 339
         ifOperation: 16, (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'airattack', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 100000000, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000000, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'p', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 10000000, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000000, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'k_gedan', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 1000000, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'chudan', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 100000, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'gedan_or_taikuu', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 10000, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'shot', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 1000, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'muteki', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 100, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'land', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 10, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'wall', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 1, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'ukase', 0, 0
           endIf: 
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 1
-        Unknown52: 3, 2, 338, 0, 1000000000, 2, 339
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000000, (VARIABLE), 339
         ifOperation: 16, (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'kakusei', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 100000000, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000000, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'kensei', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 10000000, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000000, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'6p', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 1000000, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'k', 0, 0
           endIf: 
         endIf: 
@@ -9607,62 +9607,62 @@ startSubroutine: s32'cmn_hosei'
   else: 
     if: (VARIABLE), 205
       ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 0
-        Unknown52: 3, 2, 338, 0, 1000000000, 2, 339
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000000, (VARIABLE), 339
         ifOperation: 16, (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'airattack', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 100000000, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000000, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'p', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 10000000, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000000, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'k_gedan', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 1000000, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'chudan', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 100000, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'gedan_or_taikuu', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 10000, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'shot', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 1000, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'muteki', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 100, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'land', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 10, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'wall', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 1, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'ukase', 0, 0
           endIf: 
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 1
-        Unknown52: 3, 2, 338, 0, 1000000000, 2, 339
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000000, (VARIABLE), 339
         ifOperation: 16, (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'kakusei', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 100000000, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000000, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'kensei', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 10000000, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000000, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'6p', 0, 0
           endIf: 
-        Unknown52: 3, 2, 338, 0, 1000000, 2, 339
-        ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+        modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000, (VARIABLE), 339
+        ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
           Unknown1825: s32'k', 0, 0
           endIf: 
         endIf: 
@@ -9686,245 +9686,245 @@ startSubroutine: s32'cmn_hosei'
   riscConsume: 10
   Unknown1143: 0
   ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 0
-    Unknown52: 3, 2, 338, 0, 1000000000, 2, 339
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000000, (VARIABLE), 339
     ifOperation: 16, (VARIABLE), 339, (STATIC), 2
       riscConsume: 10
       endIf: 
-    Unknown52: 3, 2, 338, 0, 10000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       riscConsume: 10
       endIf: 
-    Unknown52: 3, 2, 338, 0, 1000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       riscConsume: 10
       endIf: 
-    Unknown52: 3, 2, 338, 0, 100000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       riscConsume: 10
       endIf: 
-    Unknown52: 3, 2, 338, 0, 10000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       riscConsume: 10
       endIf: 
-    Unknown52: 3, 2, 338, 0, 1000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       riscConsume: 10
       endIf: 
-    Unknown52: 3, 2, 338, 0, 100000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       riscConsume: 15
       endIf: 
-    Unknown52: 3, 2, 338, 0, 100, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       riscConsume: 20
       endIf: 
-    Unknown52: 3, 2, 338, 0, 10, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       riscConsume: 20
       endIf: 
-    Unknown52: 3, 2, 338, 0, 1, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       riscConsume: 20
       endIf: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 1
-    Unknown52: 3, 2, 338, 0, 1000000000, 2, 339
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000000, (VARIABLE), 339
     ifOperation: 16, (VARIABLE), 339, (STATIC), 2
       riscConsume: 10
       endIf: 
-    Unknown52: 3, 2, 338, 0, 100000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       riscConsume: 10
       endIf: 
-    Unknown52: 3, 2, 338, 0, 10000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       riscConsume: 10
       endIf: 
-    Unknown52: 3, 2, 338, 0, 1000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       riscConsume: 10
       endIf: 
     endIf: 
   setProration: 100
   ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 0
-    Unknown52: 3, 2, 338, 0, 100, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       setProration: 100
       endIf: 
-    Unknown52: 3, 2, 338, 0, 10, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       setProration: 100
       endIf: 
-    Unknown52: 3, 2, 338, 0, 1, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       setProration: 100
       endIf: 
-    Unknown52: 3, 2, 338, 0, 1000000000, 2, 339
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000000, (VARIABLE), 339
     ifOperation: 16, (VARIABLE), 339, (STATIC), 2
       setProration: 80
       endIf: 
-    Unknown52: 3, 2, 338, 0, 100000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       setProration: 90
       endIf: 
-    Unknown52: 3, 2, 338, 0, 100000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       setProration: 80
       endIf: 
-    Unknown52: 3, 2, 338, 0, 1000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       setProration: 80
       endIf: 
-    Unknown52: 3, 2, 338, 0, 10000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       setProration: 80
       endIf: 
-    Unknown52: 3, 2, 338, 0, 1000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       setProration: 80
       endIf: 
-    Unknown52: 3, 2, 338, 0, 10000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       setProration: 70
       endIf: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 1
-    Unknown52: 3, 2, 338, 0, 1000000000, 2, 339
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000000, (VARIABLE), 339
     ifOperation: 16, (VARIABLE), 339, (STATIC), 2
       setProration: 100
       endIf: 
-    Unknown52: 3, 2, 338, 0, 1000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       setProration: 100
       endIf: 
-    Unknown52: 3, 2, 338, 0, 100000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       setProration: 90
       endIf: 
-    Unknown52: 3, 2, 338, 0, 10000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       setProration: 90
       endIf: 
     endIf: 
   Unknown1001: 5
   ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 0
-    Unknown52: 3, 2, 338, 0, 1000000000, 2, 339
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000000, (VARIABLE), 339
     ifOperation: 16, (VARIABLE), 339, (STATIC), 2
       Unknown1001: 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 100000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1001: 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 10000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1001: 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 1000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1001: 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 100000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1001: 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 10000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1001: 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 1000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1001: 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 100, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1001: 10
       endIf: 
-    Unknown52: 3, 2, 338, 0, 10, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1001: 10
       endIf: 
-    Unknown52: 3, 2, 338, 0, 1, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1001: 10
       endIf: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 1
-    Unknown52: 3, 2, 338, 0, 1000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1001: 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 100000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1001: 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 10000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1001: 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 1000000000, 2, 339
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000000, (VARIABLE), 339
     ifOperation: 16, (VARIABLE), 339, (STATIC), 2
       Unknown1001: 25
       endIf: 
     endIf: 
   Unknown1000: 0, 0
   ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 0
-    Unknown52: 3, 2, 338, 0, 1000000000, 2, 339
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000000, (VARIABLE), 339
     ifOperation: 16, (VARIABLE), 339, (STATIC), 2
       Unknown1000: 0, 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 100000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1000: 0, 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 10000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1000: 0, 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 1000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1000: 0, 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 100000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1000: 0, 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 10000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1000: 0, 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 100, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1000: 0, 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 10, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1000: 0, 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 1, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1000: 0, 5
       endIf: 
-    Unknown52: 3, 2, 338, 0, 1000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1000: 0, 20
       endIf: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 1
-    Unknown52: 3, 2, 338, 0, 1000000000, 2, 339
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000000, (VARIABLE), 339
     ifOperation: 16, (VARIABLE), 339, (STATIC), 2
       Unknown1000: 0, 0
       endIf: 
-    Unknown52: 3, 2, 338, 0, 100000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 100000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1000: 0, 0
       endIf: 
-    Unknown52: 3, 2, 338, 0, 1000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 1000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1000: 0, 0
       endIf: 
-    Unknown52: 3, 2, 338, 0, 10000000, 2, 339
-    ifOperation: 4, (VARIABLE), 339, (STATIC), 2
+    modifyVarAfterOperation: (DIV), (VARIABLE), 338, (STATIC), 10000000, (VARIABLE), 339
+    ifOperation: (MOD), (VARIABLE), 339, (STATIC), 2
       Unknown1000: 0, 20
       endIf: 
     endIf: 
@@ -10333,14 +10333,14 @@ beginState: s32'cmnHiCounterCamera'
   endState: 
 
 startSubroutine: s32'cmnCamCounterSlowSettings'
-  Unknown2500: 11, 22, 2, 8, 0, 0
-    Unknown2500: 13, 22, 2, 18, 0, 150000
+  Unknown2500: 11, 22, (VARIABLE), 8, (STATIC), 0
+    Unknown2500: 13, 22, (VARIABLE), 18, (STATIC), 150000
       Unknown41: 22
       Unknown2593: 0, 0
       Unknown40: 
       endIf: 
     endIf: 
-  Unknown2500: 11, 3, 2, 8, 0, 0
+  Unknown2500: 11, 3, (VARIABLE), 8, (STATIC), 0
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 18, (STATIC), 150000
       Unknown41: 3
       Unknown2593: 0, 0
@@ -10365,8 +10365,8 @@ startSubroutine: s32'cmnCamCounterTrack'
   storeValue: (VARIABLE), 50, (STATIC), -1300000
   storeValue: (VARIABLE), 51, (STATIC), 1300000
   callSubroutine: s32'cmnThrowPosition_Limit'
-  Unknown52: 3, 2, 14, 0, 16, 2, 55
-  Unknown52: 3, 2, 15, 0, 9, 2, 56
+  modifyVarAfterOperation: (DIV), (VARIABLE), 14, (STATIC), 16, (VARIABLE), 55
+  modifyVarAfterOperation: (DIV), (VARIABLE), 15, (STATIC), 9, (VARIABLE), 56
   modifyVar: (MUL), (VARIABLE), 55, (STATIC), 30
   modifyVar: (MUL), (VARIABLE), 56, (STATIC), 20
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 55, (STATIC), 0
@@ -10386,8 +10386,8 @@ startSubroutine: s32'cmnCamCounterTrack'
     endIf: 
   storeValue: (VARIABLE), 57, (STATIC), 130000
   storeValue: (VARIABLE), 58, (STATIC), 130000
-  Unknown2500: 9, 3, 2, 334, 0, 1
-    Unknown2500: 9, 22, 2, 334, 0, 2
+  Unknown2500: 9, 3, (VARIABLE), 334, (STATIC), 1
+    Unknown2500: 9, 22, (VARIABLE), 334, (STATIC), 2
       storeValue: (VARIABLE), 57, (STATIC), 70000
       storeValue: (VARIABLE), 58, (STATIC), 92000
       endIf: 
@@ -10396,30 +10396,30 @@ startSubroutine: s32'cmnCamCounterTrack'
       storeValue: (VARIABLE), 58, (STATIC), 120000
       endElse: 
     endIf: 
-  Unknown2500: 9, 3, 2, 334, 0, 2
+  Unknown2500: 9, 3, (VARIABLE), 334, (STATIC), 2
     storeValue: (VARIABLE), 57, (STATIC), 125000
     storeValue: (VARIABLE), 58, (STATIC), 125000
     endIf: 
   storeValue: (VARIABLE), 55, (VARIABLE), 56
-  Unknown52: 1, 0, 460000, 2, 55, 2, 55
+  modifyVarAfterOperation: (SUB), (STATIC), 460000, (VARIABLE), 55, (VARIABLE), 55
   modifyVar: (MUL), (VARIABLE), 55, (STATIC), 7
   modifyVar: (DIV), (VARIABLE), 55, (STATIC), -30
   modifyVar: (ADD), (VARIABLE), 57, (VARIABLE), 55
   modifyVar: (ADD), (VARIABLE), 58, (VARIABLE), 55
-  Unknown2500: 9, 3, 2, 30, 0, 1
-    Unknown2500: 9, 22, 2, 30, 0, 1
+  Unknown2500: 9, 3, (VARIABLE), 30, (STATIC), 1
+    Unknown2500: 9, 22, (VARIABLE), 30, (STATIC), 1
       Unknown53: 23, 2, 59, 22, 2, 8
       ifOperation: (IS_LESSER), (VARIABLE), 59, (STATIC), 0
-        Unknown52: 2, 2, 59, 0, -4, 2, 60
+        modifyVarAfterOperation: (MUL), (VARIABLE), 59, (STATIC), -4, (VARIABLE), 60
         modifyVar: (ADD), (VARIABLE), 57, (VARIABLE), 60
-        Unknown52: 2, 2, 59, 0, 1, 2, 60
+        modifyVarAfterOperation: (MUL), (VARIABLE), 59, (STATIC), 1, (VARIABLE), 60
         modifyVar: (DIV), (VARIABLE), 60, (STATIC), 6
         modifyVar: (ADD), (VARIABLE), 58, (VARIABLE), 60
         endIf: 
       else: 
-        Unknown52: 2, 2, 59, 0, -16, 2, 60
+        modifyVarAfterOperation: (MUL), (VARIABLE), 59, (STATIC), -16, (VARIABLE), 60
         modifyVar: (ADD), (VARIABLE), 57, (VARIABLE), 60
-        Unknown52: 2, 2, 59, 0, 1, 2, 60
+        modifyVarAfterOperation: (MUL), (VARIABLE), 59, (STATIC), 1, (VARIABLE), 60
         modifyVar: (DIV), (VARIABLE), 60, (STATIC), 1
         modifyVar: (ADD), (VARIABLE), 58, (VARIABLE), 60
         storeValue: (VARIABLE), 57, (STATIC), 5000
@@ -10430,38 +10430,38 @@ startSubroutine: s32'cmnCamCounterTrack'
       ifOperation: (IS_LESSER), (VARIABLE), 59, (STATIC), 0
         modifyVar: (MUL), (VARIABLE), 59, (STATIC), 5000
         modifyVar: (DIV), (VARIABLE), 59, (STATIC), 90
-        Unknown52: 2, 2, 59, 0, 70, 2, 60
+        modifyVarAfterOperation: (MUL), (VARIABLE), 59, (STATIC), 70, (VARIABLE), 60
         modifyVar: (SUB), (VARIABLE), 57, (VARIABLE), 60
-        Unknown52: 2, 2, 59, 0, 3, 2, 60
+        modifyVarAfterOperation: (MUL), (VARIABLE), 59, (STATIC), 3, (VARIABLE), 60
         modifyVar: (ADD), (VARIABLE), 58, (VARIABLE), 60
         endIf: 
       else: 
         modifyVar: (MUL), (VARIABLE), 59, (STATIC), 5000
         modifyVar: (DIV), (VARIABLE), 59, (STATIC), 90
-        Unknown52: 2, 2, 59, 0, 3, 2, 60
+        modifyVarAfterOperation: (MUL), (VARIABLE), 59, (STATIC), 3, (VARIABLE), 60
         modifyVar: (SUB), (VARIABLE), 57, (VARIABLE), 60
-        Unknown52: 2, 2, 59, 0, 3, 2, 60
+        modifyVarAfterOperation: (MUL), (VARIABLE), 59, (STATIC), 3, (VARIABLE), 60
         modifyVar: (ADD), (VARIABLE), 58, (VARIABLE), 60
         endElse: 
       endElse: 
     endIf: 
   else: 
     Unknown53: 23, 2, 59, 22, 2, 325
-    Unknown2500: 9, 22, 2, 31, 0, 1
+    Unknown2500: 9, 22, (VARIABLE), 31, (STATIC), 1
       ifOperation: (IS_LESSER), (VARIABLE), 59, (STATIC), 0
         modifyVar: (MUL), (VARIABLE), 59, (STATIC), 5000
         modifyVar: (DIV), (VARIABLE), 59, (STATIC), 90
-        Unknown52: 2, 2, 59, 0, 40, 2, 60
+        modifyVarAfterOperation: (MUL), (VARIABLE), 59, (STATIC), 40, (VARIABLE), 60
         modifyVar: (SUB), (VARIABLE), 57, (VARIABLE), 60
-        Unknown52: 2, 2, 59, 0, 2, 2, 60
+        modifyVarAfterOperation: (MUL), (VARIABLE), 59, (STATIC), 2, (VARIABLE), 60
         modifyVar: (ADD), (VARIABLE), 58, (VARIABLE), 60
         endIf: 
       else: 
         modifyVar: (MUL), (VARIABLE), 59, (STATIC), 5000
         modifyVar: (DIV), (VARIABLE), 59, (STATIC), 90
-        Unknown52: 2, 2, 59, 0, 3, 2, 60
+        modifyVarAfterOperation: (MUL), (VARIABLE), 59, (STATIC), 3, (VARIABLE), 60
         modifyVar: (SUB), (VARIABLE), 57, (VARIABLE), 60
-        Unknown52: 2, 2, 59, 0, 3, 2, 60
+        modifyVarAfterOperation: (MUL), (VARIABLE), 59, (STATIC), 3, (VARIABLE), 60
         modifyVar: (ADD), (VARIABLE), 58, (VARIABLE), 60
         endElse: 
       endIf: 
@@ -10469,17 +10469,17 @@ startSubroutine: s32'cmnCamCounterTrack'
       ifOperation: (IS_LESSER), (VARIABLE), 59, (STATIC), 0
         modifyVar: (MUL), (VARIABLE), 59, (STATIC), 5000
         modifyVar: (DIV), (VARIABLE), 59, (STATIC), 90
-        Unknown52: 2, 2, 59, 0, 12, 2, 60
+        modifyVarAfterOperation: (MUL), (VARIABLE), 59, (STATIC), 12, (VARIABLE), 60
         modifyVar: (SUB), (VARIABLE), 57, (VARIABLE), 60
-        Unknown52: 2, 2, 59, 0, 2, 2, 60
+        modifyVarAfterOperation: (MUL), (VARIABLE), 59, (STATIC), 2, (VARIABLE), 60
         modifyVar: (ADD), (VARIABLE), 58, (VARIABLE), 60
         endIf: 
       else: 
         modifyVar: (MUL), (VARIABLE), 59, (STATIC), 5000
         modifyVar: (DIV), (VARIABLE), 59, (STATIC), 90
-        Unknown52: 2, 2, 59, 0, 3, 2, 60
+        modifyVarAfterOperation: (MUL), (VARIABLE), 59, (STATIC), 3, (VARIABLE), 60
         modifyVar: (SUB), (VARIABLE), 57, (VARIABLE), 60
-        Unknown52: 2, 2, 59, 0, 3, 2, 60
+        modifyVarAfterOperation: (MUL), (VARIABLE), 59, (STATIC), 3, (VARIABLE), 60
         modifyVar: (ADD), (VARIABLE), 58, (VARIABLE), 60
         endElse: 
       endElse: 
@@ -10494,7 +10494,7 @@ startSubroutine: s32'cmnCamCounterTrack'
   ifOperation: (IS_LESSER), (VARIABLE), 59, (STATIC), -32000
     storeValue: (VARIABLE), 59, (STATIC), -32000
     endIf: 
-  Unknown52: 2, 2, 59, 0, -2, 2, 60
+  modifyVarAfterOperation: (MUL), (VARIABLE), 59, (STATIC), -2, (VARIABLE), 60
   modifyVar: (DIV), (VARIABLE), 60, (STATIC), 1
   modifyVar: (MUL), (VARIABLE), 59, (STATIC), 0
   modifyVar: (DIV), (VARIABLE), 59, (STATIC), 1
@@ -10922,11 +10922,11 @@ startSubroutine: s32'cmnThrowPosition_F_Wall'
   ifNot: (VARIABLE), 317
     ifNot: (VARIABLE), 32
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 83, (VARIABLE), 45
-        Unknown52: 1, 2, 83, 2, 45, 2, 48
+        modifyVarAfterOperation: (SUB), (VARIABLE), 83, (VARIABLE), 45, (VARIABLE), 48
         upon: (FRAME_STEP)
           modifyVar: (ADD), (VARIABLE), 47, (STATIC), -1
           if: (VARIABLE), 47
-            Unknown52: 3, 2, 48, 2, 46, 2, 49
+            modifyVarAfterOperation: (DIV), (VARIABLE), 48, (VARIABLE), 46, (VARIABLE), 49
             modifyVar: (SUB), (VARIABLE), 83, (VARIABLE), 49
             modifyVar: (SUB), (VARIABLE), 48, (VARIABLE), 49
             endIf: 
@@ -10940,11 +10940,11 @@ startSubroutine: s32'cmnThrowPosition_F_Wall'
     else: 
       modifyVar: (MUL), (VARIABLE), 45, (STATIC), -1
       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 83, (VARIABLE), 45
-        Unknown52: 1, 2, 83, 2, 45, 2, 48
+        modifyVarAfterOperation: (SUB), (VARIABLE), 83, (VARIABLE), 45, (VARIABLE), 48
         upon: (FRAME_STEP)
           modifyVar: (ADD), (VARIABLE), 47, (STATIC), -1
           if: (VARIABLE), 47
-            Unknown52: 3, 2, 48, 2, 46, 2, 49
+            modifyVarAfterOperation: (DIV), (VARIABLE), 48, (VARIABLE), 46, (VARIABLE), 49
             modifyVar: (SUB), (VARIABLE), 83, (VARIABLE), 49
             modifyVar: (SUB), (VARIABLE), 48, (VARIABLE), 49
             endIf: 
@@ -10962,11 +10962,11 @@ startSubroutine: s32'cmnThrowPosition_B_Wall'
   ifNot: (VARIABLE), 317
     if: (VARIABLE), 32
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 83, (VARIABLE), 45
-        Unknown52: 1, 2, 83, 2, 45, 2, 48
+        modifyVarAfterOperation: (SUB), (VARIABLE), 83, (VARIABLE), 45, (VARIABLE), 48
         upon: (FRAME_STEP)
           modifyVar: (ADD), (VARIABLE), 47, (STATIC), -1
           if: (VARIABLE), 47
-            Unknown52: 3, 2, 48, 2, 46, 2, 49
+            modifyVarAfterOperation: (DIV), (VARIABLE), 48, (VARIABLE), 46, (VARIABLE), 49
             modifyVar: (SUB), (VARIABLE), 83, (VARIABLE), 49
             modifyVar: (SUB), (VARIABLE), 48, (VARIABLE), 49
             endIf: 
@@ -10980,11 +10980,11 @@ startSubroutine: s32'cmnThrowPosition_B_Wall'
     else: 
       modifyVar: (MUL), (VARIABLE), 45, (STATIC), -1
       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 83, (VARIABLE), 45
-        Unknown52: 1, 2, 83, 2, 45, 2, 48
+        modifyVarAfterOperation: (SUB), (VARIABLE), 83, (VARIABLE), 45, (VARIABLE), 48
         upon: (FRAME_STEP)
           modifyVar: (ADD), (VARIABLE), 47, (STATIC), -1
           if: (VARIABLE), 47
-            Unknown52: 3, 2, 48, 2, 46, 2, 49
+            modifyVarAfterOperation: (DIV), (VARIABLE), 48, (VARIABLE), 46, (VARIABLE), 49
             modifyVar: (SUB), (VARIABLE), 83, (VARIABLE), 49
             modifyVar: (SUB), (VARIABLE), 48, (VARIABLE), 49
             endIf: 
@@ -11053,20 +11053,20 @@ startSubroutine: s32'cmnInitializeThrowBaseAndTarget'
       modifyVar: (MUL), (VARIABLE), 50, (STATIC), -1
       Unknown53: 4, 2, 50, 23, 2, 50
       Unknown53: 4, 2, 51, 23, 2, 51
-      Unknown2500: 13, 4, 2, 83, 2, 51
+      Unknown2500: 13, 4, (VARIABLE), 83, (VARIABLE), 51
         Unknown53: 4, 2, 83, 4, 2, 51
         endIf: 
-      Unknown2500: 12, 4, 2, 83, 2, 50
+      Unknown2500: 12, 4, (VARIABLE), 83, (VARIABLE), 50
         Unknown53: 4, 2, 83, 4, 2, 50
         endIf: 
       endIf: 
     else: 
       Unknown53: 4, 2, 50, 23, 2, 50
       Unknown53: 4, 2, 51, 23, 2, 51
-      Unknown2500: 13, 4, 2, 83, 2, 50
+      Unknown2500: 13, 4, (VARIABLE), 83, (VARIABLE), 50
         Unknown53: 4, 2, 83, 4, 2, 50
         endIf: 
-      Unknown2500: 12, 4, 2, 83, 2, 51
+      Unknown2500: 12, 4, (VARIABLE), 83, (VARIABLE), 51
         Unknown53: 4, 2, 83, 4, 2, 51
         endIf: 
       endElse: 
@@ -11129,12 +11129,12 @@ beginState: s32'cmnCam_AirThrowAction'
       Unknown2098: 3, 22
       Unknown2099: 3, 22
       Unknown40: 
-      Unknown2500: 10, 4, 2, 83, 0, 960000
+      Unknown2500: 10, 4, (VARIABLE), 83, (STATIC), 960000
         Unknown41: 4
         storeValue: (VARIABLE), 83, (STATIC), 960000
         Unknown40: 
         endIf: 
-      Unknown2500: 11, 4, 2, 83, 0, -960000
+      Unknown2500: 11, 4, (VARIABLE), 83, (STATIC), -960000
         Unknown41: 4
         storeValue: (VARIABLE), 83, (STATIC), -960000
         Unknown40: 
@@ -11454,22 +11454,22 @@ startSubroutine: s32'cmn_cam_delete_on_finish'
 
 startSubroutine: s32'cmn_vertical_offset'
   ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), -3
-    Unknown2100: '0x000000008056FCFF0000000000000000'
+    Unknown2100: 0, -240000, 0, 0
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), -2
-    Unknown2100: '0x00000000008FFDFF0000000000000000'
+    Unknown2100: 0, -160000, 0, 0
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), -1
-    Unknown2100: '0x0000000080C7FEFF0000000000000000'
+    Unknown2100: 0, -80000, 0, 0
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 1
-    Unknown2100: '0x00000000803801000000000000000000'
+    Unknown2100: 0, 80000, 0, 0
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 2
-    Unknown2100: '0x00000000007102000000000000000000'
+    Unknown2100: 0, 160000, 0, 0
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 330, (STATIC), 3
-    Unknown2100: '0x0000000080A903000000000000000000'
+    Unknown2100: 0, 240000, 0, 0
     endIf: 
   endSubroutine: 
 
@@ -11647,7 +11647,7 @@ startSubroutine: s32'cmn_DustAttack'
   Unknown770: 0, 60, 0, 8, 0, 16
   Unknown778: 0, 500
   Unknown783: 0, 250, 0, 5, 0, 30
-  Unknown1069: 0, 700, 0, 10000, 1, 22, 2, 306
+  Unknown1069: (STATIC), 700, (STATIC), 10000, 1, 22, (VARIABLE), 306
   Unknown1118: s32'SE_BTL_CMN_Hit_Grap_L'
   Unknown1119: s32'SE_BTL_CMN_Guard_Grap_L'
   enableSpecialCancel: 0
@@ -11658,9 +11658,9 @@ startSubroutine: s32'cmn_DustAttack'
   Unknown32: s32'cmn_Dust_CenterLine'
   Unknown32: s32'cmn_Dust_SpeedLine'
   Unknown32: s32'cmn_Dust_TailSmoke'
-  Unknown52: 0, 0, 320000, 2, 330, 2, 45
-  Unknown52: 0, 0, 100000, 2, 331, 2, 46
-  Unknown52: 0, 0, 100000, 2, 332, 2, 47
+  modifyVarAfterOperation: (ADD), (STATIC), 320000, (VARIABLE), 330, (VARIABLE), 45
+  modifyVarAfterOperation: (ADD), (STATIC), 100000, (VARIABLE), 331, (VARIABLE), 46
+  modifyVarAfterOperation: (ADD), (STATIC), 100000, (VARIABLE), 332, (VARIABLE), 47
   storeValue: (VARIABLE), 52, (STATIC), 1
   upon: 12
     checkInput: (INPUT_HOLD_D)
@@ -11813,7 +11813,7 @@ startSubroutine: s32'cmn_DustAttack'
         Unknown770: 0, 60, 0, 8, 0, 16
         Unknown778: 0, 500
         Unknown783: 0, 100, 0, 15, 0, 30
-        Unknown1069: 0, 0, 0, 10000, 1, 22, 2, 306
+        Unknown1069: (STATIC), 0, (STATIC), 10000, 1, 22, (VARIABLE), 306
         endElse: 
       endIf: 
     endUpon: 
@@ -12020,8 +12020,8 @@ beginState: s32'cmn_Chase_Camera'
     upon: 42
       ifNot: (VARIABLE), 52
         ifNot: (VARIABLE), 310
-          Unknown2500: 15, 3, 2, 81, 0, 1
-            Unknown2500: 13, 3, 2, 8, 0, 0
+          Unknown2500: 15, 3, (VARIABLE), 81, (STATIC), 1
+            Unknown2500: 13, 3, (VARIABLE), 8, (STATIC), 0
               ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 13, (STATIC), 90
                 if: (VARIABLE), 16
                   Unknown2033: 3, s32'HomingJumpLoop'
@@ -12043,7 +12043,7 @@ beginState: s32'cmn_Chase_Camera'
       modifyVar: (SUB), (VARIABLE), 45, (STATIC), 30576
       modifyVar: (SUB), (VARIABLE), 45, (VARIABLE), 18
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 0
-        Unknown52: 2, 0, 60, 0, 2184, 2, 46
+        modifyVarAfterOperation: (MUL), (STATIC), 60, (STATIC), 2184, (VARIABLE), 46
         modifyVar: (MUL), (VARIABLE), 45, (STATIC), 1550
         modifyVar: (DIV), (VARIABLE), 45, (VARIABLE), 46
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 5000
@@ -12056,7 +12056,7 @@ beginState: s32'cmn_Chase_Camera'
       Unknown2534: 2, 45, 0, 10, 0, 0, 0, 0, s32'linear', s32'linear'
       Unknown53: 23, 2, 47, 3, 2, 17
       modifyVar: (SUB), (VARIABLE), 47, (VARIABLE), 17
-      Unknown52: 2, 0, 60, 0, 2184, 2, 48
+      modifyVarAfterOperation: (MUL), (STATIC), 60, (STATIC), 2184, (VARIABLE), 48
       modifyVar: (MUL), (VARIABLE), 47, (STATIC), 1550
       modifyVar: (DIV), (VARIABLE), 47, (VARIABLE), 48
       if: (VARIABLE), 32
@@ -12493,8 +12493,8 @@ startSubroutine: s32'cmn_Dust_Finish'
           Unknown53: 3, 2, 47, 22, 2, 18
           modifyVar: (MUL), (VARIABLE), 47, (STATIC), -1
           modifyVar: (ADD), (VARIABLE), 47, (STATIC), 4000000
-          Unknown1948: '0x020000002E000000020000002F0000000000000000000000'
-          Unknown1949: '0x020000002E000000020000002F0000000000000000000000'
+          Unknown1948: 2, 46, 2, 47, 0, 0
+          Unknown1949: 2, 46, 2, 47, 0, 0
           Unknown446: s32'cmn_Dust_Finish_Camera', 100
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 29
@@ -12778,8 +12778,8 @@ startSubroutine: s32'cmn_Dust_End_Master'
       storeValue: (VARIABLE), 47, (VARIABLE), 18
       modifyVar: (MUL), (VARIABLE), 47, (STATIC), -1
       modifyVar: (ADD), (VARIABLE), 47, (STATIC), 1500000
-      Unknown1948: '0x020000002E000000020000002F0000000000000000000000'
-      Unknown1949: '0x020000002E000000020000002F0000000000000000000000'
+      Unknown1948: 2, 46, 2, 47, 0, 0
+      Unknown1949: 2, 46, 2, 47, 0, 0
       Unknown32: s32'cmn_Chase_Camera'
       Unknown446: s32'cmn_Dust_End_Camera', 100
       endIf: 
@@ -13643,10 +13643,10 @@ startSubroutine: s32'cmn_Hizakuzure'
   endSubroutine: 
 
 startSubroutine: s32'cmn_lightAttack_hitback'
-  pushbackX: 125
-  Unknown1103: 85
-  Unknown1005: 250
-  Unknown1004: 250
+  pushbackX: 70
+  Unknown1103: 50
+  Unknown1005: 100
+  Unknown1004: 100
   endSubroutine: 
 
 startSubroutine: s32'cmn_lightAttack_flex'
@@ -13771,11 +13771,11 @@ startSubroutine: s32'cmn_AtkTemplNokezoriLow'
 startSubroutine: s32'cmn_AtkTemplNmlAtkAir'
   ifNot: (VARIABLE), 317
     ifOperation: (IS_GREATER), (VARIABLE), 7, (STATIC), 0
-      Unknown52: 3, 2, 7, 0, 4, 2, 348
+      modifyVarAfterOperation: (DIV), (VARIABLE), 7, (STATIC), 4, (VARIABLE), 348
       modifyVar: (ADD), (VARIABLE), 346, (VARIABLE), 348
       endIf: 
     ifOperation: (IS_GREATER), (VARIABLE), 8, (STATIC), 0
-      Unknown52: 3, 2, 8, 0, 2, 2, 348
+      modifyVarAfterOperation: (DIV), (VARIABLE), 8, (STATIC), 2, (VARIABLE), 348
       modifyVar: (ADD), (VARIABLE), 347, (VARIABLE), 348
       endIf: 
     hitAirPushbackX: 2, 346
@@ -14028,7 +14028,7 @@ startSubroutine: s32'cmnWSBWallBreakAfterDamage'
 
 startSubroutine: s32'cmnOnWSBCalc'
   Unknown41: 22
-  Unknown1784: '0x160000000000000032000000000000004B000000'
+  Unknown1784: 22, 0, 50, 0, 75
   Unknown40: 
   if: (VARIABLE), 386
     Unknown41: 22
@@ -14077,7 +14077,7 @@ startSubroutine: s32'cmnWorldSideBreak_Position'
       endElse: 
     endIf: 
   else: 
-    Unknown52: 2, 0, -1, 2, 35, 2, 344
+    modifyVarAfterOperation: (MUL), (STATIC), -1, (VARIABLE), 35, (VARIABLE), 344
     Unknown2334: 0, 3, 100, 22, 100
     ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 0, (STATIC), 750000
       Unknown41: 3
@@ -14086,7 +14086,7 @@ startSubroutine: s32'cmnWorldSideBreak_Position'
       endIf: 
     else: 
       Unknown41: 3
-      Unknown52: 2, 0, -1, 2, 14, 2, 343
+      modifyVarAfterOperation: (MUL), (STATIC), -1, (VARIABLE), 14, (VARIABLE), 343
       Unknown40: 
       endElse: 
     endElse: 
@@ -14103,7 +14103,7 @@ startSubroutine: s32'cmnWorldSideBreak_Position'
   ifOperation: (IS_EQUAL), (VARIABLE), 322, (STATIC), 3
     Unknown41: 3
     modifyVar: (DIV), (VARIABLE), 343, (STATIC), 2
-    Unknown52: 2, 2, 343, 0, 17, 2, 345
+    modifyVarAfterOperation: (MUL), (VARIABLE), 343, (STATIC), 17, (VARIABLE), 345
     modifyVar: (DIV), (VARIABLE), 345, (STATIC), 10
     Unknown40: 
     endIf: 
@@ -14188,9 +14188,9 @@ beginState: s32'cmnWorldSideBreakObj'
   endState: 
 
 startSubroutine: s32'cmnWorldSideBreak_Type'
-  Unknown52: 2, 2, 308, 0, 2184, 2, 47
+  modifyVarAfterOperation: (MUL), (VARIABLE), 308, (STATIC), 2184, (VARIABLE), 47
   Unknown53: 23, 2, 48, 22, 2, 18
-  Unknown52: 1, 2, 48, 2, 47, 2, 49
+  modifyVarAfterOperation: (SUB), (VARIABLE), 48, (VARIABLE), 47, (VARIABLE), 49
   Unknown53: 23, 2, 50, 22, 2, 307
   ifOperation: (IS_EQUAL), (VARIABLE), 50, (STATIC), 1
     ifOperation: (IS_EQUAL), (VARIABLE), 308, (STATIC), 0
@@ -15347,10 +15347,10 @@ startSubroutine: s32'cmnWorldSideBreak_Base'
     callSubroutine: s32'cmnWorldSideBreak_AngleZ'
     callSubroutine: s32'cmnWorldSideBreak_EnemyCell'
     Unknown1947: 
-    Unknown1948: '0x020000003500000002000000360000000200000037000000'
-    Unknown1949: '0x020000003500000002000000360000000200000037000000'
-    Unknown1951: '0x02000000380000000200000039000000020000003A000000'
-    Unknown1952: '0x02000000380000000200000039000000020000003A000000'
+    Unknown1948: 2, 53, 2, 54, 2, 55
+    Unknown1949: 2, 53, 2, 54, 2, 55
+    Unknown1951: 2, 56, 2, 57, 2, 58
+    Unknown1952: 2, 56, 2, 57, 2, 58
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 10
     Unknown2279: 2, 46, 0, 0
@@ -16852,7 +16852,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_6'
   Unknown446: s32'cmnWSB_Camera_Slide_6', 100
   Unknown176: 1
   storeValue: (VARIABLE), 45, (STATIC), 30
-  Unknown52: 2, 2, 18, 0, 10, 2, 46
+  modifyVarAfterOperation: (MUL), (VARIABLE), 18, (STATIC), 10, (VARIABLE), 46
   storeValue: (VARIABLE), 47, (STATIC), 1092000
   storeValue: (VARIABLE), 48, (STATIC), 2184000
   storeValue: (VARIABLE), 49, (STATIC), 500000
@@ -16866,24 +16866,24 @@ startSubroutine: s32'cmnWSB_Slave_Slide_6'
     storeValue: (VARIABLE), 46, (VARIABLE), 48
     endIf: 
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
-  Unknown52: 2, 2, 8, 2, 45, 2, 50
-  Unknown52: 0, 2, 45, 0, -1, 2, 51
+  modifyVarAfterOperation: (MUL), (VARIABLE), 8, (VARIABLE), 45, (VARIABLE), 50
+  modifyVarAfterOperation: (ADD), (VARIABLE), 45, (STATIC), -1, (VARIABLE), 51
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
-  Unknown52: 3, 2, 50, 2, 51, 2, 311
+  modifyVarAfterOperation: (DIV), (VARIABLE), 50, (VARIABLE), 51, (VARIABLE), 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: (FALL_SPEED)
     clearRegisteredUponCode: (FALL_SPEED)
-    Unknown52: 1, 2, 45, 2, 13, 2, 51
-    Unknown52: 0, 2, 51, 0, -1, 2, 52
+    modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+    modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-    Unknown52: 3, 2, 18, 2, 51, 2, 311
+    modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
     modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 20
-        Unknown52: 1, 2, 45, 2, 13, 2, 51
-        Unknown52: 0, 2, 51, 0, -1, 2, 52
+        modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+        modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
         modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-        Unknown52: 3, 2, 18, 2, 51, 2, 311
+        modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
         modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
@@ -17011,7 +17011,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_6'
   Unknown446: s32'cmnWSB_Camera_Up_6', 100
   Unknown176: 1
   storeValue: (VARIABLE), 45, (STATIC), 60
-  Unknown52: 2, 2, 18, 0, 15, 2, 46
+  modifyVarAfterOperation: (MUL), (VARIABLE), 18, (STATIC), 15, (VARIABLE), 46
   storeValue: (VARIABLE), 47, (STATIC), 10920000
   storeValue: (VARIABLE), 48, (STATIC), 21840000
   storeValue: (VARIABLE), 49, (STATIC), 500000
@@ -17025,24 +17025,24 @@ startSubroutine: s32'cmnWSB_Slave_Up_6'
     storeValue: (VARIABLE), 46, (VARIABLE), 48
     endIf: 
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
-  Unknown52: 2, 2, 8, 2, 45, 2, 50
-  Unknown52: 0, 2, 45, 0, -1, 2, 51
+  modifyVarAfterOperation: (MUL), (VARIABLE), 8, (VARIABLE), 45, (VARIABLE), 50
+  modifyVarAfterOperation: (ADD), (VARIABLE), 45, (STATIC), -1, (VARIABLE), 51
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
-  Unknown52: 3, 2, 50, 2, 51, 2, 311
+  modifyVarAfterOperation: (DIV), (VARIABLE), 50, (VARIABLE), 51, (VARIABLE), 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: (FALL_SPEED)
     clearRegisteredUponCode: (FALL_SPEED)
-    Unknown52: 1, 2, 45, 2, 13, 2, 51
-    Unknown52: 0, 2, 51, 0, -1, 2, 52
+    modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+    modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-    Unknown52: 3, 2, 18, 2, 51, 2, 311
+    modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
     modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 50
-        Unknown52: 1, 2, 45, 2, 13, 2, 51
-        Unknown52: 0, 2, 51, 0, -1, 2, 52
+        modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+        modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
         modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-        Unknown52: 3, 2, 18, 2, 51, 2, 311
+        modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
         modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
@@ -17180,7 +17180,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_6'
   Unknown446: s32'cmnWSB_Camera_Down_6', 100
   Unknown176: 1
   storeValue: (VARIABLE), 45, (STATIC), 60
-  Unknown52: 2, 2, 18, 0, 10, 2, 46
+  modifyVarAfterOperation: (MUL), (VARIABLE), 18, (STATIC), 10, (VARIABLE), 46
   storeValue: (VARIABLE), 47, (STATIC), 4368000
   storeValue: (VARIABLE), 48, (STATIC), 8736000
   storeValue: (VARIABLE), 49, (STATIC), 250000
@@ -17194,24 +17194,24 @@ startSubroutine: s32'cmnWSB_Slave_Down_6'
     storeValue: (VARIABLE), 46, (VARIABLE), 48
     endIf: 
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
-  Unknown52: 2, 2, 8, 2, 45, 2, 50
-  Unknown52: 0, 2, 45, 0, -1, 2, 51
+  modifyVarAfterOperation: (MUL), (VARIABLE), 8, (VARIABLE), 45, (VARIABLE), 50
+  modifyVarAfterOperation: (ADD), (VARIABLE), 45, (STATIC), -1, (VARIABLE), 51
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
-  Unknown52: 3, 2, 50, 2, 51, 2, 311
+  modifyVarAfterOperation: (DIV), (VARIABLE), 50, (VARIABLE), 51, (VARIABLE), 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: (FALL_SPEED)
     clearRegisteredUponCode: (FALL_SPEED)
-    Unknown52: 1, 2, 45, 2, 13, 2, 51
-    Unknown52: 0, 2, 51, 0, -1, 2, 52
+    modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+    modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-    Unknown52: 3, 2, 18, 2, 51, 2, 311
+    modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
     modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 50
-        Unknown52: 1, 2, 45, 2, 13, 2, 51
-        Unknown52: 0, 2, 51, 0, -1, 2, 52
+        modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+        modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
         modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-        Unknown52: 3, 2, 18, 2, 51, 2, 311
+        modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
         modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
@@ -17349,7 +17349,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6'
   Unknown446: s32'cmnWSB_Camera_Bound_6', 100
   Unknown176: 1
   storeValue: (VARIABLE), 45, (STATIC), 5
-  Unknown52: 2, 2, 18, 0, 10, 2, 46
+  modifyVarAfterOperation: (MUL), (VARIABLE), 18, (STATIC), 10, (VARIABLE), 46
   storeValue: (VARIABLE), 47, (STATIC), 1092000
   storeValue: (VARIABLE), 48, (STATIC), 2184000
   storeValue: (VARIABLE), 49, (STATIC), 3600000
@@ -17363,32 +17363,32 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6'
     storeValue: (VARIABLE), 46, (VARIABLE), 48
     endIf: 
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
-  Unknown52: 2, 2, 8, 2, 45, 2, 50
-  Unknown52: 0, 2, 45, 0, -1, 2, 51
+  modifyVarAfterOperation: (MUL), (VARIABLE), 8, (VARIABLE), 45, (VARIABLE), 50
+  modifyVarAfterOperation: (ADD), (VARIABLE), 45, (STATIC), -1, (VARIABLE), 51
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
-  Unknown52: 3, 2, 50, 2, 51, 2, 311
+  modifyVarAfterOperation: (DIV), (VARIABLE), 50, (VARIABLE), 51, (VARIABLE), 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: (FALL_SPEED)
     clearRegisteredUponCode: (FALL_SPEED)
     storeValue: (VARIABLE), 45, (STATIC), 65
-    Unknown52: 2, 2, 18, 0, 10, 2, 46
+    modifyVarAfterOperation: (MUL), (VARIABLE), 18, (STATIC), 10, (VARIABLE), 46
     storeValue: (VARIABLE), 47, (STATIC), 5460000
     storeValue: (VARIABLE), 48, (STATIC), 10920000
     storeValue: (VARIABLE), 49, (STATIC), 250000
     storeValue: (VARIABLE), 50, (STATIC), 0
     storeValue: (VARIABLE), 51, (STATIC), 0
     storeValue: (VARIABLE), 52, (STATIC), 0
-    Unknown52: 1, 2, 45, 2, 13, 2, 51
-    Unknown52: 0, 2, 51, 0, -1, 2, 52
+    modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+    modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-    Unknown52: 3, 2, 18, 2, 51, 2, 311
+    modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
     modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 3
-        Unknown52: 1, 2, 45, 2, 13, 2, 51
-        Unknown52: 0, 2, 51, 0, -1, 2, 52
+        modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+        modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
         modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-        Unknown52: 3, 2, 18, 2, 51, 2, 311
+        modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
         modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
@@ -17398,7 +17398,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6'
       Unknown2077: s32'ShakeTateYoko', 2500, 0, 10, 5
       Unknown448: s32'bg_spdown_default', 100
       storeValue: (VARIABLE), 45, (STATIC), 65
-      Unknown52: 2, 2, 18, 0, 10, 2, 46
+      modifyVarAfterOperation: (MUL), (VARIABLE), 18, (STATIC), 10, (VARIABLE), 46
       storeValue: (VARIABLE), 47, (STATIC), 5460000
       storeValue: (VARIABLE), 48, (STATIC), 10920000
       storeValue: (VARIABLE), 49, (STATIC), 250000
@@ -17415,24 +17415,24 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6'
         storeValue: (VARIABLE), 46, (VARIABLE), 48
         endIf: 
       Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
-      Unknown52: 2, 2, 8, 2, 45, 2, 50
-      Unknown52: 0, 2, 45, 0, -1, 2, 51
+      modifyVarAfterOperation: (MUL), (VARIABLE), 8, (VARIABLE), 45, (VARIABLE), 50
+      modifyVarAfterOperation: (ADD), (VARIABLE), 45, (STATIC), -1, (VARIABLE), 51
       modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
-      Unknown52: 3, 2, 50, 2, 51, 2, 311
+      modifyVarAfterOperation: (DIV), (VARIABLE), 50, (VARIABLE), 51, (VARIABLE), 311
       modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
       upon: (FALL_SPEED)
         clearRegisteredUponCode: (FALL_SPEED)
-        Unknown52: 1, 2, 45, 2, 13, 2, 51
-        Unknown52: 0, 2, 51, 0, -1, 2, 52
+        modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+        modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
         modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-        Unknown52: 3, 2, 18, 2, 51, 2, 311
+        modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
         modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         upon: (FRAME_STEP)
           ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 55
-            Unknown52: 1, 2, 45, 2, 13, 2, 51
-            Unknown52: 0, 2, 51, 0, -1, 2, 52
+            modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+            modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
             modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-            Unknown52: 3, 2, 18, 2, 51, 2, 311
+            modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
             modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
             endIf: 
           endUpon: 
@@ -17576,7 +17576,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_6_4500'
   Unknown393: 
   Unknown176: 1
   storeValue: (VARIABLE), 45, (STATIC), 90
-  Unknown52: 2, 2, 18, 0, 10, 2, 46
+  modifyVarAfterOperation: (MUL), (VARIABLE), 18, (STATIC), 10, (VARIABLE), 46
   storeValue: (VARIABLE), 47, (STATIC), 21840000
   storeValue: (VARIABLE), 48, (STATIC), 43680000
   storeValue: (VARIABLE), 49, (STATIC), 500000
@@ -17590,24 +17590,24 @@ startSubroutine: s32'cmnWSB_Slave_Slide_6_4500'
     storeValue: (VARIABLE), 46, (VARIABLE), 48
     endIf: 
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
-  Unknown52: 2, 2, 8, 2, 45, 2, 50
-  Unknown52: 0, 2, 45, 0, -1, 2, 51
+  modifyVarAfterOperation: (MUL), (VARIABLE), 8, (VARIABLE), 45, (VARIABLE), 50
+  modifyVarAfterOperation: (ADD), (VARIABLE), 45, (STATIC), -1, (VARIABLE), 51
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
-  Unknown52: 3, 2, 50, 2, 51, 2, 311
+  modifyVarAfterOperation: (DIV), (VARIABLE), 50, (VARIABLE), 51, (VARIABLE), 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: (FALL_SPEED)
     clearRegisteredUponCode: (FALL_SPEED)
-    Unknown52: 1, 2, 45, 2, 13, 2, 51
-    Unknown52: 0, 2, 51, 0, -1, 2, 52
+    modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+    modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-    Unknown52: 3, 2, 18, 2, 51, 2, 311
+    modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
     modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
-        Unknown52: 1, 2, 45, 2, 13, 2, 51
-        Unknown52: 0, 2, 51, 0, -1, 2, 52
+        modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+        modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
         modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-        Unknown52: 3, 2, 18, 2, 51, 2, 311
+        modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
         modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
@@ -17748,7 +17748,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_6_4500'
   Unknown393: 
   Unknown176: 1
   storeValue: (VARIABLE), 45, (STATIC), 90
-  Unknown52: 2, 2, 18, 0, 15, 2, 46
+  modifyVarAfterOperation: (MUL), (VARIABLE), 18, (STATIC), 15, (VARIABLE), 46
   storeValue: (VARIABLE), 47, (STATIC), 43680000
   storeValue: (VARIABLE), 48, (STATIC), 87360000
   storeValue: (VARIABLE), 49, (STATIC), 500000
@@ -17762,24 +17762,24 @@ startSubroutine: s32'cmnWSB_Slave_Up_6_4500'
     storeValue: (VARIABLE), 46, (VARIABLE), 48
     endIf: 
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
-  Unknown52: 2, 2, 8, 2, 45, 2, 50
-  Unknown52: 0, 2, 45, 0, -1, 2, 51
+  modifyVarAfterOperation: (MUL), (VARIABLE), 8, (VARIABLE), 45, (VARIABLE), 50
+  modifyVarAfterOperation: (ADD), (VARIABLE), 45, (STATIC), -1, (VARIABLE), 51
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
-  Unknown52: 3, 2, 50, 2, 51, 2, 311
+  modifyVarAfterOperation: (DIV), (VARIABLE), 50, (VARIABLE), 51, (VARIABLE), 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: (FALL_SPEED)
     clearRegisteredUponCode: (FALL_SPEED)
-    Unknown52: 1, 2, 45, 2, 13, 2, 51
-    Unknown52: 0, 2, 51, 0, -1, 2, 52
+    modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+    modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-    Unknown52: 3, 2, 18, 2, 51, 2, 311
+    modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
     modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
-        Unknown52: 1, 2, 45, 2, 13, 2, 51
-        Unknown52: 0, 2, 51, 0, -1, 2, 52
+        modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+        modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
         modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-        Unknown52: 3, 2, 18, 2, 51, 2, 311
+        modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
         modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
@@ -17920,7 +17920,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_6_4500'
   Unknown393: 
   Unknown176: 1
   storeValue: (VARIABLE), 45, (STATIC), 90
-  Unknown52: 2, 2, 18, 0, 10, 2, 46
+  modifyVarAfterOperation: (MUL), (VARIABLE), 18, (STATIC), 10, (VARIABLE), 46
   storeValue: (VARIABLE), 47, (STATIC), 21840000
   storeValue: (VARIABLE), 48, (STATIC), 43680000
   storeValue: (VARIABLE), 49, (STATIC), 500000
@@ -17934,24 +17934,24 @@ startSubroutine: s32'cmnWSB_Slave_Down_6_4500'
     storeValue: (VARIABLE), 46, (VARIABLE), 48
     endIf: 
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
-  Unknown52: 2, 2, 8, 2, 45, 2, 50
-  Unknown52: 0, 2, 45, 0, -1, 2, 51
+  modifyVarAfterOperation: (MUL), (VARIABLE), 8, (VARIABLE), 45, (VARIABLE), 50
+  modifyVarAfterOperation: (ADD), (VARIABLE), 45, (STATIC), -1, (VARIABLE), 51
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
-  Unknown52: 3, 2, 50, 2, 51, 2, 311
+  modifyVarAfterOperation: (DIV), (VARIABLE), 50, (VARIABLE), 51, (VARIABLE), 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: (FALL_SPEED)
     clearRegisteredUponCode: (FALL_SPEED)
-    Unknown52: 1, 2, 45, 2, 13, 2, 51
-    Unknown52: 0, 2, 51, 0, -1, 2, 52
+    modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+    modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-    Unknown52: 3, 2, 18, 2, 51, 2, 311
+    modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
     modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
-        Unknown52: 1, 2, 45, 2, 13, 2, 51
-        Unknown52: 0, 2, 51, 0, -1, 2, 52
+        modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+        modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
         modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-        Unknown52: 3, 2, 18, 2, 51, 2, 311
+        modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
         modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
@@ -18092,7 +18092,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6_4500'
   Unknown393: 
   Unknown176: 1
   storeValue: (VARIABLE), 45, (STATIC), 90
-  Unknown52: 2, 2, 18, 0, 10, 2, 46
+  modifyVarAfterOperation: (MUL), (VARIABLE), 18, (STATIC), 10, (VARIABLE), 46
   storeValue: (VARIABLE), 47, (STATIC), 21840000
   storeValue: (VARIABLE), 48, (STATIC), 43680000
   storeValue: (VARIABLE), 49, (STATIC), 500000
@@ -18106,24 +18106,24 @@ startSubroutine: s32'cmnWSB_Slave_Bound_6_4500'
     storeValue: (VARIABLE), 46, (VARIABLE), 48
     endIf: 
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
-  Unknown52: 2, 2, 8, 2, 45, 2, 50
-  Unknown52: 0, 2, 45, 0, -1, 2, 51
+  modifyVarAfterOperation: (MUL), (VARIABLE), 8, (VARIABLE), 45, (VARIABLE), 50
+  modifyVarAfterOperation: (ADD), (VARIABLE), 45, (STATIC), -1, (VARIABLE), 51
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
-  Unknown52: 3, 2, 50, 2, 51, 2, 311
+  modifyVarAfterOperation: (DIV), (VARIABLE), 50, (VARIABLE), 51, (VARIABLE), 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: (FALL_SPEED)
     clearRegisteredUponCode: (FALL_SPEED)
-    Unknown52: 1, 2, 45, 2, 13, 2, 51
-    Unknown52: 0, 2, 51, 0, -1, 2, 52
+    modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+    modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-    Unknown52: 3, 2, 18, 2, 51, 2, 311
+    modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
     modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
-        Unknown52: 1, 2, 45, 2, 13, 2, 51
-        Unknown52: 0, 2, 51, 0, -1, 2, 52
+        modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+        modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
         modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-        Unknown52: 3, 2, 18, 2, 51, 2, 311
+        modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
         modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
@@ -18263,7 +18263,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_3_4500'
   Unknown393: 
   Unknown176: 1
   storeValue: (VARIABLE), 45, (STATIC), 90
-  Unknown52: 2, 2, 18, 0, 10, 2, 46
+  modifyVarAfterOperation: (MUL), (VARIABLE), 18, (STATIC), 10, (VARIABLE), 46
   storeValue: (VARIABLE), 47, (STATIC), 43680000
   storeValue: (VARIABLE), 48, (STATIC), 87360000
   storeValue: (VARIABLE), 49, (STATIC), 500000
@@ -18277,24 +18277,24 @@ startSubroutine: s32'cmnWSB_Slave_Slide_3_4500'
     storeValue: (VARIABLE), 46, (VARIABLE), 48
     endIf: 
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
-  Unknown52: 2, 2, 8, 2, 45, 2, 50
-  Unknown52: 0, 2, 45, 0, -1, 2, 51
+  modifyVarAfterOperation: (MUL), (VARIABLE), 8, (VARIABLE), 45, (VARIABLE), 50
+  modifyVarAfterOperation: (ADD), (VARIABLE), 45, (STATIC), -1, (VARIABLE), 51
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
-  Unknown52: 3, 2, 50, 2, 51, 2, 311
+  modifyVarAfterOperation: (DIV), (VARIABLE), 50, (VARIABLE), 51, (VARIABLE), 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: (FALL_SPEED)
     clearRegisteredUponCode: (FALL_SPEED)
-    Unknown52: 1, 2, 45, 2, 13, 2, 51
-    Unknown52: 0, 2, 51, 0, -1, 2, 52
+    modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+    modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-    Unknown52: 3, 2, 18, 2, 51, 2, 311
+    modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
     modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
-        Unknown52: 1, 2, 45, 2, 13, 2, 51
-        Unknown52: 0, 2, 51, 0, -1, 2, 52
+        modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+        modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
         modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-        Unknown52: 3, 2, 18, 2, 51, 2, 311
+        modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
         modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
@@ -18435,7 +18435,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_3_4500'
   Unknown393: 
   Unknown176: 1
   storeValue: (VARIABLE), 45, (STATIC), 90
-  Unknown52: 2, 2, 18, 0, 15, 2, 46
+  modifyVarAfterOperation: (MUL), (VARIABLE), 18, (STATIC), 15, (VARIABLE), 46
   storeValue: (VARIABLE), 47, (STATIC), 54600000
   storeValue: (VARIABLE), 48, (STATIC), 109200000
   storeValue: (VARIABLE), 49, (STATIC), 500000
@@ -18449,24 +18449,24 @@ startSubroutine: s32'cmnWSB_Slave_Up_3_4500'
     storeValue: (VARIABLE), 46, (VARIABLE), 48
     endIf: 
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
-  Unknown52: 2, 2, 8, 2, 45, 2, 50
-  Unknown52: 0, 2, 45, 0, -1, 2, 51
+  modifyVarAfterOperation: (MUL), (VARIABLE), 8, (VARIABLE), 45, (VARIABLE), 50
+  modifyVarAfterOperation: (ADD), (VARIABLE), 45, (STATIC), -1, (VARIABLE), 51
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
-  Unknown52: 3, 2, 50, 2, 51, 2, 311
+  modifyVarAfterOperation: (DIV), (VARIABLE), 50, (VARIABLE), 51, (VARIABLE), 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: (FALL_SPEED)
     clearRegisteredUponCode: (FALL_SPEED)
-    Unknown52: 1, 2, 45, 2, 13, 2, 51
-    Unknown52: 0, 2, 51, 0, -1, 2, 52
+    modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+    modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-    Unknown52: 3, 2, 18, 2, 51, 2, 311
+    modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
     modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
-        Unknown52: 1, 2, 45, 2, 13, 2, 51
-        Unknown52: 0, 2, 51, 0, -1, 2, 52
+        modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+        modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
         modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-        Unknown52: 3, 2, 18, 2, 51, 2, 311
+        modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
         modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
@@ -18607,7 +18607,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_3_4500'
   Unknown393: 
   Unknown176: 1
   storeValue: (VARIABLE), 45, (STATIC), 90
-  Unknown52: 2, 2, 18, 0, 10, 2, 46
+  modifyVarAfterOperation: (MUL), (VARIABLE), 18, (STATIC), 10, (VARIABLE), 46
   storeValue: (VARIABLE), 47, (STATIC), 21840000
   storeValue: (VARIABLE), 48, (STATIC), 43680000
   storeValue: (VARIABLE), 49, (STATIC), 500000
@@ -18621,24 +18621,24 @@ startSubroutine: s32'cmnWSB_Slave_Down_3_4500'
     storeValue: (VARIABLE), 46, (VARIABLE), 48
     endIf: 
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
-  Unknown52: 2, 2, 8, 2, 45, 2, 50
-  Unknown52: 0, 2, 45, 0, -1, 2, 51
+  modifyVarAfterOperation: (MUL), (VARIABLE), 8, (VARIABLE), 45, (VARIABLE), 50
+  modifyVarAfterOperation: (ADD), (VARIABLE), 45, (STATIC), -1, (VARIABLE), 51
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
-  Unknown52: 3, 2, 50, 2, 51, 2, 311
+  modifyVarAfterOperation: (DIV), (VARIABLE), 50, (VARIABLE), 51, (VARIABLE), 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: (FALL_SPEED)
     clearRegisteredUponCode: (FALL_SPEED)
-    Unknown52: 1, 2, 45, 2, 13, 2, 51
-    Unknown52: 0, 2, 51, 0, -1, 2, 52
+    modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+    modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-    Unknown52: 3, 2, 18, 2, 51, 2, 311
+    modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
     modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
-        Unknown52: 1, 2, 45, 2, 13, 2, 51
-        Unknown52: 0, 2, 51, 0, -1, 2, 52
+        modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+        modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
         modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-        Unknown52: 3, 2, 18, 2, 51, 2, 311
+        modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
         modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
@@ -18779,7 +18779,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_3_4500'
   Unknown393: 
   Unknown176: 1
   storeValue: (VARIABLE), 45, (STATIC), 90
-  Unknown52: 2, 2, 18, 0, 10, 2, 46
+  modifyVarAfterOperation: (MUL), (VARIABLE), 18, (STATIC), 10, (VARIABLE), 46
   storeValue: (VARIABLE), 47, (STATIC), 43680000
   storeValue: (VARIABLE), 48, (STATIC), 87360000
   storeValue: (VARIABLE), 49, (STATIC), 500000
@@ -18793,24 +18793,24 @@ startSubroutine: s32'cmnWSB_Slave_Bound_3_4500'
     storeValue: (VARIABLE), 46, (VARIABLE), 48
     endIf: 
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
-  Unknown52: 2, 2, 8, 2, 45, 2, 50
-  Unknown52: 0, 2, 45, 0, -1, 2, 51
+  modifyVarAfterOperation: (MUL), (VARIABLE), 8, (VARIABLE), 45, (VARIABLE), 50
+  modifyVarAfterOperation: (ADD), (VARIABLE), 45, (STATIC), -1, (VARIABLE), 51
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
-  Unknown52: 3, 2, 50, 2, 51, 2, 311
+  modifyVarAfterOperation: (DIV), (VARIABLE), 50, (VARIABLE), 51, (VARIABLE), 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: (FALL_SPEED)
     clearRegisteredUponCode: (FALL_SPEED)
-    Unknown52: 1, 2, 45, 2, 13, 2, 51
-    Unknown52: 0, 2, 51, 0, -1, 2, 52
+    modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+    modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-    Unknown52: 3, 2, 18, 2, 51, 2, 311
+    modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
     modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
-        Unknown52: 1, 2, 45, 2, 13, 2, 51
-        Unknown52: 0, 2, 51, 0, -1, 2, 52
+        modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+        modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
         modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-        Unknown52: 3, 2, 18, 2, 51, 2, 311
+        modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
         modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
@@ -18950,7 +18950,7 @@ startSubroutine: s32'cmnWSB_Slave_Slide_3_21000'
   Unknown393: 
   Unknown176: 1
   storeValue: (VARIABLE), 45, (STATIC), 90
-  Unknown52: 2, 2, 18, 0, 15, 2, 46
+  modifyVarAfterOperation: (MUL), (VARIABLE), 18, (STATIC), 15, (VARIABLE), 46
   storeValue: (VARIABLE), 47, (STATIC), 65520000
   storeValue: (VARIABLE), 48, (STATIC), 131040000
   storeValue: (VARIABLE), 49, (STATIC), 1500000
@@ -18964,29 +18964,29 @@ startSubroutine: s32'cmnWSB_Slave_Slide_3_21000'
     storeValue: (VARIABLE), 46, (VARIABLE), 48
     endIf: 
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
-  Unknown52: 2, 2, 8, 2, 45, 2, 50
-  Unknown52: 0, 2, 45, 0, -1, 2, 51
+  modifyVarAfterOperation: (MUL), (VARIABLE), 8, (VARIABLE), 45, (VARIABLE), 50
+  modifyVarAfterOperation: (ADD), (VARIABLE), 45, (STATIC), -1, (VARIABLE), 51
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
-  Unknown52: 3, 2, 50, 2, 51, 2, 311
+  modifyVarAfterOperation: (DIV), (VARIABLE), 50, (VARIABLE), 51, (VARIABLE), 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: (FALL_SPEED)
     clearRegisteredUponCode: (FALL_SPEED)
-    Unknown52: 1, 2, 45, 2, 13, 2, 51
+    modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
     Unknown114: 
     modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
     Unknown196: 23, 131, 2, 49, 2, 46, 2, 51
     modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
     Unknown115: 
-    Unknown52: 0, 2, 51, 0, -1, 2, 52
+    modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-    Unknown52: 3, 2, 18, 2, 51, 2, 311
+    modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
     modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
-        Unknown52: 1, 2, 45, 2, 13, 2, 51
-        Unknown52: 0, 2, 51, 0, -1, 2, 52
+        modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+        modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
         modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-        Unknown52: 3, 2, 18, 2, 51, 2, 311
+        modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
         modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
@@ -19127,7 +19127,7 @@ startSubroutine: s32'cmnWSB_Slave_Up_3_21000'
   Unknown393: 
   Unknown176: 1
   storeValue: (VARIABLE), 45, (STATIC), 90
-  Unknown52: 2, 2, 18, 0, 15, 2, 46
+  modifyVarAfterOperation: (MUL), (VARIABLE), 18, (STATIC), 15, (VARIABLE), 46
   storeValue: (VARIABLE), 47, (STATIC), 65520000
   storeValue: (VARIABLE), 48, (STATIC), 131040000
   storeValue: (VARIABLE), 49, (STATIC), 1500000
@@ -19141,29 +19141,29 @@ startSubroutine: s32'cmnWSB_Slave_Up_3_21000'
     storeValue: (VARIABLE), 46, (VARIABLE), 48
     endIf: 
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
-  Unknown52: 2, 2, 8, 2, 45, 2, 50
-  Unknown52: 0, 2, 45, 0, -1, 2, 51
+  modifyVarAfterOperation: (MUL), (VARIABLE), 8, (VARIABLE), 45, (VARIABLE), 50
+  modifyVarAfterOperation: (ADD), (VARIABLE), 45, (STATIC), -1, (VARIABLE), 51
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
-  Unknown52: 3, 2, 50, 2, 51, 2, 311
+  modifyVarAfterOperation: (DIV), (VARIABLE), 50, (VARIABLE), 51, (VARIABLE), 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: (FALL_SPEED)
     clearRegisteredUponCode: (FALL_SPEED)
-    Unknown52: 1, 2, 45, 2, 13, 2, 51
+    modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
     Unknown114: 
     modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
     Unknown196: 23, 131, 2, 49, 2, 46, 2, 51
     modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
     Unknown115: 
-    Unknown52: 0, 2, 51, 0, -1, 2, 52
+    modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-    Unknown52: 3, 2, 18, 2, 51, 2, 311
+    modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
     modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
-        Unknown52: 1, 2, 45, 2, 13, 2, 51
-        Unknown52: 0, 2, 51, 0, -1, 2, 52
+        modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+        modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
         modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-        Unknown52: 3, 2, 18, 2, 51, 2, 311
+        modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
         modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
@@ -19304,7 +19304,7 @@ startSubroutine: s32'cmnWSB_Slave_Down_3_21000'
   Unknown393: 
   Unknown176: 1
   storeValue: (VARIABLE), 45, (STATIC), 90
-  Unknown52: 2, 2, 18, 0, 10, 2, 46
+  modifyVarAfterOperation: (MUL), (VARIABLE), 18, (STATIC), 10, (VARIABLE), 46
   storeValue: (VARIABLE), 47, (STATIC), 43680000
   storeValue: (VARIABLE), 48, (STATIC), 87360000
   storeValue: (VARIABLE), 49, (STATIC), 1500000
@@ -19318,29 +19318,29 @@ startSubroutine: s32'cmnWSB_Slave_Down_3_21000'
     storeValue: (VARIABLE), 46, (VARIABLE), 48
     endIf: 
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
-  Unknown52: 2, 2, 8, 2, 45, 2, 50
-  Unknown52: 0, 2, 45, 0, -1, 2, 51
+  modifyVarAfterOperation: (MUL), (VARIABLE), 8, (VARIABLE), 45, (VARIABLE), 50
+  modifyVarAfterOperation: (ADD), (VARIABLE), 45, (STATIC), -1, (VARIABLE), 51
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
-  Unknown52: 3, 2, 50, 2, 51, 2, 311
+  modifyVarAfterOperation: (DIV), (VARIABLE), 50, (VARIABLE), 51, (VARIABLE), 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: (FALL_SPEED)
     clearRegisteredUponCode: (FALL_SPEED)
-    Unknown52: 1, 2, 45, 2, 13, 2, 51
+    modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
     Unknown114: 
     modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
     Unknown196: 23, 131, 2, 49, 2, 46, 2, 51
     modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
     Unknown115: 
-    Unknown52: 0, 2, 51, 0, -1, 2, 52
+    modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-    Unknown52: 3, 2, 18, 2, 51, 2, 311
+    modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
     modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
-        Unknown52: 1, 2, 45, 2, 13, 2, 51
-        Unknown52: 0, 2, 51, 0, -1, 2, 52
+        modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+        modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
         modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-        Unknown52: 3, 2, 18, 2, 51, 2, 311
+        modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
         modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
@@ -19481,7 +19481,7 @@ startSubroutine: s32'cmnWSB_Slave_Bound_3_21000'
   Unknown393: 
   Unknown176: 1
   storeValue: (VARIABLE), 45, (STATIC), 90
-  Unknown52: 2, 2, 18, 0, 10, 2, 46
+  modifyVarAfterOperation: (MUL), (VARIABLE), 18, (STATIC), 10, (VARIABLE), 46
   storeValue: (VARIABLE), 47, (STATIC), 43680000
   storeValue: (VARIABLE), 48, (STATIC), 87360000
   storeValue: (VARIABLE), 49, (STATIC), 1500000
@@ -19495,29 +19495,29 @@ startSubroutine: s32'cmnWSB_Slave_Bound_3_21000'
     storeValue: (VARIABLE), 46, (VARIABLE), 48
     endIf: 
   Unknown196: 23, 131, 2, 49, 2, 46, 2, 45
-  Unknown52: 2, 2, 8, 2, 45, 2, 50
-  Unknown52: 0, 2, 45, 0, -1, 2, 51
+  modifyVarAfterOperation: (MUL), (VARIABLE), 8, (VARIABLE), 45, (VARIABLE), 50
+  modifyVarAfterOperation: (ADD), (VARIABLE), 45, (STATIC), -1, (VARIABLE), 51
   modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 45
-  Unknown52: 3, 2, 50, 2, 51, 2, 311
+  modifyVarAfterOperation: (DIV), (VARIABLE), 50, (VARIABLE), 51, (VARIABLE), 311
   modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
   upon: (FALL_SPEED)
     clearRegisteredUponCode: (FALL_SPEED)
-    Unknown52: 1, 2, 45, 2, 13, 2, 51
+    modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
     Unknown114: 
     modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
     Unknown196: 23, 131, 2, 49, 2, 46, 2, 51
     modifyVar: (MUL), (VARIABLE), 51, (STATIC), -1
     Unknown115: 
-    Unknown52: 0, 2, 51, 0, -1, 2, 52
+    modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
     modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-    Unknown52: 3, 2, 18, 2, 51, 2, 311
+    modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
     modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 80
-        Unknown52: 1, 2, 45, 2, 13, 2, 51
-        Unknown52: 0, 2, 51, 0, -1, 2, 52
+        modifyVarAfterOperation: (SUB), (VARIABLE), 45, (VARIABLE), 13, (VARIABLE), 51
+        modifyVarAfterOperation: (ADD), (VARIABLE), 51, (STATIC), -1, (VARIABLE), 52
         modifyVar: (MUL), (VARIABLE), 51, (VARIABLE), 52
-        Unknown52: 3, 2, 18, 2, 51, 2, 311
+        modifyVarAfterOperation: (DIV), (VARIABLE), 18, (VARIABLE), 51, (VARIABLE), 311
         modifyVar: (MUL), (VARIABLE), 311, (STATIC), 2
         endIf: 
       endUpon: 
@@ -19759,7 +19759,7 @@ startSubroutine: s32'cmnWSB_Effect_Angle'
         Unknown42: 23, 12, 3, 12
         Unknown454: 12
         Unknown453: 12
-        Unknown2500: 15, 3, 2, 319, 0, 0
+        Unknown2500: 15, 3, (VARIABLE), 319, (STATIC), 0
           Unknown453: 3
           endIf: 
         endIf: 
@@ -21108,7 +21108,7 @@ startSubroutine: s32'cmn_shotground'
 startSubroutine: s32'cmnZokuseiDmgCheckFunc'
   storeValue: (VARIABLE), 45, (STATIC), 0
   Unknown2498: 3, 2, 330
-    Unknown2500: 10, 3, 2, 359, 0, 0
+    Unknown2500: 10, 3, (VARIABLE), 359, (STATIC), 0
       Unknown2498: 3, 2, 24
         storeValue: (VARIABLE), 45, (STATIC), 1
         endIf: 
@@ -21881,7 +21881,7 @@ beginState: s32'cmn_FinishCamera_Screen_Effect'
     Unknown53: 23, 2, 46, 22, 2, 18
     Unknown53: 23, 2, 47, 22, 2, 8
     modifyVar: (MUL), (VARIABLE), 47, (STATIC), -1
-    Unknown52: 2, 2, 47, 0, 2, 2, 48
+    modifyVarAfterOperation: (MUL), (VARIABLE), 47, (STATIC), 2, (VARIABLE), 48
     ifOperation: (IS_LESSER), (VARIABLE), 46, (VARIABLE), 47
       Unknown41: 22
       Unknown2593: 0, 1000
@@ -21891,7 +21891,7 @@ beginState: s32'cmn_FinishCamera_Screen_Effect'
         Unknown2593: 0, 2000
         Unknown40: 
         endIf: 
-      Unknown2500: 11, 22, 2, 18, 0, 50000
+      Unknown2500: 11, 22, (VARIABLE), 18, (STATIC), 50000
         Unknown41: 22
         Unknown2593: 0, 500
         Unknown40: 
@@ -21949,7 +21949,7 @@ beginState: s32'cmn_FinishCamera_Screen_NoProce'
     Unknown53: 23, 2, 46, 22, 2, 18
     Unknown53: 23, 2, 47, 22, 2, 8
     modifyVar: (MUL), (VARIABLE), 47, (STATIC), -1
-    Unknown52: 2, 2, 47, 0, 2, 2, 48
+    modifyVarAfterOperation: (MUL), (VARIABLE), 47, (STATIC), 2, (VARIABLE), 48
     ifOperation: (IS_LESSER), (VARIABLE), 46, (VARIABLE), 47
       Unknown41: 22
       Unknown2593: 0, 1000
@@ -21959,7 +21959,7 @@ beginState: s32'cmn_FinishCamera_Screen_NoProce'
         Unknown2593: 0, 2000
         Unknown40: 
         endIf: 
-      Unknown2500: 11, 22, 2, 18, 0, 50000
+      Unknown2500: 11, 22, (VARIABLE), 18, (STATIC), 50000
         Unknown41: 22
         Unknown2593: 0, 500
         Unknown40: 
@@ -22751,7 +22751,7 @@ startSubroutine: s32'cmn_FinishCamera_Init'
     Unknown53: 23, 2, 46, 22, 2, 18
     Unknown53: 23, 2, 47, 22, 2, 8
     modifyVar: (MUL), (VARIABLE), 47, (STATIC), -1
-    Unknown52: 2, 2, 47, 0, 2, 2, 48
+    modifyVarAfterOperation: (MUL), (VARIABLE), 47, (STATIC), 2, (VARIABLE), 48
     ifOperation: (IS_LESSER), (VARIABLE), 46, (VARIABLE), 47
       Unknown41: 22
       Unknown2593: 0, 1000
@@ -22761,7 +22761,7 @@ startSubroutine: s32'cmn_FinishCamera_Init'
         Unknown2593: 0, 2000
         Unknown40: 
         endIf: 
-      Unknown2500: 11, 22, 2, 18, 0, 50000
+      Unknown2500: 11, 22, (VARIABLE), 18, (STATIC), 50000
         Unknown41: 22
         Unknown2593: 0, 500
         Unknown40: 
@@ -23115,7 +23115,7 @@ beginState: s32'cmn_DebugBomb'
   endState: 
 
 startSubroutine: s32'cmnDownZokuseiAtkParam'
-  Unknown2500: 9, 22, 2, 307, 0, 0
+  Unknown2500: 9, 22, (VARIABLE), 307, (STATIC), 0
     storeValue: (VARIABLE), 61, (STATIC), 10000
     storeValue: (VARIABLE), 62, (STATIC), 30000
     storeValue: (VARIABLE), 63, (STATIC), 12500
@@ -23124,7 +23124,7 @@ startSubroutine: s32'cmnDownZokuseiAtkParam'
     storeValue: (VARIABLE), 66, (STATIC), 10
     storeValue: (VARIABLE), 67, (STATIC), 80
     endIf: 
-  Unknown2500: 9, 22, 2, 307, 0, 1
+  Unknown2500: 9, 22, (VARIABLE), 307, (STATIC), 1
     storeValue: (VARIABLE), 61, (STATIC), 10000
     storeValue: (VARIABLE), 62, (STATIC), 30000
     storeValue: (VARIABLE), 63, (STATIC), 12500
@@ -23133,7 +23133,7 @@ startSubroutine: s32'cmnDownZokuseiAtkParam'
     storeValue: (VARIABLE), 66, (STATIC), 10
     storeValue: (VARIABLE), 67, (STATIC), 80
     endIf: 
-  Unknown2500: 9, 22, 2, 307, 0, 2
+  Unknown2500: 9, 22, (VARIABLE), 307, (STATIC), 2
     storeValue: (VARIABLE), 61, (STATIC), 10000
     storeValue: (VARIABLE), 62, (STATIC), 25000
     storeValue: (VARIABLE), 63, (STATIC), 15000
@@ -23142,7 +23142,7 @@ startSubroutine: s32'cmnDownZokuseiAtkParam'
     storeValue: (VARIABLE), 66, (STATIC), 10
     storeValue: (VARIABLE), 67, (STATIC), 60
     endIf: 
-  Unknown2500: 9, 22, 2, 307, 0, 3
+  Unknown2500: 9, 22, (VARIABLE), 307, (STATIC), 3
     storeValue: (VARIABLE), 61, (STATIC), 10000
     storeValue: (VARIABLE), 62, (STATIC), 20000
     storeValue: (VARIABLE), 63, (STATIC), 10000
@@ -24067,19 +24067,19 @@ beginState: s32'cmnRomanCancel_Object_Pre'
       endUpon: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 1
       Unknown450: s32'cmn_start_rc02'
-      Unknown364: '0xFF00000014000000FF000000FF000000'
+      Unknown364: 255, 20, 255, 255
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
       Unknown450: s32'cmn_start_rc01'
-      Unknown364: '0x0F00000014000000FF000000FF000000'
+      Unknown364: 15, 20, 255, 255
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 3
       Unknown450: s32'cmn_start_rc04'
-      Unknown364: '0xFF0000001400000016000000FF000000'
+      Unknown364: 255, 20, 22, 255
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 4
       Unknown450: s32'cmn_start_rc03'
-      Unknown364: '0xFF000000FF0000000F0000000F000000'
+      Unknown364: 255, 255, 15, 15
       endIf: 
     endUpon: 
   sprite: s32'null', 30
@@ -24093,16 +24093,16 @@ beginState: s32'cmnRomanCancel_Object'
     Unknown294: 1
     Unknown450: s32'cmn_rc_hit'
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 1
-      Unknown364: '0xFF00000014000000FF000000FF000000'
+      Unknown364: 255, 20, 255, 255
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
-      Unknown364: '0x0F00000014000000FF000000FF000000'
+      Unknown364: 15, 20, 255, 255
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 3
-      Unknown364: '0xFF0000001400000016000000FF000000'
+      Unknown364: 255, 20, 22, 255
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 4
-      Unknown364: '0xFF000000FF0000000F0000000F000000'
+      Unknown364: 255, 255, 15, 15
       endIf: 
     Unknown188: 1000
     Unknown191: 80
@@ -24181,11 +24181,11 @@ beginState: s32'cmnRomanCancel_Object'
       hitAirPushbackY: 0, 20000
       Unknown778: 0, 1400
       pushbackX: 60
-      setForcedProration: 50
+      setForcedProration: 70
       Unknown1001: 15
       groundHitEffect: 19
       airHitEffect: 19
-      Unknown964: 39
+      setGuardBreakDuration: 39
       Unknown1045: 4, s32'cmn_yellow_rc_hit'
       Unknown785: 0
       Unknown786: 0

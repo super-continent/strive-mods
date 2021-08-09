@@ -5178,7 +5178,6 @@ beginState: s32'NmlAtk5A'
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
     Unknown2011: 1, 0
-    pushbackX: 60
     endUpon: 
   sprite: s32'zat200_00', 3
   Unknown446: s32'StandAtk_shadow_start01', 100
@@ -5211,7 +5210,7 @@ beginState: s32'NmlAtk6A'
     storeValue: (VARIABLE), 338, (STATIC), 10000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
-    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
     airHitEffect: 11
     hitAirPushbackX: 0, 25000
     hitAirPushbackY: 0, 15000
@@ -5312,7 +5311,6 @@ beginState: s32'NmlAtk2A'
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
     Unknown2011: 1, 0
-    pushbackX: 60
     endUpon: 
   sprite: s32'zat230_00', 2
   Unknown446: s32'230Atk', 100
@@ -5376,9 +5374,6 @@ beginState: s32'NmlAtk5B'
     pushbackX: 80
     upon: (GUARD)
       extendPushboxX: 50000
-      endUpon: 
-    upon: (HIT)
-      extendPushboxX: 20000
       endUpon: 
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -250000

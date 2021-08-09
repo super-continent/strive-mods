@@ -3543,7 +3543,6 @@ beginState: s32'NmlAtk5A'
     storeValue: (VARIABLE), 343, (STATIC), -350000
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
-    pushbackX: 60
     endUpon: 
   Unknown2030: s32'NmlAtk5A'
   Unknown24: s32'Renda', 2, 0
@@ -3582,7 +3581,7 @@ beginState: s32'NmlAtk6A'
     storeValue: (VARIABLE), 338, (STATIC), 10000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
-    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
     airHitEffect: 8
     hitAirPushbackX: 0, 28000
     hitAirPushbackY: 0, 26000
@@ -3671,7 +3670,6 @@ beginState: s32'NmlAtk2A'
     storeValue: (VARIABLE), 343, (STATIC), -400000
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
-    pushbackX: 60
     endUpon: 
   Unknown2030: s32'NmlAtk2A'
   Unknown24: s32'Renda', 2, 0
@@ -5179,8 +5177,8 @@ startSubroutine: s32'Dodge_Blend'
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 8
     Unknown2266: s32'anj401_10'
     endIf: 
-  Unknown52: 3, 0, 2000, 0, 2, 2, 47
-  Unknown52: 3, 0, 100000, 2, 47, 2, 47
+  modifyVarAfterOperation: (DIV), (STATIC), 2000, (STATIC), 2, (VARIABLE), 47
+  modifyVarAfterOperation: (DIV), (STATIC), 100000, (VARIABLE), 47, (VARIABLE), 47
   modifyVar: (ADD), (VARIABLE), 46, (STATIC), 500
   upon: (FRAME_STEP)
     modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
@@ -5642,7 +5640,7 @@ beginState: s32'Shin'
       Unknown14: s32'landing'
       endUpon: 
     Unknown1058: 1
-    Unknown2100: '0x0000000080C7FEFF0000000000000000'
+    Unknown2100: 0, -80000, 0, 0
     endUpon: 
   sprite: s32'anj405_00', 2
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
@@ -6061,8 +6059,8 @@ beginState: s32'KachoFugetsu'
     callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
     upon: 86
       clearRegisteredUponCode: 86
-      Unknown964: 50
-      Unknown1167: 1
+      setGuardBreakDuration: 50
+      enableGuardBreak: 1
       pushbackX: 100
       tumbleDuration: 50
       hitAirPushbackX: 0, 10000
@@ -6295,7 +6293,7 @@ beginState: s32'KachoFugetsu'
   hitAirPushbackY: 0, 20000
   hitSoftKnockdown: 0
   Unknown947: 1
-  Unknown1069: 0, 0, 0, 0, 1, 22, 2, 319
+  Unknown1069: (STATIC), 0, (STATIC), 0, 1, 22, (VARIABLE), 319
   Unknown788: 1
   Unknown955: 10
   Unknown953: 1
@@ -6546,7 +6544,7 @@ beginState: s32'KachoFugetsu'
         endIf: 
       endUpon: 
     endUpon: 
-  Unknown1069: 0, 0, 0, 0, 1, 22, 2, 319
+  Unknown1069: (STATIC), 0, (STATIC), 0, 1, 22, (VARIABLE), 319
   Unknown788: 1
   Unknown955: 10
   Unknown953: 1

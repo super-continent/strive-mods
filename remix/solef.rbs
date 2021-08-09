@@ -808,7 +808,7 @@ beginState: s32'Crater'
         Unknown42: 23, 12, 3, 12
         Unknown454: 12
         Unknown453: 12
-        Unknown2500: 15, 3, 2, 319, 0, 0
+        Unknown2500: 15, 3, (VARIABLE), 319, (STATIC), 0
           Unknown453: 3
           endIf: 
         endIf: 
@@ -2264,7 +2264,7 @@ beginState: s32'Cam_Dragon'
   Unknown2574: 0, 0, 0, 38000, 0, 24, 0, 0, 0, 16, s32'accel_brake', s32'brake'
   Unknown2551: 0, 166000, 0, 400000, 0, 205000, 0, 64, 0, 300, 0, 0, s32'accel_brake', s32'brake'
   sprite: s32'null', 1
-  Unknown2500: 9, 22, 2, 279, 0, 0
+  Unknown2500: 9, 22, (VARIABLE), 279, (STATIC), 0
     Unknown14: s32'finish'
     endIf: 
   else: 
