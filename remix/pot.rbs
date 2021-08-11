@@ -3266,37 +3266,35 @@ beginState: s32'CmnActMatchWin'
       Unknown446: s32'800cs_eff', 100
       endIf: 
     Unknown39: 0, 125
-    Unknown613: s16'vxxx402demo'
-    Unknown2243: s32'prev', -2147483618
-    endIf: 
-  Unknown39: 0, 257
-  Unknown613: s16'vxxx602demo'
-  Unknown2243: s32'prev', -2147483618
-  Unknown1922: 1
-  Unknown1707: 40
-  endIf: 
+      Unknown613: s16'vxxx402demo'
+      Unknown2243: s32'prev', -2147483618
+      endIf: 
+    Unknown39: 0, 257
+      Unknown613: s16'vxxx602demo'
+      Unknown2243: s32'prev', -2147483618
+      Unknown1922: 1
+      Unknown1707: 40
+      endIf: 
+    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 15
+      ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 104
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 5000
+        Unknown248: 2, 45
+        endIf: 
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+      Unknown2592: 0, 0
+      Unknown2592: 1000, 30
+      Unknown41: 22
+      Unknown2592: 0, 0
+      Unknown40: 
+      Unknown2588: 500, 30
+      Unknown41: 22
+      Unknown2588: 500, 30
+      Unknown40: 
+      endIf: 
+    endUpon: 
+  endState: 
 
-ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 15
-  ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 104
-    modifyVar: (ADD), (VARIABLE), 45, (STATIC), 5000
-    Unknown248: 2, 45
-    endIf: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
-  Unknown2592: 0, 0
-  Unknown2592: 1000, 30
-  Unknown41: 22
-  Unknown2592: 0, 0
-  Unknown40: 
-  Unknown2588: 500, 30
-  Unknown41: 22
-  Unknown2588: 500, 30
-  Unknown40: 
-  endIf: 
-
-endUpon: 
-endState: 
 beginState: s32'CmnActLose'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmnactlose'
@@ -3483,7 +3481,7 @@ beginState: s32'NmlAtk6A'
     hitAirPushbackX: 0, 5000
     hitAirPushbackY: 0, 30000
     Unknown770: 0, 60, 0, 5, 0, 11
-    Unknown778: 0, 2000
+    hitGravity: (STATIC), 2000
     Unknown783: 0, 200, 0, 10, 0, 35
     counterHitSoftKnockdown: 0
     callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
@@ -3603,7 +3601,7 @@ beginState: s32'NmlAtk5B'
     hitAirPushbackX: 0, 2000
     hitAirPushbackY: 0, 40000
     Unknown770: 0, 60, 0, 5, 0, 11
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 200, 0, 10, 0, 35
     enableJumpCancel: 1
     addGatlingOption: s32'NmlAtk6A'
@@ -3733,7 +3731,7 @@ beginState: s32'NmlAtk2B'
     hitAirPushbackX: 0, 5000
     hitAirPushbackY: 0, 30000
     Unknown770: 0, 60, 0, 5, 0, 11
-    Unknown778: 0, 1000
+    hitGravity: (STATIC), 1000
     Unknown783: 0, 100, 0, 10, 0, 35
     Unknown1005: 150
     Unknown1004: 150
@@ -3793,7 +3791,7 @@ beginState: s32'NmlAtk5CNear'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, -100000
     Unknown770: 0, 70, 0, 6, 0, 10
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown808: 1000
     Unknown783: 0, 50, 0, 10, 0, 20
     groundBounceYVelocityPercent: 100
@@ -3907,7 +3905,7 @@ beginState: s32'NmlAtk2C'
     hitAirPushbackX: 0, 5000
     hitAirPushbackY: 0, 50000
     Unknown770: 0, 60, 0, 5, 0, 11
-    Unknown778: 0, 500
+    hitGravity: (STATIC), 500
     Unknown783: 0, 100, 0, 10, 0, 35
     groundCounterHitEffect: 15
     staggerDuration: 35
@@ -4075,7 +4073,7 @@ beginState: s32'NmlAtk2D'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 95000
     Unknown770: 0, 60, 0, 4, 0, 10
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 200, 0, 14, 0, 50
     callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
     upon: (HIT_OR_GUARD)
@@ -4682,7 +4680,7 @@ beginState: s32'NmlAtkAir5D'
     Unknown760: 0, 70, 0, 6, 0, 10
     hitAirPushbackY: 0, 20000
     Unknown770: 0, 60, 0, 5, 0, 11
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 250, 0, 10, 0, 35
     counterhitAirPushbackY: 0, 60000
     Unknown784: '0x00000000C8000000000000000F0000000000000017000000'
@@ -4832,7 +4830,7 @@ beginState: s32'ThrowExe'
     Unknown760: 0, 70, 0, 6, 0, 10
     hitAirPushbackY: 0, -60000
     Unknown770: 0, 50, 0, 4, 0, 6
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown808: 0
     Unknown783: 0, 150, 0, 10, 0, 25
     groundBounceCount: 1
@@ -4938,7 +4936,7 @@ beginState: s32'AirThrowExe'
     Unknown711: 4
     Unknown1045: 4, s32'cmn_hit_sp_long'
     damage: 0, 90
-    Unknown778: 0, 1925
+    hitGravity: (STATIC), 1925
     hitAirPushbackY: 0, -17500
     hitAirPushbackX: 0, 1750
     groundHitEffect: 8
@@ -5213,7 +5211,7 @@ beginState: s32'PotemkinBusterExe'
   groundHitEffect: 8
   hitAirPushbackY: 0, 5000
   hitAirPushbackX: 0, -30000
-  Unknown778: 0, 1600
+  hitGravity: (STATIC), 1600
   Unknown1127: 1
   Unknown1094: 1
   callSubroutine: s32'cmnthrow_Redroman'
@@ -5626,7 +5624,7 @@ beginState: s32'HeatKnucle'
   airHitEffect: 9
   hitAirPushbackX: 0, 0
   hitAirPushbackY: 0, 0
-  Unknown778: 0, 0
+  hitGravity: (STATIC), 0
   hitStop: 0
   Unknown996: 0, 200, 200
   Unknown1045: 2, s32'Pot_knuckle_hit'
@@ -5663,7 +5661,7 @@ beginState: s32'HeatKnucle'
   groundHitEffect: 8
   hitAirPushbackX: 0, 35000
   hitAirPushbackY: 0, 43750
-  Unknown778: 0, 2250
+  hitGravity: (STATIC), 2250
   Unknown1111: 0
   hitStop: 14
   Unknown996: 0, 0, 0
@@ -5779,7 +5777,7 @@ beginState: s32'MegaFistFront'
     Unknown760: 0, 70, 0, 6, 0, 10
     hitAirPushbackY: 0, -90000
     Unknown770: 0, 50, 0, 4, 0, 6
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown808: 0
     Unknown783: 0, 150, 0, 10, 0, 25
     groundBounceCount: 1
@@ -5854,7 +5852,7 @@ beginState: s32'MegaFistBack'
     Unknown760: 0, 70, 0, 6, 0, 10
     hitAirPushbackY: 0, -90000
     Unknown770: 0, 50, 0, 4, 0, 6
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown808: 0
     Unknown783: 0, 150, 0, 10, 0, 25
     groundBounceCount: 1
@@ -5975,7 +5973,7 @@ beginState: s32'GarudaImpact'
       enableGuardBreak: 1
       hitAirPushbackX: 0, 15000
       hitAirPushbackY: 0, 35000
-      Unknown778: 0, 3000
+      hitGravity: (STATIC), 3000
       endUpon: 
     upon: (HIT_OR_GUARD)
       Unknown2121: s32'POT_FinishCamera_Pattern'
@@ -6099,7 +6097,7 @@ beginState: s32'HeavenlyPBusterExe'
     callSubroutine: s32'cmnAtkTemplNage_AirBase'
     Unknown711: 4
     damage: 0, 220
-    Unknown778: 0, 1925
+    hitGravity: (STATIC), 1925
     hitAirPushbackY: 0, -17500
     hitAirPushbackX: 0, 1750
     groundHitEffect: 8
@@ -6139,202 +6137,197 @@ beginState: s32'HeavenlyPBusterExe'
     Unknown40: 
     upon: (FRAME_STEP)
       Unknown39: 0, 0
-      Unknown613: s16'vxxx252'
-      endIf: 
-    Unknown39: 0, 0
-    Unknown615: s32'SE_BTL_POT_KAKUSEI_05'
-    endIf: 
-  Unknown39: 0, 40
-  Unknown446: s32'CS500_steam', 100
-  endIf: 
-
-Unknown39: 0, 117
-Unknown613: s16'vxxx254'
-endIf: 
-Unknown39: 0, 144
-Unknown446: s32'CS500_energyburst1a', 100
-Unknown446: s32'CS500_energyburst1b', 100
-endIf: 
-Unknown39: 0, 143
-Unknown446: s32'CS500_scr01', 100
-endIf: 
-Unknown39: 0, 187
-Unknown413: -1, 1600, 0
-Unknown2588: 0, 10
-Unknown41: 22
-Unknown2588: 0, 10
-Unknown40: 
-endIf: 
-Unknown39: 0, 227
-Unknown2589: s32'Kakusei_ryuhai4', 1, 8
-Unknown446: s32'CS500_energyburst2a', 100
-Unknown446: s32'CS500_energyburst2b', 100
-Unknown413: -1, 10000, 0
-endIf: 
-Unknown39: 0, 245
-Unknown613: s16'vxxx255'
-endIf: 
-Unknown39: 0, 270
-Unknown2589: s32'Kakusei_ryuhai4', 0, 8
-endIf: 
-Unknown39: 0, 280
-Unknown2589: s32'Kakusei_speedline01', 1, 8
-Unknown446: s32'CS500_ryuhai1', 100
-endIf: 
-Unknown39: 0, 300
-Unknown446: s32'CS500_bg', 100
-Unknown403: 1
-endIf: 
-Unknown39: 0, 310
-Unknown2589: s32'Kakusei_speedline01', 0, 8
-endIf: 
-Unknown39: 0, 323
-Unknown446: s32'CS500_energyburst3a', 100
-Unknown446: s32'CS500_energyburst3b', 100
-endIf: 
-Unknown39: 0, 350
-Unknown446: s32'CS500_energycircle', 100
-endIf: 
-Unknown39: 0, 381
-Unknown41: 22
-Unknown613: s16'vxxx300'
-Unknown40: 
-endIf: 
-Unknown39: 0, 386
-endIf: 
-Unknown39: 0, 390
-Unknown2589: s32'Kakusei_speedline02', 1, 15
-endIf: 
-Unknown39: 0, 410
-Unknown615: s32'SE_BTL_POT_13'
-Unknown403: 0
-endIf: 
-Unknown39: 0, 430
-Unknown2589: s32'Kakusei_speedline02', 0, 16
-endIf: 
-Unknown39: 0, 444
-Unknown2589: s32'Kakusei_ryuhai2', 1, 15
-endIf: 
-Unknown39: 0, 448
-Unknown613: s16'vxxx256'
-endIf: 
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 449
-  clearRegisteredUponCode: (FRAME_STEP)
-  Unknown14: s32'next'
-  callSubroutineWithArgs: s32'cmnCameraSettings', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
-  Unknown2592: 0, 0
-  Unknown2592: 1000, 0
+        Unknown613: s16'vxxx252'
+        endIf: 
+      Unknown39: 0, 0
+        Unknown615: s32'SE_BTL_POT_KAKUSEI_05'
+        endIf: 
+      Unknown39: 0, 40
+        Unknown446: s32'CS500_steam', 100
+        endIf: 
+      Unknown39: 0, 117
+        Unknown613: s16'vxxx254'
+        endIf: 
+      Unknown39: 0, 144
+        Unknown446: s32'CS500_energyburst1a', 100
+        Unknown446: s32'CS500_energyburst1b', 100
+        endIf: 
+      Unknown39: 0, 143
+        Unknown446: s32'CS500_scr01', 100
+        endIf: 
+      Unknown39: 0, 187
+        Unknown413: -1, 1600, 0
+        Unknown2588: 0, 10
+        Unknown41: 22
+        Unknown2588: 0, 10
+        Unknown40: 
+        endIf: 
+      Unknown39: 0, 227
+        Unknown2589: s32'Kakusei_ryuhai4', 1, 8
+        Unknown446: s32'CS500_energyburst2a', 100
+        Unknown446: s32'CS500_energyburst2b', 100
+        Unknown413: -1, 10000, 0
+        endIf: 
+      Unknown39: 0, 245
+        Unknown613: s16'vxxx255'
+        endIf: 
+      Unknown39: 0, 270
+        Unknown2589: s32'Kakusei_ryuhai4', 0, 8
+        endIf: 
+      Unknown39: 0, 280
+        Unknown2589: s32'Kakusei_speedline01', 1, 8
+        Unknown446: s32'CS500_ryuhai1', 100
+        endIf: 
+      Unknown39: 0, 300
+        Unknown446: s32'CS500_bg', 100
+        Unknown403: 1
+        endIf: 
+      Unknown39: 0, 310
+        Unknown2589: s32'Kakusei_speedline01', 0, 8
+        endIf: 
+      Unknown39: 0, 323
+        Unknown446: s32'CS500_energyburst3a', 100
+        Unknown446: s32'CS500_energyburst3b', 100
+        endIf: 
+      Unknown39: 0, 350
+        Unknown446: s32'CS500_energycircle', 100
+        endIf: 
+      Unknown39: 0, 381
+        Unknown41: 22
+        Unknown613: s16'vxxx300'
+        Unknown40: 
+        endIf: 
+      Unknown39: 0, 386
+        endIf: 
+      Unknown39: 0, 390
+        Unknown2589: s32'Kakusei_speedline02', 1, 15
+        endIf: 
+      Unknown39: 0, 410
+        Unknown615: s32'SE_BTL_POT_13'
+        Unknown403: 0
+        endIf: 
+      Unknown39: 0, 430
+        Unknown2589: s32'Kakusei_speedline02', 0, 16
+        endIf: 
+      Unknown39: 0, 444
+        Unknown2589: s32'Kakusei_ryuhai2', 1, 15
+        endIf: 
+      Unknown39: 0, 448
+        Unknown613: s16'vxxx256'
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 449
+        clearRegisteredUponCode: (FRAME_STEP)
+        Unknown14: s32'next'
+        callSubroutineWithArgs: s32'cmnCameraSettings', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+        Unknown2592: 0, 0
+        Unknown2592: 1000, 0
+        Unknown41: 22
+        Unknown2592: 0, 0
+        Unknown2592: 1000, 0
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 449
+        Unknown2592: 0, 0
+        Unknown2588: 1000, 0
+        Unknown41: 22
+        Unknown2588: 1000, 0
+        Unknown40: 
+        endIf: 
+      endUpon: 
+    endUpon: 
+  endLabel: 
+  beginLabel: s32'next'
+  Unknown98: 4000000
+  setGravity: 3000
+  callSubroutineWithArgs: s32'cmn_motionblur', (STATIC), 9, (STATIC), 0, (STATIC), 0, (STATIC), 0
+  Unknown446: s32'Cam_PotemkinBuster_H', 100
+  upon: (TOUCH_GROUND)
+    Unknown14: s32'landing'
+    endUpon: 
+  beginLabel: s32'down'
+  sprite: s32'pot409_21', 3
+  Unknown446: s32'HBuster_fall', 100
+  Unknown2193: 100, -170000, 200000
+  Unknown446: s32'HBuster_handfire', 130
+  Unknown2193: 100, 170000, 200000
+  Unknown446: s32'HBuster_handfire', 130
+  Unknown544: 32
+  Unknown546: 0, 111, 0
+  sprite: s32'pot409_22', 3
+  Unknown546: 0, 111, 0
+  endLabel: 
+  gotoLabel: s32'down'
+  beginLabel: s32'landing'
+  sprite: s32'pot409_23', 4
+  Unknown546: 0, 111, 0
+  Unknown2189: 0, 5
   Unknown41: 22
-  Unknown2592: 0, 0
-  Unknown2592: 1000, 0
+  Unknown2189: 2, 5
   Unknown40: 
-  endIf: 
+  Unknown2341: s32'ImpactSlow', 12800, 0, 50, s32'shake_easeout', 0
+  sprite: s32'pot409_24', 6
+  Unknown2589: s32'Kakusei_ryuhai2', 0, 16
+  Unknown546: 0, 111, 0
+  Unknown233: 
+  Unknown446: s32'Hbuster_floor', 100
+  Unknown612: s32'SE_BTL_CMN_LandBreak_Clay_L'
+  Unknown2193: 100, -220000, 430000
+  Unknown446: s32'HBuster_handfire_after', 130
+  Unknown2193: 100, 220000, 430000
+  Unknown446: s32'HBuster_handfire_after', 130
+  sprite: s32'pot409_25', 6
+  Unknown546: 0, 111, 0
+  sprite: s32'pot409_26', 6
+  Unknown546: 0, 111, 0
+  sprite: s32'pot409_27', 26
+  Unknown546: 0, 111, 0
+  sprite: s32'pot409_28', 8
+  Unknown546: 0, 111, 0
+  sprite: s32'pot409_29', 4
+  Unknown546: 0, 111, 0
+  sprite: s32'pot409_30', 4
+  Unknown544: 24
+  Unknown546: 0, 111, 0
+  sprite: s32'pot409_31', 4
+  Unknown546: 0, 111, 0
+  sprite: s32'pot409_32', 4
+  Unknown546: 0, 111, 0
+  sprite: s32'pot409_33', 2
+  Unknown546: 0, 111, 0
+  sprite: s32'pot409_34', 4
+  Unknown233: 
+  upon: (HIT)
+    callSubroutineWithArgs: s32'cmnAtkTemplNageFinish', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    endUpon: 
+  Unknown1157: 1
+  damage: 0, 0
+  Unknown1139: 0
+  airHitEffect: 8
+  groundHitEffect: 8
+  hitAirPushbackY: 0, 10000
+  hitAirPushbackX: 0, -25000
+  hitGravity: (STATIC), 1200
+  Unknown1127: 1
+  Unknown1094: 1
+  hitSoftKnockdown: 0
+  callSubroutine: s32'cmnthrow_Redroman'
+  callSubroutine: s32'cmnthrow_RedromanSenkoInput'
+  callSubroutine: s32'cmnthrow_Redroman'
+  callSubroutine: s32'cmnNohosei'
+  Unknown1067: 4, 350000, 250000
+  Unknown544: 12
+  Unknown615: s32'SE_BTL_POT_16'
+  Unknown546: 0, 111, 0
+  Unknown393: 
+  sprite: s32'pot409_35', 5
+  sprite: s32'pot409_36', 5
+  sprite: s32'pot409_37', 3
+  sprite: s32'pot409_38', 3
+  sprite: s32'pot409_39', 3
+  endState: 
 
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 449
-  Unknown2592: 0, 0
-  Unknown2588: 1000, 0
-  Unknown41: 22
-  Unknown2588: 1000, 0
-  Unknown40: 
-  endIf: 
-
-endUpon: 
-endUpon: 
-endLabel: 
-beginLabel: s32'next'
-Unknown98: 4000000
-setGravity: 3000
-callSubroutineWithArgs: s32'cmn_motionblur', (STATIC), 9, (STATIC), 0, (STATIC), 0, (STATIC), 0
-Unknown446: s32'Cam_PotemkinBuster_H', 100
-upon: (TOUCH_GROUND)
-  Unknown14: s32'landing'
-  endUpon: 
-
-beginLabel: s32'down'
-sprite: s32'pot409_21', 3
-Unknown446: s32'HBuster_fall', 100
-Unknown2193: 100, -170000, 200000
-Unknown446: s32'HBuster_handfire', 130
-Unknown2193: 100, 170000, 200000
-Unknown446: s32'HBuster_handfire', 130
-Unknown544: 32
-Unknown546: 0, 111, 0
-sprite: s32'pot409_22', 3
-Unknown546: 0, 111, 0
-endLabel: 
-gotoLabel: s32'down'
-beginLabel: s32'landing'
-sprite: s32'pot409_23', 4
-Unknown546: 0, 111, 0
-Unknown2189: 0, 5
-Unknown41: 22
-Unknown2189: 2, 5
-Unknown40: 
-Unknown2341: s32'ImpactSlow', 12800, 0, 50, s32'shake_easeout', 0
-sprite: s32'pot409_24', 6
-Unknown2589: s32'Kakusei_ryuhai2', 0, 16
-Unknown546: 0, 111, 0
-Unknown233: 
-Unknown446: s32'Hbuster_floor', 100
-Unknown612: s32'SE_BTL_CMN_LandBreak_Clay_L'
-Unknown2193: 100, -220000, 430000
-Unknown446: s32'HBuster_handfire_after', 130
-Unknown2193: 100, 220000, 430000
-Unknown446: s32'HBuster_handfire_after', 130
-sprite: s32'pot409_25', 6
-Unknown546: 0, 111, 0
-sprite: s32'pot409_26', 6
-Unknown546: 0, 111, 0
-sprite: s32'pot409_27', 26
-Unknown546: 0, 111, 0
-sprite: s32'pot409_28', 8
-Unknown546: 0, 111, 0
-sprite: s32'pot409_29', 4
-Unknown546: 0, 111, 0
-sprite: s32'pot409_30', 4
-Unknown544: 24
-Unknown546: 0, 111, 0
-sprite: s32'pot409_31', 4
-Unknown546: 0, 111, 0
-sprite: s32'pot409_32', 4
-Unknown546: 0, 111, 0
-sprite: s32'pot409_33', 2
-Unknown546: 0, 111, 0
-sprite: s32'pot409_34', 4
-Unknown233: 
-upon: (HIT)
-  callSubroutineWithArgs: s32'cmnAtkTemplNageFinish', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
-  endUpon: 
-
-Unknown1157: 1
-damage: 0, 0
-Unknown1139: 0
-airHitEffect: 8
-groundHitEffect: 8
-hitAirPushbackY: 0, 10000
-hitAirPushbackX: 0, -25000
-Unknown778: 0, 1200
-Unknown1127: 1
-Unknown1094: 1
-hitSoftKnockdown: 0
-callSubroutine: s32'cmnthrow_Redroman'
-callSubroutine: s32'cmnthrow_RedromanSenkoInput'
-callSubroutine: s32'cmnthrow_Redroman'
-callSubroutine: s32'cmnNohosei'
-Unknown1067: 4, 350000, 250000
-Unknown544: 12
-Unknown615: s32'SE_BTL_POT_16'
-Unknown546: 0, 111, 0
-Unknown393: 
-sprite: s32'pot409_35', 5
-sprite: s32'pot409_36', 5
-sprite: s32'pot409_37', 3
-sprite: s32'pot409_38', 3
-sprite: s32'pot409_39', 3
-endState: 
 beginState: s32'Giganter'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmn_AtkLv4'

@@ -3763,32 +3763,32 @@ beginState: s32'CmnActMatchWin'
       Unknown615: s32'SE_BTL_CHP_MatchWin'
       endIf: 
     Unknown39: 0, 125
-    Unknown613: s16'vxxx402demo'
-    Unknown2243: s32'prev', -2147483618
-    Unknown1693: 0, 100
-    Unknown1922: 1
-    Unknown1707: 40
-    endIf: 
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 15
-    ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 74
-      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 5000
-      Unknown248: 2, 45
+      Unknown613: s16'vxxx402demo'
+      Unknown2243: s32'prev', -2147483618
+      Unknown1693: 0, 100
+      Unknown1922: 1
+      Unknown1707: 40
       endIf: 
-    endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
-    Unknown2592: 0, 0
-    Unknown2592: 1000, 30
-    Unknown41: 22
-    Unknown2592: 0, 0
-    Unknown40: 
-    Unknown2588: 500, 30
-    Unknown41: 22
-    Unknown2588: 500, 30
-    Unknown40: 
-    endIf: 
-  endUpon: 
+    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 15
+      ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 74
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 5000
+        Unknown248: 2, 45
+        endIf: 
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+      Unknown2592: 0, 0
+      Unknown2592: 1000, 30
+      Unknown41: 22
+      Unknown2592: 0, 0
+      Unknown40: 
+      Unknown2588: 500, 30
+      Unknown41: 22
+      Unknown2588: 500, 30
+      Unknown40: 
+      endIf: 
+    endUpon: 
+  endState: 
 
-endState: 
 beginState: s32'CmnActLose'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmnactlose'
@@ -4113,7 +4113,7 @@ beginState: s32'NmlAtk5B'
     hitAirPushbackX: 0, 10000
     hitAirPushbackY: 0, 40000
     Unknown770: 0, 50, 0, 5, 0, 11
-    Unknown778: 0, 1000
+    hitGravity: (STATIC), 1000
     Unknown783: 0, 100, 0, 10, 0, 35
     addWhiffCancelOption: s32'NmlAtk5A'
     addWhiffCancelOption: s32'NmlAtk5B'
@@ -4241,7 +4241,7 @@ beginState: s32'NmlAtk2B'
     hitAirPushbackX: 0, 5000
     hitAirPushbackY: 0, 30000
     Unknown770: 0, 60, 0, 5, 0, 11
-    Unknown778: 0, 1000
+    hitGravity: (STATIC), 1000
     Unknown783: 0, 100, 0, 10, 0, 35
     Unknown1005: 150
     Unknown1004: 150
@@ -4319,7 +4319,7 @@ beginState: s32'NmlAtk5CNear'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 38000
     Unknown770: 0, 60, 0, 4, 0, 10
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 250, 0, 7, 0, 30
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -300000
@@ -4426,7 +4426,7 @@ beginState: s32'NmlAtk2C'
     hitAirPushbackX: 0, 5000
     hitAirPushbackY: 0, 50000
     Unknown770: 0, 60, 0, 5, 0, 11
-    Unknown778: 0, 1000
+    hitGravity: (STATIC), 1000
     Unknown783: 0, 100, 0, 10, 0, 35
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -350000
@@ -4530,7 +4530,7 @@ beginState: s32'NmlAtk6D'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, -100000
     Unknown770: 0, 70, 0, 6, 0, 10
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown808: 0
     Unknown783: 0, 50, 0, 10, 0, 20
     groundBounceYVelocityPercent: 100
@@ -4597,7 +4597,7 @@ beginState: s32'NmlAtk2D'
     Unknown760: 0, 80, 0, 6, 0, 14
     hitAirPushbackY: 0, 65000
     Unknown770: 0, 60, 0, 7, 0, 17
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 200, 0, 5, 0, 30
     callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
     Unknown953: 2
@@ -4666,7 +4666,7 @@ beginState: s32'NmlAtk5E'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 30000
     Unknown770: 0, 60, 0, 8, 0, 16
-    Unknown778: 0, 500
+    hitGravity: (STATIC), 500
     Unknown783: 0, 250, 0, 5, 0, 30
     Unknown953: 2
     storeValue: (VARIABLE), 343, (STATIC), -200000
@@ -5795,7 +5795,7 @@ beginState: s32'ThrowExe'
   airHitEffect: 12
   hitAirPushbackX: 0, 55000
   hitAirPushbackY: 0, -25000
-  Unknown778: 0, 7000
+  hitGravity: (STATIC), 7000
   Unknown1108: -90
   Unknown1094: 0
   Unknown933: 1
@@ -5871,7 +5871,7 @@ beginState: s32'AirThrowExe'
     damage: 0, 70
     hitAirPushbackX: 0, 14250
     hitAirPushbackY: 0, 32500
-    Unknown778: 0, 2500
+    hitGravity: (STATIC), 2500
     Unknown725: 1
     Unknown1067: 4, 100000, -200000
     groundHitEffect: 8
@@ -6409,7 +6409,7 @@ beginState: s32'BetaBlade'
     Unknown760: 0, 80, 0, 6, 0, 14
     hitAirPushbackY: 0, 35000
     Unknown770: 0, 60, 0, 7, 0, 17
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 200, 0, 5, 0, 30
     callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 6, (STATIC), 0, (STATIC), 0, (STATIC), 0
     Unknown2169: 0
@@ -6528,7 +6528,7 @@ beginState: s32'AirBetaBlade'
     Unknown760: 0, 80, 0, 6, 0, 14
     hitAirPushbackY: 0, 45000
     Unknown770: 0, 60, 0, 10, 0, 20
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 150, 0, 10, 0, 50
     upon: (HIT_OR_GUARD)
       clearRegisteredUponCode: (HIT_OR_GUARD)
@@ -6795,7 +6795,7 @@ beginState: s32'Banzai'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, -100000
     Unknown770: 0, 70, 0, 6, 0, 10
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown808: 0
     Unknown783: 0, 80, 0, 18, 0, 38
     groundBounceYVelocityPercent: 100
@@ -6916,7 +6916,7 @@ beginState: s32'GenrouzanExe'
     hitAirPushbackX: 0, 0
     hitAirPushbackY: 0, 140000
     Unknown770: 0, 60, 0, 4, 0, 10
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 500, 0, 18, 0, 56
     groundHitEffect: 12
     airHitEffect: 12
@@ -6986,7 +6986,7 @@ beginState: s32'GenrouzanExe'
   Unknown1189: 1
   hitAirPushbackX: 0, 0
   hitAirPushbackY: 0, 36000
-  Unknown778: 0, 1500
+  hitGravity: (STATIC), 1500
   Unknown924: 0
   airHitEffect: 30
   Unknown2280: 0, 8413216
@@ -7025,7 +7025,7 @@ beginState: s32'GenrouzanExe'
   damage: 0, 67
   hitAirPushbackX: 0, 0
   hitAirPushbackY: 0, -10000
-  Unknown778: 0, 2000
+  hitGravity: (STATIC), 2000
   hitSoftKnockdown: 0
   Unknown725: 0
   Unknown1045: 2, s32'cmn_explosion_m'
@@ -7387,7 +7387,7 @@ beginState: s32'WallRun_6P'
     Unknown760: 0, 80, 0, 10, 0, 15
     hitAirPushbackY: 0, 80000
     Unknown770: 0, 80, 0, 5, 0, 15
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 100, 0, 10, 0, 30
     Unknown251: 0
     addGatlingOption: s32'WallRun_jump'
@@ -7459,7 +7459,7 @@ beginState: s32'WallRun_K'
     Unknown760: 0, 80, 0, 10, 0, 15
     hitAirPushbackY: 0, 100000
     Unknown770: 0, 80, 0, 5, 0, 15
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 100, 0, 5, 0, 30
     Unknown251: 0
     addGatlingOption: s32'WallRun_K'
@@ -7538,7 +7538,7 @@ beginState: s32'WallRun_S'
     Unknown760: 0, 80, 0, 10, 0, 15
     hitAirPushbackY: 0, 100000
     Unknown770: 0, 70, 0, 5, 0, 15
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 100, 0, 10, 0, 30
     Unknown251: 0
     addGatlingOption: s32'WallRun_6P'
@@ -7612,7 +7612,7 @@ beginState: s32'WallRun_SFar'
     Unknown760: 0, 80, 0, 10, 0, 15
     hitAirPushbackY: 0, 100000
     Unknown770: 0, 80, 0, 5, 0, 15
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 100, 0, 10, 0, 30
     Unknown251: 0
     addGatlingOption: s32'WallRun_HS'
@@ -7687,7 +7687,7 @@ beginState: s32'WallRun_HS'
     Unknown760: 0, 80, 0, 10, 0, 15
     hitAirPushbackY: 0, 100000
     Unknown770: 0, 80, 0, 5, 0, 15
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 100, 0, 10, 0, 30
     Unknown251: 0
     addGatlingOption: s32'WallRun_jump'
@@ -7755,7 +7755,7 @@ beginState: s32'WallRun_6HS'
     airHitEffect: 11
     hitAirPushbackX: 0, 60000
     hitAirPushbackY: 0, 15000
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     wallBounceCount: 1
     wallBounceXVelocityPercent: 40
     Unknown1005: 30
@@ -7872,7 +7872,7 @@ beginSubroutine: s32'ZanseiRouga_atk'
   airHitEffect: 9
   hitAirPushbackX: 0, 5000
   hitAirPushbackY: 0, 30000
-  Unknown778: 0, 2000
+  hitGravity: (STATIC), 2000
   callSubroutine: s32'cmnNohosei_kakusei'
   Unknown1059: 1
   checkCurrentStateEntryName: s32'ZanseiRouga_air'
@@ -7903,7 +7903,7 @@ beginState: s32'ZanseiRouga'
     airHitEffect: 9
     hitAirPushbackX: 0, 5000
     hitAirPushbackY: 0, 30000
-    Unknown778: 0, 2000
+    hitGravity: (STATIC), 2000
     callSubroutine: s32'cmnNohosei_kakusei'
     Unknown1059: 1
     Unknown1971: 1
@@ -8424,7 +8424,7 @@ beginSubroutine: s32'BankiMessai_atk'
   callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
   hitAirPushbackX: 0, 8000
   hitAirPushbackY: 0, 4600
-  Unknown778: 0, 875
+  hitGravity: (STATIC), 875
   callSubroutine: s32'cmnNohosei_kakusei'
   Unknown1045: 4, s32'cmn_hit_s'
   Unknown1044: 1
@@ -8449,7 +8449,7 @@ beginState: s32'BankiMessai'
     callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
     hitAirPushbackX: 0, 8000
     hitAirPushbackY: 0, 4600
-    Unknown778: 0, 875
+    hitGravity: (STATIC), 875
     callSubroutine: s32'cmnNohosei_kakusei'
     Unknown1971: 1
     Unknown1045: 4, s32'cmn_hit_s'
@@ -8773,7 +8773,7 @@ beginState: s32'BankiMessai'
   airHitEffect: 8
   hitAirPushbackX: 0, 30000
   hitAirPushbackY: 0, 20000
-  Unknown778: 0, 3000
+  hitGravity: (STATIC), 3000
   callSubroutine: s32'cmnNohosei_kakusei'
   Unknown1064: s32''
   Unknown1073: 1

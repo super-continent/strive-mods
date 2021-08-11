@@ -3340,70 +3340,70 @@ beginState: s32'CmnActMatchWin'
       Unknown615: s32'SE_BTL_INO_MatchWin'
       endIf: 
     Unknown39: 0, 110
-    Unknown2244: 1
-    Unknown446: s32'INO_800', 100
-    endIf: 
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 11
-    ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 60
-      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 5000
-      Unknown248: 2, 45
+      Unknown2244: 1
+      Unknown446: s32'INO_800', 100
       endIf: 
-    endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
-    Unknown2592: 0, 0
-    Unknown2592: 1000, 32
-    Unknown41: 22
-    Unknown2592: 0, 0
-    Unknown40: 
-    Unknown2588: 500, 32
-    Unknown41: 22
-    Unknown2588: 500, 32
-    Unknown40: 
-    endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 296
-    Unknown613: s16'vxxx402demo'
-    Unknown2243: s32'prev', -2147483618
-    Unknown1693: 0, 55
-    Unknown1922: 1
-    Unknown1707: 40
-    endIf: 
-  if: (VARIABLE), 324
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 211
-      storeValue: (VARIABLE), 46, (STATIC), 0
-      Unknown33: s32'cmn_AfroObj', 5, 2, 46
+    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 11
+      ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 60
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 5000
+        Unknown248: 2, 45
+        endIf: 
       endIf: 
-    Unknown51: 5
-    if: (VARIABLE), 0
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+      Unknown2592: 0, 0
+      Unknown2592: 1000, 32
+      Unknown41: 22
+      Unknown2592: 0, 0
+      Unknown40: 
+      Unknown2588: 500, 32
+      Unknown41: 22
+      Unknown2588: 500, 32
+      Unknown40: 
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 296
+      Unknown613: s16'vxxx402demo'
+      Unknown2243: s32'prev', -2147483618
+      Unknown1693: 0, 55
+      Unknown1922: 1
+      Unknown1707: 40
+      endIf: 
+    if: (VARIABLE), 324
       ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 211
-        Unknown41: 5
-        Unknown188: 500
-        Unknown40: 
+        storeValue: (VARIABLE), 46, (STATIC), 0
+        Unknown33: s32'cmn_AfroObj', 5, 2, 46
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 215
-        Unknown41: 5
-        Unknown188: 700
-        Unknown40: 
-        endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 219
-        Unknown41: 5
-        Unknown188: 100
-        Unknown40: 
-        endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 243
-        Unknown41: 5
-        Unknown188: 600
-        Unknown40: 
-        endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 259
-        Unknown41: 5
-        Unknown188: 1000
-        Unknown40: 
+      Unknown51: 5
+      if: (VARIABLE), 0
+        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 211
+          Unknown41: 5
+          Unknown188: 500
+          Unknown40: 
+          endIf: 
+        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 215
+          Unknown41: 5
+          Unknown188: 700
+          Unknown40: 
+          endIf: 
+        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 219
+          Unknown41: 5
+          Unknown188: 100
+          Unknown40: 
+          endIf: 
+        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 243
+          Unknown41: 5
+          Unknown188: 600
+          Unknown40: 
+          endIf: 
+        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 259
+          Unknown41: 5
+          Unknown188: 1000
+          Unknown40: 
+          endIf: 
         endIf: 
       endIf: 
-    endIf: 
-  endUpon: 
+    endUpon: 
+  endState: 
 
-endState: 
 beginState: s32'CmnActLose'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmnactlose'
@@ -3792,7 +3792,7 @@ beginState: s32'NmlAtk5B'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 25000
     Unknown770: 0, 70, 0, 4, 0, 16
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 250, 0, 5, 0, 15
     enableJumpCancel: 1
     addGatlingOption: s32'NmlAtk6A'
@@ -3844,7 +3844,7 @@ beginState: s32'NmlAtk2B'
     hitAirPushbackX: 0, 5000
     hitAirPushbackY: 0, 30000
     Unknown770: 0, 50, 0, 5, 0, 11
-    Unknown778: 0, 1000
+    hitGravity: (STATIC), 1000
     Unknown783: 0, 100, 0, 10, 0, 35
     addGatlingOption: s32'NmlAtk6A'
     addGatlingOption: s32'NmlAtk5CNear'
@@ -3890,7 +3890,7 @@ beginState: s32'NmlAtk5CNear'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 20000
     Unknown770: 0, 60, 0, 4, 0, 10
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 250, 0, 7, 0, 30
     callSubroutine: s32'cmn_AtkTemplNokezoriHigh'
     Unknown2171: 1
@@ -4004,7 +4004,7 @@ beginState: s32'NmlAtk2C'
     hitAirPushbackX: 0, 6000
     hitAirPushbackY: 0, 30000
     Unknown770: 0, 50, 0, 5, 0, 11
-    Unknown778: 0, 1000
+    hitGravity: (STATIC), 1000
     Unknown783: 0, 100, 0, 10, 0, 35
     addGatlingOption: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk2D'
@@ -4055,7 +4055,7 @@ beginState: s32'NmlAtk5D'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, -100000
     Unknown770: 0, 60, 0, 8, 0, 16
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown808: 0
     Unknown783: 0, 200, 0, 10, 0, 25
     groundBounceYVelocity: 25000
@@ -4124,7 +4124,7 @@ beginState: s32'NmlAtk6D'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 20000
     Unknown770: 0, 60, 0, 4, 0, 10
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 150, 0, 12, 0, 33
     callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 6, (STATIC), 0, (STATIC), 0, (STATIC), 0
     callSubroutine: s32'cmn_AtkTemplFloatDamageBody'
@@ -4169,7 +4169,7 @@ beginState: s32'NmlAtk6D'
   Unknown760: 0, 80, 0, 10, 0, 16
   hitAirPushbackY: 0, 50000
   Unknown770: 0, 70, 0, 11, 0, 16
-  Unknown778: 0, 0
+  hitGravity: (STATIC), 0
   Unknown783: 0, 200, 0, 6, 0, 21
   callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
   Unknown953: 2
@@ -4216,7 +4216,7 @@ beginState: s32'NmlAtk2D'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, -100000
     Unknown770: 0, 70, 0, 6, 0, 12
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown808: 1000
     Unknown783: 0, 200, 0, 10, 0, 30
     groundBounceYVelocityPercent: 50
@@ -5027,7 +5027,7 @@ beginState: s32'ThrowExe'
     Unknown1159: 1
     hitAirPushbackX: 0, 10000
     hitAirPushbackY: 0, 26000
-    Unknown778: 0, 1925
+    hitGravity: (STATIC), 1925
     Unknown1149: 11
     Unknown1067: 4, 200000, 0
     endUpon: 
@@ -5120,7 +5120,7 @@ beginState: s32'AirThrowExe'
     groundHitEffect: 8
     hitAirPushbackX: 0, 25000
     hitAirPushbackY: 0, 20000
-    Unknown778: 0, 3000
+    hitGravity: (STATIC), 3000
     Unknown1067: 4, 220000, 50000
     endUpon: 
   sprite: s32'keep', 4
@@ -5698,7 +5698,7 @@ beginSubroutine: s32'KyougenD_Atk'
       Unknown2173: 
       callSubroutine: s32'cmn_fuwafuwafuwa'
       Unknown770: 0, 60, 0, 10, 0, 16
-      Unknown778: 0, 0
+      hitGravity: (STATIC), 0
       Unknown783: 0, 200, 0, 6, 0, 21
       endIf: 
     endIf: 
@@ -5727,7 +5727,7 @@ beginSubroutine: s32'KyougenD_Atk'
       Unknown2173: 
       callSubroutine: s32'cmn_fuwafuwafuwa'
       Unknown770: 0, 60, 0, 10, 0, 16
-      Unknown778: 0, 0
+      hitGravity: (STATIC), 0
       Unknown783: 0, 200, 0, 6, 0, 21
       endIf: 
     endElse: 
@@ -6202,7 +6202,7 @@ beginState: s32'Megalo_ThrowExe'
     Unknown1149: 46
     hitAirPushbackX: 0, 0
     hitAirPushbackY: 0, 0
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown1971: 1
     Unknown1064: s32'INO_500_Bullet_AddFront01'
     Unknown612: s32'SE_BTL_CMN_Impact_Catch'
@@ -6256,334 +6256,313 @@ beginState: s32'Megalo_ThrowExe'
         Unknown615: s32'SE_BTL_INO_KAKUSEI_00'
         endIf: 
       Unknown39: 0, 4
-      Unknown446: s32'INO_500CS_Shockwave', 123
-      endIf: 
-    Unknown39: 0, 30
-    Unknown2244: 1
-    endIf: 
-  Unknown39: 0, 36
-  Unknown446: s32'INO_500CS_Hold', 132
-  endIf: 
-
-Unknown39: 0, 67
-Unknown446: s32'INO_500CS_scr01', 100
-Unknown446: s32'INO_500CS_Feather01', 100
-callSubroutineWithArgs: s32'cmn_motionblur', (STATIC), 5, (STATIC), 0, (STATIC), 0, (STATIC), 0
-endIf: 
-Unknown39: 0, 87
-Unknown393: 
-endIf: 
-Unknown39: 0, 255
-Unknown446: s32'INO_500CS_Ray', 100
-Unknown376: '0x0000000000000000140000000C000000'
-Unknown377: '0xFA000000FA000000FF0000000C000000'
-Unknown378: '0xA00000008C0000005A0000000C000000'
-Unknown379: '0x6E0000006E000000800000000C000000'
-endIf: 
-Unknown39: 0, 267
-Unknown446: s32'INO_500CS_Feather02', 100
-callSubroutineWithArgs: s32'cmn_motionblur', (STATIC), 8, (STATIC), 0, (STATIC), 0, (STATIC), 0
-endIf: 
-Unknown39: 0, 279
-Unknown393: 
-endIf: 
-ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 26
+        Unknown446: s32'INO_500CS_Shockwave', 123
+        endIf: 
+      Unknown39: 0, 30
+        Unknown2244: 1
+        endIf: 
+      Unknown39: 0, 36
+        Unknown446: s32'INO_500CS_Hold', 132
+        endIf: 
+      Unknown39: 0, 67
+        Unknown446: s32'INO_500CS_scr01', 100
+        Unknown446: s32'INO_500CS_Feather01', 100
+        callSubroutineWithArgs: s32'cmn_motionblur', (STATIC), 5, (STATIC), 0, (STATIC), 0, (STATIC), 0
+        endIf: 
+      Unknown39: 0, 87
+        Unknown393: 
+        endIf: 
+      Unknown39: 0, 255
+        Unknown446: s32'INO_500CS_Ray', 100
+        Unknown376: '0x0000000000000000140000000C000000'
+        Unknown377: '0xFA000000FA000000FF0000000C000000'
+        Unknown378: '0xA00000008C0000005A0000000C000000'
+        Unknown379: '0x6E0000006E000000800000000C000000'
+        endIf: 
+      Unknown39: 0, 267
+        Unknown446: s32'INO_500CS_Feather02', 100
+        callSubroutineWithArgs: s32'cmn_motionblur', (STATIC), 8, (STATIC), 0, (STATIC), 0, (STATIC), 0
+        endIf: 
+      Unknown39: 0, 279
+        Unknown393: 
+        endIf: 
+      ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 26
+        Unknown41: 22
+        Unknown76: s32'CmnActBlowoff'
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 27
+        Unknown41: 22
+        Unknown76: s32'CmnActBlowoff'
+        Unknown232: -16000
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 28
+        Unknown41: 22
+        Unknown232: -16000
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 29
+        Unknown41: 22
+        Unknown232: -20000
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 30
+        Unknown41: 22
+        Unknown232: -24000
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 31
+        Unknown41: 22
+        Unknown232: -28000
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 32
+        Unknown41: 22
+        Unknown232: -32000
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 33
+        Unknown41: 22
+        Unknown232: -36000
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 34
+        Unknown41: 22
+        Unknown232: -40000
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 35
+        Unknown41: 22
+        Unknown232: -44000
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 36
+        Unknown41: 22
+        Unknown232: -48000
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 37
+        Unknown41: 22
+        Unknown232: -52000
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 38
+        Unknown41: 22
+        Unknown232: -56000
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 39
+        Unknown41: 22
+        Unknown232: -60000
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 29
+        ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 40
+          Unknown67: 0
+          if: (VARIABLE), 0
+            Unknown41: 22
+            addPositionX: -18467
+            Unknown99: 0, 4166
+            Unknown1732: 0, 31000
+            Unknown40: 
+            endIf: 
+          Unknown67: 1
+          if: (VARIABLE), 0
+            Unknown41: 22
+            addPositionX: -16800
+            Unknown99: 0, 5000
+            Unknown1732: 0, 29400
+            Unknown40: 
+            endIf: 
+          Unknown67: 2
+          if: (VARIABLE), 0
+            Unknown41: 22
+            addPositionX: -15967
+            Unknown99: 0, 3750
+            Unknown1732: 0, 30833
+            Unknown40: 
+            endIf: 
+          Unknown67: 3
+          if: (VARIABLE), 0
+            Unknown41: 22
+            addPositionX: -13467
+            Unknown99: 0, 5833
+            Unknown1732: 0, 29333
+            Unknown40: 
+            endIf: 
+          endIf: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 40
+        Unknown544: 46
+        Unknown2341: s32'Rot', 110, 0, 30, s32'shake_easeout', 0
+        Unknown67: 0
+        if: (VARIABLE), 0
+          Unknown41: 22
+          Unknown92: -403133
+          Unknown98: 50000
+          Unknown1731: 372000
+          Unknown231: 355000
+          Unknown232: 285000
+          Unknown164: 10000
+          Unknown40: 
+          endIf: 
+        Unknown67: 1
+        if: (VARIABLE), 0
+          Unknown41: 22
+          Unknown92: -384800
+          Unknown98: 60000
+          Unknown1731: 352000
+          Unknown231: 355000
+          Unknown232: 285000
+          Unknown164: 12000
+          Unknown40: 
+          endIf: 
+        Unknown67: 2
+        if: (VARIABLE), 0
+          Unknown41: 22
+          Unknown92: -375633
+          Unknown98: 45000
+          Unknown1731: 370000
+          Unknown231: 350000
+          Unknown232: 275000
+          Unknown164: 12000
+          Unknown40: 
+          endIf: 
+        Unknown67: 3
+        if: (VARIABLE), 0
+          Unknown41: 22
+          Unknown92: -348133
+          Unknown98: 70000
+          Unknown1731: 352000
+          Unknown231: 355000
+          Unknown232: 290000
+          Unknown164: 6000
+          Unknown40: 
+          endIf: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 72
+        Unknown41: 22
+        Unknown231: 0
+        Unknown232: 0
+        Unknown164: 0
+        Unknown1731: 0
+        Unknown2254: 22, 0
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 320
+        Unknown2244: 0
+        callSubroutineWithArgs: s32'cmnCameraSettings', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+        Unknown2592: 0, 0
+        Unknown2592: 1000, 32
+        Unknown41: 22
+        Unknown2592: 0, 0
+        Unknown40: 
+        Unknown2588: 500, 32
+        Unknown41: 22
+        Unknown2588: 500, 32
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 320
+        Unknown2592: 0, 0
+        Unknown2588: 1000, 0
+        Unknown41: 22
+        Unknown2588: 1000, 0
+        Unknown40: 
+        endIf: 
+      if: (VARIABLE), 324
+        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 79
+          storeValue: (VARIABLE), 46, (STATIC), 0
+          Unknown33: s32'cmn_AfroObj', 5, 2, 46
+          endIf: 
+        Unknown51: 5
+        if: (VARIABLE), 0
+          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 79
+            Unknown41: 5
+            Unknown188: 600
+            Unknown40: 
+            endIf: 
+          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 83
+            Unknown41: 5
+            Unknown188: 1000
+            Unknown40: 
+            endIf: 
+          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 223
+            Unknown41: 5
+            Unknown188: 100
+            Unknown40: 
+            endIf: 
+          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 227
+            Unknown41: 5
+            Unknown148: 350
+            Unknown156: 250
+            Unknown180: 250
+            Unknown40: 
+            endIf: 
+          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 235
+            Unknown41: 5
+            Unknown188: 600
+            Unknown40: 
+            endIf: 
+          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 318
+            Unknown41: 5
+            Unknown188: 1000
+            Unknown40: 
+            endIf: 
+          endIf: 
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'ino501_00', 1
   Unknown41: 22
-  Unknown76: s32'CmnActBlowoff'
+  Unknown92: -900000
   Unknown40: 
-  endIf: 
+  Unknown233: 
+  sprite: s32'ino501_00', 21
+  Unknown446: s32'Amp_501', 100
+  Unknown446: s32'INO_500_Hold', 132
+  Unknown446: s32'INO_500_MCircle', 100
+  sprite: s32'ino501_01', 3
+  sprite: s32'ino501_02', 4
+  sprite: s32'ino501_03', 2
+  Unknown446: s32'INO_500_BulletRoot_Front', 100
+  Unknown446: s32'INO_500_BulletRoot_Back', 100
+  Unknown446: s32'INO_500_BulletRoot_AddFront', 100
+  Unknown446: s32'INO_500_BulletRoot_AddBack', 100
+  Unknown615: s32'SE_BTL_INO_KAKUSEI_01'
+  Unknown615: s32'SE_BTL_INO_KAKUSEI_02'
+  Unknown613: s16'vxxx253'
+  sprite: s32'ino501_05', 2
+  sprite: s32'ino501_06', 2
+  sprite: s32'ino501_07', 2
+  sprite: s32'ino501_08', 2
+  endLabel: 
+  Unknown2234: 1
+  storeValue: (VARIABLE), 45, (STATIC), 5
+  beginLabel: s32'loop'
+  sprite: s32'ino501_09', 2
+  sprite: s32'ino501_10', 2
+  sprite: s32'ino501_11', 2
+  endLabel: 
+  modifyVar: (ADD), (VARIABLE), 45, (STATIC), -1
+  Unknown24: s32'loop', 2, 45
+  sprite: s32'ino501_12', 3
+  sprite: s32'ino501_13', 3
+  sprite: s32'ino501_14', 4
+  sprite: s32'ino501_15', 4
+  sprite: s32'ino501_16', 4
+  sprite: s32'ino501_17', 4
+  sprite: s32'ino501_18', 4
+  sprite: s32'ino501_19', 4
+  callSubroutine: s32'cmnNandemoCancel'
+  sprite: s32'ino501_20', 4
+  sprite: s32'ino501_21', 4
+  sprite: s32'ino501_22', 4
+  sprite: s32'ino501_23', 4
+  endState: 
 
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 27
-  Unknown41: 22
-  Unknown76: s32'CmnActBlowoff'
-  Unknown232: -16000
-  Unknown40: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 28
-  Unknown41: 22
-  Unknown232: -16000
-  Unknown40: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 29
-  Unknown41: 22
-  Unknown232: -20000
-  Unknown40: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 30
-  Unknown41: 22
-  Unknown232: -24000
-  Unknown40: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 31
-  Unknown41: 22
-  Unknown232: -28000
-  Unknown40: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 32
-  Unknown41: 22
-  Unknown232: -32000
-  Unknown40: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 33
-  Unknown41: 22
-  Unknown232: -36000
-  Unknown40: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 34
-  Unknown41: 22
-  Unknown232: -40000
-  Unknown40: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 35
-  Unknown41: 22
-  Unknown232: -44000
-  Unknown40: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 36
-  Unknown41: 22
-  Unknown232: -48000
-  Unknown40: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 37
-  Unknown41: 22
-  Unknown232: -52000
-  Unknown40: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 38
-  Unknown41: 22
-  Unknown232: -56000
-  Unknown40: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 39
-  Unknown41: 22
-  Unknown232: -60000
-  Unknown40: 
-  endIf: 
-
-ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 29
-  ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 40
-    Unknown67: 0
-    if: (VARIABLE), 0
-      Unknown41: 22
-      addPositionX: -18467
-      Unknown99: 0, 4166
-      Unknown1732: 0, 31000
-      Unknown40: 
-      endIf: 
-    Unknown67: 1
-    if: (VARIABLE), 0
-      Unknown41: 22
-      addPositionX: -16800
-      Unknown99: 0, 5000
-      Unknown1732: 0, 29400
-      Unknown40: 
-      endIf: 
-    Unknown67: 2
-    if: (VARIABLE), 0
-      Unknown41: 22
-      addPositionX: -15967
-      Unknown99: 0, 3750
-      Unknown1732: 0, 30833
-      Unknown40: 
-      endIf: 
-    Unknown67: 3
-    if: (VARIABLE), 0
-      Unknown41: 22
-      addPositionX: -13467
-      Unknown99: 0, 5833
-      Unknown1732: 0, 29333
-      Unknown40: 
-      endIf: 
-    endIf: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 40
-  Unknown544: 46
-  Unknown2341: s32'Rot', 110, 0, 30, s32'shake_easeout', 0
-  Unknown67: 0
-  if: (VARIABLE), 0
-    Unknown41: 22
-    Unknown92: -403133
-    Unknown98: 50000
-    Unknown1731: 372000
-    Unknown231: 355000
-    Unknown232: 285000
-    Unknown164: 10000
-    Unknown40: 
-    endIf: 
-  Unknown67: 1
-  if: (VARIABLE), 0
-    Unknown41: 22
-    Unknown92: -384800
-    Unknown98: 60000
-    Unknown1731: 352000
-    Unknown231: 355000
-    Unknown232: 285000
-    Unknown164: 12000
-    Unknown40: 
-    endIf: 
-  Unknown67: 2
-  if: (VARIABLE), 0
-    Unknown41: 22
-    Unknown92: -375633
-    Unknown98: 45000
-    Unknown1731: 370000
-    Unknown231: 350000
-    Unknown232: 275000
-    Unknown164: 12000
-    Unknown40: 
-    endIf: 
-  Unknown67: 3
-  if: (VARIABLE), 0
-    Unknown41: 22
-    Unknown92: -348133
-    Unknown98: 70000
-    Unknown1731: 352000
-    Unknown231: 355000
-    Unknown232: 290000
-    Unknown164: 6000
-    Unknown40: 
-    endIf: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 72
-  Unknown41: 22
-  Unknown231: 0
-  Unknown232: 0
-  Unknown164: 0
-  Unknown1731: 0
-  Unknown2254: 22, 0
-  Unknown40: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 320
-  Unknown2244: 0
-  callSubroutineWithArgs: s32'cmnCameraSettings', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
-  Unknown2592: 0, 0
-  Unknown2592: 1000, 32
-  Unknown41: 22
-  Unknown2592: 0, 0
-  Unknown40: 
-  Unknown2588: 500, 32
-  Unknown41: 22
-  Unknown2588: 500, 32
-  Unknown40: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 320
-  Unknown2592: 0, 0
-  Unknown2588: 1000, 0
-  Unknown41: 22
-  Unknown2588: 1000, 0
-  Unknown40: 
-  endIf: 
-
-if: (VARIABLE), 324
-  ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 79
-    storeValue: (VARIABLE), 46, (STATIC), 0
-    Unknown33: s32'cmn_AfroObj', 5, 2, 46
-    endIf: 
-  Unknown51: 5
-  if: (VARIABLE), 0
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 79
-      Unknown41: 5
-      Unknown188: 600
-      Unknown40: 
-      endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 83
-      Unknown41: 5
-      Unknown188: 1000
-      Unknown40: 
-      endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 223
-      Unknown41: 5
-      Unknown188: 100
-      Unknown40: 
-      endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 227
-      Unknown41: 5
-      Unknown148: 350
-      Unknown156: 250
-      Unknown180: 250
-      Unknown40: 
-      endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 235
-      Unknown41: 5
-      Unknown188: 600
-      Unknown40: 
-      endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 318
-      Unknown41: 5
-      Unknown188: 1000
-      Unknown40: 
-      endIf: 
-    endIf: 
-  endIf: 
-
-endUpon: 
-endUpon: 
-sprite: s32'ino501_00', 1
-Unknown41: 22
-Unknown92: -900000
-Unknown40: 
-Unknown233: 
-sprite: s32'ino501_00', 21
-Unknown446: s32'Amp_501', 100
-Unknown446: s32'INO_500_Hold', 132
-Unknown446: s32'INO_500_MCircle', 100
-sprite: s32'ino501_01', 3
-sprite: s32'ino501_02', 4
-sprite: s32'ino501_03', 2
-Unknown446: s32'INO_500_BulletRoot_Front', 100
-Unknown446: s32'INO_500_BulletRoot_Back', 100
-Unknown446: s32'INO_500_BulletRoot_AddFront', 100
-Unknown446: s32'INO_500_BulletRoot_AddBack', 100
-Unknown615: s32'SE_BTL_INO_KAKUSEI_01'
-Unknown615: s32'SE_BTL_INO_KAKUSEI_02'
-Unknown613: s16'vxxx253'
-sprite: s32'ino501_05', 2
-sprite: s32'ino501_06', 2
-sprite: s32'ino501_07', 2
-sprite: s32'ino501_08', 2
-endLabel: 
-Unknown2234: 1
-storeValue: (VARIABLE), 45, (STATIC), 5
-beginLabel: s32'loop'
-sprite: s32'ino501_09', 2
-sprite: s32'ino501_10', 2
-sprite: s32'ino501_11', 2
-endLabel: 
-modifyVar: (ADD), (VARIABLE), 45, (STATIC), -1
-Unknown24: s32'loop', 2, 45
-sprite: s32'ino501_12', 3
-sprite: s32'ino501_13', 3
-sprite: s32'ino501_14', 4
-sprite: s32'ino501_15', 4
-sprite: s32'ino501_16', 4
-sprite: s32'ino501_17', 4
-sprite: s32'ino501_18', 4
-sprite: s32'ino501_19', 4
-callSubroutine: s32'cmnNandemoCancel'
-sprite: s32'ino501_20', 4
-sprite: s32'ino501_21', 4
-sprite: s32'ino501_22', 4
-sprite: s32'ino501_23', 4
-endState: 
 beginState: s32'Genkai_Land'
   upon: (IMMEDIATE)
     callSubroutineWithArgs: s32'cmn_AtkLv3', (STATIC), 4, (STATIC), 4, (STATIC), 0, (STATIC), 0
@@ -6607,7 +6586,7 @@ beginState: s32'Genkai_Land'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 35000
     Unknown770: 0, 60, 0, 6, 0, 20
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 80, 0, 25, 0, 55
     groundBounceCount: 1
     Unknown858: s32'CmnActBlowoff'

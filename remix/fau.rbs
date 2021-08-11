@@ -4028,38 +4028,38 @@ beginState: s32'CmnActMatchWin'
       Unknown2060: s32'MatchWin'
       endIf: 
     Unknown39: 0, 1
-    Unknown615: s32'SE_BTL_FAU_MatchWin'
-    endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 250
-    Unknown613: s16'vxxx402demo'
-    Unknown2243: s32'prev', -2147483618
-    Unknown1922: 1
-    Unknown1707: 40
-    endIf: 
-  ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 60
-    modifyVar: (ADD), (VARIABLE), 45, (STATIC), 9000
-    Unknown248: 2, 45
-    endIf: 
-  ifOperation: (IS_GREATER), (VARIABLE), 105, (STATIC), 115
-    ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 170
-      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 12000
+      Unknown615: s32'SE_BTL_FAU_MatchWin'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 250
+      Unknown613: s16'vxxx402demo'
+      Unknown2243: s32'prev', -2147483618
+      Unknown1922: 1
+      Unknown1707: 40
+      endIf: 
+    ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 60
+      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 9000
       Unknown248: 2, 45
       endIf: 
-    endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
-    Unknown2592: 0, 0
-    Unknown2592: 1000, 60
-    Unknown41: 22
-    Unknown2592: 0, 0
-    Unknown40: 
-    Unknown2588: 500, 60
-    Unknown41: 22
-    Unknown2588: 500, 60
-    Unknown40: 
-    endIf: 
-  endUpon: 
+    ifOperation: (IS_GREATER), (VARIABLE), 105, (STATIC), 115
+      ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 170
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 12000
+        Unknown248: 2, 45
+        endIf: 
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+      Unknown2592: 0, 0
+      Unknown2592: 1000, 60
+      Unknown41: 22
+      Unknown2592: 0, 0
+      Unknown40: 
+      Unknown2588: 500, 60
+      Unknown41: 22
+      Unknown2588: 500, 60
+      Unknown40: 
+      endIf: 
+    endUpon: 
+  endState: 
 
-endState: 
 beginState: s32'CmnActLose'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmnactlose'
@@ -4540,7 +4540,7 @@ beginState: s32'NmlAtk2A'
     Unknown760: 0, 80, 0, 10, 0, 15
     hitAirPushbackY: 0, 30000
     Unknown770: 0, 60, 0, 4, 0, 16
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 250, 0, 5, 0, 15
     addGatlingOption: s32'NmlAtk6A'
     addGatlingOption: s32'NmlAtk2C'
@@ -4584,7 +4584,7 @@ beginState: s32'NmlAtk5B'
     Unknown760: 0, 80, 0, 10, 0, 15
     hitAirPushbackY: 0, 50000
     Unknown770: 0, 60, 0, 4, 0, 16
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 250, 0, 5, 0, 15
     airHitEffect: 13
     addGatlingOption: s32'NmlAtk6A'
@@ -4724,7 +4724,7 @@ beginState: s32'NmlAtk5CNear'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 20000
     Unknown770: 0, 60, 0, 8, 0, 16
-    Unknown778: 0, 500
+    hitGravity: (STATIC), 500
     Unknown783: 0, 250, 0, 10, 0, 30
     addGatlingOption: s32'NmlAtk5A'
     addGatlingOption: s32'NmlAtk6A'
@@ -4861,7 +4861,7 @@ beginState: s32'NmlAtk2C'
     hitAirPushbackY: 0, 25000
     counterhitAirPushbackY: 0, 40000
     Unknown770: 0, 60, 0, 4, 0, 10
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 250, 0, 14, 0, 30
     Unknown784: '0x0000000096000000000000000E0000000000000032000000'
     callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
@@ -7530,7 +7530,7 @@ beginState: s32'Kuebiko'
   Unknown760: 0, 80, 0, 6, 0, 10
   hitAirPushbackY: 0, -100000
   Unknown770: 0, 70, 0, 6, 0, 10
-  Unknown778: 0, 0
+  hitGravity: (STATIC), 0
   Unknown783: 0, 80, 0, 10, 0, 30
   groundHitEffect: 8
   groundBounceYVelocityPercent: 100
@@ -7792,7 +7792,7 @@ beginState: s32'Kuebiko'
   Unknown760: 0, 80, 0, 6, 0, 10
   hitAirPushbackY: 0, -100000
   Unknown770: 0, 70, 0, 6, 0, 10
-  Unknown778: 0, 0
+  hitGravity: (STATIC), 0
   Unknown783: 0, 80, 0, 15, 0, 30
   groundHitEffect: 8
   groundBounceYVelocityPercent: 100
@@ -8040,7 +8040,7 @@ beginState: s32'Hikimodoshi'
   Unknown1064: s32''
   groundHitEffect: 10
   hitAirPushbackX: 0, -20000
-  Unknown778: 0, 2500
+  hitGravity: (STATIC), 2500
   hitAirPushbackY: 0, 40000
   Unknown1142: 0
   Unknown1157: 0
@@ -8097,7 +8097,7 @@ beginState: s32'NiceShot'
     hitAirPushbackX: 0, 80000
     Unknown760: 0, 80, 0, 5, 0, 10
     hitAirPushbackY: 0, 55000
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 80, 0, 10, 0, 50
     Unknown1145: 2
     hitSoftKnockdown: 0
@@ -8215,7 +8215,7 @@ beginState: s32'NiceShot'
       Unknown760: 0, 80, 0, 5, 0, 10
       hitAirPushbackY: 0, 50000
       Unknown770: 0, 80, 0, 8, 0, 14
-      Unknown778: 0, 0
+      hitGravity: (STATIC), 0
       Unknown783: 0, 80, 0, 10, 0, 30
       storeValue: (VARIABLE), 52, (STATIC), 2
       Unknown1051: 0
@@ -8236,7 +8236,7 @@ beginState: s32'NiceShot'
   Unknown760: 0, 80, 0, 5, 0, 10
   hitAirPushbackY: 0, 50000
   Unknown770: 0, 80, 0, 8, 0, 14
-  Unknown778: 0, 0
+  hitGravity: (STATIC), 0
   Unknown783: 0, 80, 0, 10, 0, 30
   storeValue: (VARIABLE), 52, (STATIC), 2
   Unknown1051: 0
@@ -8254,7 +8254,7 @@ beginState: s32'NiceShot'
   Unknown760: 0, 80, 0, 5, 0, 10
   hitAirPushbackY: 0, 30000
   Unknown770: 0, 80, 0, 8, 0, 14
-  Unknown778: 0, 0
+  hitGravity: (STATIC), 0
   Unknown783: 0, 80, 0, 10, 0, 30
   storeValue: (VARIABLE), 52, (STATIC), 1
   Unknown2595: s32'NiceShot1'
@@ -8345,7 +8345,7 @@ beginState: s32'exciting'
     Unknown924: 1
     hitAirPushbackX: 0, 30000
     hitAirPushbackY: 0, 0
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 500, 0, 15, 0, 20
     Unknown1974: 1
     upon: 90
@@ -8483,7 +8483,7 @@ beginState: s32'excitingexe'
     airHitEffect: 8
     hitAirPushbackX: 0, 5000
     hitAirPushbackY: 0, 0
-    Unknown778: 0, 100
+    hitGravity: (STATIC), 100
     Unknown933: 1
     Unknown906: 1
     Unknown1971: 1
@@ -8594,102 +8594,100 @@ beginState: s32'excitingexe'
         Unknown2341: s32'Pitch', 3, 20, 100, s32'linear', 0
         endIf: 
       Unknown39: 0, 315
-      Unknown41: 22
-      Unknown613: s16'vxxx301'
-      Unknown40: 
-      endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 318
-      Unknown449: s32'cmn_dust_centerline', 100
-      endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 355
-      Unknown403: 1
-      Unknown2096: 30
-      Unknown446: s32'CS500_whiteout', 100
-      Unknown32: s32'CS500_clover'
-      endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
-      Unknown2592: 0, 0
-      Unknown2592: 1000, 0
-      Unknown41: 22
-      Unknown2592: 0, 0
-      Unknown2592: 1000, 0
-      Unknown40: 
-      Unknown2588: 500, 0
-      Unknown41: 22
-      Unknown2588: 500, 0
-      Unknown40: 
-      endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 388
-      Unknown2592: 0, 0
-      Unknown2588: 1000, 0
-      Unknown41: 22
-      Unknown2588: 1000, 0
-      Unknown40: 
-      endIf: 
+        Unknown41: 22
+        Unknown613: s16'vxxx301'
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 318
+        Unknown449: s32'cmn_dust_centerline', 100
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 355
+        Unknown403: 1
+        Unknown2096: 30
+        Unknown446: s32'CS500_whiteout', 100
+        Unknown32: s32'CS500_clover'
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+        Unknown2592: 0, 0
+        Unknown2592: 1000, 0
+        Unknown41: 22
+        Unknown2592: 0, 0
+        Unknown2592: 1000, 0
+        Unknown40: 
+        Unknown2588: 500, 0
+        Unknown41: 22
+        Unknown2588: 500, 0
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 388
+        Unknown2592: 0, 0
+        Unknown2588: 1000, 0
+        Unknown41: 22
+        Unknown2588: 1000, 0
+        Unknown40: 
+        endIf: 
+      endUpon: 
     endUpon: 
-  endUpon: 
-
-sprite: s32'fau501_00', 24
-Unknown233: 
-Unknown1142: 1
-Unknown1030: 90
-Unknown1032: 1
-Unknown1151: 1
-Unknown2244: 1
-Unknown428: 0, 0
-Unknown427: 0, 0
-Unknown429: 0, 0
-upon: (HIT)
-  callSubroutineWithArgs: s32'cmnAtkTemplNageFinish', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
-  Unknown41: 22
-  Unknown2182: 1
-  Unknown40: 
-  endUpon: 
-
-Unknown2571: 0, 0, 0, 500
-Unknown2107: 1
-upon: (BEFORE_EXIT)
+  sprite: s32'fau501_00', 24
+  Unknown233: 
+  Unknown1142: 1
+  Unknown1030: 90
+  Unknown1032: 1
+  Unknown1151: 1
+  Unknown2244: 1
+  Unknown428: 0, 0
+  Unknown427: 0, 0
+  Unknown429: 0, 0
+  upon: (HIT)
+    callSubroutineWithArgs: s32'cmnAtkTemplNageFinish', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    Unknown41: 22
+    Unknown2182: 1
+    Unknown40: 
+    endUpon: 
+  Unknown2571: 0, 0, 0, 500
+  Unknown2107: 1
+  upon: (BEFORE_EXIT)
+    Unknown1803: s32'CS500_whiteout', 23
+    Unknown2244: 0
+    Unknown2571: 0, 0, 0, 0
+    Unknown2107: 0
+    Unknown41: 22
+    Unknown2182: 0
+    Unknown40: 
+    Unknown403: 0
+    callSubroutineWithArgs: s32'cmnCameraSettings', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
+    endUpon: 
+  sprite: s32'fau501_00', 10
   Unknown1803: s32'CS500_whiteout', 23
-  Unknown2244: 0
-  Unknown2571: 0, 0, 0, 0
-  Unknown2107: 0
+  Unknown2244: 1
   Unknown41: 22
   Unknown2182: 0
   Unknown40: 
+  sprite: s32'fau501_00', 10
+  clearRegisteredUponCode: (BEFORE_EXIT)
+  Unknown2571: 0, 0, 0, 0
+  Unknown2107: 0
+  Unknown2560: 0
+  Unknown1972: 0
+  Unknown2244: 0
   Unknown403: 0
-  callSubroutineWithArgs: s32'cmnCameraSettings', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
-  endUpon: 
+  sprite: s32'fau501_01', 4
+  sprite: s32'fau501_02', 4
+  Unknown613: s16'vxxx254'
+  sprite: s32'fau501_03', 4
+  sprite: s32'fau501_04', 4
+  sprite: s32'fau501_05', 4
+  sprite: s32'fau501_06', 4
+  sprite: s32'fau501_07', 4
+  callSubroutine: s32'cmnNandemoCancel'
+  sprite: s32'fau501_08', 4
+  sprite: s32'fau501_09', 4
+  sprite: s32'fau501_10', 4
+  sprite: s32'fau501_11', 4
+  sprite: s32'fau501_12', 4
+  sprite: s32'fau501_13', 4
+  endState: 
 
-sprite: s32'fau501_00', 10
-Unknown1803: s32'CS500_whiteout', 23
-Unknown2244: 1
-Unknown41: 22
-Unknown2182: 0
-Unknown40: 
-sprite: s32'fau501_00', 10
-clearRegisteredUponCode: (BEFORE_EXIT)
-Unknown2571: 0, 0, 0, 0
-Unknown2107: 0
-Unknown2560: 0
-Unknown1972: 0
-Unknown2244: 0
-Unknown403: 0
-sprite: s32'fau501_01', 4
-sprite: s32'fau501_02', 4
-Unknown613: s16'vxxx254'
-sprite: s32'fau501_03', 4
-sprite: s32'fau501_04', 4
-sprite: s32'fau501_05', 4
-sprite: s32'fau501_06', 4
-sprite: s32'fau501_07', 4
-callSubroutine: s32'cmnNandemoCancel'
-sprite: s32'fau501_08', 4
-sprite: s32'fau501_09', 4
-sprite: s32'fau501_10', 4
-sprite: s32'fau501_11', 4
-sprite: s32'fau501_12', 4
-sprite: s32'fau501_13', 4
-endState: 
 beginState: s32'NaNaNaNanigaDerukana'
   upon: (IMMEDIATE)
     Unknown1971: 1

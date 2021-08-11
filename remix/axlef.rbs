@@ -479,7 +479,7 @@ beginState: s32'ByakueObj'
     airHitEffect: 9
     hitAirPushbackX: 0, 35000
     hitAirPushbackY: 0, 30000
-    Unknown778: 0, 2900
+    hitGravity: (STATIC), 2900
     Unknown725: 1
     Unknown1058: 1
     Unknown2191: 3
@@ -1849,51 +1849,50 @@ beginState: s32'axl500_ByakueCS'
     Unknown454: 2
     upon: (FRAME_STEP)
       Unknown39: 0, 46
-      Unknown2589: s32'M_PP_axl_500_speedline', 1, 10
-      endIf: 
-    Unknown39: 0, 91
-    Unknown2589: s32'M_PP_axl_500_speedline', 0, 10
-    Unknown446: s32'axl500_ByakueCS_Spark', 100
-    endIf: 
-  Unknown39: 0, 95
-  Unknown2277: 1
-  Unknown449: s32'axl_500_scrfire', 100
-  endIf: 
+        Unknown2589: s32'M_PP_axl_500_speedline', 1, 10
+        endIf: 
+      Unknown39: 0, 91
+        Unknown2589: s32'M_PP_axl_500_speedline', 0, 10
+        Unknown446: s32'axl500_ByakueCS_Spark', 100
+        endIf: 
+      Unknown39: 0, 95
+        Unknown2277: 1
+        Unknown449: s32'axl_500_scrfire', 100
+        endIf: 
+      Unknown39: 0, 143
+        Unknown446: s32'axl500_ByakueCS_Fire', 100
+        endIf: 
+      Unknown39: 0, 91
+        Unknown446: s32'axl500_ByakueCS_Wind', 100
+        Unknown41: 1
+        Unknown92: 408013
+        Unknown98: 141063
+        Unknown1731: 201020
+        Unknown231: 358000
+        Unknown232: 282000
+        Unknown164: 10000
+        Unknown40: 
+        endIf: 
+      Unknown39: 0, 87
+        Unknown446: s32'axl500_ByakueCS_Wind', 100
+        Unknown41: 1
+        Unknown92: 178377
+        Unknown98: 240158
+        Unknown1731: 276704
+        Unknown231: 326000
+        Unknown232: 260000
+        Unknown164: 30000
+        Unknown148: 1500
+        Unknown40: 
+        endIf: 
+      endUpon: 
+    upon: 99
+      Unknown19: 23
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 300
+  endState: 
 
-Unknown39: 0, 143
-Unknown446: s32'axl500_ByakueCS_Fire', 100
-endIf: 
-Unknown39: 0, 91
-Unknown446: s32'axl500_ByakueCS_Wind', 100
-Unknown41: 1
-Unknown92: 408013
-Unknown98: 141063
-Unknown1731: 201020
-Unknown231: 358000
-Unknown232: 282000
-Unknown164: 10000
-Unknown40: 
-endIf: 
-Unknown39: 0, 87
-Unknown446: s32'axl500_ByakueCS_Wind', 100
-Unknown41: 1
-Unknown92: 178377
-Unknown98: 240158
-Unknown1731: 276704
-Unknown231: 326000
-Unknown232: 260000
-Unknown164: 30000
-Unknown148: 1500
-Unknown40: 
-endIf: 
-endUpon: 
-upon: 99
-  Unknown19: 23
-  endUpon: 
-
-endUpon: 
-sprite: s32'null', 300
-endState: 
 beginState: s32'axl500_ByakueCS_Wind'
   upon: (IMMEDIATE)
     Unknown458: 3

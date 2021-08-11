@@ -4319,7 +4319,7 @@ beginState: s32'NmlAtk5B'
     Unknown760: 0, 80, 0, 5, 0, 15
     hitAirPushbackY: 0, 30000
     Unknown770: 0, 60, 0, 5, 0, 16
-    Unknown778: 0, 1000
+    hitGravity: (STATIC), 1000
     Unknown783: 0, 250, 0, 8, 0, 15
     addGatlingOption: s32'NmlAtk5A'
     addGatlingOption: s32'NmlAtk6A'
@@ -4385,7 +4385,7 @@ beginState: s32'NmlAtk2B'
     Unknown760: 0, 80, 0, 10, 0, 15
     hitAirPushbackY: 0, 25000
     Unknown770: 0, 60, 0, 4, 0, 16
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 250, 0, 5, 0, 15
     addGatlingOption: s32'NmlAtk2A'
     addGatlingOption: s32'NmlAtk6A'
@@ -4437,7 +4437,7 @@ beginState: s32'NmlAtk5CNear'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 30000
     Unknown770: 0, 60, 0, 6, 0, 10
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 250, 0, 10, 0, 30
     Unknown2171: 1
     addGatlingOption: s32'NmlAtk6A'
@@ -4597,7 +4597,7 @@ beginState: s32'NmlAtk2C'
     hitAirPushbackX: 0, 10000
     hitAirPushbackY: 0, 40000
     Unknown770: 0, 50, 0, 5, 0, 11
-    Unknown778: 0, 1000
+    hitGravity: (STATIC), 1000
     Unknown783: 0, 100, 0, 10, 0, 35
     addGatlingOption: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk5DBunri'
@@ -4807,7 +4807,7 @@ beginState: s32'NmlAtk2D'
     Unknown760: 0, 80, 0, 6, 0, 12
     hitAirPushbackY: 0, 40000
     Unknown770: 0, 60, 0, 5, 0, 10
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 150, 0, 6, 0, 16
     upon: 62
       hitAirPushbackY: 0, 50000
@@ -5028,7 +5028,7 @@ beginState: s32'NmlAtk5E'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 30000
     Unknown770: 0, 60, 0, 8, 0, 16
-    Unknown778: 0, 500
+    hitGravity: (STATIC), 500
     Unknown783: 0, 250, 0, 5, 0, 30
     Unknown953: 2
     storeValue: (VARIABLE), 343, (STATIC), -350000
@@ -6448,7 +6448,7 @@ beginState: s32'NmlAtkAir5E'
   Unknown760: 0, 80, 0, 5, 0, 15
   hitAirPushbackY: 0, 15000
   Unknown770: 0, 50, 0, 5, 0, 11
-  Unknown778: 0, 500
+  hitGravity: (STATIC), 500
   Unknown783: 0, 200, 0, 5, 0, 50
   callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
   callSubroutine: s32'cmn_Dust_HomingJump_Attack'
@@ -6601,7 +6601,7 @@ beginState: s32'ThrowExe'
   groundHitEffect: 12
   hitAirPushbackX: 0, 20000
   hitAirPushbackY: 0, 23000
-  Unknown778: 0, 2500
+  hitGravity: (STATIC), 2500
   Unknown2193: 100, 175000, 200000
   Unknown2273: 0, 1200
   Unknown449: s32'ram_310hiteff_fin', 130
@@ -6738,7 +6738,7 @@ beginState: s32'AirThrowExe'
   groundHitEffect: 8
   hitAirPushbackX: 0, 5000
   hitAirPushbackY: 0, 25000
-  Unknown778: 0, 2500
+  hitGravity: (STATIC), 2500
   physicsXImpulse: 0, -15000
   physicsYImpulse: 0, 20000
   Unknown2193: 100, 220000, 165000
@@ -6777,7 +6777,7 @@ beginState: s32'Dauro'
     Unknown760: 0, 70, 0, 6, 0, 10
     hitAirPushbackY: 0, 70000
     Unknown770: 0, 70, 0, 7, 0, 12
-    Unknown778: 0, 500
+    hitGravity: (STATIC), 500
     Unknown783: 0, 100, 0, 8, 0, 28
     Unknown1005: 250
     Unknown1004: 250
@@ -6931,7 +6931,7 @@ beginState: s32'Erarurumo1'
     Unknown760: 0, 80, 0, 5, 0, 15
     hitAirPushbackY: 0, 30000
     Unknown770: 0, 60, 0, 5, 0, 16
-    Unknown778: 0, 500
+    hitGravity: (STATIC), 500
     Unknown783: 0, 150, 0, 10, 0, 30
     addWhiffCancelOption: s32'SpecialCancel_FDash'
     addWhiffCancelOption: s32'Erarurumo2'
@@ -7018,7 +7018,7 @@ beginState: s32'Erarurumo2'
       clearRegisteredUponCode: 86
       hitAirPushbackX: 0, 5000
       hitAirPushbackY: 0, 15000
-      Unknown778: 0, 1000
+      hitGravity: (STATIC), 1000
       endUpon: 
     if: (VARIABLE), 53
       callSubroutine: s32'cmn_fuwafuwafuwa'
@@ -7026,7 +7026,7 @@ beginState: s32'Erarurumo2'
       Unknown760: 0, 80, 0, 6, 0, 10
       hitAirPushbackY: 0, 60000
       Unknown770: 0, 70, 0, 6, 0, 10
-      Unknown778: 0, 0
+      hitGravity: (STATIC), 0
       Unknown783: 0, 100, 0, 15, 0, 30
       Unknown1004: 30
       endIf: 
@@ -7036,7 +7036,7 @@ beginState: s32'Erarurumo2'
       Unknown760: 0, 80, 0, 6, 0, 10
       hitAirPushbackY: 0, 50000
       Unknown770: 0, 60, 0, 6, 0, 10
-      Unknown778: 0, 0
+      hitGravity: (STATIC), 0
       Unknown783: 0, 150, 0, 15, 0, 30
       endElse: 
     addWhiffCancelOption: s32'Erarurumo3'
@@ -7117,7 +7117,7 @@ beginState: s32'Erarurumo3'
       Unknown760: 0, 80, 0, 6, 0, 10
       hitAirPushbackY: 0, -100000
       Unknown770: 0, 70, 0, 6, 0, 12
-      Unknown778: 0, 0
+      hitGravity: (STATIC), 0
       Unknown808: 0
       Unknown783: 0, 100, 0, 15, 0, 30
       groundBounceYVelocityPercent: 50
@@ -7132,7 +7132,7 @@ beginState: s32'Erarurumo3'
       Unknown760: 0, 80, 0, 6, 0, 10
       hitAirPushbackY: 0, -100000
       Unknown770: 0, 70, 0, 6, 0, 12
-      Unknown778: 0, 0
+      hitGravity: (STATIC), 0
       Unknown808: 500
       Unknown783: 0, 100, 0, 15, 0, 30
       groundBounceYVelocityPercent: 30
@@ -7200,7 +7200,7 @@ beginState: s32'ShirudoLand'
     groundHitEffect: 8
     hitAirPushbackX: 0, 30000
     hitAirPushbackY: 0, -30000
-    Unknown778: 0, 1500
+    hitGravity: (STATIC), 1500
     groundBounceCount: 1
     groundBounceYVelocityPercent: 20
     Unknown808: 2000
@@ -7270,7 +7270,7 @@ beginState: s32'ShirudoAir'
     groundHitEffect: 8
     hitAirPushbackX: 0, 30000
     hitAirPushbackY: 0, -30000
-    Unknown778: 0, 1500
+    hitGravity: (STATIC), 1500
     groundBounceCount: 1
     groundBounceYVelocityPercent: 20
     Unknown953: 3
@@ -7546,7 +7546,7 @@ beginState: s32'AgresaOrdono'
     Unknown760: 0, 80, 0, 5, 0, 15
     hitAirPushbackY: 0, 10000
     Unknown770: 0, 80, 0, 6, 0, 10
-    Unknown778: 0, 500
+    hitGravity: (STATIC), 500
     Unknown783: 0, 100, 0, 10, 0, 50
     Unknown2526: 1, 1, 6, 100, 60, 200
     Unknown2591: 1, 1, 6, 100, 200, 200
@@ -7973,7 +7973,7 @@ beginState: s32'Morutobato'
     Unknown760: 0, 80, 0, 8, 0, 15
     hitAirPushbackY: 0, 80000
     Unknown770: 0, 60, 0, 4, 0, 15
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 200, 0, 5, 0, 50
     callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 8, (STATIC), 0, (STATIC), 0, (STATIC), 0
     Unknown1971: 1

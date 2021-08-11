@@ -5328,7 +5328,7 @@ beginState: s32'NmlAtk5B'
     Unknown760: 0, 80, 0, 10, 0, 15
     hitAirPushbackY: 0, 30000
     Unknown770: 0, 60, 0, 4, 0, 16
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 250, 0, 5, 0, 15
     addWhiffCancelOption: s32'NmlAtk5E'
     addWhiffCancelOption: s32'NmlAtk2E'
@@ -5454,7 +5454,7 @@ beginState: s32'NmlAtk2B'
     Unknown760: 0, 70, 0, 6, 0, 11
     hitAirPushbackY: 0, 20000
     Unknown770: 0, 50, 0, 5, 0, 11
-    Unknown778: 0, 1800
+    hitGravity: (STATIC), 1800
     Unknown783: 0, 100, 0, 10, 0, 35
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
@@ -5517,7 +5517,7 @@ beginState: s32'NmlAtk5CNear'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 20000
     Unknown770: 0, 60, 0, 4, 0, 10
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 250, 0, 10, 0, 30
     addGatlingOption: s32'NmlAtk5B'
     addGatlingOption: s32'NmlAtk5CFar'
@@ -5575,7 +5575,7 @@ beginSubroutine: s32'NmlAtk5CFarint'
   hitAirPushbackX: 0, 20000
   hitAirPushbackY: 0, 40000
   Unknown770: 0, 50, 0, 5, 0, 11
-  Unknown778: 0, 1000
+  hitGravity: (STATIC), 1000
   Unknown783: 0, 100, 0, 10, 0, 35
   addGatlingOption: s32'NmlAtk2C'
   addGatlingOption: s32'NmlAtk5D'
@@ -5637,7 +5637,7 @@ beginState: s32'NmlAtk2C'
     hitAirPushbackX: 0, 5000
     hitAirPushbackY: 0, 40000
     Unknown770: 0, 50, 0, 5, 0, 11
-    Unknown778: 0, 1000
+    hitGravity: (STATIC), 1000
     Unknown783: 0, 100, 0, 10, 0, 35
     addGatlingOption: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk2D'
@@ -5846,7 +5846,7 @@ beginState: s32'NmlAtk2D'
     Unknown760: 0, 80, 0, 8, 0, 15
     hitAirPushbackY: 0, 50000
     Unknown770: 0, 70, 0, 4, 0, 15
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 155, 0, 10, 0, 50
     Unknown1067: 6, 0, 100000
     callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
@@ -6823,7 +6823,7 @@ beginState: s32'ThrowExe'
     groundHitEffect: 12
     Unknown1067: 4, 210000, 0
     hitAirPushbackY: 0, 28000
-    Unknown778: 0, 1925
+    hitGravity: (STATIC), 1925
     hitAirPushbackX: 0, 14000
     endUpon: 
   sprite: s32'keep', 4
@@ -7559,7 +7559,7 @@ beginState: s32'DamnedFangExe'
     Unknown760: 0, 90, 0, 8, 0, 32
     hitAirPushbackY: 0, 13000
     Unknown770: 0, 90, 0, 16, 0, 32
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     groundHitEffect: 8
     Unknown1059: 1
     Unknown1064: s32'DamnedFangExe'
@@ -7616,7 +7616,7 @@ beginState: s32'DamnedFangExe'
   Unknown233: 
   hitAirPushbackX: 0, 0
   hitAirPushbackY: 0, 0
-  Unknown778: 0, 0
+  hitGravity: (STATIC), 0
   airHitEffect: 30
   Unknown612: s32'SE_BTL_CMN_Swing_Sword_Sharp_M'
   Unknown446: s32'ShadowJump03', 100
@@ -7724,7 +7724,7 @@ beginState: s32'DamnedFangExe'
   Unknown612: s32'SE_BTL_CMN_Swing_Sword_Sharp_M'
   damage: 0, 50
   hitAirPushbackY: 0, -30000
-  Unknown778: 0, 1800
+  hitGravity: (STATIC), 1800
   hitStop: 16
   Unknown1111: 0
   Unknown1059: 0

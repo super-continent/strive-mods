@@ -709,7 +709,7 @@ beginState: s32'GunFlame_Obj'
     Unknown760: 0, 80, 0, 4, 0, 8
     hitAirPushbackY: 0, 30000
     Unknown770: 0, 60, 0, 8, 0, 13
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 125, 0, 10, 0, 30
     Unknown1005: 200
     Unknown1004: 200

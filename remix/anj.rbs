@@ -3364,43 +3364,41 @@ beginState: s32'CmnActMatchWin'
       Unknown2589: s32'Overlay_win', 1, 40
       endIf: 
     Unknown39: 0, 79
-    Unknown2244: 1
-    endIf: 
-  Unknown39: 0, 223
-  Unknown412: -1, 1200, 0
-  endIf: 
+      Unknown2244: 1
+      endIf: 
+    Unknown39: 0, 223
+      Unknown412: -1, 1200, 0
+      endIf: 
+    Unknown39: 0, 299
+      Unknown412: -1, 500, 0
+      endIf: 
+    Unknown39: 0, 352
+      Unknown613: s16'vxxx402demo'
+      Unknown2243: s32'prev', -2147483618
+      Unknown1693: 0, 90
+      Unknown1922: 1
+      Unknown1707: 40
+      endIf: 
+    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 2
+      ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 79
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 2500
+        Unknown248: 2, 45
+        endIf: 
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+      Unknown2592: 0, 0
+      Unknown2592: 1000, 32
+      Unknown41: 22
+      Unknown2592: 0, 0
+      Unknown40: 
+      Unknown2588: 500, 32
+      Unknown41: 22
+      Unknown2588: 500, 32
+      Unknown40: 
+      endIf: 
+    endUpon: 
+  endState: 
 
-Unknown39: 0, 299
-Unknown412: -1, 500, 0
-endIf: 
-Unknown39: 0, 352
-Unknown613: s16'vxxx402demo'
-Unknown2243: s32'prev', -2147483618
-Unknown1693: 0, 90
-Unknown1922: 1
-Unknown1707: 40
-endIf: 
-ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 2
-  ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 79
-    modifyVar: (ADD), (VARIABLE), 45, (STATIC), 2500
-    Unknown248: 2, 45
-    endIf: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
-  Unknown2592: 0, 0
-  Unknown2592: 1000, 32
-  Unknown41: 22
-  Unknown2592: 0, 0
-  Unknown40: 
-  Unknown2588: 500, 32
-  Unknown41: 22
-  Unknown2588: 500, 32
-  Unknown40: 
-  endIf: 
-
-endUpon: 
-endState: 
 beginState: s32'CmnActLose'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmnactlose'
@@ -3708,7 +3706,7 @@ beginState: s32'NmlAtk5B'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 25000
     Unknown770: 0, 70, 0, 4, 0, 16
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 250, 0, 5, 0, 15
     callSubroutine: s32'cmn_AtkTemplNokezoriLow'
     enableJumpCancel: 1
@@ -3763,7 +3761,7 @@ beginState: s32'NmlAtk2B'
     hitAirPushbackX: 0, 5000
     hitAirPushbackY: 0, 30000
     Unknown770: 0, 50, 0, 5, 0, 11
-    Unknown778: 0, 1000
+    hitGravity: (STATIC), 1000
     Unknown783: 0, 100, 0, 10, 0, 35
     addGatlingOption: s32'NmlAtk6A'
     addGatlingOption: s32'NmlAtk2C'
@@ -3809,7 +3807,7 @@ beginState: s32'NmlAtk5CNear'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 20000
     Unknown770: 0, 60, 0, 8, 0, 16
-    Unknown778: 0, 500
+    hitGravity: (STATIC), 500
     Unknown783: 0, 250, 0, 10, 0, 30
     addGatlingOption: s32'NmlAtk6A'
     addGatlingOption: s32'NmlAtk5CFar'
@@ -3867,7 +3865,7 @@ beginState: s32'NmlAtk5CFar'
     Unknown760: 0, 80, 0, 10, 0, 15
     hitAirPushbackY: 0, 25000
     Unknown770: 0, 60, 0, 4, 0, 16
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 250, 0, 5, 0, 15
     addGatlingOption: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk2D'
@@ -3920,7 +3918,7 @@ beginState: s32'NmlAtk2C'
     hitAirPushbackX: 0, 10000
     hitAirPushbackY: 0, 40000
     Unknown770: 0, 50, 0, 5, 0, 11
-    Unknown778: 0, 1000
+    hitGravity: (STATIC), 1000
     Unknown783: 0, 100, 0, 10, 0, 35
     addGatlingOption: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk2D'
@@ -3974,7 +3972,7 @@ beginState: s32'NmlAtk5D'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, -100000
     Unknown770: 0, 70, 0, 6, 0, 10
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown808: 0
     Unknown783: 0, 50, 0, 10, 0, 20
     groundBounceYVelocityPercent: 100
@@ -4140,7 +4138,7 @@ beginState: s32'NmlAtk2D'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 50000
     Unknown770: 0, 60, 0, 4, 0, 10
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 200, 0, 14, 0, 50
     upon: (HIT_OR_GUARD)
       extendPushboxX: 100000
@@ -4955,7 +4953,7 @@ beginState: s32'ThrowExe'
     Unknown1142: 1
     hitAirPushbackX: 0, 7000
     hitAirPushbackY: 0, 23000
-    Unknown778: 0, 1800
+    hitGravity: (STATIC), 1800
     Unknown1702: s32'Toge', 0
     Unknown2526: 1, 1, 1, 0, 60, 5
     Unknown2591: 1, 1, 1, 0, 60, 5
@@ -5045,7 +5043,7 @@ beginState: s32'AirThrowExe'
     groundHitEffect: 9
     hitAirPushbackX: 0, 10000
     hitAirPushbackY: 0, 40000
-    Unknown778: 0, 3000
+    hitGravity: (STATIC), 3000
     Unknown1142: 1
     endUpon: 
   sprite: s32'keep', 4
@@ -5289,10 +5287,10 @@ beginState: s32'Suigetsu'
     storeValue: (VARIABLE), 53, (STATIC), 0
     Unknown1058: 1
     endUpon: 
-  sprite: s32'anj401_00', 3
+  sprite: s32'anj401_00', 2
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 5, (STATIC), 0, (STATIC), 0, (STATIC), 0
-  sprite: s32'anj401_01', 3
-  sprite: s32'anj401_02', 3
+  sprite: s32'anj401_01', 2
+  sprite: s32'anj401_02', 2
   sprite: s32'anj401_03', 4
   Unknown1694: 0, 500, 0, 4, 0, 2, 0, 1
   storeValue: (VARIABLE), 53, (STATIC), 1
@@ -5375,7 +5373,7 @@ beginState: s32'Kou'
     hitAirPushbackY: 0, 35000
     counterhitAirPushbackY: 0, 55000
     Unknown770: 0, 80, 0, 6, 0, 16
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 100, 0, 10, 0, 50
     callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
     Unknown953: 2
@@ -5488,7 +5486,7 @@ beginState: s32'Kou'
   Unknown760: 0, 80, 0, 6, 0, 10
   hitAirPushbackY: 0, 35000
   Unknown770: 0, 80, 0, 6, 0, 16
-  Unknown778: 0, 0
+  hitGravity: (STATIC), 0
   Unknown783: 0, 150, 0, 10, 0, 29
   callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
   if: (VARIABLE), 46
@@ -5522,7 +5520,7 @@ beginState: s32'Fujin'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 40000
     Unknown770: 0, 60, 0, 8, 0, 16
-    Unknown778: 0, 500
+    hitGravity: (STATIC), 500
     Unknown783: 0, 250, 0, 10, 0, 30
     addGatlingOption: s32'Shin'
     addGatlingOption: s32'Issokutobi'
@@ -5615,7 +5613,7 @@ beginState: s32'Fujin'
   if: (VARIABLE), 46
     groundHitEffect: 11
     Unknown770: 0, 80, 0, 10, 0, 18
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 200, 0, 12, 0, 37
     endIf: 
   sprite: s32'anj403_09', 5
@@ -5792,7 +5790,7 @@ beginState: s32'Rin'
     Unknown760: 0, 60, 0, 8, 0, 12
     hitAirPushbackY: 0, -90000
     Unknown770: 0, 70, 0, 8, 0, 12
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown808: 0
     Unknown783: 0, 100, 0, 12, 0, 50
     groundBounceCount: 1
@@ -5928,116 +5926,111 @@ beginState: s32'Sai'
         Unknown40: 
         endIf: 
       Unknown39: 0, 16
-      Unknown446: s32'ANJ_500CS_Bloom', 100
-      endIf: 
-    Unknown39: 0, 38
-    Unknown446: s32'ANJ_500CS_Petal', 100
-    Unknown446: s32'ANJ_500CS_Moon', 100
-    Unknown427: 0, 1
-    Unknown2589: s32'MI_PP_anj_paper', 1, 1
-    Unknown425: -1, 900, 1
-    endIf: 
-  Unknown39: 0, 97
-  Unknown2589: s32'MI_PP_anj_paper', 0, 1
-  Unknown427: 1, 1
-  Unknown410: -1, 800, 1
-  Unknown425: -1, 1400, 1
-  endIf: 
+        Unknown446: s32'ANJ_500CS_Bloom', 100
+        endIf: 
+      Unknown39: 0, 38
+        Unknown446: s32'ANJ_500CS_Petal', 100
+        Unknown446: s32'ANJ_500CS_Moon', 100
+        Unknown427: 0, 1
+        Unknown2589: s32'MI_PP_anj_paper', 1, 1
+        Unknown425: -1, 900, 1
+        endIf: 
+      Unknown39: 0, 97
+        Unknown2589: s32'MI_PP_anj_paper', 0, 1
+        Unknown427: 1, 1
+        Unknown410: -1, 800, 1
+        Unknown425: -1, 1400, 1
+        endIf: 
+      Unknown39: 0, 30
+        Unknown2189: 0, 5
+        endIf: 
+      Unknown39: 0, 100
+        Unknown2189: 2, 5
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 31
+        ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 50
+          Unknown41: 22
+          Unknown1732: 0, -20000
+          Unknown40: 
+          endIf: 
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 131
+        ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 170
+          Unknown41: 22
+          Unknown1732: 0, 10000
+          Unknown40: 
+          endIf: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 171
+        extendPushboxX: 0
+        Unknown41: 22
+        Unknown1731: 0
+        Unknown40: 
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 11
+        ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 50
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 5000
+          Unknown248: 2, 45
+          endIf: 
+        endIf: 
+      if: (VARIABLE), 324
+        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 155
+          storeValue: (VARIABLE), 46, (STATIC), 0
+          Unknown33: s32'cmn_AfroObj', 5, 2, 46
+          endIf: 
+        Unknown51: 5
+        if: (VARIABLE), 0
+          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 155
+            Unknown41: 5
+            Unknown188: 700
+            Unknown40: 
+            endIf: 
+          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 163
+            Unknown41: 5
+            Unknown188: 1000
+            Unknown40: 
+            endIf: 
+          endIf: 
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'anj500_03', 5
+  Unknown615: s32'SE_BTL_ANJ_02'
+  Unknown615: s32'SE_BTL_ANJ_07'
+  Unknown612: s32'SE_BTL_CMN_Swing_Grap_Heavy_L'
+  Unknown446: s32'SaiObj', 103
+  recoveryState: 
+  sprite: s32'anj500_04', 4
+  Unknown613: s16'vxxx251'
+  sprite: s32'anj500_05', 4
+  sprite: s32'anj500_06', 4
+  sprite: s32'anj500_07', 4
+  sprite: s32'anj500_08', 4
+  sprite: s32'anj500_09', 4
+  sprite: s32'anj500_10', 4
+  sprite: s32'anj500_11', 4
+  sprite: s32'anj500_12', 3
+  sprite: s32'anj500_13', 3
+  sprite: s32'anj500_14', 4
+  sprite: s32'anj500_15', 4
+  sprite: s32'anj500_16', 4
+  sprite: s32'anj500_17', 4
+  sprite: s32'anj500_18', 4
+  sprite: s32'anj500_19', 4
+  sprite: s32'anj500_20', 4
+  sprite: s32'anj500_21', 4
+  sprite: s32'anj500_19', 4
+  sprite: s32'anj500_20', 4
+  sprite: s32'anj500_21', 4
+  sprite: s32'anj500_19', 4
+  sprite: s32'anj500_20', 4
+  sprite: s32'anj500_21', 4
+  sprite: s32'anj500_19', 4
+  sprite: s32'anj500_22', 4
+  sprite: s32'anj500_23', 4
+  sprite: s32'anj500_24', 4
+  endState: 
 
-Unknown39: 0, 30
-Unknown2189: 0, 5
-endIf: 
-Unknown39: 0, 100
-Unknown2189: 2, 5
-endIf: 
-ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 31
-  ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 50
-    Unknown41: 22
-    Unknown1732: 0, -20000
-    Unknown40: 
-    endIf: 
-  endIf: 
-
-ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 131
-  ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 170
-    Unknown41: 22
-    Unknown1732: 0, 10000
-    Unknown40: 
-    endIf: 
-  endIf: 
-
-ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 171
-  extendPushboxX: 0
-  Unknown41: 22
-  Unknown1731: 0
-  Unknown40: 
-  endIf: 
-
-ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 11
-  ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 105, (STATIC), 50
-    modifyVar: (ADD), (VARIABLE), 45, (STATIC), 5000
-    Unknown248: 2, 45
-    endIf: 
-  endIf: 
-
-if: (VARIABLE), 324
-  ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 155
-    storeValue: (VARIABLE), 46, (STATIC), 0
-    Unknown33: s32'cmn_AfroObj', 5, 2, 46
-    endIf: 
-  Unknown51: 5
-  if: (VARIABLE), 0
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 155
-      Unknown41: 5
-      Unknown188: 700
-      Unknown40: 
-      endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 163
-      Unknown41: 5
-      Unknown188: 1000
-      Unknown40: 
-      endIf: 
-    endIf: 
-  endIf: 
-
-endUpon: 
-endUpon: 
-sprite: s32'anj500_03', 5
-Unknown615: s32'SE_BTL_ANJ_02'
-Unknown615: s32'SE_BTL_ANJ_07'
-Unknown612: s32'SE_BTL_CMN_Swing_Grap_Heavy_L'
-Unknown446: s32'SaiObj', 103
-recoveryState: 
-sprite: s32'anj500_04', 4
-Unknown613: s16'vxxx251'
-sprite: s32'anj500_05', 4
-sprite: s32'anj500_06', 4
-sprite: s32'anj500_07', 4
-sprite: s32'anj500_08', 4
-sprite: s32'anj500_09', 4
-sprite: s32'anj500_10', 4
-sprite: s32'anj500_11', 4
-sprite: s32'anj500_12', 3
-sprite: s32'anj500_13', 3
-sprite: s32'anj500_14', 4
-sprite: s32'anj500_15', 4
-sprite: s32'anj500_16', 4
-sprite: s32'anj500_17', 4
-sprite: s32'anj500_18', 4
-sprite: s32'anj500_19', 4
-sprite: s32'anj500_20', 4
-sprite: s32'anj500_21', 4
-sprite: s32'anj500_19', 4
-sprite: s32'anj500_20', 4
-sprite: s32'anj500_21', 4
-sprite: s32'anj500_19', 4
-sprite: s32'anj500_20', 4
-sprite: s32'anj500_21', 4
-sprite: s32'anj500_19', 4
-sprite: s32'anj500_22', 4
-sprite: s32'anj500_23', 4
-sprite: s32'anj500_24', 4
-endState: 
 beginState: s32'KachoFugetsu'
   upon: (IMMEDIATE)
     callSubroutineWithArgs: s32'cmn_AtkLv4', (STATIC), 2, (STATIC), 2, (STATIC), 0, (STATIC), 0
@@ -6065,7 +6058,7 @@ beginState: s32'KachoFugetsu'
       tumbleDuration: 50
       hitAirPushbackX: 0, 10000
       hitAirPushbackY: 0, 25000
-      Unknown778: 0, 2000
+      hitGravity: (STATIC), 2000
       endUpon: 
     callSubroutine: s32'cmnNohosei_kakusei'
     callSubroutine: s32'cmn_fuwafuwafuwa'
@@ -6073,7 +6066,7 @@ beginState: s32'KachoFugetsu'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 12000
     Unknown770: 0, 60, 0, 8, 0, 12
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 100, 0, 30, 0, 64
     Unknown1058: 1
     Unknown2249: 0
@@ -6216,7 +6209,7 @@ beginState: s32'KachoFugetsu'
                 Unknown760: 0, 80, 0, 6, 0, 10
                 hitAirPushbackY: 0, 12000
                 Unknown770: 0, 60, 0, 8, 0, 12
-                Unknown778: 0, 0
+                hitGravity: (STATIC), 0
                 Unknown783: 0, 100, 0, 30, 0, 64
                 Unknown1142: 1
                 Unknown1157: 1
@@ -6343,7 +6336,7 @@ beginState: s32'KachoFugetsu'
   Unknown760: 0, 80, 0, 6, 0, 10
   hitAirPushbackY: 0, 20000
   Unknown770: 0, 60, 0, 8, 0, 16
-  Unknown778: 0, 0
+  hitGravity: (STATIC), 0
   Unknown783: 0, 250, 0, 20, 0, 34
   groundHitEffect: 13
   airHitEffect: 13
@@ -6380,7 +6373,7 @@ beginState: s32'KachoFugetsu'
   Unknown760: 0, 80, 0, 6, 0, 10
   hitAirPushbackY: 0, -50000
   Unknown770: 0, 70, 0, 6, 0, 12
-  Unknown778: 0, 0
+  hitGravity: (STATIC), 0
   Unknown808: 1000
   Unknown783: 0, 200, 0, 15, 0, 30
   groundBounceXVelocity: 3000
@@ -6421,7 +6414,7 @@ beginState: s32'KachoFugetsu'
   Unknown760: 0, 80, 0, 6, 0, 10
   hitAirPushbackY: 0, -100000
   Unknown770: 0, 70, 0, 6, 0, 12
-  Unknown778: 0, 0
+  hitGravity: (STATIC), 0
   Unknown808: 1000
   Unknown783: 0, 200, 0, 15, 0, 30
   groundBounceYVelocityPercent: 50
@@ -6464,7 +6457,7 @@ beginState: s32'KachoFugetsu'
   Unknown760: 0, 80, 0, 6, 0, 10
   hitAirPushbackY: 0, 10000
   Unknown770: 0, 60, 0, 8, 0, 16
-  Unknown778: 0, 500
+  hitGravity: (STATIC), 500
   Unknown783: 0, 250, 0, 12, 0, 30
   airHitEffect: 13
   groundBounceCount: 0

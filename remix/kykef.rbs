@@ -1,0 +1,3509 @@
+beginState: s32'ArcadeEvtKYK_A'
+  endState: 
+
+beginState: s32'ArcadeEvtKYK_B'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_111', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_112', 30, 0
+  Unknown2139: s32'Event305', 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_113', 30, 1
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtKYK_C'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    endUpon: 
+  sprite: s32'null', 210
+  Unknown2139: s32'EventSOL_L1_100', 0
+  Unknown2139: s32'EventSOL_L1_101', 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_101', 30, 1
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtKYK_D'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    Unknown2139: s32'EventFall', 2
+    endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_201', 30, 2
+  Unknown2139: s32'Event306', 2
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_202', 30, 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_203', 30, 2
+  sprite: s32'null', 1
+  Unknown2139: s32'CmnActStand', 0
+  Unknown2139: s32'CmnActStand', 1
+  Unknown2139: s32'CmnActStand', 2
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtKYK_E'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'Event085', 1
+    Unknown2139: s32'EventStand', 2
+    endUpon: 
+  sprite: s32'null', 120
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_211', 30, 2
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtKYK_F'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    Unknown2139: s32'EventFall', 2
+    endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_401', 30, 2
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_402', 30, 1
+  Unknown2139: s32'Event001', 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_403', 30, 0
+  Unknown2139: s32'Event301', 0
+  sprite: s32'null', 1
+  Unknown2139: s32'CmnActStand', 0
+  Unknown2139: s32'CmnActStand', 1
+  Unknown2139: s32'CmnActStand', 2
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtKYK_G'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    Unknown2139: s32'EventFall', 2
+    endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L2_401', 30, 2
+  Unknown2139: s32'Event001', 2
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L2_402', 30, 1
+  Unknown2139: s32'Event001', 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L2_403', 30, 0
+  sprite: s32'null', 1
+  Unknown2139: s32'CmnActStand', 0
+  Unknown2139: s32'CmnActStand', 1
+  Unknown2139: s32'CmnActStand', 2
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtKYK_H'
+  upon: (IMMEDIATE)
+    Unknown2107: 1
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'Event085_2', 1
+    Unknown2139: s32'EventStand', 2
+    endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_411', 30, 1
+  sprite: s32'null', 60
+  Unknown2139: s32'Event022', 1
+  sprite: s32'null', 30
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_412', 30, 2
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_413', 30, 0
+  Unknown2139: s32'Event300', 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtKYK_I'
+  upon: (IMMEDIATE)
+    Unknown2107: 1
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'Event085_2', 1
+    Unknown2139: s32'EventStand', 2
+    endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L2_411', 30, 1
+  sprite: s32'null', 60
+  Unknown2139: s32'Event022', 1
+  sprite: s32'null', 30
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L2_412', 30, 2
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L2_413', 30, 0
+  Unknown2139: s32'Event300', 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtKYK_J'
+  endState: 
+
+beginState: s32'ArcadeEvtKYK_K'
+  upon: (IMMEDIATE)
+    Unknown2107: 1
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_421', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_422', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_423', 30, 0
+  Unknown2139: s32'Event300', 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_424', 30, 0
+  Unknown2139: s32'Event305', 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_425', 30, 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L1_426', 30, 1
+  sprite: s32'null', 60
+  Unknown2139: s32'Event022', 1
+  sprite: s32'null', 30
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtKYK_L'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'Event085_2', 1
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L3_401', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L3_402', 30, 0
+  Unknown2139: s32'Event301', 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtKYK_M'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L3_301', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L3_302', 30, 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L3_303', 30, 1
+  sprite: s32'null', 1
+  Unknown2139: s32'CmnActStand', 0
+  Unknown2139: s32'CmnActStand', 1
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtKYK_N'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L3_321', 30, 1
+  Unknown2139: s32'Event001', 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L3_322', 30, 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L3_323', 30, 1
+  Unknown2139: s32'Event306', 1
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtKYK_O'
+  upon: (IMMEDIATE)
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'EventStand', 1
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L3_311', 30, 0
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L3_312', 30, 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L3_313', 30, 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'ArcadeEvtKYK_P'
+  endState: 
+
+beginState: s32'ArcadeEvtKYK_Q'
+  upon: (IMMEDIATE)
+    Unknown2107: 1
+    Unknown2139: s32'EventStand', 0
+    Unknown2139: s32'Event085_2', 1
+    endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L3_501', 30, 1
+  sprite: s32'null', 60
+  Unknown2139: s32'Event022', 1
+  sprite: s32'null', 2147483647
+  Unknown515: s16'AC_KYK_L3_502', 30, 0
+  Unknown2139: s32'Event300', 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  Unknown2140: 
+  endState: 
+
+beginState: s32'RomanCancel_Mirage'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnRomanCancel_Mirage'
+    Unknown2493: s32'kyk', '0x0000000000000000000000000000000000000000000000000000000000000000'
+    if: (VARIABLE), 5
+      Unknown2057: s32'RomanCancel_Mirage'
+      Unknown2058: s32'Body_cloth'
+      Unknown2058: s32'Weapon'
+      Unknown2058: s32'Head_Low_DI'
+      Unknown2058: s32'Body_DI'
+      Unknown2059: 
+      Unknown2060: s32'RomanCancel_Mirage'
+      Unknown2064: s32'RomanCancel_Mirage'
+      endIf: 
+    else: 
+      Unknown2057: s32'RomanCancel_Mirage'
+      Unknown2058: s32'Body_cloth'
+      Unknown2058: s32'Weapon'
+      Unknown2058: s32'Head_Low'
+      Unknown2058: s32'Body'
+      Unknown2059: 
+      Unknown2060: s32'RomanCancel_Mirage'
+      Unknown2064: s32'RomanCancel_Mirage'
+      endElse: 
+    endUpon: 
+  Unknown25: s32'air', 2, 115
+  sprite: s32'kyk350_01', 6
+  sprite: s32'kyk350_02', 3
+  sprite: s32'kyk350_03', 3
+  sprite: s32'kyk350_04', 3
+  sprite: s32'kyk350_05', 3
+  sprite: s32'kyk350_06', 3
+  sprite: s32'kyk350_07', 3
+  sprite: s32'kyk350_08', 2
+  sprite: s32'kyk350_09', 2
+  sprite: s32'kyk350_11', 2
+  sprite: s32'kyk350_12', 3
+  sprite: s32'kyk350_13', 3
+  sprite: s32'kyk350_14', 3
+  sprite: s32'kyk350_12', 3
+  sprite: s32'kyk350_15', 2
+  sprite: s32'kyk350_16', 2
+  sprite: s32'kyk350_17', 2
+  endLabel: 
+  exitState: 
+  beginLabel: s32'air'
+  sprite: s32'kyk351_01', 6
+  sprite: s32'kyk351_02', 3
+  sprite: s32'kyk351_03', 3
+  sprite: s32'kyk351_04', 3
+  sprite: s32'kyk351_05', 3
+  sprite: s32'kyk351_06', 3
+  sprite: s32'kyk351_07', 3
+  sprite: s32'kyk351_08', 2
+  sprite: s32'kyk351_09', 2
+  sprite: s32'kyk351_11', 2
+  sprite: s32'kyk351_12', 3
+  sprite: s32'kyk351_13', 3
+  sprite: s32'kyk351_14', 3
+  sprite: s32'kyk351_12', 3
+  sprite: s32'kyk351_15', 2
+  sprite: s32'kyk351_16', 2
+  sprite: s32'kyk351_17', 2
+  endState: 
+
+beginSubroutine: s32'RandomExPointNum3'
+  ifOperation: 22, (STATIC), 33, (STATIC), 100
+    Unknown2193: 0, 0, 0
+    endIf: 
+  else: 
+    ifOperation: 22, (STATIC), 50, (STATIC), 100
+      Unknown2193: 1, 0, 0
+      endIf: 
+    else: 
+      Unknown2193: 2, 0, 0
+      endElse: 
+    endElse: 
+  endSubroutine: 
+
+beginState: s32'StunEdgeObj'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
+      storeValue: (VARIABLE), 49, (STATIC), 1
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 3
+      storeValue: (VARIABLE), 49, (STATIC), 1
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 116, (STATIC), 5
+      Unknown2003: -16711936
+      if: (VARIABLE), 5
+        Unknown2003: -256
+        endIf: 
+      endIf: 
+    Unknown2210: 
+    Unknown2211: 1
+    Unknown2221: 1
+    Unknown2212: 1
+    Unknown2213: 1
+    Unknown2214: 1
+    Unknown2215: 1
+    Unknown1914: 0
+    upon: (TOUCH_GROUND)
+      Unknown2208: 23
+      endUpon: 
+    upon: 45
+      Unknown446: s32'StunEdgeDelete', 100
+      Unknown14: s32'koware'
+      clearRegisteredUponCode: 45
+      clearRegisteredUponCode: (HIT_OR_GUARD)
+      clearRegisteredUponCode: (FRAME_STEP)
+      clearRegisteredUponCode: (TOUCH_GROUND)
+      clearRegisteredUponCode: 99
+      clearRegisteredUponCode: (BEFORE_EXIT)
+      recoveryState: 
+      Unknown450: s32''
+      endUpon: 
+    upon: (FRAME_STEP)
+      ifOperation: (IS_LESSER), (VARIABLE), 18, (STATIC), 250000
+        ifOperation: 16, (VARIABLE), 13, (STATIC), 4
+          Unknown448: s32'kyk_401_stunedge_floor', 123
+          endIf: 
+        endIf: 
+      Unknown200: 0
+      endUpon: 
+    Unknown1629: 1
+    ifNot: (VARIABLE), 317
+      Unknown58: 1
+      endIf: 
+    else: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
+        Unknown289: 180
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 3
+        Unknown289: 120
+        endIf: 
+      endElse: 
+    upon: (HIT_OR_GUARD)
+      ifNot: (VARIABLE), 52
+        ifNot: (VARIABLE), 3
+          storeValue: (VARIABLE), 3, (STATIC), 1
+          Unknown446: s32'Taiden_Effect', 132
+          endIf: 
+        else: 
+          Unknown1045: 2, s32'mahojin'
+          Unknown1046: 2, s32'mahojin'
+          tumbleDuration: 18
+          Unknown963: 110
+          Unknown1803: s32'Taiden_Effect', 23
+          endElse: 
+        ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 4, (STATIC), 180
+          storeValue: (VARIABLE), 4, (STATIC), 180
+          endIf: 
+        endIf: 
+      callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 1, (STATIC), 0, (STATIC), 0
+      endUpon: 
+    upon: 66
+      clearRegisteredUponCode: 66
+      storeValue: (VARIABLE), 52, (STATIC), 1
+      endUpon: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 0
+      if: (VARIABLE), 3
+        Unknown2595: s32'StunEdge1_SSObj'
+        endIf: 
+      else: 
+        Unknown2595: s32'StunEdge1Obj'
+        endElse: 
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
+      if: (VARIABLE), 3
+        Unknown2595: s32'AirStunEdge1_SSObj'
+        endIf: 
+      else: 
+        Unknown2595: s32'AirStunEdge1Obj'
+        endElse: 
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 3
+      if: (VARIABLE), 3
+        Unknown2595: s32'AirStunEdge2_SSObj'
+        endIf: 
+      else: 
+        Unknown2595: s32'AirStunEdge2Obj'
+        endElse: 
+      endIf: 
+    upon: 99
+      clearRegisteredUponCode: 99
+      Unknown2208: 23
+      Unknown295: 1
+      Unknown1801: 1
+      endUpon: 
+    upon: 47
+      Unknown454: 0
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 4
+  callSubroutine: s32'cmn_AtkLv2'
+  Unknown1058: 1
+  if: (VARIABLE), 49
+    Unknown26: 8, 0, 1
+    endIf: 
+  Unknown454: 2
+  Unknown456: 2
+  Unknown458: 2
+  Unknown2314: 1
+  ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 0
+    storeValue: (VARIABLE), 338, (STATIC), 10000
+    storeValue: (VARIABLE), 339, (STATIC), 0
+    storeValue: (VARIABLE), 340, (STATIC), 1
+    callSubroutine: s32'cmn_hosei'
+    hitEffectElectric: 1
+    damage: 0, 30
+    hitAirPushbackX: 0, 35000
+    hitAirPushbackY: 0, 10000
+    Unknown1138: 1
+    physicsXImpulse: 0, 28000
+    Unknown200: 0
+    Unknown94: 0, 100000
+    Unknown953: 1
+    endIf: 
+  ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 1
+    hitEffectElectric: 1
+    Unknown711: 4
+    damage: 0, 40
+    Unknown1138: 1
+    physicsXImpulse: 0, 14000
+    Unknown120: 175
+    Unknown188: 2000
+    Unknown200: 0
+    endIf: 
+  ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
+    storeValue: (VARIABLE), 338, (STATIC), 10000
+    storeValue: (VARIABLE), 339, (STATIC), 0
+    storeValue: (VARIABLE), 340, (STATIC), 1
+    callSubroutine: s32'cmn_hosei'
+    hitEffectElectric: 1
+    damage: 0, 30
+    hitAirPushbackX: 0, 30000
+    hitAirPushbackY: 0, -30000
+    Unknown1108: -60
+    Unknown1138: 1
+    physicsXImpulse: 0, 21000
+    physicsYImpulse: 0, -34125
+    Unknown200: 0
+    Unknown231: -10000
+    Unknown953: 3
+    endIf: 
+  ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 3
+    storeValue: (VARIABLE), 338, (STATIC), 10000
+    storeValue: (VARIABLE), 339, (STATIC), 0
+    storeValue: (VARIABLE), 340, (STATIC), 1
+    callSubroutine: s32'cmn_hosei'
+    hitEffectElectric: 1
+    damage: 0, 30
+    hitAirPushbackX: 0, 50000
+    hitAirPushbackY: 0, -30000
+    Unknown1108: -20
+    Unknown1138: 1
+    physicsXImpulse: 0, 36750
+    physicsYImpulse: 0, -7875
+    Unknown200: 0
+    Unknown231: 10000
+    Unknown953: 3
+    endIf: 
+  Unknown2182: 1
+  Unknown615: s32'SE_BTL_KYK_00'
+  Unknown615: s32'SE_BTL_KYK_02'
+  endLabel: 
+  Unknown450: s32'kyk_401_stunedge_loop'
+  Unknown233: 
+  Unknown454: 0
+  Unknown456: 0
+  gotoIfOperation: s32'Air', (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
+  gotoIfOperation: s32'Air', (IS_EQUAL), (VARIABLE), 115, (STATIC), 3
+  sprite: s32'_StunEdge_00', 1
+  upon: (BEFORE_EXIT)
+    Unknown446: s32'StunEdgeDelete', 100
+    Unknown14: s32'koware'
+    clearRegisteredUponCode: 45
+    clearRegisteredUponCode: (HIT_OR_GUARD)
+    clearRegisteredUponCode: (FRAME_STEP)
+    clearRegisteredUponCode: (TOUCH_GROUND)
+    clearRegisteredUponCode: 99
+    recoveryState: 
+    Unknown450: s32''
+    endUpon: 
+  endLabel: 
+  gotoLabel: s32'top'
+  beginLabel: s32'Air'
+  sprite: s32'_StunEdge_01', 1
+  upon: (BEFORE_EXIT)
+    Unknown446: s32'StunEdgeDelete', 100
+    Unknown14: s32'koware'
+    clearRegisteredUponCode: 45
+    clearRegisteredUponCode: (HIT_OR_GUARD)
+    clearRegisteredUponCode: (FRAME_STEP)
+    clearRegisteredUponCode: (TOUCH_GROUND)
+    clearRegisteredUponCode: 99
+    recoveryState: 
+    Unknown450: s32''
+    endUpon: 
+  beginLabel: s32'top'
+  sprite: s32'_StunEdge_01', 1
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_StunEdge_01', 1
+  Unknown2182: 0
+  sprite: s32'_StunEdge_02', 2
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_StunEdge_03', 2
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_StunEdge_04', 2
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_StunEdge_03', 2
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_StunEdge_02', 2
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  endLabel: 
+  gotoLabel: s32'top'
+  beginLabel: s32'koware'
+  sprite: s32'null', 1
+  endState: 
+
+beginState: s32'StunEdgeObj_DI'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
+      storeValue: (VARIABLE), 49, (STATIC), 1
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 3
+      storeValue: (VARIABLE), 49, (STATIC), 1
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 116, (STATIC), 5
+      Unknown2003: -16711936
+      if: (VARIABLE), 5
+        Unknown2003: -256
+        endIf: 
+      endIf: 
+    Unknown2210: 
+    Unknown2211: 2
+    Unknown2221: 1
+    Unknown2212: 1
+    Unknown2213: 1
+    Unknown2214: 1
+    Unknown2215: 1
+    Unknown188: 1300
+    Unknown1914: 0
+    upon: (TOUCH_GROUND)
+      Unknown2208: 23
+      endUpon: 
+    upon: 45
+      Unknown446: s32'StunEdgeDelete', 100
+      Unknown14: s32'koware'
+      clearRegisteredUponCode: 45
+      clearRegisteredUponCode: (HIT_OR_GUARD)
+      clearRegisteredUponCode: (FRAME_STEP)
+      clearRegisteredUponCode: (TOUCH_GROUND)
+      clearRegisteredUponCode: (BEFORE_EXIT)
+      recoveryState: 
+      Unknown450: s32''
+      endUpon: 
+    upon: (FRAME_STEP)
+      ifOperation: (IS_LESSER), (VARIABLE), 18, (STATIC), 250000
+        ifOperation: 16, (VARIABLE), 13, (STATIC), 4
+          Unknown448: s32'kyk_401_stunedge_floor', 123
+          endIf: 
+        endIf: 
+      Unknown200: 0
+      endUpon: 
+    Unknown1629: 1
+    ifNot: (VARIABLE), 317
+      Unknown58: 1
+      endIf: 
+    else: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
+        Unknown289: 180
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 3
+        Unknown289: 120
+        endIf: 
+      endElse: 
+    upon: (HIT_OR_GUARD)
+      callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 2, (STATIC), 0, (STATIC), 0
+      endUpon: 
+    upon: 66
+      clearRegisteredUponCode: 66
+      Unknown458: 0
+      endUpon: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 0
+      Unknown2595: s32'StunEdge1_DIObj'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
+      Unknown2595: s32'AirStunEdge1_DIObj'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 3
+      Unknown2595: s32'AirStunEdge2_DIObj'
+      endIf: 
+    upon: 99
+      clearRegisteredUponCode: 99
+      Unknown2208: 23
+      Unknown295: 1
+      Unknown1801: 1
+      endUpon: 
+    upon: 47
+      Unknown454: 0
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 4
+  callSubroutineWithArgs: s32'cmn_AtkLv2', (STATIC), 2, (STATIC), 2, (STATIC), 0, (STATIC), 0
+  Unknown1058: 1
+  if: (VARIABLE), 49
+    Unknown26: 8, 0, 1
+    endIf: 
+  Unknown454: 2
+  Unknown456: 2
+  Unknown458: 2
+  Unknown1112: 0
+  Unknown2314: 1
+  upon: 8
+    modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+    ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 45, (STATIC), 1
+      hitStop: 3
+      Unknown996: 3, 3, 3
+      endIf: 
+    else: 
+      hitStop: 10
+      Unknown996: 0, 0, 0
+      endElse: 
+    endUpon: 
+  ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 0
+    storeValue: (VARIABLE), 338, (STATIC), 10000
+    storeValue: (VARIABLE), 339, (STATIC), 0
+    storeValue: (VARIABLE), 340, (STATIC), 2
+    callSubroutine: s32'cmn_hosei'
+    hitEffectElectric: 1
+    damage: 0, 30
+    hitAirPushbackX: 0, 35000
+    hitAirPushbackY: 0, 10000
+    Unknown1138: 1
+    physicsXImpulse: 0, 28000
+    Unknown200: 0
+    Unknown94: 0, 100000
+    Unknown953: 1
+    endIf: 
+  ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
+    storeValue: (VARIABLE), 338, (STATIC), 10000
+    storeValue: (VARIABLE), 339, (STATIC), 0
+    storeValue: (VARIABLE), 340, (STATIC), 2
+    callSubroutine: s32'cmn_hosei'
+    hitEffectElectric: 1
+    damage: 0, 30
+    hitAirPushbackX: 0, 30000
+    hitAirPushbackY: 0, -30000
+    Unknown1108: -60
+    Unknown1138: 1
+    physicsXImpulse: 0, 21000
+    physicsYImpulse: 0, -34125
+    Unknown200: 0
+    Unknown231: -10000
+    Unknown953: 3
+    endIf: 
+  ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 3
+    storeValue: (VARIABLE), 338, (STATIC), 10000
+    storeValue: (VARIABLE), 339, (STATIC), 0
+    storeValue: (VARIABLE), 340, (STATIC), 2
+    callSubroutine: s32'cmn_hosei'
+    hitEffectElectric: 1
+    damage: 0, 30
+    hitAirPushbackX: 0, 50000
+    hitAirPushbackY: 0, -30000
+    Unknown1108: -20
+    Unknown1138: 1
+    physicsXImpulse: 0, 36750
+    physicsYImpulse: 0, -7875
+    Unknown200: 0
+    Unknown231: 10000
+    Unknown953: 3
+    endIf: 
+  Unknown2182: 1
+  Unknown615: s32'SE_BTL_KYK_00'
+  Unknown615: s32'SE_BTL_KYK_02'
+  endLabel: 
+  Unknown450: s32'kyk_401_stunedge_loop'
+  Unknown233: 
+  Unknown454: 0
+  Unknown456: 0
+  gotoIfOperation: s32'Air', (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
+  gotoIfOperation: s32'Air', (IS_EQUAL), (VARIABLE), 115, (STATIC), 3
+  sprite: s32'_StunEdge_00', 1
+  upon: (BEFORE_EXIT)
+    Unknown446: s32'StunEdgeDelete', 100
+    Unknown14: s32'koware'
+    clearRegisteredUponCode: 45
+    clearRegisteredUponCode: (HIT_OR_GUARD)
+    clearRegisteredUponCode: (FRAME_STEP)
+    clearRegisteredUponCode: (TOUCH_GROUND)
+    clearRegisteredUponCode: 99
+    recoveryState: 
+    Unknown450: s32''
+    endUpon: 
+  endLabel: 
+  gotoLabel: s32'top'
+  beginLabel: s32'Air'
+  sprite: s32'_StunEdge_01', 1
+  upon: (BEFORE_EXIT)
+    Unknown446: s32'StunEdgeDelete', 100
+    Unknown14: s32'koware'
+    clearRegisteredUponCode: 45
+    clearRegisteredUponCode: (HIT_OR_GUARD)
+    clearRegisteredUponCode: (FRAME_STEP)
+    clearRegisteredUponCode: (TOUCH_GROUND)
+    clearRegisteredUponCode: 99
+    recoveryState: 
+    Unknown450: s32''
+    endUpon: 
+  beginLabel: s32'top'
+  sprite: s32'_StunEdge_01', 1
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_StunEdge_01', 1
+  Unknown2182: 0
+  sprite: s32'_StunEdge_02', 2
+  hit: 
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_StunEdge_03', 2
+  hit: 
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_StunEdge_04', 2
+  hit: 
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_StunEdge_03', 2
+  hit: 
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_StunEdge_02', 2
+  hit: 
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  endLabel: 
+  gotoLabel: s32'top'
+  beginLabel: s32'koware'
+  sprite: s32'null', 1
+  endState: 
+
+beginState: s32'StunEdgeDelete'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown53: 23, 2, 53, 2, 2, 53
+    ifNot: (VARIABLE), 53
+      Unknown1629: 1
+      endIf: 
+    Unknown53: 23, 2, 1, 2, 2, 1
+    Unknown2275: 2, 1
+    Unknown449: s32'kyk_401_stunedge_end', 100
+    endUpon: 
+  sprite: s32'null', 16
+  endState: 
+
+beginState: s32'ChargedStunEdgeObj'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    callSubroutineWithArgs: s32'cmn_AtkLv4', (STATIC), 3, (STATIC), 3, (STATIC), 0, (STATIC), 0
+    storeValue: (VARIABLE), 338, (STATIC), 10000
+    storeValue: (VARIABLE), 339, (STATIC), 0
+    storeValue: (VARIABLE), 340, (STATIC), 3
+    callSubroutine: s32'cmn_hosei'
+    hitEffectElectric: 1
+    Unknown1112: 0
+    Unknown1110: 1
+    damage: 0, 20
+    hitAirPushbackX: 0, 35000
+    hitAirPushbackY: 0, 10000
+    pushbackX: 50
+    Unknown1138: 1
+    Unknown2314: 1
+    Unknown1058: 1
+    Unknown1153: 1
+    Unknown953: 1
+    Unknown2210: 
+    Unknown2211: 3
+    Unknown2221: 1
+    Unknown2212: 1
+    Unknown2213: 1
+    Unknown2214: 1
+    Unknown2215: 1
+    Unknown1914: 0
+    upon: (TOUCH_GROUND)
+      Unknown2208: 23
+      endUpon: 
+    upon: 35
+      Unknown2208: 23
+      endUpon: 
+    upon: 45
+      Unknown448: s32'kyk_402_stunedge_end', 100
+      Unknown14: s32'koware'
+      clearRegisteredUponCode: 45
+      clearRegisteredUponCode: (HIT_OR_GUARD)
+      clearRegisteredUponCode: (FRAME_STEP)
+      clearRegisteredUponCode: (TOUCH_GROUND)
+      clearRegisteredUponCode: 35
+      clearRegisteredUponCode: 99
+      recoveryState: 
+      Unknown450: s32''
+      Unknown70: s32'ChargeStuntail'
+      endUpon: 
+    upon: (FRAME_STEP)
+      ifOperation: (IS_LESSER), (VARIABLE), 18, (STATIC), 250000
+        ifOperation: 16, (VARIABLE), 13, (STATIC), 4
+          Unknown448: s32'kyk_402_stunedge_floor', 123
+          endIf: 
+        endIf: 
+      if: (VARIABLE), 53
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 5
+          Unknown446: s32'ChargeStuntail', 100
+          storeValue: (VARIABLE), 45, (STATIC), 0
+          endIf: 
+        endIf: 
+      endUpon: 
+    Unknown1629: 1
+    Unknown58: 1
+    upon: (HIT_OR_GUARD)
+      ifNot: (VARIABLE), 52
+        ifNot: (VARIABLE), 3
+          clearRegisteredUponCode: (HIT_OR_GUARD)
+          storeValue: (VARIABLE), 3, (STATIC), 1
+          Unknown446: s32'Taiden_Effect', 132
+          endIf: 
+        else: 
+          Unknown1045: 2, s32'mahojin'
+          Unknown1046: 2, s32'mahojin'
+          tumbleDuration: 18
+          damage: 0, 22
+          Unknown996: 5, 5, 5
+          Unknown1803: s32'Taiden_Effect', 23
+          endElse: 
+        ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 4, (STATIC), 300
+          storeValue: (VARIABLE), 4, (STATIC), 300
+          endIf: 
+        endIf: 
+      callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 1, (STATIC), 0, (STATIC), 0
+      endUpon: 
+    upon: 66
+      clearRegisteredUponCode: 66
+      clearRegisteredUponCode: 35
+      storeValue: (VARIABLE), 52, (STATIC), 1
+      endUpon: 
+    Unknown94: 0, 100000
+    upon: 99
+      clearRegisteredUponCode: 99
+      Unknown2208: 23
+      Unknown295: 1
+      Unknown1801: 1
+      endUpon: 
+    if: (VARIABLE), 3
+      Unknown2595: s32'ChargedStunEdge_SSObj'
+      endIf: 
+    upon: 47
+      Unknown454: 0
+      endUpon: 
+    endUpon: 
+  Unknown615: s32'SE_BTL_KYK_07_2'
+  sprite: s32'null', 10
+  Unknown450: s32'kyk_402_stunedge_start'
+  Unknown454: 2
+  Unknown456: 2
+  Unknown458: 2
+  sprite: s32'null', 5
+  Unknown450: s32'kyk_402_stunedge_loop'
+  endLabel: 
+  Unknown615: s32'SE_BTL_KYK_02'
+  Unknown233: 
+  Unknown454: 0
+  Unknown456: 0
+  Unknown458: 0
+  Unknown2181: 2
+  sprite: s32'_ChargedStunEdge_00', 3
+  Unknown454: 0
+  Unknown458: 0
+  Unknown456: 0
+  physicsXImpulse: 0, 10500
+  hit: 
+  beginLabel: s32'loop'
+  sprite: s32'_ChargedStunEdge_01', 3
+  Unknown111: 106
+  hit: 
+  Unknown448: s32'kyk_secharge_ring', 100
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_ChargedStunEdge_02', 3
+  Unknown111: 106
+  hit: 
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_ChargedStunEdge_00', 3
+  Unknown111: 106
+  hit: 
+  Unknown448: s32'kyk_secharge_ring', 100
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_ChargedStunEdge_01', 3
+  Unknown111: 106
+  hit: 
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_ChargedStunEdge_02', 3
+  Unknown111: 106
+  hit: 
+  Unknown448: s32'kyk_secharge_ring', 100
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_ChargedStunEdge_00', 3
+  Unknown111: 106
+  hit: 
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  endLabel: 
+  gotoLabel: s32'loop'
+  beginLabel: s32'koware'
+  sprite: s32'null', 1
+  endState: 
+
+beginState: s32'ChargedStunEdgeObj_DI'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    callSubroutineWithArgs: s32'cmn_AtkLv4', (STATIC), 5, (STATIC), 5, (STATIC), 0, (STATIC), 0
+    storeValue: (VARIABLE), 338, (STATIC), 10000
+    storeValue: (VARIABLE), 339, (STATIC), 0
+    storeValue: (VARIABLE), 340, (STATIC), 5
+    callSubroutine: s32'cmn_hosei'
+    hitEffectElectric: 1
+    Unknown1112: 0
+    Unknown1110: 1
+    Unknown996: 5, 5, 5
+    damage: 0, 17
+    tumbleDuration: 18
+    hitAirPushbackX: 0, 35000
+    hitAirPushbackY: 0, 10000
+    pushbackX: 50
+    Unknown1138: 1
+    Unknown2314: 1
+    Unknown1058: 1
+    Unknown1153: 1
+    Unknown953: 1
+    Unknown2210: 
+    Unknown2211: 5
+    Unknown2221: 1
+    Unknown2212: 1
+    Unknown2213: 1
+    Unknown2214: 1
+    Unknown2215: 1
+    Unknown188: 1300
+    Unknown1914: 0
+    upon: (TOUCH_GROUND)
+      Unknown2208: 23
+      endUpon: 
+    upon: 35
+      Unknown2208: 23
+      endUpon: 
+    upon: 45
+      Unknown448: s32'kyk_402_stunedge_end', 100
+      Unknown14: s32'koware'
+      clearRegisteredUponCode: 45
+      clearRegisteredUponCode: (HIT_OR_GUARD)
+      clearRegisteredUponCode: (FRAME_STEP)
+      clearRegisteredUponCode: (TOUCH_GROUND)
+      clearRegisteredUponCode: 35
+      clearRegisteredUponCode: 99
+      recoveryState: 
+      Unknown450: s32''
+      Unknown70: s32'ChargeStuntail'
+      endUpon: 
+    upon: (FRAME_STEP)
+      ifOperation: (IS_LESSER), (VARIABLE), 18, (STATIC), 250000
+        ifOperation: 16, (VARIABLE), 13, (STATIC), 4
+          Unknown448: s32'kyk_402_stunedge_floor', 123
+          endIf: 
+        endIf: 
+      if: (VARIABLE), 53
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 5
+          Unknown446: s32'ChargeStuntail', 100
+          storeValue: (VARIABLE), 45, (STATIC), 0
+          endIf: 
+        endIf: 
+      endUpon: 
+    Unknown1629: 1
+    Unknown58: 1
+    upon: (HIT_OR_GUARD)
+      callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 2, (STATIC), 0, (STATIC), 0
+      endUpon: 
+    Unknown94: 0, 100000
+    upon: 66
+      clearRegisteredUponCode: 66
+      clearRegisteredUponCode: 35
+      endUpon: 
+    upon: 99
+      clearRegisteredUponCode: 99
+      Unknown2208: 23
+      Unknown295: 1
+      Unknown1801: 1
+      endUpon: 
+    upon: 47
+      Unknown454: 0
+      endUpon: 
+    endUpon: 
+  Unknown615: s32'SE_BTL_KYK_07_2'
+  sprite: s32'null', 10
+  Unknown450: s32'kyk_402_stunedge_start'
+  Unknown454: 2
+  Unknown456: 2
+  Unknown458: 2
+  sprite: s32'null', 5
+  Unknown450: s32'kyk_402_stunedge_loop'
+  endLabel: 
+  Unknown615: s32'SE_BTL_KYK_02'
+  Unknown233: 
+  Unknown454: 0
+  Unknown456: 0
+  Unknown458: 0
+  Unknown2181: 2
+  sprite: s32'_ChargedStunEdge_00', 3
+  Unknown454: 0
+  Unknown458: 0
+  Unknown456: 0
+  physicsXImpulse: 0, 10500
+  hit: 
+  beginLabel: s32'loop'
+  sprite: s32'_ChargedStunEdge_01', 3
+  Unknown111: 106
+  hit: 
+  Unknown448: s32'kyk_secharge_ring', 100
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_ChargedStunEdge_02', 3
+  Unknown111: 106
+  hit: 
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_ChargedStunEdge_00', 3
+  Unknown111: 106
+  hit: 
+  Unknown448: s32'kyk_secharge_ring', 100
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_ChargedStunEdge_01', 3
+  Unknown111: 106
+  hit: 
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_ChargedStunEdge_02', 3
+  Unknown111: 106
+  hit: 
+  Unknown448: s32'kyk_secharge_ring', 100
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  sprite: s32'_ChargedStunEdge_00', 3
+  Unknown111: 106
+  hit: 
+  callSubroutine: s32'RandomExPointNum3'
+  Unknown2276: 0, 0
+  Unknown449: s32'kyk_thunder_tail', 130
+  endLabel: 
+  gotoLabel: s32'loop'
+  beginLabel: s32'koware'
+  sprite: s32'null', 1
+  endState: 
+
+beginState: s32'SacredEdgeObj'
+  upon: (IMMEDIATE)
+    Unknown245: 
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    callSubroutineWithArgs: s32'cmn_AtkLv4', (STATIC), 5, (STATIC), 5, (STATIC), 0, (STATIC), 0
+    callSubroutine: s32'cmnNohosei_kakusei'
+    Unknown1028: 4
+    damage: 0, 22
+    Unknown1138: 0
+    Unknown1117: 0
+    hitSoftKnockdown: 0
+    Unknown2314: 1
+    hitEffectElectric: 1
+    Unknown1058: 1
+    storeValue: (VARIABLE), 338, (STATIC), 1000000000
+    storeValue: (VARIABLE), 339, (STATIC), 0
+    storeValue: (VARIABLE), 340, (STATIC), 1
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    Unknown953: 1
+    Unknown58: 1
+    Unknown450: s32'kyk_502_loop'
+    Unknown446: s32'Sacred_Trail', 100
+    Unknown2210: 
+    Unknown2211: 5
+    Unknown2221: 1
+    Unknown2212: 1
+    Unknown2213: 1
+    Unknown2215: 1
+    Unknown1914: 0
+    upon: (TOUCH_GROUND)
+      Unknown2208: 23
+      endUpon: 
+    upon: 45
+      Unknown448: s32'kyk_502_end', 100
+      Unknown19: 23
+      endUpon: 
+    upon: (FRAME_STEP)
+      ifOperation: 16, (VARIABLE), 13, (STATIC), 4
+        Unknown448: s32'kyk_502_floor', 123
+        endIf: 
+      if: (VARIABLE), 45
+        physicsXImpulse: 0, 5000
+        modifyVar: (ADD), (VARIABLE), 46, (STATIC), 1
+        ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (STATIC), 5
+          storeValue: (VARIABLE), 45, (STATIC), 0
+          storeValue: (VARIABLE), 46, (STATIC), 0
+          Unknown110: 
+          endIf: 
+        endIf: 
+      endUpon: 
+    upon: (HIT_OR_GUARD)
+      ifNot: (VARIABLE), 48
+        ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 4, (STATIC), 300
+          storeValue: (VARIABLE), 4, (STATIC), 300
+          endIf: 
+        callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 2, (STATIC), 0, (STATIC), 0
+        endIf: 
+      ifNot: (VARIABLE), 47
+        ifNot: (VARIABLE), 3
+          storeValue: (VARIABLE), 48, (STATIC), 1
+          storeValue: (VARIABLE), 3, (STATIC), 1
+          Unknown446: s32'Taiden_Effect', 132
+          endIf: 
+        else: 
+          Unknown1045: 2, s32'mahojin'
+          Unknown1046: 2, s32'mahojin'
+          damage: 0, 26
+          tumbleDuration: 18
+          Unknown996: 5, 5, 5
+          Unknown1803: s32'Taiden_Effect', 23
+          hitAirPushbackX: 0, 5000
+          hitAirPushbackY: 0, 22000
+          hitGravity: (STATIC), 1900
+          endElse: 
+        endIf: 
+      storeValue: (VARIABLE), 45, (STATIC), 1
+      Unknown109: 
+      physicsXImpulse: 0, 5000
+      modifyVar: (ADD), (VARIABLE), 47, (STATIC), 1
+      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 47, (STATIC), 5
+        Unknown1069: (STATIC), 0, (STATIC), 0, 1, 22, (VARIABLE), 319
+        Unknown788: 1
+        Unknown955: 5
+        Unknown953: 1
+        endIf: 
+      Unknown2121: s32'Cam_Finish_SacredEdge'
+      endUpon: 
+    upon: 99
+      clearRegisteredUponCode: 99
+      Unknown2208: 23
+      Unknown295: 1
+      Unknown1801: 1
+      endUpon: 
+    if: (VARIABLE), 3
+      Unknown2595: s32'SacredEdge_SSObj'
+      endIf: 
+    endUpon: 
+  sprite: s32'null', 3
+  endLabel: 
+  Unknown615: s32'SE_BTL_KYK_02'
+  Unknown615: s32'SE_BTL_KYK_09'
+  beginLabel: s32'loop'
+  sprite: s32'_SacredEdge_00', 1
+  physicsXImpulse: 0, 35000
+  hit: 
+  sprite: s32'_SacredEdge_00', 1
+  sprite: s32'_SacredEdge_01', 1
+  hit: 
+  sprite: s32'_SacredEdge_01', 1
+  sprite: s32'_SacredEdge_02', 1
+  hit: 
+  sprite: s32'_SacredEdge_02', 1
+  sprite: s32'_SacredEdge_03', 1
+  hit: 
+  sprite: s32'_SacredEdge_03', 1
+  endLabel: 
+  gotoLabel: s32'loop'
+  endState: 
+
+beginState: s32'SacredEdgeObj_DI'
+  upon: (IMMEDIATE)
+    Unknown245: 
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    callSubroutineWithArgs: s32'cmn_AtkLv4', (STATIC), 8, (STATIC), 8, (STATIC), 0, (STATIC), 0
+    callSubroutine: s32'cmnNohosei_kakusei'
+    Unknown1028: 4
+    damage: 0, 20
+    tumbleDuration: 15
+    Unknown1138: 0
+    Unknown1117: 0
+    hitSoftKnockdown: 0
+    Unknown2314: 1
+    hitEffectElectric: 1
+    Unknown1058: 1
+    storeValue: (VARIABLE), 338, (STATIC), 1000000000
+    storeValue: (VARIABLE), 339, (STATIC), 0
+    storeValue: (VARIABLE), 340, (STATIC), 1
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    Unknown953: 1
+    Unknown58: 1
+    Unknown450: s32'kyk_502_loop'
+    Unknown2273: 0, 1200
+    Unknown445: s32'Sacred_Trail', 100
+    Unknown2210: 
+    Unknown2211: 8
+    Unknown2221: 1
+    Unknown2212: 1
+    Unknown2213: 1
+    Unknown2214: 1
+    Unknown2215: 1
+    Unknown188: 1300
+    Unknown996: 5, 5, 5
+    Unknown1914: 0
+    upon: (TOUCH_GROUND)
+      Unknown2208: 23
+      endUpon: 
+    upon: 45
+      Unknown448: s32'kyk_502_end', 100
+      Unknown19: 23
+      endUpon: 
+    upon: (FRAME_STEP)
+      ifOperation: 16, (VARIABLE), 13, (STATIC), 4
+        Unknown448: s32'kyk_502_floor', 123
+        endIf: 
+      if: (VARIABLE), 45
+        physicsXImpulse: 0, 5000
+        modifyVar: (ADD), (VARIABLE), 46, (STATIC), 1
+        ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (STATIC), 5
+          storeValue: (VARIABLE), 45, (STATIC), 0
+          storeValue: (VARIABLE), 46, (STATIC), 0
+          Unknown110: 
+          endIf: 
+        endIf: 
+      endUpon: 
+    upon: (HIT_OR_GUARD)
+      storeValue: (VARIABLE), 45, (STATIC), 1
+      Unknown109: 
+      physicsXImpulse: 0, 5000
+      modifyVar: (ADD), (VARIABLE), 47, (STATIC), 1
+      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 47, (STATIC), 8
+        Unknown1069: (STATIC), 0, (STATIC), 0, 1, 22, (VARIABLE), 319
+        Unknown788: 1
+        Unknown955: 5
+        Unknown953: 1
+        endIf: 
+      callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 3, (STATIC), 0, (STATIC), 0
+      endUpon: 
+    upon: 99
+      clearRegisteredUponCode: 99
+      Unknown2208: 23
+      Unknown295: 1
+      Unknown1801: 1
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 3
+  endLabel: 
+  Unknown615: s32'SE_BTL_KYK_02'
+  Unknown615: s32'SE_BTL_KYK_09'
+  beginLabel: s32'loop'
+  sprite: s32'_SacredEdge_00', 1
+  physicsXImpulse: 0, 35000
+  hit: 
+  sprite: s32'_SacredEdge_00', 1
+  sprite: s32'_SacredEdge_01', 1
+  hit: 
+  sprite: s32'_SacredEdge_01', 1
+  sprite: s32'_SacredEdge_02', 1
+  hit: 
+  sprite: s32'_SacredEdge_02', 1
+  sprite: s32'_SacredEdge_03', 1
+  hit: 
+  sprite: s32'_SacredEdge_03', 1
+  endLabel: 
+  gotoLabel: s32'loop'
+  endState: 
+
+beginState: s32'kyk202_bake1'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown2290: 1
+    Unknown450: s32'kyk_202_bake01'
+    Unknown239: 
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 20
+  endState: 
+
+beginState: s32'kyk202_bake2'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown2290: 1
+    Unknown450: s32'kyk_202_bake02'
+    Unknown239: 
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+beginState: s32'kyk203_bake1'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown2290: 1
+    Unknown450: s32'kyk_203_bake01'
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    Unknown94: 0, 439489
+    Unknown99: 0, 216876
+    Unknown1732: 0, -53919
+    Unknown231: 0
+    Unknown232: 348000
+    Unknown164: 358800
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+beginState: s32'kyk204_bake1'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown2290: 1
+    Unknown456: 3
+    Unknown2314: 1
+    Unknown450: s32'kyk_204_bake01'
+    Unknown239: 
+    Unknown94: 0, 0
+    Unknown99: 0, 7000
+    Unknown1732: 0, 0
+    Unknown231: 3200
+    Unknown232: 0
+    Unknown164: 0
+    endUpon: 
+  sprite: s32'null', 20
+  endState: 
+
+beginState: s32'kyk204_bake2'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown2290: 1
+    Unknown450: s32'kyk_204_bake02'
+    Unknown2314: 1
+    Unknown231: 4400
+    Unknown232: 0
+    Unknown164: 0
+    Unknown239: 
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+beginState: s32'kyk205_bake1'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    Unknown450: s32'kyk_205_bake01'
+    Unknown2050: 1
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'kyk205_bake2'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    Unknown450: s32'kyk_205_bake02'
+    Unknown2050: 1
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'kyk213_bake1'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown2290: 1
+    Unknown450: s32'kyk_213_bake01'
+    Unknown239: 
+    Unknown94: 0, 0
+    Unknown99: 0, -2000
+    Unknown1732: 0, 0
+    Unknown231: 8400
+    Unknown232: 352800
+    Unknown164: 353600
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 20
+  endState: 
+
+beginState: s32'kyk213_bake2'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown2290: 1
+    Unknown450: s32'kyk_213_bake02'
+    Unknown239: 
+    Unknown94: 0, -964
+    Unknown99: 0, -19000
+    Unknown1732: 0, -6330
+    Unknown231: 11200
+    Unknown232: 0
+    Unknown164: 0
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+beginState: s32'kyk232_bake1'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutine: s32'cmnWSB_Effect_NoStop_or_Delete'
+    Unknown450: s32'kyk_232_bake01'
+    Unknown2050: 1
+    Unknown2314: 1
+    Unknown94: 0, 0
+    Unknown99: 0, -6000
+    Unknown1732: 0, 0
+    Unknown231: 358400
+    Unknown232: 0
+    Unknown164: 0
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'kyk232_bake2'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutine: s32'cmnWSB_Effect_NoStop_or_Delete'
+    Unknown450: s32'kyk_232_bake02'
+    Unknown2050: 1
+    Unknown2314: 1
+    Unknown94: 0, 0
+    Unknown99: 0, -22000
+    Unknown1732: 0, 0
+    Unknown231: 354000
+    Unknown232: 0
+    Unknown164: 0
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'kyk233_bake1'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown2290: 1
+    Unknown450: s32'kyk_233_bake01'
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'kyk233_bake2'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown2290: 1
+    Unknown450: s32'kyk_233_bake02'
+    Unknown239: 
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'kyk234_bake01'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown456: 3
+    Unknown454: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'kyk_234_bake01'
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 20
+  endState: 
+
+beginState: s32'kyk234_bake02'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown456: 3
+    Unknown454: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'kyk_234_bake02'
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 40
+  endState: 
+
+beginState: s32'kyk252_bake1'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'kyk_252_bake01'
+    Unknown94: 0, -84748
+    Unknown99: 0, 385127
+    Unknown1732: 0, -96679
+    Unknown231: 284000
+    Unknown232: 310000
+    Unknown164: 14000
+    Unknown2314: 1
+    upon: 36
+      if: (VARIABLE), 315
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 10
+          Unknown456: 0
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          Unknown450: s32'kyk_252_bake02'
+          endIf: 
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'kyk252_bake2'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'kyk_252_bake02'
+    Unknown94: 0, -67255
+    Unknown99: 0, 392650
+    Unknown1732: 0, -1099
+    Unknown231: 262000
+    Unknown232: 245600
+    Unknown164: 17200
+    Unknown2314: 1
+    upon: 36
+      if: (VARIABLE), 315
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 10
+          Unknown456: 0
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          endIf: 
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'kyk253_bake1'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'kyk_253_bake01'
+    Unknown2050: 1
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 20
+  endState: 
+
+beginState: s32'kyk253_bake2'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown2290: 1
+    Unknown450: s32'kyk_253_bake02'
+    Unknown2050: 1
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'kyk254_start'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown94: 0, 60000
+    Unknown99: 0, 30000
+    Unknown2290: 1
+    Unknown450: s32'kyk_254_start'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'kyk310_bake1'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'kyk_310_bake01'
+    Unknown94: 0, 415054
+    Unknown99: 0, 203546
+    Unknown1732: 0, 47356
+    Unknown231: 154000
+    Unknown232: 352000
+    Unknown164: 359600
+    endUpon: 
+  sprite: s32'null', 20
+  endState: 
+
+beginState: s32'kyk310_bake2'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'kyk_310_bake02'
+    Unknown94: 0, 414571
+    Unknown99: 0, 205784
+    Unknown1732: 0, 41053
+    Unknown231: 154000
+    Unknown232: 352000
+    Unknown164: 400
+    endUpon: 
+  sprite: s32'null', 40
+  endState: 
+
+beginState: s32'kyk320_throw'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown2290: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'kyk_320_bake'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+beginState: s32'kyk404_trail'
+  upon: (IMMEDIATE)
+    Unknown450: s32'kyk_404_trail'
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    upon: 36
+      if: (VARIABLE), 315
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 10
+          Unknown456: 0
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          endIf: 
+        endIf: 
+      endUpon: 
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown2314: 1
+    upon: 23
+      Unknown454: 0
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 16
+  sprite: s32'null', 104
+  Unknown454: 0
+  endState: 
+
+beginState: s32'kyk404_atk01'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    upon: 36
+      if: (VARIABLE), 315
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 10
+          Unknown456: 0
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          Unknown1801: 1
+          endIf: 
+        endIf: 
+      endUpon: 
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown2314: 1
+    Unknown450: s32'kyk_404_atk01'
+    Unknown456: 3
+    Unknown458: 3
+    Unknown94: 0, -36922
+    Unknown99: 0, 265841
+    Unknown1732: 0, 4077
+    Unknown148: 1160
+    Unknown156: 1160
+    Unknown180: 1160
+    Unknown231: 166000
+    Unknown232: 22000
+    Unknown164: 314000
+    upon: 23
+      Unknown454: 0
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 60
+  endState: 
+
+beginState: s32'kyk404_atk02'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown450: s32'kyk_404_atk02'
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    upon: 36
+      if: (VARIABLE), 315
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 10
+          Unknown456: 0
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          Unknown1801: 1
+          endIf: 
+        endIf: 
+      endUpon: 
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown2314: 1
+    Unknown94: 0, -36922
+    Unknown99: 0, 265841
+    Unknown1732: 0, 4077
+    Unknown148: 1160
+    Unknown156: 1160
+    Unknown180: 1160
+    Unknown231: 166000
+    Unknown232: 22000
+    Unknown164: 314000
+    upon: 23
+      Unknown454: 0
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 8
+  sprite: s32'null', 60
+  Unknown454: 0
+  endState: 
+
+beginState: s32'kyk404_atk02sub'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown450: s32'kyk_404_atk02sub'
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    upon: 36
+      if: (VARIABLE), 315
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 10
+          Unknown456: 0
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          Unknown1801: 1
+          endIf: 
+        endIf: 
+      endUpon: 
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown2314: 1
+    Unknown231: 294000
+    Unknown232: 65600
+    Unknown164: 312000
+    Unknown94: 0, -129974
+    Unknown99: 0, 360000
+    Unknown1732: 0, 0
+    upon: 23
+      Unknown454: 0
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 8
+  sprite: s32'null', 60
+  Unknown454: 0
+  endState: 
+
+beginState: s32'Taiden_charge'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown1955: s32'kyk_taiden_charge3'
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown2314: 1
+    Unknown295: 1
+    callSubroutine: s32'cmn_Effect_NoLink'
+    upon: 23
+      clearRegisteredUponCode: 23
+      Unknown454: 0
+      endUpon: 
+    upon: 36
+      if: (VARIABLE), 315
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 10
+          Unknown456: 0
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          Unknown1801: 1
+          endIf: 
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 50
+  Unknown94: 0, 279944
+  Unknown99: 0, 360000
+  Unknown1732: 0, 0
+  endState: 
+
+beginState: s32'Taiden_charge_se1'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown457: 3
+    Unknown454: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown1955: s32'kyk_taiden_charge1'
+    Unknown94: 0, 374959
+    Unknown99: 0, 235000
+    Unknown1732: 0, -209958
+    Unknown2314: 1
+    upon: 36
+      if: (VARIABLE), 315
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 10
+          Unknown456: 0
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          Unknown1801: 1
+          endIf: 
+        endIf: 
+      else: 
+        ifNot: (VARIABLE), 16
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          Unknown1801: 1
+          endIf: 
+        endElse: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 40
+  endState: 
+
+beginState: s32'Taiden_charge_se1_air'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown457: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown1955: s32'kyk_taiden_charge1'
+    Unknown94: 0, 9998
+    Unknown99: 0, 350000
+    Unknown1732: 0, -204979
+    Unknown2314: 1
+    upon: 36
+      if: (VARIABLE), 315
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 10
+          Unknown456: 0
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          Unknown1801: 1
+          endIf: 
+        endIf: 
+      else: 
+        ifNot: (VARIABLE), 16
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          Unknown1801: 1
+          endIf: 
+        endElse: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 40
+  endState: 
+
+beginState: s32'Taiden_charge_se2'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown457: 3
+    Unknown454: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown1955: s32'kyk_taiden_charge2'
+    Unknown94: 0, 321922
+    Unknown99: 0, 224000
+    Unknown1732: 0, -200000
+    Unknown2314: 1
+    upon: 36
+      if: (VARIABLE), 315
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 10
+          Unknown456: 0
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          Unknown1801: 1
+          endIf: 
+        endIf: 
+      else: 
+        ifNot: (VARIABLE), 16
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          Unknown1801: 1
+          endIf: 
+        endElse: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 110
+  endState: 
+
+beginState: s32'Taiden_charge_se2_end'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown457: 3
+    Unknown454: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown1955: s32'kyk_taiden_charge2_end'
+    Unknown94: 0, 321922
+    Unknown99: 0, 224000
+    Unknown1732: 0, -200000
+    Unknown2314: 1
+    upon: 36
+      if: (VARIABLE), 315
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 10
+          Unknown456: 0
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          Unknown1801: 1
+          endIf: 
+        endIf: 
+      else: 
+        ifNot: (VARIABLE), 16
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          Unknown1801: 1
+          endIf: 
+        endElse: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+beginState: s32'kyk407_atk'
+  upon: (IMMEDIATE)
+    Unknown458: 3
+    Unknown454: 3
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown1955: s32'kyk_407_atk'
+    Unknown94: 0, 31527
+    Unknown99: 0, 267464
+    Unknown1732: 0, -44565
+    Unknown231: 38000
+    Unknown232: 166000
+    Unknown164: 330000
+    Unknown148: 1150
+    Unknown156: 800
+    Unknown180: 1150
+    Unknown2314: 1
+    upon: 36
+      if: (VARIABLE), 315
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 20
+          Unknown456: 0
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          endIf: 
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 7
+  sprite: s32'null', 70
+  Unknown454: 0
+  endState: 
+
+beginState: s32'kyk407_floor'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown1955: s32'kyk_407_floor'
+    Unknown456: 3
+    Unknown94: 0, 39992
+    Unknown99: 0, 0
+    Unknown1732: 0, 39992
+    Unknown231: 0
+    Unknown232: 180000
+    Unknown164: 0
+    Unknown2314: 1
+    upon: 36
+      if: (VARIABLE), 315
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 20
+          Unknown456: 0
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          endIf: 
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+beginState: s32'Thunder_stand'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'kyk_sword_thunder'
+    Unknown94: 0, -163651
+    Unknown99: 0, -152190
+    Unknown1732: 0, 20902
+    Unknown231: 121200
+    Unknown232: 287600
+    Unknown164: 22800
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 120
+  endState: 
+
+beginState: s32'Thunder_crouch'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'kyk_sword_thunder'
+    Unknown94: 0, -170933
+    Unknown99: 0, -185000
+    Unknown1732: 0, 0
+    Unknown231: 0
+    Unknown232: 304000
+    Unknown164: 12400
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 120
+  endState: 
+
+beginState: s32'Thunder_crouch_reaction'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'kyk_sword_thunder'
+    Unknown94: 0, -53903
+    Unknown99: 0, 99827
+    Unknown1732: 0, -7034
+    Unknown231: 0
+    Unknown232: 304000
+    Unknown164: 12400
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 120
+  endState: 
+
+beginState: s32'Thunder_walk'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'kyk_sword_thunder'
+    Unknown94: 0, -169654
+    Unknown99: 0, -149908
+    Unknown1732: 0, 25268
+    Unknown231: 8400
+    Unknown232: 275600
+    Unknown164: 19600
+    endUpon: 
+  sprite: s32'null', 50
+  endState: 
+
+beginState: s32'Thunder_dash'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'kyk_sword_thunder'
+    Unknown94: 0, -103384
+    Unknown99: 0, 261384
+    Unknown1732: 0, 16982
+    Unknown231: 34400
+    Unknown232: 326000
+    Unknown164: 34000
+    endUpon: 
+  sprite: s32'null', 50
+  endState: 
+
+beginState: s32'Thunder_walkback'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'kyk_sword_thunder'
+    Unknown94: 0, -180959
+    Unknown99: 0, -150000
+    Unknown1732: 0, -27944
+    Unknown231: 298000
+    Unknown232: 96000
+    Unknown164: 159600
+    endUpon: 
+  sprite: s32'null', 50
+  endState: 
+
+beginState: s32'Thunder_chohatu1'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'kyk_sword_thunder_loop'
+    Unknown94: 0, -70965
+    Unknown99: 0, 170000
+    Unknown1732: 0, -21015
+    Unknown231: 274000
+    Unknown232: 344000
+    Unknown164: 40400
+    endUpon: 
+  sprite: s32'null', 300
+  endState: 
+
+beginState: s32'Thunder_chohatu2'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'kyk_sword_thunder_loop'
+    Unknown94: 0, -96751
+    Unknown99: 0, 169945
+    Unknown1732: 0, 13581
+    Unknown231: 229600
+    Unknown232: 104000
+    Unknown164: 156000
+    endUpon: 
+  sprite: s32'null', 80
+  sprite: s32'null', 220
+  Unknown92: -100407
+  Unknown98: 182413
+  Unknown1731: 7143
+  Unknown231: 293600
+  Unknown232: 110000
+  Unknown164: 152000
+  endState: 
+
+beginState: s32'Thunder_keii1'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'kyk_sword_thunder_loop'
+    Unknown94: 0, -35171
+    Unknown99: 0, 187135
+    Unknown1732: 0, 59247
+    Unknown231: 308000
+    Unknown232: 14000
+    Unknown164: 148800
+    upon: 23
+      Unknown19: 23
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 500
+  Unknown92: -43625
+  Unknown98: 190399
+  Unknown1731: 49933
+  Unknown231: 34000
+  Unknown232: 20800
+  Unknown164: 143600
+  endState: 
+
+beginState: s32'Thunder_keii2'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'kyk_sword_thunder_loop'
+    Unknown94: 0, -56072
+    Unknown99: 0, 173633
+    Unknown1732: 0, 59695
+    Unknown231: 324000
+    Unknown232: 9600
+    Unknown164: 148800
+    upon: 23
+      Unknown19: 23
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 40
+  sprite: s32'null', 500
+  Unknown92: -46885
+  Unknown98: 95461
+  Unknown1731: 80790
+  Unknown231: 328000
+  Unknown232: 4000
+  Unknown164: 162800
+  endState: 
+
+beginState: s32'Thunder_lose'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'kyk_sword_thunder_loop'
+    Unknown94: 0, -928
+    Unknown99: 0, 184827
+    Unknown1732: 0, 96902
+    Unknown231: 338000
+    Unknown232: 172000
+    Unknown164: 28400
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+beginState: s32'Thunder_win1'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'kyk_sword_thunder'
+    Unknown94: 0, 93054
+    Unknown99: 0, 271827
+    Unknown1732: 0, 85901
+    Unknown231: 352000
+    Unknown232: 186000
+    Unknown164: 283200
+    endUpon: 
+  sprite: s32'null', 60
+  endState: 
+
+beginState: s32'Thunder_win2'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'kyk_win2'
+    Unknown94: 0, 24991
+    Unknown99: 0, 250000
+    Unknown1732: 0, 124975
+    endUpon: 
+  sprite: s32'null', 60
+  endState: 
+
+beginState: s32'Nage_thunder'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown456: 3
+    Unknown1801: 1
+    endUpon: 
+  sprite: s32'null', 80
+  endState: 
+
+beginState: s32'Slash_3HS'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown466: 2
+    Unknown450: s32'kyk_slash_3hs'
+    endUpon: 
+  sprite: s32'null', 80
+  endState: 
+
+beginState: s32'Stundipper'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown456: 3
+    Unknown466: 2
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    upon: 36
+      if: (VARIABLE), 315
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 20
+          Unknown456: 0
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          endIf: 
+        endIf: 
+      endUpon: 
+    callSubroutine: s32'cmn_Effect_NoLink'
+    Unknown2314: 1
+    Unknown450: s32'kyk_400_stundipper'
+    Unknown94: 0, -130969
+    Unknown99: 0, 315000
+    Unknown1732: 0, -133023
+    Unknown231: 100400
+    Unknown232: 348000
+    Unknown164: 359200
+    Unknown188: 800
+    endUpon: 
+  sprite: s32'null', 8
+  sprite: s32'null', 100
+  Unknown454: 0
+  endState: 
+
+beginState: s32'Vaporthrust'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown466: 2
+    callSubroutine: s32'cmnWSB_Effect_NoStop_or_Delete'
+    Unknown450: s32'kyk_405_vapor'
+    Unknown2314: 1
+    upon: 99
+      clearRegisteredUponCode: 99
+      storeValue: (VARIABLE), 45, (STATIC), 1
+      ifOperation: (IS_EQUAL), (VARIABLE), 322, (STATIC), 3
+        Unknown454: 3
+        Unknown453: 3
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 7
+  sprite: s32'null', 80
+  ifNot: (VARIABLE), 45
+    Unknown454: 0
+    endIf: 
+  endState: 
+
+beginState: s32'Vaporthrust_hs'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown466: 2
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'kyk_406_vapor'
+    Unknown94: 0, -224955
+    Unknown99: 0, 5000
+    Unknown1732: 0, 0
+    Unknown231: 344000
+    Unknown232: 36000
+    Unknown164: 348000
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 15
+  sprite: s32'null', 80
+  Unknown454: 0
+  endState: 
+
+beginState: s32'Vaporthrust_mahojin'
+  upon: (IMMEDIATE)
+    Unknown450: s32'cmn_step_mahojin'
+    Unknown231: 5000
+    Unknown295: 1
+    Unknown2314: 1
+    endUpon: 
+  sprite: s32'null', 30
+  Unknown615: s32'SE_BTL_KYK_05'
+  endState: 
+
+beginState: s32'CS500_rtl'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown454: 3
+    Unknown294: 1
+    Unknown450: s32'kyk_cs500_scr'
+    upon: 99
+      Unknown19: 23
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 300
+  endState: 
+
+beginState: s32'CS500_ptc'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown294: 1
+    Unknown450: s32'kyk_cs500_ptc'
+    Unknown94: 0, 105524
+    Unknown99: 0, 408980
+    Unknown1732: 0, -185947
+    upon: 99
+      Unknown19: 23
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 96
+  sprite: s32'null', 4
+  Unknown94: 0, 133422
+  Unknown99: 0, 375541
+  Unknown1732: 0, -53595
+  Unknown231: 0
+  Unknown232: 0
+  Unknown164: 320000
+  sprite: s32'null', 150
+  Unknown92: 129285
+  Unknown98: 360299
+  Unknown1731: -114113
+  endState: 
+
+beginState: s32'CS500_charge'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown454: 3
+    Unknown294: 1
+    Unknown450: s32'kyk_500charge'
+    Unknown94: 0, -141722
+    Unknown99: 0, 322044
+    Unknown1732: 0, -151440
+    Unknown231: 54000
+    Unknown232: 352000
+    Unknown164: 220000
+    Unknown148: 700
+    Unknown156: 700
+    Unknown180: 700
+    endUpon: 
+  sprite: s32'null', 12
+  sprite: s32'null', 4
+  Unknown92: -38318
+  Unknown98: 321960
+  Unknown1731: -169563
+  sprite: s32'null', 104
+  Unknown454: 0
+  endState: 
+
+beginState: s32'CS500_sword'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown454: 3
+    Unknown294: 1
+    Unknown450: s32'kyk_500sword'
+    Unknown94: 0, 98882
+    Unknown99: 0, 316433
+    Unknown1732: 0, 198011
+    Unknown231: 6000
+    Unknown232: 306000
+    Unknown164: 302000
+    Unknown148: 700
+    Unknown156: 700
+    Unknown180: 700
+    endUpon: 
+  sprite: s32'null', 4
+  sprite: s32'null', 4
+  Unknown92: 116008
+  Unknown98: 317714
+  Unknown1731: 199391
+  Unknown231: 346000
+  Unknown232: 338000
+  Unknown164: 310400
+  sprite: s32'null', 4
+  Unknown92: 55192
+  Unknown98: 281216
+  Unknown1731: 233875
+  Unknown231: 344000
+  Unknown232: 14000
+  Unknown164: 311200
+  Unknown148: 850
+  Unknown156: 850
+  Unknown180: 850
+  sprite: s32'null', 4
+  Unknown92: 96679
+  Unknown98: 262198
+  Unknown1731: 371124
+  Unknown231: 14000
+  Unknown232: 346000
+  Unknown164: 313200
+  sprite: s32'null', 4
+  Unknown92: 103010
+  Unknown98: 218775
+  Unknown1731: 192482
+  sprite: s32'null', 4
+  Unknown92: 231006
+  Unknown98: 163775
+  Unknown1731: 129489
+  Unknown231: 354000
+  Unknown232: 314000
+  Unknown164: 20000
+  endState: 
+
+beginState: s32'kyk500_tossin01'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown457: 3
+    Unknown454: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    Unknown450: s32'kyk_500_tossin01loop'
+    Unknown94: 0, 79984
+    Unknown99: 0, 180000
+    Unknown1732: 0, -99980
+    callSubroutine: s32'cmn_Effect_NoLink'
+    endUpon: 
+  sprite: s32'null', 150
+  endState: 
+
+beginState: s32'kyk500_tossin01_mc'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown454: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'kyk_rtl_mc'
+    Unknown94: 0, 314937
+    Unknown99: 0, 195000
+    Unknown1732: 0, 0
+    Unknown148: 670
+    Unknown156: 670
+    Unknown180: 670
+    Unknown231: 0
+    Unknown232: 288000
+    Unknown164: 0
+    callSubroutine: s32'cmn_Effect_NoLink'
+    endUpon: 
+  sprite: s32'null', 30
+  sprite: s32'null', 120
+  Unknown454: 0
+  endState: 
+
+beginState: s32'kyk500_tossin01_end'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown454: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown450: s32'kyk_500_tossin01_end'
+    Unknown94: 0, 79984
+    Unknown99: 0, 180000
+    Unknown1732: 0, -99980
+    callSubroutine: s32'cmn_Effect_NoLink'
+    endUpon: 
+  sprite: s32'null', 6
+  sprite: s32'null', 100
+  Unknown454: 0
+  endState: 
+
+beginState: s32'kyk500_tossin_floor'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown457: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    Unknown450: s32'kyk_500_rtl_floorloop'
+    Unknown94: 0, -102639
+    Unknown99: 0, 8523
+    Unknown1732: 0, 5540
+    callSubroutine: s32'cmn_Effect_NoLink'
+    endUpon: 
+  sprite: s32'null', 120
+  endState: 
+
+beginState: s32'kyk500_tossin_floorend'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown457: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    Unknown450: s32'kyk_500_rtl_floorend'
+    Unknown94: 0, -102639
+    Unknown99: 0, 8523
+    Unknown1732: 0, 5540
+    callSubroutine: s32'cmn_Effect_NoLink'
+    endUpon: 
+  sprite: s32'null', 120
+  endState: 
+
+beginState: s32'Scn_Rtl_coreair'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown454: 3
+    Unknown456: 3
+    Unknown457: 3
+    callSubroutine: s32'cmn_Effect_NoLink'
+    endUpon: 
+  sprite: s32'null', 60
+  endState: 
+
+beginState: s32'Scn_Rtl_sub'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown454: 3
+    Unknown457: 3
+    callSubroutine: s32'cmn_Effect_NoLink'
+    endUpon: 
+  sprite: s32'null', 60
+  Unknown615: s32'SE_BTL_KYK_11'
+  endState: 
+
+beginState: s32'Rtl_2ndAtk'
+  upon: (IMMEDIATE)
+    Unknown38: s32'Rtl_2ndAtk'
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    Unknown450: s32'kyk_500_2ndatk'
+    Unknown231: 50000
+    Unknown232: 152000
+    Unknown164: 10000
+    Unknown94: 0, 62981
+    Unknown99: 0, 395000
+    Unknown1732: 0, -55988
+    callSubroutine: s32'cmn_Effect_NoLink'
+    endUpon: 
+  sprite: s32'null', 15
+  sprite: s32'null', 90
+  Unknown454: 0
+  endState: 
+
+beginState: s32'Sacred_start01'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown457: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown294: 1
+    endUpon: 
+  sprite: s32'null', 60
+  Unknown450: s32'kyk_502_start01'
+  endState: 
+
+beginState: s32'Sacred_start02'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown457: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown294: 1
+    Unknown98: 255000
+    Unknown94: 0, 75000
+    endUpon: 
+  sprite: s32'null', 6
+  Unknown450: s32'kyk_502_start02'
+  endState: 
+
+beginState: s32'Sacred_Trail'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown457: 2
+    Unknown454: 2
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown294: 1
+    Unknown289: 300
+    endUpon: 
+  beginLabel: s32'Loop'
+  sprite: s32'null', 6
+  Unknown448: s32'kyk_502_trail', 100
+  Unknown446: s32'Sacred_Ground', 123
+  gotoLabel: s32'Loop'
+  endState: 
+
+beginState: s32'Sacred_Ground'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    Unknown294: 1
+    endUpon: 
+  sprite: s32'null', 36
+  Unknown450: s32'kyk_502_ground'
+  endState: 
+
+beginState: s32'DKY_cs01'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown454: 3
+    Unknown294: 1
+    Unknown2499: 3, 2, 324
+      Unknown450: s32'dky_cs01_scr'
+      endIf: 
+    else: 
+      Unknown450: s32'dky_cs01_scr_afro'
+      endElse: 
+    upon: 99
+      Unknown19: 23
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 300
+  endState: 
+
+beginState: s32'DKY_wingaura'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown294: 1
+    Unknown450: s32'dky_cs_wingaura'
+    Unknown2050: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutine: s32'cmn_Effect_NoLink'
+    endUpon: 
+  sprite: s32'null', 300
+  endState: 
+
+beginState: s32'dky_aura'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown450: s32'dky_aura'
+    Unknown466: 3
+    Unknown455: 3
+    Unknown2050: 1
+    Unknown295: 1
+    Unknown2314: 1
+    Unknown1801: 1
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+beginState: s32'DKY_stand_aura_loop'
+  upon: (IMMEDIATE)
+    Unknown455: 3
+    Unknown466: 3
+    Unknown453: 3
+    Unknown2050: 1
+    Unknown2314: 1
+    upon: 21
+      Unknown2277: 1
+      Unknown449: s32'dky_aura_stand_end', 100
+      endUpon: 
+    Unknown450: s32'dky_aura_stand_start'
+    upon: 47
+      clearRegisteredUponCode: 47
+      upon: 39
+        Unknown53: 23, 2, 45, 3, 2, 334
+        Unknown2500: 9, 3, (VARIABLE), 334, (STATIC), 0
+          storeValue: (VARIABLE), 46, (STATIC), 0
+          endIf: 
+        Unknown2500: 9, 3, (VARIABLE), 334, (STATIC), 1
+          storeValue: (VARIABLE), 46, (STATIC), 1
+          endIf: 
+        Unknown2500: 9, 3, (VARIABLE), 334, (STATIC), 2
+          storeValue: (VARIABLE), 46, (STATIC), 0
+          endIf: 
+        ifOperation: (IS_NOT_EQUAL), (VARIABLE), 46, (STATIC), 1
+          Unknown2500: 9, 3, (VARIABLE), 13, (STATIC), 1
+            ifOperation: (IS_NOT_EQUAL), (VARIABLE), 46, (VARIABLE), 47
+              Unknown450: s32'dky_aura_stand_loop'
+              storeValue: (VARIABLE), 47, (VARIABLE), 46
+              endIf: 
+            Unknown2033: 3, s32'CmnActStand'
+            ifNot: (VARIABLE), 0
+              Unknown450: s32'dky_aura_stand_loop_oku'
+              storeValue: (VARIABLE), 47, (STATIC), 2
+              endIf: 
+            endIf: 
+          ifNot: (VARIABLE), 48
+            Unknown450: s32'dky_aura_stand_loop'
+            storeValue: (VARIABLE), 47, (VARIABLE), 46
+            storeValue: (VARIABLE), 48, (STATIC), 1
+            endIf: 
+          endIf: 
+        else: 
+          Unknown2500: 9, 3, (VARIABLE), 13, (STATIC), 1
+            ifOperation: (IS_NOT_EQUAL), (VARIABLE), 46, (VARIABLE), 47
+              Unknown450: s32'dky_aura_crouch_loop'
+              storeValue: (VARIABLE), 47, (VARIABLE), 46
+              endIf: 
+            Unknown2033: 3, s32'CmnActCrouch'
+            ifNot: (VARIABLE), 0
+              Unknown2033: 3, s32'CmnActStand2Crouch'
+              ifNot: (VARIABLE), 0
+                Unknown2033: 3, s32'CmnActCrouch2Stand'
+                ifNot: (VARIABLE), 0
+                  Unknown450: s32'dky_aura_crouch_loop_oku'
+                  storeValue: (VARIABLE), 47, (STATIC), 2
+                  endIf: 
+                endIf: 
+              endIf: 
+            ifNot: (VARIABLE), 48
+              Unknown450: s32'dky_aura_crouch_loop'
+              storeValue: (VARIABLE), 47, (VARIABLE), 46
+              storeValue: (VARIABLE), 48, (STATIC), 1
+              endIf: 
+            endIf: 
+          endElse: 
+        endUpon: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 25
+  sprite: s32'null', 2147483647
+  ifNot: (VARIABLE), 48
+    ifOperation: (IS_NOT_EQUAL), (VARIABLE), 46, (STATIC), 1
+      Unknown450: s32'dky_aura_stand_loop'
+      Unknown2033: 3, s32'CmnActStand'
+      ifNot: (VARIABLE), 0
+        Unknown450: s32'dky_aura_stand_loop_oku'
+        endIf: 
+      endIf: 
+    else: 
+      Unknown450: s32'dky_aura_crouch_loop'
+      Unknown2033: 3, s32'CmnActCrouch'
+      ifNot: (VARIABLE), 0
+        Unknown2033: 3, s32'CmnActStand2Crouch'
+        ifNot: (VARIABLE), 0
+          Unknown2033: 3, s32'CmnActCrouch2Stand'
+          ifNot: (VARIABLE), 0
+            Unknown450: s32'dky_aura_crouch_loop_oku'
+            endIf: 
+          endIf: 
+        endIf: 
+      endElse: 
+    endIf: 
+  endState: 
+
+beginState: s32'DKY_floor_aura_loop'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'dky_aura_floor_loop'
+    Unknown466: 3
+    Unknown455: 3
+    Unknown2050: 1
+    Unknown38: s32'DKY_floor_aura_loop'
+    callSubroutine: s32'DKY_EffectDisp'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+beginState: s32'DKY_floorwalk_aura_loop'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'dky_aura_floor_walk'
+    Unknown466: 3
+    Unknown455: 3
+    Unknown2050: 1
+    callSubroutine: s32'DKY_EffectDisp'
+    Unknown38: s32'DKY_floorwalk_aura_loop'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+beginState: s32'DKY_aura_yoin'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown450: s32'dky_aura_yoin'
+    Unknown466: 3
+    Unknown455: 3
+    Unknown2050: 1
+    callSubroutine: s32'DKY_EffectDisp'
+    endUpon: 
+  sprite: s32'null', 2
+  sprite: s32'null', 120
+  Unknown454: 0
+  endState: 
+
+beginState: s32'DKY_aura_naname_yoin'
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown450: s32'dky_aura_naname_yoin'
+    Unknown466: 3
+    Unknown455: 3
+    Unknown2050: 1
+    callSubroutine: s32'DKY_EffectDisp'
+    endUpon: 
+  sprite: s32'null', 2
+  sprite: s32'null', 120
+  Unknown454: 0
+  endState: 
+
+beginState: s32'DKY_floorbackwalk_aura_loop'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'dky_aura_floor_backwalk'
+    Unknown466: 3
+    Unknown455: 3
+    Unknown2050: 1
+    callSubroutine: s32'DKY_EffectDisp'
+    Unknown38: s32'DKY_floorbackwalk_aura_loop'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+beginState: s32'DKY_arm_aura_loop'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'dky_aura_arm_loop'
+    Unknown466: 3
+    Unknown455: 3
+    Unknown2050: 1
+    Unknown38: s32'DKY_arm_aura_loop'
+    callSubroutine: s32'DKY_EffectDisp'
+    Unknown94: 0, 0
+    Unknown99: 0, 235000
+    Unknown1732: 0, 0
+    endUpon: 
+  sprite: s32'null', 196
+  endState: 
+
+beginState: s32'DKY_arm_aura_loop_crouch'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'dky_aura_arm_loop'
+    Unknown466: 3
+    Unknown455: 3
+    Unknown2050: 1
+    Unknown38: s32'DKY_arm_aura_loop'
+    callSubroutine: s32'DKY_EffectDisp'
+    Unknown94: 0, 6993
+    Unknown99: 0, 82000
+    Unknown1732: 0, 0
+    endUpon: 
+  sprite: s32'null', 196
+  endState: 
+
+beginState: s32'DKY_floor_aura'
+  upon: (IMMEDIATE)
+    Unknown450: s32'dky_floor_aura'
+    Unknown2344: 1
+    Unknown38: s32'DKY_floor_aura'
+    Unknown2314: 1
+    upon: 99
+      clearRegisteredUponCode: 99
+      clearRegisteredUponCode: 39
+      Unknown14: s32'end'
+      Unknown295: 1
+      Unknown1801: 1
+      Unknown454: 3
+      Unknown453: 3
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 5
+  Unknown188: 0
+  Unknown191: 200
+  sprite: s32'null', 2147483647
+  upon: 39
+    Unknown2250: 3, 150, 23, 100
+    ifOperation: (IS_LESSER), (VARIABLE), 18, (STATIC), 300000
+      Unknown191: 300
+      endIf: 
+    else: 
+      Unknown191: -300
+      endElse: 
+    ifOperation: (IS_LESSER), (VARIABLE), 99, (STATIC), 0
+      Unknown188: 0
+      endIf: 
+    ifOperation: (IS_GREATER), (VARIABLE), 99, (STATIC), 1000
+      Unknown188: 1000
+      endIf: 
+    Unknown98: 0
+    Unknown53: 23, 2, 59, 3, 2, 59
+    if: (VARIABLE), 59
+      clearRegisteredUponCode: 39
+      Unknown14: s32'end'
+      Unknown295: 1
+      Unknown1801: 1
+      endIf: 
+    endUpon: 
+  endLabel: 
+  beginLabel: s32'end'
+  sprite: s32'null', 5
+  Unknown191: -200
+  endState: 
+
+beginSubroutine: s32'DKY_EffectDisp'
+  Unknown2314: 1
+  upon: 39
+    storeValue: (VARIABLE), 59, (STATIC), 0
+    Unknown2033: 3, s32'HomingJump'
+    if: (VARIABLE), 0
+      storeValue: (VARIABLE), 59, (STATIC), 1
+      endIf: 
+    if: (VARIABLE), 317
+      storeValue: (VARIABLE), 59, (STATIC), 1
+      endIf: 
+    if: (VARIABLE), 315
+      storeValue: (VARIABLE), 59, (STATIC), 1
+      endIf: 
+    if: (VARIABLE), 59
+      Unknown2055: 0
+      endIf: 
+    else: 
+      Unknown2055: 1
+      endElse: 
+    endUpon: 
+  endSubroutine: 
+
+beginState: s32'JumpDobj'
+  upon: (IMMEDIATE)
+    Unknown458: 3
+    Unknown243: 
+    callSubroutineWithArgs: s32'cmn_AtkLv2', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
+    storeValue: (VARIABLE), 338, (STATIC), 1000010000
+    storeValue: (VARIABLE), 339, (STATIC), 0
+    storeValue: (VARIABLE), 340, (STATIC), 1
+    callSubroutine: s32'cmn_hosei'
+    damage: 0, 35
+    hitEffectElectric: 1
+    hitAirPushbackX: 0, 20000
+    hitAirPushbackY: 0, 30000
+    upon: (HIT_OR_GUARD)
+      callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 1, (STATIC), 0, (STATIC), 0
+      endUpon: 
+    Unknown99: 0, -50000
+    Unknown94: 0, 250000
+    Unknown1148: s32'SE_BTL_CMN_Impact_Electric'
+    Unknown1211: s32'SE_BTL_CMN_Impact_Electric'
+    upon: 36
+      if: (VARIABLE), 315
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 20
+          Unknown456: 0
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          endIf: 
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 2
+  Unknown450: s32'kyk_254_atk'
+  sprite: s32'_kyk254_00', 6
+  hit: 
+  sprite: s32'null', 20
+  endState: 
+
+beginState: s32'JumpDobj_low'
+  upon: (IMMEDIATE)
+    Unknown458: 3
+    Unknown243: 
+    callSubroutineWithArgs: s32'cmn_AtkLv2', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 1
+    storeValue: (VARIABLE), 338, (STATIC), 1000010000
+    storeValue: (VARIABLE), 339, (STATIC), 0
+    storeValue: (VARIABLE), 340, (STATIC), 1
+    callSubroutine: s32'cmn_hosei'
+    damage: 0, 35
+    hitEffectElectric: 1
+    hitAirPushbackX: 0, 20000
+    hitAirPushbackY: 0, 30000
+    upon: (HIT_OR_GUARD)
+      callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 1, (STATIC), 0, (STATIC), 0
+      endUpon: 
+    Unknown99: 0, -160000
+    Unknown94: 0, 250000
+    Unknown1148: s32'SE_BTL_CMN_Impact_Electric'
+    Unknown1211: s32'SE_BTL_CMN_Impact_Electric'
+    upon: 36
+      if: (VARIABLE), 315
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 20
+          Unknown456: 0
+          clearRegisteredUponCode: 36
+          Unknown295: 1
+          endIf: 
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 2
+  Unknown450: s32'kyk_254_atk'
+  sprite: s32'_kyk254_00', 6
+  hit: 
+  sprite: s32'null', 20
+  endState: 
+
+beginState: s32'Taiden_Effect'
+  upon: (IMMEDIATE)
+    Unknown38: s32'Taiden_Effect'
+    upon: (FRAME_STEP)
+      ifNot: (VARIABLE), 3
+        clearRegisteredUponCode: (FRAME_STEP)
+        Unknown19: 23
+        endIf: 
+      Unknown2499: 22, 2, 77
+        clearRegisteredUponCode: (FRAME_STEP)
+        Unknown19: 23
+        endIf: 
+      endUpon: 
+    upon: 23
+      Unknown2273: 0, 2000
+      Unknown2193: 132, 0, 0
+      Unknown449: s32'kyk_taiden_hit', 130
+      callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 2, (STATIC), 0, (STATIC), 0
+      endUpon: 
+    Unknown41: 22
+    Unknown612: s32'SE_BTL_CMN_Condition_Shock'
+    Unknown40: 
+    upon: 21
+      ifNot: (VARIABLE), 46
+        Unknown448: s32'cmn_taiden_end', 132
+        endIf: 
+      endUpon: 
+    Unknown450: s32'kyk_taiden_idling'
+    upon: 12
+      Unknown2055: 1
+      storeValue: (VARIABLE), 46, (STATIC), 0
+      if: (VARIABLE), 139
+        Unknown2055: 0
+        storeValue: (VARIABLE), 46, (STATIC), 1
+        endIf: 
+      ifNot: (VARIABLE), 16
+        Unknown2055: 0
+        storeValue: (VARIABLE), 46, (STATIC), 1
+        endIf: 
+      if: (VARIABLE), 315
+        Unknown2055: 0
+        storeValue: (VARIABLE), 46, (STATIC), 1
+        endIf: 
+      Unknown2036: 22, 103
+      Unknown53: 23, 2, 281, 22, 2, 281
+      ifNot: (VARIABLE), 46
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+        ifOperation: 16, (VARIABLE), 45, (STATIC), 16
+          ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 16
+            Unknown2193: 100, 0, 150000
+            endIf: 
+          ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 32
+            Unknown2193: 100, 0, 0
+            endIf: 
+          ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 48
+            Unknown2193: 100, 0, -150000
+            endIf: 
+          Unknown448: s32'kyk_taiden_spark', 132
+          endIf: 
+        ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
+          Unknown450: s32'kyk_taiden_idling'
+          endIf: 
+        ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 75
+          storeValue: (VARIABLE), 45, (STATIC), 0
+          Unknown446: s32'Taiden_Light', 100
+          endIf: 
+        endIf: 
+      else: 
+        storeValue: (VARIABLE), 45, (STATIC), 0
+        Unknown450: s32''
+        endElse: 
+      endUpon: 
+    Unknown446: s32'Taiden_Light', 100
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+beginState: s32'Taiden_Light'
+  upon: (IMMEDIATE)
+    Unknown38: s32'Taiden_Light'
+    Unknown458: 2
+    endUpon: 
+  sprite: s32'null', 40
+  sprite: s32'null', 40
+  Unknown99: 0, 290000
+  Unknown94: 0, 290000
+  physicsYImpulse: 0, -32500
+  Unknown2272: 22
+  Unknown1955: s32'kyk_taiden_light'
+  endState: 
+
+beginState: s32'ChargeStuntail'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    Unknown244: 
+    hitEffectElectric: 1
+    Unknown711: 4
+    damage: 0, 20
+    Unknown1138: 1
+    Unknown2210: 
+    Unknown2211: 3
+    Unknown2221: 1
+    Unknown2212: 1
+    Unknown2213: 1
+    Unknown2214: 1
+    Unknown2215: 1
+    upon: 45
+      Unknown70: s32'ChargeStuntail'
+      endUpon: 
+    upon: (FRAME_STEP)
+      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+      ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 8
+        Unknown449: s32'kyk_401_stunedge_floor', 100
+        storeValue: (VARIABLE), 45, (STATIC), 0
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 90
+        Unknown70: s32'ChargeStuntail'
+        endIf: 
+      Unknown51: 2
+      ifNot: (VARIABLE), 0
+        Unknown70: s32'ChargeStuntail'
+        endIf: 
+      endUpon: 
+    Unknown99: 0, -50000
+    Unknown2299: 2000
+    endUpon: 
+  beginLabel: s32'loop'
+  sprite: s32'_Stuntail', 10
+  hit: 
+  endLabel: 
+  gotoLabel: s32'loop'
+  endState: 
+
+beginState: s32'Lightningsphere'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    hitEffectElectric: 1
+    Unknown711: 2
+    damage: 0, 30
+    Unknown2003: -65536
+    Unknown1138: 1
+    upon: (FRAME_STEP)
+      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+      ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 10
+        Unknown2299: 1500
+        Unknown2280: 0, -65536
+        Unknown449: s32'kyk_taiden_charge3', 100
+        storeValue: (VARIABLE), 45, (STATIC), 0
+        endIf: 
+      endUpon: 
+    Unknown94: 0, 350000
+    endUpon: 
+  sprite: s32'_Sphere', 10
+  hit: 
+  sprite: s32'_Sphere', 10
+  hit: 
+  sprite: s32'_Sphere', 10
+  hit: 
+  sprite: s32'null', 1
+  Unknown446: s32'LightningEdge', 100
+  endState: 
+
+beginState: s32'DragonInstall_start'
+  upon: (IMMEDIATE)
+    Unknown245: 
+    callSubroutine: s32'cmn_AtkLv4'
+    callSubroutine: s32'cmnNohosei_kakusei'
+    damage: 0, 40
+    groundHitEffect: 8
+    Unknown1117: 0
+    hitEffectElectric: 1
+    hitSoftKnockdown: 0
+    Unknown2314: 1
+    Unknown1058: 1
+    Unknown1138: 0
+    storeValue: (VARIABLE), 338, (STATIC), 1000000000
+    storeValue: (VARIABLE), 339, (STATIC), 0
+    storeValue: (VARIABLE), 340, (STATIC), 1
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    Unknown450: s32'dky_burstatk'
+    Unknown2299: 2000
+    Unknown188: 1500
+    Unknown1069: (STATIC), 0, (STATIC), 0, 1, 22, (VARIABLE), 319
+    storeValue: (VARIABLE), 350, (STATIC), -80000
+    Unknown788: 1
+    Unknown955: 5
+    Unknown953: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutine: s32'cmn_Effect_NoLink'
+    callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 8, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    upon: (HIT_OR_GUARD)
+      Unknown2121: s32'Cam_Finish_DragonInstall'
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 2
+  sprite: s32'_DI', 5
+  Unknown233: 
+  Unknown615: s32'SE_BTL_KYK_KAKUSEI_05'
+  sprite: s32'null', 30
+  endState: 
+
+beginState: s32'DragonInstall_eff'
+  upon: (IMMEDIATE)
+    Unknown450: s32'dky_burstatk'
+    Unknown2299: 3000
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+beginState: s32'Cam_SacredEdge'
+  upon: (IMMEDIATE)
+    Unknown94: 0, -18000
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', (STATIC), -1500000, (STATIC), 1200000, (STATIC), -1350000, (STATIC), 1200000
+    Unknown2563: 4, 24, s32'brake'
+    Unknown2551: 0, -120000, 0, 460000, 0, 135000, 0, 0, 0, 50, 0, 0, s32'accel_brake', s32'linear'
+    Unknown2552: 0, 82000, 0, 0, 0, 135000, 0, 0, 0, 50, 0, 0, s32'accel_brake', s32'brake'
+    Unknown2558: 0, 0, 0, 800, 0, 0, 0, 50, 0, 0, s32'accel_brake', s32'accel_brake'
+    Unknown2553: 0, 0, 0, 800, 0, 0, 0, 50, 0, 0, s32'accel_brake', s32'linear'
+    Unknown2544: 0, 100, 0, 100, 0, 0, 0, 50, 0, 0, s32'accel_brake', s32'brake'
+    Unknown2573: 0, 0, 0, 700, 0, 0, 0, 50, 0, 0, s32'linear', s32'brake'
+    Unknown2572: s32'kyk_sacrededge', 0, 0, 0, 1000, 0, 50, s32'linear'
+    Unknown2545: 0, 62, 0, 0, 0, 50, 0, 0, s32'linear', s32'brake'
+    Unknown295: 1
+    Unknown41: 4
+    Unknown2098: 22, 22
+    Unknown40: 
+    Unknown428: 1, 1
+    Unknown412: -1, 700, 0
+    Unknown413: -1, 0, 0
+    Unknown414: -1, 0, 0
+    Unknown415: -1, 500, 0
+    Unknown416: -1, 0, 0
+    Unknown417: -1, 40, 10
+    Unknown429: 1, 1
+    Unknown425: -1, 1400, 40
+    Unknown426: -1, 0, 40
+    endUpon: 
+  sprite: s32'null', 30
+  Unknown2551: 0, -80000, 0, 480000, 0, 135000, 0, 32, 0, 50, 0, 0, s32'accel_brake', s32'linear'
+  sprite: s32'null', 10
+  Unknown428: 0, 16
+  Unknown2551: 0, 68000, 0, 460000, 0, 135000, 0, 16, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2558: 0, 800, 0, 0, 0, 16, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2553: 0, 800, 0, 0, 0, 16, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2573: 0, 700, 0, 0, 0, 16, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2572: s32'kyk_sacrededge', 0, 0, 0, 1000, 0, 16, s32'brake'
+  Unknown2545: 0, 65, 0, 8, 0, 0, 0, 0, s32'linear', s32'brake'
+  Unknown428: 0, 10
+  Unknown429: 0, 10
+  endState: 
+
+beginState: s32'Cam_Throw'
+  upon: (IMMEDIATE)
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', (STATIC), -1200000, (STATIC), 1000000, (STATIC), -1450000, (STATIC), 1120000
+    Unknown2563: 4, 32, s32'accel_brake'
+    Unknown2551: 0, 28000, 0, 560000, 0, 135000, 0, 20, 0, 1000, 0, 0, s32'accel_brake', s32'linear'
+    Unknown2552: 0, 38000, 0, 95000, 0, 160000, 0, 20, 0, 1000, 0, 0, s32'accel_brake', s32'accel_brake'
+    Unknown2553: 0, 1000, 0, 1000, 0, 20, 0, 1000, 0, 0, s32'linear', s32'linear'
+    Unknown2558: 0, 1000, 0, 1000, 0, 20, 0, 1000, 0, 0, s32'linear', s32'linear'
+    Unknown2544: 0, 0, 0, 100, 0, 0, 0, 1000, 0, 0, s32'linear', s32'linear'
+    Unknown2573: 0, 1000, 0, 1000, 0, 20, 0, 76, 0, 0, s32'linear', s32'linear'
+    Unknown2572: s32'kyk_throw', 0, 0, 0, 1000, 0, 96, s32'linear'
+    Unknown428: 1, 0
+    Unknown412: -1, 2000, 30
+    Unknown413: -1, 0, 0
+    Unknown414: -1, 0, 0
+    Unknown415: -1, 500, 30
+    Unknown416: -1, 0, 0
+    Unknown417: -1, 15, 30
+    Unknown429: 1, 1
+    Unknown425: -1, 1600, 30
+    Unknown426: -1, 0, 30
+    endUpon: 
+  sprite: s32'null', 50
+  sprite: s32'null', 25
+  storeValue: (VARIABLE), 50, (STATIC), -840000
+  storeValue: (VARIABLE), 51, (STATIC), 600000
+  Unknown2552: 0, 108000, 0, 95000, 0, 135000, 0, 20, 0, 1000, 0, 0, s32'accel_brake', s32'accel_brake'
+  sprite: s32'null', 22
+  Unknown2500: 10, 22, (VARIABLE), 77, (STATIC), 0
+    Unknown2563: 22, 32, s32'accel_brake'
+    Unknown2558: 0, 1000, 0, 0, 0, 32, 0, 0, 0, 0, s32'brake', s32'brake'
+    Unknown2553: 0, 1000, 0, 0, 0, 22, 0, 0, 0, 0, s32'brake', s32'brake'
+    Unknown2573: 0, 1000, 0, 0, 0, 32, 0, 0, 0, 0, s32'brake', s32'brake'
+    endIf: 
+  Unknown428: 0, 10
+  Unknown429: 0, 10
+  endState: 
+
+beginState: s32'Cam_AirThrow'
+  upon: (IMMEDIATE)
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', (STATIC), -1500000, (STATIC), 1100000, (STATIC), -1200000, (STATIC), 1200000
+    Unknown2563: 4, 30, s32'brake'
+    Unknown2551: 0, -80000, 0, 460000, 0, 200000, 0, 0, 0, 100, 0, 0, s32'linear', s32'linear'
+    Unknown2552: 0, 160000, 0, 10000, 0, 80000, 0, 0, 0, 100, 0, 0, s32'linear', s32'linear'
+    Unknown2558: 0, 1000, 0, 1000, 0, 0, 0, 100, 0, 0, s32'linear', s32'linear'
+    Unknown2553: 0, 1000, 0, 1000, 0, 0, 0, 100, 0, 0, s32'linear', s32'linear'
+    Unknown2544: 0, 100, 0, 100, 0, 0, 0, 100, 0, 0, s32'linear', s32'linear'
+    Unknown2545: 0, 70, 0, 0, 0, 117, 0, 0, s32'linear', s32'linear'
+    Unknown2573: 0, 500, 0, 500, 0, 0, 0, 117, 0, 0, s32'linear', s32'linear'
+    Unknown2572: s32'kyk_airthrow', 0, 0, 0, 1000, 0, 80, s32'linear'
+    Unknown428: 1, 1
+    Unknown412: -1, 700, 0
+    Unknown413: -1, 0, 0
+    Unknown414: -1, 0, 0
+    Unknown415: -1, 500, 0
+    Unknown416: -1, 0, 0
+    Unknown417: -1, 10, 10
+    Unknown429: 1, 1
+    Unknown425: -1, 1600, 40
+    Unknown426: -1, 0, 40
+    endUpon: 
+  sprite: s32'null', 48
+  sprite: s32'null', 12
+  Unknown41: 4
+  Unknown2098: 3, 22
+  Unknown40: 
+  Unknown2529: 4
+  Unknown2563: 4, 32, s32'brake'
+  Unknown2552: 0, 0, 0, 0, 0, 135000, 0, 32, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2558: 0, 1000, 0, 0, 0, 32, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2553: 0, 1000, 0, 0, 0, 12, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2573: 0, 500, 0, 0, 0, 32, 0, 0, 0, 0, s32'brake', s32'brake'
+  Unknown2572: s32'kyk_airthrow', 0, 0, 0, 1000, 0, 32, s32'brake'
+  Unknown2545: 0, 65, 0, 32, 0, 0, 0, 0, s32'brake', s32'linear'
+  callSubroutine: s32'cmnCam_CommonCameraEnd'
+  Unknown428: 0, 10
+  Unknown429: 0, 10
+  sprite: s32'null', 20
+  Unknown2575: s32'orthoone', 0, 0, s32'orthoone'
+  endState: 
+
+beginState: s32'Cam_Finish_SacredEdge'
+  callSubroutineWithArgs: s32'cmn_FinishCamera_Init', (STATIC), 7, (STATIC), 0, (STATIC), 0, (STATIC), 0
+  endState: 
+
+beginState: s32'Cam_Finish_RTL'
+  callSubroutineWithArgs: s32'cmn_FinishCamera_Init', (STATIC), 7, (STATIC), 0, (STATIC), 0, (STATIC), 0
+  Unknown94: 0, 1500000
+  endState: 
+
+beginState: s32'Cam_Finish_RTL_Air'
+  callSubroutineWithArgs: s32'cmn_FinishCamera_Init', (STATIC), 5, (STATIC), 0, (STATIC), 0, (STATIC), 0
+  endState: 
+
+beginState: s32'Cam_Finish_DragonInstall'
+  callSubroutineWithArgs: s32'cmn_FinishCamera_Init', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
+  endState: 
+
+beginState: s32'mahojin'
+  upon: (IMMEDIATE)
+    Unknown2036: 22, 103
+    Unknown295: 1
+    Unknown1801: 1
+    Unknown2314: 1
+    Unknown450: s32'kyk_taiden_mc'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+beginState: s32'DUMMY'
+  sprite: s32'e0ea04_01', 2
+  endState: 
+

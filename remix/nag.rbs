@@ -5052,7 +5052,7 @@ beginState: s32'NmlAtk5B'
     Unknown760: 0, 80, 0, 6, 0, 11
     hitAirPushbackY: 0, 40000
     Unknown770: 0, 60, 0, 5, 0, 11
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 200, 0, 10, 0, 35
     enableJumpCancel: 1
     addGatlingOption: s32'NmlAtk6A'
@@ -5202,7 +5202,7 @@ beginState: s32'NmlAtk2B'
     hitAirPushbackX: 0, 5000
     hitAirPushbackY: 0, 30000
     Unknown770: 0, 60, 0, 5, 0, 11
-    Unknown778: 0, 1000
+    hitGravity: (STATIC), 1000
     Unknown783: 0, 100, 0, 10, 0, 35
     Unknown1005: 150
     Unknown1004: 150
@@ -5263,7 +5263,7 @@ beginState: s32'NmlAtk5CNear'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 50000
     Unknown770: 0, 60, 0, 4, 0, 10
-    Unknown778: 0, 500
+    hitGravity: (STATIC), 500
     Unknown783: 0, 150, 0, 10, 0, 50
     addGatlingOption: s32'NmlAtk5CFar'
     addGatlingOption: s32'NmlAtk5D'
@@ -5350,7 +5350,7 @@ beginState: s32'NmlAtk5CFar'
     hitAirPushbackX: 0, 15000
     hitAirPushbackY: 0, 30000
     Unknown770: 0, 60, 0, 5, 0, 11
-    Unknown778: 0, 1000
+    hitGravity: (STATIC), 1000
     Unknown783: 0, 100, 0, 10, 0, 35
     addGatlingOption: s32'NmlAtk5C_hasei'
     addGatlingOption: s32'NmlAtk2C'
@@ -5449,7 +5449,7 @@ beginState: s32'NmlAtk5C_hasei'
     hitAirPushbackX: 0, 15000
     hitAirPushbackY: 0, 20000
     Unknown770: 0, 60, 0, 5, 0, 11
-    Unknown778: 0, 1000
+    hitGravity: (STATIC), 1000
     Unknown783: 0, 100, 0, 10, 0, 35
     addGatlingOption: s32'NmlAtk5C_hasei2'
     callSubroutine: s32'BloodEater_Low'
@@ -5713,7 +5713,7 @@ beginState: s32'NmlAtk2C'
     hitAirPushbackX: 0, 10000
     hitAirPushbackY: 0, 40000
     Unknown770: 0, 50, 0, 5, 0, 11
-    Unknown778: 0, 1000
+    hitGravity: (STATIC), 1000
     Unknown783: 0, 100, 0, 10, 0, 35
     addGatlingOption: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk2D'
@@ -6156,7 +6156,7 @@ beginState: s32'NmlAtk2D'
     Unknown760: 0, 80, 0, 8, 0, 14
     hitAirPushbackY: 0, 60000
     Unknown770: 0, 60, 0, 6, 0, 12
-    Unknown778: 0, 1000
+    hitGravity: (STATIC), 1000
     Unknown783: 0, 200, 0, 10, 0, 50
     callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
     ifOperation: (IS_EQUAL), (VARIABLE), 5, (STATIC), 0
@@ -7385,7 +7385,7 @@ beginState: s32'ThrowExe'
     airHitEffect: 10
     hitAirPushbackX: 0, -1000
     hitAirPushbackY: 0, 26000
-    Unknown778: 0, 3000
+    hitGravity: (STATIC), 3000
     groundBounceCount: 1
     groundBounceYVelocityPercent: 40
     Unknown810: 16
@@ -7551,7 +7551,7 @@ beginState: s32'AirThrowExe'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 10000
     Unknown770: 0, 60, 0, 6, 0, 12
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 150, 0, 10, 0, 50
     Unknown1142: 1
     Unknown1067: 4, 240000, 200000
@@ -7773,7 +7773,7 @@ beginState: s32'Shizuriyuki'
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, 60000
     Unknown770: 0, 60, 0, 6, 0, 12
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 150, 0, 10, 0, 50
     callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
     Unknown953: 2
@@ -7937,7 +7937,7 @@ beginState: s32'Bloodsucking_UniverseExe'
     groundHitEffect: 8
     hitAirPushbackX: 0, 7000
     hitAirPushbackY: 0, 24000
-    Unknown778: 0, 2000
+    hitGravity: (STATIC), 2000
     Unknown1067: 4, 250000, 30000
     Unknown1918: s32'CmdThrowSuccess', 0, 0, 0, 0, 0, 0, 0, 0
     Unknown1165: s32'Bloodsucking_Universe'
@@ -8420,7 +8420,7 @@ beginSubroutine: s32'Wasureyuki_atk'
   storeValue: (VARIABLE), 45, (STATIC), 20000
   modifyVarAfterOperation: (ADD), (VARIABLE), 45, (STATIC), 20000, (VARIABLE), 46
   hitAirPushbackY: 2, 46
-  Unknown778: 0, 4500
+  hitGravity: (STATIC), 4500
   storeValue: (VARIABLE), 338, (STATIC), 1000000000
   storeValue: (VARIABLE), 339, (STATIC), 0
   storeValue: (VARIABLE), 340, (STATIC), 1
@@ -8449,7 +8449,7 @@ beginState: s32'Wasureyuki'
     hitAirPushbackX: 0, 0
     hitAirPushbackY: 0, 110000
     Unknown770: 0, 80, 0, 5, 0, 20
-    Unknown778: 0, 0
+    hitGravity: (STATIC), 0
     Unknown783: 0, 100, 0, 10, 0, 30
     groundHitEffect: 9
     airHitEffect: 9
@@ -8628,7 +8628,7 @@ beginState: s32'Wasureyuki'
   damage: 0, 3
   hitAirPushbackX: 0, 0
   hitAirPushbackY: 0, 40000
-  Unknown778: 0, 4500
+  hitGravity: (STATIC), 4500
   pushbackX: 0
   Unknown1117: 0
   groundHitEffect: 9
@@ -9058,7 +9058,7 @@ beginState: s32'Wasureyuki'
   hitAirPushbackX: 0, 0
   hitAirPushbackY: 0, 70000
   Unknown770: 0, 80, 0, 5, 0, 20
-  Unknown778: 0, 0
+  hitGravity: (STATIC), 0
   Unknown783: 0, 100, 0, 15, 0, 30
   groundHitEffect: 11
   airHitEffect: 11
