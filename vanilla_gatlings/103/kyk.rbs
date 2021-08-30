@@ -3081,7 +3081,6 @@ beginSubroutine: s32'RoundInit'
     moveType: (OVERDRIVE)
     characterState: (STANDING)
     moveInput: (INPUT_214214)
-    moveInput: 129
     moveInput: (INPUT_PRESS_H)
     addMoveFlag: 18
     addMoveFlag: 3
@@ -3266,7 +3265,6 @@ beginSubroutine: s32'RoundInit'
   Unknown1325: 47, s32'kyk064_06'
   Unknown1325: 48, s32'kyk063_00'
   Unknown1325: 49, s32'kyk090_00'
-  Unknown1328: '0x76734A4B4F5F456C7973696F6E447269766572000000000000000000000000006B796B3132305F30300000000000000000000000000000000000000000000000'
   Unknown629: s16'vxxx021', s16'voice_none'
   Unknown629: s16'vxxx023', s16'voice_none'
   Unknown629: s16'vxxx026', s16'voice_none'
@@ -3308,12 +3306,6 @@ beginSubroutine: s32'RoundInit'
   Unknown2058: s32'Body_cloth'
   Unknown2058: s32'Weapon'
   Unknown2058: s32'Body_DI'
-  Unknown2059: 
-  Unknown2057: s32'headonly'
-  Unknown2058: s32'Head_Low'
-  Unknown2059: 
-  Unknown2057: s32'headonly_DI'
-  Unknown2058: s32'Head_Low_DI'
   Unknown2059: 
   Unknown2057: s32'CmnCutSceneDamageLow'
   Unknown2058: s32'Body_cloth'
@@ -3438,7 +3430,7 @@ beginSubroutine: s32'RoundInit'
   Unknown601: s16'vxxx010', 2, 2, 100
   Unknown601: s16'vxxx011', 2, 2, 100
   Unknown601: s16'vxxx103', 1, 2, 100
-  Unknown601: s16'vxxx104', 1, -1, 100
+  Unknown601: s16'vxxx104', 1, 2, 100
   Unknown601: s16'vxxx110', 1, 2, 100
   Unknown601: s16'vxxx111', 1, 2, 100
   Unknown601: s16'vxxx112', 1, 2, 100
@@ -3449,7 +3441,6 @@ beginSubroutine: s32'RoundInit'
   Unknown600: 1, s32'pot'
   Unknown600: 1, s32'leo'
   Unknown600: 1, s32'ram'
-  Unknown600: 1, s32'jko'
   Unknown600: 2, s32'nag'
   Unknown600: 2, s32'ino'
   Unknown2594: 0, s32'NmlAtk5A'
@@ -3633,6 +3624,7 @@ beginSubroutine: s32'OnFrameStep'
         Unknown43: 5, 1
         endIf: 
       endIf: 
+    Unknown296: 11
     ifNot: (VARIABLE), 59
       ifNot: (VARIABLE), 60
         storeValue: (VARIABLE), 60, (STATIC), 1
@@ -3708,7 +3700,6 @@ beginSubroutine: s32'DI_MeshSetCheck'
       Unknown2320: 
       Unknown2319: s32'High', s32'High'
       Unknown2319: s32'nohead', s32'nohead'
-      Unknown2319: s32'headonly', s32'headonly'
       Unknown2319: s32'CmnCutSceneDamageLow', s32'CmnCutSceneDamageLow'
       Unknown2319: s32'CmnCutSceneDamageHigh', s32'CmnCutSceneDamageHigh'
       Unknown2319: s32'CmnCutSceneDamage_Kakusei', s32'CmnCutSceneDamage_Kakusei'
@@ -3722,7 +3713,6 @@ beginSubroutine: s32'DI_MeshSetCheck'
       Unknown2320: 
       Unknown2319: s32'High', s32'High_DI'
       Unknown2319: s32'nohead', s32'nohead_DI'
-      Unknown2319: s32'headonly', s32'headonly_DI'
       Unknown2319: s32'CmnCutSceneDamageLow', s32'CmnCutSceneDamageLow_DI'
       Unknown2319: s32'CmnCutSceneDamageHigh', s32'CmnCutSceneDamageHigh_DI'
       Unknown2319: s32'CmnCutSceneDamage_Kakusei', s32'CmnCutSceneDamage_KakuseiDI'
@@ -6335,7 +6325,7 @@ beginState: s32'NmlAtk5B'
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
     damage: 0, 30
-    pushbackX: 80
+    pushbackX: 70
     guardType: (LOW)
     Unknown1118: s32'SE_BTL_CMN_Hit_Grap_S'
     Unknown923: 1
@@ -6458,6 +6448,7 @@ beginState: s32'NmlAtk2B'
     guardType: (LOW)
     Unknown1107: 1
     Unknown923: 1
+    pushbackX: 70
     callSubroutine: s32'cmn_fuwafuwafuwa'
     airHitEffect: 10
     hitAirPushbackX: 0, 5000
@@ -6603,7 +6594,6 @@ beginState: s32'NmlAtk5CFar'
     Unknown2524: s32'ex1', 0, 180000, -90000, 0, 0, 0, 0
     endUpon: 
   sprite: s32'kyk203_00', 2
-  setCarriedMomentumPercentage: 150
   sprite: s32'kyk203_01', 4
   sprite: s32'kyk203_02', 4
   Unknown621: 1, -1
@@ -6618,11 +6608,10 @@ beginState: s32'NmlAtk5CFar'
   sprite: s32'kyk203_05', 3
   sprite: s32'kyk203_06', 4
   callSubroutine: s32'cmn_AttackEnd'
-  sprite: s32'kyk203_07', 3
-  sprite: s32'kyk203_08', 3
+  sprite: s32'kyk203_07', 4
+  sprite: s32'kyk203_08', 4
   sprite: s32'kyk203_09', 3
   sprite: s32'kyk203_10', 2
-  callSubroutine: s32'cmnNandemoCancel'
   sprite: s32'kyk203_11', 2
   endState: 
 
@@ -6858,6 +6847,8 @@ beginState: s32'NmlAtk2D'
   hit: 
   Unknown1148: s32'SE_BTL_CMN_Impact_Katana_L'
   Unknown1211: s32'SE_BTL_CMN_Impact_Katana_L'
+  Unknown2526: 1, 1, 6, 0, 60, 50
+  Unknown2591: 1, 1, 6, 0, 200, 50
   callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 1, (STATIC), 1, (STATIC), 0, (STATIC), 0
   sprite: s32'kyk233_04', 4
   callSubroutineWithArgs: s32'cmn_AtkLv4', (STATIC), 2, (STATIC), 2, (STATIC), 0, (STATIC), 0
@@ -8112,15 +8103,9 @@ beginState: s32'StunDipper'
     damage: 0, 20
     guardType: (LOW)
     Unknown923: 1
-    pushbackX: 80
-    Unknown1027: 400000, -1, 100000, -1
-    Unknown1004: 25
-    Unknown772: 5
-    callSubroutine: s32'cmn_fuwafuwafuwa'
-    airHitEffect: 1
-    hitAirPushbackX: 0, 10000
-    hitAirPushbackY: 0, 12500
-    hitGravity: (STATIC), 1500
+    hitAirPushbackX: 0, 12250
+    hitAirPushbackY: 0, 15000
+    Unknown1002: 1
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -300000
     storeValue: (VARIABLE), 344, (STATIC), 0
@@ -8137,12 +8122,13 @@ beginState: s32'StunDipper'
   Unknown24: s32'super', 2, 5
   sprite: s32'kyk400_00', 2
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
-  physicsXImpulse: 0, 15000
+  physicsXImpulse: 0, 8750
   sprite: s32'kyk400_01', 2
   Unknown615: s32'SE_BTL_KYK_10'
   sprite: s32'kyk400_02', 3
+  Unknown1027: 400000, -1, -1, -1
   Unknown613: s16'vxxx202'
-  physicsXImpulse: 0, 32500
+  physicsXImpulse: 0, 31500
   Unknown2175: 3, 100
   hit: 
   sprite: s32'kyk400_03', 3
@@ -8150,7 +8136,6 @@ beginState: s32'StunDipper'
   sprite: s32'kyk400_04', 3
   Unknown2175: 3, 100
   sprite: s32'kyk400_05', 3
-  hitAirPushbackY: 0, 7500
   Unknown2175: 3, 100
   endLabel: 
   sprite: s32'kyk400_06', 2
@@ -8173,15 +8158,11 @@ beginState: s32'StunDipper'
   pushbackX: 75
   Unknown725: 1
   hitEffectElectric: 1
-  callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: 10
   airHitEffect: 10
-  hitAirPushbackX: 0, 1000
-  hitAirPushbackY: 0, 40000
-  Unknown770: 0, 60, 0, 5, 0, 11
-  hitGravity: (STATIC), 2500
-  Unknown783: 0, 150, 0, 10, 0, 35
-  Unknown2229: 80
+  hitAirPushbackX: 0, 5000
+  hitAirPushbackY: 0, 17500
+  physicsXImpulse: 0, 0
   Unknown1148: s32'SE_BTL_CMN_Impact_Electric'
   Unknown1211: s32'SE_BTL_CMN_Impact_Electric'
   upon: (HIT_OR_GUARD)
@@ -8198,14 +8179,10 @@ beginState: s32'StunDipper'
         pushbackX: 75
         Unknown725: 1
         hitEffectElectric: 1
-        callSubroutine: s32'cmn_fuwafuwafuwa'
         groundHitEffect: 10
         airHitEffect: 10
-        hitAirPushbackX: 0, 1000
-        hitAirPushbackY: 0, 40000
-        Unknown770: 0, 60, 0, 5, 0, 11
-        hitGravity: (STATIC), 2500
-        Unknown783: 0, 150, 0, 10, 0, 35
+        hitAirPushbackX: 0, 5000
+        hitAirPushbackY: 0, 17500
         Unknown446: s32'mahojin', 132
         Unknown1045: 1, s32''
         Unknown1046: 1, s32''
@@ -8243,13 +8220,14 @@ beginState: s32'StunDipper'
   beginLabel: s32'super'
   sprite: s32'kyk400_00', 2
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 2, (STATIC), 0, (STATIC), 0, (STATIC), 0
-  physicsXImpulse: 0, 15000
+  physicsXImpulse: 0, 8750
   Unknown1324: s32'StunDipper_DI'
   sprite: s32'kyk400_01', 2
   Unknown615: s32'SE_BTL_KYK_10'
   sprite: s32'kyk400_02', 3
+  Unknown1027: 300000, -1, -1, -1
   Unknown613: s16'vxxx202'
-  physicsXImpulse: 0, 32500
+  physicsXImpulse: 0, 31500
   Unknown2175: 3, 100
   hit: 
   hitSoftKnockdown: 0
@@ -8258,7 +8236,6 @@ beginState: s32'StunDipper'
   sprite: s32'kyk400_04', 3
   Unknown2175: 3, 100
   sprite: s32'kyk400_05', 3
-  hitAirPushbackY: 0, 7500
   Unknown2175: 3, 100
   endLabel: 
   sprite: s32'kyk400_06', 2
@@ -8279,7 +8256,7 @@ beginState: s32'StunDipper'
   airHitEffect: 10
   hitAirPushbackX: 0, 5000
   hitAirPushbackY: 0, 17500
-  Unknown2229: 80
+  physicsXImpulse: 0, 0
   Unknown1148: s32'SE_BTL_CMN_Impact_Electric'
   Unknown1211: s32'SE_BTL_CMN_Impact_Electric'
   Unknown953: 1
@@ -8328,14 +8305,6 @@ beginState: s32'StunDipper'
         clearRegisteredUponCode: 8
         hitStop: 13
         pushbackX: 100
-        callSubroutine: s32'cmn_fuwafuwafuwa'
-        groundHitEffect: 10
-        airHitEffect: 10
-        hitAirPushbackX: 0, 5000
-        hitAirPushbackY: 0, 40000
-        Unknown770: 0, 60, 0, 5, 0, 11
-        hitGravity: (STATIC), 2500
-        Unknown783: 0, 150, 0, 10, 0, 35
         endElse: 
       endUpon: 
     Unknown446: s32'Stundipper', 100
@@ -10284,12 +10253,6 @@ beginState: s32'RideTheLightning'
         Unknown2588: 1000, 10
         Unknown40: 
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 27
-        Unknown2244: 1
-        endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 135
-        Unknown2244: 0
-        endIf: 
       endUpon: 
     endUpon: 
   endLabel: 
@@ -10799,12 +10762,6 @@ beginState: s32'AirRideTheLightning'
         Unknown2588: 1000, 10
         Unknown40: 
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 27
-        Unknown2244: 1
-        endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 135
-        Unknown2244: 0
-        endIf: 
       if: (VARIABLE), 317
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 140
           Unknown1803: s32'cmn_Chase_Camera', 23
@@ -11248,11 +11205,6 @@ beginState: s32'DragonInstall'
   sprite: s32'kyk533_02', 3
   sprite: s32'kyk533_03', 3
   sprite: s32'kyk533_04', 3
-  Unknown271: 0, 119, 15, 15
-  upon: 50
-    clearRegisteredUponCode: 50
-    callSubroutineWithArgs: s32'cmnWorldStop_Start', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
-    endUpon: 
   sprite: s32'kyk533_05', 4
   sprite: s32'kyk533_06', 3
   sprite: s32'kyk533_06', 164
@@ -12120,55 +12072,6 @@ beginState: s32'WorldSideBreak_Slave_DF'
   sprite: s32'kyk033_13', 2
   sprite: s32'keep', 1
   Unknown27: s32'_NEUTRAL'
-  endState: 
-
-beginState: s32'vsJKO_ElysionDriver'
-  upon: (IMMEDIATE)
-    callSubroutine: s32'cmn_vsJKO_ElysionDriver'
-    endUpon: 
-  sprite: s32'kyk120_00', 2
-  sprite: s32'kyk120_01', 3
-  sprite: s32'kyk120_02', 3
-  sprite: s32'kyk120_03', 3
-  sprite: s32'kyk120_04', 3
-  sprite: s32'kyk120_05', 3
-  sprite: s32'kyk120_06', 3
-  sprite: s32'kyk120_07', 3
-  sprite: s32'kyk120_08', 3
-  sprite: s32'kyk120_09', 3
-  sprite: s32'kyk120_10', 3
-  sprite: s32'kyk120_11', 3
-  sprite: s32'kyk120_12', 3
-  sprite: s32'kyk120_13', 3
-  sprite: s32'kyk120_14', 3
-  sprite: s32'kyk120_15', 3
-  sprite: s32'kyk120_16', 3
-  sprite: s32'kyk120_17', 3
-  sprite: s32'kyk120_18', 2
-  sprite: s32'kyk120_19', 2
-  sprite: s32'kyk120_20', 2
-  sprite: s32'kyk120_21', 2
-  sprite: s32'kyk120_22', 1
-  sprite: s32'kyk120_23', 1
-  sprite: s32'kyk120_24', 1
-  sprite: s32'kyk120_25', 1
-  sprite: s32'kyk120_26', 2
-  sprite: s32'kyk120_27', 2
-  sprite: s32'kyk120_28', 3
-  sprite: s32'kyk120_29', 4
-  sprite: s32'kyk120_30', 3
-  sprite: s32'kyk120_31', 3
-  sprite: s32'kyk120_32', 3
-  beginLabel: s32'loop'
-  sprite: s32'kyk120_33', 2
-  sprite: s32'kyk120_34', 2
-  endLabel: 
-  gotoLabel: s32'loop'
-  beginLabel: s32'end'
-  sprite: s32'kyk120_35', 9
-  sprite: s32'kyk120_36', 3
-  sprite: s32'kyk120_37', 3
-  sprite: s32'kyk120_38', 3
   endState: 
 
 beginState: s32'DUMMY'

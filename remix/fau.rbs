@@ -6359,7 +6359,7 @@ beginState: s32'ThrowExe'
   Unknown41: 22
   addPositionX: 5000
   Unknown99: 0, 80000
-  Unknown188: 900
+  setObjectSize: 900
   Unknown40: 
   sprite: s32'fau310_05', 3
   sprite: s32'fau310_06', 3
@@ -6371,7 +6371,7 @@ beginState: s32'ThrowExe'
   Unknown2229: 50
   physicsYImpulse: 0, 40000
   Unknown2230: 60
-  Unknown188: 700
+  setObjectSize: 700
   Unknown40: 
   sprite: s32'fau310_05', 4
   sprite: s32'fau310_06', 4
@@ -6388,7 +6388,7 @@ beginState: s32'ThrowExe'
   Unknown2229: 50
   physicsYImpulse: 0, 40000
   Unknown2230: 60
-  Unknown188: 600
+  setObjectSize: 600
   Unknown40: 
   sprite: s32'fau310_09', 3
   sprite: s32'fau310_10', 3
@@ -6446,7 +6446,7 @@ beginState: s32'ThrowExe'
   Unknown41: 22
   addPositionX: -180000
   Unknown99: 0, 150000
-  Unknown188: 1000
+  setObjectSize: 1000
   Unknown2066: 
   Unknown2055: 1
   Unknown40: 

@@ -515,7 +515,7 @@ beginState: s32'Airthrow_explosion'
     Unknown94: 0, 160412
     Unknown99: 0, 260032
     Unknown1732: 0, -15928
-    Unknown148: 1600
+    setObjectWidth: 1600
     Unknown156: 1600
     Unknown180: 1600
     endUpon: 
@@ -559,7 +559,7 @@ beginState: s32'402_tossinsmoke'
     Unknown94: 0, -29994
     Unknown99: 0, 0
     Unknown1732: 0, 0
-    Unknown148: 1000
+    setObjectWidth: 1000
     Unknown156: 1000
     Unknown180: 1500
     endUpon: 
@@ -822,7 +822,7 @@ beginState: s32'Crater'
     Unknown2033: 3, s32'BanditBringer_Air'
     if: (VARIABLE), 0
       Unknown94: 0, -200000
-      Unknown188: 1200
+      setObjectSize: 1200
       endIf: 
     upon: 36
       if: (VARIABLE), 315
@@ -848,7 +848,7 @@ beginState: s32'Crater_sp'
     Unknown99: 0, 0
     Unknown1732: 0, 40012
     Unknown94: 0, -200000
-    Unknown188: 1200
+    setObjectSize: 1200
     endUpon: 
   sprite: s32'null', 80
   endState: 
@@ -858,7 +858,7 @@ beginState: s32'407Crater'
     Unknown458: 3
     callSubroutine: s32'cmnWSB_Effect_Angle'
     Unknown450: s32'sol_bukkira_crater'
-    Unknown188: 1900
+    setObjectSize: 1900
     endUpon: 
   sprite: s32'null', 300
   Unknown612: s32'SE_BTL_CMN_LandBreak_Clay_M'
@@ -1025,7 +1025,7 @@ beginState: s32'CounterAtk_slow'
     Unknown94: 0, 138805
     Unknown99: 0, 262555
     Unknown1732: 0, 194231
-    Unknown148: 600
+    setObjectWidth: 600
     Unknown156: 600
     Unknown180: 600
     Unknown231: 340000
@@ -1043,7 +1043,7 @@ beginState: s32'CounterSpeedline_slow'
     Unknown94: 0, 138805
     Unknown99: 0, 262555
     Unknown1732: 0, 194231
-    Unknown148: 600
+    setObjectWidth: 600
     Unknown156: 600
     Unknown180: 600
     Unknown231: 340000
@@ -1254,7 +1254,7 @@ beginState: s32'CS501_bg'
   Unknown92: -132089
   Unknown98: 285585
   Unknown1731: 193273
-  Unknown148: 500
+  setObjectWidth: 500
   Unknown156: 500
   Unknown180: 500
   Unknown231: 246400
@@ -1271,7 +1271,7 @@ beginState: s32'CS501_bg'
   Unknown92: -26542
   Unknown98: 305401
   Unknown1731: 235207
-  Unknown148: 300
+  setObjectWidth: 300
   Unknown156: 300
   Unknown180: 300
   Unknown231: 238400
@@ -1317,7 +1317,7 @@ beginState: s32'CS501_wingfire'
     Unknown94: 0, -306436
     Unknown99: 0, -81303
     Unknown1732: 0, -1283152
-    Unknown148: 1200
+    setObjectWidth: 1200
     Unknown156: 1200
     Unknown180: 1200
     Unknown231: 358400
@@ -1389,7 +1389,7 @@ beginState: s32'502_jump'
   upon: (IMMEDIATE)
     Unknown457: 3
     Unknown450: s32'dsl_502_jump'
-    Unknown188: 1700
+    setObjectSize: 1700
     endUpon: 
   sprite: s32'null', 120
   endState: 
@@ -1429,7 +1429,7 @@ beginState: s32'502_explosion'
     Unknown94: 0, 68987
     Unknown99: 0, 150000
     Unknown1732: 0, -274945
-    Unknown148: 1700
+    setObjectWidth: 1700
     Unknown156: 1700
     Unknown180: 1700
     Unknown231: 350000
@@ -1617,7 +1617,7 @@ beginState: s32'VV_Loop_air'
     Unknown94: 0, 32333
     Unknown99: 0, -410271
     Unknown1732: 0, 127504
-    Unknown148: 1200
+    setObjectWidth: 1200
     Unknown156: 1200
     Unknown180: 2000
     Unknown2314: 1
@@ -1681,7 +1681,7 @@ beginState: s32'VV_Loop_hs_air'
     Unknown94: 0, 190107
     Unknown99: 0, 186473
     Unknown1732: 0, 175473
-    Unknown148: 1000
+    setObjectWidth: 1000
     Unknown156: 1000
     Unknown180: 1600
     Unknown231: 0
@@ -2027,7 +2027,7 @@ beginState: s32'sol252_bake3'
 beginSubroutine: s32'TargetCamera_Dafult'
   Unknown2082: 
   Unknown454: 3
-  Unknown188: 100
+  setObjectSize: 100
   Unknown290: 300
   endSubroutine: 
 

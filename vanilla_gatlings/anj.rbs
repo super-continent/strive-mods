@@ -52,6 +52,35 @@ beginState: s32'EventFall'
   Unknown27: s32'EventStand'
   endState: 
 
+beginState: s32'Event085'
+  sprite: s32'anj085_00', 10
+  sprite: s32'anj085_01', 10
+  sprite: s32'anj085_02', 10
+  sprite: s32'anj085_03', 6
+  sprite: s32'anj085_04', 5
+  sprite: s32'anj085_05', 7
+  addPositionX: 30000
+  sprite: s32'anj085_06', 7
+  addPositionX: 20000
+  Unknown658: 100, 1, 0
+  Unknown2176: 0, 100
+  Unknown1709: 1
+  sprite: s32'anj085_07', 7
+  sprite: s32'anj085_08', 7
+  sprite: s32'anj085_09', 9
+  sprite: s32'anj085_10', 6
+  addPositionX: 50000
+  sprite: s32'anj085_11', 6
+  addPositionX: 50000
+  sprite: s32'anj085_12', 6
+  addPositionX: 20000
+  sprite: s32'anj085_13', 6
+  endLabel: 
+  Unknown2176: 1, 100
+  Unknown658: 100, 1, 0
+  sprite: s32'anj085_13', 2147483647
+  endState: 
+
 beginState: s32'Event001'
   sprite: s32'anj001_00', 6
   sprite: s32'anj001_01', 6
@@ -924,10 +953,14 @@ beginSubroutine: s32'RoundInit'
   Unknown1325: 47, s32'anj070_03'
   Unknown1325: 48, s32'anj301_05'
   Unknown1325: 49, s32'anj090_00'
+  Unknown1328: '0x76734A4B4F5F456C7973696F6E44726976657200000000000000000000000000616E6A3132305F30300000000000000000000000000000000000000000000000'
   Unknown2044: '0x0000000000000000000000000000000000000000000000000000000000000000'
   Unknown2057: s32'nohead'
   Unknown2058: s32'Body'
   Unknown2058: s32'Weapon'
+  Unknown2059: 
+  Unknown2057: s32'headonly'
+  Unknown2058: s32'Head_Low'
   Unknown2059: 
   Unknown2057: s32'CmnCutSceneDamage_Kakusei'
   Unknown47: s16'pot'
@@ -3859,6 +3892,7 @@ beginState: s32'NmlAtk5CFar'
   sprite: s32'anj203_09', 4
   sprite: s32'anj203_10', 3
   sprite: s32'anj203_11', 3
+  callSubroutine: s32'cmnNandemoCancel'
   sprite: s32'anj203_12', 3
   endState: 
 
@@ -5547,20 +5581,29 @@ beginState: s32'Fujin'
   sprite: s32'anj403_04', 2
   Unknown1827: 0
   clearRegisteredUponCode: 12
-  physicsXImpulse: 0, 35000
+  physicsXImpulse: 0, 40000
   addPositionX: 100000
-  extendPushboxX: 100000
+  extendPushboxX: 50000
   Unknown32: s32'ANJ_401_Wind'
   Unknown446: s32'ANJ_403_ShotSmokeLink', 100
   Unknown613: s16'vxxx201'
   sprite: s32'anj403_05', 2
-  Unknown2229: 90
   sprite: s32'anj403_06', 3
   Unknown176: 1
   Unknown446: s32'ANJ_403_Kanji', 100
   Unknown615: s32'SE_BTL_ANJ_01'
   Unknown615: s32'SE_BTL_ANJ_07'
+  enableWhiffCancel: 1
+  addWhiffCancelOption: s32'Shin'
+  addWhiffCancelOption: s32'Issokutobi'
+  addWhiffCancelOption: s32'Nagiha'
+  addWhiffCancelOption: s32'Rin'
+  Unknown1671: 4
+  upon: (BEFORE_EXIT)
+    Unknown139: 10000
+    endUpon: 
   sprite: s32'anj403_08', 4
+  clearRegisteredUponCode: (BEFORE_EXIT)
   hit: 
   ifNot: (VARIABLE), 46
     Unknown446: s32'ANJ_403_Wind', 100
@@ -5577,6 +5620,7 @@ beginState: s32'Fujin'
     hitGravity: (STATIC), 0
     Unknown783: 0, 200, 0, 12, 0, 37
     endIf: 
+  extendPushboxX: 100000
   sprite: s32'anj403_09', 5
   Unknown2173: 
   extendPushboxX: 0
@@ -5587,6 +5631,11 @@ beginState: s32'Fujin'
   Unknown1658: s32'Issokutobi'
   Unknown1658: s32'Nagiha'
   Unknown1658: s32'Rin'
+  Unknown1657: s32'Shin'
+  Unknown1657: s32'Issokutobi'
+  Unknown1657: s32'Nagiha'
+  Unknown1657: s32'Rin'
+  enableWhiffCancel: 0
   sprite: s32'anj403_13', 5
   sprite: s32'anj403_14', 4
   endState: 
@@ -5604,6 +5653,7 @@ beginState: s32'Shin'
   sprite: s32'anj405_00', 2
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'anj405_01', 3
+  setCarriedMomentumPercentage: 50
   physicsYImpulse: 0, 32000
   setGravity: 1600
   Unknown612: s32'SE_BTL_CMN_Jump'
@@ -5653,6 +5703,7 @@ beginState: s32'Issokutobi'
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 5, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'anj406_01', 2
   sprite: s32'anj406_02', 3
+  setCarriedMomentumPercentage: 0
   physicsXImpulse: 0, 24000
   physicsYImpulse: 0, 12000
   setGravity: 1450
@@ -5704,6 +5755,7 @@ beginState: s32'Nagiha'
     endUpon: 
   sprite: s32'anj407_00', 4
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+  setCarriedMomentumPercentage: 125
   sprite: s32'anj407_01', 3
   Unknown446: s32'anj_407_ripple', 123
   sprite: s32'anj407_02', 3
@@ -5767,6 +5819,7 @@ beginState: s32'Rin'
     endUpon: 
   sprite: s32'anj408_00', 2
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+  setCarriedMomentumPercentage: 0
   sprite: s32'anj408_01', 3
   sprite: s32'anj408_02', 4
   addPositionX: 100000
@@ -5943,12 +5996,12 @@ beginState: s32'Sai'
         if: (VARIABLE), 0
           ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 155
             Unknown41: 5
-            Unknown188: 700
+            setObjectSize: 700
             Unknown40: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 163
             Unknown41: 5
-            Unknown188: 1000
+            setObjectSize: 1000
             Unknown40: 
             endIf: 
           endIf: 
@@ -7269,6 +7322,55 @@ beginState: s32'WorldSideBreak_Slave_DF'
   sprite: s32'anj033_10', 1
   sprite: s32'keep', 1
   Unknown27: s32'_NEUTRAL'
+  endState: 
+
+beginState: s32'vsJKO_ElysionDriver'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmn_vsJKO_ElysionDriver'
+    endUpon: 
+  sprite: s32'anj120_00', 2
+  sprite: s32'anj120_01', 3
+  sprite: s32'anj120_02', 3
+  sprite: s32'anj120_03', 3
+  sprite: s32'anj120_04', 3
+  sprite: s32'anj120_05', 3
+  sprite: s32'anj120_06', 3
+  sprite: s32'anj120_07', 3
+  sprite: s32'anj120_08', 3
+  sprite: s32'anj120_09', 3
+  sprite: s32'anj120_10', 3
+  sprite: s32'anj120_11', 3
+  sprite: s32'anj120_12', 3
+  sprite: s32'anj120_13', 3
+  sprite: s32'anj120_14', 3
+  sprite: s32'anj120_15', 3
+  sprite: s32'anj120_16', 3
+  sprite: s32'anj120_17', 3
+  sprite: s32'anj120_18', 2
+  sprite: s32'anj120_19', 2
+  sprite: s32'anj120_20', 2
+  sprite: s32'anj120_21', 2
+  sprite: s32'anj120_22', 1
+  sprite: s32'anj120_23', 1
+  sprite: s32'anj120_24', 1
+  sprite: s32'anj120_25', 1
+  sprite: s32'anj120_26', 2
+  sprite: s32'anj120_27', 2
+  sprite: s32'anj120_28', 3
+  sprite: s32'anj120_29', 4
+  sprite: s32'anj120_30', 3
+  sprite: s32'anj120_31', 3
+  sprite: s32'anj120_32', 3
+  beginLabel: s32'loop'
+  sprite: s32'anj120_33', 2
+  sprite: s32'anj120_34', 2
+  endLabel: 
+  gotoLabel: s32'loop'
+  beginLabel: s32'end'
+  sprite: s32'anj120_35', 9
+  sprite: s32'anj120_36', 3
+  sprite: s32'anj120_37', 3
+  sprite: s32'anj120_38', 3
   endState: 
 
 beginState: s32'DUMMY'

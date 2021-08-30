@@ -507,7 +507,7 @@ beginState: s32'StunEdgeObj'
     Unknown1138: 1
     physicsXImpulse: 0, 14000
     Unknown120: 175
-    Unknown188: 2000
+    setObjectSize: 2000
     Unknown200: 0
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
@@ -637,7 +637,7 @@ beginState: s32'StunEdgeObj_DI'
     Unknown2213: 1
     Unknown2214: 1
     Unknown2215: 1
-    Unknown188: 1300
+    setObjectSize: 1300
     Unknown1914: 0
     upon: (TOUCH_GROUND)
       Unknown2208: 23
@@ -1060,7 +1060,7 @@ beginState: s32'ChargedStunEdgeObj_DI'
     Unknown2213: 1
     Unknown2214: 1
     Unknown2215: 1
-    Unknown188: 1300
+    setObjectSize: 1300
     Unknown1914: 0
     upon: (TOUCH_GROUND)
       Unknown2208: 23
@@ -1332,7 +1332,7 @@ beginState: s32'SacredEdgeObj_DI'
     Unknown2213: 1
     Unknown2214: 1
     Unknown2215: 1
-    Unknown188: 1300
+    setObjectSize: 1300
     Unknown996: 5, 5, 5
     Unknown1914: 0
     upon: (TOUCH_GROUND)
@@ -1815,7 +1815,7 @@ beginState: s32'kyk404_atk01'
     Unknown94: 0, -36922
     Unknown99: 0, 265841
     Unknown1732: 0, 4077
-    Unknown148: 1160
+    setObjectWidth: 1160
     Unknown156: 1160
     Unknown180: 1160
     Unknown231: 166000
@@ -1849,7 +1849,7 @@ beginState: s32'kyk404_atk02'
     Unknown94: 0, -36922
     Unknown99: 0, 265841
     Unknown1732: 0, 4077
-    Unknown148: 1160
+    setObjectWidth: 1160
     Unknown156: 1160
     Unknown180: 1160
     Unknown231: 166000
@@ -2072,7 +2072,7 @@ beginState: s32'kyk407_atk'
     Unknown231: 38000
     Unknown232: 166000
     Unknown164: 330000
-    Unknown148: 1150
+    setObjectWidth: 1150
     Unknown156: 800
     Unknown180: 1150
     Unknown2314: 1
@@ -2388,7 +2388,7 @@ beginState: s32'Stundipper'
     Unknown231: 100400
     Unknown232: 348000
     Unknown164: 359200
-    Unknown188: 800
+    setObjectSize: 800
     endUpon: 
   sprite: s32'null', 8
   sprite: s32'null', 100
@@ -2503,7 +2503,7 @@ beginState: s32'CS500_charge'
     Unknown231: 54000
     Unknown232: 352000
     Unknown164: 220000
-    Unknown148: 700
+    setObjectWidth: 700
     Unknown156: 700
     Unknown180: 700
     endUpon: 
@@ -2528,7 +2528,7 @@ beginState: s32'CS500_sword'
     Unknown231: 6000
     Unknown232: 306000
     Unknown164: 302000
-    Unknown148: 700
+    setObjectWidth: 700
     Unknown156: 700
     Unknown180: 700
     endUpon: 
@@ -2547,7 +2547,7 @@ beginState: s32'CS500_sword'
   Unknown231: 344000
   Unknown232: 14000
   Unknown164: 311200
-  Unknown148: 850
+  setObjectWidth: 850
   Unknown156: 850
   Unknown180: 850
   sprite: s32'null', 4
@@ -2595,7 +2595,7 @@ beginState: s32'kyk500_tossin01_mc'
     Unknown94: 0, 314937
     Unknown99: 0, 195000
     Unknown1732: 0, 0
-    Unknown148: 670
+    setObjectWidth: 670
     Unknown156: 670
     Unknown180: 670
     Unknown231: 0
@@ -3011,7 +3011,7 @@ beginState: s32'DKY_floor_aura'
       endUpon: 
     endUpon: 
   sprite: s32'null', 5
-  Unknown188: 0
+  setObjectSize: 0
   Unknown191: 200
   sprite: s32'null', 2147483647
   upon: 39
@@ -3023,10 +3023,10 @@ beginState: s32'DKY_floor_aura'
       Unknown191: -300
       endElse: 
     ifOperation: (IS_LESSER), (VARIABLE), 99, (STATIC), 0
-      Unknown188: 0
+      setObjectSize: 0
       endIf: 
     ifOperation: (IS_GREATER), (VARIABLE), 99, (STATIC), 1000
-      Unknown188: 1000
+      setObjectSize: 1000
       endIf: 
     Unknown98: 0
     Unknown53: 23, 2, 59, 3, 2, 59
@@ -3323,7 +3323,7 @@ beginState: s32'DragonInstall_start'
     callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
     Unknown450: s32'dky_burstatk'
     Unknown2299: 2000
-    Unknown188: 1500
+    setObjectSize: 1500
     Unknown1069: (STATIC), 0, (STATIC), 0, 1, 22, (VARIABLE), 319
     storeValue: (VARIABLE), 350, (STATIC), -80000
     Unknown788: 1

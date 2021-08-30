@@ -1194,7 +1194,6 @@ beginSubroutine: s32'RoundInit'
   Unknown1325: 47, s32'zat305_06'
   Unknown1325: 48, s32'zat340_03'
   Unknown1325: 49, s32'zat090_00'
-  Unknown1328: '0x76734A4B4F5F456C7973696F6E447269766572000000000000000000000000007A61743132305F30300000000000000000000000000000000000000000000000'
   Unknown629: s16'vxxx025', s16'voice_none'
   Unknown629: s16'vxxx029', s16'voice_none'
   Unknown1883: 0
@@ -1206,9 +1205,6 @@ beginSubroutine: s32'RoundInit'
   Unknown2044: '0x0000000000000000000000000000000000000000000000000000000000000000'
   Unknown2057: s32'nohead'
   Unknown2058: s32'Edy_Body'
-  Unknown2059: 
-  Unknown2057: s32'headonly'
-  Unknown2058: s32'Head_Low'
   Unknown2059: 
   Unknown2057: s32'zatoonly'
   Unknown2058: s32'Body'
@@ -5195,10 +5191,10 @@ beginState: s32'NmlAtk6A'
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
-    groundHitEffect: 11
     airHitEffect: 11
     hitAirPushbackX: 0, 25000
     hitAirPushbackY: 0, 15000
+    callSubroutine: s32'cmn_AtkTemplNokezoriHigh'
     groundCounterHitEffect: 11
     counterHitSoftKnockdown: 0
     callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
@@ -5219,7 +5215,7 @@ beginState: s32'NmlAtk6A'
     storeValue: (VARIABLE), 345, (STATIC), 0
     Unknown2011: 1, 0
     endUpon: 
-  sprite: s32'zat210_00', 3
+  sprite: s32'zat210_00', 4
   Unknown446: s32'StandAtk_shadow_start02', 100
   sprite: s32'zat210_01', 4
   sprite: s32'zat210_02', 4
@@ -5714,8 +5710,8 @@ beginState: s32'NmlAtk5D'
   Unknown621: 2, -1
   sprite: s32'zat204_07', 3
   sprite: s32'zat204_08', 3
-  sprite: s32'zat204_09', 3
   callSubroutine: s32'cmn_AttackEnd'
+  sprite: s32'zat204_09', 3
   sprite: s32'zat204_10', 4
   sprite: s32'zat204_11', 4
   sprite: s32'zat204_12', 4
@@ -7326,12 +7322,16 @@ beginState: s32'EddieSummonOnly'
 
 beginState: s32'EddieEnd'
   upon: (IMMEDIATE)
-    storeValue: (VARIABLE), 203, (STATIC), 1
+    storeValue: (VARIABLE), 6, (STATIC), 1
+    upon: (BEFORE_EXIT)
+      storeValue: (VARIABLE), 6, (STATIC), 0
+      endUpon: 
     endUpon: 
   sprite: s32'zat403_00', 4
   Unknown446: s32'Eddie_return', 100
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 8, (STATIC), 0, (STATIC), 0, (STATIC), 0
   sprite: s32'zat403_01', 4
+  storeValue: (VARIABLE), 203, (STATIC), 1
   sprite: s32'zat403_02', 4
   sprite: s32'zat403_03', 4
   sprite: s32'zat403_04', 4
@@ -9277,55 +9277,6 @@ beginState: s32'WorldSideBreak_Slave_DF'
   sprite: s32'zat067_10', 1
   sprite: s32'keep', 1
   Unknown27: s32'_NEUTRAL'
-  endState: 
-
-beginState: s32'vsJKO_ElysionDriver'
-  upon: (IMMEDIATE)
-    callSubroutine: s32'cmn_vsJKO_ElysionDriver'
-    endUpon: 
-  sprite: s32'zat120_00', 2
-  sprite: s32'zat120_01', 3
-  sprite: s32'zat120_02', 3
-  sprite: s32'zat120_03', 3
-  sprite: s32'zat120_04', 3
-  sprite: s32'zat120_05', 3
-  sprite: s32'zat120_06', 3
-  sprite: s32'zat120_07', 3
-  sprite: s32'zat120_08', 3
-  sprite: s32'zat120_09', 3
-  sprite: s32'zat120_10', 3
-  sprite: s32'zat120_11', 3
-  sprite: s32'zat120_12', 3
-  sprite: s32'zat120_13', 3
-  sprite: s32'zat120_14', 3
-  sprite: s32'zat120_15', 3
-  sprite: s32'zat120_16', 3
-  sprite: s32'zat120_17', 3
-  sprite: s32'zat120_18', 2
-  sprite: s32'zat120_19', 2
-  sprite: s32'zat120_20', 2
-  sprite: s32'zat120_21', 2
-  sprite: s32'zat120_22', 1
-  sprite: s32'zat120_23', 1
-  sprite: s32'zat120_24', 1
-  sprite: s32'zat120_25', 1
-  sprite: s32'zat120_26', 2
-  sprite: s32'zat120_27', 2
-  sprite: s32'zat120_28', 3
-  sprite: s32'zat120_29', 4
-  sprite: s32'zat120_30', 3
-  sprite: s32'zat120_31', 3
-  sprite: s32'zat120_32', 3
-  beginLabel: s32'loop'
-  sprite: s32'zat120_33', 2
-  sprite: s32'zat120_34', 2
-  endLabel: 
-  gotoLabel: s32'loop'
-  beginLabel: s32'end'
-  sprite: s32'zat120_35', 9
-  sprite: s32'zat120_36', 3
-  sprite: s32'zat120_37', 3
-  sprite: s32'zat120_38', 3
   endState: 
 
 beginState: s32'DUMMY'

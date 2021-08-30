@@ -1059,14 +1059,10 @@ beginSubroutine: s32'RoundInit'
   Unknown1325: 47, s32'ram040_03'
   Unknown1325: 48, s32'ram450_07'
   Unknown1325: 49, s32'ram090_00'
-  Unknown1328: '0x76734A4B4F5F456C7973696F6E4472697665720000000000000000000000000072616D3132305F30300000000000000000000000000000000000000000000000'
   Unknown2044: '0x0000000000000000000000000000000000000000000000000000000000000000'
   Unknown2057: s32'nohead'
   Unknown2058: s32'Body'
   Unknown2058: s32'Mantle'
-  Unknown2059: 
-  Unknown2057: s32'headonly'
-  Unknown2058: s32'Head_Low'
   Unknown2059: 
   Unknown2057: s32'high'
   Unknown2058: s32'Body'
@@ -6805,7 +6801,7 @@ beginState: s32'Dauro'
   Unknown612: s32'SE_BTL_CMN_Dash_Start'
   sprite: s32'ram402_02', 2
   Unknown338: 255
-  Unknown2229: 75
+  Unknown2229: 70
   Unknown615: s32'SE_BTL_RAM_10'
   sprite: s32'ram402_03', 2
   sprite: s32'ram402_04', 2
@@ -7552,10 +7548,6 @@ beginState: s32'AgresaOrdono'
     Unknown770: 0, 80, 0, 6, 0, 10
     hitGravity: (STATIC), 500
     Unknown783: 0, 100, 0, 10, 0, 50
-    groundHitEffect: 12
-    ifNot: (VARIABLE), 45
-      groundHitEffect: 0
-      endIf: 
     Unknown2526: 1, 1, 6, 100, 60, 200
     Unknown2591: 1, 1, 6, 100, 200, 200
     Unknown2169: 0
@@ -7631,10 +7623,6 @@ beginState: s32'AgresaOrdono'
   damage: 0, 30
   ifNot: (VARIABLE), 46
     Unknown963: 80
-    endIf: 
-  groundHitEffect: 1
-  ifNot: (VARIABLE), 46
-    groundHitEffect: 0
     endIf: 
   hitSoftKnockdown: 0
   Unknown1108: 30
@@ -8847,55 +8835,6 @@ beginState: s32'WorldSideBreak_Slave_DF'
   sprite: s32'ram033_09', 1
   sprite: s32'keep', 1
   Unknown27: s32'_NEUTRAL'
-  endState: 
-
-beginState: s32'vsJKO_ElysionDriver'
-  upon: (IMMEDIATE)
-    callSubroutine: s32'cmn_vsJKO_ElysionDriver'
-    endUpon: 
-  sprite: s32'ram120_00', 2
-  sprite: s32'ram120_01', 3
-  sprite: s32'ram120_02', 3
-  sprite: s32'ram120_03', 3
-  sprite: s32'ram120_04', 3
-  sprite: s32'ram120_05', 3
-  sprite: s32'ram120_06', 3
-  sprite: s32'ram120_07', 3
-  sprite: s32'ram120_08', 3
-  sprite: s32'ram120_09', 3
-  sprite: s32'ram120_10', 3
-  sprite: s32'ram120_11', 3
-  sprite: s32'ram120_12', 3
-  sprite: s32'ram120_13', 3
-  sprite: s32'ram120_14', 3
-  sprite: s32'ram120_15', 3
-  sprite: s32'ram120_16', 3
-  sprite: s32'ram120_17', 3
-  sprite: s32'ram120_18', 2
-  sprite: s32'ram120_19', 2
-  sprite: s32'ram120_20', 2
-  sprite: s32'ram120_21', 2
-  sprite: s32'ram120_22', 1
-  sprite: s32'ram120_23', 1
-  sprite: s32'ram120_24', 1
-  sprite: s32'ram120_25', 1
-  sprite: s32'ram120_26', 2
-  sprite: s32'ram120_27', 2
-  sprite: s32'ram120_28', 3
-  sprite: s32'ram120_29', 4
-  sprite: s32'ram120_30', 3
-  sprite: s32'ram120_31', 3
-  sprite: s32'ram120_32', 3
-  beginLabel: s32'loop'
-  sprite: s32'ram120_33', 2
-  sprite: s32'ram120_34', 2
-  endLabel: 
-  gotoLabel: s32'loop'
-  beginLabel: s32'end'
-  sprite: s32'ram120_35', 9
-  sprite: s32'ram120_36', 3
-  sprite: s32'ram120_37', 3
-  sprite: s32'ram120_38', 3
   endState: 
 
 beginState: s32'DUMMY'

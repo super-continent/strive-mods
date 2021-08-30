@@ -1869,7 +1869,7 @@ beginState: s32'CmnActFDashStop'
 
 beginState: s32'CmnActBDash'
   sprite: s32'ino034_00', 2
-  strikeInvulnerableForTime: 10
+  strikeInvulnerableForTime: 5
   Unknown2169: 0
   upon: (TOUCH_GROUND)
     Unknown14: s32'landing'
@@ -2237,11 +2237,6 @@ beginState: s32'CmnActBDown2Stand'
     callSubroutine: s32'cmn_Down2Stand'
     upon: (BEFORE_EXIT)
       callSubroutine: s32'cmnWSBPointLimit'
-      whiffCancelOptionBufferTime: s32'NmlAtkThrow', 10
-      whiffCancelOptionBufferTime: s32'NmlAtkBackThrow', 10
-      addWhiffCancelOption: s32'NmlAtkThrow'
-      addWhiffCancelOption: s32'NmlAtkBackThrow'
-      enableWhiffCancel: 1
       endUpon: 
     endUpon: 
   sprite: s32'ino061_00', 3
@@ -2302,11 +2297,6 @@ beginState: s32'CmnActFDown2Stand'
     callSubroutine: s32'cmn_Down2Stand'
     upon: (BEFORE_EXIT)
       callSubroutine: s32'cmnWSBPointLimit'
-      whiffCancelOptionBufferTime: s32'NmlAtkThrow', 10
-      whiffCancelOptionBufferTime: s32'NmlAtkBackThrow', 10
-      addWhiffCancelOption: s32'NmlAtkThrow'
-      addWhiffCancelOption: s32'NmlAtkBackThrow'
-      enableWhiffCancel: 1
       endUpon: 
     endUpon: 
   sprite: s32'ino064_00', 3
@@ -3386,27 +3376,27 @@ beginState: s32'CmnActMatchWin'
       if: (VARIABLE), 0
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 211
           Unknown41: 5
-          setObjectSize: 500
+          Unknown188: 500
           Unknown40: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 215
           Unknown41: 5
-          setObjectSize: 700
+          Unknown188: 700
           Unknown40: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 219
           Unknown41: 5
-          setObjectSize: 100
+          Unknown188: 100
           Unknown40: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 243
           Unknown41: 5
-          setObjectSize: 600
+          Unknown188: 600
           Unknown40: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 259
           Unknown41: 5
-          setObjectSize: 1000
+          Unknown188: 1000
           Unknown40: 
           endIf: 
         endIf: 
@@ -3680,7 +3670,7 @@ beginState: s32'NmlAtk6A'
     storeValue: (VARIABLE), 338, (STATIC), 10000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
-    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
     callSubroutine: s32'cmn_AtkTemplNokezoriHigh'
     hitAirPushbackX: 0, 18000
     hitAirPushbackY: 0, 18000
@@ -3841,7 +3831,7 @@ beginState: s32'NmlAtk2B'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmn_AtkLv1'
     damage: 0, 23
-    pushbackX: 120
+    pushbackX: 70
     guardType: (LOW)
     Unknown923: 1
     Unknown1107: 1
@@ -3914,7 +3904,7 @@ beginState: s32'NmlAtk5CNear'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
     addGatlingOption: s32'CmnFDash'
-    upon: (HIT_OR_GUARD)
+    upon: (GUARD)
       extendPushboxX: 50000
       endUpon: 
     Unknown953: 2
@@ -4700,8 +4690,8 @@ beginState: s32'NmlAtkAir5A'
       callSubroutine: s32'cmn_lightAttack_flex'
       endUpon: 
     ifNot: (VARIABLE), 317
-      storeValue: (VARIABLE), 346, (STATIC), 15000
-      storeValue: (VARIABLE), 347, (STATIC), 20000
+      storeValue: (VARIABLE), 346, (STATIC), 20000
+      storeValue: (VARIABLE), 347, (STATIC), 15000
       endIf: 
     else: 
       endElse: 
@@ -4877,7 +4867,7 @@ beginState: s32'NmlAtkAir5D'
     Unknown94: 0, 265000
     Unknown99: 0, 280000
     Unknown1732: 0, 20000
-    setObjectSize: 900
+    Unknown188: 900
     Unknown40: 
     callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 4, (STATIC), 0, (STATIC), 0, (STATIC), 0
     endUpon: 
@@ -4896,7 +4886,7 @@ beginState: s32'NmlAtkAir5D'
     Unknown41: 1
     Unknown94: 0, 115000
     Unknown99: 0, 490000
-    setObjectSize: 900
+    Unknown188: 900
     Unknown40: 
     endUpon: 
   sprite: s32'ino253_07', 3
@@ -5002,10 +4992,10 @@ beginState: s32'NmlAtkThrow'
     Unknown1042: s32'ThrowExe'
     throwRange: 90000
     callSubroutine: s32'cmnthrow_land_timer'
-    Unknown233: 
     endUpon: 
   sprite: s32'ino311_00', 1
   sprite: s32'ino311_00', 3
+  Unknown233: 
   sprite: s32'ino311_01', 4
   Unknown1915: 
   Unknown612: s32'SE_BTL_CMN_Emotion_1'
@@ -5097,10 +5087,10 @@ beginState: s32'NmlAtkAirThrow'
     Unknown1042: s32'AirThrowExe'
     callSubroutine: s32'cmnthrow_air_range'
     callSubroutine: s32'cmnthrow_land_timer'
-    Unknown233: 
     endUpon: 
   sprite: s32'ino321_00', 1
   sprite: s32'ino321_00', 3
+  Unknown233: 
   Unknown612: s32'SE_BTL_CMN_Emotion_1'
   sprite: s32'ino321_01', 4
   Unknown1915: 
@@ -6491,34 +6481,34 @@ beginState: s32'Megalo_ThrowExe'
         if: (VARIABLE), 0
           ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 79
             Unknown41: 5
-            setObjectSize: 600
+            Unknown188: 600
             Unknown40: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 83
             Unknown41: 5
-            setObjectSize: 1000
+            Unknown188: 1000
             Unknown40: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 223
             Unknown41: 5
-            setObjectSize: 100
+            Unknown188: 100
             Unknown40: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 227
             Unknown41: 5
-            setObjectWidth: 350
+            Unknown148: 350
             Unknown156: 250
             Unknown180: 250
             Unknown40: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 235
             Unknown41: 5
-            setObjectSize: 600
+            Unknown188: 600
             Unknown40: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 318
             Unknown41: 5
-            setObjectSize: 1000
+            Unknown188: 1000
             Unknown40: 
             endIf: 
           endIf: 

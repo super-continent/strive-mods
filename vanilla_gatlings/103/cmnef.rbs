@@ -3719,8 +3719,6 @@ beginState: s32'cmn_MissionCMN_059'
                         if: (VARIABLE), 0
                         Unknown2352: s32'sagiJumpS'
                         endIf: 
-                        endIf: 
-                        endIf: 
                       endIf: 
                     endIf: 
                   endIf: 
@@ -3728,42 +3726,48 @@ beginState: s32'cmn_MissionCMN_059'
               endIf: 
             endIf: 
           endIf: 
-        endElse: 
-      endUpon: 
-    upon: 70
-      ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 1
-        Unknown1803: s32'cmn_TrialTokeiMain', 23
         endIf: 
-      endUpon: 
-    upon: 73
-      ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 1
-        Unknown2033: 3, s32'NmlAtk2E'
-        if: (VARIABLE), 0
-          Unknown2357: -1
-          endIf: 
-        else: 
-          Unknown2399: 
-          endElse: 
-        endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 2
-        Unknown2399: 
-        endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 4
-        Unknown2352: s32'Nandemo'
-        endIf: 
-      endUpon: 
-    upon: 72
-      ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 3
-        Unknown2352: s32'VaporthrustGuard'
-        endIf: 
-      endUpon: 
-    upon: 71
-      Unknown2399: 
-      endUpon: 
-    endUpon: 
-  sprite: s32'null', 2147483647
-  endState: 
+      endIf: 
+    endElse: 
+  endUpon: 
 
+upon: 70
+  ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 1
+    Unknown1803: s32'cmn_TrialTokeiMain', 23
+    endIf: 
+  endUpon: 
+
+upon: 73
+  ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 1
+    Unknown2033: 3, s32'NmlAtk2E'
+    if: (VARIABLE), 0
+      Unknown2357: -1
+      endIf: 
+    else: 
+      Unknown2399: 
+      endElse: 
+    endIf: 
+  ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 2
+    Unknown2399: 
+    endIf: 
+  ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 4
+    Unknown2352: s32'Nandemo'
+    endIf: 
+  endUpon: 
+
+upon: 72
+  ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 3
+    Unknown2352: s32'VaporthrustGuard'
+    endIf: 
+  endUpon: 
+
+upon: 71
+  Unknown2399: 
+  endUpon: 
+
+endUpon: 
+sprite: s32'null', 2147483647
+endState: 
 beginState: s32'cmn_MissionCMN_060'
   upon: (IMMEDIATE)
     Unknown2279: 2, 115, 0, 1
@@ -7875,7 +7879,7 @@ beginSubroutine: s32'cmnGuardInit'
   endSubroutine: 
 
 beginSubroutine: s32'cmnRoundInit'
-  health: 500
+  health: 420
   Unknown1261: 9, 9, 9, 9, 9, 9
   Unknown1228: 1750
   Unknown1229: 5250
@@ -9071,8 +9075,8 @@ beginSubroutine: s32'cmn_AtkLv0'
     hitGravity: (STATIC), 3500
     endElse: 
   Unknown1001: 5
-  Unknown762: 5
-  Unknown772: 5
+  Unknown762: 15
+  Unknown772: 15
   Unknown785: 0
   if: (VARIABLE), 130
     Unknown928: 1
@@ -9129,8 +9133,8 @@ beginSubroutine: s32'cmn_AtkLv1'
     hitGravity: (STATIC), 3500
     endElse: 
   Unknown1001: 5
-  Unknown762: 5
-  Unknown772: 5
+  Unknown762: 15
+  Unknown772: 15
   Unknown785: 0
   if: (VARIABLE), 130
     Unknown928: 1
@@ -9187,8 +9191,8 @@ beginSubroutine: s32'cmn_AtkLv2'
     hitGravity: (STATIC), 3500
     endElse: 
   Unknown1001: 5
-  Unknown762: 5
-  Unknown772: 5
+  Unknown762: 15
+  Unknown772: 15
   Unknown785: 0
   if: (VARIABLE), 130
     Unknown928: 1
@@ -9245,8 +9249,8 @@ beginSubroutine: s32'cmn_AtkLv3'
     hitGravity: (STATIC), 3500
     endElse: 
   Unknown1001: 5
-  Unknown762: 5
-  Unknown772: 5
+  Unknown762: 15
+  Unknown772: 15
   Unknown785: 0
   if: (VARIABLE), 130
     Unknown928: 1
@@ -9303,8 +9307,8 @@ beginSubroutine: s32'cmn_AtkLv4'
     hitGravity: (STATIC), 3500
     endElse: 
   Unknown1001: 5
-  Unknown762: 5
-  Unknown772: 5
+  Unknown762: 15
+  Unknown772: 15
   Unknown785: 0
   if: (VARIABLE), 130
     Unknown928: 1
@@ -9331,7 +9335,7 @@ beginSubroutine: s32'cmn_WSBPoint_Add_Lv0'
   ifNot: (VARIABLE), 340
     storeValue: (VARIABLE), 340, (STATIC), 1
     endIf: 
-  modifyVarAfterOperation: (DIV), (STATIC), 10000, (VARIABLE), 340, (VARIABLE), 349
+  modifyVarAfterOperation: (DIV), (STATIC), 0, (VARIABLE), 340, (VARIABLE), 349
   Unknown1069: (VARIABLE), 349, (STATIC), 10000, 1, 22, (VARIABLE), 306
   Unknown2500: 13, 22, (VARIABLE), 83, (STATIC), 750000
     Unknown2500: 12, 22, (VARIABLE), 83, (STATIC), -750000
@@ -10578,7 +10582,7 @@ beginSubroutine: s32'cmnGuardBreak'
   endSubroutine: 
 
 beginSubroutine: s32'cmnJumpPre'
-  setCarriedMomentumPercentage: 90
+  setCarriedMomentumPercentage: 60
   upon: (BEFORE_EXIT)
     whiffCancelOptionBufferTime: s32'CmnFAirDash', 5
     whiffCancelOptionBufferTime: s32'CmnBAirDash', 5
@@ -12626,7 +12630,7 @@ beginState: s32'cmn_hibana'
   upon: (IMMEDIATE)
     Unknown450: s32'cmn_hibana01'
     Unknown239: 
-    setObjectSize: 500
+    Unknown188: 500
     Unknown156: 1500
     Unknown164: 90000
     Unknown94: 0, 250000
@@ -12916,7 +12920,7 @@ beginState: s32'cmn_tailsmoke'
     Unknown94: 0, 150000
     Unknown94: 0, -150000
     Unknown164: -135000
-    setObjectSize: 1750
+    Unknown188: 1750
     upon: (FRAME_STEP)
       Unknown2498: 3, 2, 31
         clearRegisteredUponCode: (FRAME_STEP)
@@ -13152,7 +13156,7 @@ beginState: s32'cmn_Dust_TailSmoke'
     Unknown450: s32'cmn_tailsmoke'
     Unknown94: 0, -100000
     Unknown164: 45000
-    setObjectSize: 1750
+    Unknown188: 1750
     endUpon: 
   sprite: s32'null', 60
   endState: 
@@ -13639,8 +13643,8 @@ beginSubroutine: s32'cmn_Hizakuzure'
   endSubroutine: 
 
 beginSubroutine: s32'cmn_lightAttack_hitback'
-  pushbackX: 70
-  Unknown1103: 50
+  pushbackX: 65
+  Unknown1103: 85
   Unknown1005: 250
   Unknown1004: 250
   endSubroutine: 
@@ -19615,7 +19619,7 @@ beginSubroutine: s32'cmn_wallbreak_eff'
   Unknown70: s32'cmn_wallbreak_lv1'
   Unknown70: s32'cmn_wallbreak_lv2'
   Unknown70: s32'cmn_wallbreak_lv3'
-  setObjectSize: 1250
+  Unknown188: 1250
   Unknown49: 39
   if: (VARIABLE), 0
     Unknown241: 
@@ -21299,7 +21303,7 @@ beginState: s32'cmn_BurstObjGoldHontai'
     Unknown457: 3
     Unknown450: s32'cmn_burst_gold'
     Unknown2314: 1
-    setObjectSize: 1500
+    Unknown188: 1500
     Unknown99: 0, 245000
     Unknown2299: 666
     endUpon: 
@@ -21353,7 +21357,7 @@ beginState: s32'cmn_BurstObjGoldObject'
     Unknown457: 3
     Unknown450: s32'cmn_burst_gold'
     Unknown2314: 1
-    setObjectSize: 1500
+    Unknown188: 1500
     Unknown99: 0, 245000
     Unknown2299: 666
     endUpon: 
@@ -21419,7 +21423,7 @@ beginState: s32'cmn_BurstObjBlueHontai'
     Unknown457: 3
     Unknown450: s32'cmn_burst_blue'
     Unknown2314: 1
-    setObjectSize: 1500
+    Unknown188: 1500
     Unknown99: 0, 245000
     Unknown2299: 666
     endUpon: 
@@ -21474,7 +21478,7 @@ beginState: s32'cmn_BurstObjBlueObject'
     Unknown457: 3
     Unknown450: s32'cmn_burst_blue'
     Unknown2314: 1
-    setObjectSize: 1500
+    Unknown188: 1500
     Unknown99: 0, 245000
     Unknown2299: 666
     endUpon: 
@@ -21610,7 +21614,7 @@ beginState: s32'cmn_FaultlessDefenceImpactEco'
       Unknown53: 23, 2, 281, 3, 2, 281
       endUpon: 
     Unknown450: s32'cmn_fd_hit'
-    setObjectSize: 800
+    Unknown188: 800
     endUpon: 
   sprite: s32'null', 12
   endState: 
@@ -23088,21 +23092,21 @@ beginState: s32'cmn_DebugBomb'
   beginLabel: s32'landing'
   sprite: s32'null', 3
   Unknown176: 1
-  setObjectSize: 900
+  Unknown188: 900
   sprite: s32'null', 3
-  setObjectSize: 800
+  Unknown188: 800
   sprite: s32'null', 3
-  setObjectSize: 900
+  Unknown188: 900
   sprite: s32'null', 2
-  setObjectSize: 1000
+  Unknown188: 1000
   sprite: s32'null', 2
-  setObjectSize: 1300
+  Unknown188: 1300
   sprite: s32'null', 30
-  setObjectSize: 1900
+  Unknown188: 1900
   endLabel: 
   sprite: s32'mom_sphere', 4
   Unknown450: s32'cmn_baku_s'
-  setObjectSize: 1500
+  Unknown188: 1500
   sprite: s32'mom_sphere', 4
   hit: 
   sprite: s32'mom_sphere', 4
@@ -23730,7 +23734,6 @@ beginSubroutine: s32'cmnRomanCancel'
     Unknown2231: 1
     Unknown2188: 1
     Unknown294: 1
-    recoveryState: 
     Unknown2279: 2, 45, 0, 0
     Unknown445: s32'cmnRomanCancel_Object_Pre', 103
     ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
@@ -23941,7 +23944,7 @@ beginSubroutine: s32'cmnRomanCancel'
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (VARIABLE), 47
       Unknown27: s32'_NEUTRAL'
       endIf: 
-    modifyVar2: (ADD), (VARIABLE), 48, (STATIC), -1
+    modifyVar: (ADD), (VARIABLE), 48, (STATIC), -1
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (VARIABLE), 0
       Unknown1663: 
       Unknown1664: 
@@ -24100,7 +24103,7 @@ beginState: s32'cmnRomanCancel_Object'
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 4
       Unknown364: 255, 255, 15, 15
       endIf: 
-    setObjectSize: 1000
+    Unknown188: 1000
     Unknown191: 80
     Unknown2299: 800
     Unknown247: 
@@ -24177,7 +24180,7 @@ beginState: s32'cmnRomanCancel_Object'
       hitAirPushbackY: 0, 20000
       hitGravity: (STATIC), 1400
       pushbackX: 60
-      setForcedProration: 70
+      setForcedProration: 50
       Unknown1001: 15
       groundHitEffect: 19
       airHitEffect: 19
@@ -24238,7 +24241,7 @@ beginState: s32'cmnRomanCancel_Sousai'
     Unknown456: 0
     Unknown2314: 1
     Unknown294: 1
-    setObjectSize: 1000
+    Unknown188: 1000
     Unknown191: 90
     Unknown2299: 900
     Unknown244: 
@@ -24317,7 +24320,7 @@ beginSubroutine: s32'cmnRomanCancel_Mirage'
   Unknown2314: 1
   Unknown2003: 12384
   Unknown2189: 0, 5
-  setObjectSize: 1000
+  Unknown188: 1000
   Unknown457: 3
   upon: (BEFORE_EXIT)
     Unknown448: s32'cmn_rc_zanzo', 114

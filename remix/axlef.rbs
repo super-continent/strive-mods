@@ -652,7 +652,7 @@ beginState: s32'Rensen_Bomb'
     hitEffectFire: 1
     Unknown1058: 1
     Unknown1138: 0
-    Unknown188: 1200
+    setObjectSize: 1200
     Unknown2314: 1
     Unknown458: 3
     upon: 47
@@ -703,7 +703,7 @@ beginState: s32'Rensen_Bomb_Just'
     Unknown1045: 4, s32'axl_403_just'
     Unknown1058: 1
     Unknown1138: 0
-    Unknown188: 1500
+    setObjectSize: 1500
     Unknown99: 0, -30000
     Unknown2314: 1
     Unknown458: 3
@@ -773,7 +773,7 @@ beginState: s32'WinterMantisObj'
   upon: (IMMEDIATE)
     Unknown458: 3
     Unknown456: 3
-    Unknown148: 500
+    setObjectWidth: 500
     Unknown2314: 1
     endUpon: 
   sprite: s32'axe5_01', 20
@@ -1015,7 +1015,7 @@ beginState: s32'axl400_Rensen_Smoke_Link'
   upon: (IMMEDIATE)
     Unknown456: 3
     callSubroutine: s32'cmnWSB_Effect_Angle'
-    Unknown188: 1200
+    setObjectSize: 1200
     upon: 47
       Unknown454: 0
       Unknown456: 0
@@ -1190,7 +1190,7 @@ beginState: s32'axl402_Sensa_Smoke'
 beginState: s32'axl402_Sensa_Smoke_Link'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmnWSB_Effect_Angle'
-    Unknown148: 1100
+    setObjectWidth: 1100
     Unknown156: 1400
     Unknown180: 1100
     endUpon: 
@@ -1347,7 +1347,7 @@ beginState: s32'axl405_Rasho_Smoke_Link'
   upon: (IMMEDIATE)
     Unknown456: 3
     Unknown289: 60
-    Unknown188: 1200
+    setObjectSize: 1200
     Unknown194: -50, 50
     Unknown239: 
     endUpon: 
@@ -1700,7 +1700,7 @@ beginState: s32'axl500_Byakue_ring'
     Unknown456: 2
     Unknown454: 2
     Unknown450: s32'axl_byakue_ring'
-    Unknown188: 860
+    setObjectSize: 860
     Unknown94: 0, 30000
     Unknown446: s32'axl500_Byakue_Ring_Light', 100
     endUpon: 
@@ -1810,7 +1810,7 @@ beginState: s32'axl500_Dust'
 beginState: s32'axl500_Byakue_Smoke'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmnWSB_Effect_Angle'
-    Unknown188: 1200
+    setObjectSize: 1200
     Unknown1731: 0
     endUpon: 
   sprite: s32'null', 36
@@ -1882,7 +1882,7 @@ beginState: s32'axl500_ByakueCS'
         Unknown231: 326000
         Unknown232: 260000
         Unknown164: 30000
-        Unknown148: 1500
+        setObjectWidth: 1500
         Unknown40: 
         endIf: 
       endUpon: 
@@ -2046,7 +2046,7 @@ beginState: s32'axl616_Smoke01'
     Unknown239: 
     Unknown94: 0, 136971
     Unknown99: 0, 22000
-    Unknown188: 1400
+    setObjectSize: 1400
     Unknown450: s32'bg_axl_616_smoke'
     endUpon: 
   sprite: s32'null', 12
@@ -2061,7 +2061,7 @@ beginState: s32'axl616_Smoke02'
     Unknown94: 0, 155952
     Unknown99: 0, 3000
     Unknown1732: 0, 80919
-    Unknown188: 1200
+    setObjectSize: 1200
     Unknown450: s32'bg_axl_616_smoke'
     endUpon: 
   sprite: s32'null', 12
@@ -2076,7 +2076,7 @@ beginState: s32'axl616_Smoke03'
     Unknown94: 0, -58957
     Unknown99: 0, 24000
     Unknown1732: 0, -51045
-    Unknown188: 700
+    setObjectSize: 700
     Unknown450: s32'bg_axl_616_smoke'
     endUpon: 
   sprite: s32'null', 9
@@ -2091,7 +2091,7 @@ beginState: s32'axl616_Bake01'
     Unknown239: 
     Unknown92: -220000
     Unknown98: 210000
-    Unknown188: 1100
+    setObjectSize: 1100
     endUpon: 
   sprite: s32'null', 2
   Unknown450: s32'axl_616_bake01'
@@ -2108,7 +2108,7 @@ beginState: s32'axl616_Bake02'
     Unknown239: 
     Unknown92: -330000
     Unknown98: 210000
-    Unknown188: 1100
+    setObjectSize: 1100
     endUpon: 
   sprite: s32'null', 2
   Unknown450: s32'axl_616_bake02'
@@ -2358,7 +2358,7 @@ beginState: s32'Cam_Finish_ByakueRenshou2'
   callSubroutineWithArgs: s32'cmn_FinishCamera_Init', (STATIC), 7, (STATIC), 0, (STATIC), 0, (STATIC), 0
   Unknown99: 0, 300000
   Unknown232: 95000
-  Unknown188: 300
+  setObjectSize: 300
   endState: 
 
 beginState: s32'Cam_Finish_OneVision'

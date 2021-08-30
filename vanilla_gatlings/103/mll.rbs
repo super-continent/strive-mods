@@ -1776,7 +1776,7 @@ beginState: s32'CmnActFDashStop'
 
 beginState: s32'CmnActBDash'
   sprite: s32'mll034_00', 2
-  strikeInvulnerableForTime: 7
+  strikeInvulnerableForTime: 4
   Unknown2169: 0
   upon: (TOUCH_GROUND)
     Unknown14: s32'landing'
@@ -2192,11 +2192,6 @@ beginState: s32'CmnActBDown2Stand'
     callSubroutine: s32'cmn_Down2Stand'
     upon: (BEFORE_EXIT)
       callSubroutine: s32'cmnWSBPointLimit'
-      whiffCancelOptionBufferTime: s32'NmlAtkThrow', 10
-      whiffCancelOptionBufferTime: s32'NmlAtkBackThrow', 10
-      addWhiffCancelOption: s32'NmlAtkThrow'
-      addWhiffCancelOption: s32'NmlAtkBackThrow'
-      enableWhiffCancel: 1
       endUpon: 
     endUpon: 
   sprite: s32'mll061_00', 3
@@ -2263,11 +2258,6 @@ beginState: s32'CmnActFDown2Stand'
     callSubroutine: s32'cmn_Down2Stand'
     upon: (BEFORE_EXIT)
       callSubroutine: s32'cmnWSBPointLimit'
-      whiffCancelOptionBufferTime: s32'NmlAtkThrow', 10
-      whiffCancelOptionBufferTime: s32'NmlAtkBackThrow', 10
-      addWhiffCancelOption: s32'NmlAtkThrow'
-      addWhiffCancelOption: s32'NmlAtkBackThrow'
-      enableWhiffCancel: 1
       endUpon: 
     endUpon: 
   sprite: s32'mll064_00', 3
@@ -3608,7 +3598,7 @@ beginState: s32'NmlAtk6A'
     storeValue: (VARIABLE), 338, (STATIC), 10000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
-    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
     callSubroutine: s32'cmn_AtkTemplNokezoriHigh'
     hitAirPushbackX: 0, 28000
     hitAirPushbackY: 0, 10000
@@ -4936,7 +4926,7 @@ beginState: s32'NmlAtkAir5A'
     callSubroutine: s32'cmn_hosei'
     callSubroutineWithArgs: s32'cmn_SameAttack', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
     ifNot: (VARIABLE), 317
-      storeValue: (VARIABLE), 346, (STATIC), 15000
+      storeValue: (VARIABLE), 346, (STATIC), 21500
       storeValue: (VARIABLE), 347, (STATIC), 10000
       endIf: 
     else: 
@@ -5103,6 +5093,7 @@ beginState: s32'NmlAtkAir5D'
     Unknown1005: 70
     Unknown1004: 70
     enableJumpCancel: 1
+    addGatlingOption: s32'NmlAtkAir5E'
     Unknown1685: 1
     callSubroutine: s32'cmn_Dust_HomingJump_Attack'
     Unknown1702: s32'weapon_Mstar', 1
@@ -5235,10 +5226,10 @@ beginState: s32'NmlAtkThrow'
     Unknown1042: s32'ThrowExe'
     throwRange: 75000
     callSubroutine: s32'cmnthrow_land_timer'
-    Unknown233: 
     endUpon: 
   sprite: s32'mll311_00', 1
   sprite: s32'mll311_00', 3
+  Unknown233: 
   sprite: s32'mll311_01', 4
   Unknown1915: 
   Unknown612: s32'SE_BTL_CMN_Emotion_1'
@@ -5370,10 +5361,10 @@ beginState: s32'NmlAtkAirThrow'
     Unknown1042: s32'AirThrowExe'
     callSubroutine: s32'cmnthrow_air_range'
     callSubroutine: s32'cmnthrow_land_timer'
-    Unknown233: 
     endUpon: 
   sprite: s32'mll321_00', 1
   sprite: s32'mll321_00', 3
+  Unknown233: 
   sprite: s32'mll321_01', 3
   Unknown1915: 
   sprite: s32'mll321_02', 3
@@ -6365,7 +6356,7 @@ beginState: s32'Winger'
           Unknown51: 4
           if: (VARIABLE), 0
             Unknown41: 4
-            setObjectSize: 500
+            Unknown188: 500
             Unknown40: 
             endIf: 
           endIf: 
@@ -6376,7 +6367,7 @@ beginState: s32'Winger'
           Unknown51: 4
           if: (VARIABLE), 0
             Unknown41: 4
-            setObjectSize: 1000
+            Unknown188: 1000
             Unknown40: 
             endIf: 
           endIf: 

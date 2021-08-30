@@ -849,6 +849,7 @@ beginSubroutine: s32'RoundInit'
   Unknown1325: 47, s32'mll070_02'
   Unknown1325: 48, s32'mll085_03'
   Unknown1325: 49, s32'mll090_00'
+  Unknown1328: '0x76734A4B4F5F456C7973696F6E447269766572000000000000000000000000006D6C6C3132305F30300000000000000000000000000000000000000000000000'
   Unknown2044: '0x0000000000000000000000000000000000000000000000000000000000000000'
   Unknown2057: s32'MS_1'
   Unknown2058: s32'Body'
@@ -884,6 +885,10 @@ beginSubroutine: s32'RoundInit'
   Unknown2324: s32'mll045_04', 1
   Unknown2057: s32'nohead'
   Unknown2058: s32'Body'
+  Unknown2058: s32'WeaponSingle'
+  Unknown2059: 
+  Unknown2057: s32'headonly'
+  Unknown2058: s32'Head_Low'
   Unknown2058: s32'WeaponSingle'
   Unknown2059: 
   Unknown2057: s32'MS_Winger'
@@ -3078,6 +3083,8 @@ beginState: s32'CmnActAirLockReject'
 beginState: s32'CmnActBurst'
   upon: (IMMEDIATE)
     callSubroutine: s32'cmnBurst'
+    Unknown2526: 0, 0, 0, 0, 0, 0
+    Unknown2591: 0, 0, 0, 0, 0, 0
     endUpon: 
   sprite: s32'mll330_00', 2
   sprite: s32'mll330_01', 2
@@ -4176,10 +4183,10 @@ beginState: s32'NmlAtk5D'
   Unknown1702: s32'weapon_Longhair', 0
   sprite: s32'mll204_13', 3
   sprite: s32'mll204_14', 3
-  sprite: s32'mll204_15', 3
+  sprite: s32'mll204_15', 2
   sprite: s32'mll204_16', 3
-  sprite: s32'mll204_17', 3
   callSubroutine: s32'cmnNandemoCancel'
+  sprite: s32'mll204_17', 3
   sprite: s32'mll204_18', 3
   Unknown1702: s32'WeaponSingle', 1
   endState: 
@@ -5571,6 +5578,7 @@ beginState: s32'IronSavior'
       clearRegisteredUponCode: (HIT_OR_GUARD)
       clearRegisteredUponCode: 98
       clearRegisteredUponCode: 101
+      clearRegisteredUponCode: 93
       Unknown14: s32'End'
       callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 1, (STATIC), 0, (STATIC), 0
       endUpon: 
@@ -5579,6 +5587,7 @@ beginState: s32'IronSavior'
       clearRegisteredUponCode: (HIT_OR_GUARD)
       clearRegisteredUponCode: 98
       clearRegisteredUponCode: 101
+      clearRegisteredUponCode: 93
       Unknown14: s32'End'
       callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 1, (STATIC), 0, (STATIC), 0
       endUpon: 
@@ -5587,6 +5596,16 @@ beginState: s32'IronSavior'
       clearRegisteredUponCode: (HIT_OR_GUARD)
       clearRegisteredUponCode: 98
       clearRegisteredUponCode: 101
+      clearRegisteredUponCode: 93
+      Unknown14: s32'End'
+      callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 1, (STATIC), 0, (STATIC), 0
+      endUpon: 
+    upon: 93
+      clearRegisteredUponCode: (FRAME_STEP)
+      clearRegisteredUponCode: (HIT_OR_GUARD)
+      clearRegisteredUponCode: 98
+      clearRegisteredUponCode: 101
+      clearRegisteredUponCode: 93
       Unknown14: s32'End'
       callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 1, (STATIC), 0, (STATIC), 0
       endUpon: 
@@ -5760,12 +5779,12 @@ beginState: s32'LustShaker'
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 100000
     endUpon: 
-  sprite: s32'mll406_00', 6
+  sprite: s32'mll406_00', 4
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
-  sprite: s32'mll406_01', 5
-  sprite: s32'mll406_02', 5
-  sprite: s32'mll406_03', 5
-  sprite: s32'mll406_04', 5
+  sprite: s32'mll406_01', 3
+  sprite: s32'mll406_02', 3
+  sprite: s32'mll406_03', 3
+  sprite: s32'mll406_04', 3
   Unknown612: s32'SE_BTL_CMN_Swing_Sword_Sharp_S'
   sprite: s32'mll406_09', 1
   hit: 
@@ -6356,7 +6375,7 @@ beginState: s32'Winger'
           Unknown51: 4
           if: (VARIABLE), 0
             Unknown41: 4
-            Unknown188: 500
+            setObjectSize: 500
             Unknown40: 
             endIf: 
           endIf: 
@@ -6367,7 +6386,7 @@ beginState: s32'Winger'
           Unknown51: 4
           if: (VARIABLE), 0
             Unknown41: 4
-            Unknown188: 1000
+            setObjectSize: 1000
             Unknown40: 
             endIf: 
           endIf: 
@@ -7414,6 +7433,55 @@ beginState: s32'WorldSideBreak_Slave_DF'
   sprite: s32'mll033_08', 1
   sprite: s32'keep', 1
   Unknown27: s32'_NEUTRAL'
+  endState: 
+
+beginState: s32'vsJKO_ElysionDriver'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmn_vsJKO_ElysionDriver'
+    endUpon: 
+  sprite: s32'mll120_00', 2
+  sprite: s32'mll120_01', 3
+  sprite: s32'mll120_02', 3
+  sprite: s32'mll120_03', 3
+  sprite: s32'mll120_04', 3
+  sprite: s32'mll120_05', 3
+  sprite: s32'mll120_06', 3
+  sprite: s32'mll120_07', 3
+  sprite: s32'mll120_08', 3
+  sprite: s32'mll120_09', 3
+  sprite: s32'mll120_10', 3
+  sprite: s32'mll120_11', 3
+  sprite: s32'mll120_12', 3
+  sprite: s32'mll120_13', 3
+  sprite: s32'mll120_14', 3
+  sprite: s32'mll120_15', 3
+  sprite: s32'mll120_16', 3
+  sprite: s32'mll120_17', 3
+  sprite: s32'mll120_18', 2
+  sprite: s32'mll120_19', 2
+  sprite: s32'mll120_20', 2
+  sprite: s32'mll120_21', 2
+  sprite: s32'mll120_22', 1
+  sprite: s32'mll120_23', 1
+  sprite: s32'mll120_24', 1
+  sprite: s32'mll120_25', 1
+  sprite: s32'mll120_26', 2
+  sprite: s32'mll120_27', 2
+  sprite: s32'mll120_28', 3
+  sprite: s32'mll120_29', 4
+  sprite: s32'mll120_30', 3
+  sprite: s32'mll120_31', 3
+  sprite: s32'mll120_32', 3
+  beginLabel: s32'loop'
+  sprite: s32'mll120_33', 2
+  sprite: s32'mll120_34', 2
+  endLabel: 
+  gotoLabel: s32'loop'
+  beginLabel: s32'end'
+  sprite: s32'mll120_35', 9
+  sprite: s32'mll120_36', 3
+  sprite: s32'mll120_37', 3
+  sprite: s32'mll120_38', 3
   endState: 
 
 beginState: s32'DUMMY'

@@ -8318,7 +8318,7 @@ beginState: s32'ZanseiRouga'
           Unknown51: 7
           if: (VARIABLE), 0
             Unknown41: 7
-            Unknown188: 850
+            setObjectSize: 850
             Unknown40: 
             endIf: 
           endIf: 
@@ -8328,7 +8328,7 @@ beginState: s32'ZanseiRouga'
           Unknown51: 7
           if: (VARIABLE), 0
             Unknown41: 7
-            Unknown188: 1000
+            setObjectSize: 1000
             Unknown40: 
             endIf: 
           endIf: 

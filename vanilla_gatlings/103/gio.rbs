@@ -1214,16 +1214,12 @@ beginSubroutine: s32'RoundInit'
   Unknown1325: 47, s32'gio070_03'
   Unknown1325: 48, s32'gio301_05'
   Unknown1325: 49, s32'gio090_00'
-  Unknown1328: '0x76734A4B4F5F456C7973696F6E4472697665720000000000000000000000000067696F3132305F30300000000000000000000000000000000000000000000000'
   Unknown2044: '0x0000000000000000000000000000000000000000000000000000000000000000'
   Unknown2057: s32'nohead'
   Unknown2058: s32'Body'
   Unknown2058: s32'wolf_body_ghost'
   Unknown2058: s32'wolf_body_ghost_aura'
   Unknown2058: s32'wolf_head_high'
-  Unknown2059: 
-  Unknown2057: s32'headonly'
-  Unknown2058: s32'Head_Low'
   Unknown2059: 
   Unknown2057: s32'high'
   Unknown2058: s32'Body'
@@ -4122,7 +4118,7 @@ beginState: s32'NmlAtk6A'
     storeValue: (VARIABLE), 344, (STATIC), 0
     storeValue: (VARIABLE), 345, (STATIC), 0
     endUpon: 
-  sprite: s32'gio210_00', 3
+  sprite: s32'gio210_00', 4
   sprite: s32'gio210_01', 4
   sprite: s32'gio210_02', 2
   sprite: s32'gio210_03', 2
@@ -4770,16 +4766,15 @@ beginState: s32'NmlAtk6D3rd'
     pushbackX: 200
     Unknown1108: -90
     enableSpecialCancel: 0
-    hitSoftKnockdown: 0
     storeValue: (VARIABLE), 338, (STATIC), 0
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
     groundHitEffect: 8
-    hitAirPushbackX: 0, 20000
+    hitAirPushbackX: 0, 30000
     hitAirPushbackY: 0, -40000
     groundBounceCount: 1
-    Unknown859: 75
+    Unknown859: 50
     groundBounceYVelocity: 10000
     Unknown2169: 0
     upon: (TOUCH_GROUND)
@@ -6594,12 +6589,6 @@ beginState: s32'LandUltimate'
         Unknown2588: 1000, 10
         Unknown40: 
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 31
-        Unknown2244: 1
-        endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 115
-        Unknown2244: 0
-        endIf: 
       endUpon: 
     endUpon: 
   sprite: s32'gio500_00', 2
@@ -7901,55 +7890,6 @@ beginState: s32'WorldSideBreak_Slave_DF'
   sprite: s32'gio032_16', 2
   sprite: s32'keep', 1
   Unknown27: s32'_NEUTRAL'
-  endState: 
-
-beginState: s32'vsJKO_ElysionDriver'
-  upon: (IMMEDIATE)
-    callSubroutine: s32'cmn_vsJKO_ElysionDriver'
-    endUpon: 
-  sprite: s32'gio120_00', 2
-  sprite: s32'gio120_01', 3
-  sprite: s32'gio120_02', 3
-  sprite: s32'gio120_03', 3
-  sprite: s32'gio120_04', 3
-  sprite: s32'gio120_05', 3
-  sprite: s32'gio120_06', 3
-  sprite: s32'gio120_07', 3
-  sprite: s32'gio120_08', 3
-  sprite: s32'gio120_09', 3
-  sprite: s32'gio120_10', 3
-  sprite: s32'gio120_11', 3
-  sprite: s32'gio120_12', 3
-  sprite: s32'gio120_13', 3
-  sprite: s32'gio120_14', 3
-  sprite: s32'gio120_15', 3
-  sprite: s32'gio120_16', 3
-  sprite: s32'gio120_17', 3
-  sprite: s32'gio120_18', 2
-  sprite: s32'gio120_19', 2
-  sprite: s32'gio120_20', 2
-  sprite: s32'gio120_21', 2
-  sprite: s32'gio120_22', 1
-  sprite: s32'gio120_23', 1
-  sprite: s32'gio120_24', 1
-  sprite: s32'gio120_25', 1
-  sprite: s32'gio120_26', 2
-  sprite: s32'gio120_27', 2
-  sprite: s32'gio120_28', 3
-  sprite: s32'gio120_29', 4
-  sprite: s32'gio120_30', 3
-  sprite: s32'gio120_31', 3
-  sprite: s32'gio120_32', 3
-  beginLabel: s32'loop'
-  sprite: s32'gio120_33', 2
-  sprite: s32'gio120_34', 2
-  endLabel: 
-  gotoLabel: s32'loop'
-  beginLabel: s32'end'
-  sprite: s32'gio120_35', 9
-  sprite: s32'gio120_36', 3
-  sprite: s32'gio120_37', 3
-  sprite: s32'gio120_38', 3
   endState: 
 
 beginState: s32'DUMMY'

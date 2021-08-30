@@ -52,35 +52,6 @@ beginState: s32'EventFall'
   Unknown27: s32'EventStand'
   endState: 
 
-beginState: s32'Event085'
-  sprite: s32'anj085_00', 10
-  sprite: s32'anj085_01', 10
-  sprite: s32'anj085_02', 10
-  sprite: s32'anj085_03', 6
-  sprite: s32'anj085_04', 5
-  sprite: s32'anj085_05', 7
-  addPositionX: 30000
-  sprite: s32'anj085_06', 7
-  addPositionX: 20000
-  Unknown658: 100, 1, 0
-  Unknown2176: 0, 100
-  Unknown1709: 1
-  sprite: s32'anj085_07', 7
-  sprite: s32'anj085_08', 7
-  sprite: s32'anj085_09', 9
-  sprite: s32'anj085_10', 6
-  addPositionX: 50000
-  sprite: s32'anj085_11', 6
-  addPositionX: 50000
-  sprite: s32'anj085_12', 6
-  addPositionX: 20000
-  sprite: s32'anj085_13', 6
-  endLabel: 
-  Unknown2176: 1, 100
-  Unknown658: 100, 1, 0
-  sprite: s32'anj085_13', 2147483647
-  endState: 
-
 beginState: s32'Event001'
   sprite: s32'anj001_00', 6
   sprite: s32'anj001_01', 6
@@ -1802,7 +1773,7 @@ beginState: s32'CmnActFDashStop'
 
 beginState: s32'CmnActBDash'
   sprite: s32'anj034_00', 2
-  strikeInvulnerableForTime: 10
+  strikeInvulnerableForTime: 5
   Unknown2169: 0
   upon: (TOUCH_GROUND)
     Unknown14: s32'landing'
@@ -2213,11 +2184,6 @@ beginState: s32'CmnActBDown2Stand'
     callSubroutine: s32'cmn_Down2Stand'
     upon: (BEFORE_EXIT)
       callSubroutine: s32'cmnWSBPointLimit'
-      whiffCancelOptionBufferTime: s32'NmlAtkThrow', 10
-      whiffCancelOptionBufferTime: s32'NmlAtkBackThrow', 10
-      addWhiffCancelOption: s32'NmlAtkThrow'
-      addWhiffCancelOption: s32'NmlAtkBackThrow'
-      enableWhiffCancel: 1
       endUpon: 
     endUpon: 
   sprite: s32'anj061_00', 2
@@ -2281,11 +2247,6 @@ beginState: s32'CmnActFDown2Stand'
     callSubroutine: s32'cmn_Down2Stand'
     upon: (BEFORE_EXIT)
       callSubroutine: s32'cmnWSBPointLimit'
-      whiffCancelOptionBufferTime: s32'NmlAtkThrow', 10
-      whiffCancelOptionBufferTime: s32'NmlAtkBackThrow', 10
-      addWhiffCancelOption: s32'NmlAtkThrow'
-      addWhiffCancelOption: s32'NmlAtkBackThrow'
-      enableWhiffCancel: 1
       endUpon: 
     endUpon: 
   sprite: s32'anj064_00', 2
@@ -3579,7 +3540,7 @@ beginState: s32'NmlAtk6A'
     storeValue: (VARIABLE), 338, (STATIC), 10000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
-    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
     airHitEffect: 8
     hitAirPushbackX: 0, 28000
     hitAirPushbackY: 0, 26000
@@ -3719,7 +3680,7 @@ beginState: s32'NmlAtk5B'
     addGatlingOption: s32'NmlAtk6D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    upon: (HIT_OR_GUARD)
+    upon: (GUARD)
       extendPushboxX: 50000
       endUpon: 
     Unknown953: 1
@@ -4657,7 +4618,7 @@ beginState: s32'NmlAtkAir5A'
     addWhiffCancelOption: s32'NmlAtkAir5D'
     addWhiffCancelOption: s32'NmlAtkAir5E'
     ifNot: (VARIABLE), 317
-      storeValue: (VARIABLE), 346, (STATIC), 15000
+      storeValue: (VARIABLE), 346, (STATIC), 21500
       storeValue: (VARIABLE), 347, (STATIC), 10000
       endIf: 
     else: 
@@ -4919,10 +4880,10 @@ beginState: s32'NmlAtkThrow'
     Unknown1042: s32'ThrowExe'
     throwRange: 90000
     callSubroutine: s32'cmnthrow_land_timer'
-    Unknown233: 
     endUpon: 
   sprite: s32'anj311_00', 1
   sprite: s32'anj311_00', 3
+  Unknown233: 
   sprite: s32'anj311_01', 4
   Unknown1915: 
   sprite: s32'anj311_02', 4
@@ -5009,10 +4970,10 @@ beginState: s32'NmlAtkAirThrow'
     Unknown1042: s32'AirThrowExe'
     callSubroutine: s32'cmnthrow_air_range'
     callSubroutine: s32'cmnthrow_land_timer'
-    Unknown233: 
     endUpon: 
   sprite: s32'anj321_00', 1
   sprite: s32'anj321_00', 3
+  Unknown233: 
   Unknown612: s32'SE_BTL_CMN_Emotion_1'
   sprite: s32'anj321_01', 4
   Unknown1915: 
@@ -5287,10 +5248,10 @@ beginState: s32'Suigetsu'
     storeValue: (VARIABLE), 53, (STATIC), 0
     Unknown1058: 1
     endUpon: 
-  sprite: s32'anj401_00', 2
+  sprite: s32'anj401_00', 3
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 5, (STATIC), 0, (STATIC), 0, (STATIC), 0
-  sprite: s32'anj401_01', 2
-  sprite: s32'anj401_02', 2
+  sprite: s32'anj401_01', 3
+  sprite: s32'anj401_02', 3
   sprite: s32'anj401_03', 4
   Unknown1694: 0, 500, 0, 4, 0, 2, 0, 1
   storeValue: (VARIABLE), 53, (STATIC), 1
@@ -5982,12 +5943,12 @@ beginState: s32'Sai'
         if: (VARIABLE), 0
           ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 155
             Unknown41: 5
-            setObjectSize: 700
+            Unknown188: 700
             Unknown40: 
             endIf: 
           ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 163
             Unknown41: 5
-            setObjectSize: 1000
+            Unknown188: 1000
             Unknown40: 
             endIf: 
           endIf: 

@@ -1288,7 +1288,6 @@ beginSubroutine: s32'RoundInit'
   Unknown1325: 47, s32'chp070_03'
   Unknown1325: 48, s32'chp301_05'
   Unknown1325: 49, s32'chp090_00'
-  Unknown1328: '0x76734A4B4F5F456C7973696F6E447269766572000000000000000000000000006368703132305F30300000000000000000000000000000000000000000000000'
   Unknown2044: '0x0000000000000000000000000000000000000000000000000000000000000000'
   Unknown2057: s32'high'
   Unknown2058: s32'Body'
@@ -1300,9 +1299,6 @@ beginSubroutine: s32'RoundInit'
   Unknown2058: s32'Body'
   Unknown2058: s32'backcloth'
   Unknown2058: s32'Weapon'
-  Unknown2059: 
-  Unknown2057: s32'headonly'
-  Unknown2058: s32'Head_Low'
   Unknown2059: 
   Unknown2057: s32'CmnCutSceneDamage_Kakusei'
   Unknown47: s16'pot'
@@ -1384,7 +1380,7 @@ beginSubroutine: s32'RoundInit'
   Unknown601: s16'vxxx010', 2, 2, 100
   Unknown601: s16'vxxx011', 2, 2, 100
   Unknown601: s16'vxxx103', 1, 2, 100
-  Unknown601: s16'vxxx104', 1, -1, 100
+  Unknown601: s16'vxxx104', 1, 2, 100
   Unknown47: s16'fau'
   if: (VARIABLE), 0
     Unknown601: s16'vxxx300', 1, 6, 100
@@ -4435,7 +4431,7 @@ beginState: s32'NmlAtk2C'
     endUpon: 
   sprite: s32'chp232_00', 3
   sprite: s32'chp232_00', 2
-  setCarriedMomentumPercentage: 60
+  setCarriedMomentumPercentage: 30
   sprite: s32'chp232_01', 4
   addPositionX: 75000
   Unknown621: 1, -1
@@ -5361,8 +5357,6 @@ beginSubroutine: s32'NmlAtkAir2B_atk'
   Unknown2191: 5
   Unknown1108: -90
   Unknown1036: -90
-  Unknown1027: -1, -1, 1000000, -250000
-  pushbackX: 50
   storeValue: (VARIABLE), 338, (STATIC), 1000000000
   storeValue: (VARIABLE), 339, (STATIC), 0
   storeValue: (VARIABLE), 340, (STATIC), 5
@@ -5388,8 +5382,6 @@ beginState: s32'NmlAtkAir2B'
     Unknown2191: 5
     Unknown1108: -90
     Unknown1036: -90
-    Unknown1027: -1, -1, 1000000, -250000
-    pushbackX: 50
     storeValue: (VARIABLE), 338, (STATIC), 1000000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 5
@@ -8316,7 +8308,7 @@ beginState: s32'ZanseiRouga'
           Unknown51: 7
           if: (VARIABLE), 0
             Unknown41: 7
-            setObjectSize: 850
+            Unknown188: 850
             Unknown40: 
             endIf: 
           endIf: 
@@ -8326,7 +8318,7 @@ beginState: s32'ZanseiRouga'
           Unknown51: 7
           if: (VARIABLE), 0
             Unknown41: 7
-            setObjectSize: 1000
+            Unknown188: 1000
             Unknown40: 
             endIf: 
           endIf: 
@@ -9515,55 +9507,6 @@ beginState: s32'WorldSideBreak_Slave_DF'
   sprite: s32'chp033_09', 2
   sprite: s32'keep', 1
   Unknown27: s32'_NEUTRAL'
-  endState: 
-
-beginState: s32'vsJKO_ElysionDriver'
-  upon: (IMMEDIATE)
-    callSubroutine: s32'cmn_vsJKO_ElysionDriver'
-    endUpon: 
-  sprite: s32'chp120_00', 2
-  sprite: s32'chp120_01', 3
-  sprite: s32'chp120_02', 3
-  sprite: s32'chp120_03', 3
-  sprite: s32'chp120_04', 3
-  sprite: s32'chp120_05', 3
-  sprite: s32'chp120_06', 3
-  sprite: s32'chp120_07', 3
-  sprite: s32'chp120_08', 3
-  sprite: s32'chp120_09', 3
-  sprite: s32'chp120_10', 3
-  sprite: s32'chp120_11', 3
-  sprite: s32'chp120_12', 3
-  sprite: s32'chp120_13', 3
-  sprite: s32'chp120_14', 3
-  sprite: s32'chp120_15', 3
-  sprite: s32'chp120_16', 3
-  sprite: s32'chp120_17', 3
-  sprite: s32'chp120_18', 2
-  sprite: s32'chp120_19', 2
-  sprite: s32'chp120_20', 2
-  sprite: s32'chp120_21', 2
-  sprite: s32'chp120_22', 1
-  sprite: s32'chp120_23', 1
-  sprite: s32'chp120_24', 1
-  sprite: s32'chp120_25', 1
-  sprite: s32'chp120_26', 2
-  sprite: s32'chp120_27', 2
-  sprite: s32'chp120_28', 3
-  sprite: s32'chp120_29', 4
-  sprite: s32'chp120_30', 3
-  sprite: s32'chp120_31', 3
-  sprite: s32'chp120_32', 3
-  beginLabel: s32'loop'
-  sprite: s32'chp120_33', 2
-  sprite: s32'chp120_34', 2
-  endLabel: 
-  gotoLabel: s32'loop'
-  beginLabel: s32'end'
-  sprite: s32'chp120_35', 9
-  sprite: s32'chp120_36', 3
-  sprite: s32'chp120_37', 3
-  sprite: s32'chp120_38', 3
   endState: 
 
 beginState: s32'DUMMY'
