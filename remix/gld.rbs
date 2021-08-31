@@ -1226,17 +1226,19 @@ beginSubroutine: s32'RoundInit'
   Unknown1325: 47, s32'gld070_03'
   Unknown1325: 48, s32'gld301_05'
   Unknown1325: 49, s32'gld090_00'
+  Unknown1328: '0x76734A4B4F5F456C7973696F6E44726976657200000000000000000000000000676C643132305F30300000000000000000000000000000000000000000000000'
   Unknown1883: 0
   Unknown1896: 0, 0
   Unknown1888: 0, 10000
   Unknown1887: 0, 0
   Unknown1897: 0, 1
   Unknown2044: '0x0000000000000000000000000000000000000000000000000000000000000000'
-  Unknown2057: s32'high'
+  Unknown2057: s32'nohead'
   Unknown2058: s32'Body'
-  Unknown2058: s32'Head_High'
   Unknown2058: s32'Weapon'
-  Unknown2058: s32'Manpu'
+  Unknown2059: 
+  Unknown2057: s32'headonly'
+  Unknown2058: s32'Head_Low'
   Unknown2059: 
   Unknown2057: s32'CmnCutSceneDamage_Kakusei'
   Unknown47: s16'pot'
@@ -1388,6 +1390,7 @@ beginSubroutine: s32'RoundInit'
   Unknown600: 2, s32'ino'
   Unknown600: 3, s32'ram'
   Unknown600: 3, s32'zat'
+  Unknown600: 3, s32'jko'
   Unknown59: s32'TRP_GLD', 2, 157
   if: (VARIABLE), 157
     ifOperation: (IS_EQUAL), (VARIABLE), 157, (STATIC), 1
@@ -4407,8 +4410,17 @@ beginState: s32'NmlAtk5A'
     callSubroutineWithArgs: s32'cmn_SameAttack', (STATIC), 3, (STATIC), 0, (STATIC), 0, (STATIC), 0
     hitAirPushbackX: 0, 10000
     hitAirPushbackY: 0, 27500
+    enableJumpCancel: 1
     addGatlingOption: s32'NmlAtk6A'
+    addGatlingOption: s32'NmlAtk5B'
+    addGatlingOption: s32'NmlAtk2B'
+    addGatlingOption: s32'NmlAtk5CNear'
+    addGatlingOption: s32'NmlAtk5CFar'
+    addGatlingOption: s32'NmlAtk2C'
+    addGatlingOption: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk6D'
+    addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk2E'
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -350000
     storeValue: (VARIABLE), 344, (STATIC), 0
@@ -4439,9 +4451,11 @@ beginState: s32'NmlAtk6A'
     storeValue: (VARIABLE), 338, (STATIC), 10000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
-    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+    callSubroutineWithArgs: s32'cmn_hosei', (STATIC), 0, (STATIC), 0, (STATIC), 0, (STATIC), 0
     callSubroutine: s32'cmn_AtkTemplNokezoriHigh'
     airHitEffect: 8
+    addGatlingOption: s32'NmlAtk5CNear'
+    addGatlingOption: s32'NmlAtk5CFar'
     hitAirPushbackX: 0, 25000
     hitAirPushbackY: 0, -15000
     counterHitSoftKnockdown: 0
@@ -4453,7 +4467,7 @@ beginState: s32'NmlAtk6A'
     Unknown2526: 0, 0, 0, 0, 0, 0
     Unknown2591: 0, 0, 0, 0, 0, 0
     endUpon: 
-  sprite: s32'gld210_00', 3
+  sprite: s32'gld210_00', 2
   sprite: s32'gld210_01', 3
   Unknown1702: s32'arm_single', 1
   Unknown615: s32'SE_BTL_GLD_02'
@@ -4493,7 +4507,15 @@ beginState: s32'NmlAtk2A'
     hitAirPushbackX: 0, 12500
     hitAirPushbackY: 0, 27500
     addGatlingOption: s32'NmlAtk6A'
+    addGatlingOption: s32'NmlAtk5B'
+    addGatlingOption: s32'NmlAtk2B'
+    addGatlingOption: s32'NmlAtk5CNear'
+    addGatlingOption: s32'NmlAtk5CFar'
+    addGatlingOption: s32'NmlAtk2C'
+    addGatlingOption: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk6D'
+    addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk2E'
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -200000
     storeValue: (VARIABLE), 344, (STATIC), 0
@@ -4532,7 +4554,12 @@ beginState: s32'NmlAtk5B'
     Unknown783: 0, 100, 0, 10, 0, 35
     enableJumpCancel: 1
     addGatlingOption: s32'NmlAtk6A'
+    addGatlingOption: s32'NmlAtk5CNear'
+    addGatlingOption: s32'NmlAtk5CFar'
+    addGatlingOption: s32'NmlAtk2C'
+    addGatlingOption: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk6D'
+    addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
     upon: 8
@@ -4581,7 +4608,6 @@ beginState: s32'NmlAtk2B'
     guardType: (LOW)
     Unknown1107: 1
     Unknown923: 1
-    pushbackX: 120
     storeValue: (VARIABLE), 338, (STATIC), 10000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
@@ -4594,7 +4620,12 @@ beginState: s32'NmlAtk2B'
     hitGravity: (STATIC), 1000
     Unknown783: 0, 100, 0, 10, 0, 35
     addGatlingOption: s32'NmlAtk6A'
+    addGatlingOption: s32'NmlAtk5CNear'
+    addGatlingOption: s32'NmlAtk5CFar'
+    addGatlingOption: s32'NmlAtk2C'
+    addGatlingOption: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk6D'
+    addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
     Unknown1702: s32'Toge', 1
@@ -4697,6 +4728,7 @@ beginState: s32'NmlAtk5CFar'
     Unknown906: 1
     addGatlingOption: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk2E'
     upon: (HIT_OR_GUARD)
       extendPushboxX: 50000
       endUpon: 
@@ -4755,7 +4787,9 @@ beginState: s32'NmlAtk2C'
     hitGravity: (STATIC), 1000
     Unknown783: 0, 100, 0, 10, 0, 35
     addGatlingOption: s32'NmlAtk5D'
+    addGatlingOption: s32'NmlAtk6D'
     addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk2E'
     upon: (HIT_OR_GUARD)
       extendPushboxX: 50000
       endUpon: 
@@ -4804,6 +4838,7 @@ beginState: s32'NmlAtk5D'
     callSubroutine: s32'cmn_hosei'
     callSubroutine: s32'cmn_AtkTemplNokezoriHigh'
     callSubroutine: s32'cmn_fuwafuwafuwa'
+    addGatlingOption: s32'NmlAtk6D'
     hitAirPushbackX: 0, 15000
     Unknown760: 0, 80, 0, 6, 0, 10
     hitAirPushbackY: 0, -100000
@@ -4896,6 +4931,7 @@ beginState: s32'NmlAtk6D'
     counterHitSoftKnockdown: 0
     upon: (HIT_OR_GUARD)
       extendPushboxX: 100000
+      callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 3, (STATIC), 3, (STATIC), 0, (STATIC), 0
       endUpon: 
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -550000
@@ -4921,6 +4957,7 @@ beginState: s32'NmlAtk6D'
   Unknown612: s32'SE_BTL_CMN_Swing_Hammer_Heavy_M'
   Unknown615: s32'SE_BTL_GLD_04'
   Unknown621: 2, -1
+  callSubroutineWithArgs: s32'cmn_screenshake', (STATIC), 2, (STATIC), 1, (STATIC), 0, (STATIC), 0
   sprite: s32'gld213_07', 4
   extendPushboxX: 0
   callSubroutine: s32'cmn_AttackEnd'
@@ -6284,9 +6321,6 @@ beginState: s32'Minigun'
     modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
     ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 3
       modifyVar: (ADD), (VARIABLE), 47, (STATIC), 1
-      ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 5
-        storeValue: (VARIABLE), 47, (STATIC), 1
-        endIf: 
       storeValue: (VARIABLE), 45, (STATIC), 0
       modifyVar: (ADD), (VARIABLE), 46, (STATIC), 1
       Unknown2193: 100, 150000, 200000
@@ -8049,18 +8083,16 @@ beginState: s32'GLD_Ultimate1'
     ifNot: (VARIABLE), 49
       storeValue: (VARIABLE), 50, (STATIC), 1
       ifNot: (VARIABLE), 317
-        storeValue: (VARIABLE), 53, (STATIC), 1320000
         ifNot: (VARIABLE), 32
-          ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 83, (VARIABLE), 53
-            Unknown53: 2, 2, 83, 23, 2, 58
-            Unknown53: 22, 2, 83, 23, 2, 58
+          ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 83, (STATIC), 1320000
+            storeValue: (VARIABLE), 83, (STATIC), 1320000
+            Unknown53: 22, 2, 83, 23, 2, 83
             endIf: 
           endIf: 
         else: 
-          modifyVar: (MUL), (VARIABLE), 53, (STATIC), -1
-          ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 83, (VARIABLE), 53
-            Unknown53: 2, 2, 83, 23, 2, 58
-            Unknown53: 22, 2, 83, 23, 2, 58
+          ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 83, (STATIC), -1320000
+            storeValue: (VARIABLE), 83, (STATIC), -1320000
+            Unknown53: 22, 2, 83, 23, 2, 83
             endIf: 
           endElse: 
         endIf: 
@@ -8090,7 +8122,6 @@ beginState: s32'GLD_Ultimate1'
             Unknown788: 0
             Unknown1067: 4, 180000, 0
             callSubroutine: s32'cmnCameraSettings'
-            Unknown446: s32'Cam_Punch', 100
             checkCurrentStateEntryName: s32'GLD_Ultimate1'
             if: (VARIABLE), 0
               Unknown2279: 0, 1, 0, 0
@@ -8103,7 +8134,10 @@ beginState: s32'GLD_Ultimate1'
             if: (VARIABLE), 0
               Unknown2279: 0, 3, 0, 0
               endIf: 
-            Unknown445: s32'GLD_500_Summon', 132
+            ifNot: (VARIABLE), 315
+              Unknown446: s32'Cam_Punch', 100
+              Unknown445: s32'GLD_500_Summon', 132
+              endIf: 
             ifOperation: (IS_EQUAL), (VARIABLE), 81, (STATIC), 3
               storeValue: (VARIABLE), 51, (STATIC), 1
               endIf: 
@@ -8878,7 +8912,7 @@ beginState: s32'WorldSideBreak_Master_DS'
   sprite: s32'gld033_05', 5
   sprite: s32'gld033_06', 4
   sprite: s32'gld033_07', 4
-  sprite: s32'gld033_08', 3
+  sprite: s32'gld033_08', 4
   sprite: s32'gld033_09', 3
   sprite: s32'keep', 1
   Unknown27: s32'_NEUTRAL'
@@ -8992,6 +9026,55 @@ beginState: s32'WorldSideBreak_Slave_DF'
   sprite: s32'gld033_09', 1
   sprite: s32'keep', 1
   Unknown27: s32'_NEUTRAL'
+  endState: 
+
+beginState: s32'vsJKO_ElysionDriver'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmn_vsJKO_ElysionDriver'
+    endUpon: 
+  sprite: s32'gld120_00', 2
+  sprite: s32'gld120_01', 3
+  sprite: s32'gld120_02', 3
+  sprite: s32'gld120_03', 3
+  sprite: s32'gld120_04', 3
+  sprite: s32'gld120_05', 3
+  sprite: s32'gld120_06', 3
+  sprite: s32'gld120_07', 3
+  sprite: s32'gld120_08', 3
+  sprite: s32'gld120_09', 3
+  sprite: s32'gld120_10', 3
+  sprite: s32'gld120_11', 3
+  sprite: s32'gld120_12', 3
+  sprite: s32'gld120_13', 3
+  sprite: s32'gld120_14', 3
+  sprite: s32'gld120_15', 3
+  sprite: s32'gld120_16', 3
+  sprite: s32'gld120_17', 3
+  sprite: s32'gld120_18', 2
+  sprite: s32'gld120_19', 2
+  sprite: s32'gld120_20', 2
+  sprite: s32'gld120_21', 2
+  sprite: s32'gld120_22', 1
+  sprite: s32'gld120_23', 1
+  sprite: s32'gld120_24', 1
+  sprite: s32'gld120_25', 1
+  sprite: s32'gld120_26', 2
+  sprite: s32'gld120_27', 2
+  sprite: s32'gld120_28', 3
+  sprite: s32'gld120_29', 4
+  sprite: s32'gld120_30', 3
+  sprite: s32'gld120_31', 3
+  sprite: s32'gld120_32', 3
+  beginLabel: s32'loop'
+  sprite: s32'gld120_33', 2
+  sprite: s32'gld120_34', 2
+  endLabel: 
+  gotoLabel: s32'loop'
+  beginLabel: s32'end'
+  sprite: s32'gld120_35', 9
+  sprite: s32'gld120_36', 3
+  sprite: s32'gld120_37', 3
+  sprite: s32'gld120_38', 3
   endState: 
 
 beginState: s32'DUMMY'

@@ -875,12 +875,16 @@ beginSubroutine: s32'RoundInit'
   Unknown1325: 47, s32'axl070_01'
   Unknown1325: 48, s32'axl085_01'
   Unknown1325: 49, s32'axl090_00'
+  Unknown1328: '0x76734A4B4F5F456C7973696F6E4472697665720000000000000000000000000061786C3132305F30300000000000000000000000000000000000000000000000'
   Unknown629: s16'vxxx025', s16'voice_none'
   Unknown629: s16'vxxx029', s16'voice_none'
   Unknown2044: '0x0000000000000000000000000000000000000000000000000000000000000000'
   Unknown2057: s32'nohead'
   Unknown2058: s32'Body'
   Unknown2058: s32'Weapon'
+  Unknown2059: 
+  Unknown2057: s32'headonly'
+  Unknown2058: s32'Head_Low'
   Unknown2059: 
   Unknown2057: s32'CmnCutSceneDamage_Kakusei'
   Unknown47: s16'pot'
@@ -939,6 +943,7 @@ beginSubroutine: s32'RoundInit'
   Unknown600: 1, s32'mll'
   Unknown600: 1, s32'ram'
   Unknown600: 1, s32'gio'
+  Unknown600: 1, s32'jko'
   Unknown600: 2, s32'pot'
   Unknown600: 2, s32'zat'
   Unknown600: 2, s32'nag'
@@ -1007,7 +1012,6 @@ beginSubroutine: s32'OnFrameStep'
       endIf: 
     endIf: 
   if: (VARIABLE), 3
-    Unknown296: 11
     ifNot: (VARIABLE), 329
       if: (VARIABLE), 16
         ifNot: (VARIABLE), 139
@@ -3666,7 +3670,7 @@ beginState: s32'NmlAtk6B'
     callSubroutine: s32'cmn_AtkLv3'
     callSubroutine: s32'cmn_countertype_middle'
     Unknown1108: 25
-    damage: 0, 30
+    damage: 0, 40
     storeValue: (VARIABLE), 338, (STATIC), 100000000
     storeValue: (VARIABLE), 339, (STATIC), 0
     storeValue: (VARIABLE), 340, (STATIC), 1
@@ -5267,6 +5271,8 @@ beginState: s32'Rensengeki'
     upon: 23
       addWhiffCancelOption: s32'OneVision_Add'
       whiffCancelOptionBufferTime: s32'OneVision_Add', 3
+      addWhiffCancelOption: s32'OneVision'
+      whiffCancelOptionBufferTime: s32'OneVision', 3
       endUpon: 
     endUpon: 
   sprite: s32'axl400_00', 7
@@ -5329,9 +5335,11 @@ beginState: s32'Rensengeki'
 beginState: s32'Kyokusageki'
   upon: (IMMEDIATE)
     upon: 23
-      addWhiffCancelOption: s32'OneVision_Add'
       enableWhiffCancel: 1
+      addWhiffCancelOption: s32'OneVision_Add'
       whiffCancelOptionBufferTime: s32'OneVision_Add', 3
+      addWhiffCancelOption: s32'OneVision'
+      whiffCancelOptionBufferTime: s32'OneVision', 3
       endUpon: 
     endUpon: 
   sprite: s32'axl401_00', 5
@@ -5395,6 +5403,7 @@ beginState: s32'Sensageki'
     Unknown725: 1
     Unknown1108: -70
     addGatlingOption: s32'OneVision_Add'
+    addGatlingOption: s32'OneVision'
     modifyVar: 20, (VARIABLE), 46, (STATIC), 5
     upon: (HIT_OR_GUARD)
       modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
@@ -5549,9 +5558,11 @@ beginState: s32'Sensageki'
 beginState: s32'Rensen_Bomb'
   upon: (IMMEDIATE)
     upon: 23
-      addWhiffCancelOption: s32'OneVision_Add'
       enableWhiffCancel: 1
+      addWhiffCancelOption: s32'OneVision_Add'
       whiffCancelOptionBufferTime: s32'OneVision_Add', 3
+      addWhiffCancelOption: s32'OneVision'
+      whiffCancelOptionBufferTime: s32'OneVision', 3
       endUpon: 
     Unknown1058: 1
     endUpon: 
@@ -5590,9 +5601,11 @@ beginState: s32'Rensen_Bomb'
 beginState: s32'Rensen_Bomb_Just'
   upon: (IMMEDIATE)
     upon: 23
-      addWhiffCancelOption: s32'OneVision_Add'
       enableWhiffCancel: 1
-      whiffCancelOptionBufferTime: s32'OneVision_Add', 3
+      addWhiffCancelOption: s32'OneVision'
+      whiffCancelOptionBufferTime: s32'OneVision', 3
+      addWhiffCancelOption: s32'OneVision'
+      whiffCancelOptionBufferTime: s32'OneVision', 3
       endUpon: 
     Unknown1058: 1
     Unknown1165: s32'Rensen_Bomb'
@@ -5853,6 +5866,7 @@ beginState: s32'WinterMantisExe_Far'
     Unknown1961: 
     callSubroutine: s32'cmnAtkTemplNageFinish'
     addGatlingOption: s32'OneVision_Add'
+    addGatlingOption: s32'OneVision'
     endUpon: 
   Unknown711: 4
   damage: 0, 41
@@ -5979,6 +5993,7 @@ beginState: s32'WinterMantisExe_Near'
   upon: (HIT)
     callSubroutine: s32'cmnAtkTemplNageFinish'
     addGatlingOption: s32'OneVision_Add'
+    addGatlingOption: s32'OneVision'
     endUpon: 
   Unknown711: 4
   Unknown1067: 4, 148000, 0
@@ -6050,21 +6065,18 @@ beginState: s32'Katatumuri'
     Unknown1108: 70
     Unknown725: 1
     addGatlingOption: s32'OneVision_Add'
-    upon: 62
-      clearRegisteredUponCode: 62
-      hitAirPushbackX: 0, 20000
-      hitAirPushbackY: 0, 60000
-      Unknown783: 0, 200, 0, 10, 0, 30
-      endUpon: 
+    addGatlingOption: s32'OneVision'
     callSubroutine: s32'cmn_fuwafuwafuwa'
     groundHitEffect: 12
     airHitEffect: 12
-    hitAirPushbackX: 0, 40000
-    Unknown760: 0, 75, 0, 8, 0, 12
-    hitAirPushbackY: 0, 35000
-    Unknown770: 0, 80, 0, 6, 0, 12
+    hitAirPushbackX: 0, 15000
+    Unknown760: 0, 90, 0, 9, 0, 19
+    hitAirPushbackY: 0, 60000
+    Unknown770: 0, 80, 0, 7, 0, 13
     hitGravity: (STATIC), 0
-    Unknown783: 0, 150, 0, 10, 0, 30
+    Unknown783: 0, 250, 0, 13, 0, 38
+    Unknown762: 10
+    Unknown1004: 200
     Unknown953: 2
     storeValue: (VARIABLE), 343, (STATIC), -300000
     storeValue: (VARIABLE), 344, (STATIC), 0
@@ -6072,11 +6084,11 @@ beginState: s32'Katatumuri'
     endUpon: 
   sprite: s32'axl406_00', 4
   callSubroutineWithArgs: s32'cmnAddTensionGG', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
-  sprite: s32'axl406_01', 4
+  sprite: s32'axl406_01', 3
   Unknown613: s16'vxxx206'
-  sprite: s32'axl406_02', 4
+  sprite: s32'axl406_02', 3
   Unknown615: s32'SE_BTL_AXL_16'
-  sprite: s32'axl406_03', 4
+  sprite: s32'axl406_03', 3
   Unknown615: s32'SE_BTL_AXL_00'
   Unknown615: s32'SE_BTL_AXL_02'
   sprite: s32'axl406_04', 3
@@ -6127,6 +6139,7 @@ beginState: s32'Katatumuri_Air'
     hitAirPushbackY: 0, -30000
     Unknown856: 1
     addGatlingOption: s32'OneVision_Add'
+    addGatlingOption: s32'OneVision'
     callSubroutine: s32'cmn_fuwafuwafuwa'
     hitAirPushbackX: 0, 25000
     Unknown760: 0, 80, 0, 6, 0, 10
@@ -6212,6 +6225,7 @@ beginState: s32'Niwatazumi'
     Unknown2331: 1
     Unknown1974: 1
     addGatlingOption: s32'OneVision_Add'
+    addGatlingOption: s32'OneVision'
     callSubroutine: s32'cmn_fuwafuwafuwa'
     groundHitEffect: 13
     airHitEffect: 13
@@ -6290,6 +6304,7 @@ beginState: s32'AxlBomber'
     hitEffectFire: 1
     hitSoftKnockdown: 0
     addGatlingOption: s32'OneVision_Add'
+    addGatlingOption: s32'OneVision'
     callSubroutine: s32'cmn_fuwafuwafuwa'
     groundHitEffect: 11
     airHitEffect: 9
@@ -6502,6 +6517,12 @@ beginState: s32'ByakueRenshou'
         Unknown41: 22
         Unknown2588: 1000, 10
         Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 39
+        Unknown2244: 1
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 111
+        Unknown2244: 0
         endIf: 
       endUpon: 
     endUpon: 
@@ -7629,6 +7650,55 @@ beginState: s32'WorldSideBreak_Slave_DF'
   sprite: s32'axl033_13', 2
   sprite: s32'keep', 1
   Unknown27: s32'_NEUTRAL'
+  endState: 
+
+beginState: s32'vsJKO_ElysionDriver'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmn_vsJKO_ElysionDriver'
+    endUpon: 
+  sprite: s32'axl120_00', 2
+  sprite: s32'axl120_01', 3
+  sprite: s32'axl120_02', 3
+  sprite: s32'axl120_03', 3
+  sprite: s32'axl120_04', 3
+  sprite: s32'axl120_05', 3
+  sprite: s32'axl120_06', 3
+  sprite: s32'axl120_07', 3
+  sprite: s32'axl120_08', 3
+  sprite: s32'axl120_09', 3
+  sprite: s32'axl120_10', 3
+  sprite: s32'axl120_11', 3
+  sprite: s32'axl120_12', 3
+  sprite: s32'axl120_13', 3
+  sprite: s32'axl120_14', 3
+  sprite: s32'axl120_15', 3
+  sprite: s32'axl120_16', 3
+  sprite: s32'axl120_17', 3
+  sprite: s32'axl120_18', 2
+  sprite: s32'axl120_19', 2
+  sprite: s32'axl120_20', 2
+  sprite: s32'axl120_21', 2
+  sprite: s32'axl120_22', 1
+  sprite: s32'axl120_23', 1
+  sprite: s32'axl120_24', 1
+  sprite: s32'axl120_25', 1
+  sprite: s32'axl120_26', 2
+  sprite: s32'axl120_27', 2
+  sprite: s32'axl120_28', 3
+  sprite: s32'axl120_29', 4
+  sprite: s32'axl120_30', 3
+  sprite: s32'axl120_31', 3
+  sprite: s32'axl120_32', 3
+  beginLabel: s32'loop'
+  sprite: s32'axl120_33', 2
+  sprite: s32'axl120_34', 2
+  endLabel: 
+  gotoLabel: s32'loop'
+  beginLabel: s32'end'
+  sprite: s32'axl120_35', 9
+  sprite: s32'axl120_36', 3
+  sprite: s32'axl120_37', 3
+  sprite: s32'axl120_38', 3
   endState: 
 
 beginState: s32'DUMMY'

@@ -888,10 +888,14 @@ beginSubroutine: s32'RoundInit'
   Unknown1325: 47, s32'pot070_06'
   Unknown1325: 48, s32'pot075_00'
   Unknown1325: 49, s32'pot090_00'
+  Unknown1328: '0x76734A4B4F5F456C7973696F6E44726976657200000000000000000000000000706F743132305F30300000000000000000000000000000000000000000000000'
   Unknown2044: '0x0000000000000000000000000000000000000000000000000000000000000000'
   Unknown2057: s32'nohead'
   Unknown2058: s32'Body'
   Unknown2058: s32'Weapon'
+  Unknown2059: 
+  Unknown2057: s32'headonly'
+  Unknown2058: s32'Head_Low'
   Unknown2059: 
   Unknown2057: s32'CmnCutSceneDamage_Kakusei'
   Unknown47: s16'pot'
@@ -3614,7 +3618,7 @@ beginState: s32'NmlAtk5B'
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    upon: (HIT_OR_GUARD)
+    upon: (GUARD)
       extendPushboxX: 50000
       endUpon: 
     Unknown953: 1
@@ -3706,11 +3710,11 @@ beginState: s32'NmlAtk6B'
   Unknown668: 100, 1, 1
   physicsXImpulse: 0, 0
   sprite: s32'pot211_08', 4
-  sprite: s32'pot211_09', 4
-  sprite: s32'pot211_10', 4
+  sprite: s32'pot211_09', 3
+  sprite: s32'pot211_10', 3
   sprite: s32'pot211_11', 4
-  sprite: s32'pot211_12', 4
   callSubroutine: s32'cmnNandemoCancel'
+  sprite: s32'pot211_12', 4
   sprite: s32'pot211_13', 4
   sprite: s32'pot211_14', 4
   endState: 
@@ -5550,11 +5554,22 @@ beginState: s32'HeatKnucle'
         endIf: 
       endUpon: 
     upon: 86
+      callSubroutine: s32'cmn_AtkLv4'
+      Unknown1041: 1
+      pushbackX: 0
+      Unknown1111: 0
+      hitStop: 15
+      Unknown1108: 45
+      Unknown1027: -1, -1, 5500000, 50000
+      Unknown1037: 1
+      enableGuardBreak: 1
+      setGuardBreakDuration: 150
+      Unknown1079: 1
+      Unknown1082: 1
       damage: 0, 50
       tumbleDuration: 50
       hitAirPushbackX: 0, 0
       hitAirPushbackY: 0, 20000
-      Unknown1207: '0x010000006400000030570500983A00000000000064000000'
       Unknown1059: 0
       endUpon: 
     upon: 11
@@ -5578,7 +5593,6 @@ beginState: s32'HeatKnucle'
   hit: 
   Unknown615: s32'SE_BTL_POT_01'
   sprite: s32'pot400_05', 4
-  Unknown1207: '0x010000006400000000000000000000000000000000000000'
   recoveryState: 
   sprite: s32'pot400_06', 4
   sprite: s32'pot400_07', 5
@@ -7194,6 +7208,55 @@ beginState: s32'WorldSideBreak_Slave_DF'
   sprite: s32'pot067_09', 2
   sprite: s32'keep', 1
   Unknown27: s32'_NEUTRAL'
+  endState: 
+
+beginState: s32'vsJKO_ElysionDriver'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmn_vsJKO_ElysionDriver'
+    endUpon: 
+  sprite: s32'pot120_00', 2
+  sprite: s32'pot120_01', 3
+  sprite: s32'pot120_02', 3
+  sprite: s32'pot120_03', 3
+  sprite: s32'pot120_04', 3
+  sprite: s32'pot120_05', 3
+  sprite: s32'pot120_06', 3
+  sprite: s32'pot120_07', 3
+  sprite: s32'pot120_08', 3
+  sprite: s32'pot120_09', 3
+  sprite: s32'pot120_10', 3
+  sprite: s32'pot120_11', 3
+  sprite: s32'pot120_12', 3
+  sprite: s32'pot120_13', 3
+  sprite: s32'pot120_14', 3
+  sprite: s32'pot120_15', 3
+  sprite: s32'pot120_16', 3
+  sprite: s32'pot120_17', 3
+  sprite: s32'pot120_18', 2
+  sprite: s32'pot120_19', 2
+  sprite: s32'pot120_20', 2
+  sprite: s32'pot120_21', 2
+  sprite: s32'pot120_22', 1
+  sprite: s32'pot120_23', 1
+  sprite: s32'pot120_24', 1
+  sprite: s32'pot120_25', 1
+  sprite: s32'pot120_26', 2
+  sprite: s32'pot120_27', 2
+  sprite: s32'pot120_28', 3
+  sprite: s32'pot120_29', 4
+  sprite: s32'pot120_30', 3
+  sprite: s32'pot120_31', 3
+  sprite: s32'pot120_32', 3
+  beginLabel: s32'loop'
+  sprite: s32'pot120_33', 2
+  sprite: s32'pot120_34', 2
+  endLabel: 
+  gotoLabel: s32'loop'
+  beginLabel: s32'end'
+  sprite: s32'pot120_35', 9
+  sprite: s32'pot120_36', 3
+  sprite: s32'pot120_37', 3
+  sprite: s32'pot120_38', 3
   endState: 
 
 beginState: s32'DUMMY'

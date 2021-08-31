@@ -1062,10 +1062,14 @@ beginSubroutine: s32'RoundInit'
   Unknown1325: 47, s32'leo305_10'
   Unknown1325: 48, s32'leo450_16'
   Unknown1325: 49, s32'leo090_00'
+  Unknown1328: '0x76734A4B4F5F456C7973696F6E447269766572000000000000000000000000006C656F3132305F30300000000000000000000000000000000000000000000000'
   Unknown2044: '0x0000000000000000000000000000000000000000000000000000000000000000'
   Unknown2057: s32'nohead'
   Unknown2058: s32'Body'
   Unknown2058: s32'Weapon'
+  Unknown2059: 
+  Unknown2057: s32'headonly'
+  Unknown2058: s32'Head_Low'
   Unknown2059: 
   Unknown2057: s32'high_kakusei'
   Unknown2058: s32'Body'
@@ -1147,11 +1151,13 @@ beginSubroutine: s32'RoundInit'
   Unknown600: 1, s32'mll'
   Unknown600: 1, s32'zat'
   Unknown600: 1, s32'ram'
+  Unknown600: 1, s32'jko'
   Unknown600: 3, s32'may'
   Unknown600: 3, s32'mll'
   Unknown600: 3, s32'ram'
   Unknown600: 3, s32'gio'
   Unknown600: 3, s32'ino'
+  Unknown600: 3, s32'jko'
   Unknown2594: 0, s32'NmlAtk5A'
   Unknown2594: 1, s32'NmlAtk5B'
   Unknown2594: 2, s32'NmlAtk5CNear'
@@ -6568,6 +6574,7 @@ beginState: s32'SemukeFDashStep'
     upon: (FRAME_STEP)
       Unknown2294: 12
       endUpon: 
+    Unknown2172: 1
     endUpon: 
   sprite: s32'leo413_00', 1
   Unknown1348: 1
@@ -6609,6 +6616,7 @@ beginState: s32'SemukeBDashStep'
     upon: (FRAME_STEP)
       Unknown2294: 14
       endUpon: 
+    Unknown2172: 1
     endUpon: 
   sprite: s32'leo414_00', 1
   Unknown1348: 1
@@ -6733,6 +6741,8 @@ beginState: s32'Semuke5B'
     addGatlingOption: s32'GlaenzenDunkel'
     addGatlingOption: s32'SemukeReverse'
     addGatlingOption: s32'StahlWirbel'
+    enableJumpCancel: 1
+    addGatlingOption: s32'SemukeFDashStep'
     Unknown953: 1
     storeValue: (VARIABLE), 343, (STATIC), -300000
     storeValue: (VARIABLE), 344, (STATIC), 0
@@ -7550,6 +7560,7 @@ beginState: s32'ZweitWind'
     callSubroutine: s32'SemukeFurimuki'
     callSubroutine: s32'cmn_AtkLv4'
     damage: 0, 41
+    pushbackX: 60
     Unknown725: 1
     Unknown1045: 2, s32'leo_405hit'
     Unknown1166: 1
@@ -8216,6 +8227,12 @@ beginState: s32'StahlWirbel'
         Unknown41: 22
         Unknown2588: 1000, 10
         Unknown40: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 79
+        Unknown2244: 1
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 131
+        Unknown2244: 0
         endIf: 
       endUpon: 
     endUpon: 
@@ -9302,6 +9319,55 @@ beginState: s32'WorldSideBreak_Slave_DF'
   sprite: s32'leo033_09', 2
   sprite: s32'keep', 1
   Unknown27: s32'_NEUTRAL'
+  endState: 
+
+beginState: s32'vsJKO_ElysionDriver'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmn_vsJKO_ElysionDriver'
+    endUpon: 
+  sprite: s32'leo120_00', 2
+  sprite: s32'leo120_01', 3
+  sprite: s32'leo120_02', 3
+  sprite: s32'leo120_03', 3
+  sprite: s32'leo120_04', 3
+  sprite: s32'leo120_05', 3
+  sprite: s32'leo120_06', 3
+  sprite: s32'leo120_07', 3
+  sprite: s32'leo120_08', 3
+  sprite: s32'leo120_09', 3
+  sprite: s32'leo120_10', 3
+  sprite: s32'leo120_11', 3
+  sprite: s32'leo120_12', 3
+  sprite: s32'leo120_13', 3
+  sprite: s32'leo120_14', 3
+  sprite: s32'leo120_15', 3
+  sprite: s32'leo120_16', 3
+  sprite: s32'leo120_17', 3
+  sprite: s32'leo120_18', 2
+  sprite: s32'leo120_19', 2
+  sprite: s32'leo120_20', 2
+  sprite: s32'leo120_21', 2
+  sprite: s32'leo120_22', 1
+  sprite: s32'leo120_23', 1
+  sprite: s32'leo120_24', 1
+  sprite: s32'leo120_25', 1
+  sprite: s32'leo120_26', 2
+  sprite: s32'leo120_27', 2
+  sprite: s32'leo120_28', 3
+  sprite: s32'leo120_29', 4
+  sprite: s32'leo120_30', 3
+  sprite: s32'leo120_31', 3
+  sprite: s32'leo120_32', 3
+  beginLabel: s32'loop'
+  sprite: s32'leo120_33', 2
+  sprite: s32'leo120_34', 2
+  endLabel: 
+  gotoLabel: s32'loop'
+  beginLabel: s32'end'
+  sprite: s32'leo120_35', 9
+  sprite: s32'leo120_36', 3
+  sprite: s32'leo120_37', 3
+  sprite: s32'leo120_38', 3
   endState: 
 
 beginState: s32'DUMMY'

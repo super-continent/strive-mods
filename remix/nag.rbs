@@ -1012,6 +1012,7 @@ beginSubroutine: s32'RoundInit'
   Unknown1325: 47, s32'nag070_03'
   Unknown1325: 48, s32'nag301_05'
   Unknown1325: 49, s32'nag090_00'
+  Unknown1328: '0x76734A4B4F5F456C7973696F6E447269766572000000000000000000000000006E61673132305F30300000000000000000000000000000000000000000000000'
   Unknown1883: 0
   Unknown1896: 0, 1
   Unknown1888: 0, 15000
@@ -1057,6 +1058,15 @@ beginSubroutine: s32'RoundInit'
   Unknown2058: s32'Weapon'
   Unknown2058: s32'Weapon_aura'
   Unknown2058: s32'Weapon_glow'
+  Unknown2059: 
+  Unknown2057: s32'headonly'
+  Unknown2058: s32'Head_low'
+  Unknown2058: s32'Mask_low'
+  Unknown2059: 
+  Unknown2057: s32'headonly_Berserk'
+  Unknown2058: s32'Head_low'
+  Unknown2058: s32'Head_low_sp'
+  Unknown2058: s32'Mask_low'
   Unknown2059: 
   Unknown2057: s32'CmnCutSceneDamage_Kakusei'
   Unknown47: s16'pot'
@@ -1564,6 +1574,7 @@ beginSubroutine: s32'Berserk_MeshSetCheck'
       Unknown2319: s32'Low', s32'Low'
       Unknown2319: s32'High', s32'High'
       Unknown2319: s32'nohead', s32'nohead'
+      Unknown2319: s32'headonly', s32'headonly'
       Unknown2319: s32'CmnCutSceneDamage_Kakusei', s32'CmnCutSceneDamage_Kakusei'
       Unknown2319: s32'MS_1', s32'MS_1'
       endIf: 
@@ -1576,6 +1587,7 @@ beginSubroutine: s32'Berserk_MeshSetCheck'
       Unknown2319: s32'Low', s32'Low_Berserk'
       Unknown2319: s32'High', s32'High_Berserk'
       Unknown2319: s32'nohead', s32'nohead_Berserk'
+      Unknown2319: s32'headonly', s32'headonly_Berserk'
       Unknown2319: s32'CmnCutSceneDamage_Kakusei', s32'CmnCutSceneDamage_KakuseiBerser'
       Unknown2319: s32'MS_1', s32'MS_1_Berserk'
       endIf: 
@@ -4744,24 +4756,50 @@ beginSubroutine: s32'AtkKezuriRate_Low'
   endSubroutine: 
 
 beginSubroutine: s32'BloodEater_High'
-  upon: (HIT)
-    ifNot: (VARIABLE), 6
-      Unknown2279: 0, 0, 0, 0
-      Unknown445: s32'BloodEaterObj', 100
-      ifNot: (VARIABLE), 317
-        Unknown446: s32'nag_Blood03', 132
+  ifNot: (VARIABLE), 330
+    upon: (HIT)
+      ifNot: (VARIABLE), 6
+        Unknown2279: 0, 0, 0, 0
+        Unknown445: s32'BloodEaterObj', 100
+        ifNot: (VARIABLE), 317
+          Unknown446: s32'nag_Blood03', 132
+          endIf: 
         endIf: 
-      endIf: 
-    endUpon: 
-  upon: 86
-    ifNot: (VARIABLE), 6
-      Unknown2279: 0, 1, 0, 0
-      Unknown445: s32'BloodEaterObj', 100
-      ifNot: (VARIABLE), 317
-        Unknown446: s32'nag_Blood03', 132
+      endUpon: 
+    upon: 86
+      ifNot: (VARIABLE), 6
+        Unknown2279: 0, 1, 0, 0
+        Unknown445: s32'BloodEaterObj', 100
+        ifNot: (VARIABLE), 317
+          Unknown446: s32'nag_Blood03', 132
+          endIf: 
         endIf: 
-      endIf: 
-    endUpon: 
+      endUpon: 
+    endIf: 
+  else: 
+    upon: (HIT)
+      ifNot: (VARIABLE), 6
+        Unknown2279: 0, 0, 0, 0
+        Unknown445: s32'BloodEaterObj', 100
+        Unknown445: s32'BloodEaterObj', 100
+        ifNot: (VARIABLE), 317
+          Unknown446: s32'nag_Blood03', 132
+          Unknown446: s32'nag_Blood03', 132
+          endIf: 
+        endIf: 
+      endUpon: 
+    upon: 86
+      ifNot: (VARIABLE), 6
+        Unknown2279: 0, 1, 0, 0
+        Unknown445: s32'BloodEaterObj', 100
+        Unknown445: s32'BloodEaterObj', 100
+        ifNot: (VARIABLE), 317
+          Unknown446: s32'nag_Blood03', 132
+          Unknown446: s32'nag_Blood03', 132
+          endIf: 
+        endIf: 
+      endUpon: 
+    endElse: 
   endSubroutine: 
 
 beginSubroutine: s32'BloodEater_Low'
@@ -5072,7 +5110,7 @@ beginState: s32'NmlAtk5B'
     Unknown1722: '0x00000000000000000000000000000000000000000000000000000000'
     Unknown1721: '0x00000000000000000000000000000000C0E0FFFF000000000CFEFFFF'
     callSubroutine: s32'cmn_AtkTemplNokezoriLow'
-    upon: (HIT_OR_GUARD)
+    upon: (GUARD)
       extendPushboxX: 50000
       endUpon: 
     Unknown953: 1
@@ -5566,7 +5604,7 @@ beginState: s32'NmlAtk5C_hasei2'
     Unknown933: 1
     Unknown906: 1
     enableSpecialCancel: 0
-    callSubroutine: s32'BloodEater_High'
+    callSubroutineWithArgs: s32'BloodEater_High', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
     Unknown1148: s32'SE_BTL_CMN_Impact_Katana_L'
     Unknown1211: s32'SE_BTL_CMN_Impact_Katana_L'
     upon: 62
@@ -6928,8 +6966,8 @@ beginState: s32'NmlAtkAir5A'
       callSubroutine: s32'cmn_lightAttack_flex'
       endUpon: 
     ifNot: (VARIABLE), 317
-      storeValue: (VARIABLE), 346, (STATIC), 15000
-      storeValue: (VARIABLE), 347, (STATIC), 15000
+      storeValue: (VARIABLE), 346, (STATIC), 21500
+      storeValue: (VARIABLE), 347, (STATIC), 10000
       endIf: 
     else: 
       endElse: 
@@ -6975,8 +7013,8 @@ beginState: s32'NmlAtkAir5B'
     storeValue: (VARIABLE), 340, (STATIC), 1
     callSubroutine: s32'cmn_hosei'
     ifNot: (VARIABLE), 317
-      storeValue: (VARIABLE), 346, (STATIC), 8000
-      storeValue: (VARIABLE), 347, (STATIC), 30000
+      storeValue: (VARIABLE), 346, (STATIC), 10000
+      storeValue: (VARIABLE), 347, (STATIC), 25000
       endIf: 
     else: 
       endElse: 
@@ -8480,27 +8518,29 @@ beginState: s32'Wasureyuki'
     upon: 90
       clearRegisteredUponCode: 90
       Unknown1974: 1
-      ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 14, (STATIC), 500000
-        ifNot: (VARIABLE), 368
-          upon: 95
-            Unknown2499: 22, 2, 77
-              clearRegisteredUponCode: 42
-              endIf: 
-            else: 
-              clearRegisteredUponCode: 95
-              Unknown14: s32'hit'
-              endElse: 
-            endUpon: 
-          upon: 42
-            modifyVar: (ADD), (VARIABLE), 51, (STATIC), 1
-            ifOperation: (IS_GREATER), (VARIABLE), 51, (STATIC), 2
-              clearRegisteredUponCode: 42
-              Unknown2189: 2, 5
-              Unknown446: s32'Cam_Wasureyuki', 100
-              Unknown1803: s32'nag_500_Slash01', 23
-              endIf: 
-            endUpon: 
-          callSubroutineWithArgs: s32'cmn_motionblur', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 104, (STATIC), 0
+        ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 14, (STATIC), 500000
+          ifNot: (VARIABLE), 368
+            upon: 95
+              Unknown2499: 22, 2, 77
+                clearRegisteredUponCode: 42
+                endIf: 
+              else: 
+                clearRegisteredUponCode: 95
+                Unknown14: s32'hit'
+                endElse: 
+              endUpon: 
+            upon: 42
+              modifyVar: (ADD), (VARIABLE), 51, (STATIC), 1
+              ifOperation: (IS_GREATER), (VARIABLE), 51, (STATIC), 2
+                clearRegisteredUponCode: 42
+                Unknown2189: 2, 5
+                Unknown446: s32'Cam_Wasureyuki', 100
+                Unknown1803: s32'nag_500_Slash01', 23
+                endIf: 
+              endUpon: 
+            callSubroutineWithArgs: s32'cmn_motionblur', (STATIC), 1, (STATIC), 0, (STATIC), 0, (STATIC), 0
+            endIf: 
           endIf: 
         endIf: 
       endUpon: 
@@ -9136,6 +9176,7 @@ beginState: s32'Wasureyuki'
   Unknown788: 1
   Unknown955: 10
   Unknown953: 2
+  Unknown1051: 0
   storeValue: (VARIABLE), 343, (STATIC), -300000
   storeValue: (VARIABLE), 344, (STATIC), 0
   storeValue: (VARIABLE), 345, (STATIC), 0
@@ -10063,10 +10104,6 @@ beginState: s32'WorldSideBreak_Slave_DF'
   Unknown27: s32'_NEUTRAL'
   endState: 
 
-beginState: s32'DUMMY'
-  sprite: s32'e0ea04_01', 2
-  endState: 
-
 beginState: s32'Berserk_Hukyou'
   upon: (IMMEDIATE)
     recoveryState: 
@@ -10093,5 +10130,58 @@ beginState: s32'Berserk_Hukyou'
   callSubroutine: s32'cmn_dashbrake'
   sprite: s32'nag010_47', 3
   sprite: s32'nag010_48', 3
+  endState: 
+
+beginState: s32'vsJKO_ElysionDriver'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmn_vsJKO_ElysionDriver'
+    endUpon: 
+  sprite: s32'nag120_00', 2
+  sprite: s32'nag120_01', 3
+  sprite: s32'nag120_02', 3
+  sprite: s32'nag120_03', 3
+  sprite: s32'nag120_04', 3
+  sprite: s32'nag120_05', 3
+  sprite: s32'nag120_06', 3
+  sprite: s32'nag120_07', 3
+  sprite: s32'nag120_08', 3
+  sprite: s32'nag120_09', 3
+  sprite: s32'nag120_10', 3
+  sprite: s32'nag120_11', 3
+  sprite: s32'nag120_12', 3
+  sprite: s32'nag120_13', 3
+  sprite: s32'nag120_14', 3
+  sprite: s32'nag120_15', 3
+  sprite: s32'nag120_16', 3
+  sprite: s32'nag120_17', 3
+  sprite: s32'nag120_18', 2
+  sprite: s32'nag120_19', 2
+  sprite: s32'nag120_20', 2
+  sprite: s32'nag120_21', 2
+  sprite: s32'nag120_22', 1
+  sprite: s32'nag120_23', 1
+  sprite: s32'nag120_24', 1
+  sprite: s32'nag120_25', 1
+  sprite: s32'nag120_26', 2
+  sprite: s32'nag120_27', 2
+  sprite: s32'nag120_28', 3
+  sprite: s32'nag120_29', 4
+  sprite: s32'nag120_30', 3
+  sprite: s32'nag120_31', 3
+  sprite: s32'nag120_32', 3
+  beginLabel: s32'loop'
+  sprite: s32'nag120_33', 2
+  sprite: s32'nag120_34', 2
+  endLabel: 
+  gotoLabel: s32'loop'
+  beginLabel: s32'end'
+  sprite: s32'nag120_35', 9
+  sprite: s32'nag120_36', 3
+  sprite: s32'nag120_37', 3
+  sprite: s32'nag120_38', 3
+  endState: 
+
+beginState: s32'DUMMY'
+  sprite: s32'e0ea04_01', 2
   endState: 
 

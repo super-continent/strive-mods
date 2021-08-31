@@ -4567,6 +4567,7 @@ beginState: s32'NmlAtk5B'
     addGatlingOption: s32'NmlAtk6A'
     addGatlingOption: s32'NmlAtk5CNear'
     addGatlingOption: s32'NmlAtk5CFar'
+    addGatlingOption: s32'NmlAtk2C'
     addGatlingOption: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk6D'
@@ -4701,6 +4702,7 @@ beginState: s32'NmlAtk5CNear'
     Unknown770: 0, 60, 0, 8, 0, 16
     hitGravity: (STATIC), 500
     Unknown783: 0, 250, 0, 10, 0, 30
+    addGatlingOption: s32'NmlAtk5A'
     addGatlingOption: s32'NmlAtk6A'
     addGatlingOption: s32'NmlAtk5CFar'
     addGatlingOption: s32'NmlAtk5D'

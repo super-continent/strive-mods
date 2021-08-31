@@ -4093,7 +4093,7 @@ beginState: s32'cmn_MissionCMN_065'
                 endIf: 
               endIf: 
             endIf: 
-          Unknown2033: 22, s32'HMC'
+          Unknown2033: 22, s32'TyrantRave'
           if: (VARIABLE), 0
             modifyVar: (ADD), (VARIABLE), 225, (STATIC), 1
             ifOperation: (IS_EQUAL), (VARIABLE), 225, (STATIC), 30
@@ -7078,9 +7078,11 @@ beginState: s32'cmn_MissionCMN_111'
         endIf: 
       endUpon: 
     upon: 73
-      Unknown2033: 22, s32'Special2_land'
-      if: (VARIABLE), 0
-        storeValue: (VARIABLE), 222, (STATIC), 1
+      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 218, (STATIC), 2
+        Unknown2033: 22, s32'Special2_land'
+        if: (VARIABLE), 0
+          storeValue: (VARIABLE), 222, (STATIC), 1
+          endIf: 
         endIf: 
       else: 
         Unknown2399: 
@@ -7570,6 +7572,150 @@ beginState: s32'cmn_MissionCMN_117'
       else: 
         Unknown2399: 
         endElse: 
+      endUpon: 
+    upon: (GUARD)
+      Unknown2399: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+beginState: s32'cmn_MissionCMN_118'
+  upon: (IMMEDIATE)
+    Unknown2279: 2, 115, 0, 1
+    Unknown445: s32'cmn_TrialTokeiMain', 100
+    Unknown43: 4, 1
+    Unknown2382: 1
+    Unknown2391: 1
+    Unknown2384: 0
+    storeValue: (VARIABLE), 222, (STATIC), 0
+    storeValue: (VARIABLE), 223, (STATIC), 0
+    Unknown41: 3
+    storeValue: (VARIABLE), 120, (STATIC), 0
+    Unknown40: 
+    Unknown41: 22
+    storeValue: (VARIABLE), 120, (STATIC), 0
+    Unknown40: 
+    upon: (FRAME_STEP)
+      Unknown51: 4
+      if: (VARIABLE), 0
+        endIf: 
+      else: 
+        if: (VARIABLE), 218
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+          ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 65
+            Unknown2399: 
+            endIf: 
+          ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 2
+            Unknown41: 22
+            storeValue: (VARIABLE), 222, (VARIABLE), 27
+            Unknown40: 
+            ifOperation: (IS_GREATER), (VARIABLE), 222, (STATIC), 0
+              storeValue: (VARIABLE), 223, (STATIC), 1
+              endIf: 
+            ifOperation: (IS_EQUAL), (VARIABLE), 223, (STATIC), 1
+              ifOperation: (IS_EQUAL), (VARIABLE), 222, (STATIC), 0
+                storeValue: (VARIABLE), 223, (STATIC), 0
+                Unknown2352: s32'SyoukanHangeki'
+                endIf: 
+              endIf: 
+            endIf: 
+          endIf: 
+        endElse: 
+      endUpon: 
+    upon: 70
+      ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 1
+        Unknown1803: s32'cmn_TrialTokeiMain', 23
+        Unknown2357: -1
+        endIf: 
+      endUpon: 
+    upon: 71
+      Unknown2399: 
+      endUpon: 
+    upon: 72
+      Unknown2391: 0
+      Unknown2382: 0
+      Unknown2391: 0
+      Unknown2033: 22, s32'NmlAtk2E'
+      if: (VARIABLE), 0
+        Unknown2352: s32'AshibaraiGuard'
+        endIf: 
+      endUpon: 
+    upon: 73
+      Unknown2352: s32'SyoukanHangeki'
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+beginState: s32'cmn_MissionCMN_119'
+  upon: (IMMEDIATE)
+    Unknown2279: 2, 115, 0, 1
+    Unknown445: s32'cmn_TrialTokeiMain', 100
+    Unknown43: 4, 1
+    Unknown2382: 1
+    Unknown2391: 1
+    storeValue: (VARIABLE), 222, (STATIC), 0
+    storeValue: (VARIABLE), 223, (STATIC), 0
+    Unknown41: 3
+    storeValue: (VARIABLE), 120, (STATIC), 0
+    Unknown40: 
+    Unknown41: 22
+    storeValue: (VARIABLE), 120, (STATIC), 0
+    storeValue: (VARIABLE), 25, (STATIC), 10000
+    storeValue: (VARIABLE), 26, (STATIC), 10000
+    Unknown40: 
+    upon: (FRAME_STEP)
+      Unknown51: 4
+      if: (VARIABLE), 0
+        endIf: 
+      else: 
+        if: (VARIABLE), 218
+          Unknown2391: 0
+          modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+          ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
+            Unknown2399: 
+            endIf: 
+          Unknown1825: s32'VAR_ActReg0', 2, 45
+          ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 80
+            ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 218, (STATIC), 1
+              Unknown2399: 
+              endIf: 
+            endIf: 
+          ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 190
+            ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 218, (STATIC), 2
+              Unknown2399: 
+              endIf: 
+            endIf: 
+          Unknown41: 22
+          storeValue: (VARIABLE), 222, (VARIABLE), 27
+          Unknown40: 
+          ifOperation: (IS_GREATER), (VARIABLE), 222, (STATIC), 0
+            storeValue: (VARIABLE), 223, (STATIC), 1
+            endIf: 
+          ifOperation: (IS_EQUAL), (VARIABLE), 223, (STATIC), 1
+            ifOperation: (IS_EQUAL), (VARIABLE), 222, (STATIC), 0
+              storeValue: (VARIABLE), 223, (STATIC), 0
+              Unknown2352: s32'ServantAtk'
+              endIf: 
+            endIf: 
+          endIf: 
+        endElse: 
+      endUpon: 
+    upon: 70
+      ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 1
+        Unknown1803: s32'cmn_TrialTokeiMain', 23
+        Unknown2357: -1
+        endIf: 
+      endUpon: 
+    upon: 71
+      Unknown2399: 
+      endUpon: 
+    upon: 72
+      Unknown2399: 
+      endUpon: 
+    upon: 73
+      Unknown2399: 
       endUpon: 
     upon: (GUARD)
       Unknown2399: 
@@ -9331,7 +9477,7 @@ beginSubroutine: s32'cmn_WSBPoint_Add_Lv0'
   ifNot: (VARIABLE), 340
     storeValue: (VARIABLE), 340, (STATIC), 1
     endIf: 
-  modifyVarAfterOperation: (DIV), (STATIC), 10000, (VARIABLE), 340, (VARIABLE), 349
+  modifyVarAfterOperation: (DIV), (STATIC), 0, (VARIABLE), 340, (VARIABLE), 349
   Unknown1069: (VARIABLE), 349, (STATIC), 10000, 1, 22, (VARIABLE), 306
   Unknown2500: 13, 22, (VARIABLE), 83, (STATIC), 750000
     Unknown2500: 12, 22, (VARIABLE), 83, (STATIC), -750000
@@ -10272,6 +10418,11 @@ beginState: s32'cmnHiCounterCamera'
           Unknown14: s32'delete'
           endElse: 
         endIf: 
+      endUpon: 
+    upon: 99
+      clearRegisteredUponCode: 99
+      Unknown2554: 
+      Unknown19: 23
       endUpon: 
     endUpon: 
   sprite: s32'null', 32
@@ -11904,11 +12055,6 @@ beginSubroutine: s32'cmn_Dust_Kirimomi_Blend'
           clearRegisteredUponCode: 12
           Unknown2033: 22, s32'HomingJump'
           if: (VARIABLE), 0
-            physicsXImpulse: 0, -50000
-            physicsYImpulse: 0, 75000
-            Unknown178: 22
-            Unknown94: 0, -200000
-            Unknown99: 0, 75000
             endIf: 
           else: 
             physicsXImpulse: 0, -50000
@@ -11953,6 +12099,13 @@ beginSubroutine: s32'cmn_Dust_HomingJump'
         endElse: 
       Unknown446: s32'cmn_Dust_Camera_POV', 100
       Unknown612: s32'SE_BTL_CMN_Dust_Chase1'
+      Unknown41: 22
+      physicsXImpulse: 0, -50000
+      physicsYImpulse: 0, 75000
+      Unknown178: 22
+      Unknown94: 0, -200000
+      Unknown99: 0, 75000
+      Unknown40: 
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 32
       Unknown2077: s32'Shake_oku', 500, 0, 5, 0
@@ -13615,6 +13768,17 @@ beginSubroutine: s32'cmnAtkTemplDagekiLock'
   Unknown1037: 1
   endSubroutine: 
 
+beginSubroutine: s32'cmn_vsJKO_ElysionDriver'
+  Unknown2060: s32'headonly'
+  Unknown1720: 0
+  Unknown240: 
+  Unknown2050: 1
+  Unknown2189: 0, 5
+  upon: 39
+    Unknown178: 22
+    endUpon: 
+  endSubroutine: 
+
 beginSubroutine: s32'cmn_Hizakuzure'
   upon: (FRAME_STEP)
     if: (VARIABLE), 16
@@ -14129,10 +14293,11 @@ beginState: s32'cmnWorldSideBreakObj'
     Unknown2248: 
     Unknown294: 0
     Unknown295: 0
-    Unknown271: 0, 119, 1, 1
     Unknown2248: 
     Unknown2188: 1
     storeValue: (VARIABLE), 315, (STATIC), 1
+    Unknown271: 0, 119, 1, 1
+    Unknown2233: 0
     Unknown40: 
     Unknown41: 22
     Unknown2248: 
@@ -14140,6 +14305,8 @@ beginState: s32'cmnWorldSideBreakObj'
     Unknown295: 0
     Unknown2188: 1
     storeValue: (VARIABLE), 315, (STATIC), 1
+    Unknown271: 0, 119, 1, 1
+    Unknown2233: 0
     Unknown40: 
     Unknown53: 23, 2, 52, 22, 2, 83
     Unknown2587: 60, 750
@@ -21133,6 +21300,7 @@ beginState: s32'cmn_dmg_fire'
     Unknown454: 3
     endUpon: 
   sprite: s32'null', 1
+  sprite: s32'null', 1
   Unknown631: 0, s32'SE_BTL_CMN_Condition_Burn_LP', 100
   sprite: s32'null', 2147483647
   upon: (FRAME_STEP)
@@ -21146,6 +21314,7 @@ beginState: s32'cmn_dmg_electric'
     Unknown454: 3
     endUpon: 
   sprite: s32'null', 1
+  sprite: s32'null', 1
   Unknown631: 0, s32'SE_BTL_CMN_Condition_Shock_LP', 100
   sprite: s32'null', 2147483647
   upon: (FRAME_STEP)
@@ -21158,6 +21327,7 @@ beginState: s32'cmn_dmg_ice'
     Unknown38: s32'cmn_dmg_ice'
     Unknown454: 3
     endUpon: 
+  sprite: s32'null', 1
   sprite: s32'null', 1
   sprite: s32'null', 2147483647
   upon: (FRAME_STEP)
@@ -23345,6 +23515,16 @@ else:
   endIf: 
 
 else: 
+  Unknown30: s16'jko'
+  Unknown41: 1
+  storeValue: (VARIABLE), 53, (STATIC), 1
+  Unknown2157: s32'Afro'
+  Unknown2045: s32'Afro', 0
+  Unknown2585: s32'Head_Low_hair', s32'Afro'
+  Unknown40: 
+  endIf: 
+
+else: 
   Unknown41: 1
   storeValue: (VARIABLE), 53, (STATIC), 1
   Unknown2157: s32'Afro'
@@ -23353,6 +23533,7 @@ else:
   Unknown40: 
   endElse: 
 
+endElse: 
 endElse: 
 endElse: 
 endSubroutine: 
@@ -23382,6 +23563,25 @@ else:
   endIf: 
 
 else: 
+  Unknown30: s16'jko'
+  Unknown41: 1
+  Unknown457: 3
+  Unknown2157: s32'Afro'
+  Unknown2045: s32'Afro', 0
+  Unknown2585: s32'Head_High_hair', s32'Afro'
+  Unknown40: 
+  Unknown446: s32'cmn_AfroObj', 100
+  Unknown41: 1
+  Unknown457: 3
+  Unknown2157: s32'Afro'
+  Unknown2045: s32'Afro', 0
+  setObjectSize: 45
+  Unknown1723: 500
+  Unknown2585: s32'Head_High_hair_add', s32'Afro'
+  Unknown40: 
+  endIf: 
+
+else: 
   Unknown41: 1
   Unknown457: 3
   Unknown2157: s32'Afro'
@@ -23390,6 +23590,7 @@ else:
   Unknown40: 
   endElse: 
 
+endElse: 
 endElse: 
 endSubroutine: 
 beginState: s32'cmn_Afro_Timer'
